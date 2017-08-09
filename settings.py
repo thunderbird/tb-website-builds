@@ -1,105 +1,469 @@
-from webob import Request
-import re
-import settings
+# -*- coding: utf-8 -*-
 
-def get_language_map():
-    """
-    Return a complete dict of language -> URL mappings, including the canonical
-    short locale maps (e.g. es -> es-ES and en -> en-US).
-    :return: dict
-    """
-    LUM = {i.lower(): i for i in settings.PROD_LANGUAGES}
-    langs = dict(LUM.items() + settings.CANONICAL_LOCALES.items())
-    # Add missing short locales to the list. This will automatically map
-    # en to en-GB (not en-US), es to es-AR (not es-ES), etc. in alphabetical
-    # order. To override this behavior, explicitly define a preferred locale
-    # map with the CANONICAL_LOCALES setting.
-    langs.update((k.split('-')[0], v) for k, v in LUM.items() if
-                 k.split('-')[0] not in langs)
-    return langs
+# Languages we build the site in.
+PROD_LANGUAGES = (
+    'ach', 'af', 'an', 'ar', 'as', 'ast', 'az', 'be', 'bg',
+    'bn-BD', 'bn-IN', 'br', 'bs', 'ca', 'cak', 'cs',
+    'cy', 'da', 'de', 'dsb', 'el', 'en-GB', 'en-US',
+    'en-ZA', 'eo', 'es-AR', 'es-CL', 'es-ES', 'es-MX', 'et',
+    'eu', 'fa', 'ff', 'fi', 'fr', 'fy-NL', 'ga-IE', 'gd',
+    'gl', 'gn', 'gu-IN', 'he', 'hi-IN', 'hr', 'hsb',
+    'hu', 'hy-AM', 'id', 'is', 'it', 'ja', 'ja-JP-mac',
+    'ka', 'kab', 'kk', 'km', 'kn', 'ko', 'lij', 'lt', 'ltg', 'lv',
+    'mai', 'mk', 'ml', 'mr', 'ms', 'my', 'nb-NO', 'ne-NP', 'nl',
+    'nn-NO', 'oc', 'or', 'pa-IN', 'pl', 'pt-BR', 'pt-PT',
+    'rm', 'ro', 'ru', 'si', 'sk', 'sl', 'son', 'sq',
+    'sr', 'sv-SE', 'ta', 'te', 'th', 'tr', 'uk', 'ur',
+    'uz', 'vi', 'xh', 'zh-CN', 'zh-TW', 'zu'
+)
 
+# Languages that require RTL support.
+LANGUAGES_BIDI = ('he', 'ar', 'fa', 'ur')
 
-def parse_accept_lang_header(lang_string):
-    """
-    Parse the lang_string, which is the body of an HTTP Accept-Language
-    header, and return a list of (lang, q-value), ordered by 'q' values.
-    Return an empty list if there are any format errors in lang_string.
-    """
+#default language
+LANGUAGE_CODE = 'en-US'
 
-    # Format of Accept-Language header values. From RFC 2616, section 14.4 and 3.9
-    # and RFC 3066, section 2.1
-    accept_language_re = re.compile(r'''
-            ([A-Za-z]{1,8}(?:-[A-Za-z0-9]{1,8})*|\*)      # "en", "en-au", "x-y-z", "es-419", "*"
-            (?:\s*;\s*q=(0(?:\.\d{,3})?|1(?:\.0{,3})?))?  # Optional "q=1.00", "q=0.8"
-            (?:\s*,\s*|$)                                 # Multiple accepts per header.
-            ''', re.VERBOSE)
+# Map short locale names to long, preferred locale names. This
+# will be used in urlresolvers to determine the
+# best-matching locale from the user's Accept-Language header.
+CANONICAL_LOCALES = {
+    'en': 'en-US',
+    'es': 'es-ES',
+    'ja-jp-mac': 'ja',
+    'no': 'nb-NO',
+    'pt': 'pt-BR',
+    'sv': 'sv-SE',
+    'zh-hant': 'zh-TW',     # Bug 1263193
+    'zh-hant-tw': 'zh-TW',  # Bug 1263193
+    'zh-hk': 'zh-TW',       # Bug 1338072
+    'zh-hant-hk': 'zh-TW',  # Bug 1338072
+}
 
-    result = []
-    pieces = accept_language_re.split(lang_string.lower())
-    if pieces[-1]:
-        return []
-    for i in range(0, len(pieces) - 1, 3):
-        first, lang, priority = pieces[i:i + 3]
-        if first:
-            return []
-        if priority:
-            priority = float(priority)
-        else:
-            priority = 1.0
-        result.append((lang, priority))
-    result.sort(key=lambda k: k[1], reverse=True)
-    return result
+CANONICAL_URL = 'https://www.thunderbird.net'
 
+# url for the server that serves Thunderbird downloads
+BOUNCER_URL = 'https://download.mozilla.org/'
 
-def get_best_language(accept_lang):
-    """Given an Accept-Language header, return the best-matching language."""
-    ranked = parse_accept_lang_header(accept_lang)
-    FULL_LANGUAGE_MAP = get_language_map()
+# path for assets that need processing, like LESS and js
+ASSETS = 'assets'
 
-    for lang, _ in ranked:
-        lang = lang.lower()
-        if lang in FULL_LANGUAGE_MAP:
-            return FULL_LANGUAGE_MAP[lang]
-        pre = lang.split('-')[0]
-        if pre in FULL_LANGUAGE_MAP:
-            return FULL_LANGUAGE_MAP[pre]
-    return settings.LANGUAGE_CODE
+# base url for media files
+MEDIA_URL = '/media'
 
+# path to the website templates
+WEBSITE_PATH = 'website/'
 
-def application(environ, start_response):
-    req = Request(environ)
+# path to product-details json files
+JSON_PATH = 'product-details-json/product-details/'
 
-    if 'thunderbird' in req.path_qs:
-        # Release notes, system requirements, and 'all' builds pages are only available in English.
-        language_code = 'en-US'
-    elif req.GET.get('lang', ''):
-        # Handle language switcher.
-        language_code = req.GET['lang']
-    else:
-        language_code = get_best_language(environ.get('HTTP_ACCEPT_LANGUAGE', 'en-US'))
+ALL_PLATFORMS = ('windows', 'linux', 'mac')
 
-    location = "{0}/{1}{2}".format(req.host_url, language_code, req.path_qs)
+URL_MAPPINGS = {
+    'firefox.dnt': 'https://www.mozilla.org/firefox/dnt/',
+    'firefox.organizations.faq': 'https://www.mozilla.org/firefox/organizations/faq/',
+    'foundation.licensing.website-content': 'https://www.mozilla.org/foundation/licensing/website-content/',
+    'thunderbird.channel': '/channel',
+    'thunderbird.features': '/features',
+    'thunderbird.index': '/',
+    'thunderbird.organizations': '/organizations',
+    'thunderbird.releases.index': '/thunderbird/releases',
+    'thunderbird.latest.all': '/thunderbird/all/',
+    'contribute': 'https://github.com/thundernest/thunderbird-website',
+    'mozorg.home': 'https://www.mozilla.org/',
+    'mozorg.about': 'https://www.mozilla.org/about/',
+    'mozorg.contact.contact-landing': 'https://www.mozilla.org/contact/',
+    'legal.fraud-report': 'https://www.mozilla.org/about/legal/fraud-report/',
+    'legal.index': 'https://www.mozilla.org/about/legal/',
+    'privacy': 'https://www.mozilla.org/privacy/',
+    'privacy.notices.websites': 'https://www.mozilla.org/privacy/websites/#cookies',
+    'privacy.notices.thunderbird': 'https://www.mozilla.org/privacy/thunderbird/',
+    'support': 'https://support.mozilla.org/products/thunderbird/',
+}
 
-    start_response('302 Found',
-    [('Content-type', 'text/html; charset=utf-8' ),
-    ('Cache-Control', 'private, s-maxage=0, max-age=604800'),
-    ('Vary', 'Accept-Language'),
-    ('Location', location)
-    ])
+DONATE_LINK = (
+    'https://donate.mozilla.org/{locale}/thunderbird/?presets={presets}'
+    '&amount={default}&ref=EOYFR2015&utm_campaign=EOYFR2015'
+    '&utm_source=thunderbird.net&utm_medium=referral&utm_content={source}'
+    '&currency={currency}'
+)
 
-    return ''
-
-
-if __name__ == '__main__':
-    #this runs when script is started directly from commandline
-    try:
-        #   create a simple WSGI server and run the application
-        from wsgiref import simple_server
-        print   "Running test   application -   point   your browser at http://localhost:8000/ ..."
-        httpd   =   simple_server.WSGIServer(('',   8000), simple_server.WSGIRequestHandler)
-        httpd.set_app(application)
-        httpd.serve_forever()
-    except ImportError:
-        #wsgiref not installed, just output html to stdout
-        for content in application({}, lambda status, headers: None):
-            print content
+DONATE_PARAMS = {
+    'en-US': {
+        'currency': 'usd',
+        'symbol': '$',
+        'presets': '100,50,25,15',
+        'default': '50'
+    },
+    'an': {
+        'currency': 'eur',
+        'symbol': u'€',
+        'presets': '100,50,25,15',
+        'default': '50'
+    },
+    'as': {
+        'currency': 'inr',
+        'symbol': u'₹',
+        'presets': '1000,500,250,150',
+        'default': '500'
+    },
+    'ast': {
+        'currency': 'eur',
+        'symbol': u'€',
+        'presets': '100,50,25,15',
+        'default': '50'
+    },
+    'bn-IN': {
+        'currency': 'inr',
+        'symbol': u'₹',
+        'presets': '1000,500,250,150',
+        'default': '500'
+    },
+    'brx': {
+        'currency': 'inr',
+        'symbol': u'₹',
+        'presets': '1000,500,250,150',
+        'default': '500'
+    },
+    'ca': {
+        'currency': 'eur',
+        'symbol': u'€',
+        'presets': '100,50,25,15',
+        'default': '50'
+    },
+    'cs': {
+        'currency': 'czk',
+        'symbol': u'Kč',
+        'presets': '400,200,100,55',
+        'default': '200'
+    },
+    'cy': {
+        'currency': 'gbp',
+        'symbol': u'£',
+        'presets': '20,10,5,3',
+        'default': '10'
+    },
+    'da': {
+        'currency': 'dkk',
+        'symbol': 'kr',
+        'presets': '160,80,40,20',
+        'default': '80'
+    },
+    'de': {
+        'currency': 'eur',
+        'symbol': u'€',
+        'presets': '100,50,25,15',
+        'default': '50'
+    },
+    'dsb': {
+        'currency': 'eur',
+        'symbol': u'€',
+        'presets': '100,50,25,15',
+        'default': '50'
+    },
+    'el': {
+        'currency': 'eur',
+        'symbol': u'€',
+        'presets': '100,50,25,15',
+        'default': '50'
+    },
+    'en-GB': {
+        'currency': 'gbp',
+        'symbol': u'£',
+        'presets': '20,10,5,3',
+        'default': '10'
+    },
+    'es-AR': {
+        'currency': 'ars',
+        'symbol': '$',
+        'presets': '1600,800,400,200',
+        'default': '800'
+    },
+    'es-CL': {
+        'currency': 'clp',
+        'symbol': '$',
+        'presets': '68000,34000,17000,10200',
+        'default': '34000'
+    },
+    'es-ES': {
+        'currency': 'eur',
+        'symbol': u'€',
+        'presets': '100,50,25,15',
+        'default': '50'
+    },
+    'es-MX': {
+        'currency': 'mxn',
+        'symbol': '$',
+        'presets': '240,120,60,35',
+        'default': '120'
+    },
+    'eo': {
+        'currency': 'eur',
+        'symbol': u'€',
+        'presets': '100,50,25,15',
+        'default': '50'
+    },
+    'et': {
+        'currency': 'eur',
+        'symbol': u'€',
+        'presets': '100,50,25,15',
+        'default': '50'
+    },
+    'eu': {
+        'currency': 'eur',
+        'symbol': u'€',
+        'presets': '100,50,25,15',
+        'default': '50'
+    },
+    'fi': {
+        'currency': 'eur',
+        'symbol': u'€',
+        'presets': '100,50,25,15',
+        'default': '50'
+    },
+    'fr': {
+        'currency': 'eur',
+        'symbol': u'€',
+        'presets': '100,50,25,15',
+        'default': '50'
+    },
+    'fy-NL': {
+        'currency': 'eur',
+        'symbol': u'€',
+        'presets': '100,50,25,15',
+        'default': '50'
+    },
+    'ga-IE': {
+        'currency': 'eur',
+        'symbol': u'€',
+        'presets': '100,50,25,15',
+        'default': '50'
+    },
+    'gd': {
+        'currency': 'gbp',
+        'symbol': u'£',
+        'presets': '20,10,5,3',
+        'default': '10'
+    },
+    'gl': {
+        'currency': 'eur',
+        'symbol': u'€',
+        'presets': '100,50,25,15',
+        'default': '50'
+    },
+    'gu-IN': {
+        'currency': 'inr',
+        'symbol': u'₹',
+        'presets': '1000,500,250,150',
+        'default': '500'
+    },
+    'he': {
+        'currency': 'ils',
+        'symbol': u'₪',
+        'presets': '60,30,15,9',
+        'default': '30'
+    },
+    'hi-IN': {
+        'currency': 'inr',
+        'symbol': u'₹',
+        'presets': '1000,500,250,150',
+        'default': '500'
+    },
+    'hsb': {
+        'currency': 'eur',
+        'symbol': u'€',
+        'presets': '100,50,25,15',
+        'default': '50'
+    },
+    'hu': {
+        'currency': 'huf',
+        'symbol': 'Ft',
+        'presets': '4000,2000,1000,600',
+        'default': '2000'
+    },
+    'id': {
+        'currency': 'idr',
+        'symbol': 'Rp',
+        'presets': '270000,140000,70000,40000',
+        'default': '140000'
+    },
+    'in': {
+        'currency': 'inr',
+        'symbol': u'₹',
+        'presets': '1000,500,250,150',
+        'default': '500'
+    },
+    'it': {
+        'currency': 'eur',
+        'symbol': u'€',
+        'presets': '100,50,25,15',
+        'default': '50'
+    },
+    'ja': {
+        'currency': 'jpy',
+        'symbol': u'¥',
+        'presets': '1600,800,400,250',
+        'default': '800'
+    },
+    'ja-JP': {
+        'currency': 'jpy',
+        'symbol': u'¥',
+        'presets': '1600,800,400,250',
+        'default': '800'
+    },
+    'ja-JP-mac': {
+        'currency': 'jpy',
+        'symbol': u'¥',
+        'presets': '1600,800,400,250',
+        'default': '800'
+    },
+    'kn': {
+        'currency': 'inr',
+        'symbol': u'₹',
+        'presets': '1000,500,250,150',
+        'default': '500'
+    },
+    'lij': {
+        'currency': 'eur',
+        'symbol': u'€',
+        'presets': '100,50,25,15',
+        'default': '50'
+    },
+    'lt': {
+        'currency': 'eur',
+        'symbol': u'€',
+        'presets': '100,50,25,15',
+        'default': '50'
+    },
+    'lv': {
+        'currency': 'eur',
+        'symbol': u'€',
+        'presets': '100,50,25,15',
+        'default': '50'
+    },
+    'ml': {
+        'currency': 'inr',
+        'symbol': u'₹',
+        'presets': '1000,500,250,150',
+        'default': '500'
+    },
+    'mr': {
+        'currency': 'inr',
+        'symbol': u'₹',
+        'presets': '1000,500,250,150',
+        'default': '500'
+    },
+    'nb-NO': {
+        'currency': 'nok',
+        'symbol': 'kr',
+        'presets': '160,80,40,20',
+        'default': '80'
+    },
+    'nn-NO': {
+        'currency': 'nok',
+        'symbol': 'kr',
+        'presets': '160,80,40,20',
+        'default': '80'
+    },
+    'nl': {
+        'currency': 'eur',
+        'symbol': u'€',
+        'presets': '100,50,25,15',
+        'default': '50'
+    },
+    'or': {
+        'currency': 'inr',
+        'symbol': u'₹',
+        'presets': '1000,500,250,150',
+        'default': '500'
+    },
+    'pa-IN': {
+        'currency': 'inr',
+        'symbol': u'₹',
+        'presets': '1000,500,250,150',
+        'default': '500'
+    },
+    'pl': {
+        'currency': 'pln',
+        'symbol': u'zł',
+        'presets': '80,40,20,10',
+        'default': '40'
+    },
+    'pt-BR': {
+        'currency': 'brl',
+        'symbol': 'R$',
+        'presets': '375,187,90,55',
+        'default': '187'
+    },
+    'pt-PT': {
+        'currency': 'eur',
+        'symbol': u'€',
+        'presets': '100,50,25,15',
+        'default': '50'
+    },
+    'ru': {
+        'currency': 'rub',
+        'symbol': u'₽',
+        'presets': '1000,500,250,140',
+        'default': '500'
+    },
+    'sat': {
+        'currency': 'inr',
+        'symbol': u'₹',
+        'presets': '1000,500,250,150',
+        'default': '500'
+    },
+    'sk': {
+        'currency': 'eur',
+        'symbol': u'€',
+        'presets': '100,50,25,15',
+        'default': '50'
+    },
+    'sl': {
+        'currency': 'eur',
+        'symbol': u'€',
+        'presets': '100,50,25,15',
+        'default': '50'
+    },
+    'sv-SE': {
+        'currency': 'sek',
+        'symbol': 'kr',
+        'presets': '160,80,40,20',
+        'default': '80'
+    },
+    'sr': {
+        'currency': 'eur',
+        'symbol': u'€',
+        'presets': '100,50,25,15',
+        'default': '50'
+    },
+    'ta': {
+        'currency': 'inr',
+        'symbol': u'₹',
+        'presets': '1000,500,250,150',
+        'default': '500'
+    },
+    'te': {
+        'currency': 'inr',
+        'symbol': u'₹',
+        'presets': '1000,500,250,150',
+        'default': '500'
+    },
+    'th': {
+        'currency': 'thb',
+        'symbol': u'฿',
+        'presets': '500,250,125,75',
+        'default': '250'
+    },
+    'zh-CN': {
+        'currency': 'cny',
+        'symbol': u'¥',
+        'presets': '700,350,175,100',
+        'default': '350'
+    },
+    'zh-TW': {
+        'currency': 'twd',
+        'symbol': 'NT$',
+        'presets': '3200,1600,800,475',
+        'default': '1600'
+    },
+}
