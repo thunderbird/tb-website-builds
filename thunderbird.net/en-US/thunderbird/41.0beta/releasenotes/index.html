@@ -12,13 +12,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
 
-    <title>Thunderbird — Notes (56.0beta) — Mozilla</title>
+    <title>Thunderbird — Notes (41.0beta) — Mozilla</title>
     <meta name="description" content="">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Thunderbird">
     <meta property="og:locale" content="en_US">
     <meta property="og:image" content="https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png">
-    <meta property="og:title" content="Thunderbird — Notes (56.0beta)">
+    <meta property="og:title" content="Thunderbird — Notes (41.0beta)">
     <meta property="og:description" content="">
     <meta property="fb:page_id" content="348169218537151">
     <meta name="twitter:card" content="summary">
@@ -154,7 +154,7 @@
   
     <header class="notes-head">
     <h1>Thunderbird  Notes</h1>
-    <h2>Version 56.0beta, first offered to  channel users on August 11, 2017</h2>
+    <h2>Version 41.0beta, first offered to  channel users on September 17, 2015</h2>
 
       <p>
         Check out "What’s New" and "Known Issues" for this version of Thunderbird below.
@@ -164,9 +164,9 @@
         or <a href="https://bugzilla.mozilla.org/">file a bug in Bugzilla</a>.
       
       
-          If interested, please see the  <a href="https://bugzilla.mozilla.org/buglist.cgi?classification=Client%20Software&query_format=advanced&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&target_milestone=Thunderbird%2056.0&product=Thunderbird&resolution=FIXED">complete list of changes</a> in this release.
+          If interested, please see the  <a href="https://bugzilla.mozilla.org/buglist.cgi?classification=Client%20Software&query_format=advanced&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&target_milestone=Thunderbird%2041.0&product=Thunderbird&resolution=FIXED">complete list of changes</a> in this release.
       
-        <p><strong>These release notes apply to Thunderbird version 56 beta 1 released August 8th, 2017.</strong></p>
+        
       </p>
     </header>
   
@@ -181,96 +181,81 @@
             
               <b class="tag tag-new">new</b>
             
-              <p>An option under "Tools &gt; Options, Advanced, General" now allows to select whether date/time display will follow the application locale (adjusted by operating system's format settings for that locale) or the locale selected in the operating system's regional settings. In other words, an US English Thunderbird can use, for example, German formats.</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-changed">changed</b>
-            
-              <p>Various improvements in the Thunderbird themes on all platforms, especially for Windows 10.</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-changed">changed</b>
-            
-              <p>Thunderbird now uses the latest Mozilla technology based on Rust for encoding messages</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-changed">changed</b>
-            
-              <p>When messages are composed in paragraph format, "body text" and split mail quotes are converted to paragraphs when pressing the enter key</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-changed">changed</b>
-            
-              <p>IMAP: When after sending a message storing that sent message fails, the message can now be stored in a local folder</p>
+              <p>Visual appearance improved on Windows 10</p>
           </li>
           
           <li  id="note-">
             
               <b class="tag tag-fixed">fixed</b>
             
-              <p>Blank lines removed from plain text replies under some circumstances</p>
+              <p>Checking for new messages correctly works after hibernation again</p>
           </li>
           
           <li  id="note-">
             
               <b class="tag tag-fixed">fixed</b>
             
-              <p>No authorisation prompt displayed when inserting image into email body although image URL requires authentication</p>
+              <p>Emails with long References headers are now decoded correctly</p>
           </li>
           
           <li  id="note-">
             
               <b class="tag tag-fixed">fixed</b>
             
-              <p>Selected text from another message sometimes included in a reply</p>
+              <p>When using the maildir storage format, the INBOX folder is no longer deleted</p>
           </li>
           
           <li  id="note-">
             
               <b class="tag tag-fixed">fixed</b>
             
-              <p>Inline images not scaled to fit when printing</p>
+              <p>Thunderbird no longer crashes when executing filter rules when using maildir</p>
           </li>
           
           <li  id="note-">
             
               <b class="tag tag-fixed">fixed</b>
             
-              <p>Message disposition flag (replied / forwarded) lost when reply or forwarded message was stored as draft and draft was sent later</p>
+              <p>Importing to the address book from CSV now works with international characters</p>
           </li>
           
           <li  id="note-">
             
               <b class="tag tag-fixed">fixed</b>
             
-              <p>Deleting message from the POP3 server not working when maildir storage was used</p>
+              <p>(Right-)Clicking on a newsgroup now allows directly composing a message again</p>
           </li>
           
           <li  id="note-">
             
               <b class="tag tag-fixed">fixed</b>
             
-              <p>Contacts sidebar: Selection and context menu behavior</p>
+              <p>Proxy is taken into account for pop3s protocol</p>
           </li>
           
           <li  id="note-">
             
               <b class="tag tag-fixed">fixed</b>
             
-              <p>Unwanted inline images shown in rogue SPAM messages</p>
+              <p>Spellchecker no longer jumps between languages</p>
           </li>
           
         </ul>
       </section>
       
+      
+      <section class="notes-section" id="known-issues">
+        <h3>Known Issues</h3>
+        <ul class="section-items tagged">
+          
+            <li id="note-">
+              <b class="tag tag-unresolved">unresolved</b>
+              <p>In contrast to Thunderbird 38, hardware acceleration is still enabled by default. If you are experiencing crashes, please disable it in the preferences.</p>
+            
+            </li>
+          
+        </ul>
+      </section>
       
     </div>
 
@@ -280,7 +265,7 @@
         <h3>Try Thunderbird </h3>
         <ol>
           <li class="try1">
-            <a href="/en-US/thunderbird/56.0beta/system-requirements/">
+            <a href="/en-US/thunderbird/41.0beta/system-requirements/">
               Check
             </a>
           </li>
@@ -316,6 +301,12 @@
               Search for answers on the Thunderbird Support page
             </a>
           </li>
+          
+            <li>
+              <a href="#known-issues">
+                Look at the known issues list and see if we already know about the problem
+              </a>
+            </li>
           
           <li>
             <a href="https://bugzilla.mozilla.org/enter_bug.cgi">

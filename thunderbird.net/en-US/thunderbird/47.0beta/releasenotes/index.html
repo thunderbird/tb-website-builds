@@ -12,13 +12,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
 
-    <title>Thunderbird — Notes (56.0beta) — Mozilla</title>
+    <title>Thunderbird — Notes (47.0beta) — Mozilla</title>
     <meta name="description" content="">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Thunderbird">
     <meta property="og:locale" content="en_US">
     <meta property="og:image" content="https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png">
-    <meta property="og:title" content="Thunderbird — Notes (56.0beta)">
+    <meta property="og:title" content="Thunderbird — Notes (47.0beta)">
     <meta property="og:description" content="">
     <meta property="fb:page_id" content="348169218537151">
     <meta name="twitter:card" content="summary">
@@ -154,7 +154,7 @@
   
     <header class="notes-head">
     <h1>Thunderbird  Notes</h1>
-    <h2>Version 56.0beta, first offered to  channel users on August 11, 2017</h2>
+    <h2>Version 47.0beta, first offered to  channel users on July 2, 2016</h2>
 
       <p>
         Check out "What’s New" and "Known Issues" for this version of Thunderbird below.
@@ -164,9 +164,9 @@
         or <a href="https://bugzilla.mozilla.org/">file a bug in Bugzilla</a>.
       
       
-          If interested, please see the  <a href="https://bugzilla.mozilla.org/buglist.cgi?classification=Client%20Software&query_format=advanced&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&target_milestone=Thunderbird%2056.0&product=Thunderbird&resolution=FIXED">complete list of changes</a> in this release.
+          If interested, please see the  <a href="https://bugzilla.mozilla.org/buglist.cgi?o5=notequals&f1=OP&o3=equals&v6=fixed&v3=fixed&resolution=FIXED&o2=equals&o6=notequals&f4=CP&v5=fixed&query_format=advanced&j1=OR&f3=cf_status_thunderbird_47&f2=target_milestone&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&f5=cf_status_thunderbird_esr45&f6=cf_status_thunderbird_45&v2=47.0&list_id=13067295">complete list of changes</a> in this release.
       
-        <p><strong>These release notes apply to Thunderbird version 56 beta 1 released August 8th, 2017.</strong></p>
+        
       </p>
     </header>
   
@@ -179,93 +179,58 @@
           
           <li  id="note-">
             
-              <b class="tag tag-new">new</b>
+              <b class="tag tag-fixed">fixed</b>
             
-              <p>An option under "Tools &gt; Options, Advanced, General" now allows to select whether date/time display will follow the application locale (adjusted by operating system's format settings for that locale) or the locale selected in the operating system's regional settings. In other words, an US English Thunderbird can use, for example, German formats.</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-changed">changed</b>
-            
-              <p>Various improvements in the Thunderbird themes on all platforms, especially for Windows 10.</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-changed">changed</b>
-            
-              <p>Thunderbird now uses the latest Mozilla technology based on Rust for encoding messages</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-changed">changed</b>
-            
-              <p>When messages are composed in paragraph format, "body text" and split mail quotes are converted to paragraphs when pressing the enter key</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-changed">changed</b>
-            
-              <p>IMAP: When after sending a message storing that sent message fails, the message can now be stored in a local folder</p>
+              <p>Delivery Format not preserved for saved drafts (Auto-Detect|Plaintext|HTML|Both) </p>
           </li>
           
           <li  id="note-">
             
               <b class="tag tag-fixed">fixed</b>
             
-              <p>Blank lines removed from plain text replies under some circumstances</p>
+              <p>Erroneous spaces were inserted when copying CJK text</p>
           </li>
           
           <li  id="note-">
             
               <b class="tag tag-fixed">fixed</b>
             
-              <p>No authorisation prompt displayed when inserting image into email body although image URL requires authentication</p>
+              <p>"Apply columns to..." did not honor special folders</p>
           </li>
           
           <li  id="note-">
             
               <b class="tag tag-fixed">fixed</b>
             
-              <p>Selected text from another message sometimes included in a reply</p>
+              <p>Invitations to events could not be printed.</p>
           </li>
           
           <li  id="note-">
             
               <b class="tag tag-fixed">fixed</b>
             
-              <p>Inline images not scaled to fit when printing</p>
+              <p>Draft folder database (and possibly others) was deleted when certain messages were viewed, resulting in loss of locally stored message metadata</p>
           </li>
           
           <li  id="note-">
             
               <b class="tag tag-fixed">fixed</b>
             
-              <p>Message disposition flag (replied / forwarded) lost when reply or forwarded message was stored as draft and draft was sent later</p>
+              <p>Falsely reported not enough disk space during compacting</p>
           </li>
           
           <li  id="note-">
             
               <b class="tag tag-fixed">fixed</b>
             
-              <p>Deleting message from the POP3 server not working when maildir storage was used</p>
+              <p>Links were not always detected properly in the message body (terminated early on "|", some long links not detected at all)</p>
           </li>
           
           <li  id="note-">
             
               <b class="tag tag-fixed">fixed</b>
             
-              <p>Contacts sidebar: Selection and context menu behavior</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
-              <p>Unwanted inline images shown in rogue SPAM messages</p>
+              <p>Dragging and dropping of contacts from the contact list onto an addressbook while All Addressbooks is selected moved only one contact</p>
           </li>
           
         </ul>
@@ -280,7 +245,7 @@
         <h3>Try Thunderbird </h3>
         <ol>
           <li class="try1">
-            <a href="/en-US/thunderbird/56.0beta/system-requirements/">
+            <a href="/en-US/thunderbird/47.0beta/system-requirements/">
               Check
             </a>
           </li>

@@ -12,13 +12,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
 
-    <title>Thunderbird — Notes (56.0beta) — Mozilla</title>
+    <title>Thunderbird — Notes (52.0beta) — Mozilla</title>
     <meta name="description" content="">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Thunderbird">
     <meta property="og:locale" content="en_US">
     <meta property="og:image" content="https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png">
-    <meta property="og:title" content="Thunderbird — Notes (56.0beta)">
+    <meta property="og:title" content="Thunderbird — Notes (52.0beta)">
     <meta property="og:description" content="">
     <meta property="fb:page_id" content="348169218537151">
     <meta name="twitter:card" content="summary">
@@ -154,7 +154,7 @@
   
     <header class="notes-head">
     <h1>Thunderbird  Notes</h1>
-    <h2>Version 56.0beta, first offered to  channel users on August 11, 2017</h2>
+    <h2>Version 52.0beta, first offered to  channel users on February 28, 2017</h2>
 
       <p>
         Check out "What’s New" and "Known Issues" for this version of Thunderbird below.
@@ -164,9 +164,9 @@
         or <a href="https://bugzilla.mozilla.org/">file a bug in Bugzilla</a>.
       
       
-          If interested, please see the  <a href="https://bugzilla.mozilla.org/buglist.cgi?classification=Client%20Software&query_format=advanced&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&target_milestone=Thunderbird%2056.0&product=Thunderbird&resolution=FIXED">complete list of changes</a> in this release.
+          If interested, please see the  <a href="https://bugzilla.mozilla.org/buglist.cgi?classification=Client%20Software&query_format=advanced&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&target_milestone=Thunderbird%2052.0&product=Thunderbird&resolution=FIXED">complete list of changes</a> in this release.
       
-        <p><strong>These release notes apply to Thunderbird version 56 beta 1 released August 8th, 2017.</strong></p>
+        
       </p>
     </header>
   
@@ -181,91 +181,133 @@
             
               <b class="tag tag-new">new</b>
             
-              <p>An option under "Tools &gt; Options, Advanced, General" now allows to select whether date/time display will follow the application locale (adjusted by operating system's format settings for that locale) or the locale selected in the operating system's regional settings. In other words, an US English Thunderbird can use, for example, German formats.</p>
+              <p>Optionally remove corresponding data files when removing an account from Thunderbird</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-new">new</b>
+            
+              <p>Possibility to copy message filter</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-new">new</b>
+            
+              <p>Calendar: Event can now be created and edited in a tab</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-new">new</b>
+            
+              <p>Calendar: Processing of received invitation counter proposals</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-new">new</b>
+            
+              <p>Chat: Support Twitter Direct Messages</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-new">new</b>
+            
+              <p>Chat: Liking and favoriting in Twitter</p>
           </li>
           
           <li  id="note-">
             
               <b class="tag tag-changed">changed</b>
             
-              <p>Various improvements in the Thunderbird themes on all platforms, especially for Windows 10.</p>
+              <p><strong>IMPORTANT:</strong> The way images are included in a compose window has changed. Images are now included as <a href="https://en.wikipedia.org/wiki/Data_URI_scheme">data URIs</a> and not as references to parts of other messages or operating system files. This allows better interoperability with office packages such as MS Office or LibreOffice. Images linked from locations on the internet will <strong>no longer</strong> be downloaded and attached to the message automatically. This can be changed for each image individually via the Image Properties dialog or globally by setting the preference mail.compose.attach_http_images.</p>
           </li>
           
           <li  id="note-">
             
               <b class="tag tag-changed">changed</b>
             
-              <p>Thunderbird now uses the latest Mozilla technology based on Rust for encoding messages</p>
+              <p>On Linux PulseAudio is now required to play sound</p>
           </li>
           
           <li  id="note-">
             
               <b class="tag tag-changed">changed</b>
             
-              <p>When messages are composed in paragraph format, "body text" and split mail quotes are converted to paragraphs when pressing the enter key</p>
+              <p>Messages in IMAP folders read on external device are now filtered by default</p>
           </li>
           
           <li  id="note-">
             
               <b class="tag tag-changed">changed</b>
             
-              <p>IMAP: When after sending a message storing that sent message fails, the message can now be stored in a local folder</p>
+              <p>Chat: Removed Yahoo! Messenger support (since <a href="https://web.archive.org/web/20160730080614/https://help.yahoo.com/kb/yahoo-messenger-for-web/SLN26860.html">Yahoo removed support</a>)</p>
           </li>
           
           <li  id="note-">
             
               <b class="tag tag-fixed">fixed</b>
             
-              <p>Blank lines removed from plain text replies under some circumstances</p>
+              <p>Crash when viewing certain IMAP messages and various crashes on Mac</p>
           </li>
           
           <li  id="note-">
             
               <b class="tag tag-fixed">fixed</b>
             
-              <p>No authorisation prompt displayed when inserting image into email body although image URL requires authentication</p>
+              <p>Message preview pane non-functional after IMAP folder was renamed or moved</p>
           </li>
           
           <li  id="note-">
             
               <b class="tag tag-fixed">fixed</b>
             
-              <p>Selected text from another message sometimes included in a reply</p>
+              <p>Editing in paragraph format: Pressing Shift+Enter sometimes doesn't move the cursor to the next line</p>
           </li>
           
           <li  id="note-">
             
               <b class="tag tag-fixed">fixed</b>
             
-              <p>Inline images not scaled to fit when printing</p>
+              <p>Paste as quotation doesn't always work</p>
           </li>
           
           <li  id="note-">
             
               <b class="tag tag-fixed">fixed</b>
             
-              <p>Message disposition flag (replied / forwarded) lost when reply or forwarded message was stored as draft and draft was sent later</p>
+              <p>Long lines in plain text replies not properly wrapped</p>
           </li>
           
           <li  id="note-">
             
               <b class="tag tag-fixed">fixed</b>
             
-              <p>Deleting message from the POP3 server not working when maildir storage was used</p>
+              <p>Undesired white-space before signature in paragraph mode</p>
           </li>
           
           <li  id="note-">
             
               <b class="tag tag-fixed">fixed</b>
             
-              <p>Contacts sidebar: Selection and context menu behavior</p>
+              <p>IMAP message part caching</p>
           </li>
           
           <li  id="note-">
             
               <b class="tag tag-fixed">fixed</b>
             
-              <p>Unwanted inline images shown in rogue SPAM messages</p>
+              <p>Links with escaped non-ASCII (international) characters can't be clicked</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-fixed">fixed</b>
+            
+              <p>Calendar: Events specified in timezone "local time" generate alerts in UTC time</p>
           </li>
           
         </ul>
@@ -280,7 +322,7 @@
         <h3>Try Thunderbird </h3>
         <ol>
           <li class="try1">
-            <a href="/en-US/thunderbird/56.0beta/system-requirements/">
+            <a href="/en-US/thunderbird/52.0beta/system-requirements/">
               Check
             </a>
           </li>
