@@ -1,0 +1,384 @@
+/****************************************************************************/
+/****************************************************************************/
+#lightning {
+  padding: 40px 80px;
+}
+#lightning .infobox {
+  padding-bottom: 20px;
+  float: right;
+}
+#lightning .infobox h1,
+#lightning .infobox h2 {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans Light', X-LocaleSpecific-Light, 'Open Sans', X-LocaleSpecific, sans-serif;
+  font-weight: normal;
+  color: #484848;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+  text-align: center;
+  line-height: 1.3;
+}
+#lightning .infobox h1 {
+  font-size: 57px;
+  font-size: 3.5625rem;
+}
+#lightning h2 {
+  letter-spacing: -0.5px;
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+#lightning .midbox {
+  padding: 20px 0 0 0;
+  border-top: 1px solid #d6d6d6;
+}
+#lightning .topbox img {
+  vertical-align: top;
+}
+#lightning .holiday {
+  float: none;
+}
+#lightning table.data {
+  width: 100%;
+  margin-bottom: 20px;
+}
+#lightning .calendar-table {
+  padding: 0 20px;
+}
+#lightning ul.holiday-nav {
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #d6d6d6;
+}
+#lightning ul.holiday-nav li {
+  display: inline;
+  float: none;
+  width: auto;
+}
+#download {
+  display: inline-block;
+  float: right;
+  margin-top: 20px;
+}
+#download #download-link {
+  color: #fff;
+  line-height: 1.3;
+  background-color: #669be1;
+  background-image: linear-gradient(to bottom, #669be1 50%, #5784bf);
+  border-radius: 6px 6px 6px 6px;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1), 0 -4px rgba(0, 0, 0, 0.1) inset;
+  display: block;
+  margin-bottom: 2px;
+  overflow: visible;
+  padding-right: 30px;
+}
+#download #download-link span.title {
+  background: url('/media/img/sandstone/buttons/download-arrow-small.png') no-repeat scroll 10px 14px transparent;
+  display: block;
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-style: italic;
+  min-height: 30px;
+  padding: 8px 8px 0 40px;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+}
+#download #download-link span.desc {
+  color: rgba(0, 0, 0, 0.7);
+  display: block;
+  margin-top: -4px;
+  padding: 0 8px 12px 40px;
+  text-shadow: 1px 1px rgba(255, 255, 255, 0.2);
+}
+#download .download-other {
+  color: #bbb;
+  display: block;
+  font-family: 'Open Sans', X-LocaleSpecific, sans-serif;
+  font-size: 11px;
+  font-size: 0.6875rem;
+  text-align: center;
+}
+.items {
+  margin: 0;
+  padding: 20px 0;
+}
+.items ul {
+  padding: 0;
+  margin: 0;
+  zoom: 1;
+}
+.items ul:after {
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+  content: ".";
+}
+.items li {
+  float: left;
+  width: 380px;
+  margin: 0 10px;
+  font-family: 'Open Sans', X-LocaleSpecific, sans-serif;
+  padding: 5px 0;
+  font-size: 12px;
+  font-size: 0.75rem;
+  list-style-type: none;
+}
+.items li .itemtext {
+  display: inline-block;
+  vertical-align: middle;
+  width: 80%;
+}
+.items li .itemtext a.title {
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+.items li .itemtext span.desc {
+  font-size: 16px;
+  font-size: 1rem;
+}
+.items li a {
+  display: block;
+}
+.items li a:hover,
+.items li a:active {
+  color: #0073aa;
+  text-decoration: underline;
+}
+.items li a:focus {
+  text-decoration: none;
+}
+.items img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+.billboard {
+  -webkit-transition: box-shadow 0.6s ease 0.2s;
+  transition: box-shadow 0.6s ease 0.2s;
+  box-shadow: 0 0 0 0 #fff;
+  width: auto;
+}
+@media only screen and (min-width: 760px) and (max-width: 1000px) {
+  #lightning {
+    padding: 20px;
+  }
+}
+/* Mobile layout: 320px */
+@media only screen and (max-width: 760px) {
+  #lightning {
+    padding: 10px;
+  }
+  #lightning .infobox {
+    float: none;
+    text-align: center;
+  }
+  #lightning .infobox h1 {
+    font-size: 36px;
+    font-size: 2.25rem;
+  }
+  #lightning .infobox #download {
+    display: none;
+  }
+  #lightning .topbox {
+    padding: 0;
+  }
+  #lightning li {
+    float: left;
+    width: 300px;
+    margin: 0 10px;
+    margin: 0;
+    padding: 0 0 20px 0;
+    clear: left;
+  }
+  #lightning li .itemtext {
+    width: 60%;
+  }
+  #lightning li .itemtext a.title {
+    font-size: 14px;
+    font-size: 0.875rem;
+  }
+  #lightning li .itemtext span.desc {
+    font-size: 12px;
+    font-size: 0.75rem;
+  }
+  #lightning #calendar-logo {
+    float: left;
+    width: 100px;
+    margin: 0 10px;
+  }
+}
+/* Mobile layout: 0 - 480px; */
+@media only screen and (max-width: 480px) {
+  #lightning img {
+    width: auto;
+  }
+  #lightning #calendar-logo {
+    display: none;
+  }
+}
+
+/****************************************************************************/
+/****************************************************************************/
+/* Top Level Menu Items */
+#nav-main-menu {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  margin: 0;
+}
+#nav-main-menu li {
+  position: relative;
+}
+#nav-main-menu li.hover a {
+  outline: 0;
+}
+#nav-main-menu li.hover a[aria-haspopup="true"] {
+  background-image: url("/media/img/sandstone/menu-point.png");
+  background-repeat: no-repeat;
+  background-position: center 2.75em;
+}
+/* Second-level Menu Items */
+#masthead nav .sublink {
+  text-transform: none;
+}
+.js #nav-main li.hover .submenu {
+  left: 0;
+  opacity: 1;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+#nav-main .submenu,
+#nav-main .submenu li {
+  height: auto;
+  border: 0;
+  float: none;
+  display: block;
+}
+#nav-main .submenu {
+  position: absolute;
+  z-index: 100;
+  left: -999em;
+  top: 43px;
+  opacity: 0;
+  width: 190px;
+  text-shadow: 1px 1px 0 #fff, 0 0 5px #fff;
+  background: #fff;
+  padding: 1px 0;
+  border-bottom: 1px solid #ddd;
+}
+#nav-main .submenu li,
+#nav-main .submenu li.hover {
+  background-image: none;
+}
+#nav-main .submenu li a,
+#nav-main .submenu li.hover a,
+#nav-main .submenu li a:link,
+#nav-main .submenu li.hover a:link,
+#nav-main .submenu li a:visited,
+#nav-main .submenu li.hover a:visited,
+#nav-main .submenu li span,
+#nav-main .submenu li.hover span {
+  overflow: hidden;
+  padding: 7px 10px;
+  margin: 0;
+  height: auto;
+  float: none;
+  display: block;
+  font-size: 11px;
+  font-size: 0.6875rem;
+  border: 0;
+  background: none;
+  position: relative;
+  -moz-transition: background 0.1s ease-in;
+  -webkit-transition: background 0.1s ease-in;
+  transition: background 0.1s ease-in;
+}
+#nav-main .submenu li a,
+#nav-main .submenu li.hover a,
+#nav-main .submenu li a:hover,
+#nav-main .submenu li.hover a:hover,
+#nav-main .submenu li a:focus,
+#nav-main .submenu li.hover a:focus,
+#nav-main .submenu li a:active,
+#nav-main .submenu li.hover a:active {
+  background: #e3ebf4;
+  background: rgba(152, 178, 201, 0.2);
+  -moz-transition: background 0.1s ease-out;
+  -webkit-transition: background 0.1s ease-out;
+  transition: background 0.1s ease-out;
+}
+#nav-main .submenu hr {
+  height: 5px;
+  margin: 0 auto 5px;
+  width: 170px;
+}
+/* Bug 925995 */
+html[dir="rtl"] #nav-main .submenu {
+  left: 999em;
+}
+/* Currently active menu items */
+#nav-mail ul li.current span,
+#nav-mail ul li.current a,
+#nav-mail ul li.current a:link,
+#nav-mail ul li.current a:visited {
+  background: #fbfdff;
+  padding-right: 30px;
+  padding-bottom: 15px;
+}
+#nav-mail ul li.current ul span,
+#nav-mail ul li.current ul a,
+#nav-mail ul li.current ul a:link,
+#nav-mail ul li.current ul a:visited {
+  background: none;
+  height: auto;
+  padding: 8px 10px;
+}
+/* {{{ Dark Background Header */
+.darkbg #nav-main ul li a,
+.darkbg #nav-main ul li a:link,
+.darkbg #nav-main ul li a:visited,
+.darkbg #nav-main ul li span {
+  color: #fff;
+  border-color: #555;
+}
+.darkbg #nav-main ul li li a,
+.darkbg #nav-main ul li li a:link,
+.darkbg #nav-main ul li li a:visited,
+.darkbg #nav-main ul li li span {
+  color: #484848;
+}
+.darkbg #nav-main ul li a:hover,
+.darkbg #nav-main ul li:hover a,
+.darkbg #nav-main ul li .hover a,
+.darkbg #nav-main ul li .hover a:link,
+.darkbg #nav-main ul li .hover a:visited {
+  background: #ccc;
+  color: #484848;
+}
+/* }}} */
+/* Mobile Layout: 320px */
+@media only screen and (max-width: 760px) {
+  #nav-main-menu {
+    margin: 15px 0 0 -10px;
+  }
+  #nav-main-menu li.hover a[aria-haspopup="true"] {
+    background-image: none;
+  }
+  #nav-main-menu .submenu,
+  .js #nav-main li.hover .submenu {
+    left: -999em;
+    top: auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.35);
+    opacity: 1;
+    padding: 0;
+  }
+  #nav-main-menu .submenu a,
+  #nav-main-menu .submenu a:link,
+  #nav-main-menu .submenu a:visited {
+    -moz-transition: none 0s;
+    -webkit-transition: none 0s;
+    transition: none 0s;
+  }
+}
