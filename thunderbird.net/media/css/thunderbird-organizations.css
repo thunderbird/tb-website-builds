@@ -26,6 +26,9 @@
   font-size: 1.5rem;
   line-height: 1.3;
 }
+#main-content {
+  margin: 0 10px;
+}
 #download .button {
   padding: 10px;
 }
