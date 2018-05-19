@@ -12,13 +12,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
 
-    <title>Thunderbird — Release Notes (52.6.0) — Mozilla</title>
+    <title>Thunderbird — 52.8.0 System Requirements — Mozilla</title>
     <meta name="description" content="">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Thunderbird">
     <meta property="og:locale" content="en_US">
     <meta property="og:image" content="https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png">
-    <meta property="og:title" content="Thunderbird — Release Notes (52.6.0)">
+    <meta property="og:title" content="Thunderbird — 52.8.0 System Requirements">
     <meta property="og:description" content="">
     <meta property="fb:page_id" content="348169218537151">
     <meta name="twitter:card" content="summary">
@@ -159,138 +159,72 @@
       
 
       
-<main role="main">
-  <article id="main-content">
+  <header id="main-feature">
+    <h1>Thunderbird 52.8.0 System Requirements</h1>
+  </header>
 
+  <div id="main-content">
+    <article class="main-column">
+        <h2>Windows</h2>
+<h3>Operating Systems</h3>
+<ul>
+<li>Windows XP SP3</li>
+<li>Windows Server 2003 SP1</li>
+<li>Windows Server 2003 R2</li>
+<li>Windows Server 2008</li>
+<li>Windows Server 2008 R2</li>
+<li>Windows Vista</li>
+<li>Windows 7</li>
+<li>Windows 8</li>
+<li>Windows 10</li>
+</ul>
+<p><em>Please note that while the 32-bit and 64-bit versions of Windows Vista and Windows 7 can be used to run Thunderbird, only 32-bit builds of Thunderbird are supported at this time.</em></p>
+<p><strong>Note that Thunderbird 52 is the last release to support Windows XP, Windows Server 2003, Windows Server 2003 R2, Windows 2008 and Windows Vista.</strong></p>
+<h3>Windows Recommended Hardware</h3>
+<ul>
+<li>Pentium 4 or newer processor that supports SSE2</li>
+<li>1GB RAM</li>
+<li>200 MB hard drive space</li>
+</ul>
+<hr />
+<h2>Mac</h2>
+<h3>Operating Systems</h3>
+<ul>
+<li>Mac OS X 10.9</li>
+<li>Mac OS X 10.10</li>
+<li>Mac OS X 10.11</li>
+<li>Mac OS X 10.12</li>
+</ul>
+<h3>Recommended Hardware</h3>
+<ul>
+<li>Macintosh computer with an Intel x86 processor</li>
+<li>512 MB RAM</li>
+<li>200 MB hard drive space</li>
+</ul>
+<hr />
+<h2>GNU/Linux</h2>
+<h3>Software Requirements</h3>
+<p><em>Please note that GNU/Linux distributors may provide packages for your distribution which have different requirements.</em></p>
+<ul>
+<li>Thunderbird will not run at all without the following libraries or packages:<ul>
+<li>GTK+ 3.4 or higher</li>
+<li>GLib 2.22 or higher</li>
+<li>Pango 1.14 or higher</li>
+<li>X.Org 1.0 or higher (1.7 or higher is recommended)</li>
+<li>libstdc++ 4.6.1 or higher</li>
+<li>PulseAudio</li>
+</ul>
+</li>
+<li>For optimal functionality, we recommend the following libraries or packages:<ul>
+<li>NetworkManager 0.7 or higher</li>
+<li>DBus 1.0 or higher</li>
+<li>GNOME 2.16 or higher</li>
+</ul>
+</li>
+</ul>
+    </article>
+  </div>
   
-    <header class="notes-head">
-    <h1>Thunderbird Release Notes</h1>
-    <h2>Version 52.6.0, first offered to  channel users on January 25, 2018</h2>
-
-      <p>
-        Check out "What’s New" and "Known Issues" for this version of Thunderbird below.
-      
-        As always, you’re encouraged to
-        <a href="https://support.mozilla.org/questions/new/thunderbird">tell us what you think</a>,
-        or <a href="https://bugzilla.mozilla.org/">file a bug in Bugzilla</a>.
-      
-      
-          If interested, please see the  <a href="https://bugzilla.mozilla.org/buglist.cgi?o1=equals&v1=58%2B&f1=cf_tracking_thunderbird_esr52&query_format=advanced">complete list of changes</a> in this release.
-      
-        <p><strong>System Requirements:<br />
-• Window: Windows XP, Windows Server 2003 or later<br />
-• Mac: Mac OS X 10.9 or later<br />
-• Linux: GTK+ 3.4 or higher</strong><br />
-Details <a href="https://thunderbird.net/en-US/thunderbird/52.0/system-requirements/">here</a>.</p>
-<p><strong>Please refer to <a href="https://thunderbird.net/en-US/thunderbird/52.0/releasenotes/">Release Notes for version 52.0</a> to see the list of improvements and fixed issues.</strong></p>
-      </p>
-    </header>
-  
-
-    <div class="main-column">
-      
-      <section class="notes-section" id="new-features">
-        <h3>What’s New</h3>
-        <ul class="section-items tagged">
-          
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
-              <p>Searching message bodies of messages in local folders, including filter and quick filter operations, not working reliably: Content not found in base64-encode message parts, non-ASCII text not found and false positives found.</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
-              <p>Defective messages (without at least one expected header) not shown in IMAP folders but shown on mobile devices</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
-              <p>Calendar: Unintended task deletion if numlock is enabled</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
-              <p>Various <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird52.6">security fixes</a></p>
-          </li>
-          
-        </ul>
-      </section>
-      
-      
-    </div>
-
-  
-    <aside id="sidebar" class="sidebar">
-      <section id="try">
-        <h3>Try Thunderbird Release</h3>
-        <ol>
-          <li class="try1">
-            <a href="/en-US/thunderbird/52.6.0/system-requirements/">
-              Check
-            </a>
-          </li>
-          <li class="try2">
-            <a href="/">
-              Download
-            </a>
-          </li>
-          <li class="try3">
-            <a href="https://support.mozilla.org/kb/Installing%20Thunderbird">
-              Install
-            </a>
-          </li>
-          <li class="try4">
-            <a href="https://addons.mozilla.org/thunderbird/">
-              Customize
-            </a>
-          </li>
-        </ol>
-      </section>
-
-      <section id="get-involved">
-        <h3>Want to get involved?</h3>
-        <p>Did you know that most of the content in Thunderbird Support was written by volunteers?<br>
-        <a href="https://wiki.mozilla.org/Thunderbird#Contributing">Find out more</a></p>
-      </section>
-
-      <section id="problems">
-        <h3>Having Problems?</h3>
-        <ol>
-          <li>
-            <a href="https://support.mozilla.org/products/thunderbird/">
-              Search for answers on the Thunderbird Support page
-            </a>
-          </li>
-          
-          <li>
-            <a href="https://bugzilla.mozilla.org/enter_bug.cgi">
-              If you can’t find reference to your issue, please consider filing a technical bug report
-            </a>
-          </li>
-        </ol>
-      </section>
-
-      <section id="other">
-        <h3>Other Resources</h3>
-        <p>
-          <a href="https://blog.mozilla.com/thunderbird/">
-            The Thunderbird Blog
-          </a>
-        </p>
-      </section>
-    </aside>
-  
-
-  </article>
-</main>
 
 
       
