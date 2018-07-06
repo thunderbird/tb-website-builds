@@ -177,7 +177,11 @@
       
           If interested, please see the  <a href="https://bugzilla.mozilla.org/buglist.cgi?classification=Client%20Software&query_format=advanced&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&target_milestone=Thunderbird%2060.0&product=Thunderbird&resolution=FIXED">complete list of changes</a> in this release.
       
-        <p>Draft release notes for Thunderbird 60 ESR collecting all release notes of versions 53 beta to 60 beta which have not been uplifted to TB 52 ESR.</p>
+        <p><strong>System Requirements:
+• Window: Windows 7, Windows Server 2008 R2 or later
+• Mac: Mac OS X 10.9 or later
+• Linux: GTK+ 3.4 or higher</strong>.
+Details <a href="/en-US/thunderbird/60.0/system-requirements/">here</a>.</p>
       </p>
     </header>
   
@@ -199,21 +203,28 @@
             
               <b class="tag tag-new">new</b>
             
-              <p>Further improvements to attachments handling during compose: "Attach" button moved to the right to be above the attachment pane. Alt+M now allows to show the attachment pane. The attachment pane can also be shown initially when composing a new message. Right-click on the header to enable this option. It is now also impossible to completely collapse a non-empty attachment pane. That protects against attachments accidentally being sent.</p>
+              <p>Many improvements to attachments handling during compose: Attachments can now be reordered. The "Attach" button moved to the right to be above the attachment pane. Alt+M now allows to show the attachment pane. The attachment pane can also be shown initially when composing a new message. Right-click on the header to enable this option. It is now also impossible to completely collapse a non-empty attachment pane. That protects against attachments accidentally being sent.</p>
           </li>
           
           <li  id="note-">
             
               <b class="tag tag-new">new</b>
             
-              <p>Edit Template command. This also solves various problems when saving as template (duplicates created, message ID lost).</p>
+              <p>"Edit Template" command. This also solves various problems when saving as template (duplicates created, message ID lost).</p>
           </li>
           
           <li  id="note-">
             
               <b class="tag tag-new">new</b>
             
-              <p>Thunderbird now allows the conversion of folders from mbox to maildir format and vice versa. This is an <strong>experimental</strong> feature that needs to be enabled by setting the preference mail.store_conversion_enabled. Note that this functionality does not not work if the option "Allow Windows Search/Spotlight to search messages" is selected.</p>
+              <p>"New Message from Template" command</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-new">new</b>
+            
+              <p>Allow changing the Spellcheck Language from status bar</p>
           </li>
           
           <li  id="note-">
@@ -228,69 +239,6 @@
               <b class="tag tag-new">new</b>
             
               <p>WebExtension themes are now enabled in Thunderbird</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-new">new</b>
-            
-              <p>Calendar: Allow copying, cutting or deleting of a selected occurrence or the entire series for recurring events</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-new">new</b>
-            
-              <p>Calendar: Provide an option to display locations for events in calendar day and week views</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-new">new</b>
-            
-              <p>Calendar: Provide the ability for sending/not sending meeting notifications directly instead of showing a popup</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-new">new</b>
-            
-              <p>When composing a message, attachments can now be reordered</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-new">new</b>
-            
-              <p>Calendar: Option to select the target calendar when pasting an event or task</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-new">new</b>
-            
-              <p>Calendar: Allow email scheduling for CalDAV servers supporting server-side scheduling</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-new">new</b>
-            
-              <p>Allow changing the Spellcheck Language from status bar display</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-new">new</b>
-            
-              <p>"New Message from Template" command</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-new">new</b>
-            
-              <p>Thunderbird Chat now contains multiple built-in message themes</p>
           </li>
           
           <li  id="note-">
@@ -323,6 +271,55 @@
           
           <li  id="note-">
             
+              <b class="tag tag-new">new</b>
+            
+              <p>Thunderbird now allows the conversion of folders from mbox to maildir format and vice versa. This is an <strong>experimental</strong> feature that needs to be enabled by setting the preference mail.store_conversion_enabled. Note that this functionality does not not work if the option "Allow Windows Search/Spotlight to search messages" is selected.</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-new">new</b>
+            
+              <p>Calendar: Allow copying, cutting or deleting of a selected occurrence or the entire series for recurring events</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-new">new</b>
+            
+              <p>Calendar: Provide an option to display locations for events in calendar day and week views</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-new">new</b>
+            
+              <p>Calendar: Provide the ability for sending/not sending meeting notifications directly instead of showing a popup</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-new">new</b>
+            
+              <p>Calendar: Option to select the target calendar when pasting an event or task</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-new">new</b>
+            
+              <p>Calendar: Allow email scheduling for CalDAV servers supporting server-side scheduling</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-new">new</b>
+            
+              <p>Thunderbird Chat now contains multiple built-in message themes</p>
+          </li>
+          
+          <li  id="note-">
+            
               <b class="tag tag-changed">changed</b>
             
               <p><strong>IMPORTANT:</strong> Add-ons not marked as compatible with Thunderbird 60 by their authors will be disabled (this can be reverted via preference extensions.strictCompatibility)</p>
@@ -339,6 +336,13 @@
             
               <b class="tag tag-changed">changed</b>
             
+              <p>IMAP: When after sending a message storing that sent message fails, the message can now be stored in a local folder</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-changed">changed</b>
+            
               <p>Add-on options can no longer be configured from the Add-on Manager page. A new menu item "Add-on Options" is now available on the Tools menu.</p>
           </li>
           
@@ -346,21 +350,7 @@
             
               <b class="tag tag-changed">changed</b>
             
-              <p>When customizing the From: address, Thunderbird will now use this address for the SMTP "MAIL FROM" command. Previously the address configured in the identity was used. The preference mail.smtp.useSenderForSmtpMailFrom allows return to the previous behavior.</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-changed">changed</b>
-            
-              <p>During address entry, the matching part of the address is now shown in bold. Preference mail.autoComplete.commentColumn allows to display the address book where the address is stored.</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-changed">changed</b>
-            
-              <p>Calendar: Removal of capability to send email invitations compatible to Outlook 2002 and earlier</p>
+              <p>When messages are composed in paragraph format, "body text" and split mail quotes are converted to paragraphs when pressing the enter key</p>
           </li>
           
           <li  id="note-">
@@ -388,7 +378,7 @@
             
               <b class="tag tag-changed">changed</b>
             
-              <p>Calendar: Reminders on read-only calendars can now be dismissed, while reminders for missed events will now only be displayed for writable calendars if option "Show missed reminders for writable calendars" is selected</p>
+              <p>During address entry, the matching part of the address is now shown in bold. Preference mail.autoComplete.commentColumn allows to display the address book where the address is stored.</p>
           </li>
           
           <li  id="note-">
@@ -396,6 +386,13 @@
               <b class="tag tag-changed">changed</b>
             
               <p>When attaching a message via drag and drop, the subject of the message is now used as attachment name instead of "Attached Message"</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-changed">changed</b>
+            
+              <p>Better address book photo handling: Photos can be added by drag and drop and a copy of all photos will be stored in the Thunderbird profile</p>
           </li>
           
           <li  id="note-">
@@ -416,21 +413,21 @@
             
               <b class="tag tag-changed">changed</b>
             
+              <p>When customizing the From: address, Thunderbird will now use this address for the SMTP "MAIL FROM" command. Previously the address configured in the identity was used. The preference mail.smtp.useSenderForSmtpMailFrom allows return to the previous behavior.</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-changed">changed</b>
+            
+              <p>Native notifications on Linux are now re-enabled</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-changed">changed</b>
+            
               <p>Thunderbird now uses Mozilla's latest proxy technology (add-on FoxyProxy now supported)</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-changed">changed</b>
-            
-              <p>IMAP: When after sending a message storing that sent message fails, the message can now be stored in a local folder</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-changed">changed</b>
-            
-              <p>When messages are composed in paragraph format, "body text" and split mail quotes are converted to paragraphs when pressing the enter key</p>
           </li>
           
           <li  id="note-">
@@ -444,21 +441,28 @@
             
               <b class="tag tag-changed">changed</b>
             
+              <p>Calendar: Removal of capability to send email invitations compatible to Outlook 2002 and earlier</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-changed">changed</b>
+            
+              <p>Calendar: Reminders on read-only calendars can now be dismissed, while reminders for missed events will now only be displayed for writable calendars if option "Show missed reminders for writable calendars" is selected</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-changed">changed</b>
+            
               <p>Thunderbird Chat: Nicknames inside of messages are colored to match the participants list</p>
           </li>
           
           <li  id="note-">
             
-              <b class="tag tag-changed">changed</b>
+              <b class="tag tag-fixed">fixed</b>
             
-              <p>Better address book photo handling: Photos can be added by drag and drop and a copy of all photos will be stored in the Thunderbird profile</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-changed">changed</b>
-            
-              <p>Native notifications on Linux are now re-enabled</p>
+              <p>When many Thunderbird clients or other email clients accessed the same IMAP draft folder, messages were sometimes sent with the wrong identity. This has been corrected and the user will be notified if none of their identities matches the draft. </p>
           </li>
           
           <li  id="note-">
@@ -493,21 +497,7 @@
             
               <b class="tag tag-fixed">fixed</b>
             
-              <p>Calendar: Wrong time formatting for some time zones</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
               <p>Text in the address book card view wasn't selectable</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
-              <p>When many Thunderbird clients or other email clients accessed the same IMAP draft folder, messages were sometimes sent with the wrong identity. This has been corrected and the user will be notified if none of their identities matches the draft. </p>
           </li>
           
           <li  id="note-">
@@ -535,13 +525,6 @@
             
               <b class="tag tag-fixed">fixed</b>
             
-              <p>Calendar: Can't copy information from event dialog for received invitations</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
               <p>Contacts sidebar: Selection and context menu behavior</p>
           </li>
           
@@ -557,6 +540,20 @@
               <b class="tag tag-fixed">fixed</b>
             
               <p>Thunderbird used a stale cached password after user edited a saved password</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-fixed">fixed</b>
+            
+              <p>Calendar: Wrong time formatting for some time zones</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-fixed">fixed</b>
+            
+              <p>Calendar: Can't copy information from event dialog for received invitations</p>
           </li>
           
         </ul>
