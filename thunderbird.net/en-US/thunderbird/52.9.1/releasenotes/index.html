@@ -12,13 +12,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
 
-    <title>Thunderbird — Beta Notes (60.0beta) — Mozilla</title>
+    <title>Thunderbird — Release Notes (52.9.1) — Mozilla</title>
     <meta name="description" content="">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Thunderbird">
     <meta property="og:locale" content="en_US">
     <meta property="og:image" content="https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png">
-    <meta property="og:title" content="Thunderbird — Beta Notes (60.0beta)">
+    <meta property="og:title" content="Thunderbird — Release Notes (52.9.1)">
     <meta property="og:description" content="">
     <meta property="fb:page_id" content="348169218537151">
     <meta name="twitter:card" content="summary">
@@ -164,8 +164,8 @@
 
   
     <header class="notes-head">
-    <h1>Thunderbird Beta Notes</h1>
-    <h2>Version 60.0beta, first offered to  channel users on March 26, 2018</h2>
+    <h1>Thunderbird Release Notes</h1>
+    <h2>Version 52.9.1, first offered to  channel users on July 10, 2018</h2>
 
       <p>
         Check out "What’s New" and "Known Issues" for this version of Thunderbird below.
@@ -175,9 +175,14 @@
         or <a href="https://bugzilla.mozilla.org/">file a bug in Bugzilla</a>.
       
       
-          If interested, please see the  <a href="https://bugzilla.mozilla.org/buglist.cgi?classification=Client%20Software&query_format=advanced&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&target_milestone=Thunderbird%2060.0&product=Thunderbird&resolution=FIXED">complete list of changes</a> in this release.
+          If interested, please see the  <a href="">complete list of changes</a> in this release.
       
-        <p><strong>These release notes apply to Thunderbird version 60 beta 10 released July 10th, 2018.</strong></p>
+        <p><strong>System Requirements:
+• Window: Windows XP, Windows Server 2003 or later
+• Mac: Mac OS X 10.9 or later
+• Linux: GTK+ 3.4 or higher</strong>
+Details <a href="https://thunderbird.net/en-US/thunderbird/52.0/system-requirements/">here</a>.</p>
+<p><strong>Please refer to <a href="https://thunderbird.net/en-US/thunderbird/52.0/releasenotes/">Release Notes for version 52.0</a> to see the list of improvements and fixed issues.</strong></p>
       </p>
     </header>
   
@@ -190,76 +195,6 @@
           
           <li  id="note-">
             
-              <b class="tag tag-new">new</b>
-            
-              <p>When writing a message, a delete button now allows the removal of a recipient. This delete button is displayed when hovering the To/Cc/Bcc selector.</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-new">new</b>
-            
-              <p>Further improvements to attachments handling during compose: "Attach" button moved to the right to be above the attachment pane. Alt+M now allows to show the attachment pane. The attachment pane can also be shown initially when composing a new message. Right-click on the header to enable this option. It is now also impossible to completely collapse a non-empty attachment pane. That protects against attachments accidentally being sent.</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-new">new</b>
-            
-              <p>Thunderbird now allows the conversion of folders from mbox to maildir format and vice versa. This is an <strong>experimental</strong> feature that needs to be enabled by setting the preference mail.store_conversion_enabled. Note that this functionality does not not work if the option "Allow Windows Search/Spotlight to search messages" is selected.</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-new">new</b>
-            
-              <p>Light and Dark themes</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-new">new</b>
-            
-              <p>WebExtension themes are now enabled in Thunderbird</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-new">new</b>
-            
-              <p>FIDO U2F support</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-new">new</b>
-            
-              <p>Calendar: Allow copying, cutting or deleting of a selected occurrence or the entire series for recurring events</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-new">new</b>
-            
-              <p>Calendar: Provide an option to display locations for events in calendar day and week views</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-new">new</b>
-            
-              <p>Calendar: Provide the ability for sending/not sending meeting notifications directly instead of showing a popup</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-changed">changed</b>
-            
-              <p><strong>IMPORTANT:</strong> Add-ons not marked as compatible with Thunderbird 60 by their authors will be disabled (this can be reverted via preference extensions.strictCompatibility)</p>
-          </li>
-          
-          <li  id="note-">
-            
               <b class="tag tag-changed">changed</b>
             
               <p>Thunderbird will now prompt to compact IMAP folders even if the account is online</p>
@@ -267,148 +202,51 @@
           
           <li  id="note-">
             
-              <b class="tag tag-changed">changed</b>
+              <b class="tag tag-fixed">fixed</b>
             
-              <p>Better address book photo handling: Photos can be added by drag and drop and a copy of all photos will be stored in the Thunderbird profile</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-changed">changed</b>
-            
-              <p>Native notifications on Linux are now re-enabled</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-changed">changed</b>
-            
-              <p>During address entry, the matching part of the address is now shown in bold. Preference mail.autoComplete.commentColumn allows to display the address book where the address is stored.</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-changed">changed</b>
-            
-              <p>Calendar: Removal of capability to send email invitations compatible to Outlook 2002 and earlier</p>
+              <p>Complete fix of the EFAIL vulnerability: 1) Removing some HTML crafted to carry out an attack. 2) Optionally: Not decrypting subordinate message parts that otherwise might reveal decrypted content to the attacker. Preference mailnews.p7m_subparts_external needs to be set to true for added security.</p>
           </li>
           
           <li  id="note-">
             
               <b class="tag tag-fixed">fixed</b>
             
-              <p>Various problems when forwarding messages inline: Some introduced in Thunderbird 60 beta 7, some dating back to 2005 when using "simple" HTML view.</p>
+              <p>Various problems when forwarding messages inline when using "simple" HTML view</p>
           </li>
           
           <li  id="note-">
             
               <b class="tag tag-fixed">fixed</b>
             
-              <p>The IMAP and News subscribe dialog did not present a folder tree (not working since Thunderbird version 59)</p>
+              <p>Deleting or detaching attachments corrupted messages under certain circumstances (not working only in Thunderbird version 52.9.0)</p>
           </li>
           
           <li  id="note-">
             
               <b class="tag tag-fixed">fixed</b>
             
-              <p>Messages moved between IMAP accounts were missing parts (embedded content or attachments) under some circumstances</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
-              <p>Better error handling for Gmail authentication to avoid re-downloading of folders</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
-              <p>Text in the address book card view wasn't selectable</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
-              <p>UTF-7 support (not working since Thunderbird version 56)</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
-              <p>Complete fix of the EFAIL vulnerability: 1) Removing some HTML crafted to carry out an attack. 2) Not decrypting subordinate message parts that otherwise might reveal decrypted content to the attacker. Preference mailnews.p7m_subparts_external controls this.</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
-              <p>Thunderbird used a stale cached password after user edited a saved password</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
-              <p>The new menu item "Add-on Options" introduced in Thunderbird 59 beta is now also working on Mac</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
-              <p>Source view not working for JS, XML, CSS, etc. source files via 'Developer Tools &gt; Error Console'. Other options: 1) Set preference view_source.editor.external and view_source.editor.path to view the source in the editor of your choice. 2) Use 'Developer Tools &gt; Developer Toolbox, Console'. (not working in earlier versions of Thunderbird 60 beta)</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
-              <p>Deleting or detaching attachments corrupted messages under certain circumstances (not working in earlier versions of Thunderbird 60 beta)</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
-              <p>Calendar: Google account credentials not retained by Lightning</p>
+              <p>Various <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird52.9">security fixes</a></p>
           </li>
           
         </ul>
       </section>
       
-      
-      <section class="notes-section" id="known-issues">
-        <h3>Known Issues</h3>
-        <ul class="section-items tagged">
-          
-            <li id="note-">
-              <b class="tag tag-unresolved">unresolved</b>
-              <p>Provider for Google Calendar not available</p>
-            
-            </li>
-          
-        </ul>
-      </section>
       
     </div>
 
   
     <aside id="sidebar" class="sidebar">
       <section id="try">
-        <h3>Try Thunderbird Beta</h3>
+        <h3>Try Thunderbird Release</h3>
         <ol>
           <li class="try1">
-            <a href="/en-US/thunderbird/60.0beta/system-requirements/">
+            <a href="/en-US/thunderbird/52.9.1/system-requirements/">
               Check
             </a>
           </li>
           <li class="try2">
             
-              <a href="/en-US/channel">
+              <a href="/">
             
             Download
             </a>
@@ -440,12 +278,6 @@
               Search for answers on the Thunderbird Support page
             </a>
           </li>
-          
-            <li>
-              <a href="#known-issues">
-                Look at the known issues list and see if we already know about the problem
-              </a>
-            </li>
           
           <li>
             <a href="https://bugzilla.mozilla.org/enter_bug.cgi">
