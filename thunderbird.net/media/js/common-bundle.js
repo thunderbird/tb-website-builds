@@ -44,7 +44,6 @@ if (typeof Mozilla === 'undefined') {
             var $el = $(this);
             var donate_link = $el.data('donate-link')
             $el.click(function() {
-                window.open(donate_link)
                 Utils.triggerIEDownload($el.data('direct-link'));
             });
         });
