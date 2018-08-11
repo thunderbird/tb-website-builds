@@ -34,8 +34,6 @@ if (typeof Mozilla === 'undefined') {
         if (link && window.site.platform === 'windows' && /MSIE\s[1-8]\./.test(ua)) {
             window.open(link, 'download_window', 'toolbar=0,location=no,directories=0,status=0,scrollbars=0,resizeable=0,width=1,height=1,top=0,left=0');
             window.focus();
-            window.open('https://donate.mozilla.org');
-            window.focus();
         }
     };
 
@@ -46,7 +44,6 @@ if (typeof Mozilla === 'undefined') {
             var $el = $(this);
             var donate_link = $el.data('donate-link')
             $el.click(function() {
-                window.open(donate_link)
                 Utils.triggerIEDownload($el.data('direct-link'));
             });
         });
