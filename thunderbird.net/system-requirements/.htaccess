@@ -1,2 +1,2 @@
 RewriteEngine On
-RewriteRule .* https://www.thunderbird.net/en-US/thunderbird/60.0/system-requirements/
+RewriteRule .* https://www.thunderbird.net/en-US/thunderbird/60.2.1/system-requirements/
