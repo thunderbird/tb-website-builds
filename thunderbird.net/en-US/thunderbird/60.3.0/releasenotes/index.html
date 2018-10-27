@@ -12,13 +12,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
 
-    <title>Thunderbird — Beta Notes (64.0beta) — Mozilla</title>
+    <title>Thunderbird — Release Notes (60.3.0) — Mozilla</title>
     <meta name="description" content="">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Thunderbird">
     <meta property="og:locale" content="en_US">
     <meta property="og:image" content="https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png">
-    <meta property="og:title" content="Thunderbird — Beta Notes (64.0beta)">
+    <meta property="og:title" content="Thunderbird — Release Notes (60.3.0)">
     <meta property="og:description" content="">
     <meta property="fb:page_id" content="348169218537151">
     <meta name="twitter:card" content="summary">
@@ -164,8 +164,8 @@
 
   
     <header class="notes-head">
-    <h1>Thunderbird Beta Notes</h1>
-    <h2>Version 64.0beta, first offered to  channel users on October 26, 2018</h2>
+    <h1>Thunderbird Release Notes</h1>
+    <h2>Version 60.3.0, first offered to  channel users on October 31, 2018</h2>
 
       <p>
         Check out "What’s New" and "Known Issues" for this version of Thunderbird below.
@@ -177,7 +177,17 @@
       
           If interested, please see the  <a href="">complete list of changes</a> in this release.
       
-        <p><strong>These release notes apply to Thunderbird version 64 beta 1 released October 26th, 2018.</strong></p>
+        <p><strong> Thunderbird version 60.3.0 provides an automatic update from Thunderbird version 52.</strong>
+If you have installed Lightning, Thunderbird's Calendar add-on, it will automatically
+be updated to match the new version of Thunderbird. Refer to this
+<a href="https://support.mozilla.org/en-US/kb/calendar-updates-issues-thunderbird">Calendar troubleshooting article</a>
+in case of problems.</p>
+<p><strong>System Requirements:
+• Window: Windows 7, Windows Server 2008 R2 or later
+• Mac: Mac OS X 10.9 or later
+• Linux: GTK+ 3.4 or higher</strong>.
+Details <a href="/en-US/thunderbird/60.0/system-requirements/">here</a>.</p>
+<p><strong>Please refer to <a href="https://thunderbird.net/en-US/thunderbird/60.0/releasenotes/">Release Notes for version 60.0</a> to see the list of improvements and fixed issues.</strong></p>
       </p>
     </header>
   
@@ -190,37 +200,9 @@
           
           <li  id="note-">
             
-              <b class="tag tag-changed">changed</b>
-            
-              <p><strong>ADD-ON SUPPORT: Restartless add-ons continue to work if their authors have made the necessary minor adjustments. Non-restartless legacy add-ons using XUL overlays are only supported if add-on authors have adapted them, and Lightning/Calendar is the only one we know that has been adapted.</strong></p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-changed">changed</b>
-            
-              <p>Changed UI when installing add-ons. Restart required for legacy extensions.</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-changed">changed</b>
-            
-              <p>Calendar: UI improvements for event dialog</p>
-          </li>
-          
-          <li  id="note-">
-            
               <b class="tag tag-fixed">fixed</b>
             
-              <p>Print preview not working in Thunderbird version 63 beta</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
-              <p>Various Theme fixes where incorrect colors, backgrounds, etc. were displayed. Folders with new messages not shown in bold on Mac.</p>
+              <p>Various Theme fixes where incorrect colors, backgrounds, etc. were displayed</p>
           </li>
           
           <li  id="note-">
@@ -262,34 +244,6 @@
             
               <b class="tag tag-fixed">fixed</b>
             
-              <p>S/MIME encryption/signing not working in Thunderbird version 63 beta</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
-              <p>Body search/filtering didn't reliably ignore content of tags</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
-              <p>Mails won't get removed from Trash folder using Maildir. Note: Other deletion issues related to Maildir still persist.</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
-              <p>If the "Date" header of a message was invalid, Jan 1970 or Dec 1969 was displayed. Now using date from "Received" header instead.</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
               <p>Mailing list address auto-complete enter/return handling</p>
           </li>
           
@@ -297,14 +251,14 @@
             
               <b class="tag tag-fixed">fixed</b>
             
-              <p>When sending of a message failed due a security issue, only "unknown error" was displayed. Now more details are given.</p>
+              <p>Thunderbird hung if HTML signature references non-existent image</p>
           </li>
           
           <li  id="note-">
             
               <b class="tag tag-fixed">fixed</b>
             
-              <p>"Select All" in mail view not working in Thunderbird version 63 beta</p>
+              <p>Filters not working for headers that appear more than once</p>
           </li>
           
         </ul>
@@ -317,25 +271,7 @@
           
             <li id="note-">
               <b class="tag tag-unresolved">unresolved</b>
-              <p>Spellcheck marks disappeared erroneously for words with an apostrophe</p>
-            
-            </li>
-          
-            <li id="note-">
-              <b class="tag tag-unresolved">unresolved</b>
-              <p>Editing a plaint text draft may display the entire message as quote (in blue)</p>
-            
-            </li>
-          
-            <li id="note-">
-              <b class="tag tag-unresolved">unresolved</b>
               <p>Chat: Twitter not working due to API changes at Twitter.com (solution forthcoming)</p>
-            
-            </li>
-          
-            <li id="note-">
-              <b class="tag tag-unresolved">unresolved</b>
-              <p>Chat: Participants not sorted</p>
             
             </li>
           
@@ -347,16 +283,16 @@
   
     <aside id="sidebar" class="sidebar">
       <section id="try">
-        <h3>Try Thunderbird Beta</h3>
+        <h3>Try Thunderbird Release</h3>
         <ol>
           <li class="try1">
-            <a href="/en-US/thunderbird/64.0beta/system-requirements/">
+            <a href="/en-US/thunderbird/60.3.0/system-requirements/">
               Check
             </a>
           </li>
           <li class="try2">
             
-              <a href="/en-US/channel">
+              <a href="/">
             
             Download
             </a>
