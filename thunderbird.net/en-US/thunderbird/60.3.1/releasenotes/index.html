@@ -201,7 +201,7 @@ Details <a href="/en-US/thunderbird/60.0/system-requirements/">here</a>.</p>
             
               <b class="tag tag-fixed">fixed</b>
             
-              <p>According to RFC 4616 and RFC 5721, passwords containing non-ASCII characters are encoded using UTF-8 which can lead to problems with non-compliant providers, for example office365.com. The SMTP LOGIN and POP3 USER/PASS authentication methods are now using a Latin1 encoding again to work around this issue.</p>
+              <p>According to RFC 4616 and RFC 5721, passwords containing non-ASCII characters are encoded using UTF-8 which can lead to problems with non-compliant providers, for example office365.com. The SMTP LOGIN and POP3 USER/PASS authentication methods are now using a Latin-1 encoding again to work around this issue.</p>
           </li>
           
           <li  id="note-">
@@ -225,6 +225,13 @@ Details <a href="/en-US/thunderbird/60.0/system-requirements/">here</a>.</p>
               <p>"Download rest of message" not working if global inbox was used</p>
           </li>
           
+          <li  id="note-">
+            
+              <b class="tag tag-fixed">fixed</b>
+            
+              <p>Encoding problems for users (especially in Poland) when a file was sent via a folder using "Sent to &gt; Mail recipient" due to a problem in the Thunderbird MAPI interface</p>
+          </li>
+          
         </ul>
       </section>
       
@@ -232,12 +239,6 @@ Details <a href="/en-US/thunderbird/60.0/system-requirements/">here</a>.</p>
       <section class="notes-section" id="known-issues">
         <h3>Known Issues</h3>
         <ul class="section-items tagged">
-          
-            <li id="note-">
-              <b class="tag tag-unresolved">unresolved</b>
-              <p>Encoding problems for Polish users when a file is sent via a folder using "Sent to &gt; Mail recipient"</p>
-            
-            </li>
           
             <li id="note-">
               <b class="tag tag-unresolved">unresolved</b>
