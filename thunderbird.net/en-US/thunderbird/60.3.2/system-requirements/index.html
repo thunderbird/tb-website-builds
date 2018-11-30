@@ -12,13 +12,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
 
-    <title>Thunderbird — Beta Notes (64.0beta) — Mozilla</title>
+    <title>Thunderbird — 60.3.2 System Requirements — Mozilla</title>
     <meta name="description" content="">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Thunderbird">
     <meta property="og:locale" content="en_US">
     <meta property="og:image" content="https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png">
-    <meta property="og:title" content="Thunderbird — Beta Notes (64.0beta)">
+    <meta property="og:title" content="Thunderbird — 60.3.2 System Requirements">
     <meta property="og:description" content="">
     <meta property="fb:page_id" content="348169218537151">
     <meta name="twitter:card" content="summary">
@@ -159,366 +159,67 @@
       
 
       
-<main role="main">
-  <article id="main-content">
+  <header id="main-feature">
+    <h1>Thunderbird 60.3.2 System Requirements</h1>
+  </header>
 
+  <div id="main-content">
+    <article class="main-column">
+        <h2>Windows</h2>
+<h3>Operating Systems</h3>
+<ul>
+<li>Windows 7</li>
+<li>Windows 8</li>
+<li>Windows 10</li>
+<li>Windows Server 2008 R2</li>
+</ul>
+<p><em>Please note that while the 32-bit and 64-bit versions of Windows can be used to run Thunderbird, only 32-bit builds of Thunderbird are supported at this time.</em></p>
+<p><strong>Note that as of Thunderbird 53, Thunderbird only supports Windows 7, 8, 10, and Windows Server 2008 R2.</strong></p>
+<h3>Windows Recommended Hardware</h3>
+<ul>
+<li>Pentium 4 or newer processor that supports SSE2</li>
+<li>1GB RAM</li>
+<li>200 MB hard drive space</li>
+</ul>
+<hr />
+<h2>Mac</h2>
+<h3>Operating Systems</h3>
+<ul>
+<li>Mac OS X 10.9</li>
+<li>Mac OS X 10.10</li>
+<li>Mac OS X 10.11</li>
+<li>Mac OS X 10.12</li>
+<li>Mac OS X 10.13</li>
+</ul>
+<h3>Recommended Hardware</h3>
+<ul>
+<li>Macintosh computer with an Intel x86 processor</li>
+<li>512 MB RAM</li>
+<li>200 MB hard drive space</li>
+</ul>
+<hr />
+<h2>GNU/Linux</h2>
+<h3>Software Requirements</h3>
+<p><em>Please note that GNU/Linux distributors may provide packages for your distribution which have different requirements.</em></p>
+<ul>
+<li>Thunderbird will not run at all without the following libraries or packages:<ul>
+<li>GTK+ 3.4 or higher</li>
+<li>GLib 2.22 or higher</li>
+<li>Pango 1.14 or higher</li>
+<li>X.Org 1.0 or higher (1.7 or higher is recommended)</li>
+<li>libstdc++ 4.6.1 or higher</li>
+</ul>
+</li>
+<li>For optimal functionality, we recommend the following libraries or packages:<ul>
+<li>NetworkManager 0.7 or higher</li>
+<li>DBus 1.0 or higher</li>
+<li>GNOME 2.16 or higher</li>
+</ul>
+</li>
+</ul>
+    </article>
+  </div>
   
-    <header class="notes-head">
-    <h1>Thunderbird Beta Notes</h1>
-    <h2>Version 64.0beta, first offered to  channel users on October 26, 2018</h2>
-
-      <p>
-        Check out "What’s New" and "Known Issues" for this version of Thunderbird below.
-      
-        As always, you’re encouraged to
-        <a href="https://support.mozilla.org/questions/new/thunderbird">tell us what you think</a>,
-        or <a href="https://bugzilla.mozilla.org/">file a bug in Bugzilla</a>.
-      
-      
-          If interested, please see the  <a href="">complete list of changes</a> in this release.
-      
-        <p><strong>These release notes apply to Thunderbird version 64 beta 4 released December 2nd, 2018.</strong></p>
-      </p>
-    </header>
-  
-
-    <div class="main-column">
-      
-      <section class="notes-section" id="new-features">
-        <h3>What’s New</h3>
-        <ul class="section-items tagged">
-          
-          <li  id="note-">
-            
-              <b class="tag tag-changed">changed</b>
-            
-              <p><strong>ADD-ON SUPPORT: Restartless add-ons continue to work if their authors have made the necessary minor adjustments. Non-restartless legacy add-ons using XUL overlays are only supported if add-on authors have adapted them, and Lightning/Calendar is the only one we know that has been adapted.</strong></p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-changed">changed</b>
-            
-              <p>Changed UI when installing add-ons. Restart required for legacy extensions.</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-changed">changed</b>
-            
-              <p>Calendar: UI improvements for event dialog</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
-              <p>Print preview not working in Thunderbird version 63 beta</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
-              <p>Various Theme fixes where incorrect colors, backgrounds, etc. were displayed. Folders with new messages not shown in bold on Mac.</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
-              <p>Add-on Options menu not working on Mac</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
-              <p>Shift+PageUp/PageDown in Write window</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
-              <p>Saving content of Write windows didn't overwrite existing file</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
-              <p>Issues related to "Edit Template" command</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
-              <p>Gloda attachment filtering</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
-              <p>S/MIME encryption/signing not working in Thunderbird version 63 beta</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
-              <p>Body search/filtering didn't reliably ignore content of tags</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
-              <p>Mails won't get removed from Trash folder using Maildir. Note: Other deletion issues related to Maildir still persist.</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
-              <p>If the "Date" header of a message was invalid, Jan 1970 or Dec 1969 was displayed. Now using date from "Received" header instead.</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
-              <p>Mailing list address auto-complete enter/return handling</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
-              <p>When sending of a message failed due a security issue, only "unknown error" was displayed. Now more details are given.</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
-              <p>"Select All" in mail view not working in Thunderbird version 63 beta</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-beta 2">Beta 2</b>
-            
-              <p>Fixed in Thunderbird 64 beta 2</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
-              <p>According to RFC 4616 and RFC 5721, passwords containing non-ASCII characters are encoded using UTF-8 which can lead to problems with non-compliant providers, for example office365.com. The SMTP LOGIN and POP3 USER/PASS authentication methods are now using a Latin-1 encoding again to work around this issue.</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
-              <p>"Download rest of message" not working if global inbox was used</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
-              <p>Shutdown crash/hang after entering an empty IMAP password</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-beta 3">Beta 3</b>
-            
-              <p>Fixed in Thunderbird 64 beta 3</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
-              <p>Cookie removal (not working since Thunderbird version 52)</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
-              <p>Encoding problems for users (especially in Poland) when a file was sent via a folder using "Sent to &gt; Mail recipient" due to a problem in the Thunderbird MAPI interface</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
-              <p>Under some circumstances Thunderbird on Mac would send attachments using the so-called AppleDouble format which could lead to problems with mail servers and recipients</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
-              <p>Encoding problems when exporting address books or messages using the system charset. Messages are now always exported using the UTF-8 encoding.</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-beta 4">Beta 4</b>
-            
-              <p>Fixed in Thunderbird 64 beta 4</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
-              <p>Inappropriate warning "Thunderbird prevented the site (addons.thunderbird.net) from asking you to install software on your computer" when installing add-ons</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
-              <p>Incorrect display of correspondents column since own email address was not always detected</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
-              <p>New email not inserted in correct sort order in threaded unified view or search folder</p>
-          </li>
-          
-        </ul>
-      </section>
-      
-      
-      <section class="notes-section" id="known-issues">
-        <h3>Known Issues</h3>
-        <ul class="section-items tagged">
-          
-            <li id="note-">
-              <b class="tag tag-unresolved">unresolved</b>
-              <p>Spurious &amp;#xA; (encoded newline) inserted into drafts and sent email (working in Thunderbird ESR, will be fixed in version 65 beta)</p>
-            
-            </li>
-          
-            <li id="note-">
-              <b class="tag tag-unresolved">unresolved</b>
-              <p>Double-clicking on a word in the Write window sometimes launches the Advanced Property Editor or Link Properties dialog (working in Thunderbird ESR, will be fixed in version 65 beta)</p>
-            
-            </li>
-          
-            <li id="note-">
-              <b class="tag tag-unresolved">unresolved</b>
-              <p>Spellcheck marks disappeared erroneously for words with an apostrophe (working in Thunderbird ESR)</p>
-            
-            </li>
-          
-            <li id="note-">
-              <b class="tag tag-unresolved">unresolved</b>
-              <p>Editing a plaint text draft may display the entire message as quote (in blue) (working in Thunderbird ESR, will be fixed in version 65 beta)</p>
-            
-            </li>
-          
-            <li id="note-">
-              <b class="tag tag-unresolved">unresolved</b>
-              <p>Chat: Twitter not working due to API changes at Twitter.com</p>
-            
-            </li>
-          
-            <li id="note-">
-              <b class="tag tag-unresolved">unresolved</b>
-              <p>Chat: Participants not sorted</p>
-            
-            </li>
-          
-        </ul>
-      </section>
-      
-    </div>
-
-  
-    <aside id="sidebar" class="sidebar">
-      <section id="try">
-        <h3>Try Thunderbird Beta</h3>
-        <ol>
-          <li class="try1">
-            <a href="/en-US/thunderbird/64.0beta/system-requirements/">
-              Check
-            </a>
-          </li>
-          <li class="try2">
-            
-              <a href="/en-US/channel">
-            
-            Download
-            </a>
-          </li>
-          <li class="try3">
-            <a href="https://support.mozilla.org/kb/Installing%20Thunderbird">
-              Install
-            </a>
-          </li>
-          <li class="try4">
-            <a href="https://addons.thunderbird.net">
-              Customize
-            </a>
-          </li>
-        </ol>
-      </section>
-
-      <section id="get-involved">
-        <h3>Want to get involved?</h3>
-        <p>Did you know that most of the content in Thunderbird Support was written by volunteers?<br>
-        <a href="https://wiki.mozilla.org/Thunderbird#Contributing">Find out more</a></p>
-      </section>
-
-      <section id="problems">
-        <h3>Having Problems?</h3>
-        <ol>
-          <li>
-            <a href="https://support.mozilla.org/products/thunderbird/">
-              Search for answers on the Thunderbird Support page
-            </a>
-          </li>
-          
-            <li>
-              <a href="#known-issues">
-                Look at the known issues list and see if we already know about the problem
-              </a>
-            </li>
-          
-          <li>
-            <a href="https://bugzilla.mozilla.org/enter_bug.cgi">
-              If you can’t find reference to your issue, please consider filing a technical bug report
-            </a>
-          </li>
-        </ol>
-      </section>
-
-      <section id="other">
-        <h3>Other Resources</h3>
-        <p>
-          <a href="https://blog.mozilla.com/thunderbird/">
-            The Thunderbird Blog
-          </a>
-        </p>
-      </section>
-    </aside>
-  
-
-  </article>
-</main>
 
 
       
