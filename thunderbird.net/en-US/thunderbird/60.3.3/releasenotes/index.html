@@ -165,7 +165,7 @@
   
     <header class="notes-head">
     <h1>Thunderbird Release Notes</h1>
-    <h2>Version 60.3.3, first offered to  channel users on December 4, 2018</h2>
+    <h2>Version 60.3.3, first offered to  channel users on December 5, 2018</h2>
 
       <p>
         Check out "What’s New" and "Known Issues" for this version of Thunderbird below.
@@ -201,14 +201,21 @@ Details <a href="/en-US/thunderbird/60.0/system-requirements/">here</a>.</p>
             
               <b class="tag tag-mitigated">mitigated</b>
             
-              <p>Thunderbird will upgrade security databases (key3.db, cert8.db to key4.db, cert9.db). The old databases were deleted even if the databases were protected by a master password and the master password was not available during the upgrade. This is now no longer the case.</p>
+              <p>Thunderbird 60 will migrate security databases (key3.db, cert8.db to key4.db, cert9.db). Thunderbird 60.3.2 and earlier contained a fault that potentially deleted saved passwords and private certificate keys for users using a master password. Version 60.3.3 will prevent the loss of data; affected users who have already upgraded to version 60.3.2 or earlier can restore the deleted key3.db file from backup to complete the migration.</p>
           </li>
           
           <li  id="note-">
             
               <b class="tag tag-fixed">fixed</b>
             
-              <p>Plain text markup with * for bold, / for italics, _ of underline and | for code did not work when the enclosed text contained non-ASCII characters</p>
+              <p>Address book search and auto-complete slowness introduced in Thunderbird 60.3.2</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-fixed">fixed</b>
+            
+              <p>Plain text markup with * for bold, / for italics, _ for underline and | for code did not work when the enclosed text contained non-ASCII characters</p>
           </li>
           
           <li  id="note-">
