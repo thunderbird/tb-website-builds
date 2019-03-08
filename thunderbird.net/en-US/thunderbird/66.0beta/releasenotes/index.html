@@ -184,7 +184,7 @@
       
           If interested, please see the  <a href="">complete list of changes</a> in this release.
       
-        <p><strong>These release notes apply to Thunderbird version 66 beta 2 released February 21st, 2019.</strong></p>
+        <p><strong>These release notes apply to Thunderbird version 66 beta 3 released March 8th, 2019.</strong></p>
       </p>
     </header>
   
@@ -258,6 +258,34 @@
               <p>Partly reverted MAPI changes from Thunderbird 65 beta 4 to mitigate malfunction</p>
           </li>
           
+          <li  id="note-">
+            
+              <b class="tag tag-<span style='font-weight:bold; font-size:16px;'>beta 3</span>"><span style='font-weight:bold; font-size:16px;'>Beta 3</span></b>
+            
+              <p><b>Fixed in Thunderbird 66 beta 3</b></p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-fixed">fixed</b>
+            
+              <p>Custom tag colors outside the prior fixed 10x7 matrix of HTML colors not working. Now any chosen colow will work.</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-fixed">fixed</b>
+            
+              <p>Fixed Windows installer with respect to MAPI DLLs and re-enabled MAPISendMailW which was disabled in beta 2.<br> If files with non-ASCII characters in their name still cause a malfunction, use one of the following two alternative solutions:<br> <ul> <li>Reset this registry entry<br>HKLM\SOFTWARE\Clients\Mail\Mozilla Thunderbird - SupportUTF8 to 0. Also reset HKLM\SOFTWARE\Wow6432Node\Clients\Mail\Mozilla Thunderbird - SupportUTF8 if present.</li> <li>On Windows 10, set the system code page to UTF-8 (beta feature, see Region Settings, system locale)</li> </ul></p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-fixed">fixed</b>
+            
+              <p>Chat: Fixed XMPP authentication when using SASL</p>
+          </li>
+          
         </ul>
       </section>
       
@@ -268,7 +296,7 @@
           
             <li id="note-">
               <b class="tag tag-unresolved">unresolved</b>
-              <p>On Windows, dragging message to the desktop or a folder is not working. This will be fixed in the next version.</p>
+              <p>On Windows, dragging message to the desktop or a folder is not working. This will be fixed in the next version Thunderbird 67 beta.</p>
             
             </li>
           
