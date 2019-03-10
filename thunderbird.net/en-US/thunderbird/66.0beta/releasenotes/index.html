@@ -276,6 +276,13 @@
             
               <b class="tag tag-fixed">fixed</b>
             
+              <p>On Windows, dragging message to the desktop or a folder is not working</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-fixed">fixed</b>
+            
               <p>Fixed Windows installer with respect to MAPI DLLs and re-enabled MAPISendMailW which was disabled in beta 2.<br> If files with non-ASCII characters in their name still cause a malfunction, use one of the following two alternative solutions:<br> <ul> <li>Reset this registry entry<br>HKLM\SOFTWARE\Clients\Mail\Mozilla Thunderbird - SupportUTF8 to 0. Also reset HKLM\SOFTWARE\Wow6432Node\Clients\Mail\Mozilla Thunderbird - SupportUTF8 if present.</li> <li>On Windows 10, set the system code page to UTF-8 (beta feature, see Region Settings, system locale)</li> </ul></p>
           </li>
           
@@ -293,12 +300,6 @@
       <section class="notes-section" id="known-issues">
         <h3>Known Issues</h3>
         <ul class="section-items tagged">
-          
-            <li id="note-">
-              <b class="tag tag-unresolved">unresolved</b>
-              <p>On Windows, dragging message to the desktop or a folder is not working. This will be fixed in the next version Thunderbird 67 beta.</p>
-            
-            </li>
           
             <li id="note-">
               <b class="tag tag-unresolved">unresolved</b>
