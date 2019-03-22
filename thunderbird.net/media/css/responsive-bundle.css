@@ -1299,6 +1299,7 @@ label.error {
   display: flex;
   flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
   text-align: center;
 }
 #masthead h2 {
@@ -1349,9 +1350,11 @@ label.error {
 #masthead nav li a:visited {
   color: #484848;
 }
-.html-rtl #tabzilla,
-.html-rtl #masthead nav {
+.html-rtl #tabzilla {
   float: left;
+}
+.html-rtl #masthead {
+  flex-direction: row-reverse;
 }
 #masthead .toggle {
   display: none;
@@ -1361,7 +1364,9 @@ label.error {
 /* {{{ Header Breadcrumbs */
 #masthead nav.breadcrumbs {
   padding: 0 10px 10px 10px;
-  float: none;
+  width: 100%;
+  text-align: left;
+  order: 1;
 }
 #masthead nav.breadcrumbs a,
 #masthead nav.breadcrumbs span {
@@ -2071,10 +2076,6 @@ nav.menu-bar ul li:first-child a {
   .container {
     width: 720px;
   }
-  #masthead {
-    flex-direction: column;
-    align-items: center;
-  }
   .main-column {
     float: left;
     width: 460px;
@@ -2208,6 +2209,10 @@ nav.menu-bar ul li:first-child a {
   .row {
     margin-left: auto;
   }
+  #masthead {
+    flex-direction: column-reverse;
+    align-items: start;
+  }
   #masthead .toggle {
     display: block;
     width: 32px;
@@ -2226,11 +2231,12 @@ nav.menu-bar ul li:first-child a {
   #masthead h2 {
     padding-top: 10px;
     padding-bottom: 10px;
+    order: 2;
   }
   #masthead nav {
-    float: none;
     padding-top: 10px;
     margin-left: 10px;
+    order: 3;
   }
   #masthead nav ul li {
     display: block;
@@ -2251,6 +2257,10 @@ nav.menu-bar ul li:first-child a {
   #masthead nav.breadcrumbs span {
     margin-right: .3em;
     margin-left: .3em;
+  }
+  .html-rtl #masthead {
+    flex-direction: column-reverse;
+    align-items: end;
   }
   .space #masthead nav li a,
   .blueprint #masthead nav li a,
@@ -2461,7 +2471,8 @@ nav.menu-bar ul li:first-child a {
   }
   .html-rtl #nav-main-menu {
     margin-left: 0;
-    margin-right: -20px;
+    margin-right: 0;
+    right: 60px;
   }
   .html-rtl #nav-main-menu:before {
     left: auto;
