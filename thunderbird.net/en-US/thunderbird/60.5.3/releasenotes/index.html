@@ -198,43 +198,52 @@ Details <a href="/en-US/thunderbird/60.0/system-requirements/">here</a>.</p>
     </header>
   
 
-    <div class="main-column">
+  <div class="main-column">
+    
+    <section class="notes-section" id="new-features">
+      <h3>What’s New</h3>
       
-      <section class="notes-section" id="new-features">
-        <h3>What’s New</h3>
+        
         <ul class="section-items tagged">
           
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
-              <p>Problem when using "Send to &gt; Mail recipient" on Windows introduced in version 60.5.2.<br> If files with non-ASCII characters in their name still cause a malfunction, use one of the following two alternative solutions:<br> <ul> <li>Reset this registry entry<br>HKLM\SOFTWARE\Clients\Mail\Mozilla Thunderbird - SupportUTF8 to 0. Also reset HKLM\SOFTWARE\Wow6432Node\Clients\Mail\Mozilla Thunderbird - SupportUTF8 if present.</li> <li>On Windows 10, set the system code page to UTF-8 (beta feature, see Region Settings, system locale)</li> </ul></p>
+          
+            <li  id="note-">
+              
+                <b class="tag tag-fixed">fixed</b>
+              
+                <p>Problem when using "Send to &gt; Mail recipient" on Windows introduced in version 60.5.2.<br> If files with non-ASCII characters in their name still cause a malfunction, use one of the following two alternative solutions:<br> <ul> <li>Reset this registry entry<br>HKLM\SOFTWARE\Clients\Mail\Mozilla Thunderbird - SupportUTF8 to 0. Also reset HKLM\SOFTWARE\Wow6432Node\Clients\Mail\Mozilla Thunderbird - SupportUTF8 if present.</li> <li>On Windows 10, set the system code page to UTF-8 (beta feature, see Region Settings, system locale)</li> </ul></p>
+            </li>
+          
+          
+          
+          
+          
+          
+        </ul>
+      
+    </section>
+    
+    
+    <section class="notes-section" id="known-issues">
+      <h3>Known Issues</h3>
+      <ul class="section-items tagged">
+        
+          <li id="note-">
+            <b class="tag tag-unresolved">unresolved</b>
+            <p>Due to changes in the Mozilla platform profiles stored on Windows network shares addressed via drive letters are now addressed via UNC</p>
+          
           </li>
+        
+          <li id="note-">
+            <b class="tag tag-unresolved">unresolved</b>
+            <p>Chat: Twitter not working due to API changes at Twitter.com</p>
           
-        </ul>
-      </section>
-      
-      
-      <section class="notes-section" id="known-issues">
-        <h3>Known Issues</h3>
-        <ul class="section-items tagged">
-          
-            <li id="note-">
-              <b class="tag tag-unresolved">unresolved</b>
-              <p>Due to changes in the Mozilla platform profiles stored on Windows network shares addressed via drive letters are now addressed via UNC</p>
-            
-            </li>
-          
-            <li id="note-">
-              <b class="tag tag-unresolved">unresolved</b>
-              <p>Chat: Twitter not working due to API changes at Twitter.com</p>
-            
-            </li>
-          
-        </ul>
-      </section>
-      
-    </div>
+          </li>
+        
+      </ul>
+    </section>
+    
+  </div>
 
   
     <aside id="sidebar" class="sidebar">

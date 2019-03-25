@@ -194,81 +194,102 @@ Details <a href="https://thunderbird.net/en-US/thunderbird/52.0/system-requireme
     </header>
   
 
-    <div class="main-column">
+  <div class="main-column">
+    
+    <section class="notes-section" id="new-features">
+      <h3>What’s New</h3>
       
-      <section class="notes-section" id="new-features">
-        <h3>What’s New</h3>
+        
         <ul class="section-items tagged">
           
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
-              <p>Google Oauth setup can sometimes not progress to the next step.</p>
-          </li>
           
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
-              <p>Background images not working and other issues related to embedded images when composing email .</p>
-          </li>
+            <li  id="note-">
+              
+                <b class="tag tag-fixed">fixed</b>
+              
+                <p>Google Oauth setup can sometimes not progress to the next step.</p>
+            </li>
           
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
-              <p>Various <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird52.1">security fixes</a>.</p>
-          </li>
+          
+          
+            <li  id="note-">
+              
+                <b class="tag tag-fixed">fixed</b>
+              
+                <p>Background images not working and other issues related to embedded images when composing email .</p>
+            </li>
+          
+          
+          
+            <li  id="note-">
+              
+                <b class="tag tag-fixed">fixed</b>
+              
+                <p>Various <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird52.1">security fixes</a>.</p>
+            </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
           
         </ul>
-      </section>
       
-      
-      <section class="notes-section" id="known-issues">
-        <h3>Known Issues</h3>
-        <ul class="section-items tagged">
+    </section>
+    
+    
+    <section class="notes-section" id="known-issues">
+      <h3>Known Issues</h3>
+      <ul class="section-items tagged">
+        
+          <li id="note-">
+            <b class="tag tag-unresolved">unresolved</b>
+            <p>Crash due to incompatibility with McAfee Anti-SPAM add-on. <strong>Workaround:</strong> Start in safe mode and disable McAfee Anti-Spam Extension.</p>
           
-            <li id="note-">
-              <b class="tag tag-unresolved">unresolved</b>
-              <p>Crash due to incompatibility with McAfee Anti-SPAM add-on. <strong>Workaround:</strong> Start in safe mode and disable McAfee Anti-Spam Extension.</p>
-            
-            </li>
+          </li>
+        
+          <li id="note-">
+            <b class="tag tag-unresolved">unresolved</b>
+            <p>Crash when compacting IMAP folder.</p>
           
-            <li id="note-">
-              <b class="tag tag-unresolved">unresolved</b>
-              <p>Crash when compacting IMAP folder.</p>
-            
-            </li>
+          </li>
+        
+          <li id="note-">
+            <b class="tag tag-unresolved">unresolved</b>
+            <p>Some attachments can't be opened or saved if the message body is empty.</p>
           
-            <li id="note-">
-              <b class="tag tag-unresolved">unresolved</b>
-              <p>Some attachments can't be opened or saved if the message body is empty.</p>
-            
-            </li>
+          </li>
+        
+          <li id="note-">
+            <b class="tag tag-unresolved">unresolved</b>
+            <p>Large number of blank pages being printed under certain circumstances. <strong>To fix this problem</strong>, remove all printer specific preferences in the configuration editor.</p>
           
-            <li id="note-">
-              <b class="tag tag-unresolved">unresolved</b>
-              <p>Large number of blank pages being printed under certain circumstances. <strong>To fix this problem</strong>, remove all printer specific preferences in the configuration editor.</p>
-            
-            </li>
+          </li>
+        
+          <li id="note-">
+            <b class="tag tag-unresolved">unresolved</b>
+            <p>Unable to load full message via POP if message was downloaded partially (or only headers) before.</p>
           
-            <li id="note-">
-              <b class="tag tag-unresolved">unresolved</b>
-              <p>Unable to load full message via POP if message was downloaded partially (or only headers) before.</p>
-            
-            </li>
+          </li>
+        
+          <li id="note-">
+            <b class="tag tag-unresolved">unresolved</b>
+            <p>Large attachments may not be shown or saved correctly if the message is stored in an IMAP folder which is not synchronized for offline use. <strong>Workaround</strong>: Set preference browser.cache.memory.max_entry_size to the value of -1 (unlimited) and create integer preference browser.cache.memory.capacity with the value of 200000 (200 MB, 25 MB per message).</p>
           
-            <li id="note-">
-              <b class="tag tag-unresolved">unresolved</b>
-              <p>Large attachments may not be shown or saved correctly if the message is stored in an IMAP folder which is not synchronized for offline use. <strong>Workaround</strong>: Set preference browser.cache.memory.max_entry_size to the value of -1 (unlimited) and create integer preference browser.cache.memory.capacity with the value of 200000 (200 MB, 25 MB per message).</p>
-            
-            </li>
-          
-        </ul>
-      </section>
-      
-    </div>
+          </li>
+        
+      </ul>
+    </section>
+    
+  </div>
 
   
     <aside id="sidebar" class="sidebar">

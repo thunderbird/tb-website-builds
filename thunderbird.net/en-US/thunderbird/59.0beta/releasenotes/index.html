@@ -189,114 +189,143 @@
     </header>
   
 
-    <div class="main-column">
+  <div class="main-column">
+    
+    <section class="notes-section" id="new-features">
+      <h3>What’s New</h3>
       
-      <section class="notes-section" id="new-features">
-        <h3>What’s New</h3>
+        
         <ul class="section-items tagged">
           
-          <li  id="note-">
-            
-              <b class="tag tag-new">new</b>
-            
-              <p>Further improvements to reordering attachments (introduced in Thunderbird 58 beta), including reordering by drag &amp; drop</p>
-          </li>
           
-          <li  id="note-">
-            
-              <b class="tag tag-new">new</b>
-            
-              <p>Edit Template command. This also solves various problems when saving as template (duplicates created, message ID lost).</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-new">new</b>
-            
-              <p>Calendar: Option to select the target calendar when pasting an event or task</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-changed">changed</b>
-            
-              <p>Add-on options can no longer be configured from the Add-on Manager page. A new menu item "Add-on Options" is now available on the Tools menu.</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-changed">changed</b>
-            
-              <p>When customizing the From: address, Thunderbird will now use this address for the SMTP "MAIL FROM" command. Previously the address configured in the identity was used. The preference mail.smtp.useSenderForSmtpMailFrom allows return to the previous behavior.</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-changed">changed</b>
-            
-              <p>Various updates to the Thunderbird theme. Thunderbird now uses <a href="https://design.firefox.com/icons/viewer/">Photon Icons</a>.</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-changed">changed</b>
-            
-              <p>Calendar: Reminders on read-only calendars can now be dismissed, while reminders for missed events will now only be displayed for writable calendars if option "Show missed reminders for writable calendars" is selected</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
-              <p>Various problems related to handling the IMAP trash folder: Under certain circumstances the selection of the trash folder didn't persist, for example when the name contained non-ASCII characters, or in localized versions of Thunderbird. At times unwanted additional trash folders were created. Selection of a trash folder didn't give immediate visual feedback.</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
-              <p>Searching message bodies of messages in local folders, including filter and quick filter operations, did not find content in message attachments</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
-              <p>Shared IMAP folders not shown in subscribe dialog under some circumstances</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
-              <p>Improvements encoding/decoding message headers</p>
-          </li>
-          
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
-              <p>Calendar: Wrong time formatting for some time zones</p>
-          </li>
-          
-        </ul>
-      </section>
-      
-      
-      <section class="notes-section" id="known-issues">
-        <h3>Known Issues</h3>
-        <ul class="section-items tagged">
-          
-            <li id="note-">
-              <b class="tag tag-unresolved">unresolved</b>
-              <p>The IMAP and News subscribe dialogue now presents a flat list of folders instead of a folder tree. This will be restored to its original form in the next release.</p>
-            
+            <li  id="note-">
+              
+                <b class="tag tag-new">new</b>
+              
+                <p>Further improvements to reordering attachments (introduced in Thunderbird 58 beta), including reordering by drag &amp; drop</p>
             </li>
           
+          
+          
+            <li  id="note-">
+              
+                <b class="tag tag-new">new</b>
+              
+                <p>Edit Template command. This also solves various problems when saving as template (duplicates created, message ID lost).</p>
+            </li>
+          
+          
+          
+            <li  id="note-">
+              
+                <b class="tag tag-new">new</b>
+              
+                <p>Calendar: Option to select the target calendar when pasting an event or task</p>
+            </li>
+          
+          
+          
+            <li  id="note-">
+              
+                <b class="tag tag-changed">changed</b>
+              
+                <p>Add-on options can no longer be configured from the Add-on Manager page. A new menu item "Add-on Options" is now available on the Tools menu.</p>
+            </li>
+          
+          
+          
+            <li  id="note-">
+              
+                <b class="tag tag-changed">changed</b>
+              
+                <p>When customizing the From: address, Thunderbird will now use this address for the SMTP "MAIL FROM" command. Previously the address configured in the identity was used. The preference mail.smtp.useSenderForSmtpMailFrom allows return to the previous behavior.</p>
+            </li>
+          
+          
+          
+            <li  id="note-">
+              
+                <b class="tag tag-changed">changed</b>
+              
+                <p>Various updates to the Thunderbird theme. Thunderbird now uses <a href="https://design.firefox.com/icons/viewer/">Photon Icons</a>.</p>
+            </li>
+          
+          
+          
+            <li  id="note-">
+              
+                <b class="tag tag-changed">changed</b>
+              
+                <p>Calendar: Reminders on read-only calendars can now be dismissed, while reminders for missed events will now only be displayed for writable calendars if option "Show missed reminders for writable calendars" is selected</p>
+            </li>
+          
+          
+          
+            <li  id="note-">
+              
+                <b class="tag tag-fixed">fixed</b>
+              
+                <p>Various problems related to handling the IMAP trash folder: Under certain circumstances the selection of the trash folder didn't persist, for example when the name contained non-ASCII characters, or in localized versions of Thunderbird. At times unwanted additional trash folders were created. Selection of a trash folder didn't give immediate visual feedback.</p>
+            </li>
+          
+          
+          
+            <li  id="note-">
+              
+                <b class="tag tag-fixed">fixed</b>
+              
+                <p>Searching message bodies of messages in local folders, including filter and quick filter operations, did not find content in message attachments</p>
+            </li>
+          
+          
+          
+            <li  id="note-">
+              
+                <b class="tag tag-fixed">fixed</b>
+              
+                <p>Shared IMAP folders not shown in subscribe dialog under some circumstances</p>
+            </li>
+          
+          
+          
+            <li  id="note-">
+              
+                <b class="tag tag-fixed">fixed</b>
+              
+                <p>Improvements encoding/decoding message headers</p>
+            </li>
+          
+          
+          
+            <li  id="note-">
+              
+                <b class="tag tag-fixed">fixed</b>
+              
+                <p>Calendar: Wrong time formatting for some time zones</p>
+            </li>
+          
+          
+          
+          
         </ul>
-      </section>
       
-    </div>
+    </section>
+    
+    
+    <section class="notes-section" id="known-issues">
+      <h3>Known Issues</h3>
+      <ul class="section-items tagged">
+        
+          <li id="note-">
+            <b class="tag tag-unresolved">unresolved</b>
+            <p>The IMAP and News subscribe dialogue now presents a flat list of folders instead of a folder tree. This will be restored to its original form in the next release.</p>
+          
+          </li>
+        
+      </ul>
+    </section>
+    
+  </div>
 
   
     <aside id="sidebar" class="sidebar">

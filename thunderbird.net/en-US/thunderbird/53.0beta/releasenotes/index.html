@@ -189,62 +189,77 @@
     </header>
   
 
-    <div class="main-column">
+  <div class="main-column">
+    
+    <section class="notes-section" id="new-features">
+      <h3>What’s New</h3>
       
-      <section class="notes-section" id="new-features">
-        <h3>What’s New</h3>
+        
         <ul class="section-items tagged">
           
-          <li  id="note-">
-            
-              <b class="tag tag-new">new</b>
-            
-              <p>A default startup directory in the address book window can now be configured.</p>
-          </li>
           
-          <li  id="note-">
-            
-              <b class="tag tag-fixed">fixed</b>
-            
-              <p>Background images not working and other issues related to embedded images when composing email.</p>
-          </li>
+            <li  id="note-">
+              
+                <b class="tag tag-new">new</b>
+              
+                <p>A default startup directory in the address book window can now be configured.</p>
+            </li>
+          
+          
+          
+            <li  id="note-">
+              
+                <b class="tag tag-fixed">fixed</b>
+              
+                <p>Background images not working and other issues related to embedded images when composing email.</p>
+            </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
           
         </ul>
-      </section>
       
-      
-      <section class="notes-section" id="known-issues">
-        <h3>Known Issues</h3>
-        <ul class="section-items tagged">
+    </section>
+    
+    
+    <section class="notes-section" id="known-issues">
+      <h3>Known Issues</h3>
+      <ul class="section-items tagged">
+        
+          <li id="note-">
+            <b class="tag tag-unresolved">unresolved</b>
+            <p>Datetime formatting is not working properly on the Linux 32bit platform. This results in party broken calendar views and incorrect event times - for users on this platform it is strictly recommended to backup the user profile before updating and <strong>disable Lightning after updating for the remaining lifetime of this version</strong> to avoid damages to calendar data.</p>
           
-            <li id="note-">
-              <b class="tag tag-unresolved">unresolved</b>
-              <p>Datetime formatting is not working properly on the Linux 32bit platform. This results in party broken calendar views and incorrect event times - for users on this platform it is strictly recommended to backup the user profile before updating and <strong>disable Lightning after updating for the remaining lifetime of this version</strong> to avoid damages to calendar data.</p>
-            
-            </li>
+          </li>
+        
+          <li id="note-">
+            <b class="tag tag-unresolved">unresolved</b>
+            <p>Large attachments may not be shown or saved correctly if the message is stored in an IMAP folder which is not synchronized for offline use. <strong>Workaround</strong>: Set preference browser.cache.memory.max_entry_size to the  value of -1 (unlimited) and create integer preference browser.cache.memory.capacity with the value of  200000 (200 MB, 25 MB per message).</p>
           
-            <li id="note-">
-              <b class="tag tag-unresolved">unresolved</b>
-              <p>Large attachments may not be shown or saved correctly if the message is stored in an IMAP folder which is not synchronized for offline use. <strong>Workaround</strong>: Set preference browser.cache.memory.max_entry_size to the  value of -1 (unlimited) and create integer preference browser.cache.memory.capacity with the value of  200000 (200 MB, 25 MB per message).</p>
-            
-            </li>
+          </li>
+        
+          <li id="note-">
+            <b class="tag tag-unresolved">unresolved</b>
+            <p>Crash due to incompatibility with McAfee Anti-SPAM add-on. <strong>Workaround</strong>:  Start in safe mode and disable McAfee Anti-Spam Extension.</p>
           
-            <li id="note-">
-              <b class="tag tag-unresolved">unresolved</b>
-              <p>Crash due to incompatibility with McAfee Anti-SPAM add-on. <strong>Workaround</strong>:  Start in safe mode and disable McAfee Anti-Spam Extension.</p>
-            
-            </li>
+          </li>
+        
+          <li id="note-">
+            <b class="tag tag-unresolved">unresolved</b>
+            <p>Crash when compacting IMAP folder.</p>
           
-            <li id="note-">
-              <b class="tag tag-unresolved">unresolved</b>
-              <p>Crash when compacting IMAP folder.</p>
-            
-            </li>
-          
-        </ul>
-      </section>
-      
-    </div>
+          </li>
+        
+      </ul>
+    </section>
+    
+  </div>
 
   
     <aside id="sidebar" class="sidebar">
