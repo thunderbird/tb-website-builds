@@ -196,6 +196,41 @@ Details <a href="https://thunderbird.net/en-US/thunderbird/52.0/system-requireme
 
     <div class="main-column">
       
+      <section class="notes-section" id="new-features">
+        <h3>What’s New</h3>
+        <ul class="section-items tagged">
+          
+          <li  id="note-">
+            
+              <b class="tag tag-changed">changed</b>
+            
+              <p>Thunderbird will now prompt to compact IMAP folders even if the account is online. Note: Under certain circumstances an incorrect estimate of the expected gain is shown.</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-fixed">fixed</b>
+            
+              <p>Complete fix of the EFAIL vulnerability: 1) Removing some HTML crafted to carry out an attack. 2) Optionally: Not decrypting subordinate message parts that otherwise might reveal decrypted content to the attacker. Preference mailnews.p7m_subparts_external needs to be set to true for added security.</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-fixed">fixed</b>
+            
+              <p>Various problems when forwarding messages inline when using "simple" HTML view</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-fixed">fixed</b>
+            
+              <p>Various <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird52.9">security fixes</a></p>
+          </li>
+          
+        </ul>
+      </section>
+      
       
       <section class="notes-section" id="known-issues">
         <h3>Known Issues</h3>

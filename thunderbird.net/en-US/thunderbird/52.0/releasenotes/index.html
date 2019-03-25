@@ -195,6 +195,265 @@ Details <a href="/en-US/thunderbird/52.0/system-requirements/">here</a>.</p>
 
     <div class="main-column">
       
+      <section class="notes-section" id="new-features">
+        <h3>What’s New</h3>
+        <ul class="section-items tagged">
+          
+          <li  id="note-">
+            
+              <b class="tag tag-new">new</b>
+            
+              <p>Folder pane toolbar and folder view selector (replacement for folder view arrows).</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-new">new</b>
+            
+              <p>Optionally remove corresponding data files when removing an account from Thunderbird.</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-new">new</b>
+            
+              <p>Import settings from Becky! Internet Mail.</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-new">new</b>
+            
+              <p>Possibility to copy message filter.</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-new">new</b>
+            
+              <p>Dictionary setting is restored when editing a draft. Content-Language header (RFC 3282) transmitted with message.</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-new">new</b>
+            
+              <p>Calendar: Event can now be created and edited in a tab.</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-new">new</b>
+            
+              <p>Calendar: Processing of received invitation counter proposals.</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-new">new</b>
+            
+              <p>Chat: Support Twitter Direct Messages.</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-new">new</b>
+            
+              <p>Chat: Liking and favoriting in Twitter.</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-new">new</b>
+            
+              <p>Chat: XMPP: Support SASL SCRAM authentication mechanism</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-new">new</b>
+            
+              <p>Chat: Support Jabber/XMPP Message Carbons (XEP-280).</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-changed">changed</b>
+            
+              <p><strong>IMPORTANT</strong>: The way images are included in a compose window has changed. Images are now included as data URIs and not as references to parts of other messages or operating system files. This allows better interoperability with office packages such as MS Office or LibreOffice. Images linked from locations on the internet will <strong>no longer</strong> be downloaded and attached to the message automatically. This can be changed for each image individually via the Image Properties dialog or globally by setting the preference mail.compose.attach_http_images.</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-changed">changed</b>
+            
+              <p>Correspondents column now default for all new folders, can be switched off with preference mail.threadpane.use_correspondents.</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-changed">changed</b>
+            
+              <p>On Linux PulseAudio is now required to play sound.</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-changed">changed</b>
+            
+              <p>Formatting toolbar is now left in place when delivery format is switched to plain text only.</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-changed">changed</b>
+            
+              <p>Messages in IMAP folders read on external device are now filtered by default.</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-changed">changed</b>
+            
+              <p>Folders backed by mbox storage larger than 4GB are supported without warning (unless preference mailnews.allowMboxOver4GB is set to false).</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-changed">changed</b>
+            
+              <p>IMAP caching now uses Mozilla's latest caching technology.</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-changed">changed</b>
+            
+              <p>The keyboard shortcut to insert hyperlinks into a compose window was changed from CTRL+L to CTRL+K to align with Office applications.</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-changed">changed</b>
+            
+              <p>Chat: Removed Yahoo! Messenger support (since <a href="https://web.archive.org/web/20160730080614/https://help.yahoo.com/kb/yahoo-messenger-for-web/SLN26860.html">Yahoo removed support</a>).</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-fixed">fixed</b>
+            
+              <p>Message preview pane non-functional after IMAP folder was renamed or moved.</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-fixed">fixed</b>
+            
+              <p>Editing in paragraph format: Pressing Shift+Enter sometimes doesn't move the cursor to the next line.</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-fixed">fixed</b>
+            
+              <p>Various corrections when composing messages in paragraph format.</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-fixed">fixed</b>
+            
+              <p>Paste as quotation doesn't always work.</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-fixed">fixed</b>
+            
+              <p>Long lines in plain text replies not properly wrapped.</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-fixed">fixed</b>
+            
+              <p>Undesired white-space before signature in paragraph mode.</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-fixed">fixed</b>
+            
+              <p>When attachment unavailable, compose shows endless "Attaching..." message instead of error.</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-fixed">fixed</b>
+            
+              <p>Text encoding of reply sometimes incorrect (uses encoding of last viewed message).</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-fixed">fixed</b>
+            
+              <p>Text encoding of message display, reply or forwarded message sometimes incorrect (uses encoding of attachment).</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-fixed">fixed</b>
+            
+              <p>Delivery Format not preserved for saved drafts (Auto-Detect|Plaintext|HTML|Both).</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-fixed">fixed</b>
+            
+              <p>Reply to own e-mail does not reply with the correct identity.</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-fixed">fixed</b>
+            
+              <p>IMAP message part caching.</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-fixed">fixed</b>
+            
+              <p>Links with escaped non-ASCII (international) characters can't be clicked.</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-fixed">fixed</b>
+            
+              <p>Calendar: Events specified in timezone 'local time' generate alerts in UTC time.</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-fixed">fixed</b>
+            
+              <p>Chat: XMPP Resource collisions.</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-fixed">fixed</b>
+            
+              <p>Various <a href="https://www.mozilla.org/security/known-vulnerabilities/thunderbird/#thunderbird52">security fixes</a>.</p>
+          </li>
+          
+        </ul>
+      </section>
+      
       
       <section class="notes-section" id="known-issues">
         <h3>Known Issues</h3>

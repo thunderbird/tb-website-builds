@@ -200,6 +200,55 @@ Details <a href="/en-US/thunderbird/60.0/system-requirements/">here</a>.</p>
 
     <div class="main-column">
       
+      <section class="notes-section" id="new-features">
+        <h3>What’s New</h3>
+        <ul class="section-items tagged">
+          
+          <li  id="note-">
+            
+              <b class="tag tag-fixed">fixed</b>
+            
+              <p>Double-clicking on a word in the Write window sometimes launched the Advanced Property Editor or Link Properties dialog</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-fixed">fixed</b>
+            
+              <p>Cookie removal (not working since Thunderbird version 52)</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-fixed">fixed</b>
+            
+              <p>"Download rest of message" not working if global inbox was used</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-fixed">fixed</b>
+            
+              <p>Encoding problems for users (especially in Poland) when a file was sent via a folder using "Sent to &gt; Mail recipient" due to a problem in the Thunderbird MAPI interface</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-fixed">fixed</b>
+            
+              <p>According to RFC 4616 and RFC 5721, passwords containing non-ASCII characters are encoded using UTF-8 which can lead to problems with non-compliant providers, for example office365.com. The SMTP LOGIN and POP3 USER/PASS authentication methods are now using a Latin-1 encoding again to work around this issue.</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-fixed">fixed</b>
+            
+              <p>Shutdown crash/hang after entering an empty IMAP password</p>
+          </li>
+          
+        </ul>
+      </section>
+      
       
       <section class="notes-section" id="known-issues">
         <h3>Known Issues</h3>

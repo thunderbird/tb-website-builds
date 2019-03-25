@@ -191,6 +191,230 @@
 
     <div class="main-column">
       
+      <section class="notes-section" id="new-features">
+        <h3>What’s New</h3>
+        <ul class="section-items tagged">
+          
+          <li  id="note-">
+            
+              <b class="tag tag-new">new</b>
+            
+              <p>FileLink for WeTransfer</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-new">new</b>
+            
+              <p>WebExtensions FileLink API to facilitate FileLink add-ons. WeTransfer is already included and Dropbox is available as <a href="https://addons.thunderbird.net/en-US/thunderbird/addon/cloudfile-provider-for-dropbox/">add-on</a>.</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-new">new</b>
+            
+              <p>Various theme improvements including a dark message list/thread pane</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-new">new</b>
+            
+              <p>When multiple language packs are installed, the UI language can now be selected in the Advanced Options. Preference intl.multilingual.enabled needs to be set (and possily also extensions.langpacks.signatures.required needs to be set to false)</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-changed">changed</b>
+            
+              <p><strong>ADD-ON SUPPORT: Restartless add-ons continue to work if their authors have made the necessary minor adjustments. Non-restartless legacy add-ons using XUL overlays are only supported if add-on authors have adapted them. </strong> Apart from Lightning/Calendar there are a few that have been adapted, like "ThunderHTMLedit", "Compact Header" and "Signature Switch". Instaling legacy add-ons now requires a restart. Legacy add-ons can now specify an options page again.</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-changed">changed</b>
+            
+              <p><strong> DICTIONARY SUPPORT: Only WebExtension dictionaries are supported now.</strong> Please download new dictionaries from addons.mozilla.org since addons.thunderbird.net still provides "legacy" dictionaries compatible with Thunderbird 60 ESR. This may change as soon as Thunderbird 60 ESR can also handle WebExtension dictionaries (planned for version 60.5).</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-changed">changed</b>
+            
+              <p>Reply to self will now search all identities (default of preference mailnews.reply_to_self_check_all_ident changed to true)</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-changed">changed</b>
+            
+              <p>Composition text and background colors no longer sent by default. New option in "Tools &gt; Options, Composition".</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-fixed">fixed</b>
+            
+              <p>Address book search and auto-complete slowness introduced in Thunderbird 64 beta</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-fixed">fixed</b>
+            
+              <p>Plain text markup with * for bold, / for italics, _ for underline and | for code did not work when the enclosed text contained non-ASCII characters</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-fixed">fixed</b>
+            
+              <p>While composing a message, a link not removed when link location was removed in the link properties panel</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-fixed">fixed</b>
+            
+              <p>Decoding problems for messages with less common charsets (cp932, cp936)</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-fixed">fixed</b>
+            
+              <p>Spurious &amp;#xA; (encoded newline) inserted into drafts and sent email</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-fixed">fixed</b>
+            
+              <p>Double-clicking on a word in the Write window sometimes launched the Advanced Property Editor or Link Properties dialog</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-fixed">fixed</b>
+            
+              <p>Editing a plaint text draft displayed the entire message as quote (in blue)</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-fixed">fixed</b>
+            
+              <p>New messages in the drafts folder (and other special or virtual folders) will no longer be included in the new messages notification</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-fixed">fixed</b>
+            
+              <p>Edit &gt; Undo didn't undo moving or deleting of messages</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-fixed">fixed</b>
+            
+              <p>Improvements of SMTP 5.7.1 message</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-<span style='font-weight:bold; font-size:16px;'>beta 2</span>"><span style='font-weight:bold; font-size:16px;'>Beta 2</span></b>
+            
+              <p><b>New and Fixed in Thunderbird 65 beta 2</b></p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-new">new</b>
+            
+              <p>Thunderbird now allows the addition of OpenSearch search engines from a local XML file using a minimal user inferface: [+] button to select a file an add, [-] to remove.</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-new">new</b>
+            
+              <p>During account creation, Thunderbird will now detect servers using the Microsoft Exchange protocol. It will offer the installation of a 3rd party add-on (Owl) which supports that protocol.</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-fixed">fixed</b>
+            
+              <p>Account creation sometimes shows an error: "Programming bug. Assertion failed, see log"</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-fixed">fixed</b>
+            
+              <p>Chat: Participants not sorted (not working since Thunderbird 63 beta)</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-<span style='font-weight:bold; font-size:16px;'>beta 3</span>"><span style='font-weight:bold; font-size:16px;'>Beta 3</span></b>
+            
+              <p><b>New and Fixed in Thunderbird 65 beta 3</b></p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-new">new</b>
+            
+              <p>More search engines: Google and DuckDuckGo available by default</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-fixed">fixed</b>
+            
+              <p>Crash when using "Send to &gt; Mail recipient" on Windows under some circumstances (MAPI interface)</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-<span style='font-weight:bold; font-size:16px;'>beta 4</span>"><span style='font-weight:bold; font-size:16px;'>Beta 4</span></b>
+            
+              <p><b>New and Fixed in Thunderbird 65 beta 4</b></p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-fixed">fixed</b>
+            
+              <p>Full Unicode support for MAPI interfaces: New support for MAPISendMailW, UTF-8 support for MAPISendMail</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-fixed">fixed</b>
+            
+              <p>Chat: Participants not sorted (follow-up)</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-fixed">fixed</b>
+            
+              <p>Calendar print preview not working</p>
+          </li>
+          
+          <li  id="note-">
+            
+              <b class="tag tag-fixed">fixed</b>
+            
+              <p>CalDav access to some servers not working</p>
+          </li>
+          
+        </ul>
+      </section>
+      
       
       <section class="notes-section" id="known-issues">
         <h3>Known Issues</h3>
