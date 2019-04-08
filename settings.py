@@ -44,6 +44,9 @@ CANONICAL_URL = 'https://www.thunderbird.net'
 # url for the server that serves Thunderbird downloads
 BOUNCER_URL = 'https://download.mozilla.org/'
 
+# url for the mozilla wiki used for some documentation.
+WIKI_URL = 'https://wiki.mozilla.org'
+
 # path for assets that need processing, like LESS and js
 ASSETS = 'assets'
 
@@ -60,24 +63,28 @@ JSON_PATH = 'product-details-json/product-details/'
 
 ALL_PLATFORMS = ('windows', 'linux', 'mac')
 
+# Mappings for the helper.url function.
+# 'thunderbird.sysreq' and 'wiki.moz' have special behaviour.
 URL_MAPPINGS = {
     'calendar': '/calendar',
     'firefox.dnt': 'https://www.mozilla.org/firefox/dnt/',
     'firefox.organizations.faq': 'https://www.mozilla.org/firefox/organizations/faq/',
     'foundation.licensing.website-content': 'https://www.mozilla.org/foundation/licensing/website-content/',
+    'foundation.about': 'https://foundation.mozilla.org/about/',
+    'thunderbird.about': '/about',
     'thunderbird.channel': '/channel',
+    'thunderbird.contact': '/contact',
     'thunderbird.enterprise': 'https://wiki.mozilla.org/Thunderbird/tb-enterprise',
     'thunderbird.features': '/features',
     'thunderbird.get-involved': '/get-involved',
     'thunderbird.index': '/',
     'thunderbird.organizations': '/organizations',
     'thunderbird.releases.index': '/thunderbird/releases',
+    'thunderbird.style': 'https://style.thunderbird.net',
     'thunderbird.latest.all': '/thunderbird/all/',
     'thunderbird.site.bug-report': 'https://github.com/thundernest/thunderbird-website/issues',
     'contribute': 'https://github.com/thundernest/thunderbird-website',
     'mozorg.home': 'https://www.mozilla.org/',
-    'mozorg.about': 'https://www.mozilla.org/about/',
-    'thunderbird.contact': '/contact',
     'legal.fraud-report': 'https://www.mozilla.org/about/legal/fraud-report/',
     'legal.index': 'https://www.mozilla.org/about/legal/',
     'privacy': 'https://www.mozilla.org/privacy/',
@@ -87,6 +94,12 @@ URL_MAPPINGS = {
     'blog': 'https://blog.mozilla.org/thunderbird'
 
 }
+
+ENUS_ONLY = [
+    'thunderbird.get-involved',
+    'thunderbird.contact',
+    'thunderbird.organizations',
+]
 
 DONATE_LINK = (
     'https://donate.mozilla.org/thunderbird/'
