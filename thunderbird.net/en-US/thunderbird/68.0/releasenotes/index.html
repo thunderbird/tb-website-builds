@@ -12,13 +12,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
 
-    <title>Thunderbird — Beta Notes (69.0beta) — Mozilla</title>
+    <title>Thunderbird — Release Notes (68.0) — Mozilla</title>
     <meta name="description" content="">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Thunderbird">
     <meta property="og:locale" content="en_US">
     <meta property="og:image" content="https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png">
-    <meta property="og:title" content="Thunderbird — Beta Notes (69.0beta)">
+    <meta property="og:title" content="Thunderbird — Release Notes (68.0)">
     <meta property="og:description" content="">
     <meta property="fb:page_id" content="348169218537151">
     <meta name="twitter:card" content="summary">
@@ -171,8 +171,8 @@
 
   
     <header class="notes-head">
-    <h1>Thunderbird Beta Notes</h1>
-    <h2>Version 69.0beta, first offered to  channel users on July 26, 2019</h2>
+    <h1>Thunderbird Release Notes</h1>
+    <h2>Version 68.0, first offered to  channel users on August 15, 2019</h2>
 
       <p>
         Check out "What’s New" and "Known Issues" for this version of Thunderbird below.
@@ -184,7 +184,18 @@
       
           If interested, please see the  <a href="">complete list of changes</a> in this release.
       
-        <p><strong>These release notes apply to Thunderbird version 69 beta 3 released August 16th, 2019.</strong></p>
+        <p><strong> Thunderbird version 68.0 is only offered as direct download from
+<a href="https://www.thunderbird.net">thunderbird.net</a> and not as upgrade from Thunderbird version 60
+or earlier. A future version 68.1 will provide updates from earlier versions.
+If you have installed Lightning, Thunderbird's calendar add-on, it will automatically
+be updated to match the new version of Thunderbird.</strong> Refer to this
+<a href="https://support.mozilla.org/en-US/kb/calendar-updates-issues-thunderbird">Calendar troubleshooting article</a>
+in case of problems.</p>
+<p><strong>System Requirements:
+• Window: Windows 7, Windows Server 2008 R2 or later
+• Mac: Mac OS X 10.9 or later
+• Linux: GTK+ 3.4 or higher</strong>.
+Details <a href="/en-US/thunderbird/68.0/system-requirements/">here</a>.</p>
       </p>
     </header>
   
@@ -200,49 +211,280 @@
           
             <li  id="note-">
               
-                <b class="tag tag-fixed">fixed</b>
+                <b class="tag tag-new">new</b>
               
-                <p>While Thunderbird was in safe mode, the help menu did not offer an item to restart with add-ons enabled</p>
+                <p>File link attachments can now be linked to again instead of uploading them again</p>
             </li>
           
           
           
+            <li  id="note-">
+              
+                <b class="tag tag-new">new</b>
+              
+                <p>Mark all folders of an account as read</p>
+            </li>
           
           
           
+            <li  id="note-">
+              
+                <b class="tag tag-new">new</b>
+              
+                <p>Run filters periodically. Improved filter logging.</p>
+            </li>
           
           
           
+            <li  id="note-">
+              
+                <b class="tag tag-new">new</b>
+              
+                <p>OAuth2 authentication for Yandex</p>
+            </li>
           
           
           
+            <li  id="note-">
+              
+                <b class="tag tag-new">new</b>
+              
+                <p>Language packs can now be selected in the Advanced Options. Preference intl.multilingual.enabled needs to be set (and possily also extensions.langpacks.signatures.required needs to be set to false)</p>
+            </li>
           
           
           
+            <li  id="note-">
+              
+                <b class="tag tag-new">new</b>
+              
+                <p>On Windows a 64bit installer and MSI package are now available, see the <a href="https://www.thunderbird.net/en-US/organizations/">Thunderbird for Organisations</a> page for details</p>
+            </li>
           
           
           
+            <li  id="note-">
+              
+                <b class="tag tag-new">new</b>
+              
+                <p>Added a policy engine that allows customized Thunderbird deployments in enterprise environments, using Windows Group Policy or a cross-platform JSON file</p>
+            </li>
           
           
           
+            <li  id="note-">
+              
+                <b class="tag tag-new">new</b>
+              
+                <p>TCP keepalive for IMAP protocol</p>
+            </li>
           
           
           
+            <li  id="note-">
+              
+                <b class="tag tag-new">new</b>
+              
+                <p>Full Unicode support for MAPI interfaces: New support for MAPISendMailW</p>
+            </li>
           
           
           
+            <li  id="note-">
+              
+                <b class="tag tag-new">new</b>
+              
+                <p>To protect your profile data against a downgrade, Thunderbird 68 may display a message "You have launched an older version of Thunderbird" and will not allow opening a specific profile. Workaround: start with option --allow-downgrade. See <a href="https://support.mozilla.org/kb/unable-launch-older-version-profile">this support article</a> for details.</p>
+            </li>
           
           
           
+            <li  id="note-">
+              
+                <b class="tag tag-new">new</b>
+              
+                <p>Calendar: Time zone data can now include past and future changes. All known time zone changes from 2018 to 2022 are included.</p>
+            </li>
           
           
-        </ul>
-      
-        
-          <h4>Fixed in Beta 2</h4>
-        
-        <ul class="section-items tagged">
           
+            <li  id="note-">
+              
+                <b class="tag tag-new">new</b>
+              
+                <p>Chat: In each conversation an individual spellcheck language can be selected now</p>
+            </li>
+          
+          
+          
+            <li  id="note-">
+              
+                <b class="tag tag-changed">changed</b>
+              
+                <p><strong>Add-on support: Add-ons are only supported if add-on authors have adapted them</strong></p>
+            </li>
+          
+          
+          
+            <li  id="note-">
+              
+                <b class="tag tag-changed">changed</b>
+              
+                <p><strong> Dictionary support: Only WebExtension dictionaries are supported now.</strong> Both addons.mozilla.org and addons.thunderbird.net now provide WebExtension dictionaries.</p>
+            </li>
+          
+          
+          
+            <li  id="note-">
+              
+                <b class="tag tag-changed">changed</b>
+              
+                <p><strong> Theme support: Only WebExtension themes are supported now.</strong> Both addons.mozilla.org and addons.thunderbird.net now provide WebExtension themes.</p>
+            </li>
+          
+          
+          
+            <li  id="note-">
+              
+                <b class="tag tag-changed">changed</b>
+              
+                <p>The stand-alone options window has been removed, all options are now shown in a tab</p>
+            </li>
+          
+          
+          
+            <li  id="note-">
+              
+                <b class="tag tag-changed">changed</b>
+              
+                <p>Changed UI when installing add-ons</p>
+            </li>
+          
+          
+          
+            <li  id="note-">
+              
+                <b class="tag tag-changed">changed</b>
+              
+                <p>Various theme improvements including a dark message list/thread pane</p>
+            </li>
+          
+          
+          
+            <li  id="note-">
+              
+                <b class="tag tag-changed">changed</b>
+              
+                <p>Application menu aka "Hamburger menu"</p>
+            </li>
+          
+          
+          
+            <li  id="note-">
+              
+                <b class="tag tag-changed">changed</b>
+              
+                <p>Improvements when entering, selecting and removing recipients in the Write window</p>
+            </li>
+          
+          
+          
+            <li  id="note-">
+              
+                <b class="tag tag-changed">changed</b>
+              
+                <p>FileLink: WeTransfer is already included. <a href="https://addons.thunderbird.net/en-US/thunderbird/addon/cloudfile-provider-for-dropbox/">Dropbox</a> and <a href="https://addons.thunderbird.net/en-GB/thunderbird/addon/filelink-provider-for-box/">Box.com</a> using the new WebExtensions FileLink API are available as add-ons, amongst others.</p>
+            </li>
+          
+          
+          
+            <li  id="note-">
+              
+                <b class="tag tag-changed">changed</b>
+              
+                <p>Text and background colors in the Write window and custom colors for tags are no longer restricted to a fixed 10x7 matrix of HTML colors</p>
+            </li>
+          
+          
+          
+            <li  id="note-">
+              
+                <b class="tag tag-changed">changed</b>
+              
+                <p>Composition text and background colors no longer sent by default. New option in "Tools &gt; Options, Composition".</p>
+            </li>
+          
+          
+          
+            <li  id="note-">
+              
+                <b class="tag tag-changed">changed</b>
+              
+                <p>UI improvements for external and detached attachments, now showing as links with new menu option "Open Containing Folder"</p>
+            </li>
+          
+          
+          
+            <li  id="note-">
+              
+                <b class="tag tag-changed">changed</b>
+              
+                <p>Improved phishing attempt detection for messages with certain forms</p>
+            </li>
+          
+          
+          
+            <li  id="note-">
+              
+                <b class="tag tag-changed">changed</b>
+              
+                <p>Improvements to scam warnings</p>
+            </li>
+          
+          
+          
+            <li  id="note-">
+              
+                <b class="tag tag-changed">changed</b>
+              
+                <p>Reply to self will now search all identities (default of preference mailnews.reply_to_self_check_all_ident changed to true)</p>
+            </li>
+          
+          
+          
+            <li  id="note-">
+              
+                <b class="tag tag-changed">changed</b>
+              
+                <p>Maildir now uses the message ID as file name and "eml" as file extension</p>
+            </li>
+          
+          
+          
+            <li  id="note-">
+              
+                <b class="tag tag-changed">changed</b>
+              
+                <p>Auto-compact threshold increased from 20 MB to 200 MB</p>
+            </li>
+          
+          
+          
+            <li  id="note-">
+              
+                <b class="tag tag-changed">changed</b>
+              
+                <p>Calendar: UI improvements for event dialog</p>
+            </li>
+          
+          
+          
+            <li  id="note-">
+              
+                <b class="tag tag-changed">changed</b>
+              
+                <p>Calendar: Thunderbird's calendar add-on Lightning now uses the same version numbering scheme</p>
+            </li>
           
           
           
@@ -250,7 +492,7 @@
               
                 <b class="tag tag-fixed">fixed</b>
               
-                <p>Chat text input area had near zero height (in beta 1)</p>
+                <p>Global indexer causing high CPU loads under some circumstances</p>
             </li>
           
           
@@ -259,7 +501,7 @@
               
                 <b class="tag tag-fixed">fixed</b>
               
-                <p>Links on Help menu not working (in beta 1)</p>
+                <p>Tags set on IMAP folders sometimes not visible to other users</p>
             </li>
           
           
@@ -268,7 +510,7 @@
               
                 <b class="tag tag-fixed">fixed</b>
               
-                <p>New email notification not properly formatted in some cases</p>
+                <p>SMTP password wasn't removed when account was deleted or server or user name were changed</p>
             </li>
           
           
@@ -277,7 +519,7 @@
               
                 <b class="tag tag-fixed">fixed</b>
               
-                <p>F6 focus in address book not correct</p>
+                <p>Mbox to Maildir conversion not working if Windows search integration is enabled</p>
             </li>
           
           
@@ -286,55 +528,7 @@
               
                 <b class="tag tag-fixed">fixed</b>
               
-                <p>Some visual glitches: Wrong colors, backgrounds, tooltips, etc.</p>
-            </li>
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-        </ul>
-      
-        
-          <h4>Fixed in Beta 3</h4>
-        
-        <ul class="section-items tagged">
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-            <li  id="note-">
-              
-                <b class="tag tag-fixed">fixed</b>
-              
-                <p>Column choice and sort order in "Search Messages" dialog lost after relaunch</p>
+                <p>Mails won't get removed from Trash folder using Maildir. Note: Other deletion issues related to Maildir may still persist.</p>
             </li>
           
           
@@ -343,7 +537,7 @@
               
                 <b class="tag tag-fixed">fixed</b>
               
-                <p>Theme installation not working via the Add-on Manager (in beta 1 and 2)</p>
+                <p>When sending of a message failed due a security issue, only "unknown error" was displayed. Now more details are given.</p>
             </li>
           
           
@@ -352,7 +546,7 @@
               
                 <b class="tag tag-fixed">fixed</b>
               
-                <p>The spellchecker marked words preceding a single quote as misspelled (in beta 2)</p>
+                <p>Improvements of SMTP 5.7.1 message</p>
             </li>
           
           
@@ -361,85 +555,39 @@
               
                 <b class="tag tag-fixed">fixed</b>
               
-                <p>More visual glitches: Attachment pane height, link color for detached/external attachments, dark theme, compose window toolbar, error console window title</p>
+                <p>Calendar: Multiple connections with different users to the same CalDAV server not working</p>
             </li>
           
           
           
-          
-          
-          
-          
-          
-          
-          
-          
-          
+            <li  id="note-">
+              
+                <b class="tag tag-fixed">fixed</b>
+              
+                <p>Chat: Fixed XMPP authentication when using SASL</p>
+            </li>
           
           
         </ul>
       
     </section>
     
-    
-    <section class="notes-section" id="known-issues">
-      <h3>Known Issues</h3>
-      <ul class="section-items tagged">
-        
-          <li id="note-">
-            <b class="tag tag-unresolved">unresolved</b>
-            <p>Links containing a #reference don't open correctly in the external browser. External browser may open in a background window.</p>
-          
-          </li>
-        
-          <li id="note-">
-            <b class="tag tag-unresolved">unresolved</b>
-            <p>Opening the properties of a folder may hang on Mac</p>
-          
-          </li>
-        
-          <li id="note-">
-            <b class="tag tag-unresolved">unresolved</b>
-            <p>Mail header toolbar (Reply, Forward, Archive, Junk buttons) no longer configurable</p>
-          
-          </li>
-        
-          <li id="note-">
-            <b class="tag tag-unresolved">unresolved</b>
-            <p>Thunderbird 69 beta may not recognise an existing profile. Workaround: start with the profile manager option -p.</p>
-          
-          </li>
-        
-          <li id="note-">
-            <b class="tag tag-unresolved">unresolved</b>
-            <p>Calendar: A localized version of Provider for Google Calendar not available at addons.thunderbird.net or the Mozilla FTP server. A US-English version can be downloaded <a href="http://ftp.mozilla.org/pub/thunderbird/releases/69.0b2/en-US/gdata-provider.en-US.xpi">here</a>. The XPI file needs to be installed manually in Thunderbird.</p>
-          
-          </li>
-        
-          <li id="note-">
-            <b class="tag tag-unresolved">unresolved</b>
-            <p>Chat: Twitter not working due to API changes at Twitter.com.</p>
-          
-          </li>
-        
-      </ul>
-    </section>
     
   </div>
 
   
     <aside id="sidebar" class="sidebar">
       <section id="try">
-        <h3>Try Thunderbird Beta</h3>
+        <h3>Try Thunderbird Release</h3>
         <ol>
           <li class="try1">
-            <a href="/en-US/thunderbird/69.0beta/system-requirements/">
+            <a href="/en-US/thunderbird/68.0/system-requirements/">
               Check
             </a>
           </li>
           <li class="try2">
             
-              <a href="/en-US/channel">
+              <a href="/">
             
             Download
             </a>
@@ -471,12 +619,6 @@
               Search for answers on the Thunderbird Support page
             </a>
           </li>
-          
-            <li>
-              <a href="#known-issues">
-                Look at the known issues list and see if we already know about the problem
-              </a>
-            </li>
           
           <li>
             <a href="https://bugzilla.mozilla.org/enter_bug.cgi">
