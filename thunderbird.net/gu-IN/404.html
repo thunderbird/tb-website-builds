@@ -4,7 +4,6 @@
   <head>
     <meta charset="utf-8">
 
-    <script type="text/javascript" src="/media/js/site-bundle.js" charset="utf-8"></script>
     
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,14 +25,13 @@
     <link rel="icon" type="image/png" sizes="196x196" href="/media/img/thunderbird/favicon-196.png">
     <link rel="shortcut icon" href="/media/img/thunderbird/favicon.ico">
     
+    <link href="/media/css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="/media/css/thunderbird-style.css" rel="stylesheet" type="text/css" />
 
     
-
 
     <!--[if !lte IE 8]><!-->
     
-    
-      <link href="/media/css/responsive-bundle.css" rel="stylesheet" type="text/css" />
     
 
     
@@ -45,107 +43,79 @@
     
       
     
-    <script type="text/javascript" src="/media/js/piwik.js" async defer></script>
-    <script type="text/javascript" src="/media/js/matomo.js" charset="utf-8"></script>
-    <noscript><p><img src="//thunderbird.innocraft.cloud/piwik.php?idsite=1&rec=1" style="border:0;" alt="" /></p></noscript>
   </head>
 
-  <body id="thunderbird-404" class="html-ltr sky" >
-    <div id="strings"
-      ></div>
-
-    <div id="outer-wrapper">
+  <body id="thunderbird-404" class="html-ltr " >
+    <div id="strings" ></div>
 
     
     
 
-      <div id="wrapper">
+    
+  <header id="masthead" class="bg-header bg-no-repeat bg-cover bg-top flex flex-col">
 
+    <section class="flex justify-between items-center p-6">
       
-  <header id="masthead">
-
-  
   <h2><img class="" src="/media/img/thunderbird/landing/wordmark.png" srcset="/media/img/thunderbird/landing/wordmark-high-res.png 1.5x" width="329" alt="Thunderbird" height="77"></h2>
 
 
-  
-  <nav id="nav-main" role="navigation">
-    <span class="toggle" role="button" aria-controls="nav-main-menu" aria-expanded="false" tabindex="0">યાદી</span>
-    <ul id="nav-main-menu" class="has-submenus">
-      <li class="first" id="nav-main-features"><a href="/gu-IN/" tabindex="0" aria-owns="nav-main-features-submenu" aria-haspopup="true">Thunderbird</a>
-        <ul aria-expanded="false" id="nav-main-features-submenu" class="submenu">
-          <li class="first">
-            <a href="/gu-IN/channel" tabindex="-1">
-              બીટા
-            </a>
-          </li>
+      
+      <nav id="nav-main" role="navigation">
+        <ul id="nav-main-menu" class="list-none p-0 flex items-center text-white font-md">
           <li>
-            <a href="/gu-IN/features" tabindex="-1">
+            <a href="/gu-IN/features" class="nav-link">
               લક્ષણો
             </a>
           </li>
           <li>
-            <a href="/gu-IN/thunderbird/releases" tabindex="-1">
-              પ્રકાશિત પાડેલ
-            </a>
-          </li>
-          
-          <li class="last">
-            <a href="/en-US/organizations" tabindex="-1">
-              Thunderbird for Organizations
-            </a>
-          </li>
-        </ul>
-      </li>
-      <li id="nav-main-addons">
-        <a href="https://addons.thunderbird.net" tabindex="0" aria-owns="nav-main-addons-submenu" aria-haspopup="true">
-          એડ-ઓન
-        </a>
-        <ul aria-expanded="false" id="nav-main-addons-submenu" class="submenu">
-          <li class="first">
-            <a href="https://addons.thunderbird.net/extensions/" tabindex="-1">
+            <a href="https://addons.thunderbird.net" target="_blank" class="nav-link">
               એડ-ઓન
             </a>
           </li>
-          <li class="last">
-            <a href="https://addons.thunderbird.net/themes/" tabindex="-1">
-              વિષય
+          <li id="nav-main-support">
+            <a href="https://support.mozilla.org/products/thunderbird/" class="nav-link">
+              Get Help
+            </a>
+          </li>
+          <li id="nav-main-support">
+            <a href="/gu-IN/about" class="nav-link">
+              About Us
+            </a>
+          </li>
+          <li id="nav-main-blog">
+            <a href="https://blog.mozilla.org/thunderbird" class="nav-link">
+              Blog
+            </a>
+          </li>
+          <li>
+            <a href="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=header" class="btn-donate">
+              <span class="inline-block w-3 mr-1"><svg viewBox="0 0 14 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="UI" stroke="none" stroke-width="1" fill="currentColor" fill-rule="evenodd">
+        <path d="M7.00000834,12.0000012 C6.8750082,12.0000012 6.75000805,11.9531261 6.65625793,11.859376 L1.78125212,7.15624542 C1.71875205,7.10155785 0,5.53124348 0,3.65624125 C0,1.36717602 1.39843917,-1.31130219e-05 3.73437945,-1.31130219e-05 C5.10156858,-1.31130219e-05 6.38282011,1.07811317 7.00000834,1.6874889 C7.61719658,1.07811317 8.89844811,-1.31130219e-05 10.2656372,-1.31130219e-05 C12.6015775,-1.31130219e-05 14.0000167,1.36717602 14.0000167,3.65624125 C14.0000167,5.53124348 12.2812646,7.10155785 12.2109521,7.17187044 L7.34375875,11.859376 C7.25000864,11.9531261 7.12500849,12.0000012 7.00000834,12.0000012 Z"></path>
+    </g>
+</svg>
+</span> દાન કરો
             </a>
           </li>
         </ul>
-      </li>
-      <li id="nav-main-support">
-        <a href="https://support.mozilla.org/products/thunderbird/" tabindex="0">
-          આધાર
-        </a>
-      </li>
+      </nav>
       
-      
-      <li class="last" id="nav-main-donate">
-        <a class="emphasis" href="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=header" tabindex="-1">
-          દાન કરો
-        </a>
-      </li>
-    </ul>
-  </nav>
-  
+    </section>
 
-  
+    
 
-  
+    
 
-  
-
-  
+    
 
   </header>
 
 
+    
       
-        
-      
+    
 
-      
+    
 
 <main role="main">
   <div id="main-feature">
@@ -162,15 +132,13 @@
 
 
 
-      
+    
 
-      </div><!-- close #wrapper -->
+    
+    
 
-      
-      
-
-      
-                <footer id="colophon" class="old">
+    
+              <footer id="colophon" class="old">
         <nav class="row">
           <div class="col col-1">
             <div class="logo"><a href="https://www.mozilla.org/" data-link-type="footer" data-link-name="Mozilla">Mozilla</a></div>
@@ -415,18 +383,21 @@
           </div>
         </nav>
       </footer>
-      
+    
 
-
-    </div><!-- close #outer-wrapper -->
+    
+      <script type="text/javascript" src="/media/js/site-bundle.js" charset="utf-8"></script>
+      <script type="text/javascript" src="/media/js/common-bundle.js" charset="utf-8"></script>
+      <script type="text/javascript" src="/media/js/piwik.js" async defer></script>
+      <script type="text/javascript" src="/media/js/matomo.js" charset="utf-8"></script>
+      <noscript>
+        <p><img src="//thunderbird.innocraft.cloud/piwik.php?idsite=1&rec=1" style="border:0;" alt="" /></p>
+      </noscript>
+    
 
     <!--[if IE 9]>
       <script src="/media/js/libs/matchMedia.js"></script>
     <![endif]-->
-
-    
-      <script type="text/javascript" src="/media/js/common-bundle.js" charset="utf-8"></script>
-    
 
     
 
