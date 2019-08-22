@@ -1,5 +1,5 @@
 /*-------------------------
-* Spacing
+* Colours
 *--------------------------*/
 body {
   font-family: 'Open Sans', X-LocaleSpecific, sans-serif;
@@ -14,7 +14,8 @@ body,
 .font-xs {
   font-size: 9px;
 }
-.font-sm {
+.font-sm,
+.social-link {
   font-size: 11px;
 }
 .font-md,
@@ -47,6 +48,7 @@ body,
 }
 .font-semibold,
 .inline-link,
+.social-link,
 .btn-donate,
 .btn-download {
   font-weight: 600;
@@ -79,7 +81,8 @@ body {
 .tracking-widest {
   letter-spacing: 0.1em;
 }
-.leading-none {
+.leading-none,
+.social-link {
   line-height: 1;
 }
 .leading-tight {
@@ -109,6 +112,7 @@ body {
 .no-underline,
 .nav-link,
 .small-link,
+.social-link,
 .btn-donate,
 .btn-download {
   text-decoration: none;
@@ -143,8 +147,12 @@ body {
 .nav-link,
 .small-link,
 .inline-link,
+.social-link,
 .btn-donate,
-.btn-download {
+.btn-download,
+.btn-inline:hover,
+.btn-inline:focus,
+.btn-inline:active {
   color: #fff;
 }
 .bg-white,
@@ -154,7 +162,9 @@ body {
 .border-white {
   border-color: #fff;
 }
-.text-black {
+.text-black,
+.btn-inline,
+.form-select {
   color: #000;
 }
 .bg-black {
@@ -172,13 +182,37 @@ body {
 .border-black-light {
   border-color: #212123;
 }
-.text-light-grey {
+.text-black-lighter {
+  color: #34343A;
+}
+.bg-black-lighter,
+.social-link span {
+  background-color: #34343A;
+}
+.border-black-lighter {
+  border-color: #34343A;
+}
+.text-black-lightest {
+  color: #45454B;
+}
+.bg-black-lightest,
+.social-link,
+.btn-inline:hover,
+.btn-inline:focus {
+  background-color: #45454B;
+}
+.border-black-lightest {
+  border-color: #45454B;
+}
+.text-grey-light {
   color: #f0f0f0;
 }
-.bg-light-grey {
+.bg-grey-light,
+.btn-inline,
+.form-select {
   background-color: #f0f0f0;
 }
-.border-light-grey {
+.border-grey-light {
   border-color: #f0f0f0;
 }
 .text-blue-dark,
@@ -200,6 +234,18 @@ body {
 .border-orange {
   border-color: #ff9500;
 }
+.text-blue {
+  color: #0080FF;
+}
+.bg-blue,
+.social-link:hover,
+.social-link:focus,
+.btn-inline:active {
+  background-color: #0080FF;
+}
+.border-blue {
+  border-color: #0080FF;
+}
 .rounded-none {
   border-radius: 0;
 }
@@ -208,7 +254,9 @@ body {
 .btn-download {
   border-radius: 0.1rem;
 }
-.rounded-sm {
+.rounded-sm,
+.btn-inline,
+.form-select {
   border-radius: 0.125rem;
 }
 .rounded {
@@ -217,8 +265,24 @@ body {
 .rounded-lg {
   border-radius: 0.5rem;
 }
-.rounded-full {
+.rounded-full,
+.social-link,
+.social-link span {
   border-radius: 9999px;
+}
+.border-solid {
+  border-style: solid;
+}
+.border-dashed {
+  border-style: dashed;
+}
+.border-dotted {
+  border-style: dotted;
+}
+.border-none,
+.btn-inline,
+.form-select {
+  border-style: none;
 }
 .container {
   width: 100%;
@@ -237,7 +301,8 @@ body {
 }
 .block,
 .nav-link:after,
-.btn-donate {
+.btn-donate,
+.form-select {
   display: block;
 }
 .inline-block,
@@ -247,7 +312,8 @@ body {
 .inline {
   display: inline;
 }
-.flex {
+.flex,
+.social-link {
   display: flex;
 }
 .inline-flex {
@@ -352,7 +418,8 @@ body {
 .items-start {
   align-items: flex-start;
 }
-.items-center {
+.items-center,
+.social-link {
   align-items: center;
 }
 .items-end {
@@ -542,7 +609,8 @@ body {
 .w-2 {
   width: 0.5rem;
 }
-.w-3 {
+.w-3,
+.social-link span {
   width: 0.75rem;
 }
 .w-4 {
@@ -575,7 +643,8 @@ body {
 .w-32 {
   width: 8rem;
 }
-.w-40 {
+.w-40,
+.form-select {
   width: 10rem;
 }
 .w-48 {
@@ -719,7 +788,8 @@ body {
 .h-2 {
   height: 0.5rem;
 }
-.h-3 {
+.h-3,
+.social-link span {
   height: 0.75rem;
 }
 .h-4 {
@@ -842,7 +912,10 @@ body {
 .p-2 {
   padding: 0.5rem;
 }
-.p-1 {
+.p-1,
+.social-link span,
+.btn-inline,
+.form-select {
   padding: 0.25rem;
 }
 .p-0 {
@@ -908,7 +981,8 @@ body {
 .btn-donate {
   padding-top: 0.5rem;
 }
-.pt-1 {
+.pt-1,
+.social-link {
   padding-top: 0.25rem;
 }
 .pt-0 {
@@ -957,7 +1031,8 @@ body {
 .btn-download {
   padding-right: 1.75rem;
 }
-.pr-6 {
+.pr-6,
+.form-select {
   padding-right: 1.5rem;
 }
 .pr-5 {
@@ -970,7 +1045,9 @@ body {
 .btn-donate {
   padding-right: 0.75rem;
 }
-.pr-2 {
+.pr-2,
+.social-link,
+.btn-inline {
   padding-right: 0.5rem;
 }
 .pr-1 {
@@ -1039,7 +1116,8 @@ body {
 .btn-donate {
   padding-bottom: 0.5rem;
 }
-.pb-1 {
+.pb-1,
+.social-link {
   padding-bottom: 0.25rem;
 }
 .pb-0 {
@@ -1101,10 +1179,12 @@ body {
 .btn-donate {
   padding-left: 0.75rem;
 }
-.pl-2 {
+.pl-2,
+.btn-inline {
   padding-left: 0.5rem;
 }
-.pl-1 {
+.pl-1,
+.social-link {
   padding-left: 0.25rem;
 }
 .pl-0 {
@@ -1296,7 +1376,9 @@ body {
   margin-right: 0.5rem;
 }
 .mr-1,
-.small-link {
+.small-link,
+.social-link,
+.social-link span {
   margin-right: 0.25rem;
 }
 .mr-0 {
@@ -1422,11 +1504,13 @@ body {
 .ml-3 {
   margin-left: 0.75rem;
 }
-.ml-2 {
+.ml-2,
+.btn-inline {
   margin-left: 0.5rem;
 }
 .ml-1,
-.small-link {
+.small-link,
+.social-link {
   margin-left: 0.25rem;
 }
 .ml-0 {
@@ -1518,11 +1602,18 @@ body {
   background: linear-gradient(135deg, #21B711 0%, #058B00 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#21B711', endColorstr='#058B00', GradientType=1);
 }
+.pointer-events-none {
+  pointer-events: none;
+}
+.pointer-events-auto {
+  pointer-events: auto;
+}
 a {
   -webkit-transition: all 320ms ease;
   -moz-transition: all 320ms ease;
   -o-transition: all 320ms ease;
   transition: all 320ms ease;
+  cursor: pointer;
 }
 .nav-link:after {
   -webkit-transition: all 320ms cubic-bezier(0.55, 0, 0.1, 1);
@@ -1543,6 +1634,23 @@ a {
   -o-transform: translateY(0);
   transform: translateY(0);
 }
+.social-link span {
+  -webkit-transition: all 320ms ease;
+  -moz-transition: all 320ms ease;
+  -o-transition: all 320ms ease;
+  transition: all 320ms ease;
+}
+.social-link span svg {
+  width: 100%;
+  height: 100%;
+}
+button {
+  -webkit-transition: all 320ms ease;
+  -moz-transition: all 320ms ease;
+  -o-transition: all 320ms ease;
+  transition: all 320ms ease;
+  cursor: pointer;
+}
 .btn-donate:hover,
 .btn-donate:focus {
   -webkit-transform: translateY(-7%);
@@ -1556,6 +1664,10 @@ a {
   -moz-transform: translateY(-7%);
   -o-transform: translateY(-7%);
   transform: translateY(-7%);
+}
+.btn-inline {
+  -moz-appearance: none;
+  appearance: none;
 }
 .download-button .ios-download,
 .download-button .linux-arm-download,
@@ -1635,4 +1747,8 @@ a {
 }
 .windows.sha-1 .download-button .os_winsha1 {
   display: block !important;
+}
+.form-select {
+  -moz-appearance: none;
+  appearance: none;
 }
