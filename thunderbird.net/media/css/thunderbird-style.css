@@ -152,7 +152,8 @@ body {
 .capitalize {
   text-transform: capitalize;
 }
-.normal-case {
+.normal-case,
+.btn-body.btn-secondary {
   text-transform: none;
 }
 .text-left {
@@ -166,6 +167,17 @@ body {
 }
 .text-justify {
   text-align: justify;
+}
+.text-transparent {
+  color: transparent;
+}
+.bg-transparent,
+.btn-body.btn-secondary {
+  background-color: transparent;
+}
+.border-transparent,
+.btn-body.btn-secondary {
+  border-color: transparent;
 }
 .text-white,
 .nav-link,
@@ -282,7 +294,8 @@ body {
 .header-section span {
   border-color: #B2D9FF;
 }
-.text-blue {
+.text-blue,
+.btn-body.btn-secondary {
   color: #0080FF;
 }
 .bg-blue,
@@ -2088,6 +2101,13 @@ body {
   background-image: url('../img/thunderbird/backgrounds/bg-header.png'), -webkit-linear-gradient(top, #1c2f56 0%, #2c9afe 100%);
   background-image: url('../img/thunderbird/backgrounds/bg-header.png'), linear-gradient(to bottom, #1c2f56 0%, #2c9afe 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1c2f56', endColorstr='#2c9afe', GradientType=0);
+}
+.bg-header-page {
+  background-color: #1c2f56;
+  background-image: url('../img/thunderbird/backgrounds/bg-header.png'), -moz-linear-gradient(top, #1c2f56 0%, #037ae6 100%);
+  background-image: url('../img/thunderbird/backgrounds/bg-header.png'), -webkit-linear-gradient(top, #1c2f56 0%, #037ae6 100%);
+  background-image: url('../img/thunderbird/backgrounds/bg-header.png'), linear-gradient(to bottom, #1c2f56 0%, #037ae6 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1c2f56', endColorstr='#037ae6', GradientType=0);
 }
 .bg-donate-button,
 .btn-donate {
