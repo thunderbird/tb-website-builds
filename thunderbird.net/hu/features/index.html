@@ -36,8 +36,6 @@
 
     
     
-  <link href="/media/css/thunderbird-features.css" rel="stylesheet" type="text/css" />
-
     <!--<![endif]-->
 
     
@@ -45,7 +43,7 @@
     
   </head>
 
-  <body id="thunderbird-features" class="html-ltr " >
+  <body class="html-ltr " >
     <div id="strings" ></div>
 
     
@@ -243,190 +241,440 @@
     </section>
 
     
-
-    
-
-    
-
-  </header>
-
-
-    
+  <section class="text-left text-white flex flex-col items-start w-full max-w-6xl mx-auto pl-8 pr-8">
+    <h1 class="font-hero font-thin mt-10 mb-8">Thunderbird funkciók</h1>
+    <p class="font-xl tracking-wide leading-relaxed max-w-4xl mb-10 mt-0">
       
-    
-
-    
-  <header id="main-feature">
-    <h1>Thunderbird funkciók</h1>
-    <h2>
   
     Ez mind az Öné. Most még könnyebb Thunderbirdre váltani.
   
-</h2>
-  </header>
 
-  <nav role="directory">
-    <ul class="feature-links">
-      <li><a href="#getstarted">Könnyebb használatba venni</a></li>
-      <li><a href="#tabssearch">Lapok és keresés</a></li>
-      <li><a href="#customize-email">Testre szabható levelezés</a></li>
-      <li><a href="#secureprotect">Biztonságos, és megvédi leveleit</a></li>
+    </p>
+  </section>
+  <nav role="directory" class="text-left text-white flex justify-center w-full max-w-6xl mx-auto bg-black-25 rounded mb-10">
+    <ul class="list-none p-0 flex flex-wrap justify-around flex-1 m-0">
+      <li class="ml-2 mr-2">
+        <a href="#getstarted" class="btn-link">Könnyebb használatba venni</a>
+      </li>
+      <li class="ml-2 mr-2">
+        <a href="#tabssearch" class="btn-link">Lapok és keresés</a>
+      </li>
+      <li class="ml-2 mr-2">
+        <a href="#customize-email" class="btn-link">Testre szabható levelezés</a>
+      </li>
+      <li class="ml-2 mr-2">
+        <a href="#secureprotect" class="btn-link">Biztonságos, és megvédi leveleit</a>
+      </li>
     </ul>
   </nav>
 
-  <main role="main">
-    <section id="getstarted">
-      <h2>Könnyebb használatba venni</h2>
-      <div class="row">
-        <div class="col full">
-          <section>
-            <img class="last" src="/media/img/thunderbird/features/mail-account-setup.png" alt="">
-            <h3>Postafiók-beállító varázsló</h3>
-            <p>Korábban ismerni kellett az IMAP, SMTP és SSL/TLS beállításokat. Most csupán a nevét, e-mail címét és jelszavát kell megadnia. Ezt követően az adatbázisunkban lévő adatok alapján a postafiók automatikusan beállításra kerül.</p>
-          </section>
-        </div>
-      </div>
-      
-      <div class="row">
-        <div class="col">
-          <section>
-            <h3>Egy kattintásos címjegyzék</h3>
-            <p>Az egy kattintásos címjegyzék segítségével egyszerűen lehet embereket hozzáadni a címjegyzékhez az üzenetben szereplő csillagra kattintva. Dupla kattintással további részletek, fénykép, születésnap és egyéb fontos információk adhatók meg.</p>
-            <img src="/media/img/thunderbird/features/address-book.png" alt="">
-          </section>
-        </div>
-        <div class="col">
-          <section>
-            <h3>Figyelmeztető a mellékletekre</h3>
-            <p>A mellékletekre történő figyelmeztetés során a Thunderbird olyan szavakat keres az elküldendő levélben, mint a „melléklet”, vagy más, fájltípusra utaló kifejezést, és a levél elküldése előtt figyelmeztet a melléklet csatolására.</p>
-            <img src="/media/img/thunderbird/features/attachment-reminder.png" alt="">
-          </section>
-        </div>
-      </div>
-      
-    </section><!-- end #getstarted -->
 
-    <section id="tabssearch">
-      <h2>Lapok és keresés</h2>
-      <div class="row">
-        <div class="col full">
-          <section>
-            <img class="last" src="/media/img/thunderbird/features/newaustralis.png" alt="">
-            
-            <h3>Lapok</h3>
-            <p>Ha megkedvelte a Firefox lapkezelését, akkor szeretni fogja a lapkezelést a levelezőprogramban is. A lapkezelés lehetővé teszi, hogy különböző levelek különböző lapokra kerüljenek, így könnyen lehet váltani közöttük. Talán éppen válaszol egy levélre, amikor egy másik, korábbi levélre szeretne hivatkozni. A lapkezelés segítségével egyszerre több levelet tarthat nyitva.</p>
-            <p>A dupla kattintás, vagy az Enter megnyomása egy üzeneten mostantól megnyitja azt az üzenetet egy új lapon. A jobb kattintás az üzeneteken vagy mappákon egy háttérbe kerülő lapon nyitja meg azokat.</p>
-            <p>A Thunderbird bezárásakor a látható lapok elmentésre kerülnek, és visszaállnak a Thunderbird következő megnyitásakor. A Lap eszköztáron van egy Lap menü is, amely segít a lapok közti váltásban.</p>
-            
-          </section>
-        </div>
-      </div>
+    
+
+    
+
+  </header>
+
+
+    
       
-      <div class="row">
-        <div class="col">
-          <section>
-            <h3>Gyorsszűrő sáv</h3>
-            <p>A Gyorsszűrő sáv segítségével gyorsabban találhatja meg leveleit. Kezdje el beírni a keresett szót a Gyorsszűrő sávba, és a találatok azonnal megjelennek. Szűréseket állíthatók be az Új üzenetek között, szűrni lehet címkék szerint, továbbá a Címjegyzékben található emberek között. A szűrők „rögzíthetők” vagy elmenthetők, és több mappában is használhatók.</p>
-            <img src="/media/img/thunderbird/features/quick-filter-toolbar.png" alt="">
-          </section>
-        </div>
-        <div class="col">
-          <section>
-            
-            <h3>Keresés</h3>
-            <p>A Thunderbird keresési felülete szűrést és idősíkot tartalmaz, amelyek segítségével könnyedén meg lehet találni a keresett levelet. Emellett a Thunderbird indexet készít a levelekről, amely növeli a keresés sebességét. A keresés eredménye egy külön lapon jelenik meg, hogy gyorsabban és könnyedén lehessen váltani a keresési eredmény és a többi levél között.</p>
-            
-            <img src="/media/img/thunderbird/features/search.png" alt="">
-          </section>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <section>
-            <h3>Üzenetarchiválás</h3>
-            <p>Amennyiben egy levélre szüksége lesz a jövőben, de nem szeretné a Bejövő üzenetek közt tartani, sem pedig letörölni, akkor azt érdemes archiválni. Az archiválás segítségével a leveleket Archívum mappába kerülnek.</p>
-            <p>Az Archiválás gomb vagy az „A” billentyű megnyomásával lehet a kiválasztott üzenetet archiválni.</p>
-            <img src="/media/img/thunderbird/features/message-archive.png" alt="">
-          </section>
-        </div>
-        <div class="col">
-          <section>
-            <h3>Tevékenységkezelő</h3>
-            <p>A Tevékenységkezelő rögzít minden, a Thunderbird és a levélszolgáltatója közötti műveletet. Nincs többé találgatás, egyetlen helyen meg lehet tekinteni, hogy mikor és mi történt a levelekkel.</p>
-            <img src="/media/img/thunderbird/features/activity-manager.png" alt="">
-          </section>
-        </div>
-      </div>
-    </section><!-- end #tabssearch -->
+    
 
-    <section id="customize-email">
-      <h2>Testre szabható levelezés</h2>
+    <main>
       
-      <div class="row">
-        <div class="col">
-          <section>
-            <h3>Thunderbird megjelenés</h3>
-            <p>A personák segítségével egyszerűen és azonnal megváltoztatható a Thunderbird kinézete. Több száz persona érhető el, amelyek között találhatók filmekkel, híres tájakkal, vagy japán tetoválásokkal kapcsolatosak. Mindezek mellett olyan témák is választhatók, amelyek segítségével a Thunderbird ikonja változtathatók meg.</p>
-          </section>
-          <section>
-            <h3>Intelligens mappák</h3>
-            <p>Az Intelligens mappák segítségével több postafiókot lehet kezelni a Beérkezett üzenetek, Elküldött elemek vagy az Archivált mappák kombinálásával. Ahelyett, hogy minden postafiók Beérkezett üzeneteit külön-külön kellene ellenőrizni, a Thunderbird beállítható, hogy minden egyetlen helyen legyen.</p>
-          </section>
-        </div>
-        <div class="col">
-          <section>
-            <h3>Kiegészítéskezelő</h3>
-            <p>Keressen és telepítsen kiegészítőket közvetlenül a Thunderbirdből. Nem kell többet a kiegészítők weboldalára mennie, ehelyett egyszerűen csak indítsa el a Kiegészítéskezelőt. Nem biztos benne, hogy melyik kiegészítő a legmegfelelőbb? Az értékelések, ajánlások, leírások és képernyőképek segítenek a választásban.</p>
-            <img src="/media/img/thunderbird/features/addon-manager.png" alt="">
-          </section>
-        </div>
-      </div>
-    </section><!-- end #customize-email -->
+  <section id="getstarted" class="mt-20 mb-14 flex max-w-6xl mx-auto justify-center items-center pl-8 pr-8">
+    <span class="header-line flex-1"></span>
+    <h2 class="header-section pl-4 pr-4 mb-0">Könnyebb használatba venni</h2>
+    <span class="header-line flex-1"></span>
+  </section>
 
-    <section id="secureprotect">
-      <h2>Biztonságos, és megvédi leveleit</h2>
-      <div class="row">
-        <div class="col">
-          <section>
-            
-            <h3>Robusztus adatvédelem</h3>
-            <p>Thunderbird segít a magánélet tiszteletben tartásában, és védelmet nyújt a távoli képek letöltése ellen. A felhasználó személyiségi jogainak védelme érdekében a Thunderbird automatikusan blokkolja az e-mail üzenetekben lévő távoli képek megjelenítését.</p>
-            
-            <img src="/media/img/thunderbird/features/donottrack.png" alt="">
-          </section>
-        </div>
-        <div class="col">
-          <section>
-            <h3>Adathalászat elleni védelem</h3>
-            <p>A Thunderbird védelmet nyújt az e-mail csalások ellen, amelyek megpróbálják rávenni a felhasználókat, hogy átadják személyes és bizalmas adataikat. Ezeket a gyanús leveleket a Thunderbird veszélyesnek jelöli meg. További védelemként a Thunderbird figyelmeztet, ha olyan hivatkozásra kattintana, amely a hivatkozástól eltérő weboldalra vinné az óvatlan felhasználót.</p>
-            <img src="/media/img/thunderbird/features/phishing-protection.png" alt="">
-          </section>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <section>
-            <h3>Automatikus frissítés</h3>
-            <p>
-              A Thunderbird frissítőrendszere ellenőrzi, hogy a legfrissebb verziót használja-e és értesíti, amennyiben elérhető egy biztonsági frissítés. Ezek a biztonsági frissítések kis méretűek (általában 200 KB - 700 KB), csak az adott módosításokat tartalmazzák, így gyorsan letölthetők és telepíthetők. Az automatikus frissítőrendszer működik Windows, macOS és Linux operációs rendszereken, több mint 40 nyelven.
-            </p>
-            <img src="/media/img/thunderbird/features/automated-update.png" alt="">
-          </section>
-        </div>
-        <div class="col">
-          <section>
-            <h3>Levélszemét kidobása</h3>
-            <p>A Thunderbird népszerű levélszemét-kezelője tovább fejlődött, hogy mindig egy lépéssel a kéretlen levelek küldői előtt járjon. Minden beérkező levél áthalad a Thunderbird levélszemét-kezelőjén és minden alkalommal, amikor egy levél kéretlen levélként kerül megjelölésre, a levélszemét-kezelő "megtanulja" és továbbfejleszti a szűrőt. Így több időt tölthet a valódi levelek olvasásával. Ugyanakkor a Thunderbird az e-mail szolgáltatója által biztosított levélszemét-kezelőt is képes használni, hogy távol tartsa a kéretlen leveleket.</p>
-          </section>
-          <section>
-            <h3>Nyílt forrás</h3>
-            <p>A Thunderbird középpontjában több ezer, a világ minden tájáról érkező, elkötelezett, tapasztalt programozó és biztonsági szakember által irányított nyílt forrású fejlesztési folyamat áll. A nyitottság és az aktív szakértői közösség segít abban, hogy termékeink biztonságosabbak legyenek és gyorsabban frissülnek. Mindezek mellett lehetővé teszi számunkra, hogy kihasználjuk a legjobb biztonsági ellenőrzési folyamatokat, és értékelési eszközöket, amelyek tovább erősítik az általános biztonságot.</p>
-          </section>
-        </div>
-      </div>
-    </section><!-- end #secureprotect -->
-  </main>
+  <section class="mb-20 flex flex-wrap max-w-6xl mx-auto justify-between pl-8 pr-8">
+    <aside class="flex flex-col w-1/3 max-w-xs">
+      <img class="w-full h-auto mb-10 max-w-sm self-center shadow-lg"
+        src="/media/img/thunderbird/features/mail-account-setup.png" alt="">
+      <h3 class="subheader-section">Postafiók-beállító varázsló</h3>
+      <p class="font-md tracking-wider leading-loose mb-8 mt-0">
+        Korábban ismerni kellett az IMAP, SMTP és SSL/TLS beállításokat. Most csupán a nevét, e-mail címét és jelszavát kell megadnia. Ezt követően az adatbázisunkban lévő adatok alapján a postafiók automatikusan beállításra kerül.
+      </p>
+    </aside>
 
+    <aside class="flex flex-col w-1/3 max-w-xs">
+      <img class="w-full h-auto mb-10 max-w-sm self-center shadow-lg"
+        src="/media/img/thunderbird/features/address-book.png" alt="">
+      <h3 class="subheader-section">Egy kattintásos címjegyzék</h3>
+      <p class="font-md tracking-wider leading-loose mb-8 mt-0">
+        Az egy kattintásos címjegyzék segítségével egyszerűen lehet embereket hozzáadni a címjegyzékhez az üzenetben szereplő csillagra kattintva. Dupla kattintással további részletek, fénykép, születésnap és egyéb fontos információk adhatók meg.
+      </p>
+    </aside>
+
+    <aside class="flex flex-col w-1/3 max-w-xs">
+      <img class="w-full h-auto mb-10 max-w-sm self-center shadow-lg"
+        src="/media/img/thunderbird/features/attachment-reminder.png" alt="">
+      <h3 class="subheader-section">Figyelmeztető a mellékletekre</h3>
+      <p class="font-md tracking-wider leading-loose mb-8 mt-0">
+        A mellékletekre történő figyelmeztetés során a Thunderbird olyan szavakat keres az elküldendő levélben, mint a „melléklet”, vagy más, fájltípusra utaló kifejezést, és a levél elküldése előtt figyelmeztet a melléklet csatolására.
+      </p>
+    </aside>
+
+    <section class="flex w-full justify-center items-center mt-10">
+      <aside class="flex flex-col w-1/2 max-w-md">
+        <h3 class="subheader-section">Multiple-channel chat</h3>
+        <p class="font-md tracking-wider leading-loose mb-8 mt-0">
+          Enjoy real-time conversation with your contacts, right from your favorite messaging application, with multiple supported networks. Thunderbird makes it easy to search through both past conversations and received emails.
+        </p>
+      </aside>
+      <aside class="flex flex-col w-1/2 max-w-md">
+        <img class="w-full h-auto mb-10 max-w-sm self-center shadow-lg"
+          src="/media/img/thunderbird/features/chatnetworks.png" alt="">
+      </aside>
+    </section>
+  </section>
+
+  <section id="tabssearch" class="mt-20 mb-14 flex max-w-6xl mx-auto justify-center items-center pl-8 pr-8">
+    <span class="header-line flex-1"></span>
+    <h2 class="header-section pl-4 pr-4 mb-0">Lapok és keresés</h2>
+    <span class="header-line flex-1"></span>
+  </section>
+
+  <section class="bg-body w-full">
+    <section class="mb-20 flex flex-wrap max-w-6xl mx-auto justify-between pl-8 pr-8">
+
+      <section class="flex w-full justify-center items-center mb-10">
+        <aside class="flex flex-col flex-1">
+          <h3 class="subheader-section">Tabbed Email</h3>
+          <p class="font-md tracking-wider leading-loose mb-4 mt-0">
+            Ha megkedvelte a Firefox lapkezelését, akkor szeretni fogja a lapkezelést a levelezőprogramban is. A lapkezelés lehetővé teszi, hogy különböző levelek különböző lapokra kerüljenek, így könnyen lehet váltani közöttük. Talán éppen válaszol egy levélre, amikor egy másik, korábbi levélre szeretne hivatkozni. A lapkezelés segítségével egyszerre több levelet tarthat nyitva.
+          </p>
+          <p class="font-md tracking-wider leading-loose mb-8 mt-0">
+            A Thunderbird bezárásakor a látható lapok elmentésre kerülnek, és visszaállnak a Thunderbird következő megnyitásakor. A Lap eszköztáron van egy Lap menü is, amely segít a lapok közti váltásban.
+          </p>
+        </aside>
+        <aside class="flex flex-col w-1/2 max-w-md">
+          <img class="w-full h-auto mb-10 max-w-sm self-center shadow-lg"
+            src="/media/img/thunderbird/features/newaustralis.png" alt="">
+        </aside>
+      </section>
+
+      <aside class="flex flex-col w-1/3 max-w-xs">
+        <img class="w-full h-auto mb-10 max-w-sm self-center shadow-lg"
+          src="/media/img/thunderbird/features/quick-filter-toolbar.png" alt="">
+        <h3 class="subheader-section">Gyorsszűrő sáv</h3>
+        <p class="font-md tracking-wider leading-loose mb-8 mt-0">
+          A Gyorsszűrő sáv segítségével gyorsabban találhatja meg leveleit. Kezdje el beírni a keresett szót a Gyorsszűrő sávba, és a találatok azonnal megjelennek. Szűréseket állíthatók be az Új üzenetek között, szűrni lehet címkék szerint, továbbá a Címjegyzékben található emberek között. A szűrők „rögzíthetők” vagy elmenthetők, és több mappában is használhatók.
+        </p>
+      </aside>
+
+      <aside class="flex flex-col w-1/3 max-w-xs">
+        <img class="w-full h-auto mb-10 max-w-sm self-center shadow-lg"
+          src="/media/img/thunderbird/features/search.png" alt="">
+        <h3 class="subheader-section">Search Tools</h3>
+        <p class="font-md tracking-wider leading-loose mb-8 mt-0">
+          The search interface in Thunderbird contains filtering and timeline tools to pinpoint the exact email you’re looking for. Thunderbird also indexes all of your emails and chat conversations to help you search even faster. Your search results are displayed in a tab so you can easily switch back and forth to your search results and other email.
+        </p>
+      </aside>
+
+      <aside class="flex flex-col w-1/3 max-w-xs">
+        <img class="w-full h-auto mb-10 max-w-sm self-center shadow-lg"
+          src="/media/img/thunderbird/features/message-archive.png" alt="">
+        <h3 class="subheader-section">Üzenetarchiválás</h3>
+        <p class="font-md tracking-wider leading-loose mb-8 mt-0">
+          Amennyiben egy levélre szüksége lesz a jövőben, de nem szeretné a Bejövő üzenetek közt tartani, sem pedig letörölni, akkor azt érdemes archiválni. Az archiválás segítségével a leveleket Archívum mappába kerülnek.
+        </p>
+      </aside>
+    </section>
+  </section>
+
+  <section id="customize-email" class="mt-20 mb-14 flex max-w-6xl mx-auto justify-center items-center pl-8 pr-8">
+    <span class="header-line flex-1"></span>
+    <h2 class="header-section pl-4 pr-4 mb-0">Testre szabható levelezés</h2>
+    <span class="header-line flex-1"></span>
+  </section>
+
+  <section class="mb-20 flex flex-wrap max-w-6xl mx-auto justify-between pl-8 pr-8">
+    <section class="flex w-full justify-center items-center mb-10">
+      <aside class="flex flex-col flex-1">
+        <h3 class="subheader-section flex flex-col">
+          Large Files Management
+          <small class="font-normal font-regular tracking-wide normal-case">
+            Share large files with Thunderbird Filelink!
+          </small>
+        </h3>
+        <p class="font-md tracking-wider leading-loose mb-4 mt-0">
+          You can now speed up the transfer of large documents by uploading them to an online storage provider and sharing the link instead of sending the file directly as a message attachment. Improve the speed of sending email and avoid message rejection if the recipient’s server disallows large files. As an added bonus, you’ll also save space in your sent folder and the recipient’s inbox.
+        </p>
+      </aside>
+      <aside class="flex flex-col w-1/2 max-w-md">
+        <img class="w-full h-auto mb-10 max-w-sm self-center shadow-lg"
+          src="/media/img/thunderbird/features/filelink.png" alt="">
+      </aside>
+    </section>
+
+    <aside class="flex flex-col w-1/3 max-w-xs">
+      <img class="w-full h-auto mb-10 max-w-sm self-center shadow-lg"
+        src="/media/img/thunderbird/features/message-archive.png" alt="">
+      <h3 class="subheader-section">Thunderbird megjelenés</h3>
+      <p class="font-md tracking-wider leading-loose mb-8 mt-0">
+        A personák segítségével egyszerűen és azonnal megváltoztatható a Thunderbird kinézete. Több száz persona érhető el, amelyek között találhatók filmekkel, híres tájakkal, vagy japán tetoválásokkal kapcsolatosak. Mindezek mellett olyan témák is választhatók, amelyek segítségével a Thunderbird ikonja változtathatók meg.
+      </p>
+    </aside>
+
+    <aside class="flex flex-col w-1/3 max-w-xs">
+      <img class="w-full h-auto mb-10 max-w-sm self-center shadow-lg"
+        src="/media/img/thunderbird/features/message-archive.png" alt="">
+      <h3 class="subheader-section">Intelligens mappák</h3>
+      <p class="font-md tracking-wider leading-loose mb-8 mt-0">
+        Az Intelligens mappák segítségével több postafiókot lehet kezelni a Beérkezett üzenetek, Elküldött elemek vagy az Archivált mappák kombinálásával. Ahelyett, hogy minden postafiók Beérkezett üzeneteit külön-külön kellene ellenőrizni, a Thunderbird beállítható, hogy minden egyetlen helyen legyen.
+      </p>
+    </aside>
+
+    <aside class="flex flex-col w-1/3 max-w-xs">
+      <img class="w-full h-auto mb-10 max-w-sm self-center shadow-lg"
+        src="/media/img/thunderbird/features/addon-manager.png" alt="">
+      <h3 class="subheader-section">Kiegészítéskezelő</h3>
+      <p class="font-md tracking-wider leading-loose mb-8 mt-0">
+        Keressen és telepítsen kiegészítőket közvetlenül a Thunderbirdből. Nem kell többet a kiegészítők weboldalára mennie, ehelyett egyszerűen csak indítsa el a Kiegészítéskezelőt. Nem biztos benne, hogy melyik kiegészítő a legmegfelelőbb? Az értékelések, ajánlások, leírások és képernyőképek segítenek a választásban.
+      </p>
+    </aside>
+  </section>
+
+  <section id="secureprotect" class="mt-20 mb-14 flex max-w-6xl mx-auto justify-center items-center pl-8 pr-8">
+    <span class="header-line flex-1"></span>
+    <h2 class="header-section pl-4 pr-4 mb-0">Biztonságos, és megvédi leveleit</h2>
+    <span class="header-line flex-1"></span>
+  </section>
+
+  <section class="pt-20 pb-20 w-full bg-calendar">
+    <section class="flex flex-wrap max-w-6xl mx-auto justify-between pl-8 pr-8">
+      <aside class="flex flex-col w-1/3 max-w-xs">
+        <img class="w-full h-auto mb-10 max-w-sm self-center shadow-lg"
+          src="/media/img/thunderbird/features/donottrack.png" alt="">
+        <h3 class="subheader-section">Robust Privacy and Do Not Track</h3>
+        <p class="font-md tracking-wider leading-loose mb-4 mt-0">
+          Thunderbird segít a magánélet tiszteletben tartásában, és védelmet nyújt a távoli képek letöltése ellen. A felhasználó személyiségi jogainak védelme érdekében a Thunderbird automatikusan blokkolja az e-mail üzenetekben lévő távoli képek megjelenítését.
+        </p>
+      </aside>
+
+      <aside class="flex flex-col w-1/3 max-w-xs">
+        <img class="w-full h-auto mb-10 max-w-sm self-center shadow-lg"
+          src="/media/img/thunderbird/features/phishing-protection.png" alt="">
+        <h3 class="subheader-section">Adathalászat elleni védelem</h3>
+        <p class="font-md tracking-wider leading-loose mb-4 mt-0">
+          A Thunderbird védelmet nyújt az e-mail csalások ellen, amelyek megpróbálják rávenni a felhasználókat, hogy átadják személyes és bizalmas adataikat. Ezeket a gyanús leveleket a Thunderbird veszélyesnek jelöli meg. További védelemként a Thunderbird figyelmeztet, ha olyan hivatkozásra kattintana, amely a hivatkozástól eltérő weboldalra vinné az óvatlan felhasználót.
+        </p>
+      </aside>
+
+      <aside class="flex flex-col w-1/3 max-w-xs">
+        <img class="w-full h-auto mb-10 max-w-sm self-center shadow-lg"
+          src="/media/img/thunderbird/features/automated-update.png" alt="">
+        <h3 class="subheader-section">Automatikus frissítés</h3>
+        <p class="font-md tracking-wider leading-loose mb-4 mt-0">
+          A Thunderbird frissítőrendszere ellenőrzi, hogy a legfrissebb verziót használja-e és értesíti, amennyiben elérhető egy biztonsági frissítés. Ezek a biztonsági frissítések kis méretűek (általában 200 KB - 700 KB), csak az adott módosításokat tartalmazzák, így gyorsan letölthetők és telepíthetők. Az automatikus frissítőrendszer működik Windows, macOS és Linux operációs rendszereken, több mint 40 nyelven.
+        </p>
+      </aside>
+
+      <section class="flex w-full justify-between items-center mt-10">
+        <aside class="flex flex-col w-1/2 max-w-md">
+          <h3 class="subheader-section">Levélszemét kidobása</h3>
+          <p class="font-md tracking-wider leading-loose mb-8 mt-0">
+            A Thunderbird népszerű levélszemét-kezelője tovább fejlődött, hogy mindig egy lépéssel a kéretlen levelek küldői előtt járjon. Minden beérkező levél áthalad a Thunderbird levélszemét-kezelőjén és minden alkalommal, amikor egy levél kéretlen levélként kerül megjelölésre, a levélszemét-kezelő "megtanulja" és továbbfejleszti a szűrőt. Így több időt tölthet a valódi levelek olvasásával. Ugyanakkor a Thunderbird az e-mail szolgáltatója által biztosított levélszemét-kezelőt is képes használni, hogy távol tartsa a kéretlen leveleket.
+          </p>
+        </aside>
+
+        <aside class="flex flex-col w-1/2 max-w-md">
+          <h3 class="subheader-section">Nyílt forrás</h3>
+          <p class="font-md tracking-wider leading-loose mb-8 mt-0">
+            A Thunderbird középpontjában több ezer, a világ minden tájáról érkező, elkötelezett, tapasztalt programozó és biztonsági szakember által irányított nyílt forrású fejlesztési folyamat áll. A nyitottság és az aktív szakértői közösség segít abban, hogy termékeink biztonságosabbak legyenek és gyorsabban frissülnek. Mindezek mellett lehetővé teszi számunkra, hogy kihasználjuk a legjobb biztonsági ellenőrzési folyamatokat, és értékelési eszközöket, amelyek tovább erősítik az általános biztonságot.
+          </p>
+        </aside>
+      </section>
+    </section>
+  </section>
+
+  <section class="pt-20 pb-20 flex bg-prefooter bg-grey-lighter">
+  <section class="flex flex-1 max-w-6xl mx-auto justify-between pl-8 pr-8">
+    <article class="flex flex-1 max-w-md">
+      <aside class="w-24 pt-4">
+        <img class="w-full h-auto" src="/media/img/thunderbird/handshake.png" srcset="/media/img/thunderbird/handshake-high-res.png 1.5x" alt="Csatlakozás">
+      </aside>
+      <main class="flex flex-col flex-1 ml-4">
+        <h3 class="header-section">Csatlakozás</h3>
+        <p class="font-lg tracking-wider leading-loose mb-8 mt-0 flex-1">
+          Thunderbird is an open source project, which means anyone can contribute ideas, designs, code, and time helping fellow users.
+        </p>
+        <a href="/en-US/get-involved" class="btn-join self-start ml-3 mr-3">
+          Join Us
+        </a>
+        <p class="font-sm mt-0 text-blue font-semibold self-start">
+          <a href="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=pre_footer" class="small-link text-blue" target="_blank">Make a Donation</a> &bull;
+          <a href="https://support.mozilla.org/products/thunderbird/calendar"
+            class="small-link text-blue" target="_blank">Get Support</a> &bull;
+          <a href="https://bugzilla.mozilla.org/describecomponents.cgi?product=Thunderbird"
+            class="small-link text-blue" target="_blank">Report a Bug</a>
+        </p>
+      </main>
+    </article>
+
+    <aside class="flex flex-1 max-w-md">
+      <article class="flex flex-1 max-w-md">
+        <aside class="w-24 pt-4">
+          <img class="w-full h-auto" src="/media/img/thunderbird/logos/beta.png" srcset="/media/img/thunderbird/logos/beta-high-res.png 1.5x" alt="Thunderbird Beta">
+        </aside>
+        <main class="flex flex-col flex-1 ml-4">
+          <h3 class="header-section">The Future of Thunderbird</h3>
+          <p class="font-lg tracking-wider leading-loose mb-8 mt-0 flex-1">
+            Experience cutting edge features. Provide feedback to help refine and polish what will be in the final release
+          </p>
+          <aside class="ml-0 mr-0 self-start text-left text-blue font-semibold">
+            
+
+
+
+
+
+
+
+<div id="download-button-desktop-beta" class="download-button download-button-beta">
+  
+  <div class="nojs-download">
+    
+  <div class="download download-dumb">
+    <h4>Thunderbird letöltése — magyar</h4>
+    <ul class="list-none p-0 flex flex-wrap max-w-lg self-start">
+      <li class="ml-3 mr-3">
+          <a href="https://download.mozilla.org/?product=thunderbird-69.0b4-SSL&os=win&lang=hu" class="download-link btn-beta" data-donate-link="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+            Windows (XP/Vista)
+          </a>
+        </li><li class="ml-3 mr-3">
+          <a href="https://download.mozilla.org/?product=thunderbird-69.0b4-SSL&os=win&lang=hu" class="download-link btn-beta" data-donate-link="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+            Windows
+          </a>
+        </li><li class="ml-3 mr-3">
+          <a href="https://download.mozilla.org/?product=thunderbird-69.0b4-SSL&os=osx&lang=hu" class="download-link btn-beta" data-donate-link="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+            macOS
+          </a>
+        </li><li class="ml-3 mr-3">
+          <a href="https://download.mozilla.org/?product=thunderbird-69.0b4-SSL&os=linux&lang=hu" class="download-link btn-beta" data-donate-link="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+            Linux
+          </a>
+        </li><li class="ml-3 mr-3">
+          <a href="https://download.mozilla.org/?product=thunderbird-69.0b4-SSL&os=linux64&lang=hu" class="download-link btn-beta" data-donate-link="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+            Linux 64-bit
+          </a>
+        </li>
+    </ul>
+  </div>
+
+  </div>
+  <div class="unrecognized-download">
+    
+  <div class="download download-dumb">
+    <h4>Thunderbird letöltése — magyar</h4>
+    <ul class="list-none p-0 flex flex-wrap max-w-lg self-start">
+      <li class="ml-3 mr-3">
+          <a href="https://download.mozilla.org/?product=thunderbird-69.0b4-SSL&os=win&lang=hu" class="download-link btn-beta" data-donate-link="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+            Windows (XP/Vista)
+          </a>
+        </li><li class="ml-3 mr-3">
+          <a href="https://download.mozilla.org/?product=thunderbird-69.0b4-SSL&os=win&lang=hu" class="download-link btn-beta" data-donate-link="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+            Windows
+          </a>
+        </li><li class="ml-3 mr-3">
+          <a href="https://download.mozilla.org/?product=thunderbird-69.0b4-SSL&os=osx&lang=hu" class="download-link btn-beta" data-donate-link="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+            macOS
+          </a>
+        </li><li class="ml-3 mr-3">
+          <a href="https://download.mozilla.org/?product=thunderbird-69.0b4-SSL&os=linux&lang=hu" class="download-link btn-beta" data-donate-link="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+            Linux
+          </a>
+        </li><li class="ml-3 mr-3">
+          <a href="https://download.mozilla.org/?product=thunderbird-69.0b4-SSL&os=linux64&lang=hu" class="download-link btn-beta" data-donate-link="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+            Linux 64-bit
+          </a>
+        </li>
+    </ul>
+  </div>
+
+  </div>
+  <p class="unsupported-download">
+    Your system doesn't meet the <a href="/en-US/thunderbird/69.0beta/system-requirements/" class="inline-link">requirements</a> to run Thunderbird.
+  </p>
+  <p class="linux-arm-download mb-8">
+    Please follow <a href="https://support.mozilla.org/kb/installing-thunderbird-linux" class="inline-link">these instructions</a> to install Thunderbird.
+  </p>
+  <ul class="download-list list-none p-0 flex flex-wrap max-w-lg mb-0 self-start">
+    
+      <li class="os_winsha1 ml-3 mr-3">
+        <a class="download-link btn-beta"
+          href="https://download.mozilla.org/?product=thunderbird-69.0b4-SSL&os=win&lang=hu"
+          data-donate-link="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
+          >
+          
+            Download Beta
+          
+        </a>
+      </li>
+    
+      <li class="os_win ml-3 mr-3">
+        <a class="download-link btn-beta"
+          href="https://download.mozilla.org/?product=thunderbird-69.0b4-SSL&os=win&lang=hu"
+          data-donate-link="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
+          >
+          
+            Download Beta
+          
+        </a>
+      </li>
+    
+      <li class="os_osx ml-3 mr-3">
+        <a class="download-link btn-beta"
+          href="https://download.mozilla.org/?product=thunderbird-69.0b4-SSL&os=osx&lang=hu"
+          data-donate-link="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
+          >
+          
+            Download Beta
+          
+        </a>
+      </li>
+    
+      <li class="os_linux ml-3 mr-3">
+        <a class="download-link btn-beta"
+          href="https://download.mozilla.org/?product=thunderbird-69.0b4-SSL&os=linux&lang=hu"
+          data-donate-link="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
+          >
+          
+            Download Beta
+          
+        </a>
+      </li>
+    
+      <li class="os_linux64 ml-3 mr-3">
+        <a class="download-link btn-beta"
+          href="https://download.mozilla.org/?product=thunderbird-69.0b4-SSL&os=linux64&lang=hu"
+          data-donate-link="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
+          >
+          
+            Download Beta
+          
+        </a>
+      </li>
+    
+  </ul>
+  <p class="download-other download-other-desktop os_linux os_linux64 os_osx os_win os_winsha1 font-sm mt-0">
+    <a href="/en-US/thunderbird/beta/all/" class="small-link  text-blue ">Nyelvek és operációs rendszerek</a> &bull;
+    
+      <a href="/en-US/thunderbird/69.0beta/releasenotes/" class="small-link  text-blue ">Újdonságok</a> &bull;
+    
+    <a href="https://www.mozilla.org/privacy/thunderbird/" class="small-link  text-blue " target="_blank">Adatvédelem</a>
+  </p>
+</div>
+          </aside>
+        </main>
+      </article>
+    </aside>
+  </section>
+</section>
+
+    </main>
 
     
 
@@ -867,20 +1115,20 @@
   </section>
   <section class="self-center text-center max-w-xl mt-8">
     <ul class="list-none p-0 flex justify-center">
-      <li>
-        <a href="https://www.mozilla.org/privacy/" class="small-link mr-3 ml-3" data-link-type="footer" data-link-name="Privacy" target="_blank">Adatvédelem</a>
+      <li class="ml-2 mr-2">
+        <a href="https://www.mozilla.org/privacy/" class="small-link" data-link-type="footer" data-link-name="Privacy" target="_blank">Adatvédelem</a>
       </li>
-      <li>
-        <a href="https://www.mozilla.org/privacy/websites/#cookies#cookies" class="small-link mr-3 ml-3" data-link-type="footer" data-link-name="Cookies" target="_blank">Sütik</a>
-        </li>
-      <li>
-        <a href="https://www.mozilla.org/about/legal/" class="small-link mr-3 ml-3" data-link-type="footer"
+      <li class="ml-2 mr-2">
+        <a href="https://www.mozilla.org/privacy/websites/#cookies#cookies" class="small-link" data-link-type="footer" data-link-name="Cookies" target="_blank">Sütik</a>
+      </li>
+      <li class="ml-2 mr-2">
+        <a href="https://www.mozilla.org/about/legal/" class="small-link" data-link-type="footer"
           data-link-name="Legal" target="_blank">Jogi információk</a>
-        </li>
-      <li>
-        <a href="https://www.mozilla.org/about/legal/fraud-report/" class="small-link mr-3 ml-3" data-link-type="footer"
+      </li>
+      <li class="ml-2 mr-2">
+        <a href="https://www.mozilla.org/about/legal/fraud-report/" class="small-link" data-link-type="footer"
           data-link-name="Report Trademark Abuse" target="_blank">Védjeggyel való visszaélés jelentése</a>
-        </li>
+      </li>
     </ul>
 
     <p class="mt-6 mb-6 leading-normal">Portions of this content are ©1998–2019 by individual
