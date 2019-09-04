@@ -38,8 +38,6 @@
 
     
     
-  <link href="/media/css/releasenotes.css" rel="stylesheet" type="text/css" />
-
     <!--<![endif]-->
 
     
@@ -47,7 +45,7 @@
     
   </head>
 
-  <body id="notes" class="html-ltr thunderbird-notes sky" >
+  <body class="html-ltr " >
     <div id="strings" ></div>
 
     
@@ -221,6 +219,9 @@
               <a href="https://addons.thunderbird.net" target="_blank" class="nav-link">Add-ons</a>
             </li>
             <li>
+              <a href="/en-US/get-involved" class="nav-link">Get Involved</a>
+            </li>
+            <li>
               <a href="https://support.mozilla.org/products/thunderbird/" class="nav-link" target="_blank">Get Help</a>
             </li>
             <li>
@@ -245,6 +246,28 @@
     </section>
 
     
+  <section class="text-center text-white flex flex-col items-center w-full max-w-6xl mx-auto pl-8 pr-8">
+    <h1 class="font-hero font-thin mt-10 mb-8">
+      Thunderbird Beta Notes
+    </h1>
+    <p class="font-xl tracking-wide leading-relaxed max-w-4xl mb-10 mt-0">
+      Version 38.0beta, first offered to  channel users on May 23, 2015
+    </p>
+  </section>
+  <nav role="directory" class="text-center text-white flex justify-center max-w-6xl mx-auto bg-black-25 rounded mb-10">
+    <ul class="list-none p-0 flex flex-wrap justify-around flex-1 m-0">
+      <li class="ml-2 mr-2">
+        <a href="#whatsnew" class="btn-link">What’s new</a>
+      </li>
+      <li class="ml-2 mr-2">
+        <a href="#changes" class="btn-link">Changes</a>
+      </li>
+      <li class="ml-2 mr-2">
+        <a href="#fixes" class="btn-link">Bug Fixes</a>
+      </li>
+    </ul>
+  </nav>
+
 
     
 
@@ -259,402 +282,922 @@
 
     <main>
       
-<main role="main">
-  <article id="main-content">
-
-  
-    <header class="notes-head">
-    <h1>Thunderbird Beta Notes</h1>
-    <h2>Version 38.0beta, first offered to  channel users on May 23, 2015</h2>
-
-      <p>
-        Check out "What’s New" and "Known Issues" for this version of Thunderbird below.
-      
-        As always, you’re encouraged to
-        <a href="https://support.mozilla.org/questions/new/thunderbird">tell us what you think</a>,
-        or <a href="https://bugzilla.mozilla.org/">file a bug in Bugzilla</a>.
-      
-      
-          If interested, please see the  <a href="https://bugzilla.mozilla.org/buglist.cgi?bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&columnlist=component%2Cbug_severity%2Cshort_desc&f0=OP&f1=OP&f10=cf_status_thunderbird_38&f11=CP&f12=CP&f13=OP&f14=OP&f15=cf_status_thunderbird_esr31&f16=CP&f17=CP&f18=OP&f19=OP&f2=target_milestone&f20=cf_status_thunderbird_31&f21=CP&f22=CP&f3=target_milestone&f4=target_milestone&f5=target_milestone&f6=target_milestone&f7=target_milestone&f8=target_milestone&f9=cf_status_thunderbird_38&j1=OR&j14=OR&j19=OR&list_id=12149549&o10=substring&o15=notsubstring&o2=substring&o20=notsubstring&o3=substring&o4=substring&o5=substring&o6=substring&o7=substring&o8=substring&o9=substring&query_format=advanced&resolution=FIXED&v10=verified&v15=fixed&v2=Thunderbird%2032&v20=verified&v3=Thunderbird%2033&v4=Thunderbird%2034&v5=Thunderbird%2035&v6=Thunderbird%2036&v7=Thunderbird%2037&v8=Thunderbird%2038&v9=fixed&order=component&limit=0">complete list of changes</a> in this release.
-      
-        
+  <section  class="pt-20 flex justify-center items-center pl-20 pr-20">
+    <aside class="flex flex-col w-full ml-16 mr-16">
+      <p class="font-lg tracking-wider leading-loose mb-6 p-links-blue">
+        Check out "What’s New" and "Known Issues" for this version of Thunderbird below. As always, you’re encouraged to <a href="https://support.mozilla.org/questions/new/thunderbird" target="_blank">tell us what you think</a>, or <a href="https://bugzilla.mozilla.org/" target="_blank">file a bug in Bugzilla</a>
       </p>
-    </header>
+      <aside class="font-lg tracking-wider leading-loose mb-6 markup-page">
+        
+      </aside>
+    </aside>
+  </section>
+
+  <section class="pt-20 pb-16 w-full bg-calendar -mt-10">
+    &nbsp;
+  </section>
+
+  
+    <section class="pb-10 flex flex-wrap justify-center items-center pl-20 pr-20 bg-grey-lighter">
+      <aside class="flex flex-col w-full ml-16 mr-16">
+        
+        
+          
+            
+              
+
+              
+                <h3 id="whatsnew" class="header-section">
+                  <span><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M3.8 15.922a1.1 1.1 0 0 1-1.09-1.253l.609-4.36L.392 7.163a1.1 1.1 0 0 1 .616-1.833l4.081-.73L7.015.734a1.1 1.1 0 0 1 1.969 0L10.911 4.6l4.084.729a1.1 1.1 0 0 1 .611 1.833L12.68 10.31l.609 4.359a1.1 1.1 0 0 1-1.6 1.127L8 13.873 4.307 15.8a1.093 1.093 0 0 1-.507.122zm-.415-1.9zm9.228 0zM2.981 7.01l2.451 2.635-.5 3.572L8 11.618l3.067 1.6-.5-3.572 2.451-2.636-3.45-.616L8 3.244l-1.569 3.15zm11.659.29zm-13.278 0zm12.78-1.5zm-12.286 0z"></path></svg>
+</span>What’s New
+                </h3>
+              
+
+            
+            
+              <aside id="note-" class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
+                <h4 class="font-bold uppercase m-0 p-3 w-24">
+                  
+                    <aside class="flex items-center text-orange">
+                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M3.8 15.922a1.1 1.1 0 0 1-1.09-1.253l.609-4.36L.392 7.163a1.1 1.1 0 0 1 .616-1.833l4.081-.73L7.015.734a1.1 1.1 0 0 1 1.969 0L10.911 4.6l4.084.729a1.1 1.1 0 0 1 .611 1.833L12.68 10.31l.609 4.359a1.1 1.1 0 0 1-1.6 1.127L8 13.873 4.307 15.8a1.093 1.093 0 0 1-.507.122zm-.415-1.9zm9.228 0zM2.981 7.01l2.451 2.635-.5 3.572L8 11.618l3.067 1.6-.5-3.572 2.451-2.636-3.45-.616L8 3.244l-1.569 3.15zm11.659.29zm-13.278 0zm12.78-1.5zm-12.286 0z"></path></svg>
+</span>
+                      new
+                    </aside>
+                  
+                </h4>
+                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
+                  <p>GMail supports OAuth2 authentication, removing the need to manually select "allow less secure applications" in Google options for the account.  (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=849540">bug 849540</a>)</p>
+                </aside>
+              </aside>
+            
+          
+            
+            
+              <aside id="note-" class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
+                <h4 class="font-bold uppercase m-0 p-3 w-24">
+                  
+                    <aside class="flex items-center text-orange">
+                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M3.8 15.922a1.1 1.1 0 0 1-1.09-1.253l.609-4.36L.392 7.163a1.1 1.1 0 0 1 .616-1.833l4.081-.73L7.015.734a1.1 1.1 0 0 1 1.969 0L10.911 4.6l4.084.729a1.1 1.1 0 0 1 .611 1.833L12.68 10.31l.609 4.359a1.1 1.1 0 0 1-1.6 1.127L8 13.873 4.307 15.8a1.093 1.093 0 0 1-.507.122zm-.415-1.9zm9.228 0zM2.981 7.01l2.451 2.635-.5 3.572L8 11.618l3.067 1.6-.5-3.572 2.451-2.636-3.45-.616L8 3.244l-1.569 3.15zm11.659.29zm-13.278 0zm12.78-1.5zm-12.286 0z"></path></svg>
+</span>
+                      new
+                    </aside>
+                  
+                </h4>
+                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
+                  <p>Filter sent messages (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=11039 ">bug 11039</a>)</p>
+                </aside>
+              </aside>
+            
+          
+            
+            
+              <aside id="note-" class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
+                <h4 class="font-bold uppercase m-0 p-3 w-24">
+                  
+                    <aside class="flex items-center text-orange">
+                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M3.8 15.922a1.1 1.1 0 0 1-1.09-1.253l.609-4.36L.392 7.163a1.1 1.1 0 0 1 .616-1.833l4.081-.73L7.015.734a1.1 1.1 0 0 1 1.969 0L10.911 4.6l4.084.729a1.1 1.1 0 0 1 .611 1.833L12.68 10.31l.609 4.359a1.1 1.1 0 0 1-1.6 1.127L8 13.873 4.307 15.8a1.093 1.093 0 0 1-.507.122zm-.415-1.9zm9.228 0zM2.981 7.01l2.451 2.635-.5 3.572L8 11.618l3.067 1.6-.5-3.572 2.451-2.636-3.45-.616L8 3.244l-1.569 3.15zm11.659.29zm-13.278 0zm12.78-1.5zm-12.286 0z"></path></svg>
+</span>
+                      new
+                    </aside>
+                  
+                </h4>
+                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
+                  <p>Filter messages when archived  (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=479823 ">bug 479823</a>)</p>
+                </aside>
+              </aside>
+            
+          
+            
+            
+              <aside id="note-" class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
+                <h4 class="font-bold uppercase m-0 p-3 w-24">
+                  
+                    <aside class="flex items-center text-orange">
+                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M3.8 15.922a1.1 1.1 0 0 1-1.09-1.253l.609-4.36L.392 7.163a1.1 1.1 0 0 1 .616-1.833l4.081-.73L7.015.734a1.1 1.1 0 0 1 1.969 0L10.911 4.6l4.084.729a1.1 1.1 0 0 1 .611 1.833L12.68 10.31l.609 4.359a1.1 1.1 0 0 1-1.6 1.127L8 13.873 4.307 15.8a1.093 1.093 0 0 1-.507.122zm-.415-1.9zm9.228 0zM2.981 7.01l2.451 2.635-.5 3.572L8 11.618l3.067 1.6-.5-3.572 2.451-2.636-3.45-.616L8 3.244l-1.569 3.15zm11.659.29zm-13.278 0zm12.78-1.5zm-12.286 0z"></path></svg>
+</span>
+                      new
+                    </aside>
+                  
+                </h4>
+                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
+                  <p>Enable search in multiple/all address books (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=170270 ">bug 170270</a>)</p>
+                </aside>
+              </aside>
+            
+          
+            
+            
+              <aside id="note-" class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
+                <h4 class="font-bold uppercase m-0 p-3 w-24">
+                  
+                    <aside class="flex items-center text-orange">
+                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M3.8 15.922a1.1 1.1 0 0 1-1.09-1.253l.609-4.36L.392 7.163a1.1 1.1 0 0 1 .616-1.833l4.081-.73L7.015.734a1.1 1.1 0 0 1 1.969 0L10.911 4.6l4.084.729a1.1 1.1 0 0 1 .611 1.833L12.68 10.31l.609 4.359a1.1 1.1 0 0 1-1.6 1.127L8 13.873 4.307 15.8a1.093 1.093 0 0 1-.507.122zm-.415-1.9zm9.228 0zM2.981 7.01l2.451 2.635-.5 3.572L8 11.618l3.067 1.6-.5-3.572 2.451-2.636-3.45-.616L8 3.244l-1.569 3.15zm11.659.29zm-13.278 0zm12.78-1.5zm-12.286 0z"></path></svg>
+</span>
+                      new
+                    </aside>
+                  
+                </h4>
+                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
+                  <p>Add a Learn more link to the support page in feeds subscribe dialog (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1053782">bug 1053782</a>)</p>
+                </aside>
+              </aside>
+            
+          
+            
+            
+              <aside id="note-" class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
+                <h4 class="font-bold uppercase m-0 p-3 w-24">
+                  
+                    <aside class="flex items-center text-orange">
+                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M3.8 15.922a1.1 1.1 0 0 1-1.09-1.253l.609-4.36L.392 7.163a1.1 1.1 0 0 1 .616-1.833l4.081-.73L7.015.734a1.1 1.1 0 0 1 1.969 0L10.911 4.6l4.084.729a1.1 1.1 0 0 1 .611 1.833L12.68 10.31l.609 4.359a1.1 1.1 0 0 1-1.6 1.127L8 13.873 4.307 15.8a1.093 1.093 0 0 1-.507.122zm-.415-1.9zm9.228 0zM2.981 7.01l2.451 2.635-.5 3.572L8 11.618l3.067 1.6-.5-3.572 2.451-2.636-3.45-.616L8 3.244l-1.569 3.15zm11.659.29zm-13.278 0zm12.78-1.5zm-12.286 0z"></path></svg>
+</span>
+                      new
+                    </aside>
+                  
+                </h4>
+                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
+                  <p>Allow file-per-message (maildir) local message storage (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=845952 ">bug 845952</a>)</p>
+                </aside>
+              </aside>
+            
+          
+            
+            
+              <aside id="note-" class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
+                <h4 class="font-bold uppercase m-0 p-3 w-24">
+                  
+                    <aside class="flex items-center text-orange">
+                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M3.8 15.922a1.1 1.1 0 0 1-1.09-1.253l.609-4.36L.392 7.163a1.1 1.1 0 0 1 .616-1.833l4.081-.73L7.015.734a1.1 1.1 0 0 1 1.969 0L10.911 4.6l4.084.729a1.1 1.1 0 0 1 .611 1.833L12.68 10.31l.609 4.359a1.1 1.1 0 0 1-1.6 1.127L8 13.873 4.307 15.8a1.093 1.093 0 0 1-.507.122zm-.415-1.9zm9.228 0zM2.981 7.01l2.451 2.635-.5 3.572L8 11.618l3.067 1.6-.5-3.572 2.451-2.636-3.45-.616L8 3.244l-1.569 3.15zm11.659.29zm-13.278 0zm12.78-1.5zm-12.286 0z"></path></svg>
+</span>
+                      new
+                    </aside>
+                  
+                </h4>
+                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
+                  <p>Show expanded columns in folder pane  (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=464973 ">bug 464973</a>)</p>
+                </aside>
+              </aside>
+            
+          
+            
+            
+              <aside id="note-" class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
+                <h4 class="font-bold uppercase m-0 p-3 w-24">
+                  
+                    <aside class="flex items-center text-orange">
+                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M3.8 15.922a1.1 1.1 0 0 1-1.09-1.253l.609-4.36L.392 7.163a1.1 1.1 0 0 1 .616-1.833l4.081-.73L7.015.734a1.1 1.1 0 0 1 1.969 0L10.911 4.6l4.084.729a1.1 1.1 0 0 1 .611 1.833L12.68 10.31l.609 4.359a1.1 1.1 0 0 1-1.6 1.127L8 13.873 4.307 15.8a1.093 1.093 0 0 1-.507.122zm-.415-1.9zm9.228 0zM2.981 7.01l2.451 2.635-.5 3.572L8 11.618l3.067 1.6-.5-3.572 2.451-2.636-3.45-.616L8 3.244l-1.569 3.15zm11.659.29zm-13.278 0zm12.78-1.5zm-12.286 0z"></path></svg>
+</span>
+                      new
+                    </aside>
+                  
+                </h4>
+                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
+                  <p>The editor for twitter should show inputtable character
+count (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=736002">bug 736002</a>)</p>
+                </aside>
+              </aside>
+            
+          
+            
+            
+              <aside id="note-" class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
+                <h4 class="font-bold uppercase m-0 p-3 w-24">
+                  
+                    <aside class="flex items-center text-orange">
+                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M3.8 15.922a1.1 1.1 0 0 1-1.09-1.253l.609-4.36L.392 7.163a1.1 1.1 0 0 1 .616-1.833l4.081-.73L7.015.734a1.1 1.1 0 0 1 1.969 0L10.911 4.6l4.084.729a1.1 1.1 0 0 1 .611 1.833L12.68 10.31l.609 4.359a1.1 1.1 0 0 1-1.6 1.127L8 13.873 4.307 15.8a1.093 1.093 0 0 1-.507.122zm-.415-1.9zm9.228 0zM2.981 7.01l2.451 2.635-.5 3.572L8 11.618l3.067 1.6-.5-3.572 2.451-2.636-3.45-.616L8 3.244l-1.569 3.15zm11.659.29zm-13.278 0zm12.78-1.5zm-12.286 0z"></path></svg>
+</span>
+                      new
+                    </aside>
+                  
+                </h4>
+                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
+                  <p>Support Internationalized domain name URLs for RSS feeds (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1018589">Bug 1018589</a>)</p>
+                </aside>
+              </aside>
+            
+          
+            
+            
+              <aside id="note-" class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
+                <h4 class="font-bold uppercase m-0 p-3 w-24">
+                  
+                    <aside class="flex items-center text-orange">
+                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M3.8 15.922a1.1 1.1 0 0 1-1.09-1.253l.609-4.36L.392 7.163a1.1 1.1 0 0 1 .616-1.833l4.081-.73L7.015.734a1.1 1.1 0 0 1 1.969 0L10.911 4.6l4.084.729a1.1 1.1 0 0 1 .611 1.833L12.68 10.31l.609 4.359a1.1 1.1 0 0 1-1.6 1.127L8 13.873 4.307 15.8a1.093 1.093 0 0 1-.507.122zm-.415-1.9zm9.228 0zM2.981 7.01l2.451 2.635-.5 3.572L8 11.618l3.067 1.6-.5-3.572 2.451-2.636-3.45-.616L8 3.244l-1.569 3.15zm11.659.29zm-13.278 0zm12.78-1.5zm-12.286 0z"></path></svg>
+</span>
+                      new
+                    </aside>
+                  
+                </h4>
+                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
+                  <p>Add reading position marker line to conversations (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=760762">bug 760762</a>)</p>
+                </aside>
+              </aside>
+            
+          
+            
+              
+
+              
+                <h3 id="changes" class="header-section pt-14 pb-4">
+                  <span><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M14 1a1 1 0 0 0-1 1v1.146A6.948 6.948 0 0 0 1.227 6.307a1 1 0 1 0 1.94.484A4.983 4.983 0 0 1 8 3a4.919 4.919 0 0 1 3.967 2H10a1 1 0 0 0 0 2h4a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm.046 7.481a1 1 0 0 0-1.213.728A4.983 4.983 0 0 1 8 13a4.919 4.919 0 0 1-3.967-2H6a1 1 0 0 0 0-2H2a1 1 0 0 0-1 1v4a1 1 0 0 0 2 0v-1.146a6.948 6.948 0 0 0 11.773-3.161 1 1 0 0 0-.727-1.212z"></path></svg>
+</span>Changes
+                </h3>
+              
+
+            
+            
+              <aside id="note-" class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
+                <h4 class="font-bold uppercase m-0 p-3 w-24">
+                  
+                    <aside class="flex items-center text-purple">
+                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M14 1a1 1 0 0 0-1 1v1.146A6.948 6.948 0 0 0 1.227 6.307a1 1 0 1 0 1.94.484A4.983 4.983 0 0 1 8 3a4.919 4.919 0 0 1 3.967 2H10a1 1 0 0 0 0 2h4a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm.046 7.481a1 1 0 0 0-1.213.728A4.983 4.983 0 0 1 8 13a4.919 4.919 0 0 1-3.967-2H6a1 1 0 0 0 0-2H2a1 1 0 0 0-1 1v4a1 1 0 0 0 2 0v-1.146a6.948 6.948 0 0 0 11.773-3.161 1 1 0 0 0-.727-1.212z"></path></svg>
+</span>
+                      changed
+                    </aside>
+                  
+                </h4>
+                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
+                  <p>Default to using SSL for XMPP and IRC. This might cause issues for self-signed certificates  (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1122567">bug 1122567, </a><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1122666">bug 1122666</a>)</p>
+                </aside>
+              </aside>
+            
+          
+            
+            
+              <aside id="note-" class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
+                <h4 class="font-bold uppercase m-0 p-3 w-24">
+                  
+                    <aside class="flex items-center text-purple">
+                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M14 1a1 1 0 0 0-1 1v1.146A6.948 6.948 0 0 0 1.227 6.307a1 1 0 1 0 1.94.484A4.983 4.983 0 0 1 8 3a4.919 4.919 0 0 1 3.967 2H10a1 1 0 0 0 0 2h4a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm.046 7.481a1 1 0 0 0-1.213.728A4.983 4.983 0 0 1 8 13a4.919 4.919 0 0 1-3.967-2H6a1 1 0 0 0 0-2H2a1 1 0 0 0-1 1v4a1 1 0 0 0 2 0v-1.146a6.948 6.948 0 0 0 11.773-3.161 1 1 0 0 0-.727-1.212z"></path></svg>
+</span>
+                      changed
+                    </aside>
+                  
+                </h4>
+                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
+                  <p>Make OpenSearch queries open in the user's default browser (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1120777">bug 1120777</a>)</p>
+                </aside>
+              </aside>
+            
+          
+            
+            
+              <aside id="note-" class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
+                <h4 class="font-bold uppercase m-0 p-3 w-24">
+                  
+                    <aside class="flex items-center text-purple">
+                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M14 1a1 1 0 0 0-1 1v1.146A6.948 6.948 0 0 0 1.227 6.307a1 1 0 1 0 1.94.484A4.983 4.983 0 0 1 8 3a4.919 4.919 0 0 1 3.967 2H10a1 1 0 0 0 0 2h4a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm.046 7.481a1 1 0 0 0-1.213.728A4.983 4.983 0 0 1 8 13a4.919 4.919 0 0 1-3.967-2H6a1 1 0 0 0 0-2H2a1 1 0 0 0-1 1v4a1 1 0 0 0 2 0v-1.146a6.948 6.948 0 0 0 11.773-3.161 1 1 0 0 0-.727-1.212z"></path></svg>
+</span>
+                      changed
+                    </aside>
+                  
+                </h4>
+                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
+                  <p>Disable CONDSTORE support for IMAP to prevent discrepancies in IMAP message status (deleted, unread) on some servers (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=912216">bug 912216</a>)</p>
+                </aside>
+              </aside>
+            
+          
+            
+            
+              <aside id="note-" class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
+                <h4 class="font-bold uppercase m-0 p-3 w-24">
+                  
+                    <aside class="flex items-center text-purple">
+                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M14 1a1 1 0 0 0-1 1v1.146A6.948 6.948 0 0 0 1.227 6.307a1 1 0 1 0 1.94.484A4.983 4.983 0 0 1 8 3a4.919 4.919 0 0 1 3.967 2H10a1 1 0 0 0 0 2h4a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm.046 7.481a1 1 0 0 0-1.213.728A4.983 4.983 0 0 1 8 13a4.919 4.919 0 0 1-3.967-2H6a1 1 0 0 0 0-2H2a1 1 0 0 0-1 1v4a1 1 0 0 0 2 0v-1.146a6.948 6.948 0 0 0 11.773-3.161 1 1 0 0 0-.727-1.212z"></path></svg>
+</span>
+                      changed
+                    </aside>
+                  
+                </h4>
+                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
+                  <p>Removed rarely used character sets: T.61-8bit, non-encoding Mac encoders, VISCII, x-viet-tcvn5712, x-viet-vps x-johab, ARMSCII8 , map us-ascii to windows-1252, ISO-8859-6-I and -E and ISO-8859-8-E, (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1068505">bug 1068505 and others.</a>)</p>
+                </aside>
+              </aside>
+            
+          
+            
+            
+              <aside id="note-" class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
+                <h4 class="font-bold uppercase m-0 p-3 w-24">
+                  
+                    <aside class="flex items-center text-purple">
+                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M14 1a1 1 0 0 0-1 1v1.146A6.948 6.948 0 0 0 1.227 6.307a1 1 0 1 0 1.94.484A4.983 4.983 0 0 1 8 3a4.919 4.919 0 0 1 3.967 2H10a1 1 0 0 0 0 2h4a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm.046 7.481a1 1 0 0 0-1.213.728A4.983 4.983 0 0 1 8 13a4.919 4.919 0 0 1-3.967-2H6a1 1 0 0 0 0-2H2a1 1 0 0 0-1 1v4a1 1 0 0 0 2 0v-1.146a6.948 6.948 0 0 0 11.773-3.161 1 1 0 0 0-.727-1.212z"></path></svg>
+</span>
+                      changed
+                    </aside>
+                  
+                </h4>
+                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
+                  <p>Thunderbird will no longer use SHA-1 to sign messages (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1018259">bug 1018259</a>)</p>
+                </aside>
+              </aside>
+            
+          
+            
+              
+
+              
+                <h3 id="fixes" class="header-section pt-14 pb-4">
+                  <span><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>Fixes
+                </h3>
+              
+
+            
+            
+              <aside id="note-" class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
+                <h4 class="font-bold uppercase m-0 p-3 w-24">
+                  
+                    <aside class="flex items-center text-green">
+                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>
+                      fixed
+                    </aside>
+                  
+                </h4>
+                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
+                  <p>Fixes for connecting to non-standard IRC networks  (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=870556">bug 870556</a> and others)</p>
+                </aside>
+              </aside>
+            
+          
+            
+            
+              <aside id="note-" class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
+                <h4 class="font-bold uppercase m-0 p-3 w-24">
+                  
+                    <aside class="flex items-center text-green">
+                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>
+                      fixed
+                    </aside>
+                  
+                </h4>
+                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
+                  <p>Significantly improve XMPP support  (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1085022">bug 1085022</a> and others)</p>
+                </aside>
+              </aside>
+            
+          
+            
+            
+              <aside id="note-" class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
+                <h4 class="font-bold uppercase m-0 p-3 w-24">
+                  
+                    <aside class="flex items-center text-green">
+                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>
+                      fixed
+                    </aside>
+                  
+                </h4>
+                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
+                  <p>Various improvements when using IRC on moznet  (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1083768">bug 1083768</a> and others)</p>
+                </aside>
+              </aside>
+            
+          
+            
+            
+              <aside id="note-" class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
+                <h4 class="font-bold uppercase m-0 p-3 w-24">
+                  
+                    <aside class="flex items-center text-green">
+                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>
+                      fixed
+                    </aside>
+                  
+                </h4>
+                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
+                  <p>Automatically rejoin multi-user conversations on reconnect for XMPP  (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1014472">bug 1014472</a>)</p>
+                </aside>
+              </aside>
+            
+          
+            
+            
+              <aside id="note-" class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
+                <h4 class="font-bold uppercase m-0 p-3 w-24">
+                  
+                    <aside class="flex items-center text-green">
+                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>
+                      fixed
+                    </aside>
+                  
+                </h4>
+                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
+                  <p>Severe UI stutter or freezes getting new mail for very large folders (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=870556">bug 870556</a>)</p>
+                </aside>
+              </aside>
+            
+          
+            
+            
+              <aside id="note-" class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
+                <h4 class="font-bold uppercase m-0 p-3 w-24">
+                  
+                    <aside class="flex items-center text-green">
+                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>
+                      fixed
+                    </aside>
+                  
+                </h4>
+                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
+                  <p>Wrong folder may be deleted when requesting junk delete (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1018960">bug 1018960</a>)</p>
+                </aside>
+              </aside>
+            
+          
+            
+            
+              <aside id="note-" class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
+                <h4 class="font-bold uppercase m-0 p-3 w-24">
+                  
+                    <aside class="flex items-center text-green">
+                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>
+                      fixed
+                    </aside>
+                  
+                </h4>
+                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
+                  <p>Status bar not accessible (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=934875">bug 934875</a>)</p>
+                </aside>
+              </aside>
+            
+          
+            
+            
+              <aside id="note-" class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
+                <h4 class="font-bold uppercase m-0 p-3 w-24">
+                  
+                    <aside class="flex items-center text-green">
+                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>
+                      fixed
+                    </aside>
+                  
+                </h4>
+                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
+                  <p>Addressing autocomplete widget: Typed text in red despite results/matches found if suggestions change by last input  (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1042561">bug 1042561</a>)</p>
+                </aside>
+              </aside>
+            
+          
+            
+            
+              <aside id="note-" class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
+                <h4 class="font-bold uppercase m-0 p-3 w-24">
+                  
+                    <aside class="flex items-center text-green">
+                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>
+                      fixed
+                    </aside>
+                  
+                </h4>
+                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
+                  <p>Force display of Sender header if S/MIME sender is the signer (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=332639">bug 332639</a>)</p>
+                </aside>
+              </aside>
+            
+          
+            
+            
+              <aside id="note-" class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
+                <h4 class="font-bold uppercase m-0 p-3 w-24">
+                  
+                    <aside class="flex items-center text-green">
+                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>
+                      fixed
+                    </aside>
+                  
+                </h4>
+                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
+                  <p>Email address with leading/trailing whitespace displayed wrongly with added quotes when composing ["foo"@bar.com] (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=286760">bug 286760</a>)</p>
+                </aside>
+              </aside>
+            
+          
+            
+            
+              <aside id="note-" class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
+                <h4 class="font-bold uppercase m-0 p-3 w-24">
+                  
+                    <aside class="flex items-center text-green">
+                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>
+                      fixed
+                    </aside>
+                  
+                </h4>
+                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
+                  <p>Web site from RSS feed was not rendered correctly (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=662907">bug 662907</a>)</p>
+                </aside>
+              </aside>
+            
+          
+            
+            
+              <aside id="note-" class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
+                <h4 class="font-bold uppercase m-0 p-3 w-24">
+                  
+                    <aside class="flex items-center text-green">
+                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>
+                      fixed
+                    </aside>
+                  
+                </h4>
+                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
+                  <p>Adding unknown email addresses to Mailing list, then deleting ghost duplicate entries from contacts pane, caused dataloss in mailing list (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=628035">bug 628035</a>)</p>
+                </aside>
+              </aside>
+            
+          
+            
+            
+              <aside id="note-" class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
+                <h4 class="font-bold uppercase m-0 p-3 w-24">
+                  
+                    <aside class="flex items-center text-green">
+                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>
+                      fixed
+                    </aside>
+                  
+                </h4>
+                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
+                  <p>Attachment "Save As" files are displayed in Tools/Saved Files (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=914517 ">bug 914517</a>)</p>
+                </aside>
+              </aside>
+            
+          
+            
+            
+              <aside id="note-" class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
+                <h4 class="font-bold uppercase m-0 p-3 w-24">
+                  
+                    <aside class="flex items-center text-green">
+                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>
+                      fixed
+                    </aside>
+                  
+                </h4>
+                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
+                  <p>Replied/forwarded icons disappear after folder repair, detach/delete (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=840418 ">bug 840418</a>)</p>
+                </aside>
+              </aside>
+            
+          
+            
+            
+              <aside id="note-" class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
+                <h4 class="font-bold uppercase m-0 p-3 w-24">
+                  
+                    <aside class="flex items-center text-green">
+                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>
+                      fixed
+                    </aside>
+                  
+                </h4>
+                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
+                  <p>Automatically reclaim IRC nicks during a reconnect  (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1087566">bug 1087566</a>)</p>
+                </aside>
+              </aside>
+            
+          
+            
+              
+
+              
+
+            
+            
+          
+        
+
+        
+          <h3 id="known-issues" class="header-section pt-14 pb-4">
+            <span><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M14.742 12.106L9.789 2.2a2 2 0 0 0-3.578 0l-4.953 9.91A2 2 0 0 0 3.047 15h9.905a2 2 0 0 0 1.79-2.894zM7 5a1 1 0 0 1 2 0v4a1 1 0 0 1-2 0zm1 8.25A1.25 1.25 0 1 1 9.25 12 1.25 1.25 0 0 1 8 13.25z"></path></svg>
+</span>Known Issues
+          </h3>
+          
+            <aside id="note-" class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
+              <h4 class="font-bold uppercase m-0 p-3 w-24">
+                <aside class="flex items-center text-red">
+                  <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M3.8 15.922a1.1 1.1 0 0 1-1.09-1.253l.609-4.36L.392 7.163a1.1 1.1 0 0 1 .616-1.833l4.081-.73L7.015.734a1.1 1.1 0 0 1 1.969 0L10.911 4.6l4.084.729a1.1 1.1 0 0 1 .611 1.833L12.68 10.31l.609 4.359a1.1 1.1 0 0 1-1.6 1.127L8 13.873 4.307 15.8a1.093 1.093 0 0 1-.507.122zm-.415-1.9zm9.228 0zM2.981 7.01l2.451 2.635-.5 3.572L8 11.618l3.067 1.6-.5-3.572 2.451-2.636-3.45-.616L8 3.244l-1.569 3.15zm11.659.29zm-13.278 0zm12.78-1.5zm-12.286 0z"></path></svg>
+</span>
+                  unresolved
+                </aside>
+              </h4>
+              <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
+                <p>Automatic addon compatibility update checks were not completed, so existing addon compatibilities may not be accurate.</p>
+                
+              </aside>
+            </aside>
+          
+        
+      </aside>
+    </section>
   
 
-  <div class="main-column">
+  <section class="pt-20 pb-20 flex bg-prefooter bg-grey-lighter">
+  <section class="flex flex-1 max-w-6xl mx-auto justify-between pl-8 pr-8">
+    <article class="flex flex-1 max-w-md">
+      <aside class="w-24 pt-4">
+        <img class="w-full h-auto" src="/media/img/thunderbird/handshake.png" srcset="/media/img/thunderbird/handshake-high-res.png 1.5x" alt="Get Involved">
+      </aside>
+      <main class="flex flex-col flex-1 ml-4">
+        <h3 class="header-section">Get Involved</h3>
+        <p class="font-lg tracking-wider leading-loose mb-8 mt-0 flex-1">
+          Thunderbird is an open source project, which means anyone can contribute ideas, designs, code, and time helping fellow users.
+        </p>
+        <a href="/en-US/get-involved" class="btn-join self-start ml-3 mr-3">
+          Join Us
+        </a>
+        <p class="font-sm mt-0 text-blue font-semibold self-start">
+          <a href="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=pre_footer" class="small-link text-blue" target="_blank">Make a Donation</a> &bull;
+          <a href="https://support.mozilla.org/products/thunderbird/"
+            class="small-link text-blue" target="_blank">Get Support</a> &bull;
+          <a href="https://bugzilla.mozilla.org/describecomponents.cgi?product=Thunderbird"
+            class="small-link text-blue" target="_blank">Report a Bug</a>
+        </p>
+      </main>
+    </article>
+
+    <aside class="flex flex-1 max-w-md">
+      <article class="flex flex-1 max-w-md">
+        <aside class="w-24 pt-4">
+          <img class="w-full h-auto" src="/media/img/thunderbird/logos/beta.png" srcset="/media/img/thunderbird/logos/beta-high-res.png 1.5x" alt="Thunderbird Beta">
+        </aside>
+        <main class="flex flex-col flex-1 ml-4">
+          <h3 class="header-section">The Future of Thunderbird</h3>
+          <p class="font-lg tracking-wider leading-loose mb-8 mt-0 flex-1">
+            Experience cutting edge features. Provide feedback to help refine and polish what will be in the final release
+          </p>
+          <aside class="ml-0 mr-0 self-start text-left text-blue font-semibold">
+            
+
+
+
+
+
+
+
+<div id="download-button-desktop-beta" class="download-button download-button-beta">
+  
+  <div class="nojs-download">
     
-    <section class="notes-section" id="new-features">
-      <h3>What’s New</h3>
-      
-        
-        <ul class="section-items tagged">
-          
-          
-            <li  id="note-">
-              
-                <b class="tag tag-new">new</b>
-              
-                <p>GMail supports OAuth2 authentication, removing the need to manually select "allow less secure applications" in Google options for the account.  (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=849540">bug 849540</a>)</p>
-            </li>
-          
-          
-          
-            <li  id="note-">
-              
-                <b class="tag tag-new">new</b>
-              
-                <p>Filter sent messages (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=11039 ">bug 11039</a>)</p>
-            </li>
-          
-          
-          
-            <li  id="note-">
-              
-                <b class="tag tag-new">new</b>
-              
-                <p>Filter messages when archived  (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=479823 ">bug 479823</a>)</p>
-            </li>
-          
-          
-          
-            <li  id="note-">
-              
-                <b class="tag tag-new">new</b>
-              
-                <p>Enable search in multiple/all address books (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=170270 ">bug 170270</a>)</p>
-            </li>
-          
-          
-          
-            <li  id="note-">
-              
-                <b class="tag tag-new">new</b>
-              
-                <p>Add a Learn more link to the support page in feeds subscribe dialog (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1053782">bug 1053782</a>)</p>
-            </li>
-          
-          
-          
-            <li  id="note-">
-              
-                <b class="tag tag-new">new</b>
-              
-                <p>Allow file-per-message (maildir) local message storage (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=845952 ">bug 845952</a>)</p>
-            </li>
-          
-          
-          
-            <li  id="note-">
-              
-                <b class="tag tag-new">new</b>
-              
-                <p>Show expanded columns in folder pane  (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=464973 ">bug 464973</a>)</p>
-            </li>
-          
-          
-          
-            <li  id="note-">
-              
-                <b class="tag tag-new">new</b>
-              
-                <p>The editor for twitter should show inputtable character
-count (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=736002">bug 736002</a>)</p>
-            </li>
-          
-          
-          
-            <li  id="note-">
-              
-                <b class="tag tag-new">new</b>
-              
-                <p>Support Internationalized domain name URLs for RSS feeds (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1018589">Bug 1018589</a>)</p>
-            </li>
-          
-          
-          
-            <li  id="note-">
-              
-                <b class="tag tag-new">new</b>
-              
-                <p>Add reading position marker line to conversations (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=760762">bug 760762</a>)</p>
-            </li>
-          
-          
-          
-            <li  id="note-">
-              
-                <b class="tag tag-changed">changed</b>
-              
-                <p>Default to using SSL for XMPP and IRC. This might cause issues for self-signed certificates  (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1122567">bug 1122567, </a><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1122666">bug 1122666</a>)</p>
-            </li>
-          
-          
-          
-            <li  id="note-">
-              
-                <b class="tag tag-changed">changed</b>
-              
-                <p>Make OpenSearch queries open in the user's default browser (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1120777">bug 1120777</a>)</p>
-            </li>
-          
-          
-          
-            <li  id="note-">
-              
-                <b class="tag tag-changed">changed</b>
-              
-                <p>Disable CONDSTORE support for IMAP to prevent discrepancies in IMAP message status (deleted, unread) on some servers (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=912216">bug 912216</a>)</p>
-            </li>
-          
-          
-          
-            <li  id="note-">
-              
-                <b class="tag tag-changed">changed</b>
-              
-                <p>Removed rarely used character sets: T.61-8bit, non-encoding Mac encoders, VISCII, x-viet-tcvn5712, x-viet-vps x-johab, ARMSCII8 , map us-ascii to windows-1252, ISO-8859-6-I and -E and ISO-8859-8-E, (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1068505">bug 1068505 and others.</a>)</p>
-            </li>
-          
-          
-          
-            <li  id="note-">
-              
-                <b class="tag tag-changed">changed</b>
-              
-                <p>Thunderbird will no longer use SHA-1 to sign messages (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1018259">bug 1018259</a>)</p>
-            </li>
-          
-          
-          
-            <li  id="note-">
-              
-                <b class="tag tag-fixed">fixed</b>
-              
-                <p>Fixes for connecting to non-standard IRC networks  (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=870556">bug 870556</a> and others)</p>
-            </li>
-          
-          
-          
-            <li  id="note-">
-              
-                <b class="tag tag-fixed">fixed</b>
-              
-                <p>Significantly improve XMPP support  (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1085022">bug 1085022</a> and others)</p>
-            </li>
-          
-          
-          
-            <li  id="note-">
-              
-                <b class="tag tag-fixed">fixed</b>
-              
-                <p>Various improvements when using IRC on moznet  (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1083768">bug 1083768</a> and others)</p>
-            </li>
-          
-          
-          
-            <li  id="note-">
-              
-                <b class="tag tag-fixed">fixed</b>
-              
-                <p>Automatically rejoin multi-user conversations on reconnect for XMPP  (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1014472">bug 1014472</a>)</p>
-            </li>
-          
-          
-          
-            <li  id="note-">
-              
-                <b class="tag tag-fixed">fixed</b>
-              
-                <p>Severe UI stutter or freezes getting new mail for very large folders (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=870556">bug 870556</a>)</p>
-            </li>
-          
-          
-          
-            <li  id="note-">
-              
-                <b class="tag tag-fixed">fixed</b>
-              
-                <p>Wrong folder may be deleted when requesting junk delete (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1018960">bug 1018960</a>)</p>
-            </li>
-          
-          
-          
-            <li  id="note-">
-              
-                <b class="tag tag-fixed">fixed</b>
-              
-                <p>Status bar not accessible (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=934875">bug 934875</a>)</p>
-            </li>
-          
-          
-          
-            <li  id="note-">
-              
-                <b class="tag tag-fixed">fixed</b>
-              
-                <p>Addressing autocomplete widget: Typed text in red despite results/matches found if suggestions change by last input  (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1042561">bug 1042561</a>)</p>
-            </li>
-          
-          
-          
-            <li  id="note-">
-              
-                <b class="tag tag-fixed">fixed</b>
-              
-                <p>Force display of Sender header if S/MIME sender is the signer (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=332639">bug 332639</a>)</p>
-            </li>
-          
-          
-          
-            <li  id="note-">
-              
-                <b class="tag tag-fixed">fixed</b>
-              
-                <p>Email address with leading/trailing whitespace displayed wrongly with added quotes when composing ["foo"@bar.com] (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=286760">bug 286760</a>)</p>
-            </li>
-          
-          
-          
-            <li  id="note-">
-              
-                <b class="tag tag-fixed">fixed</b>
-              
-                <p>Web site from RSS feed was not rendered correctly (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=662907">bug 662907</a>)</p>
-            </li>
-          
-          
-          
-            <li  id="note-">
-              
-                <b class="tag tag-fixed">fixed</b>
-              
-                <p>Adding unknown email addresses to Mailing list, then deleting ghost duplicate entries from contacts pane, caused dataloss in mailing list (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=628035">bug 628035</a>)</p>
-            </li>
-          
-          
-          
-            <li  id="note-">
-              
-                <b class="tag tag-fixed">fixed</b>
-              
-                <p>Attachment "Save As" files are displayed in Tools/Saved Files (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=914517 ">bug 914517</a>)</p>
-            </li>
-          
-          
-          
-            <li  id="note-">
-              
-                <b class="tag tag-fixed">fixed</b>
-              
-                <p>Replied/forwarded icons disappear after folder repair, detach/delete (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=840418 ">bug 840418</a>)</p>
-            </li>
-          
-          
-          
-            <li  id="note-">
-              
-                <b class="tag tag-fixed">fixed</b>
-              
-                <p>Automatically reclaim IRC nicks during a reconnect  (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1087566">bug 1087566</a>)</p>
-            </li>
-          
-          
-          
-          
-        </ul>
-      
-    </section>
-    
-    
-    <section class="notes-section" id="known-issues">
-      <h3>Known Issues</h3>
-      <ul class="section-items tagged">
-        
-          <li id="note-">
-            <b class="tag tag-unresolved">unresolved</b>
-            <p>Automatic addon compatibility update checks were not completed, so existing addon compatibilities may not be accurate.</p>
-          
-          </li>
-        
-      </ul>
-    </section>
-    
+  <div class="download download-dumb">
+    <h4>Download Thunderbird — English (US)</h4>
+    <ul class="list-none p-0 flex flex-wrap max-w-lg self-start">
+      <li class="ml-3 mr-3">
+          <a href="https://download.mozilla.org/?product=thunderbird-69.0b4-SSL&os=win&lang=en-US" class="download-link btn-beta" data-donate-link="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+            Windows (XP/Vista)
+          </a>
+        </li><li class="ml-3 mr-3">
+          <a href="https://download.mozilla.org/?product=thunderbird-69.0b4-SSL&os=win&lang=en-US" class="download-link btn-beta" data-donate-link="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+            Windows
+          </a>
+        </li><li class="ml-3 mr-3">
+          <a href="https://download.mozilla.org/?product=thunderbird-69.0b4-SSL&os=osx&lang=en-US" class="download-link btn-beta" data-donate-link="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+            macOS
+          </a>
+        </li><li class="ml-3 mr-3">
+          <a href="https://download.mozilla.org/?product=thunderbird-69.0b4-SSL&os=linux&lang=en-US" class="download-link btn-beta" data-donate-link="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+            Linux
+          </a>
+        </li><li class="ml-3 mr-3">
+          <a href="https://download.mozilla.org/?product=thunderbird-69.0b4-SSL&os=linux64&lang=en-US" class="download-link btn-beta" data-donate-link="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+            Linux 64-bit
+          </a>
+        </li>
+    </ul>
   </div>
 
-  
-    <aside id="sidebar" class="sidebar">
-      <section id="try">
-        <h3>Try Thunderbird Beta</h3>
-        <ol>
-          <li class="try1">
-            <a href="/en-US/thunderbird/38.0beta/system-requirements/">
-              Check
-            </a>
-          </li>
-          <li class="try2">
-            
-              <a href="/en-US/channel">
-            
-            Download
-            </a>
-          </li>
-          <li class="try3">
-            <a href="https://support.mozilla.org/kb/Installing%20Thunderbird">
-              Install
-            </a>
-          </li>
-          <li class="try4">
-            <a href="https://addons.thunderbird.net">
-              Customize
-            </a>
-          </li>
-        </ol>
-      </section>
-
-      <section id="get-involved">
-        <h3>Want to get involved?</h3>
-        <p>Did you know that most of the content in Thunderbird Support was written by volunteers?<br>
-        <a href="https://wiki.mozilla.org/Thunderbird#Contributing">Find out more</a></p>
-      </section>
-
-      <section id="problems">
-        <h3>Having Problems?</h3>
-        <ol>
-          <li>
-            <a href="https://support.mozilla.org/products/thunderbird/">
-              Search for answers on the Thunderbird Support page
-            </a>
-          </li>
-          
-            <li>
-              <a href="#known-issues">
-                Look at the known issues list and see if we already know about the problem
-              </a>
-            </li>
-          
-          <li>
-            <a href="https://bugzilla.mozilla.org/enter_bug.cgi">
-              If you can’t find reference to your issue, please consider filing a technical bug report
-            </a>
-          </li>
-        </ol>
-      </section>
-
-      <section id="other">
-        <h3>Other Resources</h3>
-        <p>
-          <a href="https://blog.mozilla.com/thunderbird/">
-            The Thunderbird Blog
+  </div>
+  <div class="unrecognized-download">
+    
+  <div class="download download-dumb">
+    <h4>Download Thunderbird — English (US)</h4>
+    <ul class="list-none p-0 flex flex-wrap max-w-lg self-start">
+      <li class="ml-3 mr-3">
+          <a href="https://download.mozilla.org/?product=thunderbird-69.0b4-SSL&os=win&lang=en-US" class="download-link btn-beta" data-donate-link="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+            Windows (XP/Vista)
           </a>
-        </p>
-      </section>
-    </aside>
-  
+        </li><li class="ml-3 mr-3">
+          <a href="https://download.mozilla.org/?product=thunderbird-69.0b4-SSL&os=win&lang=en-US" class="download-link btn-beta" data-donate-link="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+            Windows
+          </a>
+        </li><li class="ml-3 mr-3">
+          <a href="https://download.mozilla.org/?product=thunderbird-69.0b4-SSL&os=osx&lang=en-US" class="download-link btn-beta" data-donate-link="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+            macOS
+          </a>
+        </li><li class="ml-3 mr-3">
+          <a href="https://download.mozilla.org/?product=thunderbird-69.0b4-SSL&os=linux&lang=en-US" class="download-link btn-beta" data-donate-link="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+            Linux
+          </a>
+        </li><li class="ml-3 mr-3">
+          <a href="https://download.mozilla.org/?product=thunderbird-69.0b4-SSL&os=linux64&lang=en-US" class="download-link btn-beta" data-donate-link="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+            Linux 64-bit
+          </a>
+        </li>
+    </ul>
+  </div>
 
-  </article>
-</main>
+  </div>
+  <p class="unsupported-download p-links">
+    Your system doesn't meet the <a href="/en-US/thunderbird/69.0beta/system-requirements/">requirements</a> to run Thunderbird.
+  </p>
+  <p class="linux-arm-download mb-8 p-links">
+    Please follow <a href="https://support.mozilla.org/kb/installing-thunderbird-linux">these instructions</a> to install Thunderbird.
+  </p>
+  <ul class="download-list list-none p-0 flex flex-wrap max-w-lg mb-0 self-start">
+    
+      <li class="os_winsha1 ml-3 mr-3">
+        <a class="download-link btn-beta"
+          href="https://download.mozilla.org/?product=thunderbird-69.0b4-SSL&os=win&lang=en-US"
+          data-donate-link="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
+          >
+          
+            Download Beta
+          
+        </a>
+      </li>
+    
+      <li class="os_win ml-3 mr-3">
+        <a class="download-link btn-beta"
+          href="https://download.mozilla.org/?product=thunderbird-69.0b4-SSL&os=win&lang=en-US"
+          data-donate-link="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
+          >
+          
+            Download Beta
+          
+        </a>
+      </li>
+    
+      <li class="os_osx ml-3 mr-3">
+        <a class="download-link btn-beta"
+          href="https://download.mozilla.org/?product=thunderbird-69.0b4-SSL&os=osx&lang=en-US"
+          data-donate-link="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
+          >
+          
+            Download Beta
+          
+        </a>
+      </li>
+    
+      <li class="os_linux ml-3 mr-3">
+        <a class="download-link btn-beta"
+          href="https://download.mozilla.org/?product=thunderbird-69.0b4-SSL&os=linux&lang=en-US"
+          data-donate-link="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
+          >
+          
+            Download Beta
+          
+        </a>
+      </li>
+    
+      <li class="os_linux64 ml-3 mr-3">
+        <a class="download-link btn-beta"
+          href="https://download.mozilla.org/?product=thunderbird-69.0b4-SSL&os=linux64&lang=en-US"
+          data-donate-link="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
+          >
+          
+            Download Beta
+          
+        </a>
+      </li>
+    
+  </ul>
+  <p class="download-other download-other-desktop os_linux os_linux64 os_osx os_win os_winsha1 font-sm mt-0">
+    <a href="/en-US/thunderbird/beta/all/" class="small-link  text-blue ">Systems &amp; Languages</a> &bull;
+    
+      <a href="/en-US/thunderbird/69.0beta/releasenotes/" class="small-link  text-blue ">What’s New</a> &bull;
+    
+    <a href="https://www.mozilla.org/privacy/thunderbird/" class="small-link  text-blue " target="_blank">Privacy</a>
+  </p>
+</div>
+          </aside>
+        </main>
+      </article>
+    </aside>
+  </section>
+</section>
+
 
     </main>
 
@@ -821,12 +1364,12 @@ count (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=736002">bug 736002<
       </a>
 
       <nav id="footer-main" role="navigation" class="mt-2">
-        <ul class="list-none p-0 flex items-center text-white font-md">
+        <ul class="list-none p-0 flex items-center text-white nav-footer">
           <li>
-            <a href="/en-US/features" class="ml-0 nav-link">Features</a>
+            <a href="/en-US/organizations" class="nav-link" target="_blank">For Organizations</a>
           </li>
           <li>
-            <a href="https://addons.thunderbird.net" target="_blank" class="nav-link">Add-ons</a>
+            <a href="/en-US/get-involved" class="nav-link" target="_blank">Get Involved</a>
           </li>
           <li>
             <a href="https://support.mozilla.org/products/thunderbird/" class="nav-link" target="_blank">Get Help</a>
