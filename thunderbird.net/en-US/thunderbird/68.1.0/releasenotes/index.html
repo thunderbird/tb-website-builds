@@ -12,13 +12,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
 
-    <title>Thunderbird — Beta Notes (70.0beta) — Mozilla</title>
+    <title>Thunderbird — Release Notes (68.1.0) — Mozilla</title>
     <meta name="description" content="">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Thunderbird">
     <meta property="og:locale" content="en_US">
     <meta property="og:image" content="https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png">
-    <meta property="og:title" content="Thunderbird — Beta Notes (70.0beta)">
+    <meta property="og:title" content="Thunderbird — Release Notes (68.1.0)">
     <meta property="og:description" content="">
     <meta property="fb:page_id" content="348169218537151">
     <meta name="twitter:card" content="summary">
@@ -171,8 +171,8 @@
 
   
     <header class="notes-head">
-    <h1>Thunderbird Beta Notes</h1>
-    <h2>Version 70.0beta, first offered to  channel users on September 9, 2019</h2>
+    <h1>Thunderbird Release Notes</h1>
+    <h2>Version 68.1.0, first offered to  channel users on September 11, 2019</h2>
 
       <p>
         Check out "What’s New" and "Known Issues" for this version of Thunderbird below.
@@ -184,7 +184,19 @@
       
           If interested, please see the  <a href="">complete list of changes</a> in this release.
       
-        <p><strong>These release notes apply to Thunderbird version 70 beta 1 released September 11th, 2019.</strong></p>
+        <p><strong> Thunderbird version 68.1 is only offered as direct download from
+<a href="https://www.thunderbird.net">thunderbird.net</a> and not as upgrade from Thunderbird version 60
+or earlier. A future version 68.2 will provide updates from earlier versions.
+If you have installed Lightning, Thunderbird's calendar add-on, it will automatically
+be updated to match the new version of Thunderbird.</strong> Refer to this
+<a href="https://support.mozilla.org/en-US/kb/calendar-updates-issues-thunderbird">Calendar troubleshooting article</a>
+in case of problems.</p>
+<p><strong>System Requirements:
+• Window: Windows 7, Windows Server 2008 R2 or later
+• Mac: Mac OS X 10.9 or later
+• Linux: GTK+ 3.4 or higher</strong>.
+Details <a href="/en-US/thunderbird/68.0/system-requirements/">here</a>.</p>
+<p><strong>Please refer to <a href="https://thunderbird.net/en-US/thunderbird/68.0/releasenotes/">Release Notes for version 68.0</a> to see the list of improvements and fixed issues.</strong></p>
       </p>
     </header>
   
@@ -202,70 +214,7 @@
               
                 <b class="tag tag-new">new</b>
               
-                <p>Allow selecting messages via selection boxes instead of classic selection. "Select Messages" column needs to be selected via the thread pane's column picker.</p>
-            </li>
-          
-          
-          
-            <li  id="note-">
-              
-                <b class="tag tag-new">new</b>
-              
-                <p>Message Display MailExtensions API with documentation <a href="https://thunderbird-webextensions.readthedocs.io/en/latest/messageDisplay.html">here</a></p>
-            </li>
-          
-          
-          
-            <li  id="note-">
-              
-                <b class="tag tag-changed">changed</b>
-              
-                <p>Thunderbird Options/Preferences tab redesigned and with new user interface</p>
-            </li>
-          
-          
-          
-            <li  id="note-">
-              
-                <b class="tag tag-changed">changed</b>
-              
-                <p>Account creation dialog redesigned and with new user interface</p>
-            </li>
-          
-          
-          
-            <li  id="note-">
-              
-                <b class="tag tag-changed">changed</b>
-              
-                <p>Dialog for folder compaction (purging of deleted messages)</p>
-            </li>
-          
-          
-          
-            <li  id="note-">
-              
-                <b class="tag tag-changed">changed</b>
-              
-                <p>Thread pane column pickers stays open for selecting multiple columns until user clicks outside or hits escape</p>
-            </li>
-          
-          
-          
-            <li  id="note-">
-              
-                <b class="tag tag-changed">changed</b>
-              
-                <p>Add-ons manager with new user interface and notifications. Note that manual installation of add-ons via drag-and-drop currently doesn't work.</p>
-            </li>
-          
-          
-          
-            <li  id="note-">
-              
-                <b class="tag tag-fixed">fixed</b>
-              
-                <p>Gmail accounts ignored a non-standard trash folder selection. Note: If non-standard trash folder was selected previously in the account settings, this setting will now take effect which may be unexpected.</p>
+                <p>Offer to configure Exchange accounts for Office365. A third-party add-on is required for this account type. IMAP still exists as alternative.</p>
             </li>
           
           
@@ -328,15 +277,6 @@
               
                 <b class="tag tag-fixed">fixed</b>
               
-                <p>Clicking mailto links in browser doesn't open Thunderbird Write window</p>
-            </li>
-          
-          
-          
-            <li  id="note-">
-              
-                <b class="tag tag-fixed">fixed</b>
-              
                 <p>"Learn More" links in Error Console not working</p>
             </li>
           
@@ -360,19 +300,6 @@
           
           
           
-            <li  id="note-">
-              
-                <b class="tag tag-fixed">fixed</b>
-              
-                <p>Calendar: Free/busy information in attendees dialog not loaded</p>
-            </li>
-          
-          
-          
-          
-          
-          
-          
           
         </ul>
       
@@ -385,19 +312,7 @@
         
           <li id="note-">
             <b class="tag tag-unresolved">unresolved</b>
-            <p>Opening the properties of a folder may hang on Mac</p>
-          
-          </li>
-        
-          <li id="note-">
-            <b class="tag tag-unresolved">unresolved</b>
-            <p>Calendar: A localized version of Provider for Google Calendar not available at addons.thunderbird.net or the Mozilla FTP server. A US-English version can be downloaded <a href="http://ftp.mozilla.org/pub/thunderbird/releases/70.0b1/en-US/gdata-provider.en-US.xpi">here</a>. The XPI file needs to be installed manually in Thunderbird.</p>
-          
-          </li>
-        
-          <li id="note-">
-            <b class="tag tag-unresolved">unresolved</b>
-            <p>Chat: Twitter not working due to API changes at Twitter.com.</p>
+            <p>Calendar: Free/busy information in attendees dialog not displayed/scrolled correctly</p>
           
           </li>
         
@@ -409,16 +324,16 @@
   
     <aside id="sidebar" class="sidebar">
       <section id="try">
-        <h3>Try Thunderbird Beta</h3>
+        <h3>Try Thunderbird Release</h3>
         <ol>
           <li class="try1">
-            <a href="/en-US/thunderbird/70.0beta/system-requirements/">
+            <a href="/en-US/thunderbird/68.1.0/system-requirements/">
               Check
             </a>
           </li>
           <li class="try2">
             
-              <a href="/en-US/channel">
+              <a href="/">
             
             Download
             </a>
