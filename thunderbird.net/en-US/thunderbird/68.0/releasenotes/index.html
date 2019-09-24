@@ -499,6 +499,15 @@ Details <a href="/en-US/thunderbird/68.0/system-requirements/">here</a>.</p>
           
             <li  id="note-">
               
+                <b class="tag tag-changed">changed</b>
+              
+                <p>Thunderbird 68 distrusts most SSL/TLS certificates issued by the Certificate Authorities (CA) with the brand names Symantec, GeoTrust, RapidSSL and Thawte. Consequently, any SSL/TLS connections to servers using an affected certificate will fail. Affected servers must be updated to use a different certificate. If Thunderbird displays an error message which states that an additional policy constraint has failed, you should check if the server uses a certificate issued by one of the mentioned brands. Additional information on Mozilla's action is available at <a href="https://blog.mozilla.org/security/2018/03/12/distrust-symantec-tls-certificates/">here</a>.</p>
+            </li>
+          
+          
+          
+            <li  id="note-">
+              
                 <b class="tag tag-fixed">fixed</b>
               
                 <p>Column choice and sort order in "Search Messages" dialog lost after relaunch</p>
