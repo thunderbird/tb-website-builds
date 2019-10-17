@@ -1,6 +1,8 @@
+
+
 <!doctype html>
 
-<html class="windows x86 no-js" lang="en-ZA" dir="ltr">
+<html class="windows x86 no-js" lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
 
@@ -10,14 +12,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
 
-    <title>Download Thunderbird Beta &amp; Try the Next Thunderbird — Mozilla</title>
-    <meta name="description" content="Download and test Thunderbird Beta and experience features and fixes early!">
+    <title>Thunderbird — Release Notes (68.2.0) — Mozilla</title>
+    <meta name="description" content="">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Thunderbird">
-    <meta property="og:locale" content="en_ZA">
+    <meta property="og:locale" content="en_US">
     <meta property="og:image" content="https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png">
-    <meta property="og:title" content="Download Thunderbird Beta &amp; Try the Next Thunderbird">
-    <meta property="og:description" content="Download and test Thunderbird Beta and experience features and fixes early!">
+    <meta property="og:title" content="Thunderbird — Release Notes (68.2.0)">
+    <meta property="og:description" content="">
     <meta property="fb:page_id" content="348169218537151">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@mozthunderbird">
@@ -38,7 +40,7 @@
 
     
     
-    <link href="/media/css/thunderbird-channel.css" rel="stylesheet" type="text/css" />
+  <link href="/media/css/releasenotes.css" rel="stylesheet" type="text/css" />
 
     <!--<![endif]-->
 
@@ -50,7 +52,7 @@
     <noscript><p><img src="//thunderbird.innocraft.cloud/piwik.php?idsite=1&rec=1" style="border:0;" alt="" /></p></noscript>
   </head>
 
-  <body id="channel" class="html-ltr sky" >
+  <body id="notes" class="html-ltr thunderbird-notes sky" >
     <div id="strings"
       ></div>
 
@@ -65,33 +67,33 @@
   <header id="masthead">
 
   
-    <h2><a href="/en-ZA/"><img class="" src="/media/img/thunderbird/template/logo-wordmark.png" srcset="/media/img/thunderbird/template/logo-wordmark-high-res.png 1.5x" width="281" alt="Thunderbird" height="66"></a></h2>
+    <h2><a href="/en-US/"><img class="" src="/media/img/thunderbird/template/logo-wordmark.png" srcset="/media/img/thunderbird/template/logo-wordmark-high-res.png 1.5x" width="281" alt="Thunderbird" height="66"></a></h2>
   
 
   
   <nav id="nav-main" role="navigation">
     <span class="toggle" role="button" aria-controls="nav-main-menu" aria-expanded="false" tabindex="0">Menu</span>
     <ul id="nav-main-menu" class="has-submenus">
-      <li class="first" id="nav-main-features"><a href="/en-ZA/" tabindex="0" aria-owns="nav-main-features-submenu" aria-haspopup="true">Thunderbird</a>
+      <li class="first" id="nav-main-features"><a href="/en-US/" tabindex="0" aria-owns="nav-main-features-submenu" aria-haspopup="true">Thunderbird</a>
         <ul aria-expanded="false" id="nav-main-features-submenu" class="submenu">
           <li class="first">
-            <a href="/en-ZA/channel" tabindex="-1">
+            <a href="/en-US/channel" tabindex="-1">
               Beta
             </a>
           </li>
           <li>
-            <a href="/en-ZA/features" tabindex="-1">
+            <a href="/en-US/features" tabindex="-1">
               Features
             </a>
           </li>
           <li>
-            <a href="/en-ZA/thunderbird/releases" tabindex="-1">
+            <a href="/en-US/thunderbird/releases" tabindex="-1">
               Releases
             </a>
           </li>
           
             <li>
-              <a href="/en-ZA/calendar" tabindex="-1">
+              <a href="/en-US/calendar" tabindex="-1">
                 Calendar Add-on
               </a>
             </li>
@@ -164,178 +166,208 @@
       
 
       
-  <header id="main-feature">
-    <h1>Welcome to the <strong>Future of Thunderbird</strong></h1>
-    <h2>Download Thunderbird Beta and be one of the first to try the newest features in the next version of Thunderbird! By giving us your feedback, you’ll help make email better for millions of your fellow users.</h2>
-  </header>
+<main role="main">
+  <article id="main-content">
 
-  <main role="main">
-    <div class="row">
-      <section id="thunderbird-beta">
-        <header>
-          <img src="/media/img/thunderbird/channel/thunderbird-256.png" alt="">
-          <h2>Beta</h2>
-          
-          <ul>
-            <li>Experience cutting edge features with more stability</li>
-            <li><a href="https://discourse.mozilla.org/c/thunderbird/beta">Provide feedback</a> to help refine and polish what will be in the final release</li>
-          </ul>
-        </header>
-        <div class="download-box">
-
-
-
-
-<div id="download-button-desktop-beta" class="download-button download-button-beta">
   
-  <div class="nojs-download">
+    <header class="notes-head">
+    <h1>Thunderbird Release Notes</h1>
+    <h2>Version 68.2.0, first offered to  channel users on October 24, 2019</h2>
+
+      <p>
+        Check out "What’s New" and "Known Issues" for this version of Thunderbird below.
+      
+        As always, you’re encouraged to
+        <a href="https://support.mozilla.org/questions/new/thunderbird">tell us what you think</a>,
+        or <a href="https://bugzilla.mozilla.org/">file a bug in Bugzilla</a>.
+      
+      
+          If interested, please see the  <a href="">complete list of changes</a> in this release.
+      
+        <p><strong> Thunderbird version 68.2.0 provides an automatic update from Thunderbird version 60.</strong>
+If you have installed Lightning, Thunderbird's calendar add-on, it will automatically
+be updated to match the new version of Thunderbird. Refer to this
+<a href="https://support.mozilla.org/en-US/kb/calendar-updates-issues-thunderbird">Calendar troubleshooting article</a>
+in case of problems.</p>
+<p><strong>System Requirements:
+• Window: Windows 7, Windows Server 2008 R2 or later
+• Mac: Mac OS X 10.9 or later
+• Linux: GTK+ 3.4 or higher</strong>.
+Details <a href="/en-US/thunderbird/68.0/system-requirements/">here</a>.</p>
+<p><strong>Please refer to <a href="https://thunderbird.net/en-US/thunderbird/68.0/releasenotes/">Release Notes for version 68.0</a> to see the list of improvements and fixed issues.</strong></p>
+      </p>
+    </header>
+  
+
+  <div class="main-column">
     
-  <div class="download download-dumb">
-    <h4>Download Thunderbird — English (US)</h4>
-    <ul>
-      <li><a href="https://download.mozilla.org/?product=thunderbird-70.0b4-SSL&os=win&lang=en-US" class="download-link button button-green" data-donate-link="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">Windows (XP/Vista)</a></li><li><a href="https://download.mozilla.org/?product=thunderbird-70.0b4-SSL&os=win&lang=en-US" class="download-link button button-green" data-donate-link="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">Windows 32-bit</a></li><li><a href="https://download.mozilla.org/?product=thunderbird-70.0b4-SSL&os=win64&lang=en-US" class="download-link button button-green" data-donate-link="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">Windows 64-bit</a></li><li><a href="https://download.mozilla.org/?product=thunderbird-70.0b4-SSL&os=osx&lang=en-US" class="download-link button button-green" data-donate-link="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">macOS</a></li><li><a href="https://download.mozilla.org/?product=thunderbird-70.0b4-SSL&os=linux&lang=en-US" class="download-link button button-green" data-donate-link="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">Linux 32-bit</a></li><li><a href="https://download.mozilla.org/?product=thunderbird-70.0b4-SSL&os=linux64&lang=en-US" class="download-link button button-green" data-donate-link="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">Linux 64-bit</a></li><li><a href="https://download.mozilla.org/?product=thunderbird-70.0b4-msi-SSL&os=win64&lang=en-US" class="download-link button button-green" data-donate-link="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">Windows MSI 64-bit</a></li>
-    </ul>
+    <section class="notes-section" id="new-features">
+      <h3>What’s New</h3>
+      
+        
+        <ul class="section-items tagged">
+          
+          
+            <li  id="note-">
+              
+                <b class="tag tag-new">new</b>
+              
+                <p><a href="https://thunderbird-webextensions.readthedocs.io/en/68/messageDisplay.html">Message Display WebExtensionAPI</a></p>
+            </li>
+          
+          
+          
+            <li  id="note-">
+              
+                <b class="tag tag-new">new</b>
+              
+                <p>Message Search WebExtension API</p>
+            </li>
+          
+          
+          
+            <li  id="note-">
+              
+                <b class="tag tag-fixed">fixed</b>
+              
+                <p>Better visual feedback for unread messages when using the dark theme</p>
+            </li>
+          
+          
+          
+            <li  id="note-">
+              
+                <b class="tag tag-fixed">fixed</b>
+              
+                <p>Various issues when editing mailing lists</p>
+            </li>
+          
+          
+          
+            <li  id="note-">
+              
+                <b class="tag tag-fixed">fixed</b>
+              
+                <p>Integration with macOS addressbook and notifications not working after introduction of notarization</p>
+            </li>
+          
+          
+          
+            <li  id="note-">
+              
+                <b class="tag tag-fixed">fixed</b>
+              
+                <p>Issues when upgrading from a 32bit version of Thunderbird to a 64bit version. Note: If your profile is still not recognised, selected it by visiting about:profiles in the Troubleshooting Information.</p>
+            </li>
+          
+          
+          
+            <li  id="note-">
+              
+                <b class="tag tag-fixed">fixed</b>
+              
+                <p>When using a language pack, names of standard folders weren't localized</p>
+            </li>
+          
+          
+          
+          
+        </ul>
+      
+    </section>
+    
+    
+    <section class="notes-section" id="known-issues">
+      <h3>Known Issues</h3>
+      <ul class="section-items tagged">
+        
+          <li id="note-">
+            <b class="tag tag-unresolved">unresolved</b>
+            <p>LDAP lookup not working when SSL is enabled. Workaround: Disable SSL or switch off option "Query OSCP responder servers" in the certificate settings in advanced options.</p>
+          
+          </li>
+        
+      </ul>
+    </section>
+    
   </div>
 
-  </div>
-  <div class="unrecognized-download">
-    
-  <div class="download download-dumb">
-    <h4>Download Thunderbird — English (US)</h4>
-    <ul>
-      <li><a href="https://download.mozilla.org/?product=thunderbird-70.0b4-SSL&os=win&lang=en-US" class="download-link button button-green" data-donate-link="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">Windows (XP/Vista)</a></li><li><a href="https://download.mozilla.org/?product=thunderbird-70.0b4-SSL&os=win&lang=en-US" class="download-link button button-green" data-donate-link="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">Windows 32-bit</a></li><li><a href="https://download.mozilla.org/?product=thunderbird-70.0b4-SSL&os=win64&lang=en-US" class="download-link button button-green" data-donate-link="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">Windows 64-bit</a></li><li><a href="https://download.mozilla.org/?product=thunderbird-70.0b4-SSL&os=osx&lang=en-US" class="download-link button button-green" data-donate-link="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">macOS</a></li><li><a href="https://download.mozilla.org/?product=thunderbird-70.0b4-SSL&os=linux&lang=en-US" class="download-link button button-green" data-donate-link="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">Linux 32-bit</a></li><li><a href="https://download.mozilla.org/?product=thunderbird-70.0b4-SSL&os=linux64&lang=en-US" class="download-link button button-green" data-donate-link="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">Linux 64-bit</a></li><li><a href="https://download.mozilla.org/?product=thunderbird-70.0b4-msi-SSL&os=win64&lang=en-US" class="download-link button button-green" data-donate-link="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">Windows MSI 64-bit</a></li>
-    </ul>
-  </div>
-
-  </div>
-  <p class="unsupported-download">
-    Your system doesn't meet the <a href="/en-US/thunderbird/70.0beta/system-requirements/">requirements</a> to run Thunderbird.
-  </p>
-  <p class="linux-arm-download">
-    Please follow <a href="https://support.mozilla.org/kb/installing-thunderbird-linux">these instructions</a> to install Thunderbird.
-  </p>
-  <ul class="download-list">
-    
-      <li class="os_winsha1">
-        <a class="download-link button button-green"
-          href="https://download.mozilla.org/?product=thunderbird-70.0b4-SSL&os=win&lang=en-US"
-          data-donate-link="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
-          >
-          <strong class="download-title">
+  
+    <aside id="sidebar" class="sidebar">
+      <section id="try">
+        <h3>Try Thunderbird Release</h3>
+        <ol>
+          <li class="try1">
+            <a href="/en-US/thunderbird/68.2.0/system-requirements/">
+              Check
+            </a>
+          </li>
+          <li class="try2">
             
-              
-                Thunderbird Beta
-              
+              <a href="/">
             
-          </strong>
-        </a>
-      </li>
-    
-      <li class="os_win">
-        <a class="download-link button button-green"
-          href="https://download.mozilla.org/?product=thunderbird-70.0b4-SSL&os=win&lang=en-US"
-          data-donate-link="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
-          >
-          <strong class="download-title">
-            
-              
-                Thunderbird Beta
-              
-            
-          </strong>
-        </a>
-      </li>
-    
-      <li class="os_win64">
-        <a class="download-link button button-green"
-          href="https://download.mozilla.org/?product=thunderbird-70.0b4-SSL&os=win64&lang=en-US"
-          data-donate-link="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
-          >
-          <strong class="download-title">
-            
-              
-                Thunderbird Beta
-              
-            
-          </strong>
-        </a>
-      </li>
-    
-      <li class="os_osx">
-        <a class="download-link button button-green"
-          href="https://download.mozilla.org/?product=thunderbird-70.0b4-SSL&os=osx&lang=en-US"
-          data-donate-link="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
-          >
-          <strong class="download-title">
-            
-              
-                Thunderbird Beta
-              
-            
-          </strong>
-        </a>
-      </li>
-    
-      <li class="os_linux">
-        <a class="download-link button button-green"
-          href="https://download.mozilla.org/?product=thunderbird-70.0b4-SSL&os=linux&lang=en-US"
-          data-donate-link="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
-          >
-          <strong class="download-title">
-            
-              
-                Thunderbird Beta
-              
-            
-          </strong>
-        </a>
-      </li>
-    
-      <li class="os_linux64">
-        <a class="download-link button button-green"
-          href="https://download.mozilla.org/?product=thunderbird-70.0b4-SSL&os=linux64&lang=en-US"
-          data-donate-link="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
-          >
-          <strong class="download-title">
-            
-              
-                Thunderbird Beta
-              
-            
-          </strong>
-        </a>
-      </li>
-    
-      <li class="os_msi">
-        <a class="download-link button button-green"
-          href="https://download.mozilla.org/?product=thunderbird-70.0b4-msi-SSL&os=win64&lang=en-US"
-          data-donate-link="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
-          >
-          <strong class="download-title">
-            
-              
-                Thunderbird Beta
-              
-            
-          </strong>
-        </a>
-      </li>
-    
-  </ul>
-  <small class="download-other download-other-desktop os_linux os_linux64 os_osx os_win os_win64 os_winsha1">
-    <a href="/en-US/thunderbird/beta/all/">Systems &amp; Languages</a> |
-    
-    <a href="/en-US/thunderbird/70.0beta/releasenotes/">What’s New</a> |
-    
-    <a href="https://www.mozilla.org/privacy/thunderbird/">Privacy</a>
-  </small>
-</div></div>
+            Download
+            </a>
+          </li>
+          <li class="try3">
+            <a href="https://support.mozilla.org/kb/Installing%20Thunderbird">
+              Install
+            </a>
+          </li>
+          <li class="try4">
+            <a href="https://addons.thunderbird.net">
+              Customize
+            </a>
+          </li>
+        </ol>
       </section>
-    </div>
-  </main>
+
+      <section id="get-involved">
+        <h3>Want to get involved?</h3>
+        <p>Did you know that most of the content in Thunderbird Support was written by volunteers?<br>
+        <a href="https://wiki.mozilla.org/Thunderbird#Contributing">Find out more</a></p>
+      </section>
+
+      <section id="problems">
+        <h3>Having Problems?</h3>
+        <ol>
+          <li>
+            <a href="https://support.mozilla.org/products/thunderbird/">
+              Search for answers on the Thunderbird Support page
+            </a>
+          </li>
+          
+            <li>
+              <a href="#known-issues">
+                Look at the known issues list and see if we already know about the problem
+              </a>
+            </li>
+          
+          <li>
+            <a href="https://bugzilla.mozilla.org/enter_bug.cgi">
+              If you can’t find reference to your issue, please consider filing a technical bug report
+            </a>
+          </li>
+        </ol>
+      </section>
+
+      <section id="other">
+        <h3>Other Resources</h3>
+        <p>
+          <a href="https://blog.mozilla.com/thunderbird/">
+            The Thunderbird Blog
+          </a>
+        </p>
+      </section>
+    </aside>
+  
+
+  </article>
+</main>
 
 
       
+
 
       </div><!-- close #wrapper -->
 
@@ -353,7 +385,7 @@
           </div>
           <div class="col col-2">
             <ul class="links-join">
-              <li><a href="/en-ZA/about" data-link-type="footer" data-link-name="About">About</a></li>
+              <li><a href="/en-US/about" data-link-type="footer" data-link-name="About">About</a></li>
               <li class="wrap"><a href="/en-US/contact" data-link-type="footer" data-link-name="Contact Us">Contact Us</a></li>
               <li class="wrap"><a href="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=footer" class="donate" data-link-type="footer" data-link-name="Donate">Donate</a></li>
               <li class="clear"><a href="https://github.com/thundernest/thunderbird-website" data-link-type="footer" data-link-name="Contribute to this site">Contribute to this site</a></li>
@@ -424,9 +456,9 @@
     
       <option lang="en-GB" value="en-GB" >English (British)</option>
     
-      <option lang="en-US" value="en-US" >English</option>
+      <option lang="en-US" value="en-US" selected>English</option>
     
-      <option lang="en-ZA" value="en-ZA" selected>English (South African)</option>
+      <option lang="en-ZA" value="en-ZA" >English (South African)</option>
     
       <option lang="eo" value="eo" >Esperanto</option>
     
