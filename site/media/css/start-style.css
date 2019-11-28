@@ -192,7 +192,7 @@ section.blog h2:before {
   background-position: -50px -50px;
 }
 section p {
-  margin: .7em 0 0;
+  margin: 0.7em 0 0;
 }
 section a[href$="Contributing"]:before {
   background-position: -40px -100px;
@@ -210,7 +210,7 @@ footer ul {
 }
 footer li {
   box-sizing: padding-box;
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
 }
 footer a[href*="features"]:before {
   background-position: 0 -100px;
