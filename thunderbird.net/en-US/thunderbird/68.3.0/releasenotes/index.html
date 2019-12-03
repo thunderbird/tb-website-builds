@@ -1,6 +1,8 @@
+
+
 <!doctype html>
 
-<html class="windows x86 no-js" lang="ru" dir="ltr">
+<html class="windows x86 no-js" lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
 
@@ -10,14 +12,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
 
-    <title>Mozilla Thunderbird - Lightning Calendar — Mozilla</title>
-    <meta name="description" content="Organize your life — it’s about time!">
+    <title>Thunderbird — Release Notes (68.3.0) — Mozilla</title>
+    <meta name="description" content="">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Thunderbird">
-    <meta property="og:locale" content="ru">
+    <meta property="og:locale" content="en_US">
     <meta property="og:image" content="https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png">
-    <meta property="og:title" content="Mozilla Thunderbird - Lightning Calendar">
-    <meta property="og:description" content="Organize your life — it’s about time!">
+    <meta property="og:title" content="Thunderbird — Release Notes (68.3.0)">
+    <meta property="og:description" content="">
     <meta property="fb:page_id" content="348169218537151">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@mozthunderbird">
@@ -38,7 +40,7 @@
 
     
     
-  <link href="/media/css/calendar-bundle.css" rel="stylesheet" type="text/css" />
+  <link href="/media/css/releasenotes.css" rel="stylesheet" type="text/css" />
 
     <!--<![endif]-->
 
@@ -50,7 +52,7 @@
     <noscript><p><img src="//thunderbird.innocraft.cloud/piwik.php?idsite=1&rec=1" style="border:0;" alt="" /></p></noscript>
   </head>
 
-  <body id="calendar-page" class="html-ltr sky" >
+  <body id="notes" class="html-ltr thunderbird-notes sky" >
     <div id="strings"
       ></div>
 
@@ -65,30 +67,36 @@
   <header id="masthead">
 
   
-    <h2><a href="/ru/"><img class="" src="/media/img/thunderbird/template/logo-wordmark.png" srcset="/media/img/thunderbird/template/logo-wordmark-high-res.png 1.5x" width="281" alt="Thunderbird" height="66"></a></h2>
+    <h2><a href="/en-US/"><img class="" src="/media/img/thunderbird/template/logo-wordmark.png" srcset="/media/img/thunderbird/template/logo-wordmark-high-res.png 1.5x" width="281" alt="Thunderbird" height="66"></a></h2>
   
 
   
   <nav id="nav-main" role="navigation">
     <span class="toggle" role="button" aria-controls="nav-main-menu" aria-expanded="false" tabindex="0">Menu</span>
     <ul id="nav-main-menu" class="has-submenus">
-      <li class="first" id="nav-main-features"><a href="/ru/" tabindex="0" aria-owns="nav-main-features-submenu" aria-haspopup="true">Thunderbird</a>
+      <li class="first" id="nav-main-features"><a href="/en-US/" tabindex="0" aria-owns="nav-main-features-submenu" aria-haspopup="true">Thunderbird</a>
         <ul aria-expanded="false" id="nav-main-features-submenu" class="submenu">
           <li class="first">
-            <a href="/ru/channel" tabindex="-1">
+            <a href="/en-US/channel" tabindex="-1">
               Beta
             </a>
           </li>
           <li>
-            <a href="/ru/features" tabindex="-1">
-              Возможности
+            <a href="/en-US/features" tabindex="-1">
+              Features
             </a>
           </li>
           <li>
-            <a href="/ru/thunderbird/releases" tabindex="-1">
+            <a href="/en-US/thunderbird/releases" tabindex="-1">
               Releases
             </a>
           </li>
+          
+            <li>
+              <a href="/en-US/calendar" tabindex="-1">
+                Calendar Add-on
+              </a>
+            </li>
           
           <li class="last">
             <a href="/en-US/organizations" tabindex="-1">
@@ -99,12 +107,12 @@
       </li>
       <li id="nav-main-addons">
         <a href="https://addons.thunderbird.net" tabindex="0" aria-owns="nav-main-addons-submenu" aria-haspopup="true">
-          Дополнения
+          Add-ons
         </a>
         <ul aria-expanded="false" id="nav-main-addons-submenu" class="submenu">
           <li class="first">
             <a href="https://addons.thunderbird.net/extensions/" tabindex="-1">
-              Дополнения
+              Add-ons
             </a>
           </li>
           <li class="last">
@@ -120,10 +128,22 @@
         </a>
       </li>
       
+        <li id="nav-main-get-involved">
+          <a href="/en-US/get-involved" tabindex="0">
+            Get Involved
+          </a>
+        </li>
+      
+      
+        <li id="nav-main-blog">
+          <a href="https://blog.mozilla.org/thunderbird" tabindex="0">
+            Blog
+          </a>
+        </li>
       
       <li class="last" id="nav-main-donate">
         <a class="emphasis" href="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=header" tabindex="-1">
-          Пожертвовать
+          Donate
         </a>
       </li>
     </ul>
@@ -146,74 +166,231 @@
       
 
       
+<main role="main">
+  <article id="main-content">
 
-<section id="lightning" class="billboard products" data-lang="ru">
-  <div class="topbox">
-    <img id="calendar-logo" src="/media/img/calendar/calendar-logo.png" alt="">
-    <div class="infobox">
-      <h1>Календарь Lightning</h1>
-      <h2>Organize your life &mdash; it&rsquo;s about time!</h2>
-      <aside id="download" class="hide-for-touch">
-        <a id="download-link" class="loading" href="https://addons.thunderbird.net/addon/lightning/">
-          <span id="version-box" class="title">Lightning</span>
-          <span class="desc">Free download</span>
-        </a>
-        <small class="download-other">
-          <a href="https://addons.thunderbird.net/addon/lightning/versions/">Other Systems &amp; Versions</a>
-        </small>
-      </aside>
-    </div>
+  
+    <header class="notes-head">
+    <h1>Thunderbird Release Notes</h1>
+    <h2>Version 68.3.0, first offered to  channel users on December 3, 2019</h2>
+
+      <p>
+        Check out "What’s New" and "Known Issues" for this version of Thunderbird below.
+      
+        As always, you’re encouraged to
+        <a href="https://support.mozilla.org/questions/new/thunderbird">tell us what you think</a>,
+        or <a href="https://bugzilla.mozilla.org/">file a bug in Bugzilla</a>.
+      
+      
+          If interested, please see the  <a href="">complete list of changes</a> in this release.
+      
+        <p><strong> Thunderbird version 68.3.0 provides an automatic update from Thunderbird version 60.</strong>
+If you have installed Lightning, Thunderbird's calendar add-on, it will automatically
+be updated to match the new version of Thunderbird. Refer to this
+<a href="https://support.mozilla.org/en-US/kb/calendar-updates-issues-thunderbird">Calendar troubleshooting article</a>
+in case of problems.</p>
+<p><strong>System Requirements:
+• Window: Windows 7, Windows Server 2008 R2 or later
+• Mac: Mac OS X 10.9 or later
+• Linux: GTK+ 3.4 or higher</strong>.
+Details <a href="/en-US/thunderbird/68.0/system-requirements/">here</a>.</p>
+<p><strong>Please refer to <a href="https://thunderbird.net/en-US/thunderbird/68.0/releasenotes/">Release Notes for version 68.0</a> to see the list of improvements and fixed issues.</strong></p>
+      </p>
+    </header>
+  
+
+  <div class="main-column">
+    
+    <section class="notes-section" id="new-features">
+      <h3>What’s New</h3>
+      
+        
+        <ul class="section-items tagged">
+          
+          
+            <li  id="note-">
+              
+                <b class="tag tag-new">new</b>
+              
+                <p><a href="https://thunderbird-webextensions.readthedocs.io/en/latest/messageDisplayAction.html">Message display toolbar action WebExtension API</a></p>
+            </li>
+          
+          
+          
+            <li  id="note-">
+              
+                <b class="tag tag-new">new</b>
+              
+                <p>Navigation buttons are now available in content tabs, for example those opened via an add-on search</p>
+            </li>
+          
+          
+          
+            <li  id="note-">
+              
+                <b class="tag tag-changed">changed</b>
+              
+                <p>"New email" icon in Windows systray changed from in-tray with arrow to envelope</p>
+            </li>
+          
+          
+          
+            <li  id="note-">
+              
+                <b class="tag tag-fixed">fixed</b>
+              
+                <p>Icons of attachments in the attachment pane of the Write window not always correct</p>
+            </li>
+          
+          
+          
+            <li  id="note-">
+              
+                <b class="tag tag-fixed">fixed</b>
+              
+                <p>Toolbar buttons of add-ons in the menubar not shown after startup</p>
+            </li>
+          
+          
+          
+            <li  id="note-">
+              
+                <b class="tag tag-fixed">fixed</b>
+              
+                <p>LDAP lookup not working when SSL was enabled. LDAP search not working when "All Address Books" was selected.</p>
+            </li>
+          
+          
+          
+            <li  id="note-">
+              
+                <b class="tag tag-fixed">fixed</b>
+              
+                <p>Scam link confirmation panel not working</p>
+            </li>
+          
+          
+          
+            <li  id="note-">
+              
+                <b class="tag tag-fixed">fixed</b>
+              
+                <p>In Write window, the Link Properties dialog wasn't showing named anchors in context menu</p>
+            </li>
+          
+          
+          
+            <li  id="note-">
+              
+                <b class="tag tag-fixed">fixed</b>
+              
+                <p>Calendar: Start-up failed if the application menu is not on the calendar toolbars</p>
+            </li>
+          
+          
+          
+            <li  id="note-">
+              
+                <b class="tag tag-fixed">fixed</b>
+              
+                <p>Chat: Account reordering via drag-and-drop not working on Instant messaging status dialog (Show Accounts)</p>
+            </li>
+          
+          
+          
+          
+        </ul>
+      
+    </section>
+    
+    
+    <section class="notes-section" id="known-issues">
+      <h3>Known Issues</h3>
+      <ul class="section-items tagged">
+        
+          <li id="note-">
+            <b class="tag tag-unresolved">unresolved</b>
+            <p>When upgrading from Thunderbird version 60 to version 68, add-ons are not automatically updated during the upgrade process. They will however be updated during the add-on update check. It is of course possible to reinstall combatible add-on via the Add-ons Manager or via <a href="https://addons.thunderbird.net">addons.thunderbird.net</a>.</p>
+          
+          </li>
+        
+      </ul>
+    </section>
+    
   </div>
-  <div class="midbox">
-      <p>Organize your schedule and life&rsquo;s important events in a calendar that&rsquo;s fully integrated with your Thunderbird or Seamonkey email. Manage multiple calendars, create your daily to do list, invite friends to events, and subscribe to public calendars.</p>
-  </div>
-  <div class="items">
-    <ul>
-      <li>
-        <img src="/media/img/calendar/info-icon.png" alt="">
-        <div class="itemtext">
-          <a href="https://developer.mozilla.org/en/Calendar/Calendar_Versions" class="title">Compatibility Information</a>
-          <span class="desc">Thunderbird, Seamonkey, what version?</span>
-        </div>
-      </li>
-      <li>
-        <img src="/media/img/calendar/question-icon.png" alt="">
-        <div class="itemtext">
-          <a href="https://support.mozilla.org/products/thunderbird/calendar" class="title">Получить поддержку</a>
-          <span class="desc">Need help with Lightning?</span>
-        </div>
-      </li>
-      <li>
-        <img src="/media/img/calendar/holiday-icon.png" alt="">
-        <div class="itemtext">
-          <a href="holidays/" class="title">Holiday Calendars</a>
-          <span class="desc">Need a break? Now you know when!</span>
-        </div>
-      </li>
-      <li>
-        <img src="/media/img/calendar/tools-icon.png" alt="">
-        <div class="itemtext">
-          <a href="https://developer.mozilla.org/en/Calendar/" class="title">Developer Tools</a>
-          <span class="desc">Dive into development.</span>
-        </div>
-      </li>
-      <li>
-        <img src="/media/img/calendar/bug-icon.png" alt="">
-        <div class="itemtext">
-          <a href="https://bugzilla.mozilla.org/enter_bug.cgi?product=Calendar" class="title">Bugzilla</a>
-          <span class="desc">Found a bug? Let us know!</span>
-        </div>
-      </li>
-      <li>
-        <img src="/media/img/calendar/bugspray-icon.png" alt="">
-        <div class="itemtext">
-          <a href="http://www.joshmatthews.net/bugsahoy/?calendar=1 " class="title">Bugs Ahoy!</a>
-          <span class="desc">Want to make a difference? Fix a bug that fits your interests.</span>
-        </div>
-      </li>
-    </ul>
-  </div>
-</section>
+
+  
+    <aside id="sidebar" class="sidebar">
+      <section id="try">
+        <h3>Try Thunderbird Release</h3>
+        <ol>
+          <li class="try1">
+            <a href="/en-US/thunderbird/68.3.0/system-requirements/">
+              Check
+            </a>
+          </li>
+          <li class="try2">
+            
+              <a href="/">
+            
+            Download
+            </a>
+          </li>
+          <li class="try3">
+            <a href="https://support.mozilla.org/kb/Installing%20Thunderbird">
+              Install
+            </a>
+          </li>
+          <li class="try4">
+            <a href="https://addons.thunderbird.net">
+              Customize
+            </a>
+          </li>
+        </ol>
+      </section>
+
+      <section id="get-involved">
+        <h3>Want to get involved?</h3>
+        <p>Did you know that most of the content in Thunderbird Support was written by volunteers?<br>
+        <a href="https://wiki.mozilla.org/Thunderbird#Contributing">Find out more</a></p>
+      </section>
+
+      <section id="problems">
+        <h3>Having Problems?</h3>
+        <ol>
+          <li>
+            <a href="https://support.mozilla.org/products/thunderbird/">
+              Search for answers on the Thunderbird Support page
+            </a>
+          </li>
+          
+            <li>
+              <a href="#known-issues">
+                Look at the known issues list and see if we already know about the problem
+              </a>
+            </li>
+          
+          <li>
+            <a href="https://bugzilla.mozilla.org/enter_bug.cgi">
+              If you can’t find reference to your issue, please consider filing a technical bug report
+            </a>
+          </li>
+        </ol>
+      </section>
+
+      <section id="other">
+        <h3>Other Resources</h3>
+        <p>
+          <a href="https://blog.mozilla.com/thunderbird/">
+            The Thunderbird Blog
+          </a>
+        </p>
+      </section>
+    </aside>
+  
+
+  </article>
+</main>
 
 
       
@@ -235,17 +412,17 @@
           </div>
           <div class="col col-2">
             <ul class="links-join">
-              <li><a href="/ru/about" data-link-type="footer" data-link-name="About">About</a></li>
-              <li class="wrap"><a href="/en-US/contact" data-link-type="footer" data-link-name="Contact Us">Обратная связь</a></li>
-              <li class="wrap"><a href="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=footer" class="donate" data-link-type="footer" data-link-name="Donate">Пожертвовать</a></li>
-              <li class="clear"><a href="https://github.com/thundernest/thunderbird-website" data-link-type="footer" data-link-name="Contribute to this site">Внести вклад в этот сайт</a></li>
+              <li><a href="/en-US/about" data-link-type="footer" data-link-name="About">About</a></li>
+              <li class="wrap"><a href="/en-US/contact" data-link-type="footer" data-link-name="Contact Us">Contact Us</a></li>
+              <li class="wrap"><a href="https://donate.mozilla.org/thunderbird/?utm_source=thunderbird.net&utm_medium=referral&utm_content=footer" class="donate" data-link-type="footer" data-link-name="Donate">Donate</a></li>
+              <li class="clear"><a href="https://github.com/thundernest/thunderbird-website" data-link-type="footer" data-link-name="Contribute to this site">Contribute to this site</a></li>
             </ul>
 
             <ul class="links-legal">
-              <li><a href="https://www.mozilla.org/privacy/" data-link-type="footer" data-link-name="Privacy">Приватность</a></li>
-              <li class="wrap"><a href="https://www.mozilla.org/privacy/websites/#cookies#cookies" data-link-type="footer" data-link-name="Cookies">Куки</a></li>
-              <li class="wrap"><a href="https://www.mozilla.org/about/legal/" data-link-type="footer" data-link-name="Legal">Юридическая информация</a></li>
-              <li class="clear"><a href="https://www.mozilla.org/about/legal/fraud-report/" data-link-type="footer" data-link-name="Report Trademark Abuse">Сообщить о злоупотреблении торговой маркой</a></li>
+              <li><a href="https://www.mozilla.org/privacy/" data-link-type="footer" data-link-name="Privacy">Privacy</a></li>
+              <li class="wrap"><a href="https://www.mozilla.org/privacy/websites/#cookies#cookies" data-link-type="footer" data-link-name="Cookies">Cookies</a></li>
+              <li class="wrap"><a href="https://www.mozilla.org/about/legal/" data-link-type="footer" data-link-name="Legal">Legal</a></li>
+              <li class="clear"><a href="https://www.mozilla.org/about/legal/fraud-report/" data-link-type="footer" data-link-name="Report Trademark Abuse">Report Trademark Abuse</a></li>
             </ul>
           </div>
           <div class="col col-3">
@@ -259,7 +436,7 @@
   <label for="page-language-select">
     
     
-      Другие языки:
+      Page language:
     
   </label>
   <select id="page-language-select" name="lang" dir="ltr">
@@ -306,7 +483,7 @@
     
       <option lang="en-GB" value="en-GB" >English (British)</option>
     
-      <option lang="en-US" value="en-US" >English</option>
+      <option lang="en-US" value="en-US" selected>English</option>
     
       <option lang="en-ZA" value="en-ZA" >English (South African)</option>
     
@@ -422,7 +599,7 @@
     
       <option lang="ro" value="ro" >Română</option>
     
-      <option lang="ru" value="ru" selected>Русский</option>
+      <option lang="ru" value="ru" >Русский</option>
     
       <option lang="si" value="si" >සිංහල</option>
     
@@ -464,7 +641,7 @@
     
   </select>
   <noscript>
-    <button type="submit">Перейти</button>
+    <button type="submit">Go</button>
   </noscript>
 </form>
 
@@ -486,8 +663,6 @@
     
 
     
-  <script type="text/javascript" src="/media/js/calendar.js" charset="utf-8"></script>
-
 
     
   </body>
