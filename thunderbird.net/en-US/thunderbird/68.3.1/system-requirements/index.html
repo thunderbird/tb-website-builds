@@ -11,13 +11,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
 
-    <title>Thunderbird — Release Notes (68.2.2) — Thunderbird</title>
+    <title>Thunderbird — 68.3.1 System Requirements — Thunderbird</title>
     <meta name="description" content="">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Thunderbird">
     <meta property="og:locale" content="en_US">
     <meta property="og:image" content="https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png">
-    <meta property="og:title" content="Thunderbird — Release Notes (68.2.2)">
+    <meta property="og:title" content="Thunderbird — 68.3.1 System Requirements">
     <meta property="og:description" content="">
     <meta property="fb:page_id" content="348169218537151">
     <meta name="twitter:card" content="summary">
@@ -1641,27 +1641,11 @@
     </section>
 
     
-  <section class="text-center text-white flex flex-col items-center xl:w-full max-w-6xl mx-auto pl-8 pr-8">
-    <h1 class="font-4xl md:font-hero font-thin md:mt-10 mb-8">
-      Thunderbird Release Notes
-    </h1>
-    <p class="font-lg md:font-xl tracking-wide leading-relaxed max-w-4xl mb-10 mt-0">
-      Version 68.2.2, first offered to  channel users on November 7, 2019
-    </p>
-  </section>
-  <nav role="directory" class="text-center text-white flex justify-center max-w-6xl mx-auto bg-black-25 rounded mb-10">
-    <ul class="list-none p-0 flex flex-wrap justify-around flex-1 m-0">
-      <li class="ml-2 mr-2">
-        <a href="#whatsnew" class="btn-link">What’s new</a>
-      </li>
-      <li class="ml-2 mr-2">
-        <a href="#changes" class="btn-link">Changes</a>
-      </li>
-      <li class="ml-2 mr-2">
-        <a href="#fixes" class="btn-link">Bug Fixes</a>
-      </li>
-    </ul>
-  </nav>
+<section class="text-left text-white flex flex-col items-start lg:w-full max-w-6xl mx-auto pl-8 pr-8">
+  <h1 class="font-4xl md:font-hero font-thin md:mt-10 mb-16">
+    System Requirements - 68.3.1
+  </h1>
+</section>
 
 
     
@@ -1677,133 +1661,65 @@
 
     <main>
       
-  <section  class="pt-20 flex justify-center items-center pl-8 pr-8">
-    <aside class="flex flex-col w-full max-w-6xl lg:ml-16 lg:mr-16">
-      <p class="font-lg tracking-wider leading-loose mb-6 p-links-blue">
-        Check out "What’s New" and "Known Issues" for this version of Thunderbird below. As always, you’re encouraged to <a href="https://support.mozilla.org/questions/new/thunderbird">tell us what you think</a>, or <a href="https://bugzilla.mozilla.org/">file a bug in Bugzilla</a>
-      </p>
-      <aside class="font-lg tracking-wider leading-loose mb-6 markup-page">
-        <p><strong> Thunderbird version 68.2.2 provides an automatic update from Thunderbird version 60.</strong>
-If you have installed Lightning, Thunderbird's calendar add-on, it will automatically
-be updated to match the new version of Thunderbird. Refer to this
-<a href="https://support.mozilla.org/en-US/kb/calendar-updates-issues-thunderbird">Calendar troubleshooting article</a>
-in case of problems.</p>
-<p><strong>System Requirements:
-• Window: Windows 7, Windows Server 2008 R2 or later
-• Mac: Mac OS X 10.9 or later
-• Linux: GTK+ 3.4 or higher</strong>.
-Details <a href="/en-US/thunderbird/68.0/system-requirements/">here</a>.</p>
-<p><strong>Thunderbird version 68.2.2 is a follow-up to
-<a href="https://www.thunderbird.net/en-US/thunderbird/68.2.1/releasenotes/">version 68.2.1</a> to fix an upgrade problem.</strong></p>
-<p><strong>Please refer to <a href="https://thunderbird.net/en-US/thunderbird/68.0/releasenotes/">Release Notes for version 68.0</a> to see the list of improvements and fixed issues.</strong></p>
-      </aside>
+  <section class="mt-10 flex justify-between items-center pl-8 pr-8">
+    <aside class="flex flex-col w-full lg:ml-16 lg:mr-16 font-lg tracking-wider leading-loose -mb-20 markup-page">
+      <h2>Windows</h2>
+<h3>Operating Systems</h3>
+<ul>
+<li>Windows 7</li>
+<li>Windows 8</li>
+<li>Windows 10</li>
+<li>Windows Server 2008 R2</li>
+</ul>
+<h3>Windows Recommended Hardware</h3>
+<ul>
+<li>Pentium 4 or newer processor that supports SSE2</li>
+<li>1GB RAM</li>
+<li>200 MB hard drive space</li>
+</ul>
+<hr />
+<h2>Mac</h2>
+<h3>Operating Systems</h3>
+<ul>
+<li>Mac OS X 10.9</li>
+<li>Mac OS X 10.10</li>
+<li>Mac OS X 10.11</li>
+<li>Mac OS X 10.12</li>
+<li>Mac OS X 10.13</li>
+<li>Mac OS X 10.14</li>
+</ul>
+<h3>Recommended Hardware</h3>
+<ul>
+<li>Macintosh computer with an Intel x86 processor</li>
+<li>512 MB RAM</li>
+<li>200 MB hard drive space</li>
+</ul>
+<hr />
+<h2>GNU/Linux</h2>
+<h3>Software Requirements</h3>
+<p><em>Please note that GNU/Linux distributors may provide packages for your distribution which have different requirements.</em></p>
+<ul>
+<li>Thunderbird will not run at all without the following libraries or packages:<ul>
+<li>GTK+ 3.4 or higher</li>
+<li>GLib 2.22 or higher</li>
+<li>Pango 1.14 or higher</li>
+<li>X.Org 1.0 or higher (1.7 or higher is recommended)</li>
+<li>libstdc++ 4.6.1 or higher</li>
+</ul>
+</li>
+<li>For optimal functionality, we recommend the following libraries or packages:<ul>
+<li>NetworkManager 0.7 or higher</li>
+<li>DBus 1.0 or higher</li>
+<li>GNOME 2.16 or higher</li>
+</ul>
+</li>
+</ul>
     </aside>
   </section>
 
-  <section class="pt-20 pb-16 w-full bg-calendar -mt-10">
+  <section class="pt-20 pb-20 flex bg-calendar">
     &nbsp;
   </section>
-
-  
-    <section class="pb-10 flex flex-wrap justify-center items-center pl-8 pr-8 bg-grey-lighter">
-      <aside class="flex flex-col w-full max-w-6xl lg:ml-16 lg:mr-16">
-        
-        
-
-        
-          
-            
-
-            
-              
-                
-                  <h3 id="fixes" class="header-section pt-14 pb-4">
-                    <span><!-- This Source Code Form is subject to the terms of the Mozilla Public
-   - License, v. 2.0. If a copy of the MPL was not distributed with this
-   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
-</span>Fixes
-                  </h3>
-                
-
-                
-                
-
-                <aside id="note-"
-                  class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
-                  <h4 class="font-bold uppercase m-0 p-3 w-24">
-                    
-                      <aside class="flex items-center text-green">
-                        <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
-   - License, v. 2.0. If a copy of the MPL was not distributed with this
-   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
-</span>
-                        fixed
-                      </aside>
-                    
-                  </h4>
-                  <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                    <p>When upgrading a 64bit version of Thunderbird version 60 to version 68, the existing profile wasn't recognized and a new profile was created.<br> Note: If your profile is still not recognized, select it by visiting about:profiles in the Troubleshooting Information.</p>
-                  </aside>
-                </aside>
-              
-            
-              
-            
-              
-            
-          
-        
-
-        
-          <h3 id="known-issues" class="header-section pt-14 pb-4">
-            <span><!-- This Source Code Form is subject to the terms of the Mozilla Public
-   - License, v. 2.0. If a copy of the MPL was not distributed with this
-   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M14.742 12.106L9.789 2.2a2 2 0 0 0-3.578 0l-4.953 9.91A2 2 0 0 0 3.047 15h9.905a2 2 0 0 0 1.79-2.894zM7 5a1 1 0 0 1 2 0v4a1 1 0 0 1-2 0zm1 8.25A1.25 1.25 0 1 1 9.25 12 1.25 1.25 0 0 1 8 13.25z"></path></svg>
-</span>Known Issues
-          </h3>
-          
-            <aside id="note-" class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
-              <h4 class="font-bold uppercase m-0 p-3 w-24">
-                <aside class="flex items-center text-red">
-                  <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
-   - License, v. 2.0. If a copy of the MPL was not distributed with this
-   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M3.8 15.922a1.1 1.1 0 0 1-1.09-1.253l.609-4.36L.392 7.163a1.1 1.1 0 0 1 .616-1.833l4.081-.73L7.015.734a1.1 1.1 0 0 1 1.969 0L10.911 4.6l4.084.729a1.1 1.1 0 0 1 .611 1.833L12.68 10.31l.609 4.359a1.1 1.1 0 0 1-1.6 1.127L8 13.873 4.307 15.8a1.093 1.093 0 0 1-.507.122zm-.415-1.9zm9.228 0zM2.981 7.01l2.451 2.635-.5 3.572L8 11.618l3.067 1.6-.5-3.572 2.451-2.636-3.45-.616L8 3.244l-1.569 3.15zm11.659.29zm-13.278 0zm12.78-1.5zm-12.286 0z"></path></svg>
-</span>
-                  unresolved
-                </aside>
-              </h4>
-              <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                <p>When upgrading from Thunderbird version 60 to version 68, add-ons are not automatically updated during the upgrade process. They will however be updated during the add-on update check. It is of course possible to reinstall compatible add-ons via the Add-ons Manager or via <a href="https://addons.thunderbird.net">addons.thunderbird.net</a>.</p>
-                
-              </aside>
-            </aside>
-          
-            <aside id="note-" class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
-              <h4 class="font-bold uppercase m-0 p-3 w-24">
-                <aside class="flex items-center text-red">
-                  <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
-   - License, v. 2.0. If a copy of the MPL was not distributed with this
-   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M3.8 15.922a1.1 1.1 0 0 1-1.09-1.253l.609-4.36L.392 7.163a1.1 1.1 0 0 1 .616-1.833l4.081-.73L7.015.734a1.1 1.1 0 0 1 1.969 0L10.911 4.6l4.084.729a1.1 1.1 0 0 1 .611 1.833L12.68 10.31l.609 4.359a1.1 1.1 0 0 1-1.6 1.127L8 13.873 4.307 15.8a1.093 1.093 0 0 1-.507.122zm-.415-1.9zm9.228 0zM2.981 7.01l2.451 2.635-.5 3.572L8 11.618l3.067 1.6-.5-3.572 2.451-2.636-3.45-.616L8 3.244l-1.569 3.15zm11.659.29zm-13.278 0zm12.78-1.5zm-12.286 0z"></path></svg>
-</span>
-                  unresolved
-                </aside>
-              </h4>
-              <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                <p>LDAP lookup not working when SSL is enabled. Workaround: Disable SSL or switch off option "Query OSCP responder servers" in the certificate settings in advanced options.</p>
-                
-              </aside>
-            </aside>
-          
-        
-      </aside>
-    </section>
-  
-
   <section class="pt-10 pb-10 lg:pt-20 lg:pb-20 flex bg-prefooter bg-grey-lighter">
   <section class="flex flex-col lg:flex-row flex-1 max-w-6xl mx-auto justify-between pl-8 pr-8">
     <article class="flex flex-1 lg:max-w-md mb-20 lg:mb-0">
