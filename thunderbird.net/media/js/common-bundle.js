@@ -19,6 +19,7 @@ if (typeof Mozilla === 'undefined') {
     'use strict';
 
     var Utils = {};
+    var bouncerURL = 'download.mozilla.org'
 
     /**
      * Bug 393263 A special function for IE < 9.
@@ -34,6 +35,14 @@ if (typeof Mozilla === 'undefined') {
         if (link && window.site.platform === 'windows' && /MSIE\s[1-8]\./.test(ua)) {
             window.open(link, 'download_window', 'toolbar=0,location=no,directories=0,status=0,scrollbars=0,resizeable=0,width=1,height=1,top=0,left=0');
             window.focus();
+        }
+    };
+
+    // Add target="_blank" to all external links so they open in a new tab by default.
+    Utils.externalLinks = function() {
+        for (var c = document.getElementsByTagName("a"), a = 0; a < c.length; a++) {
+            var b = c[a];
+            b.getAttribute("href") && b.hostname !== location.hostname && b.hostname !== bouncerURL && (b.target = "_blank")
         }
     };
 
@@ -902,20 +911,8 @@ Mozilla.ImageHelper.isHighDpi = function() {
     NavMain.enterSmallMode = function() {
         NavMain.unlinkMainMenuItems();
 
-        $('#nav-main-menu').css('display', 'none').attr('aria-hidden');
-
         $('#outer-wrapper').on('click.mobile-nav', NavMain.handleDocumentClick);
         $('a, input, textarea, button, :focus').on('focus.mobile-nav', NavMain.handleDocumentFocus);
-
-        $('#nav-main-menu, #nav-main-menu .submenu').attr('aria-hidden', 'true');
-
-        // remove submenu click handler and CSS class
-        NavMain.mainMenuLinks
-            .addClass('submenu-item')
-            .unbind('click', NavMain.handleSubmenuClick);
-
-        // add click handler to menu links to hide menu
-        NavMain.linkMenuHideOnClick();
 
         NavMain.smallMode = true;
     };
@@ -923,26 +920,8 @@ Mozilla.ImageHelper.isHighDpi = function() {
     NavMain.leaveSmallMode = function() {
         NavMain.relinkMainMenuLinks();
 
-        $('#nav-main-menu').css('display', '').removeAttr('aria-hidden');
-
         $('#outer-wrapper').off('click.mobile-nav', NavMain.handleDocumentClick);
         $('a, input, textarea, button, :focus').off('focus.mobile-nav', NavMain.handleDocumentFocus);
-
-        NavMain.toggleButton.removeClass('open').attr('aria-expanded', false);
-
-        // reset submenus
-        $('#nav-main-menu > li > .submenu').stop(true).css({
-            'left'         : '',
-            'top'          : '',
-            'display'      : '',
-            'opacity'      : '',
-            'height'       : '',
-            'marginTop'    : '',
-            'marginBottom' : ''
-        }).attr('aria-expanded', 'false');
-
-        // remove click handler from menu links that hide menu
-        NavMain.unlinkMenuHideOnClick();
 
         NavMain.currentSmallSubmenu = null;
         NavMain.smallMode = false;
@@ -1589,6 +1568,7 @@ $(document).ready(function() {
 
     utils.initDownloadLinks();
     utils.initMobileDownloadLinks();
+    utils.externalLinks();
     utils.initLangSwitcher();
 
     /* Bug 1264843: In partner distribution of desktop Firefox, switch the
