@@ -1,2 +1,2 @@
 RewriteEngine On
-RewriteRule .* https://www.thunderbird.net/en-US/thunderbird/68.4.2/releasenotes/
+RewriteRule .* https://www.thunderbird.net/en-US/thunderbird/68.5.0/releasenotes/
