@@ -439,6 +439,12 @@ body {
   border-color: #fdfdfd;
 }
 .text-blue-dark,
+h1 .anchor,
+h2 .anchor,
+h3 .anchor,
+h4 .anchor,
+h5 .anchor,
+h6 .anchor,
 .header-section,
 .subheader-section,
 .markup-page h2,
@@ -497,6 +503,12 @@ body {
   border-color: #0080FF;
 }
 .text-blue-dark,
+h1 .anchor,
+h2 .anchor,
+h3 .anchor,
+h4 .anchor,
+h5 .anchor,
+h6 .anchor,
 .header-section,
 .subheader-section,
 .markup-page h2,
@@ -5947,6 +5959,49 @@ button {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  position: relative;
+}
+h1 .anchor,
+h2 .anchor,
+h3 .anchor,
+h4 .anchor,
+h5 .anchor,
+h6 .anchor {
+  float: left;
+  padding-right: 4px;
+  margin-left: -20px;
+  line-height: 1;
+  opacity: 0;
+}
+h1 .anchor svg,
+h2 .anchor svg,
+h3 .anchor svg,
+h4 .anchor svg,
+h5 .anchor svg,
+h6 .anchor svg {
+  width: 16px;
+  height: 16px;
+}
+h1:hover .anchor,
+h2:hover .anchor,
+h3:hover .anchor,
+h4:hover .anchor,
+h5:hover .anchor,
+h6:hover .anchor,
+h1:focus .anchor,
+h2:focus .anchor,
+h3:focus .anchor,
+h4:focus .anchor,
+h5:focus .anchor,
+h6:focus .anchor {
+  opacity: 1;
 }
 .header-section span {
   border-width: 6px;
