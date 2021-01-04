@@ -6,6 +6,12 @@
     "authors":"Imad Tbahriti"
   },
   {
+    "country":"Australia",
+    "filename":"AustraliaHolidays.ics",
+    "datespan":"2021-2022",
+    "authors":"RGreyman"
+  },
+  {
     "country":"Austria",
     "filename":"AustrianHolidays.ics",
     "datespan":"2010-2025",
@@ -44,7 +50,7 @@
   {
     "country":"Colombia",
     "filename":"ColombianHolidays.ics",
-    "datespan":"2000-2020",
+    "datespan":"2020-2050",
     "authors":"Mauricio Sanchez"
   },
   {
@@ -155,6 +161,12 @@
     "authors":"boe"
   },
   {
+    "country": "Lithuania",
+    "filename":"LithuanianHolidays.ics",
+    "datespan":"2020-2025",
+    "authors":"joshas"
+  },
+  {
     "country":"Morocco",
     "filename":"MoroccoHolidays.ics",
     "authors": "Tarik El Maniani"
@@ -250,10 +262,28 @@
     "authors":"Joe"
   },
   {
-    "country":"UK",
+    "country":"UK [All]",
     "filename":"UKHolidays.ics",
-    "datespan":"2010-2020",
-    "authors":"Brian Wray, Dave Ewart"
+    "datespan":"2021-2030",
+    "authors":"KR304"
+  },
+  {
+    "country":"UK [England & Wales]",
+    "filename":"UKHolidays-EnglandWales.ics",
+    "datespan":"2021-2030",
+    "authors":"KR304"
+  },
+  {
+    "country":"UK [Northern Ireland]",
+    "filename":"UKHolidays-NIreland.ics",
+    "datespan":"2021-2030",
+    "authors":"KR304"
+  },
+  {
+    "country":"UK [Scotland]",
+    "filename":"UKHolidays-Scotland.ics",
+    "datespan":"2021-2030",
+    "authors":"KR304"
   },
   {
     "country":"Ukraine",
@@ -270,7 +300,7 @@
   {
     "country":"USA",
     "filename":"USHolidays.ics",
-    "datespan":"2000-2020",
-    "authors":"Marcus Yoo, Rob Craver"
+    "datespan":"2020-2030",
+    "authors":"Thomas Kelley"
   }
 ]
