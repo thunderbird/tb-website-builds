@@ -18,7 +18,8 @@ body,
 }
 .font-sm,
 .social-link,
-.tabs-nav label {
+.tabs-nav label,
+.tabs-nav #channel-header {
   font-size: 11px;
 }
 .font-regular,
@@ -187,6 +188,7 @@ body {
 .btn-link,
 .header-section,
 .tabs-nav label,
+.tabs-nav #channel-header,
 .markup-page h2 {
   text-transform: uppercase;
 }
@@ -315,7 +317,8 @@ body {
 .bg-transparent,
 .btn-body.btn-secondary,
 .btn-link,
-.tabs-nav label {
+.tabs-nav label,
+.tabs-nav #channel-header {
   background-color: transparent;
 }
 .border-transparent,
@@ -344,6 +347,7 @@ body {
 .btn-link,
 .header-section span,
 .tabs-nav label:hover,
+#release:checked ~ aside nav .tabs-nav .release label,
 #beta:checked ~ aside nav .tabs-nav .beta label,
 #nightly:checked ~ aside nav .tabs-nav .nightly label,
 .p-links a,
@@ -484,7 +488,8 @@ h6 .anchor,
 .btn-body.btn-secondary,
 .btn-link:hover,
 .btn-link:focus,
-.markup-page a {
+.markup-page a,
+section.tab.release a.small-link {
   color: #0080FF;
 }
 .bg-blue,
@@ -495,6 +500,7 @@ h6 .anchor,
 .btn-inline:active,
 .btn-newsletter:active,
 .header-section span,
+#release:checked ~ aside nav .tabs-nav .release label,
 #beta:checked ~ aside nav .tabs-nav .beta label,
 #nightly:checked ~ aside nav .tabs-nav .nightly label {
   background-color: #0080FF;
@@ -593,7 +599,8 @@ body {
 .btn-inline,
 .btn-link,
 .form-select,
-.tabs-nav label {
+.tabs-nav label,
+.tabs-nav #channel-header {
   border-radius: 0.125rem;
 }
 .rounded,
@@ -690,7 +697,8 @@ body {
 .btn-beta,
 .btn-nightly,
 .btn-link,
-.tabs-nav label {
+.tabs-nav label,
+.tabs-nav #channel-header {
   display: inline-block;
 }
 .inline {
@@ -1783,7 +1791,8 @@ body {
 .social-link span,
 .btn-inline,
 .form-select,
-.tabs-nav label {
+.tabs-nav label,
+.tabs-nav #channel-header {
   padding: 0.25rem;
 }
 .p-0,
@@ -6021,6 +6030,7 @@ h6:focus .anchor {
 .tabs .tab {
   display: none;
 }
+#release:checked ~ section.tab.release,
 #beta:checked ~ section.tab.beta,
 #nightly:checked ~ section.tab.nightly {
   display: flex;
