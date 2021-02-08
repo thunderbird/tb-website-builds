@@ -1720,7 +1720,7 @@
         Check out the notes below for this version of Thunderbird. As always, you’re encouraged to <a href="https://support.mozilla.org/questions/new/thunderbird">tell us what you think</a>, or <a href="https://bugzilla.mozilla.org/">file a bug in Bugzilla</a>
       </p>
       <aside class="font-lg tracking-wider leading-loose mb-6 markup-page">
-        <p><strong>These notes apply to Thunderbird version 86 beta 1 released January 29, 2021.</strong></p>
+        <p><strong>These notes apply to Thunderbird version 86 beta 2 released February 8, 2021.</strong></p>
 <p><strong>System Requirements:</strong> <a href="/en-US/thunderbird/86.0beta/system-requirements/">Details</a></p>
 <ul>
 <li>Windows: Windows 7 or later</li>
@@ -2216,6 +2216,351 @@ behavior can be restored by setting the pref "mailnews.send.jsmodule" to false.<
           
             
           
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+        
+          
+            <section class="mt-10 mb-8 flex justify-center items-center w-full">
+              <span class="header-line flex-1"></span>
+              <h2 class="header-section pl-4 pr-4 mb-0 text-center">
+                Fixed in Beta 2
+              </h2>
+              <span class="header-line flex-1"></span>
+            </section>
+            
+          
+
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+                <h3 id="changes" class="header-section pt-14 pb-4">
+                  <span><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M14 1a1 1 0 0 0-1 1v1.146A6.948 6.948 0 0 0 1.227 6.307a1 1 0 1 0 1.94.484A4.983 4.983 0 0 1 8 3a4.919 4.919 0 0 1 3.967 2H10a1 1 0 0 0 0 2h4a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm.046 7.481a1 1 0 0 0-1.213.728A4.983 4.983 0 0 1 8 13a4.919 4.919 0 0 1-3.967-2H6a1 1 0 0 0 0-2H2a1 1 0 0 0-1 1v4a1 1 0 0 0 2 0v-1.146a6.948 6.948 0 0 0 11.773-3.161 1 1 0 0 0-.727-1.212z"></path></svg>
+</span>Changes
+                </h3>
+              
+
+              
+              
+
+              <aside id="note-17"
+                class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
+                <h4 class="font-bold uppercase m-0 p-3 w-24">
+                  
+                    <aside class="flex items-center text-purple">
+                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M14 1a1 1 0 0 0-1 1v1.146A6.948 6.948 0 0 0 1.227 6.307a1 1 0 1 0 1.94.484A4.983 4.983 0 0 1 8 3a4.919 4.919 0 0 1 3.967 2H10a1 1 0 0 0 0 2h4a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm.046 7.481a1 1 0 0 0-1.213.728A4.983 4.983 0 0 1 8 13a4.919 4.919 0 0 1-3.967-2H6a1 1 0 0 0 0-2H2a1 1 0 0 0-1 1v4a1 1 0 0 0 2 0v-1.146a6.948 6.948 0 0 0 11.773-3.161 1 1 0 0 0-.727-1.212z"></path></svg>
+</span>
+                      changed
+                    </aside>
+                  
+                </h4>
+                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
+                  <p>Thunderbird will no longer allow installation of addons that use the legacy API</p>
+                </aside>
+              </aside>
+            
+          
+            
+              
+                <h3 id="fixes" class="header-section pt-14 pb-4">
+                  <span><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>Fixes
+                </h3>
+              
+
+              
+              
+
+              <aside id="note-18"
+                class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
+                <h4 class="font-bold uppercase m-0 p-3 w-24">
+                  
+                    <aside class="flex items-center text-green">
+                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>
+                      fixed
+                    </aside>
+                  
+                </h4>
+                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
+                  <p>Security information for S/MIME messages was not displayed correctly prior to a draft being saved</p>
+                </aside>
+              </aside>
+            
+          
+            
+              
+
+              
+              
+
+              <aside id="note-19"
+                class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
+                <h4 class="font-bold uppercase m-0 p-3 w-24">
+                  
+                    <aside class="flex items-center text-green">
+                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>
+                      fixed
+                    </aside>
+                  
+                </h4>
+                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
+                  <p>Automatic account setup did not use the provider email and display name</p>
+                </aside>
+              </aside>
+            
+          
+            
+              
+
+              
+              
+
+              <aside id="note-20"
+                class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
+                <h4 class="font-bold uppercase m-0 p-3 w-24">
+                  
+                    <aside class="flex items-center text-green">
+                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>
+                      fixed
+                    </aside>
+                  
+                </h4>
+                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
+                  <p>Favorite Folder view did not maintain UI state between Thunderbird restarts</p>
+                </aside>
+              </aside>
+            
+          
+            
+              
+
+              
+              
+
+              <aside id="note-21"
+                class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
+                <h4 class="font-bold uppercase m-0 p-3 w-24">
+                  
+                    <aside class="flex items-center text-green">
+                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>
+                      fixed
+                    </aside>
+                  
+                </h4>
+                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
+                  <p>Compact folder view did not work</p>
+                </aside>
+              </aside>
+            
+          
+            
+              
+
+              
+              
+
+              <aside id="note-22"
+                class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
+                <h4 class="font-bold uppercase m-0 p-3 w-24">
+                  
+                    <aside class="flex items-center text-green">
+                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>
+                      fixed
+                    </aside>
+                  
+                </h4>
+                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
+                  <p>Searching addons from "Manage Extensions" page was not working</p>
+                </aside>
+              </aside>
+            
+          
+            
+              
+
+              
+              
+
+              <aside id="note-23"
+                class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
+                <h4 class="font-bold uppercase m-0 p-3 w-24">
+                  
+                    <aside class="flex items-center text-green">
+                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>
+                      fixed
+                    </aside>
+                  
+                </h4>
+                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
+                  <p>Printing address book and calendar were broken in 86 beta 1</p>
+                </aside>
+              </aside>
+            
+          
+            
+              
+
+              
+              
+
+              <aside id="note-24"
+                class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
+                <h4 class="font-bold uppercase m-0 p-3 w-24">
+                  
+                    <aside class="flex items-center text-green">
+                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>
+                      fixed
+                    </aside>
+                  
+                </h4>
+                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
+                  <p>Recurring tasks were always marked incomplete; unable to use filters</p>
+                </aside>
+              </aside>
+            
+          
+            
+              
+
+              
+              
+
+              <aside id="note-25"
+                class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
+                <h4 class="font-bold uppercase m-0 p-3 w-24">
+                  
+                    <aside class="flex items-center text-green">
+                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>
+                      fixed
+                    </aside>
+                  
+                </h4>
+                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
+                  <p>Thunderbird "about:" pages were not able to open links to web pages</p>
+                </aside>
+              </aside>
+            
+          
+            
+              
+
+              
+              
+
+              <aside id="note-26"
+                class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
+                <h4 class="font-bold uppercase m-0 p-3 w-24">
+                  
+                    <aside class="flex items-center text-green">
+                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>
+                      fixed
+                    </aside>
+                  
+                </h4>
+                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
+                  <p>Various UI widgets not working</p>
+                </aside>
+              </aside>
+            
+          
+            
+          
         
 
         
@@ -2239,7 +2584,7 @@ behavior can be restored by setting the pref "mailnews.send.jsmodule" to false.<
                 </aside>
               </h4>
               <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                <p>Various updater issues</p>
+                <p>Thunderbird incorrectly states that it is being updated by another instance</p>
                 
               </aside>
             </aside>
