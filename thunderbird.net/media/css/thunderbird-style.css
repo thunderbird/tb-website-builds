@@ -1287,6 +1287,11 @@ body {
 .h-full {
   height: 100%;
 }
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .platform-img {
+    height: 100%;
+  }
+}
 @media (min-width: 768px) {
   .md\:w-auto {
     width: auto;
