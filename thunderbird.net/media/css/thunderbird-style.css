@@ -555,13 +555,24 @@ body {
 }
 .bg-green-light,
 .btn-download-inline:hover,
-.btn-download-inline:focus {
+.btn-download-inline:focus,
+.header-section span.green {
   background-color: #11AD00;
 }
 .border-green-light,
 .btn-download-inline,
 .btn-body {
   border-color: #11AD00;
+}
+.text-green-lightest {
+  color: #7ac97b;
+}
+.bg-green-lightest {
+  background-color: #7ac97b;
+}
+.border-green-lightest,
+.header-section span.green {
+  border-color: #7ac97b;
 }
 .text-purple {
   color: #ad3bff;
@@ -843,6 +854,9 @@ body {
 .nav-link:hover:after,
 .nav-link:focus:after {
   opacity: 1;
+}
+.shadow-img {
+  filter: drop-shadow(5px 5px 6px rgba(0, 0, 0, 0.15));
 }
 .flex-initial {
   flex: 0 1 auto;
@@ -1858,6 +1872,7 @@ body {
   padding-top: 1rem;
 }
 .pt-3,
+.btn-donate.btn-donate-whatsnew,
 .btn-join,
 .btn-beta,
 .btn-daily,
@@ -1928,7 +1943,8 @@ body {
 .form-select {
   padding-right: 1.5rem;
 }
-.pr-5 {
+.pr-5,
+.btn-donate.btn-donate-whatsnew {
   padding-right: 1.25rem;
 }
 .pr-4,
@@ -2006,6 +2022,7 @@ body {
   padding-bottom: 1rem;
 }
 .pb-3,
+.btn-donate.btn-donate-whatsnew,
 .btn-join,
 .btn-beta,
 .btn-daily,
@@ -2075,6 +2092,7 @@ body {
   padding-left: 1.5rem;
 }
 .pl-5,
+.btn-donate.btn-donate-whatsnew,
 .btn-body {
   padding-left: 1.25rem;
 }
@@ -2429,7 +2447,8 @@ body {
 .social-link span {
   margin-right: 0.25rem;
 }
-.mr-0 {
+.mr-0,
+.btn-donate.btn-donate-whatsnew {
   margin-right: 0rem;
 }
 .-mr-20 {
@@ -2700,7 +2719,8 @@ body {
 .social-link {
   margin-left: 0.25rem;
 }
-.ml-0 {
+.ml-0,
+.btn-donate.btn-donate-whatsnew {
   margin-left: 0rem;
 }
 .-ml-20 {
