@@ -11,13 +11,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
 
-    <title>Thunderbird — Release Notes (91.2.1) — Thunderbird</title>
+    <title>Thunderbird — Release Notes (91.3.0) — Thunderbird</title>
     <meta name="description" content="">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Thunderbird">
     <meta property="og:locale" content="en_US">
     <meta property="og:image" content="https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png">
-    <meta property="og:title" content="Thunderbird — Release Notes (91.2.1)">
+    <meta property="og:title" content="Thunderbird — Release Notes (91.3.0)">
     <meta property="og:description" content="">
     <meta property="fb:page_id" content="348169218537151">
     <meta name="twitter:card" content="summary">
@@ -259,7 +259,7 @@
       Thunderbird Release Notes
     </h1>
     <p class="font-lg md:font-xl tracking-wide leading-relaxed max-w-4xl mb-10 mt-0">
-      Version 91.2.1, first offered to  channel users on October 21, 2021
+      Version 91.3.0, first offered to  channel users on November 3, 2021
     </p>
   </section>
   
@@ -313,28 +313,8 @@
         
       
     
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
     <nav role="directory" class="text-center text-white flex justify-center max-w-6xl mx-auto bg-black-25 rounded mb-10">
       <ul class="list-none p-0 flex flex-wrap justify-around flex-1 m-0">
-        
-          <li class="ml-2 mr-2">
-            <a href="#whatsnew" class="btn-link">What’s new</a>
-          </li>
         
         
         
@@ -397,12 +377,12 @@
           
             
               
-                <h3 id="whatsnew" class="header-section">
+                <h3 id="fixes" class="header-section pt-14 pb-4">
                   <span><!-- This Source Code Form is subject to the terms of the Mozilla Public
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M3.8 15.922a1.1 1.1 0 0 1-1.09-1.253l.609-4.36L.392 7.163a1.1 1.1 0 0 1 .616-1.833l4.081-.73L7.015.734a1.1 1.1 0 0 1 1.969 0L10.911 4.6l4.084.729a1.1 1.1 0 0 1 .611 1.833L12.68 10.31l.609 4.359a1.1 1.1 0 0 1-1.6 1.127L8 13.873 4.307 15.8a1.093 1.093 0 0 1-.507.122zm-.415-1.9zm9.228 0zM2.981 7.01l2.451 2.635-.5 3.572L8 11.618l3.067 1.6-.5-3.572 2.451-2.636-3.45-.616L8 3.244l-1.569 3.15zm11.659.29zm-13.278 0zm12.78-1.5zm-12.286 0z"></path></svg>
-</span>What’s New
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>Fixes
                 </h3>
               
 
@@ -413,31 +393,23 @@
                 class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
                 <h4 class="font-bold uppercase m-0 p-3 w-24">
                   
-                    <aside class="flex items-center text-orange">
+                    <aside class="flex items-center text-green">
                       <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M3.8 15.922a1.1 1.1 0 0 1-1.09-1.253l.609-4.36L.392 7.163a1.1 1.1 0 0 1 .616-1.833l4.081-.73L7.015.734a1.1 1.1 0 0 1 1.969 0L10.911 4.6l4.084.729a1.1 1.1 0 0 1 .611 1.833L12.68 10.31l.609 4.359a1.1 1.1 0 0 1-1.6 1.127L8 13.873 4.307 15.8a1.093 1.093 0 0 1-.507.122zm-.415-1.9zm9.228 0zM2.981 7.01l2.451 2.635-.5 3.572L8 11.618l3.067 1.6-.5-3.572 2.451-2.636-3.45-.616L8 3.244l-1.569 3.15zm11.659.29zm-13.278 0zm12.78-1.5zm-12.286 0z"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
 </span>
-                      new
+                      fixed
                     </aside>
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Preference added to disable automatic pausing RSS feed updates after a fetch failure</p>
+                  <p>Default mail headers were set incorrectly when the value contained a colon (:)</p>
                 </aside>
               </aside>
             
           
             
-              
-                <h3 id="fixes" class="header-section pt-14 pb-4">
-                  <span><!-- This Source Code Form is subject to the terms of the Mozilla Public
-   - License, v. 2.0. If a copy of the MPL was not distributed with this
-   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
-</span>Fixes
-                </h3>
               
 
               
@@ -458,7 +430,7 @@
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Recipeint address pills in an error state could incorrectly merge with mailing list pills when expanding the list</p>
+                  <p>Thunderbird did not send the QUIT command when closing an SMTP connection</p>
                 </aside>
               </aside>
             
@@ -484,7 +456,7 @@
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>BCC-only messages could not be sent from the Outbox</p>
+                  <p>Mail tabs could not be closed using the context menu</p>
                 </aside>
               </aside>
             
@@ -510,7 +482,7 @@
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Default DSN request was not set when using "Edit as New Message"</p>
+                  <p>"Print" context menu was still shown when no message pane was displayed</p>
                 </aside>
               </aside>
             
@@ -536,7 +508,7 @@
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Vertical scrollbar in "Conversations" chat panel did not work correctly</p>
+                  <p>Windows tray icon did not reappear after restarting Windows Explorer</p>
                 </aside>
               </aside>
             
@@ -562,7 +534,7 @@
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Chat account "Advanced Options" dialog had no clickable buttons on macOS</p>
+                  <p>Compose window attachment drag and drop fixes</p>
                 </aside>
               </aside>
             
@@ -588,7 +560,7 @@
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>RSS feed attachments could not be saved</p>
+                  <p>Various macOS stability improvements</p>
                 </aside>
               </aside>
             
@@ -614,7 +586,7 @@
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Public ICS calendars served with an incorrect Content-Type could not be added</p>
+                  <p>Drag and Drop area for file attachments on Windows was incorrect</p>
                 </aside>
               </aside>
             
@@ -640,7 +612,7 @@
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Setting a CalDAV calendar to manually update had no effect</p>
+                  <p>CardDAV address books without a name did not work</p>
                 </aside>
               </aside>
             
@@ -666,7 +638,7 @@
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>CalDAV calendars set to read-only became writable after restarting Thunderbird</p>
+                  <p>Thunderbird tried to refresh disabled and manual-only calendars when the network state changed from offline to online</p>
                 </aside>
               </aside>
             
@@ -692,7 +664,7 @@
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Saving a copy of a calendar invite (More -&gt; Save As Copy) did not work</p>
+                  <p>Various Calendar event dialog fixes</p>
                 </aside>
               </aside>
             
@@ -718,111 +690,7 @@
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Events in the first or last week of a month were not always printed when printing a month view</p>
-                </aside>
-              </aside>
-            
-          
-            
-              
-
-              
-              
-
-              <aside id="note-12"
-                class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
-                <h4 class="font-bold uppercase m-0 p-3 w-24">
-                  
-                    <aside class="flex items-center text-green">
-                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
-   - License, v. 2.0. If a copy of the MPL was not distributed with this
-   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
-</span>
-                      fixed
-                    </aside>
-                  
-                </h4>
-                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Accessibility improvements; clearer display of area of focus</p>
-                </aside>
-              </aside>
-            
-          
-            
-              
-
-              
-              
-
-              <aside id="note-13"
-                class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
-                <h4 class="font-bold uppercase m-0 p-3 w-24">
-                  
-                    <aside class="flex items-center text-green">
-                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
-   - License, v. 2.0. If a copy of the MPL was not distributed with this
-   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
-</span>
-                      fixed
-                    </aside>
-                  
-                </h4>
-                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Various theme improvements, HiDPI improvements</p>
-                </aside>
-              </aside>
-            
-          
-            
-              
-
-              
-              
-
-              <aside id="note-14"
-                class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
-                <h4 class="font-bold uppercase m-0 p-3 w-24">
-                  
-                    <aside class="flex items-center text-green">
-                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
-   - License, v. 2.0. If a copy of the MPL was not distributed with this
-   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
-</span>
-                      fixed
-                    </aside>
-                  
-                </h4>
-                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>"Attachments" menu panels for attached files were empty</p>
-                </aside>
-              </aside>
-            
-          
-            
-              
-
-              
-              
-
-              <aside id="note-15"
-                class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
-                <h4 class="font-bold uppercase m-0 p-3 w-24">
-                  
-                    <aside class="flex items-center text-green">
-                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
-   - License, v. 2.0. If a copy of the MPL was not distributed with this
-   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
-</span>
-                      fixed
-                    </aside>
-                  
-                </h4>
-                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Stability improvements</p>
+                  <p>Various <a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird91.3">security fixes</a></p>
                 </aside>
               </aside>
             
