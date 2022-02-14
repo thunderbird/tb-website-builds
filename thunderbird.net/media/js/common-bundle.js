@@ -1787,7 +1787,6 @@ if (typeof Mozilla === 'undefined') {
             url: braintree_URL + '/verify_client',
             success: function(result) {
                 if (result.success) {
-                    console.log(result)
                     Donation.BuildForm(result.client_token)
                 }
             }
