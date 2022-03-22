@@ -5990,6 +5990,34 @@ button {
 .windows.sha-1 .download-button .os_winsha1 {
   display: block !important;
 }
+.modal {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  border: thin #000 solid;
+  background-color: #fff;
+  z-index: 3;
+  /* places the modal dialog on top of everything else */
+  position: fixed;
+  top: 25%;
+  left: 25%;
+  display: none;
+}
+#modal-overlay {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  /* Between the main page and the modal dialog */
+  background-color: #000;
+  opacity: 0.5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  margin: 0;
+  padding: 0;
+}
 .appearance-none,
 .btn-inline,
 .btn-newsletter,

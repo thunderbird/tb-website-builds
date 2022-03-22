@@ -282,6 +282,69 @@
   </section>
 
 
+    <div id="amount-modal" class="modal">
+<h1>Pay What You Want</h1>
+<p>Thunderbird is independent, free, and open source software sustained by your donations. Help us keep the project alive!</p>
+  <form action="">
+  
+    
+  
+    <p>Select an amount:</p>
+    <select name="currency-switcher-currency" id="id_currency-switcher-currency">
+    
+      <option value="brl" >brl   R$</option>
+    
+      <option value="cad" >cad   $</option>
+    
+      <option value="czk" >czk   Kč</option>
+    
+      <option value="dkk" >dkk   kr</option>
+    
+      <option value="eur" >eur   €</option>
+    
+      <option value="gbp" >gbp   £</option>
+    
+      <option value="huf" >huf   Ft</option>
+    
+      <option value="inr" >inr   ₹</option>
+    
+      <option value="jpy" >jpy   ¥</option>
+    
+      <option value="mxn" >mxn   $</option>
+    
+      <option value="nok" >nok   kr</option>
+    
+      <option value="pln" >pln   zł</option>
+    
+      <option value="rub" selected>rub   ₽</option>
+    
+      <option value="sek" >sek   kr</option>
+    
+      <option value="twd" >twd   NT$</option>
+    
+      <option value="usd" >usd   $</option>
+    
+    </select>
+    <input type="radio" id="amt1" name="amount" value="1300">
+    <label for="amt1">$85</label><br>
+    <input type="radio" id="amt2" name="amount" value="800" checked>
+    <label for="amt2">$35</label><br>
+    <input type="radio" id="amt3" name="amount" value="500">
+    <label for="amt3">$15</label><br>
+    <input type="radio" id="amt4" name="amount" value="200">
+    <label for="amt4">$5</label><br><br>
+    <input type="radio" name="amount" value="">Other<input type="text" name="amount" />
+    <button id="amount-submit">Donate & Download</button>
+    <button id="amount-cancel">No Thanks; Close & Download</button>
+  </form>
+</div>
+<div id="checkout-modal" class="modal">
+  <div id="checkout-message"></div>
+  <div id="dropin-container"></div>
+  <button id="submit-button">Submit payment</button>
+</div>
+<div id="modal-overlay" tabindex="-1"></div>
+
     
 
     
@@ -311,7 +374,7 @@
           Параметры новой учётной записи
         </h3>
         <p class="font-lg tracking-wider leading-loose mb-10">
-          One of the most noticeable changes for Thunderbird 91 is the new account setup wizard. The new wizard not only features a better look, but does auto-discovery of calendars and address books and allows most users to set them up with just a click. After setting up an account, the wizard also points users at additional (optional) things to do – such as adding a signature or setting up end-to-end encryption.
+          Одним из наиболее заметных изменений в Thunderbird 91 является новый мастер настройки учетной записи. Новый мастер не только выглядит лучше, но и обеспечивает автоматическое обнаружение календарей и адресных книг и позволяет большинству пользователей настраивать их одним щелчком мыши. После настройки учетной записи мастер также указывает пользователям на дополнительные (необязательные) действия, такие как добавление подписи или настройку сквозного шифрования.
         </p>
       </aside>
     </div>
@@ -331,7 +394,7 @@
           Вложения и перетаскивание
         </h3>
         <p class="font-lg tracking-wider leading-loose mb-10">
-          The attachments pane has been moved to the bottom of the compose window for better visibility of filenames as well as being able to see many at once. We’ve also added an overlay that appears when you drag-and-drop a file into the compose window asking how you would like to handle the file in that email (such as putting a picture in-line in your message or simply attaching it to the email).
+          Панель вложений была перемещена в нижнюю часть окна создания сообщения для улучшния видимости имен файлов, а также для возможности просмотра многих файлов одновременно. Мы также добавили наложение, которое появляется, когда вы перетаскиваете файл в окно создания сообщения, и спрашивает, как бы вы хотели обработать этот файл в этом электронном письме (например, поместить изображение в строку сообщения или просто прикрепить его к электронному сообщению).
         </p>
       </aside>
       <aside class="flex-1 lg:ml-8">
@@ -354,10 +417,10 @@
     </g>
 </svg>
 </span>
-          UI Density Control
+          Контроль плотности пользовательского интерфейса
         </h3>
         <p class="font-lg tracking-wider leading-loose mb-10">
-          Whether you are using it on a large desktop monitor or a small laptop touchscreen, you may want the icons and text of the interface to be larger and more spread out or very compact. In Thunderbird 91, under View -> Density in the menu, you can select the UI density for the entire application. Three options are available: compact (small), normal(medium), and touch(large).
+          Независимо от того, используете ли вы его на большом настольном мониторе или на маленьком сенсорном экране ноутбука, вы можете захотеть, чтобы значки и текст интерфейса были крупнее и более разбросанными или очень компактными. В Thunderbird 91 в меню «Вид» -> «Значки» вы можете выбрать плотность пользовательского интерфейса для всего приложения. Доступны три варианта: компактная (маленькая), нормальная (среднияя) и сенсорная (большая).
         </p>
       </aside>
     </div>
@@ -377,10 +440,10 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><circle fill="currentColor" cx="8" cy="2" r="2"></circle><path fill="currentColor" d="M14.1 4.5H2c-.6 0-1 .4-1 1s.4 1 1 1h3.5v8.4c0 .6.4 1.1 1 1.1s1-.5 1-1.1v-4.1h1v4.1c0 .6.4 1.1 1 1.1s1-.5 1-1.1V6.4H14c.6 0 1-.4 1-1s-.4-.9-.9-.9z"></path></svg>
 </span>
-          Protect Your Privacy
+          Защита вашей приватности
         </h3>
         <p class="font-lg tracking-wider leading-loose mb-10">
-          Whether it’s work or play, you deserve to have privacy when you are online. A VPN, Virtual Private Network, can help you create a secure, private connection to the internet. So that when you are traveling, connecting to WiFi, or simply want more online security - you know that your information is protected from prying eyes.
+          Будь то работа или игра, вы заслуживаете уединения, когда находитесь в сети. VPN, виртуальная частная сеть, может помочь вам создать безопасное частное подключение к Интернету. Так что, когда вы путешествуете, подключаетесь к Wi-Fi или просто хотите повысить безопасность в Интернете, вы знаете, что ваша информация защищена от посторонних глаз.
         </p>
         <a href="https://www.mozilla.org/products/vpn/?utm_source=thunderbird&utm_medium=tbwnp&utm_campaign=2021" class="btn-body self-start" target="_blank">
           Подробнее <span><svg viewBox="0 0 7 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -412,7 +475,7 @@
           Улучшения в «Календаре»
         </h3>
         <p class="font-lg tracking-wider leading-loose mb-10">
-          Managing multiple calendars has been made easier with the calendar sidebar improvements in this release. There is a quick enable button for disabled calendars, a lock indicator for read-only calendars, and a show/hide icon for easily toggling what calendars are visible. Outside the sidebar, there are now better color accents to highlight the current day in the calendar.
+          Управление несколькими календарями стало проще благодаря улучшениям боковой панели календаря в этом выпуске. Имеется кнопка быстрого включения отключённых календарей, индикатор блокировки календарей только для чтения и значок отображения/скрытия для простого переключения видимости календарей. За пределами боковой панели теперь есть улучшенные цветовые акценты для выделения текущего дня в календаре.
         </p>
       </aside>
     </div>
@@ -432,7 +495,7 @@
           Улучшенная тёмная тема
         </h3>
         <p class="font-lg tracking-wider leading-loose mb-10">
-          Thunderbird’s Dark Theme got even better in this release. In the past some windows and dialogues looked a bit out of place if you had Thunderbird’s dark theme selected. Now almost every dialogue and window in Thunderbird is fully styled to respect the user’s color scheme preferences.
+          Темная тема Thunderbird стала в этом выпуске ещё лучше. В прошлом некоторые окна и диалоги выглядели немного неуместно, если у вас была выбрана тёмная тема Thunderbird. Теперь почти каждый диалог и окно в Thunderbird полностью оформлены в соответствии с предпочитаемой пользователем цветовой схемой.
         </p>
       </aside>
       <aside class="flex-1 lg:ml-8">
@@ -456,7 +519,7 @@
           Просмотр PDF
         </h3>
         <p class="font-lg tracking-wider leading-loose mb-10">
-          Thunderbird now has a built-in PDF viewer, which means you can read and even do some editing on PDFs sent to you as attachments. You can do all this without ever leaving Thunderbird, allowing you to return to your inbox without missing a beat.
+          Thunderbird теперь имеет встроенную программу просмотра PDF-файлов, что означает, что вы можете читать и даже вносить некоторые изменения в PDF-файлы, отправленные вам в виде вложений. Вы можете сделать все это, даже не выходя из Thunderbird, что позволит вам вернуться в свой почтовый ящик, не теряя ни секунды.
         </p>
       </aside>
     </div>
@@ -474,14 +537,14 @@
         Другие значимые изменения
       </h3>
       <p class="font-lg tracking-wider leading-loose mb-6">
-        There are many other big changes that make Thunderbird 91 a very large release including:
+        Есть много других больших изменений, которые делают Thunderbird 91 очень серьёзным выпуском, в том числе:
       </p>
       <ul class="font-md tracking-wider leading-loose mb-6 p-links-blue">
-        <li>Native support for macOS devices built with Apple Silicon CPU</li>
-        <li>CardDAV Address Book Support (and CardDAV auto-detection support)</li>
-        <li>Printing UI updated</li>
-        <li>Ability to change order of accounts in UI</li>
-        <li>Registers to handle .ics files, letting you preview and import events to the calendar by double clicking the file</li>
+        <li>Встроенная поддержка устройств macOS с процессором Apple Silicon</li>
+        <li>Поддержка адресной книги CardDAV (и поддержка автоматического обнаружения CardDAV)</li>
+        <li>Обновлен интерфейс печати</li>
+        <li>Возможность изменить порядок учётных записей в пользовательском интерфейсе</li>
+        <li>Регистрация для обработки файлов .ics, что позволяет просматривать и импортировать события в календарь, дважды щёлкнув по файлу</li>
       </ul>
       <p class="font-lg tracking-wider leading-loose mb-10 p-links-blue">
         Вы можете найти подробную информацию обо всех наших изменениях в примечаниях к выпуску для <a href="/ru/thunderbird/releases">Thunderbird 91.0 и выше</a>.
