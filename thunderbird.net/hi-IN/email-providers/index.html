@@ -260,69 +260,147 @@
   </section>
 
 
-    <div id="amount-modal" class="modal">
-<h1>Pay What You Want</h1>
-<p>Thunderbird is independent, free, and open source software sustained by your donations. Help us keep the project alive!</p>
+    
+  
+
+
+
+<div id="amount-modal" class="modal rounded-lg w-full max-w-2xl shadow-lg bg-white text-black-lighter fixed z-30 mt-0 mx-auto pin-x hidden">
+  <div id="close-modal" class="absolute p-1 m-2 z-10 pin-t pin-r">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <line x1="18" y1="6" x2="6" y2="18" />
+      <line x1="6" y1="6" x2="18" y2="18" />
+    </svg>
+  </div>
+  <h1 class="text-blue-dark text-center font-4xl font-light">
+    Pay What You Want
+  </h1>
   <form action="">
-  
-    
-  
-  
-    <p>Select an amount:</p>
-    <select name="currency-switcher-currency" id="id_currency-switcher-currency">
-    
-      <option value="brl" >BRL   R$</option>
-    
-      <option value="cad" >CAD   $</option>
-    
-      <option value="czk" >CZK   Kč</option>
-    
-      <option value="dkk" >DKK   kr</option>
-    
-      <option value="eur" >EUR   €</option>
-    
-      <option value="gbp" >GBP   £</option>
-    
-      <option value="huf" >HUF   Ft</option>
-    
-      <option value="inr" selected>INR   ₹</option>
-    
-      <option value="jpy" >JPY   ¥</option>
-    
-      <option value="mxn" >MXN   $</option>
-    
-      <option value="nok" >NOK   kr</option>
-    
-      <option value="pln" >PLN   zł</option>
-    
-      <option value="rub" >RUB   ₽</option>
-    
-      <option value="sek" >SEK   kr</option>
-    
-      <option value="twd" >TWD   NT$</option>
-    
-      <option value="usd" >USD   $</option>
-    
-    </select>
-    <input type="radio" id="amt1" name="amount" value="1000">
-    <label for="amt1">₹1000</label><br>
-    <input type="radio" id="amt2" name="amount" value="500" checked>
-    <label for="amt2">₹500</label><br>
-    <input type="radio" id="amt3" name="amount" value="250">
-    <label for="amt3">₹250</label><br>
-    <input type="radio" id="amt4" name="amount" value="150">
-    <label for="amt4">₹150</label><br><br>
-    <input type="radio" name="amount" value="">Other<input type="text" name="amount" />
-    <button id="amount-submit">Donate & Download</button>
-    <button id="amount-cancel">No Thanks; Close & Download</button>
+    <section class="font-lg pt-0 pl-6 pb-4 pr-6 leading-normal text-center">
+      <p>Thunderbird is independent, free, and Open Source software sustained by your donations. Help us keep the project alive!</p>
+    </section>
+    <section class="bg-grey-light pt-4 pl-6 pb-4 pr-6">
+      <div class="flex justify-between items-center">
+        <label class="uppercase font-sm">Select an amount</label>
+        <label>
+          Currency
+          <select id="id_currency-switcher" class="rounded inline-block w-24 bg-white p-1 border border-solid border-grey" name="currency-switcher">
+            
+            <option value="brl" >BRL   R$</option>
+            
+            <option value="cad" >CAD   $</option>
+            
+            <option value="czk" >CZK   Kč</option>
+            
+            <option value="dkk" >DKK   kr</option>
+            
+            <option value="eur" >EUR   €</option>
+            
+            <option value="gbp" >GBP   £</option>
+            
+            <option value="huf" >HUF   Ft</option>
+            
+            <option value="inr" selected>INR   ₹</option>
+            
+            <option value="jpy" >JPY   ¥</option>
+            
+            <option value="mxn" >MXN   $</option>
+            
+            <option value="nok" >NOK   kr</option>
+            
+            <option value="pln" >PLN   zł</option>
+            
+            <option value="rub" >RUB   ₽</option>
+            
+            <option value="sek" >SEK   kr</option>
+            
+            <option value="twd" >TWD   NT$</option>
+            
+            <option value="usd" >USD   $</option>
+            
+          </select>
+        </label>
+      </div>
+      <div id="amount-selection" class="amount-selection flex flex-wrap mt-3">
+        <label class="flex items-center shadow-md mb-2 mr-4">
+          <input class="mr-4" type="radio" name="amount" value="1000">
+          ₹1000
+        </label>
+        <label class="flex items-center shadow-md mb-2 mr-4 active">
+          <input class="mr-4" type="radio" name="amount" value="500" checked>
+          ₹500
+        </label>
+        <label class="flex items-center shadow-md mb-2 mr-4">
+          <input class="mr-4" type="radio" name="amount" value="250">
+          ₹250
+        </label>
+        <label class="flex items-center shadow-md mb-2 mr-4">
+          <input class="mr-4" type="radio" name="amount" value="150">
+          ₹150
+        </label>
+        <label class="flex items-center shadow-md mb-2 flex-grow">
+          <input id="amount-other-selection" class="mr-3" type="radio" name="amount" value="0">
+          <input id="amount-other" type="number" name="other" placeholder="Other amount" min="1" step="1" />
+        </label>
+      </div>
+    </section>
+    <section class="flex justify-center mt-6 mb-6">
+      <button class="btn-body mr-2" id="amount-submit">
+        Donate & Download
+        <span>
+          <svg viewBox="0 0 7 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="UI" stroke="none" stroke-width="1" fill="currentColor" fill-rule="evenodd">
+              <path d="M6.91574413,5.89284986 C6.91574413,5.97767139 6.87333336,6.07309561 6.80971722,6.13671176 L1.86886311,11.0775659 C1.80524696,11.141182 1.70982274,11.1835928 1.62500121,11.1835928 C1.54017968,11.1835928 1.44475546,11.141182 1.38113932,11.0775659 L0.851004755,10.5474313 C0.787388608,10.4838152 0.744977843,10.3989936 0.744977843,10.3035694 C0.744977843,10.2187479 0.787388608,10.1233237 0.851004755,10.0597075 L5.0178624,5.89284986 L0.851004755,1.72599222 C0.787388608,1.66237607 0.744977843,1.56695185 0.744977843,1.48213032 C0.744977843,1.39730879 0.787388608,1.30188457 0.851004755,1.23826842 L1.38113932,0.70813386 C1.44475546,0.644517713 1.54017968,0.602106948 1.62500121,0.602106948 C1.70982274,0.602106948 1.80524696,0.644517713 1.86886311,0.70813386 L6.80971722,5.64898796 C6.87333336,5.71260411 6.91574413,5.80802833 6.91574413,5.89284986 Z"></path>
+            </g>
+          </svg>
+        </span>
+      </button>
+      <button class="btn-body btn-secondary" id="amount-cancel">
+        No Thanks, Download Now!
+        <span>
+          <svg viewBox="0 0 7 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="UI" stroke="none" stroke-width="1" fill="currentColor" fill-rule="evenodd">
+              <path d="M6.91574413,5.89284986 C6.91574413,5.97767139 6.87333336,6.07309561 6.80971722,6.13671176 L1.86886311,11.0775659 C1.80524696,11.141182 1.70982274,11.1835928 1.62500121,11.1835928 C1.54017968,11.1835928 1.44475546,11.141182 1.38113932,11.0775659 L0.851004755,10.5474313 C0.787388608,10.4838152 0.744977843,10.3989936 0.744977843,10.3035694 C0.744977843,10.2187479 0.787388608,10.1233237 0.851004755,10.0597075 L5.0178624,5.89284986 L0.851004755,1.72599222 C0.787388608,1.66237607 0.744977843,1.56695185 0.744977843,1.48213032 C0.744977843,1.39730879 0.787388608,1.30188457 0.851004755,1.23826842 L1.38113932,0.70813386 C1.44475546,0.644517713 1.54017968,0.602106948 1.62500121,0.602106948 C1.70982274,0.602106948 1.80524696,0.644517713 1.86886311,0.70813386 L6.80971722,5.64898796 C6.87333336,5.71260411 6.91574413,5.80802833 6.91574413,5.89284986 Z"></path>
+            </g>
+          </svg>
+        </span>
+      </button>
+    </section>
   </form>
+  <footer class="w-4/5 mx-auto border-0 border-t border-solid border-grey-light p-6">
+    <ul class="flex justify-center uppercase list-none font-xs p-0 m-0">
+      <li class="mr-4">
+        <a class="text-black-lightest no-underline" href="">
+          Secure
+        </a>
+      </li>
+      <li class="mr-4">
+        <a class="text-black-lightest no-underline" href="">
+          Privacy Policy
+        </a>
+      </li>
+      <li class="mr-4">
+        <a class="text-black-lightest no-underline" href="">
+          Other ways to donate
+        </a>
+      </li>
+      <li>
+        <a class="text-black-lightest no-underline" href="">
+          FAQ
+        </a>
+      </li>
+    </ul>
+  </footer>
 </div>
+
 <div id="checkout-modal" class="modal">
   <div id="checkout-message"></div>
   <div id="dropin-container"></div>
   <button id="submit-button">Submit payment</button>
 </div>
-<div id="modal-overlay" tabindex="-1"></div>
+
+<div id="modal-overlay" class="fixed pin-t pin-l m-0 p-0 w-full h-full z-20 bg-black opacity-50 hidden" tabindex="-1"></div>
 
     
 
@@ -466,27 +544,27 @@
     <h4>Thunderbird डाउनलोड करें — English (US)</h4>
     <ul class="list-none p-0 flex flex-wrap max-w-lg justify-center">
       <li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-91.7.0-SSL&os=win64&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-91.8.1-SSL&os=win64&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Windows 64-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-91.7.0-msi-SSL&os=win64&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-91.8.1-msi-SSL&os=win64&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Windows MSI 64-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-91.7.0-SSL&os=osx&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-91.8.1-SSL&os=osx&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             macOS
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-91.7.0-SSL&os=linux64&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-91.8.1-SSL&os=linux64&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Linux 64-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-91.7.0-SSL&os=win&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-91.8.1-SSL&os=win&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Windows 32-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-91.7.0-SSL&os=linux&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-91.8.1-SSL&os=linux&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Linux 32-bit
           </a>
         </li>
@@ -500,27 +578,27 @@
     <h4>Thunderbird डाउनलोड करें — English (US)</h4>
     <ul class="list-none p-0 flex flex-wrap max-w-lg justify-center">
       <li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-91.7.0-SSL&os=win64&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-91.8.1-SSL&os=win64&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Windows 64-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-91.7.0-msi-SSL&os=win64&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-91.8.1-msi-SSL&os=win64&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Windows MSI 64-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-91.7.0-SSL&os=osx&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-91.8.1-SSL&os=osx&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             macOS
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-91.7.0-SSL&os=linux64&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-91.8.1-SSL&os=linux64&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Linux 64-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-91.7.0-SSL&os=win&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-91.8.1-SSL&os=win&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Windows 32-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-91.7.0-SSL&os=linux&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-91.8.1-SSL&os=linux&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Linux 32-bit
           </a>
         </li>
@@ -529,7 +607,7 @@
 
   </div>
   <p class="unsupported-download p-links">
-    Your system doesn't meet the <a href="/en-US/thunderbird/91.7.0/system-requirements/">requirements</a> to run Thunderbird.
+    Your system doesn't meet the <a href="/en-US/thunderbird/91.8.1/system-requirements/">requirements</a> to run Thunderbird.
   </p>
   <p class="linux-arm-download mb-8 p-links">
     Please follow <a href="https://support.mozilla.org/kb/installing-thunderbird-linux">these instructions</a> to install Thunderbird.
@@ -538,7 +616,7 @@
     
       <li class="os_win64 ml-3 mr-3">
         <a class="download-link btn-download"
-          href="https://download.mozilla.org/?product=thunderbird-91.7.0-SSL&os=win64&lang=en-US"
+          href="https://download.mozilla.org/?product=thunderbird-91.8.1-SSL&os=win64&lang=en-US"
           data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
           >
           
@@ -549,7 +627,7 @@
     
       <li class="os_msi ml-3 mr-3">
         <a class="download-link btn-download"
-          href="https://download.mozilla.org/?product=thunderbird-91.7.0-msi-SSL&os=win64&lang=en-US"
+          href="https://download.mozilla.org/?product=thunderbird-91.8.1-msi-SSL&os=win64&lang=en-US"
           data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
           >
           
@@ -560,7 +638,7 @@
     
       <li class="os_osx ml-3 mr-3">
         <a class="download-link btn-download"
-          href="https://download.mozilla.org/?product=thunderbird-91.7.0-SSL&os=osx&lang=en-US"
+          href="https://download.mozilla.org/?product=thunderbird-91.8.1-SSL&os=osx&lang=en-US"
           data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
           >
           
@@ -571,7 +649,7 @@
     
       <li class="os_linux64 ml-3 mr-3">
         <a class="download-link btn-download"
-          href="https://download.mozilla.org/?product=thunderbird-91.7.0-SSL&os=linux64&lang=en-US"
+          href="https://download.mozilla.org/?product=thunderbird-91.8.1-SSL&os=linux64&lang=en-US"
           data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
           >
           
@@ -582,7 +660,7 @@
     
       <li class="os_win ml-3 mr-3">
         <a class="download-link btn-download"
-          href="https://download.mozilla.org/?product=thunderbird-91.7.0-SSL&os=win&lang=en-US"
+          href="https://download.mozilla.org/?product=thunderbird-91.8.1-SSL&os=win&lang=en-US"
           data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
           >
           
@@ -593,7 +671,7 @@
     
       <li class="os_linux ml-3 mr-3">
         <a class="download-link btn-download"
-          href="https://download.mozilla.org/?product=thunderbird-91.7.0-SSL&os=linux&lang=en-US"
+          href="https://download.mozilla.org/?product=thunderbird-91.8.1-SSL&os=linux&lang=en-US"
           data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
           >
           
@@ -606,7 +684,7 @@
   <p class="download-other download-other-desktop os_android os_ios os_linux os_linux64 os_osx os_win os_win64 os_winsha1 font-sm mt-0">
     
       <a href="/en-US/thunderbird/all/" class="small-link ">प्रणालियाँ और भाषाएँ</a> &bull;
-      <a href="/en-US/thunderbird/91.7.0/releasenotes/" class="small-link ">क्या नया है</a> &bull;
+      <a href="/en-US/thunderbird/91.8.1/releasenotes/" class="small-link ">क्या नया है</a> &bull;
     
     <a href="https://www.mozilla.org/privacy/thunderbird/" class="small-link ">गोपनीयता</a>
   </p>
@@ -641,27 +719,27 @@
     <h4>Thunderbird डाउनलोड करें — English (US)</h4>
     <ul class="list-none p-0 flex flex-wrap max-w-lg self-start">
       <li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-99.0b2-SSL&os=win64&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-100.0b4-SSL&os=win64&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Windows 64-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-99.0b2-msi-SSL&os=win64&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-100.0b4-msi-SSL&os=win64&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Windows MSI 64-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-99.0b2-SSL&os=osx&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-100.0b4-SSL&os=osx&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             macOS
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-99.0b2-SSL&os=linux64&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-100.0b4-SSL&os=linux64&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Linux 64-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-99.0b2-SSL&os=win&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-100.0b4-SSL&os=win&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Windows 32-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-99.0b2-SSL&os=linux&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-100.0b4-SSL&os=linux&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Linux 32-bit
           </a>
         </li>
@@ -675,27 +753,27 @@
     <h4>Thunderbird डाउनलोड करें — English (US)</h4>
     <ul class="list-none p-0 flex flex-wrap max-w-lg self-start">
       <li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-99.0b2-SSL&os=win64&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-100.0b4-SSL&os=win64&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Windows 64-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-99.0b2-msi-SSL&os=win64&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-100.0b4-msi-SSL&os=win64&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Windows MSI 64-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-99.0b2-SSL&os=osx&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-100.0b4-SSL&os=osx&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             macOS
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-99.0b2-SSL&os=linux64&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-100.0b4-SSL&os=linux64&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Linux 64-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-99.0b2-SSL&os=win&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-100.0b4-SSL&os=win&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Windows 32-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-99.0b2-SSL&os=linux&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-100.0b4-SSL&os=linux&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Linux 32-bit
           </a>
         </li>
@@ -704,7 +782,7 @@
 
   </div>
   <p class="unsupported-download p-links">
-    Your system doesn't meet the <a href="/en-US/thunderbird/99.0beta/system-requirements/">requirements</a> to run Thunderbird.
+    Your system doesn't meet the <a href="/en-US/thunderbird/100.0beta/system-requirements/">requirements</a> to run Thunderbird.
   </p>
   <p class="linux-arm-download mb-8 p-links">
     Please follow <a href="https://support.mozilla.org/kb/installing-thunderbird-linux">these instructions</a> to install Thunderbird.
@@ -713,7 +791,7 @@
     
       <li class="os_win64 ml-3 mr-3">
         <a class="download-link btn-beta"
-          href="https://download.mozilla.org/?product=thunderbird-99.0b2-SSL&os=win64&lang=en-US"
+          href="https://download.mozilla.org/?product=thunderbird-100.0b4-SSL&os=win64&lang=en-US"
           data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
           >
           
@@ -724,7 +802,7 @@
     
       <li class="os_msi ml-3 mr-3">
         <a class="download-link btn-beta"
-          href="https://download.mozilla.org/?product=thunderbird-99.0b2-msi-SSL&os=win64&lang=en-US"
+          href="https://download.mozilla.org/?product=thunderbird-100.0b4-msi-SSL&os=win64&lang=en-US"
           data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
           >
           
@@ -735,7 +813,7 @@
     
       <li class="os_osx ml-3 mr-3">
         <a class="download-link btn-beta"
-          href="https://download.mozilla.org/?product=thunderbird-99.0b2-SSL&os=osx&lang=en-US"
+          href="https://download.mozilla.org/?product=thunderbird-100.0b4-SSL&os=osx&lang=en-US"
           data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
           >
           
@@ -746,7 +824,7 @@
     
       <li class="os_linux64 ml-3 mr-3">
         <a class="download-link btn-beta"
-          href="https://download.mozilla.org/?product=thunderbird-99.0b2-SSL&os=linux64&lang=en-US"
+          href="https://download.mozilla.org/?product=thunderbird-100.0b4-SSL&os=linux64&lang=en-US"
           data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
           >
           
@@ -757,7 +835,7 @@
     
       <li class="os_win ml-3 mr-3">
         <a class="download-link btn-beta"
-          href="https://download.mozilla.org/?product=thunderbird-99.0b2-SSL&os=win&lang=en-US"
+          href="https://download.mozilla.org/?product=thunderbird-100.0b4-SSL&os=win&lang=en-US"
           data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
           >
           
@@ -768,7 +846,7 @@
     
       <li class="os_linux ml-3 mr-3">
         <a class="download-link btn-beta"
-          href="https://download.mozilla.org/?product=thunderbird-99.0b2-SSL&os=linux&lang=en-US"
+          href="https://download.mozilla.org/?product=thunderbird-100.0b4-SSL&os=linux&lang=en-US"
           data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
           >
           
@@ -781,7 +859,7 @@
   <p class="download-other download-other-desktop os_android os_ios os_linux os_linux64 os_osx os_win os_win64 os_winsha1 font-sm mt-0">
     
       <a href="/en-US/thunderbird/beta/all/" class="small-link  text-blue ">प्रणालियाँ और भाषाएँ</a> &bull;
-      <a href="/en-US/thunderbird/99.0beta/releasenotes/" class="small-link  text-blue ">क्या नया है</a> &bull;
+      <a href="/en-US/thunderbird/100.0beta/releasenotes/" class="small-link  text-blue ">क्या नया है</a> &bull;
     
     <a href="https://www.mozilla.org/privacy/thunderbird/" class="small-link  text-blue ">गोपनीयता</a>
   </p>
@@ -822,27 +900,27 @@
     <h4>Thunderbird डाउनलोड करें — English (US)</h4>
     <ul class="list-none p-0 flex flex-wrap max-w-lg self-start">
       <li class="ml-3 mr-3">
-          <a href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-100.0a1.en-US.win64.installer.exe" class="download-link btn-daily" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-101.0a1.en-US.win64.installer.exe" class="download-link btn-daily" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Windows 64-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-100.0a1.en-US.win64.installer.exe" class="download-link btn-daily" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-101.0a1.en-US.win64.installer.exe" class="download-link btn-daily" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Windows MSI 64-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-100.0a1.en-US.mac.dmg" class="download-link btn-daily" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-101.0a1.en-US.mac.dmg" class="download-link btn-daily" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             macOS
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-100.0a1.en-US.linux-x86_64.tar.bz2" class="download-link btn-daily" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-101.0a1.en-US.linux-x86_64.tar.bz2" class="download-link btn-daily" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Linux 64-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-100.0a1.en-US.win32.installer.exe" class="download-link btn-daily" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-101.0a1.en-US.win32.installer.exe" class="download-link btn-daily" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Windows 32-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-100.0a1.en-US.linux-i686.tar.bz2" class="download-link btn-daily" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-101.0a1.en-US.linux-i686.tar.bz2" class="download-link btn-daily" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Linux 32-bit
           </a>
         </li>
@@ -856,27 +934,27 @@
     <h4>Thunderbird डाउनलोड करें — English (US)</h4>
     <ul class="list-none p-0 flex flex-wrap max-w-lg self-start">
       <li class="ml-3 mr-3">
-          <a href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-100.0a1.en-US.win64.installer.exe" class="download-link btn-daily" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-101.0a1.en-US.win64.installer.exe" class="download-link btn-daily" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Windows 64-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-100.0a1.en-US.win64.installer.exe" class="download-link btn-daily" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-101.0a1.en-US.win64.installer.exe" class="download-link btn-daily" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Windows MSI 64-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-100.0a1.en-US.mac.dmg" class="download-link btn-daily" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-101.0a1.en-US.mac.dmg" class="download-link btn-daily" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             macOS
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-100.0a1.en-US.linux-x86_64.tar.bz2" class="download-link btn-daily" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-101.0a1.en-US.linux-x86_64.tar.bz2" class="download-link btn-daily" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Linux 64-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-100.0a1.en-US.win32.installer.exe" class="download-link btn-daily" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-101.0a1.en-US.win32.installer.exe" class="download-link btn-daily" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Windows 32-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-100.0a1.en-US.linux-i686.tar.bz2" class="download-link btn-daily" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-101.0a1.en-US.linux-i686.tar.bz2" class="download-link btn-daily" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Linux 32-bit
           </a>
         </li>
@@ -885,7 +963,7 @@
 
   </div>
   <p class="unsupported-download p-links">
-    Your system doesn't meet the <a href="/en-US/thunderbird/100.0a1/system-requirements/">requirements</a> to run Thunderbird.
+    Your system doesn't meet the <a href="/en-US/thunderbird/101.0a1/system-requirements/">requirements</a> to run Thunderbird.
   </p>
   <p class="linux-arm-download mb-8 p-links">
     Please follow <a href="https://support.mozilla.org/kb/installing-thunderbird-linux">these instructions</a> to install Thunderbird.
@@ -894,7 +972,7 @@
     
       <li class="os_win64 ml-3 mr-3">
         <a class="download-link btn-daily"
-          href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-100.0a1.en-US.win64.installer.exe"
+          href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-101.0a1.en-US.win64.installer.exe"
           data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
           >
           
@@ -905,7 +983,7 @@
     
       <li class="os_msi ml-3 mr-3">
         <a class="download-link btn-daily"
-          href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-100.0a1.en-US.win64.installer.exe"
+          href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-101.0a1.en-US.win64.installer.exe"
           data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
           >
           
@@ -916,7 +994,7 @@
     
       <li class="os_osx ml-3 mr-3">
         <a class="download-link btn-daily"
-          href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-100.0a1.en-US.mac.dmg"
+          href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-101.0a1.en-US.mac.dmg"
           data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
           >
           
@@ -927,7 +1005,7 @@
     
       <li class="os_linux64 ml-3 mr-3">
         <a class="download-link btn-daily"
-          href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-100.0a1.en-US.linux-x86_64.tar.bz2"
+          href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-101.0a1.en-US.linux-x86_64.tar.bz2"
           data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
           >
           
@@ -938,7 +1016,7 @@
     
       <li class="os_win ml-3 mr-3">
         <a class="download-link btn-daily"
-          href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-100.0a1.en-US.win32.installer.exe"
+          href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-101.0a1.en-US.win32.installer.exe"
           data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
           >
           
@@ -949,7 +1027,7 @@
     
       <li class="os_linux ml-3 mr-3">
         <a class="download-link btn-daily"
-          href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-100.0a1.en-US.linux-i686.tar.bz2"
+          href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-101.0a1.en-US.linux-i686.tar.bz2"
           data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
           >
           

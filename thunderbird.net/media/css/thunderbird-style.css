@@ -24,7 +24,8 @@ body,
 }
 .font-regular,
 .btn-body,
-.btn-link {
+.btn-link,
+.modal footer ul > li:not(:last-child)::after {
   font-size: 12px;
 }
 .font-md,
@@ -32,7 +33,8 @@ body,
 .btn-download,
 .btn-join,
 .btn-beta,
-.btn-daily {
+.btn-daily,
+.modal form .amount-selection label:last-child #amount-other::placeholder {
   font-size: 15px;
 }
 .font-lg,
@@ -40,7 +42,9 @@ body,
 .markup-page h3 {
   font-size: 17px;
 }
-.font-xl {
+.font-xl,
+.modal form .amount-selection label,
+.modal form .amount-selection label:last-child #amount-other {
   font-size: 19px;
 }
 .font-2xl,
@@ -88,7 +92,8 @@ body,
   font-weight: 600;
 }
 .font-bold,
-.blog-link {
+.blog-link,
+.modal form .amount-selection label {
   font-weight: 700;
 }
 .font-extrabold {
@@ -118,6 +123,7 @@ body {
 }
 .leading-none,
 .social-link,
+.modal footer ul > li:not(:last-child)::after,
 .header-section span {
   line-height: 1;
 }
@@ -362,7 +368,8 @@ body {
 .btn-block-white:hover,
 .btn-block-white:focus,
 .btn-link:hover,
-.btn-link:focus {
+.btn-link:focus,
+.modal form .amount-selection label {
   background-color: #fff;
 }
 .border-white {
@@ -421,6 +428,18 @@ body {
 .border-black-lightest {
   border-color: #45454B;
 }
+.text-grey,
+.modal footer ul > li:not(:last-child)::after {
+  color: #ccc;
+}
+.bg-grey {
+  background-color: #ccc;
+}
+.border-grey,
+.modal form .amount-selection label,
+.modal form .amount-selection label:last-child #amount-other {
+  border-color: #ccc;
+}
 .text-grey-light {
   color: #f0f0f0;
 }
@@ -436,30 +455,12 @@ body {
 .text-grey-lighter {
   color: #fdfdfd;
 }
-.bg-grey-lighter {
+.bg-grey-lighter,
+.modal form .amount-selection label:last-child {
   background-color: #fdfdfd;
 }
 .border-grey-lighter {
   border-color: #fdfdfd;
-}
-.text-blue-dark,
-h1 .anchor,
-h2 .anchor,
-h3 .anchor,
-h4 .anchor,
-h5 .anchor,
-h6 .anchor,
-.header-section,
-.subheader-section,
-.markup-page h2,
-.markup-page h3 {
-  color: #36385A;
-}
-.bg-blue-dark {
-  background-color: #36385A;
-}
-.border-blue-dark {
-  border-color: #36385A;
 }
 .text-orange {
   color: #ff9500;
@@ -505,8 +506,20 @@ section.tab.release a.small-link {
 #daily:checked ~ aside nav .tabs-nav .daily label {
   background-color: #0080FF;
 }
-.border-blue {
+.border-blue,
+.modal form .amount-selection label:hover,
+.modal form .amount-selection label.active {
   border-color: #0080FF;
+}
+.text-blue-25 {
+  color: rgba(0, 128, 255, 0.25);
+}
+.bg-blue-25,
+.modal form .amount-selection label.active {
+  background-color: rgba(0, 128, 255, 0.25);
+}
+.border-blue-25 {
+  border-color: rgba(0, 128, 255, 0.25);
 }
 .text-blue-dark,
 h1 .anchor,
@@ -615,7 +628,8 @@ body {
   border-radius: 0.125rem;
 }
 .rounded,
-.btn-block-white {
+.btn-block-white,
+.modal form .amount-selection label {
   border-radius: 0.25rem;
 }
 .rounded-lg {
@@ -630,6 +644,8 @@ body {
 .border-solid,
 .btn-download-inline,
 .btn-body,
+.modal form .amount-selection label,
+.modal form .amount-selection label:last-child #amount-other,
 .markup-page hr {
   border-style: solid;
 }
@@ -647,10 +663,12 @@ body {
 }
 .border,
 .btn-download-inline,
-.btn-body {
+.btn-body,
+.modal form .amount-selection label {
   border-width: 1px;
 }
 .border-0,
+.modal form .amount-selection label:last-child #amount-other,
 .markup-page hr {
   border-width: 0;
 }
@@ -673,7 +691,8 @@ body {
 .border-b-0 {
   border-bottom-width: 0;
 }
-.border-l {
+.border-l,
+.modal form .amount-selection label:last-child #amount-other {
   border-left-width: 1px;
 }
 .border-l-0 {
@@ -834,7 +853,8 @@ body {
 .shadow-outline {
   box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
 }
-.shadow-none {
+.shadow-none,
+.modal form .amount-selection label.active {
   box-shadow: none;
 }
 .opacity-0,
@@ -1079,7 +1099,8 @@ body {
 .overflow-auto {
   overflow: auto;
 }
-.overflow-hidden {
+.overflow-hidden,
+.modal form .amount-selection label:last-child {
   overflow: hidden;
 }
 .overflow-visible {
@@ -1133,6 +1154,15 @@ body {
 .pin-y {
   top: 0;
   bottom: 0;
+}
+.z-10 {
+  z-index: 10;
+}
+.z-20 {
+  z-index: 20;
+}
+.z-30 {
+  z-index: 30;
 }
 .w-auto {
   width: auto;
@@ -1251,6 +1281,7 @@ body {
   width: 91.666667%;
 }
 .w-full,
+.modal form .amount-selection label:last-child #amount-other,
 .markup-page hr {
   width: 100%;
 }
@@ -1271,6 +1302,9 @@ body {
 }
 .max-w-xl {
   max-width: 36rem;
+}
+.max-w-2xl {
+  max-width: 42rem;
 }
 .max-w-3xl {
   max-width: 48rem;
@@ -1295,10 +1329,15 @@ body {
 .header-section span {
   height: 1.5rem;
 }
+.h-10,
+.modal form .amount-selection label {
+  height: 2.5rem;
+}
 .h-auto {
   height: auto;
 }
-.h-full {
+.h-full,
+.modal form .amount-selection label:last-child #amount-other {
   height: 100%;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
@@ -1438,6 +1477,9 @@ body {
   }
   .md\:max-w-xl {
     max-width: 36rem;
+  }
+  .md\:max-w-2xl {
+    max-width: 42rem;
   }
   .md\:max-w-3xl {
     max-width: 48rem;
@@ -1585,6 +1627,9 @@ body {
   .lg\:max-w-xl {
     max-width: 36rem;
   }
+  .lg\:max-w-2xl {
+    max-width: 42rem;
+  }
   .lg\:max-w-3xl {
     max-width: 48rem;
   }
@@ -1730,6 +1775,9 @@ body {
   }
   .xl\:max-w-xl {
     max-width: 36rem;
+  }
+  .xl\:max-w-2xl {
+    max-width: 42rem;
   }
   .xl\:max-w-3xl {
     max-width: 48rem;
@@ -1886,10 +1934,12 @@ body {
 }
 .pt-1,
 .nav-footer .nav-link,
-.social-link {
+.social-link,
+.modal form .amount-selection label {
   padding-top: 0.25rem;
 }
-.pt-0 {
+.pt-0,
+.modal form .amount-selection label:last-child {
   padding-top: 0rem;
 }
 .pr-20 {
@@ -1954,7 +2004,8 @@ body {
 }
 .pr-3,
 .btn-donate,
-.btn-newsletter {
+.btn-newsletter,
+.modal form .amount-selection label {
   padding-right: 0.75rem;
 }
 .pr-2,
@@ -1965,7 +2016,8 @@ body {
 .pr-1 {
   padding-right: 0.25rem;
 }
-.pr-0 {
+.pr-0,
+.modal form .amount-selection label:last-child {
   padding-right: 0rem;
 }
 .pb-20 {
@@ -2036,10 +2088,12 @@ body {
 }
 .pb-1,
 .nav-footer .nav-link,
-.social-link {
+.social-link,
+.modal form .amount-selection label {
   padding-bottom: 0.25rem;
 }
-.pb-0 {
+.pb-0,
+.modal form .amount-selection label:last-child {
   padding-bottom: 0rem;
 }
 .pl-20 {
@@ -2102,11 +2156,13 @@ body {
 }
 .pl-3,
 .btn-donate,
-.btn-newsletter {
+.btn-newsletter,
+.modal form .amount-selection label {
   padding-left: 0.75rem;
 }
 .pl-2,
-.btn-inline {
+.btn-inline,
+.modal form .amount-selection label:last-child #amount-other {
   padding-left: 0.5rem;
 }
 .pl-1,
@@ -2706,7 +2762,8 @@ body {
   margin-left: 1rem;
 }
 .ml-3,
-.nav-footer .nav-link {
+.nav-footer .nav-link,
+.modal footer ul > li:not(:last-child)::after {
   margin-left: 0.75rem;
 }
 .ml-2,
@@ -5991,32 +6048,30 @@ button {
   display: block !important;
 }
 .modal {
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 5px;
-  border: thin #000 solid;
-  background-color: #fff;
-  z-index: 3;
-  /* places the modal dialog on top of everything else */
-  position: fixed;
-  top: 25%;
-  left: 25%;
-  display: none;
+  top: 50%;
+  transform: translateY(-50%);
 }
-#modal-overlay {
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  /* Between the main page and the modal dialog */
-  background-color: #000;
-  opacity: 0.5;
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: none;
-  margin: 0;
-  padding: 0;
+.modal #close-modal {
+  cursor: pointer;
+}
+.modal #close-modal svg {
+  stroke: #ccc;
+}
+.modal #close-modal:hover svg {
+  stroke: #000;
+}
+.modal form .amount-selection label {
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.modal form .amount-selection label:last-child {
+  flex-basis: 10rem;
+}
+.modal form .amount-selection label:last-child #amount-other {
+  box-sizing: border-box;
+}
+.modal footer ul > li:not(:last-child)::after {
+  content: '•';
 }
 .appearance-none,
 .btn-inline,
