@@ -24,6 +24,7 @@ body,
 }
 .font-regular,
 .btn-body,
+.btn-beta.btn-beta-pill,
 .btn-link {
   font-size: 12px;
 }
@@ -88,7 +89,8 @@ body,
   font-weight: 600;
 }
 .font-bold,
-.blog-link {
+.blog-link,
+.btn-beta.btn-beta-pill {
   font-weight: 700;
 }
 .font-extrabold {
@@ -103,7 +105,8 @@ body,
 .tracking-tight {
   letter-spacing: -0.025em;
 }
-.tracking-normal {
+.tracking-normal,
+.btn-beta.btn-beta-pill {
   letter-spacing: 0;
 }
 .tracking-wide,
@@ -128,6 +131,7 @@ body {
   line-height: 1.375;
 }
 .leading-normal,
+.btn-beta.btn-beta-pill,
 .header-section,
 .subheader-section,
 .markup-page h2,
@@ -624,6 +628,7 @@ body {
 .rounded-full,
 .social-link,
 .social-link span,
+.btn-beta.btn-beta-pill,
 .header-section span {
   border-radius: 9999px;
 }
@@ -1886,7 +1891,8 @@ body {
 }
 .pt-1,
 .nav-footer .nav-link,
-.social-link {
+.social-link,
+.btn-beta.btn-beta-pill {
   padding-top: 0.25rem;
 }
 .pt-0 {
@@ -1959,7 +1965,8 @@ body {
 }
 .pr-2,
 .social-link,
-.btn-inline {
+.btn-inline,
+.btn-beta.btn-beta-pill {
   padding-right: 0.5rem;
 }
 .pr-1 {
@@ -2036,7 +2043,8 @@ body {
 }
 .pb-1,
 .nav-footer .nav-link,
-.social-link {
+.social-link,
+.btn-beta.btn-beta-pill {
   padding-bottom: 0.25rem;
 }
 .pb-0 {
@@ -2106,7 +2114,8 @@ body {
   padding-left: 0.75rem;
 }
 .pl-2,
-.btn-inline {
+.btn-inline,
+.btn-beta.btn-beta-pill {
   padding-left: 0.5rem;
 }
 .pl-1,
@@ -2587,7 +2596,8 @@ body {
 .mb-1 {
   margin-bottom: 0.25rem;
 }
-.mb-0 {
+.mb-0,
+.btn-beta.btn-beta-pill {
   margin-bottom: 0rem;
 }
 .-mb-20 {
