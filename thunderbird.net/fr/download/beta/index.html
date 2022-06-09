@@ -264,7 +264,7 @@
         <a href="#howto" class="btn-link">Installation et utilisation de la version bêta</a>
       </li>
       <li class="ml-2 mr-2">
-        <a href="#uninstall" class="btn-link">Retour à la version classique</a>
+        <a href="#uninstall" class="btn-link">Retour à la version stable</a>
       </li>
       <li class="ml-2 mr-2">
         <a href="#resources" class="btn-link">Ressources et assistance</a>
@@ -459,7 +459,7 @@
   <section class="font-lg leading-normal pb-5 flex max-w-6xl mx-auto justify-center items-center pl-8 pr-8">
     <aside class="flex flex-col flex-grow mb-4">
       <p class="mb-2 mt-2">
-        Vous avez envie d’aider la communauté Thunderbird en recherchant et signalant les bugs ? La version bêta est faite pour vous ! Elle reçoit des correctifs et de <a href="https://support.mozilla.org/kb/new-thunderbird-102">nouvelles fonctionnalités</a> bien avant la version classique !
+        Vous avez envie d’aider la communauté Thunderbird en recherchant et signalant les bugs ? La version bêta est faite pour vous ! Elle reçoit des correctifs et de <a href="https://support.mozilla.org/kb/new-thunderbird-102">nouvelles fonctionnalités</a> bien avant la version stable !
       </p>
       <p class="mb-2 mt-2">
           C’est le bon moment pour vous lancer : la version bêta devrait être plus stable que d’habitude durant le mois de juin 2022. Le développement est suspendu pour nous permettre de finaliser <a href="https://blog.thunderbird.net/2022/05/7-great-new-features-coming-to-thunderbird-102/">les nouvelles fonctionnalités de la version 102.</a>
@@ -472,18 +472,18 @@
         <li><strong>L’installation de la version bêta <u>effacera</u> toute version déjà installée. Si vous souhaitez conserver les deux versions, suivez les instructions de la section <a href="#howto">Comment installer et utiliser la version bêta</a>.</strong></li>
         <li>Pensez à faire des <a href="https://support.mozilla.org/kb/profiles-where-thunderbird-stores-user-data#w_backing-up-a-profile">sauvegardes régulières</a> de votre profil utilisateur.</li>
         <li>La finalisation pouvant prendre plusieurs semaines, certaines fonctionnalités pourraient ne pas être totalement abouties. Consultez le <a href="https://thunderbird.topicbox.com/groups/beta">forum bêta</a> pour plus d’informations sur l’avancée des nouvelles fonctionnalités.</li>
-        <li>Flaws are to be expected. High-impact flaws, including data loss, are very rare, but may occur. Protect yourself with <a href="https://support.mozilla.org/kb/profiles-where-thunderbird-stores-user-data#w_backing-up-a-profile">backups</a>. Low-impact flaws may not be fixed quickly, because fixes are prioritized based on impact.</li>
-        <li>Expect seven updates per month, one major update per month plus several small updates. This frequency of updates allows us to make fast improvements.</li>
-        <li>Are you using <a href="https://support.mozilla.org/kb/difference-between-imap-and-pop3">POP accounts</a>? Unlike IMAP accounts, the only copy of your pop mail is in your local Thunderbird profile. If you want to add a POP account to beta, your options are:
+        <li>Attendez-vous à des imperfections. Les défauts majeurs, y compris la perte de données, sont très rares mais néanmoins possibles. Pour parer à toute éventualité, <a href="https://support.mozilla.org/kb/profiles-where-thunderbird-stores-user-data#w_backing-up-a-profile">sauvegardez vos données</a>. Le traitement se faisant par ordre de gravité décroissante, les défauts mineurs ne sont pas corrigés en priorité.</li>
+        <li>Sept mises à jour sont prévues chaque mois : une mise à jour majeure complétée de six autres plus légères. Ce rythme élevé nous permet de proposer des améliorations rapides.</li>
+        <li>Vous utilisez <a href="https://support.mozilla.org/kb/difference-between-imap-and-pop3">des comptes POP</a> ? À l’inverse des comptes IMAP, la seule et unique copie de vos messages est stockée localement dans votre profil Thunderbird. Deux méthodes vous permettent d’ajouter un compte POP à la version bêta de manière sûre :
           <ol type='a'>
-            <li>After set up, go to <b>≡ > Account Settings > Server Settings</b> and make sure the <b>"Leave messages on server"</b> option is <b>checked</b>, and the <b>"For at most [X] days"</b> option is <b>unchecked</b>.</li>
-            <li>Keep the default settings. Messages will be removed from the server 14 days after download, so you will need to either stay on beta, or learn how to move your POP data back to the release profile.</li>
+            <li>Une fois le compte ajouté, sélectionner <b>≡ > Paramètres des comptes > Paramètres serveur</b> et assurez-vous que l’option <b>« Laisser les messages sur le serveur »</b> soit <b>cochée</b> et l’option <b>« Pendant au maximum [X] jours »</b> <b>décochée</b>.</li>
+            <li>Conserver les réglages par défaut. Les messages seront supprimés du serveur au bout de 14 jours, ce qui implique que vous devez soit rester sur la version bêta, soit apprendre à rapatrier vos données POP vers votre profil sur la version stable.</li>
           </ol></li>
-        <li>If you have <a href="https://support.mozilla.org/kb/organize-your-messages-using-filters">mail filters</a> that, for example, move mail to local folders, then you must decide where to run filters - in your beta profile or your other profile.</li>
+        <li>Si vous utilisez des <a href="https://support.mozilla.org/kb/organize-your-messages-using-filters">filtres de messages</a>, pour déplacer des messages vers un dossier local par exemple, vous devez choisir d’appliquer ces filtres soit depuis la version bêta, soit depuis la version stable.</li>
       </ul>
       <h3 class="mb-4 mt-4">Modules</h3>
       <p class="mb-2 mt-2">
-        Add-on authors are not obligated to make their add-ons work in beta. Some or all of your add-ons may not work. Or if they do work today, they may not work tomorrow. Consult the <a href="https://support.mozilla.org/kb/thunderbird-add-ons-frequently-asked-questions#w_what-if-my-add-on-is-broken">Add-ons FAQ</a> if you have difficulty. 
+        Les auteurs et autrices de modules complémentaires ne sont pas tenu·e·s d’assurer leur bon fonctionnement dans la version bêta. Certains de ces modules complémentaires pourraient donc ne pas fonctionner. De même, leur fonctionnement aujourd’hui ne préjuge pas de leur fonctionnement demain. Consultez la <a href="https://support.mozilla.org/kb/thunderbird-add-ons-frequently-asked-questions#w_what-if-my-add-on-is-broken">FAQ des modules complémentaires</a> si vous rencontrez des difficultés.
       </p>
     </aside>
   </section>
@@ -497,19 +497,19 @@
   <section class="font-lg leading-normal pb-5 flex max-w-6xl mx-auto justify-center items-center pl-8 pr-8">
     <aside class="flex flex-col flex-grow mb-4">
       <p class="mb-2 mt-2">
-        You have two choices for installing beta: Option 1 allows you to run the beta alongside the Stable version of Thunderbird, and Option 2 upgrades your existing installation.
+        Deux possibilités s’offrent à vous pour installer la version bêta : l’option 1 vous permet d’installer la version bêta en parallèle de la version stable, l’option 2 met à jour l’installation existante vers la version bêta.
       </p>
       <ol type='1'>
-        <li><strong>Run Stable and Beta side-by-side (recommended).</strong></li>
+        <li><strong>Installer la version bêta en parallèle de la version stable (notre recommandation).</strong></li>
         <p class="mb-2 mt-2">
-          Thunderbird 102 and newer on Windows will install beta into its own program directory. For older versions on Windows consult the <a href="https://support.mozilla.org/en-US/kb/thunderbird-beta">beta support article</a>. For other operating systems use an install method appropriate for your OS to target a uniquely named directory.
+          Sous Windows, l’installation de Thunderbird 102 et versions suivantes s’effectuera dans son propre dossier. Pour installer des versions plus anciennes sous Windows, consultez <a href="https://support.mozilla.org/en-US/kb/thunderbird-beta">l’article d’aide bêta</a>. Pour les autres systèmes d’exploitation, choisissez une méthode d’installation adaptée à votre OS qui vous permette de sélectionner un dossier avec un nom unique.
         </p>
         <p class="mb-2 mt-2">
-          This choice has the advantage of forcing a <a href="https://support.mozilla.org/en-US/kb/dedicated-profile-thunderbird-installation">dedicated profile</a> for each Thunderbird, which allows you to have both the release version and the beta version operate independently. So you can:
+          Cette méthode présente l’avantage de forcer la création d’un <a href="https://support.mozilla.org/en-US/kb/dedicated-profile-thunderbird-installation">profil dédié</a> pour chaque version de Thunderbird, vous permettant d’utiliser la version stable et la version bêta indépendamment. Ainsi, vous pouvez :
         </p>
         <ul>
-          <li>Start the <b>release</b> version of Thunderbird (with beta not running) and it will use the <b>"default" (or default-release)</b> profile.</li>
-          <li>Start the <b>beta</b> version of Thunderbird (with release version not running) and it will use the <b>default-beta</b> profile. On first use Thunderbird will create the <b>default-beta</b> profile, and it will prompt you to define your accounts. If you need to bring some data from your release profile into the beta profile, consult the <a href="https://support.mozilla.org/kb/thunderbird-beta">beta support article.</a></li>
+          <li>Lancer la version <b>stable</b> de Thunderbird (la bêta n’étant pas en cours d’exécution), elle utilisera le profil <b>« default » (ou default-release)</b>.</li>
+          <li>Lancer la version <b>bêta</b> de Thunderbird (la version stable n’étant pas en cours d’exécution), elle utilisera le profil <b>default-beta</b>. Lors de la première utilisation, Thunderbird crée le profil <b>default-beta</b> et vous propose d’ajouter vos comptes de messagerie. Si vous souhaitez importer certaines données de profil depuis la version stable, consultez <a href="https://support.mozilla.org/kb/thunderbird-beta">l’article d’aide sur la version bêta.</a></li>
         </ul>
         <li class="mb-2 mt-2"><strong>Mettez à jour votre installation Thinderbird actuelle vers une version bêta.</strong></li>
         <p class="mb-2 mt-2">
@@ -524,7 +524,7 @@
 
   <section id="uninstall" class="mt-4 mb-4 flex max-w-6xl mx-auto justify-center items-center pl-8 pr-8">
     <span class="header-line flex-1"></span>
-    <h2 class="header-section pl-4 pr-4 mb-0 text-center">Retour à la version classique</h2>
+    <h2 class="header-section pl-4 pr-4 mb-0 text-center">Retour à la version stable</h2>
     <span class="header-line flex-1"></span>
   </section>
 
