@@ -472,18 +472,18 @@
         <li><strong>除非您依照<a href="#howto">如何安裝執行 Beta 測試版</a>當中的步驟操作，否則安裝 Beta 版將會<u>覆蓋</u>掉目前安裝的版本。</strong></li>
         <li>請<a href="https://support.mozilla.org/kb/profiles-where-thunderbird-stores-user-data#w_backing-up-a-profile">定時備份</a>您的 Thunderbird 設定檔。</li>
         <li>有些新功能可能已經大致完成，需要花幾週時間琢磨；也有些新功能可能還在開發中，還不夠完善。可以到 <a href="https://thunderbird.topicbox.com/groups/beta">Beta 測試版使用者討論區</a>了解功能開發進度的更多資訊。</li>
-        <li>Flaws are to be expected. High-impact flaws, including data loss, are very rare, but may occur. Protect yourself with <a href="https://support.mozilla.org/kb/profiles-where-thunderbird-stores-user-data#w_backing-up-a-profile">backups</a>. Low-impact flaws may not be fixed quickly, because fixes are prioritized based on impact.</li>
-        <li>Expect seven updates per month, one major update per month plus several small updates. This frequency of updates allows us to make fast improvements.</li>
-        <li>Are you using <a href="https://support.mozilla.org/kb/difference-between-imap-and-pop3">POP accounts</a>? Unlike IMAP accounts, the only copy of your pop mail is in your local Thunderbird profile. If you want to add a POP account to beta, your options are:
+        <li>可以預期會有些小缺點。不太容易會出現遺失資料之類的大問題，但還是有可能發生。請務必進行<a href="https://support.mozilla.org/kb/profiles-where-thunderbird-stores-user-data#w_backing-up-a-profile">備份</a>來保護好資料。由於修復問題的優先度是依照問題本身的影響程度而定，小缺點不一定很快就會被修正。</li>
+        <li>可預期每月會有七次更新，當中包含一次大更新與多次小更新。如此頻繁的更新頻率，讓我們可以加速推出新功能與修正功能。</li>
+        <li>您使用的是 <a href="https://support.mozilla.org/kb/difference-between-imap-and-pop3">POP 帳號</a>嗎？與 IMAP 不同的是，POP 帳號的郵件下載到您的 Thunderbird 設定檔之後，就會從遠端刪除，因此只有一份儲存在本地端。若您想要在 Beta 版中加入 POP 帳號，可以：
           <ol type='a'>
-            <li>After set up, go to <b>≡ > Account Settings > Server Settings</b> and make sure the <b>"Leave messages on server"</b> option is <b>checked</b>, and the <b>"For at most [X] days"</b> option is <b>unchecked</b>.</li>
-            <li>Keep the default settings. Messages will be removed from the server 14 days after download, so you will need to either stay on beta, or learn how to move your POP data back to the release profile.</li>
+            <li>帳號設定完成後，到<b>≡ > 帳號設定 > 伺服器設定</b>確認<b>勾選了</b><b>「不刪除伺服器上的郵件」</b>選項，並且<b>不勾選</b><b>「最多 [X] 天」</b>。</li>
+            <li>保留預設設定，郵件將在下載到本機後 14 天自伺服器刪除。這樣您必須停留在 Beta 版持續使用，或者了解如何再將 POP 郵件移動到正式版的設定檔。</li>
           </ol></li>
-        <li>If you have <a href="https://support.mozilla.org/kb/organize-your-messages-using-filters">mail filters</a> that, for example, move mail to local folders, then you must decide where to run filters - in your beta profile or your other profile.</li>
+        <li>若您平時有設定<a href="https://support.mozilla.org/kb/organize-your-messages-using-filters">郵件過濾器</a>，例如說將郵件移動到本機資料夾，那麼必須決定要在哪裡（Beta 版設定檔或正式版設定檔）進行過濾。</li>
       </ul>
       <h3 class="mb-4 mt-4">附加元件</h3>
       <p class="mb-2 mt-2">
-        Add-on authors are not obligated to make their add-ons work in beta. Some or all of your add-ons may not work. Or if they do work today, they may not work tomorrow. Consult the <a href="https://support.mozilla.org/kb/thunderbird-add-ons-frequently-asked-questions#w_what-if-my-add-on-is-broken">Add-ons FAQ</a> if you have difficulty. 
+        附加元件作者沒有要讓附加元件在 Beta 也能正常使用的義務。全部或部分附加元件可能會無法正常運作，也有可能是現在能用而未來突然無法使用。若您遇到問題，請參考<a href="https://support.mozilla.org/kb/thunderbird-add-ons-frequently-asked-questions#w_what-if-my-add-on-is-broken">附加元件常見問題集</a>。
       </p>
     </aside>
   </section>
@@ -497,26 +497,26 @@
   <section class="font-lg leading-normal pb-5 flex max-w-6xl mx-auto justify-center items-center pl-8 pr-8">
     <aside class="flex flex-col flex-grow mb-4">
       <p class="mb-2 mt-2">
-        You have two choices for installing beta: Option 1 allows you to run the beta alongside the Stable version of Thunderbird, and Option 2 upgrades your existing installation.
+        您有兩種方式能夠安裝 Beta 測試版：選項一可以讓 Thunderbird 的 Beta 版與穩定版同時運作，選項二則是直接升級現有安裝的版本。
       </p>
       <ol type='1'>
         <li><strong>分開使用穩定版與 Beta 測試版（建議這麼做）。</strong></li>
         <p class="mb-2 mt-2">
-          Thunderbird 102 and newer on Windows will install beta into its own program directory. For older versions on Windows consult the <a href="https://support.mozilla.org/en-US/kb/thunderbird-beta">beta support article</a>. For other operating systems use an install method appropriate for your OS to target a uniquely named directory.
+          Windows 上的 Thunderbird 102 版起，將直接把 Beta 測試版安裝到獨立的目錄當中。對於 Windows 平台上的舊版，請參考<a href="https://support.mozilla.org/en-US/kb/thunderbird-beta">Beta 版技術支援文件</a>。若您使用的是其他作業系統，請使用您系統適用的安裝方式，來安裝到獨立的目錄中。
         </p>
         <p class="mb-2 mt-2">
-          This choice has the advantage of forcing a <a href="https://support.mozilla.org/en-US/kb/dedicated-profile-thunderbird-installation">dedicated profile</a> for each Thunderbird, which allows you to have both the release version and the beta version operate independently. So you can:
+          此選項的優點是可以讓每個不同版本的 Thunderbird 都有<a href="https://support.mozilla.org/en-US/kb/dedicated-profile-thunderbird-installation">獨立的設定檔</a>，讓您可以同時執行正式版與 Beta 測試版。這樣就可以：
         </p>
         <ul>
-          <li>Start the <b>release</b> version of Thunderbird (with beta not running) and it will use the <b>"default" (or default-release)</b> profile.</li>
-          <li>Start the <b>beta</b> version of Thunderbird (with release version not running) and it will use the <b>default-beta</b> profile. On first use Thunderbird will create the <b>default-beta</b> profile, and it will prompt you to define your accounts. If you need to bring some data from your release profile into the beta profile, consult the <a href="https://support.mozilla.org/kb/thunderbird-beta">beta support article.</a></li>
+          <li>執行 Thunderbird <b>正式版</b>（無法與測試版同時執行），並且使用 <b>「default」或「default-release」</b>設定檔。</li>
+          <li>執行 Thunderbird <b>Beta 測試版</b>（無法與正式版同時執行）。第一次啟動時，Thunderbird 將建立<b>「default-beta」</b>設定檔，並且提示您重新設定帳號。若您打算要從正式版設定檔複製一些資料到 Beta 設定檔，請參考 <a href="https://support.mozilla.org/kb/thunderbird-beta">Beta 測試版技術支援文件。</a></li>
         </ul>
         <li class="mb-2 mt-2"><strong>直接將您目前安裝的 Thunderbird 升級到 Beta 測試版。</strong></li>
         <p class="mb-2 mt-2">
-          Simply install beta over top of your current program directory, using the default installer choices. Beta will then <u>use your current (production) default profile</u>. Because it uses your default profile, this choice makes it more difficult to switch back to using a release version should you wish to do so in the future. In other words, you should not switch back and forth between beta and normal release using the same profile.
+          直接使用安裝程式的預設選項，將 Beta 測試版安裝到目前的程式目錄，覆蓋目前使用的版本。Beta 版將<u>繼續使用您目前的正式版設定檔</u>。由於其使用預設設定檔，未來會比較難切換回正式版。換句話說，您不該隨意使用正式版與 Beta 測試版開啟相同的設定檔。
         </p>
         <p class="mb-2 mt-2">
-          For very detailed information about both methods, please check the <a href="https://support.mozilla.org/kb/thunderbird-beta">beta support article.</a>
+          若需這兩種方式的詳細資訊，請參考 <a href="https://support.mozilla.org/kb/thunderbird-beta">Beta 測試版技術支援文件。</a>
         </p>
       </ol>
     </aside>
@@ -531,17 +531,17 @@
   <section class="font-lg leading-normal pb-5 flex max-w-6xl mx-auto justify-center items-center pl-8 pr-8">
     <aside class="flex flex-col flex-grow mb-4">
       <p class="mb-2 mt-2">
-        If you installed the beta over the top of the release version (choice 2 above), then your process will be more complicated. Please consult this <a href="https://support.mozilla.org/kb/thunderbird-beta">beta support article.</a>
+        若您直接將 Beta 測試版覆蓋安裝掉原本的正式版（上方的第二種方法），流程將會比較複雜。請參考 <a href="https://support.mozilla.org/kb/thunderbird-beta">Beta 測試版技術支援文件。</a>
       </p>
       <p class="mb-2 mt-2">
         If you installed the beta program into its own program directory (choice 1 above) and you used a <a href="https://support.mozilla.org/en-US/kb/dedicated-profile-thunderbird-installation">dedicated profile per Thunderbird</a>, then start the release version of Thunderbird and it should use your release version profile data. If you no longer want to use the beta version, and do not need any of the beta data (address books, local folders, pop folders, etc), and wish to remove the beta data and beta program from your system:
       </p>
       <ul>
-        <li>Start the release version of Thunderbird to use the <a href="https://support.mozilla.org/kb/profile-manager-create-and-remove-thunderbird-profiles">profile manager.</a></li>
+        <li>開啟正式版的 Thunderbird 並使用<a href="https://support.mozilla.org/kb/profile-manager-create-and-remove-thunderbird-profiles">設定檔管理員</a>。</li>
         <li>刪除 Beta 版的設定檔，預設名稱為<b>「default-beta」</b>。</li>
         <li>刪除 Beta 測試版的程式目錄。</li>
       </ul>
-      <p> If you need to copy data from the beta profile to your release profile, please consult the <a href="https://support.mozilla.org/kb/thunderbird-beta">beta support article.</a></p>
+      <p> 若您需要從 Beta 版設定檔複製資料到正式版設定檔，請參考這篇 <a href="https://support.mozilla.org/kb/thunderbird-beta">Beta 測試版技術支援文件。</a></p>
     </aside>
   </section>
 
@@ -554,12 +554,12 @@
   <section class="font-lg leading-normal pb-5 flex max-w-6xl mx-auto justify-center items-center pl-8 pr-8">
     <aside class="flex flex-col flex-grow mb-4">
       <p class="mb-2 mt-2">
-        Open the Thunderbird Help menu to check the useful tools and references. Important items to note:
+        開啟 Thunderbird 的「說明」選單，來查看實用的工具及參考文件。請注意下列重要事項：
       <ul>
         <li>
-          Release notes are provided for every update in:
+          發行公告將於每次更新時，於下列位置提供：
           <ul>
-            <li><b>≡ > Help > About > Release Notes.</b></li>
+            <li><b>≡ > 說明 > 關於 > 發行公告。</b></li>
           </ul>
         </li>
         <li>Please post questions about normal Thunderbird usage in <a href="https://support.mozilla.org/questions/new/thunderbird/form">Thunderbird support</a>. </li>
