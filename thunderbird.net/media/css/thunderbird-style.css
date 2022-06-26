@@ -168,6 +168,7 @@ body {
 .social-link,
 .blog-link,
 .btn-donate,
+.donation-appeal,
 .btn-download,
 .btn-download-inline,
 .btn-download-link,
@@ -361,6 +362,7 @@ body {
 }
 .bg-white,
 .nav-link:after,
+.donation-appeal,
 .btn-download-inline,
 .btn-body,
 .btn-block-white:hover,
@@ -392,7 +394,8 @@ body {
 .border-black-25 {
   border-color: rgba(0, 0, 0, 0.25);
 }
-.text-black-light {
+.text-black-light,
+.donation-appeal {
   color: #212123;
 }
 .bg-black-light {
@@ -619,6 +622,7 @@ body {
   border-radius: 0.125rem;
 }
 .rounded,
+.donation-appeal,
 .btn-block-white {
   border-radius: 0.25rem;
 }
@@ -722,6 +726,7 @@ body {
 }
 .flex,
 .social-link,
+.donation-appeal,
 .btn-body span,
 .header-section,
 .markup-page h2 {
@@ -795,6 +800,7 @@ body {
 }
 .shadow,
 .btn-donate,
+.donation-appeal,
 .btn-download,
 .btn-join,
 .btn-beta,
@@ -804,6 +810,8 @@ body {
 .shadow-md,
 .btn-donate:hover,
 .btn-donate:focus,
+.donation-appeal:hover,
+.donation-appeal:focus,
 .btn-download:hover,
 .btn-download:focus,
 .btn-download-inline:hover,
@@ -905,6 +913,7 @@ body {
 }
 .items-center,
 .social-link,
+.donation-appeal,
 .btn-body span,
 .header-section,
 .markup-page h2 {
@@ -1271,7 +1280,8 @@ body {
 .max-w-md {
   max-width: 28rem;
 }
-.max-w-lg {
+.max-w-lg,
+.donation-appeal {
   max-width: 32rem;
 }
 .max-w-xl {
@@ -1797,7 +1807,8 @@ body {
 .p-5 {
   padding: 1.25rem;
 }
-.p-4 {
+.p-4,
+.donation-appeal {
   padding: 1rem;
 }
 .p-3,
@@ -2523,7 +2534,8 @@ body {
 .-mr-0 {
   margin-right: 0rem;
 }
-.mb-20 {
+.mb-20,
+.donation-appeal {
   margin-bottom: 5rem;
 }
 .mb-19 {
@@ -5859,6 +5871,22 @@ button {
   -moz-transform: translateY(-7%);
   -o-transform: translateY(-7%);
   transform: translateY(-7%);
+}
+.donation-appeal .text-donation {
+  color: #f99298;
+}
+.donation-appeal:hover,
+.donation-appeal:focus {
+  -webkit-transform: translateY(-7%);
+  -moz-transform: translateY(-7%);
+  -o-transform: translateY(-7%);
+  transform: translateY(-7%);
+  background-image: linear-gradient(#FFF2F2, #FFDBDB);
+  color: #C23153;
+}
+.donation-appeal:hover .text-donation,
+.donation-appeal:focus .text-donation {
+  color: #E23959;
 }
 .btn-download:hover,
 .btn-download:focus {
