@@ -838,7 +838,7 @@ earlier. A future release will provide updates from earlier versions.</strong></
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>OpenPGP: Public keys from email attachments and autocrypt headers now saved for future use</p>
+                  <p>OpenPGP: Public keys from email attachments and autocrypt headers now cached for future use</p>
                 </aside>
                 
               </aside>
@@ -1764,7 +1764,7 @@ earlier. A future release will provide updates from earlier versions.</strong></
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>When automatically attaching OpenPGP keys to emails, Thunderbird will not send signatures</p>
+                  <p>When automatically attaching OpenPGP keys to emails, Thunderbird will strip key certificates</p>
                 </aside>
                 
               </aside>
@@ -2960,7 +2960,7 @@ earlier. A future release will provide updates from earlier versions.</strong></
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>OpenPGP CollectedKeysDB could have duplicates; Revocations were not stored in CollectedKeysDB</p>
+                  <p>Dragging and dropping multiple email attachments between windows did not always copy all attachments</p>
                 </aside>
                 
               </aside>
@@ -2987,7 +2987,7 @@ earlier. A future release will provide updates from earlier versions.</strong></
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Dragging and dropping multiple email attachments between windows did not always copy all attachments</p>
+                  <p>Attachment bar in message compose window was not keyboard accessible</p>
                 </aside>
                 
               </aside>
@@ -3014,7 +3014,7 @@ earlier. A future release will provide updates from earlier versions.</strong></
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Attachment bar in message compose window was not keyboard accessible</p>
+                  <p>Triggering recipient pill creation in the compose window incorrectly used the entire field as input</p>
                 </aside>
                 
               </aside>
@@ -3041,7 +3041,7 @@ earlier. A future release will provide updates from earlier versions.</strong></
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Triggering recipient pill creation in the compose window incorrectly used the entire field as input</p>
+                  <p>Compose notification bars were not easily accessible via keyboard</p>
                 </aside>
                 
               </aside>
@@ -3068,7 +3068,7 @@ earlier. A future release will provide updates from earlier versions.</strong></
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Compose notification bars were not easily accessible via keyboard</p>
+                  <p>"Save message" confirmation dialog buttons were not navigable using arrow keys</p>
                 </aside>
                 
               </aside>
@@ -3095,7 +3095,7 @@ earlier. A future release will provide updates from earlier versions.</strong></
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>"Save message" confirmation dialog buttons were not navigable using arrow keys</p>
+                  <p>Focus jumped in compose window when closing the contacts sidebar</p>
                 </aside>
                 
               </aside>
@@ -3122,7 +3122,7 @@ earlier. A future release will provide updates from earlier versions.</strong></
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Focus jumped in compose window when closing the contacts sidebar</p>
+                  <p>Save dialog was incorrectly shown when closing empty composer windows</p>
                 </aside>
                 
               </aside>
@@ -3149,7 +3149,7 @@ earlier. A future release will provide updates from earlier versions.</strong></
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Save dialog was incorrectly shown when closing empty composer windows</p>
+                  <p>Incorrect access key used for <code>File-&gt;New-&gt;Message</code> menu item</p>
                 </aside>
                 
               </aside>
@@ -3176,7 +3176,7 @@ earlier. A future release will provide updates from earlier versions.</strong></
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Incorrect access key used for <code>File-&gt;New-&gt;Message</code> menu item</p>
+                  <p>Changing focus in the compose window with multiple recipient pills selected did not always deselect the pills</p>
                 </aside>
                 
               </aside>
@@ -3203,7 +3203,7 @@ earlier. A future release will provide updates from earlier versions.</strong></
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Changing focus in the compose window with multiple recipient pills selected did not always deselect the pills</p>
+                  <p>Sending a message with non-ascii characters in recipient local parts failed unexpectedly when the server did not support SMTPUTF8</p>
                 </aside>
                 
               </aside>
@@ -3230,7 +3230,7 @@ earlier. A future release will provide updates from earlier versions.</strong></
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Sending a message with non-ascii characters in recipient local parts failed unexpectedly when the server did not support SMTPUTF8</p>
+                  <p>LDAP Autoconfig could block Thunderbird startup</p>
                 </aside>
                 
               </aside>
@@ -3257,7 +3257,7 @@ earlier. A future release will provide updates from earlier versions.</strong></
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>LDAP Autoconfig could block Thunderbird startup</p>
+                  <p>Improvements to the Import/Export feature</p>
                 </aside>
                 
               </aside>
@@ -3284,7 +3284,7 @@ earlier. A future release will provide updates from earlier versions.</strong></
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Improvements to the Import/Export feature</p>
+                  <p>Configuring multiple SMTP accounts using the same server was not possible</p>
                 </aside>
                 
               </aside>
@@ -3311,7 +3311,7 @@ earlier. A future release will provide updates from earlier versions.</strong></
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Configuring multiple SMTP accounts using the same server was not possible</p>
+                  <p><code>Empty Trash on Exit</code> did not work with IMAP accounts using OAuth2 authentication</p>
                 </aside>
                 
               </aside>
@@ -3338,7 +3338,7 @@ earlier. A future release will provide updates from earlier versions.</strong></
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p><code>Empty Trash on Exit</code> did not work with IMAP accounts using OAuth2 authentication</p>
+                  <p>IMAP server hostname changes were not reflected in <code>Folder Properties</code> dialog</p>
                 </aside>
                 
               </aside>
@@ -3365,7 +3365,7 @@ earlier. A future release will provide updates from earlier versions.</strong></
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>IMAP server hostname changes were not reflected in <code>Folder Properties</code> dialog</p>
+                  <p>Addons automatically updated when Thunderbird updated despite Addon updates being turned off</p>
                 </aside>
                 
               </aside>
@@ -3392,7 +3392,7 @@ earlier. A future release will provide updates from earlier versions.</strong></
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Addons automatically updated when Thunderbird updated despite Addon updates being turned off</p>
+                  <p>Message size calculations incorrectly included FileLink attachments</p>
                 </aside>
                 
               </aside>
@@ -3419,7 +3419,7 @@ earlier. A future release will provide updates from earlier versions.</strong></
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Message size calculations incorrectly included FileLink attachments</p>
+                  <p>After converting a FileLink attachment back to an e-mail attachment, the privacy notification persisted</p>
                 </aside>
                 
               </aside>
@@ -3446,7 +3446,7 @@ earlier. A future release will provide updates from earlier versions.</strong></
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>After converting a FileLink attachment back to an e-mail attachment, the privacy notification persisted</p>
+                  <p>A failed FileLink provider change removed the attachment completely</p>
                 </aside>
                 
               </aside>
@@ -3473,7 +3473,7 @@ earlier. A future release will provide updates from earlier versions.</strong></
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>A failed FileLink provider change removed the attachment completely</p>
+                  <p>Subscribing to CardDAV address books from Account Setup tab did not subscribe to all selected address books</p>
                 </aside>
                 
               </aside>
@@ -3500,7 +3500,7 @@ earlier. A future release will provide updates from earlier versions.</strong></
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Subscribing to CardDAV address books from Account Setup tab did not subscribe to all selected address books</p>
+                  <p>Adding CardDAV address books failed if an addon-provided address book was present</p>
                 </aside>
                 
               </aside>
@@ -3527,7 +3527,7 @@ earlier. A future release will provide updates from earlier versions.</strong></
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Adding CardDAV address books failed if an addon-provided address book was present</p>
+                  <p>Messages with Message-Id headers longer than 332 characters could not be forwarded</p>
                 </aside>
                 
               </aside>
@@ -3554,7 +3554,7 @@ earlier. A future release will provide updates from earlier versions.</strong></
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Messages with Message-Id headers longer than 332 characters could not be forwarded</p>
+                  <p>SMTP send progress bar could trigger high CPU usage when the server connection failed</p>
                 </aside>
                 
               </aside>
@@ -3581,7 +3581,7 @@ earlier. A future release will provide updates from earlier versions.</strong></
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>SMTP send progress bar could trigger high CPU usage when the server connection failed</p>
+                  <p>Improved POP server authentication detection during Account Setup</p>
                 </aside>
                 
               </aside>
@@ -3608,7 +3608,7 @@ earlier. A future release will provide updates from earlier versions.</strong></
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Improved POP server authentication detection during Account Setup</p>
+                  <p>News folders did not display biff indicator</p>
                 </aside>
                 
               </aside>
@@ -3635,7 +3635,7 @@ earlier. A future release will provide updates from earlier versions.</strong></
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>News folders did not display biff indicator</p>
+                  <p>IMAP flag changes from another client were not seen after some inactivity</p>
                 </aside>
                 
               </aside>
@@ -3662,7 +3662,7 @@ earlier. A future release will provide updates from earlier versions.</strong></
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>IMAP flag changes from another client were not seen after some inactivity</p>
+                  <p>Recipients were not de-duplicated before sending, leading to sending errors</p>
                 </aside>
                 
               </aside>
@@ -3689,7 +3689,7 @@ earlier. A future release will provide updates from earlier versions.</strong></
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Recipients were not de-duplicated before sending, leading to sending errors</p>
+                  <p>Chat conversations' context menu did not recognize links</p>
                 </aside>
                 
               </aside>
@@ -3716,7 +3716,7 @@ earlier. A future release will provide updates from earlier versions.</strong></
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Chat conversations' context menu did not recognize links</p>
+                  <p>Chat username splitting in the account wizard did not work after changing protocols</p>
                 </aside>
                 
               </aside>
@@ -3743,7 +3743,7 @@ earlier. A future release will provide updates from earlier versions.</strong></
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Chat username splitting in the account wizard did not work after changing protocols</p>
+                  <p>Removing obsolete proprietary chat accounts did not work</p>
                 </aside>
                 
               </aside>
@@ -3770,7 +3770,7 @@ earlier. A future release will provide updates from earlier versions.</strong></
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Removing obsolete proprietary chat accounts did not work</p>
+                  <p>OTR encrypted chat did not work on FreeBSD</p>
                 </aside>
                 
               </aside>
@@ -3797,7 +3797,7 @@ earlier. A future release will provide updates from earlier versions.</strong></
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>OTR encrypted chat did not work on FreeBSD</p>
+                  <p>Event edit toolbar button was not disabled when an invitation was selected</p>
                 </aside>
                 
               </aside>
@@ -3824,7 +3824,7 @@ earlier. A future release will provide updates from earlier versions.</strong></
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Event edit toolbar button was not disabled when an invitation was selected</p>
+                  <p>Event view headers and content were not lined up consistently for RTL locales</p>
                 </aside>
                 
               </aside>
@@ -3851,7 +3851,7 @@ earlier. A future release will provide updates from earlier versions.</strong></
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Event view headers and content were not lined up consistently for RTL locales</p>
+                  <p>Mini-month views did not properly update at midnight</p>
                 </aside>
                 
               </aside>
@@ -3878,7 +3878,7 @@ earlier. A future release will provide updates from earlier versions.</strong></
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Mini-month views did not properly update at midnight</p>
+                  <p>Some labels in Calendar were displayed in multiple languages</p>
                 </aside>
                 
               </aside>
@@ -3905,7 +3905,7 @@ earlier. A future release will provide updates from earlier versions.</strong></
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Some labels in Calendar were displayed in multiple languages</p>
+                  <p>Thunderbird permitted inline editing of read-only event titles</p>
                 </aside>
                 
               </aside>
@@ -3932,7 +3932,7 @@ earlier. A future release will provide updates from earlier versions.</strong></
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Thunderbird permitted inline editing of read-only event titles</p>
+                  <p>Calendar view reloaded when switching tabs</p>
                 </aside>
                 
               </aside>
@@ -3959,7 +3959,7 @@ earlier. A future release will provide updates from earlier versions.</strong></
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Calendar view reloaded when switching tabs</p>
+                  <p>It was possible to create annual calendar events with invalid days</p>
                 </aside>
                 
               </aside>
@@ -3986,7 +3986,7 @@ earlier. A future release will provide updates from earlier versions.</strong></
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>It was possible to create annual calendar events with invalid days</p>
+                  <p>Detection of attached vCalendar files improved</p>
                 </aside>
                 
               </aside>
@@ -4013,7 +4013,7 @@ earlier. A future release will provide updates from earlier versions.</strong></
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Detection of attached vCalendar files improved</p>
+                  <p>Reminders for events created by another user could not be closed</p>
                 </aside>
                 
               </aside>
@@ -4040,7 +4040,7 @@ earlier. A future release will provide updates from earlier versions.</strong></
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Reminders for events created by another user could not be closed</p>
+                  <p>MS Teams meeting event descriptions were unreadable when stored on Google Calendar</p>
                 </aside>
                 
               </aside>
@@ -4067,7 +4067,7 @@ earlier. A future release will provide updates from earlier versions.</strong></
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>MS Teams meeting event descriptions were unreadable when stored on Google Calendar</p>
+                  <p>Adding a Google calendar with a non-gmail or googlemail e-mail address failed</p>
                 </aside>
                 
               </aside>
@@ -4094,33 +4094,6 @@ earlier. A future release will provide updates from earlier versions.</strong></
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Adding a Google calendar with a non-gmail or googlemail e-mail address failed</p>
-                </aside>
-                
-              </aside>
-            
-          
-            
-              
-
-              
-              
-
-              <aside id="note-128"
-                class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
-                <h4 class="font-bold uppercase m-0 p-3 w-24">
-                  
-                    <aside class="flex items-center text-green">
-                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
-   - License, v. 2.0. If a copy of the MPL was not distributed with this
-   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
-</span>
-                      fixed
-                    </aside>
-                  
-                </h4>
-                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
                   <p>Accepting a recurrence exception to an event accepted event associated with the original recurring event rather than the exception</p>
                 </aside>
                 
@@ -4133,7 +4106,7 @@ earlier. A future release will provide updates from earlier versions.</strong></
               
               
 
-              <aside id="note-129"
+              <aside id="note-128"
                 class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
                 <h4 class="font-bold uppercase m-0 p-3 w-24">
                   
@@ -4234,27 +4207,27 @@ earlier. A future release will provide updates from earlier versions.</strong></
     <h4>Download Thunderbird — English (US)</h4>
     <ul class="list-none p-0 flex flex-wrap max-w-lg justify-center">
       <li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-91.11.0-SSL&os=win64&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-102.0-SSL&os=win64&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Windows 64-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-91.11.0-msi-SSL&os=win64&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-102.0-msi-SSL&os=win64&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Windows MSI 64-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-91.11.0-SSL&os=osx&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-102.0-SSL&os=osx&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             macOS
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-91.11.0-SSL&os=linux64&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-102.0-SSL&os=linux64&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Linux 64-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-91.11.0-SSL&os=win&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-102.0-SSL&os=win&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Windows 32-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-91.11.0-SSL&os=linux&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-102.0-SSL&os=linux&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Linux 32-bit
           </a>
         </li>
@@ -4268,27 +4241,27 @@ earlier. A future release will provide updates from earlier versions.</strong></
     <h4>Download Thunderbird — English (US)</h4>
     <ul class="list-none p-0 flex flex-wrap max-w-lg justify-center">
       <li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-91.11.0-SSL&os=win64&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-102.0-SSL&os=win64&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Windows 64-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-91.11.0-msi-SSL&os=win64&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-102.0-msi-SSL&os=win64&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Windows MSI 64-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-91.11.0-SSL&os=osx&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-102.0-SSL&os=osx&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             macOS
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-91.11.0-SSL&os=linux64&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-102.0-SSL&os=linux64&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Linux 64-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-91.11.0-SSL&os=win&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-102.0-SSL&os=win&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Windows 32-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-91.11.0-SSL&os=linux&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-102.0-SSL&os=linux&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Linux 32-bit
           </a>
         </li>
@@ -4297,7 +4270,7 @@ earlier. A future release will provide updates from earlier versions.</strong></
 
   </div>
   <p class="unsupported-download p-links">
-    Your system doesn't meet the <a href="/en-US/thunderbird/91.11.0/system-requirements/">requirements</a> to run Thunderbird.
+    Your system doesn't meet the <a href="/en-US/thunderbird/102.0/system-requirements/">requirements</a> to run Thunderbird.
   </p>
   <p class="linux-arm-download mb-8 p-links">
     Please follow <a href="https://support.mozilla.org/kb/installing-thunderbird-linux">these instructions</a> to install Thunderbird.
@@ -4306,7 +4279,7 @@ earlier. A future release will provide updates from earlier versions.</strong></
     
       <li class="os_win64 ml-3 mr-3">
         <a class="download-link btn-download"
-          href="https://download.mozilla.org/?product=thunderbird-91.11.0-SSL&os=win64&lang=en-US"
+          href="https://download.mozilla.org/?product=thunderbird-102.0-SSL&os=win64&lang=en-US"
           data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
           >
           
@@ -4317,7 +4290,7 @@ earlier. A future release will provide updates from earlier versions.</strong></
     
       <li class="os_msi ml-3 mr-3">
         <a class="download-link btn-download"
-          href="https://download.mozilla.org/?product=thunderbird-91.11.0-msi-SSL&os=win64&lang=en-US"
+          href="https://download.mozilla.org/?product=thunderbird-102.0-msi-SSL&os=win64&lang=en-US"
           data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
           >
           
@@ -4328,7 +4301,7 @@ earlier. A future release will provide updates from earlier versions.</strong></
     
       <li class="os_osx ml-3 mr-3">
         <a class="download-link btn-download"
-          href="https://download.mozilla.org/?product=thunderbird-91.11.0-SSL&os=osx&lang=en-US"
+          href="https://download.mozilla.org/?product=thunderbird-102.0-SSL&os=osx&lang=en-US"
           data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
           >
           
@@ -4339,7 +4312,7 @@ earlier. A future release will provide updates from earlier versions.</strong></
     
       <li class="os_linux64 ml-3 mr-3">
         <a class="download-link btn-download"
-          href="https://download.mozilla.org/?product=thunderbird-91.11.0-SSL&os=linux64&lang=en-US"
+          href="https://download.mozilla.org/?product=thunderbird-102.0-SSL&os=linux64&lang=en-US"
           data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
           >
           
@@ -4350,7 +4323,7 @@ earlier. A future release will provide updates from earlier versions.</strong></
     
       <li class="os_win ml-3 mr-3">
         <a class="download-link btn-download"
-          href="https://download.mozilla.org/?product=thunderbird-91.11.0-SSL&os=win&lang=en-US"
+          href="https://download.mozilla.org/?product=thunderbird-102.0-SSL&os=win&lang=en-US"
           data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
           >
           
@@ -4361,7 +4334,7 @@ earlier. A future release will provide updates from earlier versions.</strong></
     
       <li class="os_linux ml-3 mr-3">
         <a class="download-link btn-download"
-          href="https://download.mozilla.org/?product=thunderbird-91.11.0-SSL&os=linux&lang=en-US"
+          href="https://download.mozilla.org/?product=thunderbird-102.0-SSL&os=linux&lang=en-US"
           data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
           >
           
@@ -4374,7 +4347,7 @@ earlier. A future release will provide updates from earlier versions.</strong></
   <p class="download-other download-other-desktop os_android os_ios os_linux os_linux64 os_osx os_win os_win64 os_winsha1 font-sm mt-0">
     
       <a href="/en-US/thunderbird/all/" class="small-link ">Systems &amp; Languages</a> &bull;
-      <a href="/en-US/thunderbird/91.11.0/releasenotes/" class="small-link ">What’s New</a> &bull;
+      <a href="/en-US/thunderbird/102.0/releasenotes/" class="small-link ">What’s New</a> &bull;
     
     <a href="https://www.mozilla.org/privacy/thunderbird/" class="small-link ">Privacy</a>
   </p>
