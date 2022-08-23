@@ -9,6 +9,7 @@ body {
 .font-base,
 body,
 .btn-donate,
+.btn-donate-lg,
 .btn-download-inline,
 .btn-download-link {
   font-size: 13px;
@@ -45,6 +46,7 @@ body,
   font-size: 19px;
 }
 .font-2xl,
+.btn-donate-lg,
 .header-section,
 .markup-page h2 {
   font-size: 21px;
@@ -74,6 +76,7 @@ body,
 .inline-link,
 .social-link,
 .btn-donate,
+.btn-donate-lg,
 .btn-download,
 .btn-download-inline,
 .btn-download-link,
@@ -168,7 +171,7 @@ body {
 .social-link,
 .blog-link,
 .btn-donate,
-.donation-appeal,
+.btn-donate-lg,
 .btn-download,
 .btn-download-inline,
 .btn-download-link,
@@ -337,6 +340,7 @@ body {
 .inline-link,
 .social-link,
 .btn-donate,
+.btn-donate-lg,
 .btn-download,
 .btn-download-inline:hover,
 .btn-download-inline:focus,
@@ -362,7 +366,6 @@ body {
 }
 .bg-white,
 .nav-link:after,
-.donation-appeal,
 .btn-download-inline,
 .btn-body,
 .btn-block-white:hover,
@@ -394,8 +397,7 @@ body {
 .border-black-25 {
   border-color: rgba(0, 0, 0, 0.25);
 }
-.text-black-light,
-.donation-appeal {
+.text-black-light {
   color: #212123;
 }
 .bg-black-light {
@@ -427,6 +429,15 @@ body {
 }
 .border-black-lightest {
   border-color: #45454B;
+}
+.text-grey {
+  color: #f9f9f9;
+}
+.bg-grey {
+  background-color: #f9f9f9;
+}
+.border-grey {
+  border-color: #f9f9f9;
 }
 .text-grey-light {
   color: #f0f0f0;
@@ -622,7 +633,7 @@ body {
   border-radius: 0.125rem;
 }
 .rounded,
-.donation-appeal,
+.btn-donate-lg,
 .btn-block-white {
   border-radius: 0.25rem;
 }
@@ -703,6 +714,7 @@ body {
 .block,
 .nav-link:after,
 .btn-donate,
+.btn-donate-lg,
 .form-select,
 .header-line {
   display: block;
@@ -726,7 +738,6 @@ body {
 }
 .flex,
 .social-link,
-.donation-appeal,
 .btn-body span,
 .header-section,
 .markup-page h2 {
@@ -800,7 +811,7 @@ body {
 }
 .shadow,
 .btn-donate,
-.donation-appeal,
+.btn-donate-lg,
 .btn-download,
 .btn-join,
 .btn-beta,
@@ -810,8 +821,8 @@ body {
 .shadow-md,
 .btn-donate:hover,
 .btn-donate:focus,
-.donation-appeal:hover,
-.donation-appeal:focus,
+.btn-donate-lg:hover,
+.btn-donate-lg:focus,
 .btn-download:hover,
 .btn-download:focus,
 .btn-download-inline:hover,
@@ -913,7 +924,6 @@ body {
 }
 .items-center,
 .social-link,
-.donation-appeal,
 .btn-body span,
 .header-section,
 .markup-page h2 {
@@ -1163,6 +1173,9 @@ body {
 .w-4 {
   width: 1rem;
 }
+.w-5 {
+  width: 1.25rem;
+}
 .w-6,
 .header-section span {
   width: 1.5rem;
@@ -1280,12 +1293,14 @@ body {
 .max-w-md {
   max-width: 28rem;
 }
-.max-w-lg,
-.donation-appeal {
+.max-w-lg {
   max-width: 32rem;
 }
 .max-w-xl {
   max-width: 36rem;
+}
+.max-w-2xl {
+  max-width: 42rem;
 }
 .max-w-3xl {
   max-width: 48rem;
@@ -1333,6 +1348,9 @@ body {
   }
   .md\:w-4 {
     width: 1rem;
+  }
+  .md\:w-5 {
+    width: 1.25rem;
   }
   .md\:w-6 {
     width: 1.5rem;
@@ -1454,6 +1472,9 @@ body {
   .md\:max-w-xl {
     max-width: 36rem;
   }
+  .md\:max-w-2xl {
+    max-width: 42rem;
+  }
   .md\:max-w-3xl {
     max-width: 48rem;
   }
@@ -1479,6 +1500,9 @@ body {
   }
   .lg\:w-4 {
     width: 1rem;
+  }
+  .lg\:w-5 {
+    width: 1.25rem;
   }
   .lg\:w-6 {
     width: 1.5rem;
@@ -1600,6 +1624,9 @@ body {
   .lg\:max-w-xl {
     max-width: 36rem;
   }
+  .lg\:max-w-2xl {
+    max-width: 42rem;
+  }
   .lg\:max-w-3xl {
     max-width: 48rem;
   }
@@ -1625,6 +1652,9 @@ body {
   }
   .xl\:w-4 {
     width: 1rem;
+  }
+  .xl\:w-5 {
+    width: 1.25rem;
   }
   .xl\:w-6 {
     width: 1.5rem;
@@ -1746,6 +1776,9 @@ body {
   .xl\:max-w-xl {
     max-width: 36rem;
   }
+  .xl\:max-w-2xl {
+    max-width: 42rem;
+  }
   .xl\:max-w-3xl {
     max-width: 48rem;
   }
@@ -1807,8 +1840,7 @@ body {
 .p-5 {
   padding: 1.25rem;
 }
-.p-4,
-.donation-appeal {
+.p-4 {
   padding: 1rem;
 }
 .p-3,
@@ -1889,6 +1921,7 @@ body {
 }
 .pt-3,
 .btn-donate.btn-donate-whatsnew,
+.btn-donate-lg,
 .btn-join,
 .btn-beta,
 .btn-daily,
@@ -1961,7 +1994,8 @@ body {
   padding-right: 1.5rem;
 }
 .pr-5,
-.btn-donate.btn-donate-whatsnew {
+.btn-donate.btn-donate-whatsnew,
+.btn-donate-lg {
   padding-right: 1.25rem;
 }
 .pr-4,
@@ -2041,6 +2075,7 @@ body {
 }
 .pb-3,
 .btn-donate.btn-donate-whatsnew,
+.btn-donate-lg,
 .btn-join,
 .btn-beta,
 .btn-daily,
@@ -2112,6 +2147,7 @@ body {
 }
 .pl-5,
 .btn-donate.btn-donate-whatsnew,
+.btn-donate-lg,
 .btn-body {
   padding-left: 1.25rem;
 }
@@ -2468,7 +2504,8 @@ body {
   margin-right: 0.25rem;
 }
 .mr-0,
-.btn-donate.btn-donate-whatsnew {
+.btn-donate.btn-donate-whatsnew,
+.btn-donate-lg {
   margin-right: 0rem;
 }
 .-mr-20 {
@@ -2534,8 +2571,7 @@ body {
 .-mr-0 {
   margin-right: 0rem;
 }
-.mb-20,
-.donation-appeal {
+.mb-20 {
   margin-bottom: 5rem;
 }
 .mb-19 {
@@ -2742,7 +2778,8 @@ body {
   margin-left: 0.25rem;
 }
 .ml-0,
-.btn-donate.btn-donate-whatsnew {
+.btn-donate.btn-donate-whatsnew,
+.btn-donate-lg {
   margin-left: 0rem;
 }
 .-ml-20 {
@@ -3429,7 +3466,8 @@ body {
     margin-right: 1.25rem;
   }
   .md\:mr-4,
-  .btn-donate {
+  .btn-donate,
+  .btn-donate-lg {
     margin-right: 1rem;
   }
   .md\:mr-3 {
@@ -3682,7 +3720,8 @@ body {
     margin-left: 1.25rem;
   }
   .md\:ml-4,
-  .btn-donate {
+  .btn-donate,
+  .btn-donate-lg {
     margin-left: 1rem;
   }
   .md\:ml-3 {
@@ -5320,7 +5359,8 @@ body {
   }
   .xl\:mr-6,
   .nav-link,
-  .btn-donate {
+  .btn-donate,
+  .btn-donate-lg {
     margin-right: 1.5rem;
   }
   .xl\:mr-5 {
@@ -5574,7 +5614,8 @@ body {
   }
   .xl\:ml-6,
   .nav-link,
-  .btn-donate {
+  .btn-donate,
+  .btn-donate-lg {
     margin-left: 1.5rem;
   }
   .xl\:ml-5 {
@@ -5749,7 +5790,8 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1c2f56', endColorstr='#037ae6', GradientType=0);
 }
 .bg-donate-button,
-.btn-donate {
+.btn-donate,
+.btn-donate-lg {
   background: #b92f51;
   background: -moz-linear-gradient(-45deg, #f23d5c 0%, #b92f51 100%);
   background: -webkit-linear-gradient(-45deg, #f23d5c 0%, #b92f51 100%);
@@ -5872,21 +5914,15 @@ button {
   -o-transform: translateY(-7%);
   transform: translateY(-7%);
 }
-.donation-appeal .text-donation {
-  color: #f99298;
+.btn-donate-lg {
+  white-space: nowrap;
 }
-.donation-appeal:hover,
-.donation-appeal:focus {
+.btn-donate-lg:hover,
+.btn-donate-lg:focus {
   -webkit-transform: translateY(-7%);
   -moz-transform: translateY(-7%);
   -o-transform: translateY(-7%);
   transform: translateY(-7%);
-  background-image: linear-gradient(#FFF2F2, #FFDBDB);
-  color: #C23153;
-}
-.donation-appeal:hover .text-donation,
-.donation-appeal:focus .text-donation {
-  color: #E23959;
 }
 .btn-download:hover,
 .btn-download:focus {
