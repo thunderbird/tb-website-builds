@@ -53,7 +53,7 @@
 
     
   <header id="masthead" class="bg-no-repeat bg-cover bg-top flex flex-col bg-header-page">
-    <section class="flex justify-between items-center p-6 flex-wrap">
+    <section class="flex justify-between items-center p-6 flex-wrap ">
       
         <h2 class="mt-0 mb-0">
           <a href="/en-US/" class="block w-48 lg:w-56" title="Thunderbird" alt="Thunderbird Vector Wordmark">
@@ -335,148 +335,6 @@
 
 
     
-  
-
-
-
-<div id="amount-modal" class="modal rounded-lg w-full max-w-2xl shadow-lg bg-white text-black-lighter fixed z-30 mt-0 mx-auto pin-x hidden">
-  <div id="close-modal" class="absolute p-1 m-2 z-10 pin-t pin-r">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
-      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-      <line x1="18" y1="6" x2="6" y2="18" />
-      <line x1="6" y1="6" x2="18" y2="18" />
-    </svg>
-  </div>
-  <h1 class="text-blue-dark text-center font-4xl font-light">
-    Pay What You Want
-  </h1>
-  <form action="">
-    <section class="font-lg pt-0 pl-6 pb-4 pr-6 leading-normal text-center">
-      <p>Thunderbird is independent, free, and Open Source software sustained by your donations. Help us keep the project alive!</p>
-    </section>
-    <section class="bg-grey-light pt-4 pl-6 pb-4 pr-6">
-      <div class="flex justify-between items-center">
-        <label class="uppercase font-sm">Select an amount</label>
-        <label>
-          Currency
-          <select id="id_currency-switcher" class="rounded inline-block w-24 bg-white p-1 border border-solid border-grey" name="currency-switcher">
-            
-            <option value="brl" >BRL   R$</option>
-            
-            <option value="cad" >CAD   $</option>
-            
-            <option value="czk" >CZK   Kč</option>
-            
-            <option value="dkk" >DKK   kr</option>
-            
-            <option value="eur" >EUR   €</option>
-            
-            <option value="gbp" >GBP   £</option>
-            
-            <option value="huf" >HUF   Ft</option>
-            
-            <option value="inr" >INR   ₹</option>
-            
-            <option value="jpy" >JPY   ¥</option>
-            
-            <option value="mxn" >MXN   $</option>
-            
-            <option value="nok" >NOK   kr</option>
-            
-            <option value="pln" >PLN   zł</option>
-            
-            <option value="rub" >RUB   ₽</option>
-            
-            <option value="sek" >SEK   kr</option>
-            
-            <option value="twd" >TWD   NT$</option>
-            
-            <option value="usd" selected>USD   $</option>
-            
-          </select>
-        </label>
-      </div>
-      <div id="amount-selection" class="amount-selection flex flex-wrap mt-3">
-        <label class="flex items-center shadow-md mb-2 mr-4">
-          <input class="mr-4" type="radio" name="amount" value="50">
-          $50
-        </label>
-        <label class="flex items-center shadow-md mb-2 mr-4 active">
-          <input class="mr-4" type="radio" name="amount" value="30" checked>
-          $30
-        </label>
-        <label class="flex items-center shadow-md mb-2 mr-4">
-          <input class="mr-4" type="radio" name="amount" value="20">
-          $20
-        </label>
-        <label class="flex items-center shadow-md mb-2 mr-4">
-          <input class="mr-4" type="radio" name="amount" value="10">
-          $10
-        </label>
-        <label class="flex items-center shadow-md mb-2 flex-grow">
-          <input id="amount-other-selection" class="mr-3" type="radio" name="amount" value="0">
-          <input id="amount-other" type="number" name="other" placeholder="Other amount" min="1" step="1" />
-        </label>
-      </div>
-    </section>
-    <section class="flex justify-center mt-6 mb-6">
-      <button class="btn-body mr-2" id="amount-submit">
-        Donate & Download
-        <span>
-          <svg viewBox="0 0 7 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <g id="UI" stroke="none" stroke-width="1" fill="currentColor" fill-rule="evenodd">
-              <path d="M6.91574413,5.89284986 C6.91574413,5.97767139 6.87333336,6.07309561 6.80971722,6.13671176 L1.86886311,11.0775659 C1.80524696,11.141182 1.70982274,11.1835928 1.62500121,11.1835928 C1.54017968,11.1835928 1.44475546,11.141182 1.38113932,11.0775659 L0.851004755,10.5474313 C0.787388608,10.4838152 0.744977843,10.3989936 0.744977843,10.3035694 C0.744977843,10.2187479 0.787388608,10.1233237 0.851004755,10.0597075 L5.0178624,5.89284986 L0.851004755,1.72599222 C0.787388608,1.66237607 0.744977843,1.56695185 0.744977843,1.48213032 C0.744977843,1.39730879 0.787388608,1.30188457 0.851004755,1.23826842 L1.38113932,0.70813386 C1.44475546,0.644517713 1.54017968,0.602106948 1.62500121,0.602106948 C1.70982274,0.602106948 1.80524696,0.644517713 1.86886311,0.70813386 L6.80971722,5.64898796 C6.87333336,5.71260411 6.91574413,5.80802833 6.91574413,5.89284986 Z"></path>
-            </g>
-          </svg>
-        </span>
-      </button>
-      <button class="btn-body btn-secondary" id="amount-cancel">
-        No Thanks, Download Now!
-        <span>
-          <svg viewBox="0 0 7 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <g id="UI" stroke="none" stroke-width="1" fill="currentColor" fill-rule="evenodd">
-              <path d="M6.91574413,5.89284986 C6.91574413,5.97767139 6.87333336,6.07309561 6.80971722,6.13671176 L1.86886311,11.0775659 C1.80524696,11.141182 1.70982274,11.1835928 1.62500121,11.1835928 C1.54017968,11.1835928 1.44475546,11.141182 1.38113932,11.0775659 L0.851004755,10.5474313 C0.787388608,10.4838152 0.744977843,10.3989936 0.744977843,10.3035694 C0.744977843,10.2187479 0.787388608,10.1233237 0.851004755,10.0597075 L5.0178624,5.89284986 L0.851004755,1.72599222 C0.787388608,1.66237607 0.744977843,1.56695185 0.744977843,1.48213032 C0.744977843,1.39730879 0.787388608,1.30188457 0.851004755,1.23826842 L1.38113932,0.70813386 C1.44475546,0.644517713 1.54017968,0.602106948 1.62500121,0.602106948 C1.70982274,0.602106948 1.80524696,0.644517713 1.86886311,0.70813386 L6.80971722,5.64898796 C6.87333336,5.71260411 6.91574413,5.80802833 6.91574413,5.89284986 Z"></path>
-            </g>
-          </svg>
-        </span>
-      </button>
-    </section>
-  </form>
-  <footer class="w-4/5 mx-auto border-0 border-t border-solid border-grey-light p-6">
-    <ul class="flex justify-center uppercase list-none font-xs p-0 m-0">
-      <li class="mr-4">
-        <a class="text-black-lightest no-underline" href="">
-          Secure
-        </a>
-      </li>
-      <li class="mr-4">
-        <a class="text-black-lightest no-underline" href="">
-          Privacy Policy
-        </a>
-      </li>
-      <li class="mr-4">
-        <a class="text-black-lightest no-underline" href="">
-          Other ways to donate
-        </a>
-      </li>
-      <li>
-        <a class="text-black-lightest no-underline" href="">
-          FAQ
-        </a>
-      </li>
-    </ul>
-  </footer>
-</div>
-
-<div id="checkout-modal" class="modal">
-  <div id="checkout-message"></div>
-  <div id="dropin-container"></div>
-  <button id="submit-button">Submit payment</button>
-</div>
-
-<div id="modal-overlay" class="fixed pin-t pin-l m-0 p-0 w-full h-full z-20 bg-black opacity-50 hidden" tabindex="-1"></div>
-
-    
 
     
 
@@ -545,6 +403,11 @@
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
                   <p>Color customization of Folder Pane icons</p>
                 </aside>
+                
+                  <aside>
+                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1637668">1637668</a></p>
+                  </aside>
+                
               </aside>
             
           
@@ -571,6 +434,11 @@
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
                   <p>Additional Enterprise policies</p>
                 </aside>
+                
+                  <aside>
+                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1622703">1622703</a></p>
+                  </aside>
+                
               </aside>
             
           
@@ -597,6 +465,11 @@
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
                   <p>Calendar: Add event preview to ICS import dialog</p>
                 </aside>
+                
+                  <aside>
+                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1631902">1631902</a></p>
+                  </aside>
+                
               </aside>
             
           
@@ -631,6 +504,11 @@
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
                   <p>OpenPGP support improvements</p>
                 </aside>
+                
+                  <aside>
+                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1638398">1638398</a> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1638537">1638537</a> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1639683">1639683</a> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1641374">1641374</a></p>
+                  </aside>
+                
               </aside>
             
           
@@ -657,6 +535,11 @@
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
                   <p>Various Address Book improvements</p>
                 </aside>
+                
+                  <aside>
+                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1630184">1630184</a> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1633294">1633294</a></p>
+                  </aside>
+                
               </aside>
             
           
@@ -683,6 +566,11 @@
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
                   <p>Dark mode improvements</p>
                 </aside>
+                
+                  <aside>
+                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1619725">1619725</a> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1640390">1640390</a></p>
+                  </aside>
+                
               </aside>
             
           
@@ -709,6 +597,11 @@
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
                   <p>Use scalable icons throughout Thunderbird</p>
                 </aside>
+                
+                  <aside>
+                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1636238">1636238</a> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1638863">1638863</a></p>
+                  </aside>
+                
               </aside>
             
           
@@ -735,6 +628,11 @@
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
                   <p>Account settings UI improvements</p>
                 </aside>
+                
+                  <aside>
+                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1628497">1628497</a></p>
+                  </aside>
+                
               </aside>
             
           
@@ -761,6 +659,11 @@
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
                   <p>MailExtensions: Handle message attachments in browser.compose functions</p>
                 </aside>
+                
+                  <aside>
+                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1613535">1613535</a></p>
+                  </aside>
+                
               </aside>
             
           
@@ -787,6 +690,11 @@
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
                   <p>Calendar: Location URLs are now clickable</p>
                 </aside>
+                
+                  <aside>
+                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1614972">1614972</a></p>
+                  </aside>
+                
               </aside>
             
           
@@ -821,6 +729,11 @@
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
                   <p>Various fixes for recipient address entry</p>
                 </aside>
+                
+                  <aside>
+                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1602477">1602477</a> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1636393">1636393</a> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1640722">1640722</a></p>
+                  </aside>
+                
               </aside>
             
           
@@ -847,6 +760,11 @@
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
                   <p>Fixed width font not working in Write window</p>
                 </aside>
+                
+                  <aside>
+                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1622231">1622231</a></p>
+                  </aside>
+                
               </aside>
             
           
@@ -873,6 +791,11 @@
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
                   <p>Accessibility improvements</p>
                 </aside>
+                
+                  <aside>
+                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1637230">1637230</a> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1637536">1637536</a></p>
+                  </aside>
+                
               </aside>
             
           
@@ -899,6 +822,11 @@
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
                   <p>Attachment pane in message preview layout broke when toggled or resized</p>
                 </aside>
+                
+                  <aside>
+                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1636558">1636558</a></p>
+                  </aside>
+                
               </aside>
             
           
@@ -925,6 +853,11 @@
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
                   <p>Access key Alt+M for the attachment pane of the Write window not working correctly</p>
                 </aside>
+                
+                  <aside>
+                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1625263">1625263</a></p>
+                  </aside>
+                
               </aside>
             
           
@@ -951,6 +884,11 @@
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
                   <p>Addons could not be removed</p>
                 </aside>
+                
+                  <aside>
+                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1629459">1629459</a></p>
+                  </aside>
+                
               </aside>
             
           
@@ -1086,6 +1024,11 @@
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
                   <p>MailExtensions: browser.identity API enabled</p>
                 </aside>
+                
+                  <aside>
+                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1644000">1644000</a></p>
+                  </aside>
+                
               </aside>
             
           
@@ -1112,6 +1055,11 @@
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
                   <p>MailExtensions: Event fired when the user changes compose identity</p>
                 </aside>
+                
+                  <aside>
+                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1642189">1642189</a></p>
+                  </aside>
+                
               </aside>
             
           
@@ -1146,6 +1094,11 @@
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
                   <p>Improvements to the location bar of a tab displaying web pages</p>
                 </aside>
+                
+                  <aside>
+                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1644689">1644689</a></p>
+                  </aside>
+                
               </aside>
             
           
@@ -1172,6 +1125,11 @@
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
                   <p>Several improvements to vCard parsing</p>
                 </aside>
+                
+                  <aside>
+                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1639496">1639496</a> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1643262">1643262</a></p>
+                  </aside>
+                
               </aside>
             
           
@@ -1198,6 +1156,11 @@
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
                   <p>Various look and feel improvements</p>
                 </aside>
+                
+                  <aside>
+                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1514863">1514863</a> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1643159">1643159</a> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1644730">1644730</a> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1644798">1644798</a> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1645094">1645094</a> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1645687">1645687</a> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1645700">1645700</a></p>
+                  </aside>
+                
               </aside>
             
           
@@ -1232,6 +1195,11 @@
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
                   <p>Print-progress dialog was disabled</p>
                 </aside>
+                
+                  <aside>
+                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1625299">1625299</a></p>
+                  </aside>
+                
               </aside>
             
           
@@ -1258,6 +1226,11 @@
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
                   <p>"Clear Recent History" window did nothing</p>
                 </aside>
+                
+                  <aside>
+                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1639415">1639415</a></p>
+                  </aside>
+                
               </aside>
             
           
@@ -1284,6 +1257,11 @@
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
                   <p>"Initially Show Attachment Pane" option was not working for Write window</p>
                 </aside>
+                
+                  <aside>
+                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1634946">1634946</a></p>
+                  </aside>
+                
               </aside>
             
           
@@ -1310,6 +1288,11 @@
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
                   <p>Links in the Account Central content tab opened in Thunderbird as well as the browser</p>
                 </aside>
+                
+                  <aside>
+                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1645271">1645271</a></p>
+                  </aside>
+                
               </aside>
             
           
@@ -1336,6 +1319,11 @@
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
                   <p>Order of columns in the thread pane was not persisted correctly</p>
                 </aside>
+                
+                  <aside>
+                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1612055">1612055</a></p>
+                  </aside>
+                
               </aside>
             
           
@@ -1362,6 +1350,11 @@
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
                   <p>URLs in the message header display were not reachable via keyboard</p>
                 </aside>
+                
+                  <aside>
+                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1589863">1589863</a></p>
+                  </aside>
+                
               </aside>
             
           
@@ -1388,6 +1381,11 @@
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
                   <p>Calendar: URLs in the event reminder dialog were not clickable</p>
                 </aside>
+                
+                  <aside>
+                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1644990">1644990</a></p>
+                  </aside>
+                
               </aside>
             
           
@@ -1414,6 +1412,11 @@
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
                   <p>MailExtensions: Extension popup windows opened in a copy of the main window</p>
                 </aside>
+                
+                  <aside>
+                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1644083">1644083</a></p>
+                  </aside>
+                
               </aside>
             
           
@@ -1549,6 +1552,11 @@
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
                   <p>Preference to disable OpenPGP functionality</p>
                 </aside>
+                
+                  <aside>
+                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1645914">1645914</a></p>
+                  </aside>
+                
               </aside>
             
           
@@ -1575,6 +1583,11 @@
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
                   <p>MailExtensions: UI components for browser pages added</p>
                 </aside>
+                
+                  <aside>
+                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1645945">1645945</a></p>
+                  </aside>
+                
               </aside>
             
           
@@ -1609,6 +1622,11 @@
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
                   <p>OpenPGP support did not work on some Linux distributions when using the official builds</p>
                 </aside>
+                
+                  <aside>
+                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1634209">1634209</a></p>
+                  </aside>
+                
               </aside>
             
           
@@ -1635,6 +1653,11 @@
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
                   <p>Thunderbird 78 did not run on Red Hat Linux 7</p>
                 </aside>
+                
+                  <aside>
+                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1643258">1643258</a> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1646993">1646993</a></p>
+                  </aside>
+                
               </aside>
             
           
@@ -1661,6 +1684,11 @@
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
                   <p>Anomalies appeared when inserting an image into the compose window</p>
                 </aside>
+                
+                  <aside>
+                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1636971">1636971</a></p>
+                  </aside>
+                
               </aside>
             
           
@@ -1687,6 +1715,11 @@
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
                   <p>Chat: Copying from chat conversations not working</p>
                 </aside>
+                
+                  <aside>
+                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1611442">1611442</a></p>
+                  </aside>
+                
               </aside>
             
           
@@ -1822,6 +1855,11 @@
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
                   <p>Chat: Direct message support for Matrix</p>
                 </aside>
+                
+                  <aside>
+                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1348064">1348064</a></p>
+                  </aside>
+                
               </aside>
             
           
@@ -1856,6 +1894,11 @@
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
                   <p>OpenPGP improvements</p>
                 </aside>
+                
+                  <aside>
+                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1638645">1638645</a> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1642795">1642795</a> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1646367">1646367</a> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1647671">1647671</a> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1648957">1648957</a> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1648978">1648978</a></p>
+                  </aside>
+                
               </aside>
             
           
@@ -1882,6 +1925,11 @@
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
                   <p>Various look and feel improvements</p>
                 </aside>
+                
+                  <aside>
+                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1647471">1647471</a> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1647479">1647479</a> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1648170">1648170</a></p>
+                  </aside>
+                
               </aside>
             
           
@@ -1916,6 +1964,11 @@
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
                   <p>Addresses added to address book were not inserted into sorted order</p>
                 </aside>
+                
+                  <aside>
+                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1639750">1639750</a></p>
+                  </aside>
+                
               </aside>
             
           
@@ -1942,6 +1995,11 @@
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
                   <p>Address book migration not working under certain circumstances</p>
                 </aside>
+                
+                  <aside>
+                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1647249">1647249</a></p>
+                  </aside>
+                
               </aside>
             
           
@@ -1968,6 +2026,11 @@
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
                   <p>Chat: Own messages not displayed in private chats when server supports "echo-message"</p>
                 </aside>
+                
+                  <aside>
+                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1646049">1646049</a></p>
+                  </aside>
+                
               </aside>
             
           
@@ -1994,6 +2057,11 @@
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
                   <p>MailExtensions: Tab was not defined in browser.menus.onClicked callback on out-of-window messages</p>
                 </aside>
+                
+                  <aside>
+                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1644487">1644487</a></p>
+                  </aside>
+                
               </aside>
             
           
@@ -2020,6 +2088,11 @@
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
                   <p>MailExtensions: Select elements in action popups closed the window unexpectedly</p>
                 </aside>
+                
+                  <aside>
+                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1627197">1627197</a></p>
+                  </aside>
+                
               </aside>
             
           
@@ -2051,6 +2124,11 @@
                 <p>Preferences search not available</p>
                 
               </aside>
+                
+                  <aside>
+                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1573678">1573678</a></p>
+                  </aside>
+                
             </aside>
           
         
@@ -2114,6 +2192,9 @@
           <aside class="ml-0 mr-0 self-start text-center text-green font-semibold">
             
 
+  
+
+
 
 
 
@@ -2128,27 +2209,27 @@
     <h4>Download Thunderbird — English (US)</h4>
     <ul class="list-none p-0 flex flex-wrap max-w-lg justify-center">
       <li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-91.8.1-SSL&os=win64&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-102.6.0-SSL&os=win64&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Windows 64-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-91.8.1-msi-SSL&os=win64&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-102.6.0-msi-SSL&os=win64&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Windows MSI 64-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-91.8.1-SSL&os=osx&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-102.6.0-SSL&os=osx&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             macOS
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-91.8.1-SSL&os=linux64&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-102.6.0-SSL&os=linux64&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Linux 64-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-91.8.1-SSL&os=win&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-102.6.0-SSL&os=win&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Windows 32-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-91.8.1-SSL&os=linux&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-102.6.0-SSL&os=linux&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Linux 32-bit
           </a>
         </li>
@@ -2162,27 +2243,27 @@
     <h4>Download Thunderbird — English (US)</h4>
     <ul class="list-none p-0 flex flex-wrap max-w-lg justify-center">
       <li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-91.8.1-SSL&os=win64&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-102.6.0-SSL&os=win64&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Windows 64-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-91.8.1-msi-SSL&os=win64&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-102.6.0-msi-SSL&os=win64&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Windows MSI 64-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-91.8.1-SSL&os=osx&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-102.6.0-SSL&os=osx&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             macOS
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-91.8.1-SSL&os=linux64&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-102.6.0-SSL&os=linux64&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Linux 64-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-91.8.1-SSL&os=win&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-102.6.0-SSL&os=win&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Windows 32-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-91.8.1-SSL&os=linux&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-102.6.0-SSL&os=linux&lang=en-US" class="download-link btn-download" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Linux 32-bit
           </a>
         </li>
@@ -2191,7 +2272,7 @@
 
   </div>
   <p class="unsupported-download p-links">
-    Your system doesn't meet the <a href="/en-US/thunderbird/91.8.1/system-requirements/">requirements</a> to run Thunderbird.
+    Your system doesn't meet the <a href="/en-US/thunderbird/102.6.0/system-requirements/">requirements</a> to run Thunderbird.
   </p>
   <p class="linux-arm-download mb-8 p-links">
     Please follow <a href="https://support.mozilla.org/kb/installing-thunderbird-linux">these instructions</a> to install Thunderbird.
@@ -2200,7 +2281,7 @@
     
       <li class="os_win64 ml-3 mr-3">
         <a class="download-link btn-download"
-          href="https://download.mozilla.org/?product=thunderbird-91.8.1-SSL&os=win64&lang=en-US"
+          href="https://download.mozilla.org/?product=thunderbird-102.6.0-SSL&os=win64&lang=en-US"
           data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
           >
           
@@ -2211,7 +2292,7 @@
     
       <li class="os_msi ml-3 mr-3">
         <a class="download-link btn-download"
-          href="https://download.mozilla.org/?product=thunderbird-91.8.1-msi-SSL&os=win64&lang=en-US"
+          href="https://download.mozilla.org/?product=thunderbird-102.6.0-msi-SSL&os=win64&lang=en-US"
           data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
           >
           
@@ -2222,7 +2303,7 @@
     
       <li class="os_osx ml-3 mr-3">
         <a class="download-link btn-download"
-          href="https://download.mozilla.org/?product=thunderbird-91.8.1-SSL&os=osx&lang=en-US"
+          href="https://download.mozilla.org/?product=thunderbird-102.6.0-SSL&os=osx&lang=en-US"
           data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
           >
           
@@ -2233,7 +2314,7 @@
     
       <li class="os_linux64 ml-3 mr-3">
         <a class="download-link btn-download"
-          href="https://download.mozilla.org/?product=thunderbird-91.8.1-SSL&os=linux64&lang=en-US"
+          href="https://download.mozilla.org/?product=thunderbird-102.6.0-SSL&os=linux64&lang=en-US"
           data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
           >
           
@@ -2244,7 +2325,7 @@
     
       <li class="os_win ml-3 mr-3">
         <a class="download-link btn-download"
-          href="https://download.mozilla.org/?product=thunderbird-91.8.1-SSL&os=win&lang=en-US"
+          href="https://download.mozilla.org/?product=thunderbird-102.6.0-SSL&os=win&lang=en-US"
           data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
           >
           
@@ -2255,7 +2336,7 @@
     
       <li class="os_linux ml-3 mr-3">
         <a class="download-link btn-download"
-          href="https://download.mozilla.org/?product=thunderbird-91.8.1-SSL&os=linux&lang=en-US"
+          href="https://download.mozilla.org/?product=thunderbird-102.6.0-SSL&os=linux&lang=en-US"
           data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
           >
           
@@ -2268,7 +2349,7 @@
   <p class="download-other download-other-desktop os_android os_ios os_linux os_linux64 os_osx os_win os_win64 os_winsha1 font-sm mt-0">
     
       <a href="/en-US/thunderbird/all/" class="small-link ">Systems &amp; Languages</a> &bull;
-      <a href="/en-US/thunderbird/91.8.1/releasenotes/" class="small-link ">What’s New</a> &bull;
+      <a href="/en-US/thunderbird/102.6.0/releasenotes/" class="small-link ">What’s New</a> &bull;
     
     <a href="https://www.mozilla.org/privacy/thunderbird/" class="small-link ">Privacy</a>
   </p>
@@ -2289,6 +2370,9 @@
           <aside class="ml-0 mr-0 self-start text-left text-blue font-semibold">
             
 
+  
+
+
 
 
 
@@ -2303,27 +2387,27 @@
     <h4>Download Thunderbird — English (US)</h4>
     <ul class="list-none p-0 flex flex-wrap max-w-lg self-start">
       <li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-100.0b4-SSL&os=win64&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-108.0b3-SSL&os=win64&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Windows 64-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-100.0b4-msi-SSL&os=win64&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-108.0b3-msi-SSL&os=win64&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Windows MSI 64-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-100.0b4-SSL&os=osx&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-108.0b3-SSL&os=osx&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             macOS
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-100.0b4-SSL&os=linux64&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-108.0b3-SSL&os=linux64&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Linux 64-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-100.0b4-SSL&os=win&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-108.0b3-SSL&os=win&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Windows 32-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-100.0b4-SSL&os=linux&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-108.0b3-SSL&os=linux&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Linux 32-bit
           </a>
         </li>
@@ -2337,27 +2421,27 @@
     <h4>Download Thunderbird — English (US)</h4>
     <ul class="list-none p-0 flex flex-wrap max-w-lg self-start">
       <li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-100.0b4-SSL&os=win64&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-108.0b3-SSL&os=win64&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Windows 64-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-100.0b4-msi-SSL&os=win64&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-108.0b3-msi-SSL&os=win64&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Windows MSI 64-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-100.0b4-SSL&os=osx&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-108.0b3-SSL&os=osx&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             macOS
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-100.0b4-SSL&os=linux64&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-108.0b3-SSL&os=linux64&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Linux 64-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-100.0b4-SSL&os=win&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-108.0b3-SSL&os=win&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Windows 32-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-100.0b4-SSL&os=linux&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-108.0b3-SSL&os=linux&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Linux 32-bit
           </a>
         </li>
@@ -2366,7 +2450,7 @@
 
   </div>
   <p class="unsupported-download p-links">
-    Your system doesn't meet the <a href="/en-US/thunderbird/100.0beta/system-requirements/">requirements</a> to run Thunderbird.
+    Your system doesn't meet the <a href="/en-US/thunderbird/108.0beta/system-requirements/">requirements</a> to run Thunderbird.
   </p>
   <p class="linux-arm-download mb-8 p-links">
     Please follow <a href="https://support.mozilla.org/kb/installing-thunderbird-linux">these instructions</a> to install Thunderbird.
@@ -2375,7 +2459,7 @@
     
       <li class="os_win64 ml-3 mr-3">
         <a class="download-link btn-beta"
-          href="https://download.mozilla.org/?product=thunderbird-100.0b4-SSL&os=win64&lang=en-US"
+          href="https://download.mozilla.org/?product=thunderbird-108.0b3-SSL&os=win64&lang=en-US"
           data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
           >
           
@@ -2386,7 +2470,7 @@
     
       <li class="os_msi ml-3 mr-3">
         <a class="download-link btn-beta"
-          href="https://download.mozilla.org/?product=thunderbird-100.0b4-msi-SSL&os=win64&lang=en-US"
+          href="https://download.mozilla.org/?product=thunderbird-108.0b3-msi-SSL&os=win64&lang=en-US"
           data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
           >
           
@@ -2397,7 +2481,7 @@
     
       <li class="os_osx ml-3 mr-3">
         <a class="download-link btn-beta"
-          href="https://download.mozilla.org/?product=thunderbird-100.0b4-SSL&os=osx&lang=en-US"
+          href="https://download.mozilla.org/?product=thunderbird-108.0b3-SSL&os=osx&lang=en-US"
           data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
           >
           
@@ -2408,7 +2492,7 @@
     
       <li class="os_linux64 ml-3 mr-3">
         <a class="download-link btn-beta"
-          href="https://download.mozilla.org/?product=thunderbird-100.0b4-SSL&os=linux64&lang=en-US"
+          href="https://download.mozilla.org/?product=thunderbird-108.0b3-SSL&os=linux64&lang=en-US"
           data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
           >
           
@@ -2419,7 +2503,7 @@
     
       <li class="os_win ml-3 mr-3">
         <a class="download-link btn-beta"
-          href="https://download.mozilla.org/?product=thunderbird-100.0b4-SSL&os=win&lang=en-US"
+          href="https://download.mozilla.org/?product=thunderbird-108.0b3-SSL&os=win&lang=en-US"
           data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
           >
           
@@ -2430,7 +2514,7 @@
     
       <li class="os_linux ml-3 mr-3">
         <a class="download-link btn-beta"
-          href="https://download.mozilla.org/?product=thunderbird-100.0b4-SSL&os=linux&lang=en-US"
+          href="https://download.mozilla.org/?product=thunderbird-108.0b3-SSL&os=linux&lang=en-US"
           data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
           >
           
@@ -2443,7 +2527,7 @@
   <p class="download-other download-other-desktop os_android os_ios os_linux os_linux64 os_osx os_win os_win64 os_winsha1 font-sm mt-0">
     
       <a href="/en-US/thunderbird/beta/all/" class="small-link  text-blue ">Systems &amp; Languages</a> &bull;
-      <a href="/en-US/thunderbird/100.0beta/releasenotes/" class="small-link  text-blue ">What’s New</a> &bull;
+      <a href="/en-US/thunderbird/108.0beta/releasenotes/" class="small-link  text-blue ">What’s New</a> &bull;
     
     <a href="https://www.mozilla.org/privacy/thunderbird/" class="small-link  text-blue ">Privacy</a>
   </p>
@@ -2470,6 +2554,9 @@
           <aside class="ml-0 mr-0 self-start text-center text-blue font-semibold">
             
 
+  
+
+
 
 
 
@@ -2484,27 +2571,27 @@
     <h4>Download Thunderbird — English (US)</h4>
     <ul class="list-none p-0 flex flex-wrap max-w-lg self-start">
       <li class="ml-3 mr-3">
-          <a href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-101.0a1.en-US.win64.installer.exe" class="download-link btn-daily" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-110.0a1.en-US.win64.installer.exe" class="download-link btn-daily" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Windows 64-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-101.0a1.en-US.win64.installer.exe" class="download-link btn-daily" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-110.0a1.en-US.win64.installer.exe" class="download-link btn-daily" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Windows MSI 64-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-101.0a1.en-US.mac.dmg" class="download-link btn-daily" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-110.0a1.en-US.mac.dmg" class="download-link btn-daily" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             macOS
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-101.0a1.en-US.linux-x86_64.tar.bz2" class="download-link btn-daily" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-110.0a1.en-US.linux-x86_64.tar.bz2" class="download-link btn-daily" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Linux 64-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-101.0a1.en-US.win32.installer.exe" class="download-link btn-daily" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-110.0a1.en-US.win32.installer.exe" class="download-link btn-daily" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Windows 32-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-101.0a1.en-US.linux-i686.tar.bz2" class="download-link btn-daily" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-110.0a1.en-US.linux-i686.tar.bz2" class="download-link btn-daily" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Linux 32-bit
           </a>
         </li>
@@ -2518,27 +2605,27 @@
     <h4>Download Thunderbird — English (US)</h4>
     <ul class="list-none p-0 flex flex-wrap max-w-lg self-start">
       <li class="ml-3 mr-3">
-          <a href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-101.0a1.en-US.win64.installer.exe" class="download-link btn-daily" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-110.0a1.en-US.win64.installer.exe" class="download-link btn-daily" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Windows 64-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-101.0a1.en-US.win64.installer.exe" class="download-link btn-daily" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-110.0a1.en-US.win64.installer.exe" class="download-link btn-daily" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Windows MSI 64-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-101.0a1.en-US.mac.dmg" class="download-link btn-daily" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-110.0a1.en-US.mac.dmg" class="download-link btn-daily" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             macOS
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-101.0a1.en-US.linux-x86_64.tar.bz2" class="download-link btn-daily" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-110.0a1.en-US.linux-x86_64.tar.bz2" class="download-link btn-daily" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Linux 64-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-101.0a1.en-US.win32.installer.exe" class="download-link btn-daily" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-110.0a1.en-US.win32.installer.exe" class="download-link btn-daily" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Windows 32-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-101.0a1.en-US.linux-i686.tar.bz2" class="download-link btn-daily" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-110.0a1.en-US.linux-i686.tar.bz2" class="download-link btn-daily" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Linux 32-bit
           </a>
         </li>
@@ -2547,7 +2634,7 @@
 
   </div>
   <p class="unsupported-download p-links">
-    Your system doesn't meet the <a href="/en-US/thunderbird/101.0a1/system-requirements/">requirements</a> to run Thunderbird.
+    Your system doesn't meet the <a href="/en-US/thunderbird/110.0a1/system-requirements/">requirements</a> to run Thunderbird.
   </p>
   <p class="linux-arm-download mb-8 p-links">
     Please follow <a href="https://support.mozilla.org/kb/installing-thunderbird-linux">these instructions</a> to install Thunderbird.
@@ -2556,7 +2643,7 @@
     
       <li class="os_win64 ml-3 mr-3">
         <a class="download-link btn-daily"
-          href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-101.0a1.en-US.win64.installer.exe"
+          href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-110.0a1.en-US.win64.installer.exe"
           data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
           >
           
@@ -2567,7 +2654,7 @@
     
       <li class="os_msi ml-3 mr-3">
         <a class="download-link btn-daily"
-          href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-101.0a1.en-US.win64.installer.exe"
+          href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-110.0a1.en-US.win64.installer.exe"
           data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
           >
           
@@ -2578,7 +2665,7 @@
     
       <li class="os_osx ml-3 mr-3">
         <a class="download-link btn-daily"
-          href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-101.0a1.en-US.mac.dmg"
+          href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-110.0a1.en-US.mac.dmg"
           data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
           >
           
@@ -2589,7 +2676,7 @@
     
       <li class="os_linux64 ml-3 mr-3">
         <a class="download-link btn-daily"
-          href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-101.0a1.en-US.linux-x86_64.tar.bz2"
+          href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-110.0a1.en-US.linux-x86_64.tar.bz2"
           data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
           >
           
@@ -2600,7 +2687,7 @@
     
       <li class="os_win ml-3 mr-3">
         <a class="download-link btn-daily"
-          href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-101.0a1.en-US.win32.installer.exe"
+          href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-110.0a1.en-US.win32.installer.exe"
           data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
           >
           
@@ -2611,7 +2698,7 @@
     
       <li class="os_linux ml-3 mr-3">
         <a class="download-link btn-daily"
-          href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-101.0a1.en-US.linux-i686.tar.bz2"
+          href="https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/thunderbird-110.0a1.en-US.linux-i686.tar.bz2"
           data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
           >
           
@@ -2644,7 +2731,7 @@
 
     
         <footer id="colophon" class="bg-black-light text-white flex flex-col pt-10 pb-8 pl-4 pr-4">
-  <section class="flex flex-col lg:flex-row justify-between items-center self-center w-full max-w-6xl">
+  <section class="flex flex-col lg:flex-col justify-between items-center self-center w-full max-w-6xl">
     <aside class="flex flex-col items-center lg:items-start">
       <a href="/en-US/" class="block w-40" title="Thunderbird"
         alt="Thunderbird Vector Wordmark">
@@ -2824,9 +2911,9 @@
         </ul>
       </nav>
     </aside>
-    <aside class="flex flex-1 flex-col text-right">
-      <ul class="list-none p-0 flex justify-end">
-        <li class="mr-4">
+    <aside class="flex flex-col items-center">
+      <ul class="list-none p-0 flex flex-wrap items-center justify-around">
+        <li class="m-1">
           <a class="social-link font-semibold" title="Follow @mozthunderbird on Twitter"
             href="https://twitter.com/mozthunderbird" data-link-type="footer" data-link-name="Twitter (Thunderbird)">
             <span><svg viewBox="0 0 11 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -2838,7 +2925,7 @@
             @mozthunderbird
           </a>
         </li>
-        <li>
+        <li class="m-1">
           <a class="social-link font-semibold" href="https://www.facebook.com/Thunderbird/" data-link-type="footer"
             data-link-name="Facebook (Thunderbird)">
             <span><svg viewBox="0 0 6 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -2848,6 +2935,100 @@
 </svg>
 </span>
             Thunderbird
+          </a>
+        </li>
+        <li class="m-1">
+          <a class="social-link font-semibold" title="Follow @thunderbird3665 on YouTube"
+            href="https://www.youtube.com/channel/UCuMTCmnwZPiXXVIy_TW6Bnw" data-link-type="footer" data-link-name="YouTube (Thunderbird)" rel="me">
+            <span><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg2"
+   width="32"
+   height="22.545456"
+   viewBox="0 0 32 22.545456"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs6">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath18">
+      <path
+         d="M 0,192 H 192 V 0 H 0 Z"
+         id="path16" />
+    </clipPath>
+  </defs>
+  <g
+     id="g10"
+     transform="matrix(0.18181818,0,0,-0.18181818,-1.4545454,28.727291)">
+    <g
+       id="g12">
+      <g
+         id="g14"
+         clip-path="url(#clipPath18)">
+        <g
+           id="g20"
+           fill="currentColor"
+           transform="translate(78,69.8311)">
+          <path
+             d="M 0,0 V 52.338 L 46,26.168 Z M 102.322,68.806 C 100.298,76.428 94.334,82.43 86.762,84.467 73.037,88.169 18,88.169 18,88.169 c 0,0 -55.037,0 -68.762,-3.702 C -58.334,82.43 -64.298,76.428 -66.322,68.806 -70,54.992 -70,26.169 -70,26.169 c 0,0 0,-28.822 3.678,-42.637 2.024,-7.622 7.988,-13.624 15.56,-15.662 13.725,-3.701 68.762,-3.701 68.762,-3.701 0,0 55.037,0 68.762,3.701 7.572,2.038 13.536,8.04 15.56,15.662 C 106,-2.653 106,26.169 106,26.169 c 0,0 0,28.823 -3.678,42.637"
+             style="fill:currentColor;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path22" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
+</span>
+            Thunderbird
+          </a>
+        </li>
+        <li class="m-1">
+          <a class="social-link font-semibold" title="Follow thunderbird-email on LinkedIn"
+            href="https://www.linkedin.com/company/thunderbird-email/" data-link-type="footer" data-link-name="LinkedIn (Thunderbird)" rel="me">
+            <span><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="Group_1282"
+   data-name="Group 1282"
+   width="32"
+   height="31.998905"
+   viewBox="0 0 32 31.998907"
+   version="1.1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs8" />
+  <path
+     id="Path_2520"
+     data-name="Path 2520"
+     d="m 27.265515,27.265225 h -4.741399 v -7.425229 c 0,-1.770616 -0.03161,-4.049945 -2.466022,-4.049945 -2.469478,0 -2.847309,1.929157 -2.847309,3.921038 v 7.553642 H 12.469386 V 11.99545 h 4.551743 v 2.086709 h 0.06371 a 4.9883471,4.9883471 0 0 1 4.490994,-2.466515 c 4.805606,0 5.691655,3.160933 5.691655,7.273109 z M 7.1195073,9.9082463 A 2.7514933,2.7514933 0 1 1 9.8705067,7.1562591 2.7514933,2.7514933 0 0 1 7.1195073,9.9082463 M 9.490207,27.265225 H 4.7438687 V 11.99545 H 9.490207 Z M 29.6293,0.00217907 H 2.3613156 A 2.3351391,2.3351391 0 0 0 0,2.3086723 V 29.689759 a 2.3366208,2.3366208 0 0 0 2.3613156,2.308963 H 29.6293 A 2.3415598,2.3415598 0 0 0 32,29.689759 V 2.3066967 A 2.3400781,2.3400781 0 0 0 29.6293,2.0349351e-4"
+     style="fill:currentColor;stroke-width:0.493896" />
+</svg>
+</span>
+            Thunderbird
+          </a>
+        </li>
+        <li class="m-1">
+          <a class="social-link font-semibold" title="Follow @thunderbird@mastodon.online on Mastodon"
+            href="https://mastodon.online/@thunderbird" data-link-type="footer" data-link-name="Mastodon (Thunderbird)" rel="me">
+            <span><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   height="12"
+   width="11.193398"
+   id="svg3"
+   version="1.1"
+   viewBox="0 0 11.193399 12">
+  <path
+     style="fill:currentColor;fill-rule:evenodd"
+     d="m 5.5790063,0 c -1.534141,0.0125 -3.0098524,0.17863 -3.8698611,0.57359 0,0 -1.70561599,0.76301 -1.70561599,3.36618 0,0.5961 -0.01160514,1.30889 0.00727341,2.06474 0.06193718,2.54576 0.46672702,5.05472 2.82046908,5.67771 1.0852583,0.28725 2.0170112,0.34734 2.7674335,0.30609 1.3608723,-0.0754 2.1248476,-0.4856 2.1248476,-0.4856 l -0.044954,-0.98737 c 0,0 -0.9724634,0.30659 -2.0646395,0.26922 C 4.5318688,10.74746 3.3895546,10.66792 3.21454,9.33937 3.198377,9.22267 3.190295,9.09786 3.190295,8.96681 c 0,0 1.0622137,0.25967 2.4084096,0.32134 C 6.4218613,9.32595 7.193777,9.23985 7.9778189,9.14632 9.4813795,8.96678 10.79053,8.04041 10.95507,7.19391 11.214327,5.86046 11.192972,3.93977 11.192972,3.93977 11.192972,1.3366 9.4874568,0.57359 9.4874568,0.57359 8.6275128,0.17863 7.1508275,0.01254 5.6166863,0 Z M 3.8427816,2.03403 c 0.6390261,0 1.1228982,0.24565 1.4428639,0.73694 L 5.596685,3.29233 5.9078258,2.77097 c 0.319901,-0.49129 0.8037728,-0.73694 1.4428636,-0.73694 0.5522624,0 0.9972822,0.19415 1.3370962,0.57288 0.3294049,0.37874 0.4933804,0.8906 0.4933804,1.5348 V 7.29372 H 7.9323605 V 4.23444 c 0,-0.64491 -0.271258,-0.97231 -0.8140164,-0.97231 -0.6001053,0 -0.9008935,0.38835 -0.9008935,1.15617 V 6.0928 H 4.9760202 V 4.4183 c 0,-0.76782 -0.3007881,-1.15617 -0.9008934,-1.15617 -0.5427584,0 -0.8141175,0.3274 -0.8141175,0.97231 V 7.29372 H 2.0122042 V 4.14171 c 0,-0.6442 0.1640115,-1.15606 0.4934811,-1.5348 C 2.8454347,2.22818 3.2904545,2.03403 3.8427816,2.03403 Z"
+     id="path2" />
+</svg>
+</span>
+            @thunderbird@mastodon.online
           </a>
         </li>
       </ul>
@@ -3119,7 +3300,14 @@
     
       <script type="text/javascript" src="/media/js/site-bundle.js" charset="utf-8"></script>
       <script type="text/javascript" src="/media/js/common-bundle.js" charset="utf-8"></script>
-      <script type="text/javascript" src="https://js.braintreegateway.com/web/dropin/1.32.1/js/dropin.min.js" charset="utf-8"></script>
+      
+      <script>(function(w,d,s,n,a){if(!w[n]){var l='call,catch,on,once,set,then,track'
+      .split(','),i,o=function(n){return'function'==typeof n?o.l.push([arguments])&&o
+      :function(){return o.l.push([n,arguments])&&o}},t=d.getElementsByTagName(s)[0],
+      j=d.createElement(s);j.async=!0;j.src='https://cdn.fundraiseup.com/widget/'+a;
+      t.parentNode.insertBefore(j,t);o.s=Date.now();o.v=4;o.h=w.location.href;o.l=[];
+      for(i=0;i<7;i++)o[l[i]]=o(l[i]);w[n]=o}
+      })(window,document,'script','FundraiseUp','ADGJGYAN');</script>
     
     
       <script type="text/javascript" src="/media/js/piwik.js" async defer></script>
