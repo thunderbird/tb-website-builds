@@ -1179,15 +1179,6 @@ body {
   top: 0;
   bottom: 0;
 }
-.z-10 {
-  z-index: 10;
-}
-.z-20 {
-  z-index: 20;
-}
-.z-30 {
-  z-index: 30;
-}
 .w-auto {
   width: auto;
 }
@@ -1355,10 +1346,6 @@ body {
 .h-6,
 .header-section span {
   height: 1.5rem;
-}
-.h-10,
-.modal form .amount-selection label {
-  height: 2.5rem;
 }
 .h-auto {
   height: auto;
@@ -6109,9 +6096,15 @@ button {
 .windows.sha-1 .download-button .os_winsha1 {
   display: block !important;
 }
+.no-hover:hover,
+.no-hover:focus {
+  box-shadow: unset;
+  transform: unset;
+}
 .modal {
   top: 50%;
   transform: translateY(-50%);
+  z-index: 1;
 }
 .modal #close-modal {
   cursor: pointer;
@@ -6134,6 +6127,11 @@ button {
 }
 .modal footer ul > li:not(:last-child)::after {
   content: '•';
+}
+.fundraiseup-button {
+  /* Ensure that it doesn't pop-in. */
+  min-width: 225px;
+  min-height: 57px;
 }
 .appearance-none,
 .btn-inline,
