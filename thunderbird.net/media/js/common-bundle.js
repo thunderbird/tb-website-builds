@@ -1736,25 +1736,64 @@ if (typeof Mozilla === 'undefined') {
 
     var Donation = {};
     Donation.ANIMATION_DURATION = 250;
+    /**
+     * Is the download form visible?
+     * @type {boolean}
+     */
+    Donation.IsVisible = false;
+    /**
+     * Stateful download link to be retrieved by the FRU on.checkoutOpen event
+     * @type {?string}
+     */
+    Donation.CurrentDownloadLink = null;
+
+    /**
+     * Display FRUs donation form
+     * @param utmContent {?string}
+     * @param utmSource {?string}
+     * @param utmMedium {?string}
+     * @param utmCampaign {?string}
+     */
+    Donation.Donate = function(utmContent = null, utmSource = 'thunderbird.net', utmMedium = 'referral', utmCampaign = null) {
+        let params = {
+            'form': 'support',
+            'utm_content': utmContent,
+            'utm_source': utmSource,
+            'utm_medium': utmMedium,
+            'utm_campaign': utmCampaign
+        };
+        // Filter nulls from the object (this mutates)
+        Object.keys(params).forEach((k) => params[k] == null && delete params[k]);
+
+        params = new URLSearchParams(params);
+
+        // Display the FRU form
+        location.href = `?${params.toString()}`;
+    }
 
     /**
      * Close the donation form
+     * This will clear any currently set download link.
      */
     Donation.CloseForm = function() {
         $('#amount-modal').fadeOut(Donation.ANIMATION_DURATION);
         $('#modal-overlay').fadeOut(Donation.ANIMATION_DURATION);
         $(document.body).removeClass('overflow-hidden');
+        Donation.IsVisible = false;
+        Donation.CurrentDownloadLink = null;
     }
 
     /**
-     * Display the donation modal for fundraise up
+     * Display the donation download modal for fundraise up
      * @param download_url - Link to the actual file download
      */
-    Donation.DisplayAmountForm = function(download_url) {
+    Donation.DisplayDownloadForm = function(download_url) {
         // Show the donation form.
         $('#amount-modal').fadeIn(Donation.ANIMATION_DURATION);
         $('#modal-overlay').fadeIn(Donation.ANIMATION_DURATION);
         $(document.body).addClass('overflow-hidden');
+        Donation.IsVisible = true;
+        Donation.CurrentDownloadLink = download_url;
 
         // Define cancel and close button on the donation form.
         $('#amount-cancel').click(function(e) {
@@ -1800,12 +1839,24 @@ if (typeof Mozilla === 'undefined') {
             const fundraiseUp = window.FundraiseUp;
             // Close our modal on open
             fundraiseUp.on('checkoutOpen', function() {
+                // Don't start the download if we didn't come from the donation download modal
+                if (!Donation.IsVisible) {
+                    return;
+                }
+
+                // Retrieve the current download link before we close the form (as that clears it)
+                const download_link = Donation.CurrentDownloadLink;
                 Donation.CloseForm();
+
+                // No download link? Exit.
+                if (!download_link) {
+                    return;
+                }
 
                 // Timeout is here to prevent url collisions with fundraiseup form.
                 window.setTimeout(function() {
-                    location.href = download_url;
-                },1000);
+                    location.href = download_link;
+                }, 1000);
             });
         }
     };
@@ -1863,7 +1914,7 @@ if (typeof Mozilla === 'undefined') {
      * @private
      */
     ABTest._FundraiseUpDownload = function(download_url) {
-        window.Mozilla.Donation.DisplayAmountForm(download_url);
+        window.Mozilla.Donation.DisplayDownloadForm(download_url);
     }
 
     /**
@@ -1903,9 +1954,46 @@ if (typeof Mozilla === 'undefined') {
         }
     }
 
-    // Note: Intentionally uncommented for testing.
-    // Pick one!
-    //ABTest.Choose();
+    /**
+     * If FRU prevent the link redirect, and call up the donation form.
+     * @param event : Event
+     */
+    ABTest.Donate = function(event) {
+        if (ABTest.IsInFundraiseUpBucket()) {
+            const element = event.target;
+            // If we somehow don't have an element, we can exit and still start any redirects.
+            if (!element) {
+                return;
+            }
+
+            event.preventDefault();
+
+            // Falsey fallback check to transform '' => null
+            const utmContent = element.getAttribute('data-donate-content') || null;
+            const utmSource = element.getAttribute('data-donate-source') || 'thunderbird.net';
+            const utmMedium = element.getAttribute('data-donate-medium') || 'referral';
+            const utmCampaign = element.getAttribute('data-donate-campaign') || null;
+
+            window.Mozilla.Donation.Donate(utmContent, utmSource, utmMedium, utmCampaign);
+        }
+    }
+
+    /**
+     * Any required initializations for our ABTest should go here
+     * Called after ABTest is added to the Mozilla namespace.
+     */
+    ABTest.Init = function() {
+        // Note: Intentionally uncommented for testing.
+        // Pick one!
+        //ABTest.Choose();
+
+        const donate_buttons = document.querySelectorAll('[data-donate-btn]');
+        for (const donate_button of donate_buttons) {
+            donate_button.addEventListener('click', ABTest.Donate);
+        }
+    }
 
     window.Mozilla.ABTest = ABTest;
+
+    ABTest.Init();
 })();
