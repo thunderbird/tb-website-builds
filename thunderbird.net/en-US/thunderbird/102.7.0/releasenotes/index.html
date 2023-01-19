@@ -310,10 +310,6 @@
       
     
       
-        
-      
-    
-      
     
     <nav role="directory" class="text-center text-white flex justify-center max-w-6xl mx-auto bg-black-25 rounded mb-10">
       <ul class="list-none p-0 flex flex-wrap justify-around flex-1 m-0">
@@ -355,8 +351,10 @@
         Check out the notes below for this version of Thunderbird. As always, you’re encouraged to <a href="https://support.mozilla.org/questions/new/thunderbird">tell us what you think</a>, or <a href="https://bugzilla.mozilla.org/">file a bug in Bugzilla</a>
       </p>
       <aside class="font-lg tracking-wider leading-loose mb-6 markup-page">
-        <p><strong>The rollout of Thunderbird 102.7.0 is on hold pending a fix for a critical OAuth issue.</strong>
-<em><a href="https://blog.thunderbird.net/2023/01/important-message-for-microsoft-office-365-enterprise-users/">Blog post - updated 2023-Jan-19</a></em></p>
+        <p><strong style="color: #ba160c">Thunderbird 102.7.0 will not automatically update due to a critical authentication
+issue with Microsoft 365 Business accounts. Affected users should not update until Thunderbird 102.7.1 is
+released with a fix. See <a href="#known-issues">Known Issues</a> below.</strong> Opening the "About Mozilla Thunderbird" dialog will
+allow an update to 102.7.0.</p>
 <p><strong>For more on all the new features in Thunderbird 102, see
 <a href="https://www.thunderbird.net/thunderbird/102.0/whatsnew/">What’s New in Thunderbird 102</a>.</strong></p>
 <p><strong>System Requirements:</strong> <a href="/en-US/thunderbird/102.0/system-requirements/">Details</a></p>
@@ -447,8 +445,7 @@
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p><strong>Microsoft hosted email users may have re-authenticate with OAuth2; Admin approval may be required
-depending on local policies.</strong></p>
+                  <p>Localized builds and langpacks now use "comm-l10n" repository; downstream builds using official langpacks should not need to make changes</p>
                 </aside>
                 
               </aside>
@@ -475,7 +472,7 @@ depending on local policies.</strong></p>
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Localized builds and langpacks now use "comm-l10n" repository; downstream builds using official langpacks should not need to make changes</p>
+                  <p>Having too many folders open at startup caused loss of MSF files</p>
                 </aside>
                 
               </aside>
@@ -502,7 +499,7 @@ depending on local policies.</strong></p>
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Having too many folders open at startup caused loss of MSF files</p>
+                  <p>Copying an email from one local folder to another local folder sometimes caused "Another Operation is using the folder" error on Windows 7</p>
                 </aside>
                 
               </aside>
@@ -529,7 +526,7 @@ depending on local policies.</strong></p>
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Copying an email from one local folder to another local folder sometimes caused "Another Operation is using the folder" error on Windows 7</p>
+                  <p>Email address pill allowed for incorrectly formatted email addresses</p>
                 </aside>
                 
               </aside>
@@ -556,7 +553,7 @@ depending on local policies.</strong></p>
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Email address pill allowed for incorrectly formatted email addresses</p>
+                  <p>Creating security exceptions for messages sent using a self-signed certificate failed if hostname contained uppercase letters</p>
                 </aside>
                 
               </aside>
@@ -583,7 +580,7 @@ depending on local policies.</strong></p>
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Creating security exceptions for messages sent using a self-signed certificate failed if hostname contained uppercase letters</p>
+                  <p>S/MIME certificate verification was prohibitively slow</p>
                 </aside>
                 
               </aside>
@@ -610,7 +607,7 @@ depending on local policies.</strong></p>
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>S/MIME certificate verification was prohibitively slow</p>
+                  <p>OpenPGP key import failed for key blocks with comments that contain Unicode characters</p>
                 </aside>
                 
               </aside>
@@ -637,7 +634,7 @@ depending on local policies.</strong></p>
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>OpenPGP key import failed for key blocks with comments that contain Unicode characters</p>
+                  <p>Chat conversation sidebar was too wide under certain circumstances, making scrollbar unusable</p>
                 </aside>
                 
               </aside>
@@ -664,33 +661,6 @@ depending on local policies.</strong></p>
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Chat conversation sidebar was too wide under certain circumstances, making scrollbar unusable</p>
-                </aside>
-                
-              </aside>
-            
-          
-            
-              
-
-              
-              
-
-              <aside id="note-10"
-                class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
-                <h4 class="font-bold uppercase m-0 p-3 w-24">
-                  
-                    <aside class="flex items-center text-green">
-                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
-   - License, v. 2.0. If a copy of the MPL was not distributed with this
-   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
-</span>
-                      fixed
-                    </aside>
-                  
-                </h4>
-                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
                   <p>On Mac, deleting events from Today Pane with "Backspace" key deleted selected messages instead</p>
                 </aside>
                 
@@ -703,7 +673,7 @@ depending on local policies.</strong></p>
               
               
 
-              <aside id="note-11"
+              <aside id="note-10"
                 class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
                 <h4 class="font-bold uppercase m-0 p-3 w-24">
                   
@@ -749,7 +719,9 @@ depending on local policies.</strong></p>
                 </aside>
               </h4>
               <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                <p>OAuth2 authentication not working for Microsoft 365 Enterprise accounts</p>
+                <p>OAuth2 authentication not working for Microsoft 365 Enterprise accounts. See the
+<a href="https://blog.thunderbird.net/2023/01/important-message-for-microsoft-office-365-enterprise-users/">Blog post</a> for
+additional information. <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1810760">Bug 1810760</a></p>
                 
               </aside>
                 
@@ -1011,27 +983,27 @@ depending on local policies.</strong></p>
     <h4>Download Thunderbird — English (US)</h4>
     <ul class="list-none p-0 flex flex-wrap max-w-lg self-start">
       <li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-109.0b4-SSL&os=win64&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-110.0b1-SSL&os=win64&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Windows 64-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-109.0b4-msi-SSL&os=win64&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-110.0b1-msi-SSL&os=win64&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Windows MSI 64-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-109.0b4-SSL&os=osx&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-110.0b1-SSL&os=osx&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             macOS
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-109.0b4-SSL&os=linux64&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-110.0b1-SSL&os=linux64&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Linux 64-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-109.0b4-SSL&os=win&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-110.0b1-SSL&os=win&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Windows 32-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-109.0b4-SSL&os=linux&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-110.0b1-SSL&os=linux&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Linux 32-bit
           </a>
         </li>
@@ -1045,27 +1017,27 @@ depending on local policies.</strong></p>
     <h4>Download Thunderbird — English (US)</h4>
     <ul class="list-none p-0 flex flex-wrap max-w-lg self-start">
       <li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-109.0b4-SSL&os=win64&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-110.0b1-SSL&os=win64&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Windows 64-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-109.0b4-msi-SSL&os=win64&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-110.0b1-msi-SSL&os=win64&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Windows MSI 64-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-109.0b4-SSL&os=osx&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-110.0b1-SSL&os=osx&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             macOS
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-109.0b4-SSL&os=linux64&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-110.0b1-SSL&os=linux64&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Linux 64-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-109.0b4-SSL&os=win&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-110.0b1-SSL&os=win&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Windows 32-bit
           </a>
         </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-109.0b4-SSL&os=linux&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
+          <a href="https://download.mozilla.org/?product=thunderbird-110.0b1-SSL&os=linux&lang=en-US" class="download-link btn-beta" data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true">
             Linux 32-bit
           </a>
         </li>
@@ -1074,7 +1046,7 @@ depending on local policies.</strong></p>
 
   </div>
   <p class="unsupported-download p-links">
-    Your system doesn't meet the <a href="/en-US/thunderbird/109.0beta/system-requirements/">requirements</a> to run Thunderbird.
+    Your system doesn't meet the <a href="/en-US/thunderbird/110.0beta/system-requirements/">requirements</a> to run Thunderbird.
   </p>
   <p class="linux-arm-download mb-8 p-links">
     Please follow <a href="https://support.mozilla.org/kb/installing-thunderbird-linux">these instructions</a> to install Thunderbird.
@@ -1083,7 +1055,7 @@ depending on local policies.</strong></p>
     
       <li class="os_win64 ml-3 mr-3">
         <a class="download-link btn-beta"
-          href="https://download.mozilla.org/?product=thunderbird-109.0b4-SSL&os=win64&lang=en-US"
+          href="https://download.mozilla.org/?product=thunderbird-110.0b1-SSL&os=win64&lang=en-US"
           data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
           >
           
@@ -1094,7 +1066,7 @@ depending on local policies.</strong></p>
     
       <li class="os_msi ml-3 mr-3">
         <a class="download-link btn-beta"
-          href="https://download.mozilla.org/?product=thunderbird-109.0b4-msi-SSL&os=win64&lang=en-US"
+          href="https://download.mozilla.org/?product=thunderbird-110.0b1-msi-SSL&os=win64&lang=en-US"
           data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
           >
           
@@ -1105,7 +1077,7 @@ depending on local policies.</strong></p>
     
       <li class="os_osx ml-3 mr-3">
         <a class="download-link btn-beta"
-          href="https://download.mozilla.org/?product=thunderbird-109.0b4-SSL&os=osx&lang=en-US"
+          href="https://download.mozilla.org/?product=thunderbird-110.0b1-SSL&os=osx&lang=en-US"
           data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
           >
           
@@ -1116,7 +1088,7 @@ depending on local policies.</strong></p>
     
       <li class="os_linux64 ml-3 mr-3">
         <a class="download-link btn-beta"
-          href="https://download.mozilla.org/?product=thunderbird-109.0b4-SSL&os=linux64&lang=en-US"
+          href="https://download.mozilla.org/?product=thunderbird-110.0b1-SSL&os=linux64&lang=en-US"
           data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
           >
           
@@ -1127,7 +1099,7 @@ depending on local policies.</strong></p>
     
       <li class="os_win ml-3 mr-3">
         <a class="download-link btn-beta"
-          href="https://download.mozilla.org/?product=thunderbird-109.0b4-SSL&os=win&lang=en-US"
+          href="https://download.mozilla.org/?product=thunderbird-110.0b1-SSL&os=win&lang=en-US"
           data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
           >
           
@@ -1138,7 +1110,7 @@ depending on local policies.</strong></p>
     
       <li class="os_linux ml-3 mr-3">
         <a class="download-link btn-beta"
-          href="https://download.mozilla.org/?product=thunderbird-109.0b4-SSL&os=linux&lang=en-US"
+          href="https://download.mozilla.org/?product=thunderbird-110.0b1-SSL&os=linux&lang=en-US"
           data-donate-link="https://give.thunderbird.net/?utm_source=thunderbird.net&utm_medium=referral&utm_content=post_download&tbdownload=true"
           >
           
@@ -1151,7 +1123,7 @@ depending on local policies.</strong></p>
   <p class="download-other download-other-desktop os_android os_ios os_linux os_linux64 os_osx os_win os_win64 os_winsha1 font-sm mt-0">
     
       <a href="/en-US/thunderbird/beta/all/" class="small-link  text-blue ">Systems &amp; Languages</a> &bull;
-      <a href="/en-US/thunderbird/109.0beta/releasenotes/" class="small-link  text-blue ">What’s New</a> &bull;
+      <a href="/en-US/thunderbird/110.0beta/releasenotes/" class="small-link  text-blue ">What’s New</a> &bull;
     
     <a href="https://www.mozilla.org/privacy/thunderbird/" class="small-link  text-blue ">Privacy</a>
   </p>
