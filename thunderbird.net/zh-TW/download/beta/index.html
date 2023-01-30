@@ -308,12 +308,23 @@
     <section class="font-lg pt-0 pl-6 pb-4 pr-6 leading-normal text-center">
       <p>Thunderbird 是一套由捐款所維持運作的獨立、自由且開放原始碼的軟體。請幫助我們維持專案運作！</p>
     </section>
-    <section id="donate-buttons" class="flex justify-center mt-6 mb-6">
-      <span class="fundraiseup-button">
-        <a href="#XSHRMXJE" style="display: none"></a>
-      </span>
-      <button class="btn-body btn-secondary no-hover" id="amount-cancel">
-        不用了，直接下載！
+    <section id="donate-buttons" class="flex justify-center mt-6 mb-6 mx-auto">
+      <a href="#" class="btn-donate-and-download" id="amount-submit" data-donate-content="download">
+        <span class="donate-heart">
+          <svg viewBox="0 0 14 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="UI" stroke="none" stroke-width="1" fill="currentColor" fill-rule="evenodd">
+        <path d="M7.00000834,12.0000012 C6.8750082,12.0000012 6.75000805,11.9531261 6.65625793,11.859376 L1.78125212,7.15624542 C1.71875205,7.10155785 0,5.53124348 0,3.65624125 C0,1.36717602 1.39843917,-1.31130219e-05 3.73437945,-1.31130219e-05 C5.10156858,-1.31130219e-05 6.38282011,1.07811317 7.00000834,1.6874889 C7.61719658,1.07811317 8.89844811,-1.31130219e-05 10.2656372,-1.31130219e-05 C12.6015775,-1.31130219e-05 14.0000167,1.36717602 14.0000167,3.65624125 C14.0000167,5.53124348 12.2812646,7.10155785 12.2109521,7.17187044 L7.34375875,11.859376 C7.25000864,11.9531261 7.12500849,12.0000012 7.00000834,12.0000012 Z"></path>
+    </g>
+</svg>
+
+          <span class="donate-wave">
+          <!-- o/ -->
+          </span>
+        </span>
+        <p>Donate & Download</p>
+      </a>
+      <a href="#" class="btn-body btn-secondary" id="amount-cancel">
+        <p>不用了，直接下載！</p>
         <span>
           <svg viewBox="0 0 7 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <g id="UI" stroke="none" stroke-width="1" fill="currentColor" fill-rule="evenodd">
@@ -321,7 +332,7 @@
             </g>
           </svg>
         </span>
-      </button>
+      </a>
     </section>
   </form>
   <footer class="w-4/5 mx-auto border-0 border-t border-solid border-grey-light p-6">
