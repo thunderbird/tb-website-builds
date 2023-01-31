@@ -40,6 +40,7 @@ body,
 .btn-beta,
 .btn-daily,
 .modal form .amount-selection label:last-child #amount-other::placeholder,
+.faq-entry .faq-answer,
 .newsletter-form input {
   font-size: 15px;
 }
@@ -56,6 +57,7 @@ body,
 }
 .font-2xl,
 .btn-donate-lg,
+.faq-entry .faq-question,
 .header-section,
 .markup-page h2 {
   font-size: 21px;
@@ -65,6 +67,15 @@ body,
 }
 .font-hero {
   font-size: 59px;
+}
+.font-style-normal {
+  font-style: normal;
+}
+.font-style-italic {
+  font-style: italic;
+}
+.font-style-oblique {
+  font-style: oblique;
 }
 .font-hairline {
   font-weight: 100;
@@ -128,6 +139,7 @@ body,
 }
 .tracking-wide,
 body,
+.faq-entry .faq-answer,
 .newsletter-form input {
   letter-spacing: 0.025em;
 }
@@ -153,6 +165,7 @@ body,
 }
 .leading-normal,
 .btn-beta.btn-beta-pill,
+.faq-entry .faq-question,
 .header-section,
 .subheader-section,
 .markup-page h2,
@@ -163,7 +176,8 @@ body,
   line-height: 1.625;
 }
 .leading-loose,
-#amount-cancel p {
+#amount-cancel p,
+.faq-entry .faq-answer {
   line-height: 2;
 }
 .underline,
@@ -612,6 +626,7 @@ body,
 }
 .text-blue-dark,
 .social-link-large,
+.faq-entry .faq-question,
 h1 .anchor,
 h2 .anchor,
 h3 .anchor,
@@ -685,6 +700,7 @@ section.tab.release a.small-link {
 }
 .text-blue-dark,
 .social-link-large,
+.faq-entry .faq-question,
 h1 .anchor,
 h2 .anchor,
 h3 .anchor,
@@ -1132,6 +1148,7 @@ body {
 .items-center,
 .social-link,
 .btn-body span,
+.faq-entry .faq-question,
 .newsletter-form,
 .header-section,
 .social-link-large,
@@ -2506,7 +2523,8 @@ body {
 }
 .pb-2,
 .nav-link,
-.btn-donate {
+.btn-donate,
+.ways-to-give-list-info li {
   padding-bottom: 0.5rem;
 }
 .pb-1,
@@ -2598,7 +2616,8 @@ body {
 .social-link-large {
   padding-left: 0.25rem;
 }
-.pl-0 {
+.pl-0,
+.ways-to-give-list-info {
   padding-left: 0rem;
 }
 .m-20 {
@@ -2796,6 +2815,7 @@ body {
 .mt-0,
 .blog-link,
 .blog-body,
+.faq-entry .faq-question,
 .header-section,
 .subheader-section,
 .markup-page ul,
@@ -2902,7 +2922,8 @@ body {
 .mr-9 {
   margin-right: 2.25rem;
 }
-.mr-8 {
+.mr-8,
+.faq-entry .faq-answer {
   margin-right: 2rem;
 }
 .mr-7 {
@@ -3062,6 +3083,7 @@ body {
 .mb-4,
 .social-link-large,
 .blog-link,
+.faq-entry .faq-question,
 .header-section,
 .subheader-section,
 .markup-page h2,
@@ -3181,7 +3203,8 @@ body {
 .ml-9 {
   margin-left: 2.25rem;
 }
-.ml-8 {
+.ml-8,
+.faq-entry .faq-answer {
   margin-left: 2rem;
 }
 .ml-7 {
@@ -7504,6 +7527,9 @@ button {
 .modal footer ul > li:not(:last-child)::after {
   content: '•';
 }
+.ways-to-give-list-info {
+  list-style: none;
+}
 .force-smooth-animation,
 .btn-donate-and-download,
 .btn-donate-and-download:hover,
@@ -7570,6 +7596,22 @@ button {
     scale: 2;
     background-color: rgba(0, 128, 255, 0);
   }
+}
+.faq-entry summary {
+  list-style: none;
+}
+.faq-entry summary::-webkit-details-marker {
+  display: none;
+}
+.faq-entry .faq-question {
+  cursor: pointer;
+  display: inline-list-item;
+}
+.faq-entry .faq-question::before {
+  content: url("/media/svg/zoom-out.svg");
+}
+.faq-entry[open] .faq-question::before {
+  content: url("/media/svg/zoom-in.svg");
 }
 .appearance-none,
 .btn-inline,
