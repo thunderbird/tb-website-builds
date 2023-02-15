@@ -1759,7 +1759,6 @@ if (typeof Mozilla === 'undefined') {
      */
     Donation.Init = function() {
         if (!window.FundraiseUp) {
-            console.error("Could not find FundraiseUp");
             return;
         }
 
@@ -1827,21 +1826,31 @@ if (typeof Mozilla === 'undefined') {
      * @param utmSource {?string}
      * @param utmMedium {?string}
      * @param utmCampaign {?string}
+     * @param redirect {boolean} - For the start page, redirects to www.thunderbird.net/donate/
      */
-    Donation.MakeDonateUrl = function(utmContent = null, utmSource = 'thunderbird.net', utmMedium = 'fru', utmCampaign = 'donation_flow_2023') {
+    Donation.MakeDonateUrl = function(utmContent = null, utmSource = 'thunderbird.net', utmMedium = 'fru', utmCampaign = 'donation_flow_2023', redirect = false) {
         let params = {
-            'form': 'support',
+            // Don't open the form automatically if we're redirecting
+            'form': redirect ? null : 'support',
             'utm_content': utmContent,
             'utm_source': utmSource,
             'utm_medium': utmMedium,
             'utm_campaign': utmCampaign
         };
+
         // Filter nulls from the object (this mutates)
         Object.keys(params).forEach((k) => params[k] == null && delete params[k]);
 
         params = new URLSearchParams(params);
 
-        return `?${params.toString()}`;
+        const query_params = `?${params.toString()}`;
+
+        if (redirect) {
+            // We don't have a good way to get the current environment in javascript right now..
+            return `https://www.thunderbird.net/donate/${query_params}#donate`;
+        }
+
+        return query_params;
     }
 
     /**
@@ -2021,8 +2030,9 @@ if (typeof Mozilla === 'undefined') {
             const utmSource = element.getAttribute('data-donate-source') || 'thunderbird.net';
             const utmMedium = element.getAttribute('data-donate-medium') || 'fru';
             const utmCampaign = element.getAttribute('data-donate-campaign') || 'donation_flow_2023';
+            const redirect = element.hasAttribute('data-donate-redirect') || false;
 
-            element.href = window.Mozilla.Donation.MakeDonateUrl(utmContent, utmSource, utmMedium, utmCampaign);
+            element.href = window.Mozilla.Donation.MakeDonateUrl(utmContent, utmSource, utmMedium, utmCampaign, redirect);
         }
     }
 
