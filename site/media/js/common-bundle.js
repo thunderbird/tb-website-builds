@@ -55,6 +55,10 @@ if (typeof Mozilla === 'undefined') {
                 return;
             }
 
+            // Make sure _paq exists, and then send off the download event
+            window._paq = window._paq || [];
+            window._paq.push(['trackLink', download_link, 'download']);
+
             // Timeout is here to prevent url collisions with fundraiseup form.
             window.setTimeout(function() {
                 window.open(download_link, '_self');
@@ -98,16 +102,24 @@ if (typeof Mozilla === 'undefined') {
      * @param utmSource {?string}
      * @param utmMedium {?string}
      * @param utmCampaign {?string}
-     * @param redirect {boolean} - For the start page, redirects to www.thunderbird.net/donate/
+     * @param redirect {?string} - Whether we should redirect the user to another page
      */
-    Donation.MakeDonateUrl = function(utmContent = null, utmSource = 'thunderbird.net', utmMedium = 'fru', utmCampaign = 'donation_flow_2023', redirect = false) {
+    Donation.MakeDonateUrl = function(utmContent = null, utmSource = 'thunderbird.net', utmMedium = 'fru', utmCampaign = 'donation_flow_2023', redirect = null) {
+        const is_donate_redirect = redirect === 'donate';
+        const is_download_redirect = redirect && redirect.indexOf('download-') !== -1;
+
+        // en-US gets converted to en, so fix that if needed.
+        const lang = document.documentElement.lang === 'en' ? 'en-US': document.documentElement.lang;
+
         let params = {
-            // Don't open the form automatically if we're redirecting
-            'form': redirect ? null : 'support',
+            // Don't open the form automatically if we're redirecting to donate
+            'form': is_donate_redirect ? null : 'support',
             'utm_content': utmContent,
             'utm_source': utmSource,
             'utm_medium': utmMedium,
-            'utm_campaign': utmCampaign
+            'utm_campaign': utmCampaign,
+            // Split off our download-(esr|beta|daily) query param
+            'download_channel': is_download_redirect ? redirect.split('-')[1] : null,
         };
 
         // Filter nulls from the object (this mutates)
@@ -117,9 +129,11 @@ if (typeof Mozilla === 'undefined') {
 
         const query_params = `?${params.toString()}`;
 
-        if (redirect) {
+        if (is_donate_redirect) {
             // We don't have a good way to get the current environment in javascript right now..
-            return `https://www.thunderbird.net/donate/${query_params}#donate`;
+            return `https://www.thunderbird.net/${lang}/donate/${query_params}#donate`;
+        } else if (is_download_redirect) {
+            return `/${lang}/download/${query_params}`;
         }
 
         return query_params;
@@ -265,6 +279,7 @@ if (typeof Mozilla === 'undefined') {
      * FundraiseUp's download functionality. This will simply raise the Donation form.
      * @param download_url
      * @private
+     * @deprecated Might be removed in a later release
      */
     ABTest._FundraiseUpDownload = function(download_url) {
         window.Mozilla.Donation.DisplayDownloadForm(download_url);
@@ -299,10 +314,7 @@ if (typeof Mozilla === 'undefined') {
         const download_url = element.href;
         const donate_url = element.dataset.donateLink || null;
 
-        if (ABTest.IsInFundraiseUpBucket()) {
-            event.preventDefault();
-            ABTest._FundraiseUpDownload(download_url);
-        } else {
+        if (ABTest.IsInGiveBucket()) {
             ABTest._GiveDownload(download_url, donate_url);
         }
     }
@@ -323,7 +335,7 @@ if (typeof Mozilla === 'undefined') {
             const utmSource = element.getAttribute('data-donate-source') || 'thunderbird.net';
             const utmMedium = element.getAttribute('data-donate-medium') || 'fru';
             const utmCampaign = element.getAttribute('data-donate-campaign') || 'donation_flow_2023';
-            const redirect = element.hasAttribute('data-donate-redirect') || false;
+            const redirect = element.getAttribute('data-donate-redirect') || null;
 
             element.href = window.Mozilla.Donation.MakeDonateUrl(utmContent, utmSource, utmMedium, utmCampaign, redirect);
         }
@@ -342,9 +354,12 @@ if (typeof Mozilla === 'undefined') {
         for (const donate_button of donate_buttons) {
             ABTest.ReplaceDonateLinks(donate_button);
         }
-        // Replace the download and donate button's link with the correct one.
-        const download_and_donate_button = document.getElementById('amount-submit');
-        ABTest.ReplaceDonateLinks(download_and_donate_button);
+
+        // Replace the download button's links with our download redirect
+        const download_buttons = document.querySelectorAll('.download-link');
+        for (const download_button of download_buttons) {
+            ABTest.ReplaceDonateLinks(download_button);
+        }
     }
 
     window.Mozilla.ABTest = ABTest;
