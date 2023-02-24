@@ -1729,6 +1729,10 @@ $(function() {
         if ($platformLink.length) {
             downloadURL = $platformLink.attr('href');
 
+            window._paq = window._paq || [];
+            // Track auto downloads - trackLink( url, linkType )
+            window._paq.push(['trackLink', downloadURL, 'download'])
+
             // If user is not on an IE that blocks JS triggered downloads, start the
             // platform-detected download a second after DOM ready event. We don't rely on
             // the window load event as we have third-party tracking pixels.
@@ -2101,9 +2105,18 @@ if (typeof Mozilla === 'undefined') {
         }
 
         // Replace the download button's links with our download redirect
-        const download_buttons = document.querySelectorAll('.download-link');
-        for (const download_button of download_buttons) {
-            ABTest.ReplaceDonateLinks(download_button);
+        // But only do that if we're not already on the download page
+        if (window.location.href.indexOf('/download/') === -1) {
+            const download_buttons = document.querySelectorAll('.download-link');
+            for (const download_button of download_buttons) {
+                ABTest.ReplaceDonateLinks(download_button);
+
+                // If we're in FRU bucket, don't trigger download events for our non-download page buttons
+                // Otherwise we'll be getting download==thunderbird.net instead of download==download.mozilla.org
+                if (ABTest.IsInFundraiseUpBucket()) {
+                    download_button.className = download_button.className.replace('matomo-track-download', '');
+                }
+            }
         }
     }
 
