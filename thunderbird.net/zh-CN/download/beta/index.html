@@ -429,11 +429,11 @@
         <li><strong>Beta 版将<u>替换</u>您当前安装的版本，除非您按照<a href="#howto">如何安装和使用 Beta 版</a>中的说明操作。</strong></li>
         <li>请<a href="https://support.mozilla.org/kb/profiles-where-thunderbird-stores-user-data#w_backing-up-a-profile">定期备份</a>来保护您的 Thunderbird 配置文件。</li>
         <li>新功能可能并未开发完毕，有些功能需要用几周时间来完善。<a href="https://thunderbird.topicbox.com/groups/beta">测试版论坛</a>可能会提供开发的最新进展。</li>
-        <li>测试版难免存在缺陷。恶性缺陷（例如丢失数据）虽然非常少见，但仍有可能发生。您可以通过<a href="https://support.mozilla.org/kb/profiles-where-thunderbird-stores-user-data#w_backing-up-a-profile">备份</a>来确保数据安全。我们按照缺陷的严重程度来决定修复的优先级。因此不太严重的缺陷可能无法很快得到修复。</li>
+        <li>测试版难免存在缺陷。恶性缺陷（例如丢失数据）虽然非常少见，但仍有可能发生。您可以通过<a href="https://support.mozilla.org/kb/profiles-where-thunderbird-stores-user-data#w_backing-up-a-profile">备份</a>来确保数据安全。我们按照缺陷的严重程度来决定修复的优先级，因此不太严重的缺陷可能无法很快得到修复。</li>
         <li>预计每月更新七次，每月一次主要更新加上几个小更新。这种更新频率使我们能够快速改进。</li>
         <li>您是否在使用 <a href="https://support.mozilla.org/kb/difference-between-imap-and-pop3">POP 账户</a>？与 IMAP 账户不同，POP 邮件仅有一份副本，位于 Thunderbird 本地配置文件中。如果您想在测试版中添加 POP 账户，可以选择：
           <ol type='a'>
-            <li>完成设置后，进入 <b>≡ > 账户设置 > 服务器设置</b>，确认<b>勾选</b><b>“把消息留在服务器上”</b>，且<b>不要勾选<b><b>“至多不超过 [X] 天”</b>。</li>
+            <li>完成设置后，进入 <b>≡ > 账户设置 > 服务器设置</b>，确认<b>勾选</b><b>“把消息留在服务器上”</b>，且<b>不要勾选</b><b>“至多不超过 [X] 天”</b>。</li>
             <li>保留默认设置。消息将在下载 14 天后从服务器上删除，这样您就需要继续使用测试版，或者了解如何将 POP 数据移回正式版的配置文件中。</li>
           </ol></li>
         <li>如果您设置了<a href="https://support.mozilla.org/kb/organize-your-messages-using-filters">邮件过滤器（例如其将邮件移动到本地文件夹），您就需要指定过滤器的执行位置（在测试版配置文件还是在其他配置文件中）。</li>
@@ -459,13 +459,13 @@
       <ol type='1'>
         <li><strong>同时运行稳定版和 Beta 版（推荐）。</strong></li>
         <p class="mb-2 mt-2">
-          Windows 上的 Thunderbird 自 102 版本起，会直接将测试版安装到独立的程序目录中。有关更旧版本的 Windows 系统，请见<a href="https://support.mozilla.org/en-US/kb/thunderbird-beta">这篇帮助文章</a>。如果您使用的是其他操作系统，请使用适用的安装方法，将其安装到独立的目录中。
+          Windows 上的 Thunderbird 自 102 版本起，会直接将测试版安装到独立的程序目录中。有关更旧版本的 Windows 系统，请见<a href="https://support.mozilla.org/en-US/kb/thunderbird-beta">这篇帮助文章</a>。如果您使用的是其他操作系统，请以适用的安装方法，将其安装到独立的目录中。
         </p>
         <p class="mb-2 mt-2">
-          This choice has the advantage of forcing a <a href="https://support.mozilla.org/en-US/kb/dedicated-profile-thunderbird-installation">dedicated profile</a> for each Thunderbird, which allows you to have both the release version and the beta version operate independently. So you can:
+          这种选择的好处是可以为不同版本的 Thunderbird 强制创建<a href="https://support.mozilla.org/en-US/kb/dedicated-profile-thunderbird-installation">独立的配置文件</a>，以同时运行正式版和测试版。这样你就可以：
         </p>
         <ul>
-          <li>Start the <b>release</b> version of Thunderbird (with beta not running) and it will use the <b>"default" (or default-release)</b> profile.</li>
+          <li>启动<b>正式版</b> Thunderbird（无法与测试版同时运行），其将使用 <b>“default”（或 default-release）</b> 配置文件。</li>
           <li>Start the <b>beta</b> version of Thunderbird (with release version not running) and it will use the <b>default-beta</b> profile. On first use Thunderbird will create the <b>default-beta</b> profile, and it will prompt you to define your accounts. If you need to bring some data from your release profile into the beta profile, consult the <a href="https://support.mozilla.org/kb/thunderbird-beta">beta support article.</a></li>
         </ul>
         <li class="mb-2 mt-2"><strong>将 Thunderbird 升级到 Beta 版。</strong></li>
