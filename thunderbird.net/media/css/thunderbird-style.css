@@ -29,6 +29,7 @@ body,
 .btn-body,
 .btn-beta.btn-beta-pill,
 .btn-link,
+.btn-banner,
 .modal footer ul > li:not(:last-child)::after {
   font-size: 12px;
 }
@@ -39,6 +40,7 @@ body,
 .btn-join,
 .btn-beta,
 .btn-daily,
+.btn-banner,
 .modal form .amount-selection label:last-child #amount-other::placeholder,
 .faq-entry .faq-answer,
 .newsletter-form input {
@@ -61,6 +63,9 @@ body,
 .header-section,
 .markup-page h2 {
   font-size: 21px;
+}
+.font-3xl {
+  font-size: 25px;
 }
 .font-4xl {
   font-size: 41px;
@@ -106,6 +111,7 @@ body,
 .btn-beta,
 .btn-daily,
 .btn-link,
+.btn-banner,
 .btn-donate-and-download,
 .social-link-large,
 .p-links a,
@@ -214,6 +220,8 @@ body,
 .btn-beta,
 .btn-daily,
 .btn-link,
+.btn-banner:hover,
+.btn-banner:focus,
 .btn-donate-and-download,
 .social-link-large {
   text-decoration: none;
@@ -284,6 +292,9 @@ body,
   .sm\:font-2xl {
     font-size: 21px;
   }
+  .sm\:font-3xl {
+    font-size: 25px;
+  }
   .sm\:font-4xl {
     font-size: 41px;
   }
@@ -333,6 +344,9 @@ body,
   }
   .md\:font-2xl {
     font-size: 21px;
+  }
+  .md\:font-3xl {
+    font-size: 25px;
   }
   .md\:font-4xl {
     font-size: 41px;
@@ -385,6 +399,9 @@ body,
   .lg\:font-2xl {
     font-size: 21px;
   }
+  .lg\:font-3xl {
+    font-size: 25px;
+  }
   .lg\:font-4xl {
     font-size: 41px;
   }
@@ -435,6 +452,9 @@ body,
   .xl\:font-2xl {
     font-size: 21px;
   }
+  .xl\:font-3xl {
+    font-size: 25px;
+  }
   .xl\:font-4xl {
     font-size: 41px;
   }
@@ -466,6 +486,7 @@ body,
 .bg-transparent,
 .btn-body.btn-secondary,
 .btn-link,
+.btn-banner,
 .tabs-nav label,
 .tabs-nav #channel-header {
   background-color: transparent;
@@ -525,6 +546,7 @@ body,
 }
 .text-black,
 .btn-inline,
+.btn-banner,
 .form-select {
   color: #000;
 }
@@ -805,6 +827,7 @@ body {
 .btn-inline,
 .btn-newsletter,
 .btn-link,
+.btn-banner,
 .btn-donate-and-download,
 .form-select,
 .newsletter-form input,
@@ -924,6 +947,7 @@ body {
 .btn-beta,
 .btn-daily,
 .btn-link,
+.btn-banner,
 .tabs-nav label,
 .tabs-nav #channel-header {
   display: inline-block;
@@ -944,7 +968,9 @@ body {
 .table {
   display: table;
 }
-.hidden {
+.hidden,
+.download-hidden,
+.js .channel-title {
   display: none;
 }
 @media (min-width: 640px) {
@@ -1124,7 +1150,8 @@ body {
 .flex-row-reverse {
   flex-direction: row-reverse;
 }
-.flex-col {
+.flex-col,
+.no-js .retry-download {
   flex-direction: column;
 }
 .flex-col-reverse {
@@ -1598,11 +1625,22 @@ body {
 .h-8 {
   height: 2rem;
 }
+.h-10,
+.modal form .amount-selection label {
+  height: 2.5rem;
+}
+.h-12 {
+  height: 3rem;
+}
+.h-16 {
+  height: 4rem;
+}
 .h-auto {
   height: auto;
 }
 .h-full,
-.modal form .amount-selection label:last-child #amount-other {
+.modal form .amount-selection label:last-child #amount-other,
+.no-js .retry-download {
   height: 100%;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
@@ -2356,7 +2394,8 @@ body {
 .btn-join,
 .btn-beta,
 .btn-daily,
-.btn-link {
+.btn-link,
+.btn-banner {
   padding-top: 0.75rem;
 }
 .pt-2,
@@ -2435,7 +2474,8 @@ body {
 }
 .pr-4,
 .btn-body span,
-.btn-link {
+.btn-link,
+.btn-banner {
   padding-right: 1rem;
 }
 .pr-3,
@@ -2518,7 +2558,8 @@ body {
 .btn-join,
 .btn-beta,
 .btn-daily,
-.btn-link {
+.btn-link,
+.btn-banner {
   padding-bottom: 0.75rem;
 }
 .pb-2,
@@ -2596,7 +2637,8 @@ body {
   padding-left: 1.25rem;
 }
 .pl-4,
-.btn-link {
+.btn-link,
+.btn-banner {
   padding-left: 1rem;
 }
 .pl-3,
@@ -2680,7 +2722,8 @@ body {
 .m-1,
 .btn-download-inline,
 .btn-download-link,
-.btn-link {
+.btn-link,
+.btn-banner {
   margin: 0.25rem;
 }
 .m-0,
@@ -2798,7 +2841,8 @@ body {
 .mt-5 {
   margin-top: 1.25rem;
 }
-.mt-4 {
+.mt-4,
+.no-js .retry-download .retry-text {
   margin-top: 1rem;
 }
 .mt-3 {
@@ -2930,6 +2974,7 @@ body {
   margin-right: 1.75rem;
 }
 .mr-6,
+.no-js .retry-download .retry-text p,
 .header-section span {
   margin-right: 1.5rem;
 }
@@ -3304,7 +3349,9 @@ body {
 .-ml-0 {
   margin-left: 0rem;
 }
-.mx-auto {
+.mx-auto,
+.no-js .retry-download .retry-text,
+.no-js .retry-download .retry-button {
   margin-left: auto;
   margin-right: auto;
 }
@@ -7380,12 +7427,18 @@ button {
   -o-transform: translateY(-7%);
   transform: translateY(-7%);
 }
+.btn-newsletter {
+  white-space: nowrap;
+}
 .btn-newsletter:hover,
 .btn-newsletter:focus {
   -webkit-transform: translateY(-7%);
   -moz-transform: translateY(-7%);
   -o-transform: translateY(-7%);
   transform: translateY(-7%);
+}
+.no-js .btn-newsletter {
+  line-height: 3rem;
 }
 .btn-join:hover,
 .btn-join:focus {
@@ -7596,6 +7649,18 @@ button {
     scale: 2;
     background-color: rgba(0, 128, 255, 0);
   }
+}
+/* Retry Banner: "(i) Your download didn't start automatically? [Try Again]" */
+.retry-download .retry-text {
+  margin-left: auto;
+  margin-right: 0;
+}
+.retry-download .retry-button {
+  margin-right: 0;
+}
+/* Download buttons for the retry banner */
+.no-js .download-hidden {
+  display: block;
 }
 .faq-entry summary {
   list-style: none;
