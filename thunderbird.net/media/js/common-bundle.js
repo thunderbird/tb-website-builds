@@ -1737,9 +1737,6 @@ $(function() {
 
     // Only do this on the autodownload page.
     if ($('body').attr('id') == 'thunderbird-download') {
-        if (!canAutodownload()) {
-            return;
-        }
         var downloadURL;
         var downloadChannelRegex = /download_channel=(esr|beta|daily)/;
         var downloadChannel = downloadChannelRegex.exec(window.location.search);
@@ -1757,6 +1754,11 @@ $(function() {
         downloadElement = document.getElementById(downloadChannel);
         // Remove our display:hidden class
         downloadElement.className = '';
+
+        // Make sure we've shown the appropriate download link before returning
+        if (!canAutodownload()) {
+            return;
+        }
 
         // Get the platform link via the active downloadChannel
         $platformLink = $(`#${downloadChannel} li:visible .download-link`);
