@@ -7372,6 +7372,13 @@ a {
 .blog-body .go {
   display: none;
 }
+.blog-body .thumbnail {
+  text-align: center;
+}
+.blog-body .thumbnail img {
+  width: auto;
+  height: 200px;
+}
 button {
   -webkit-transition: all 320ms ease;
   -moz-transition: all 320ms ease;
