@@ -289,7 +289,7 @@
         Check out the notes below for this version of Thunderbird. As always, you’re encouraged to <a href="https://support.mozilla.org/questions/new/thunderbird">tell us what you think</a>, or <a href="https://bugzilla.mozilla.org/">file a bug in Bugzilla</a>
       </p>
       <aside class="font-lg tracking-wider leading-loose mb-6 markup-page">
-        <p><strong>These notes apply to Thunderbird version 115 beta 2 released June 14, 2023.</strong></p>
+        <p><strong>These notes apply to Thunderbird version 115 beta 3 released June 15, 2023.</strong></p>
 <p style="color: #d70022; font-weight: bold">Thunderbird 115 (aka SuperNova) release is approaching fast!
 The Supernova UI features an updated user interface, designed to be more modern, customizable, and 
 with code that is easier to maintain and improve.</p>
@@ -1314,6 +1314,24 @@ with code that is easier to maintain and improve.</p>
           
             
           
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
         
           
             <section class="mt-10 mb-8 flex justify-center items-center w-full">
@@ -1894,6 +1912,440 @@ with code that is easier to maintain and improve.</p>
                 
                   <aside>
                     <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1836424">1836424</a></p>
+                  </aside>
+                
+              </aside>
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+        
+          
+            <section class="mt-10 mb-8 flex justify-center items-center w-full">
+              <span class="header-line flex-1"></span>
+              <h2 class="header-section pl-4 pr-4 mb-0 text-center">
+                New, Changed & Fixed in beta 3
+              </h2>
+              <span class="header-line flex-1"></span>
+            </section>
+            
+          
+
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+                <h3 id="whatsnew" class="header-section">
+                  <span><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M3.8 15.922a1.1 1.1 0 0 1-1.09-1.253l.609-4.36L.392 7.163a1.1 1.1 0 0 1 .616-1.833l4.081-.73L7.015.734a1.1 1.1 0 0 1 1.969 0L10.911 4.6l4.084.729a1.1 1.1 0 0 1 .611 1.833L12.68 10.31l.609 4.359a1.1 1.1 0 0 1-1.6 1.127L8 13.873 4.307 15.8a1.093 1.093 0 0 1-.507.122zm-.415-1.9zm9.228 0zM2.981 7.01l2.451 2.635-.5 3.572L8 11.618l3.067 1.6-.5-3.572 2.451-2.636-3.45-.616L8 3.244l-1.569 3.15zm11.659.29zm-13.278 0zm12.78-1.5zm-12.286 0z"></path></svg>
+</span>What’s New
+                </h3>
+              
+
+              
+              
+
+              <aside id="note-46"
+                class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
+                <h4 class="font-bold uppercase m-0 p-3 w-24">
+                  
+                    <aside class="flex items-center text-orange">
+                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M3.8 15.922a1.1 1.1 0 0 1-1.09-1.253l.609-4.36L.392 7.163a1.1 1.1 0 0 1 .616-1.833l4.081-.73L7.015.734a1.1 1.1 0 0 1 1.969 0L10.911 4.6l4.084.729a1.1 1.1 0 0 1 .611 1.833L12.68 10.31l.609 4.359a1.1 1.1 0 0 1-1.6 1.127L8 13.873 4.307 15.8a1.093 1.093 0 0 1-.507.122zm-.415-1.9zm9.228 0zM2.981 7.01l2.451 2.635-.5 3.572L8 11.618l3.067 1.6-.5-3.572 2.451-2.636-3.45-.616L8 3.244l-1.569 3.15zm11.659.29zm-13.278 0zm12.78-1.5zm-12.286 0z"></path></svg>
+</span>
+                      new
+                    </aside>
+                  
+                </h4>
+                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
+                  <p>OpenPGP signature filenames now always end in ".asc"</p>
+                </aside>
+                
+                  <aside>
+                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1837892">1837892</a></p>
+                  </aside>
+                
+              </aside>
+            
+          
+            
+              
+                <h3 id="changes" class="header-section pt-14 pb-4">
+                  <span><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M14 1a1 1 0 0 0-1 1v1.146A6.948 6.948 0 0 0 1.227 6.307a1 1 0 1 0 1.94.484A4.983 4.983 0 0 1 8 3a4.919 4.919 0 0 1 3.967 2H10a1 1 0 0 0 0 2h4a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm.046 7.481a1 1 0 0 0-1.213.728A4.983 4.983 0 0 1 8 13a4.919 4.919 0 0 1-3.967-2H6a1 1 0 0 0 0-2H2a1 1 0 0 0-1 1v4a1 1 0 0 0 2 0v-1.146a6.948 6.948 0 0 0 11.773-3.161 1 1 0 0 0-.727-1.212z"></path></svg>
+</span>Changes
+                </h3>
+              
+
+              
+              
+
+              <aside id="note-47"
+                class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
+                <h4 class="font-bold uppercase m-0 p-3 w-24">
+                  
+                    <aside class="flex items-center text-purple">
+                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M14 1a1 1 0 0 0-1 1v1.146A6.948 6.948 0 0 0 1.227 6.307a1 1 0 1 0 1.94.484A4.983 4.983 0 0 1 8 3a4.919 4.919 0 0 1 3.967 2H10a1 1 0 0 0 0 2h4a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm.046 7.481a1 1 0 0 0-1.213.728A4.983 4.983 0 0 1 8 13a4.919 4.919 0 0 1-3.967-2H6a1 1 0 0 0 0-2H2a1 1 0 0 0-1 1v4a1 1 0 0 0 2 0v-1.146a6.948 6.948 0 0 0 11.773-3.161 1 1 0 0 0-.727-1.212z"></path></svg>
+</span>
+                      changed
+                    </aside>
+                  
+                </h4>
+                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
+                  <p>Added "Move Up" and "Move Down" options to Folder Mode context menu</p>
+                </aside>
+                
+                  <aside>
+                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1827257">1827257</a></p>
+                  </aside>
+                
+              </aside>
+            
+          
+            
+              
+
+              
+              
+
+              <aside id="note-48"
+                class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
+                <h4 class="font-bold uppercase m-0 p-3 w-24">
+                  
+                    <aside class="flex items-center text-purple">
+                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M14 1a1 1 0 0 0-1 1v1.146A6.948 6.948 0 0 0 1.227 6.307a1 1 0 1 0 1.94.484A4.983 4.983 0 0 1 8 3a4.919 4.919 0 0 1 3.967 2H10a1 1 0 0 0 0 2h4a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm.046 7.481a1 1 0 0 0-1.213.728A4.983 4.983 0 0 1 8 13a4.919 4.919 0 0 1-3.967-2H6a1 1 0 0 0 0-2H2a1 1 0 0 0-1 1v4a1 1 0 0 0 2 0v-1.146a6.948 6.948 0 0 0 11.773-3.161 1 1 0 0 0-.727-1.212z"></path></svg>
+</span>
+                      changed
+                    </aside>
+                  
+                </h4>
+                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
+                  <p>Updated various strings for easier localization</p>
+                </aside>
+                
+                  <aside>
+                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1834598">1834598</a> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1835150">1835150</a> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1835152">1835152</a></p>
+                  </aside>
+                
+              </aside>
+            
+          
+            
+              
+                <h3 id="fixes" class="header-section pt-14 pb-4">
+                  <span><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>Fixes
+                </h3>
+              
+
+              
+              
+
+              <aside id="note-49"
+                class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
+                <h4 class="font-bold uppercase m-0 p-3 w-24">
+                  
+                    <aside class="flex items-center text-green">
+                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>
+                      fixed
+                    </aside>
+                  
+                </h4>
+                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
+                  <p>RSS feed subscriptions could not be added via drag-and-drop</p>
+                </aside>
+                
+                  <aside>
+                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1822226">1822226</a></p>
+                  </aside>
+                
+              </aside>
+            
+          
+            
+              
+
+              
+              
+
+              <aside id="note-50"
+                class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
+                <h4 class="font-bold uppercase m-0 p-3 w-24">
+                  
+                    <aside class="flex items-center text-green">
+                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>
+                      fixed
+                    </aside>
+                  
+                </h4>
+                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
+                  <p>RSS feeds did not update unless "Remember websites and links I've visited" was checked</p>
+                </aside>
+                
+                  <aside>
+                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1837831">1837831</a></p>
+                  </aside>
+                
+              </aside>
+            
+          
+            
+              
+
+              
+              
+
+              <aside id="note-51"
+                class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
+                <h4 class="font-bold uppercase m-0 p-3 w-24">
+                  
+                    <aside class="flex items-center text-green">
+                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>
+                      fixed
+                    </aside>
+                  
+                </h4>
+                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
+                  <p>NNTP message streaming did not work, resulting in uncaught errors</p>
+                </aside>
+                
+                  <aside>
+                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=545365">545365</a></p>
+                  </aside>
+                
+              </aside>
+            
+          
+            
+              
+
+              
+              
+
+              <aside id="note-52"
+                class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
+                <h4 class="font-bold uppercase m-0 p-3 w-24">
+                  
+                    <aside class="flex items-center text-green">
+                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>
+                      fixed
+                    </aside>
+                  
+                </h4>
+                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
+                  <p>Moving events by drag-and-drop in day view or week view did not display dragbox on drop target</p>
+                </aside>
+                
+                  <aside>
+                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1836736">1836736</a></p>
+                  </aside>
+                
+              </aside>
+            
+          
+            
+              
+
+              
+              
+
+              <aside id="note-53"
+                class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
+                <h4 class="font-bold uppercase m-0 p-3 w-24">
+                  
+                    <aside class="flex items-center text-green">
+                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>
+                      fixed
+                    </aside>
+                  
+                </h4>
+                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
+                  <p>When opening .ics file, "Import Calendar Events and Tasks" window could not be resized and window buttons were inaccessible outside border of window</p>
+                </aside>
+                
+                  <aside>
+                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1836058">1836058</a></p>
+                  </aside>
+                
+              </aside>
+            
+          
+            
+              
+
+              
+              
+
+              <aside id="note-54"
+                class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
+                <h4 class="font-bold uppercase m-0 p-3 w-24">
+                  
+                    <aside class="flex items-center text-green">
+                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>
+                      fixed
+                    </aside>
+                  
+                </h4>
+                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
+                  <p>Various UX improvements</p>
+                </aside>
+                
+                  <aside>
+                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1837594">1837594</a> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1838341">1838341</a></p>
                   </aside>
                 
               </aside>
