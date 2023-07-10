@@ -380,7 +380,7 @@
   --color-ink-90: #1a1838;
   --bg: white;
   --txt: var(--color-ink-80);
-  --accent: var(--color-blue-50);
+  --accent: var(--color-blue-60);
   --glow: var(--color-purple-70);
   --separator-color: var(--color-gray-20);
   --nav-bg: transparent;
@@ -439,10 +439,14 @@ a:visited {
   height: 32px;
   width: 32px;
 }
+.download-button {
+  transform: translateX(-20px);
+}
 .btn-donate,
 .btn-donate-lg,
 .btn-download-inline,
 .btn-download-link,
+.download-link.btn-download,
 a.btn,
 button {
   font-size: 1.25rem;
@@ -459,6 +463,7 @@ button {
 .btn-donate-lg::before,
 .btn-download-inline::before,
 .btn-download-link::before,
+.download-link.btn-download::before,
 a.btn::before,
 button::before {
   content: '';
@@ -474,26 +479,26 @@ button::before {
 .btn-donate-lg::after,
 .btn-download-inline::after,
 .btn-download-link::after,
+.download-link.btn-download::after,
 a.btn::after,
 button::after {
   content: '';
   position: absolute;
   background-color: transparent;
-  background-image: radial-gradient(circle, var(--accent), transparent 20%);
-  background-size: 0;
+  background-image: radial-gradient(circle, var(--accent), var(--color-purple-60) 30%);
+  background-size: 400%;
   background-position: center;
-  opacity: 0;
+  opacity: 0.5;
   inset: 0;
+  inset-inline-end: 4px;
   z-index: -1;
   transition: all 0.3s;
 }
+.download-link.btn-download:hover::after,
 a.btn:hover::after,
 button:hover::after {
-  opacity: 0.25;
-  background-size: 800%;
-}
-.download-other {
-  display: none;
+  opacity: 0.75;
+  background-size: 500%;
 }
 .download-button .ios-download,
 .download-button .linux-arm-download,
@@ -578,6 +583,9 @@ button:hover::after {
 }
 .windows.sha-1 .download-button .os_winsha1 {
   display: block !important;
+}
+p.download-other.download-other-desktop.os_android.os_ios.os_linux.os_linux64.os_osx.os_win.os_win64.os_winsha1 {
+  display: none !important;
 }
 .site-nav {
   box-sizing: border-box;
@@ -1083,7 +1091,7 @@ header {
   margin: 0;
 }
 #free-your-inbox .cta {
-  --btn-bg: color-mix(in srgb, var(--bg) 75%, transparent);
+  --btn-bg: color-mix(in srgb, var(--bg) 90%, transparent);
   display: grid;
   place-items: center;
   gap: 9px;
@@ -1149,7 +1157,7 @@ header {
   content: '';
   position: absolute;
   background-color: transparent;
-  background-image: radial-gradient(circle, var(--accent), transparent 20%);
+  background-image: radial-gradient(circle, var(--accent), var(--color-purple-60) 20%);
   background-size: 0;
   background-position: center;
   opacity: 0;
