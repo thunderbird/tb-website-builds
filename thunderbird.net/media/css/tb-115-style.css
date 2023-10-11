@@ -595,9 +595,6 @@ button:hover::after {
 .download-button ul li {
   margin-block: 40px;
 }
-p.download-other.download-other-desktop.os_android.os_ios.os_linux.os_linux64.os_osx.os_win.os_win64.os_winsha1 {
-  display: none !important;
-}
 .site-nav {
   box-sizing: border-box;
   position: fixed;
@@ -1274,4 +1271,12 @@ footer {
   .btn-newsletter-icon {
     display: inline-block;
   }
+}
+.download-other {
+  text-align: center;
+  transform: translateX(20px);
+  margin-top: -1rem;
+}
+.small-link {
+  font-size: 80%;
 }
