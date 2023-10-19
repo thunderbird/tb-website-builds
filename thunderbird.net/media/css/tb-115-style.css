@@ -439,8 +439,12 @@ a:visited {
   height: 32px;
   width: 32px;
 }
-.download-button {
-  transform: translateX(-20px);
+/* Remove some list padding */
+.download-dumb > ul {
+  padding: 0;
+}
+.download-button > ul {
+  padding: 0;
 }
 .btn-donate,
 .btn-donate-lg,
@@ -458,6 +462,7 @@ button {
   position: relative;
   transition: font-size 0.2s;
   text-decoration: none;
+  white-space: nowrap;
 }
 .btn-donate::before,
 .btn-donate-lg::before,
@@ -1251,6 +1256,9 @@ footer {
     place-items: start;
     background-image: none;
   }
+  .nav-ln {
+    display: none;
+  }
   .visual {
     display: none;
   }
@@ -1262,6 +1270,16 @@ footer {
   .nav-links {
     display: none;
   }
+  .container {
+    padding-inline: 0.25rem;
+    padding-block: 32px;
+  }
+  .testimonials {
+    margin-block: 0;
+  }
+  .cta {
+    margin-top: 32px;
+  }
   .tagline {
     font-size: 4rem;
   }
@@ -1271,10 +1289,23 @@ footer {
   .btn-newsletter-icon {
     display: inline-block;
   }
+  .phone {
+    margin-block: -125px -350px;
+  }
+}
+@media (max-width: 512px) {
+  .container {
+    padding-block: 32px;
+  }
+  .tagline {
+    font-size: 3rem;
+  }
+  .cta-heading {
+    font-size: 3rem;
+  }
 }
 .download-other {
   text-align: center;
-  transform: translateX(20px);
   margin-top: -1rem;
 }
 .small-link {
