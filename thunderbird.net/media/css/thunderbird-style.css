@@ -21,7 +21,6 @@ body,
 .social-link,
 .tabs-nav label,
 .tabs-nav #channel-header,
-.wFormContainer .wForm .captcha .captchaHelp,
 .social-link-large {
   font-size: 11px;
 }
@@ -44,12 +43,7 @@ body,
 .btn-banner,
 .modal form .amount-selection label:last-child #amount-other::placeholder,
 .faq-entry .faq-answer,
-.newsletter-form input,
-.wFormContainer .wForm .oneField textarea,
-.wFormContainer .wForm .oneField select,
-.wFormContainer .wForm .oneField input,
-.wFormContainer .wForm .htmlSection .htmlContent,
-.wFormContainer .primaryAction {
+.newsletter-form input {
   font-size: 15px;
 }
 .font-lg,
@@ -130,8 +124,7 @@ body,
 .btn-newsletter,
 .btn-beta.btn-beta-pill,
 .modal form .amount-selection label,
-.newsletter-form input,
-.wFormContainer .primaryAction {
+.newsletter-form input {
   font-weight: 700;
 }
 .font-extrabold {
@@ -153,14 +146,10 @@ body,
 .tracking-wide,
 body,
 .faq-entry .faq-answer,
-.newsletter-form input,
-.wFormContainer .wForm .oneField textarea,
-.wFormContainer .wForm .oneField select,
-.wFormContainer .wForm .oneField input {
+.newsletter-form input {
   letter-spacing: 0.025em;
 }
-.tracking-wider,
-.wFormContainer .wForm .htmlSection .htmlContent {
+.tracking-wider {
   letter-spacing: 0.05em;
 }
 .tracking-widest {
@@ -171,8 +160,7 @@ body,
 .btn-newsletter,
 .modal footer ul > li:not(:last-child)::after,
 .header-section span,
-.social-link-large,
-.wFormContainer .primaryAction {
+.social-link-large {
   line-height: 1;
 }
 .leading-tight {
@@ -195,8 +183,7 @@ body,
 }
 .leading-loose,
 #amount-cancel p,
-.faq-entry .faq-answer,
-.wFormContainer .wForm .htmlSection .htmlContent {
+.faq-entry .faq-answer {
   line-height: 2;
 }
 .underline,
@@ -253,8 +240,7 @@ body,
 .header-section,
 .tabs-nav label,
 .tabs-nav #channel-header,
-.markup-page h2,
-.wFormContainer .primaryAction {
+.markup-page h2 {
   text-transform: uppercase;
 }
 .lowercase {
@@ -272,9 +258,7 @@ body,
   text-align: left;
 }
 .text-center,
-.social-link-large span,
-.wFormContainer .wForm .actions,
-.wFormContainer .wForm .htmlSection {
+.social-link-large span {
   text-align: center;
 }
 .text-right {
@@ -380,8 +364,7 @@ body,
     line-height: 1.375;
   }
   .md\:leading-normal,
-  .btn-newsletter,
-  .wFormContainer .primaryAction {
+  .btn-newsletter {
     line-height: 1.5;
   }
   .md\:leading-relaxed {
@@ -505,10 +488,7 @@ body,
 .btn-link,
 .btn-banner,
 .tabs-nav label,
-.tabs-nav #channel-header,
-.wFormContainer .wForm .oneField textarea,
-.wFormContainer .wForm .oneField select,
-.wFormContainer .wForm .oneField input {
+.tabs-nav #channel-header {
   background-color: transparent;
 }
 .border-transparent,
@@ -543,12 +523,10 @@ body,
 #release:checked ~ aside nav .tabs-nav .release label,
 #beta:checked ~ aside nav .tabs-nav .beta label,
 #daily:checked ~ aside nav .tabs-nav .daily label,
-.wFormContainer .primaryAction,
 .social-link-large,
 .p-links a,
 .p-links-blue a,
-.markup-page a,
-.wFormContainer .primaryAction {
+.markup-page a {
   color: #fff;
 }
 .bg-white,
@@ -823,8 +801,7 @@ body {
 .border-purple {
   border-color: #ad3bff;
 }
-.text-red,
-.wFormContainer .wForm .captcha .oneField .g-captcha-error {
+.text-red {
   color: #a4000f;
 }
 .bg-red {
@@ -855,11 +832,7 @@ body {
 .form-select,
 .newsletter-form input,
 .tabs-nav label,
-.tabs-nav #channel-header,
-.wFormContainer .wForm .oneField textarea,
-.wFormContainer .wForm .oneField select,
-.wFormContainer .wForm .oneField input,
-.wFormContainer .primaryAction {
+.tabs-nav #channel-header {
   border-radius: 0.125rem;
 }
 .rounded,
@@ -887,10 +860,7 @@ body {
 .modal form .amount-selection label,
 .modal form .amount-selection label:last-child #amount-other,
 .btn-donate-and-download,
-.markup-page hr,
-.wFormContainer .wForm .oneField textarea,
-.wFormContainer .wForm .oneField select,
-.wFormContainer .wForm .oneField input {
+.markup-page hr {
   border-style: solid;
 }
 .border-dashed {
@@ -903,18 +873,14 @@ body {
 .btn-inline,
 .btn-newsletter,
 .form-select,
-.newsletter-form input,
-.wFormContainer .primaryAction {
+.newsletter-form input {
   border-style: none;
 }
 .border,
 .btn-download-inline,
 .btn-body,
 .modal form .amount-selection label,
-.btn-donate-and-download,
-.wFormContainer .wForm .oneField textarea,
-.wFormContainer .wForm .oneField select,
-.wFormContainer .wForm .oneField input {
+.btn-donate-and-download {
   border-width: 1px;
 }
 .border-0,
@@ -995,9 +961,6 @@ body {
 .btn-donate-and-download,
 .newsletter-form,
 .header-section,
-.wFormContainer .wForm .actions,
-.wFormContainer .wForm .captcha .oneField,
-.wFormContainer .wForm .htmlSection,
 .social-link-large,
 .markup-page h2 {
   display: flex;
@@ -1040,8 +1003,7 @@ body {
   .md\:inline {
     display: inline;
   }
-  .md\:flex,
-  .wFormContainer .wForm .oneField {
+  .md\:flex {
     display: flex;
   }
   .md\:table {
@@ -1189,12 +1151,10 @@ body {
   flex-direction: row-reverse;
 }
 .flex-col,
-.no-js .retry-download,
-.wFormContainer .wForm .actions {
+.no-js .retry-download {
   flex-direction: column;
 }
-.flex-col-reverse,
-.wFormContainer .wForm .captcha .oneField {
+.flex-col-reverse {
   flex-direction: column-reverse;
 }
 .flex-no-wrap {
@@ -1262,9 +1222,7 @@ body {
 .justify-start {
   justify-content: flex-start;
 }
-.justify-center,
-.wFormContainer .wForm .oneField,
-.wFormContainer .wForm .htmlSection {
+.justify-center {
   justify-content: center;
 }
 .justify-end {
@@ -1520,8 +1478,7 @@ body {
   width: 6rem;
 }
 .w-40,
-.form-select,
-.wFormContainer .primaryAction {
+.form-select {
   width: 10rem;
 }
 .w-48 {
@@ -1614,11 +1571,7 @@ body {
 .w-full,
 .modal form .amount-selection label:last-child #amount-other,
 .newsletter-form input,
-.markup-page hr,
-.wFormContainer .wForm .oneField,
-.wFormContainer .wForm .oneField textarea,
-.wFormContainer .wForm .oneField select,
-.wFormContainer .wForm .oneField input {
+.markup-page hr {
   width: 100%;
 }
 .w-screen {
@@ -1676,8 +1629,7 @@ body {
 .modal form .amount-selection label {
   height: 2.5rem;
 }
-.h-12,
-.wFormContainer .primaryAction {
+.h-12 {
   height: 3rem;
 }
 .h-16 {
@@ -1874,8 +1826,7 @@ body {
     width: 6rem;
   }
   .md\:w-40,
-  .btn-newsletter,
-  .wFormContainer .primaryAction {
+  .btn-newsletter {
     width: 10rem;
   }
   .md\:w-48 {
@@ -1986,8 +1937,7 @@ body {
   .md\:max-w-xl {
     max-width: 36rem;
   }
-  .md\:max-w-2xl,
-  .wFormContainer .wForm .htmlSection .htmlContent {
+  .md\:max-w-2xl {
     max-width: 42rem;
   }
   .md\:max-w-3xl {
@@ -2360,18 +2310,14 @@ body {
 }
 .p-3,
 .newsletter-form input,
-.header-section span,
-.wFormContainer .wForm .oneField textarea,
-.wFormContainer .wForm .oneField select,
-.wFormContainer .wForm .oneField input {
+.header-section span {
   padding: 0.75rem;
 }
 .p-2,
 .btn-download-inline,
 .btn-body.btn-release,
 .btn-block-white,
-.btn-newsletter,
-.wFormContainer .primaryAction {
+.btn-newsletter {
   padding: 0.5rem;
 }
 .p-1,
@@ -2535,8 +2481,7 @@ body {
 .pr-3,
 .btn-donate,
 .btn-newsletter,
-.modal form .amount-selection label,
-.wFormContainer .primaryAction {
+.modal form .amount-selection label {
   padding-right: 0.75rem;
 }
 .pr-2,
@@ -2699,8 +2644,7 @@ body {
 .pl-3,
 .btn-donate,
 .btn-newsletter,
-.modal form .amount-selection label,
-.wFormContainer .primaryAction {
+.modal form .amount-selection label {
   padding-left: 0.75rem;
 }
 .pl-2,
@@ -2772,8 +2716,7 @@ body {
 .m-3 {
   margin: 0.75rem;
 }
-.m-2,
-.wFormContainer .wForm .oneField {
+.m-2 {
   margin: 0.5rem;
 }
 .m-1,
@@ -3188,7 +3131,6 @@ body {
 .faq-entry .faq-question,
 .header-section,
 .subheader-section,
-.wFormContainer .wForm .captcha .oneField .g-captcha-error,
 .markup-page h2,
 .markup-page h3 {
   margin-bottom: 1rem;
@@ -3197,8 +3139,7 @@ body {
   margin-bottom: 0.75rem;
 }
 .mb-2,
-.nav-link,
-.wFormContainer .wForm .captcha .oneField {
+.nav-link {
   margin-bottom: 0.5rem;
 }
 .mb-1 {
@@ -3410,18 +3351,13 @@ body {
 }
 .mx-auto,
 .no-js .retry-download .retry-text,
-.no-js .retry-download .retry-button,
-.wFormContainer .primaryAction,
-.wFormContainer .wForm,
-.wFormContainer .wForm .oneField,
-.wFormContainer .wForm .captcha .oneField .g-recaptcha {
+.no-js .retry-download .retry-button {
   margin-left: auto;
   margin-right: auto;
 }
 .my-auto,
 #amount-cancel p,
-.btn-donate-and-download p,
-.wFormContainer .wForm .oneField label {
+.btn-donate-and-download p {
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -7333,8 +7269,7 @@ body {
 }
 .bg-primary-button,
 .btn-newsletter,
-.btn-join,
-.wFormContainer .primaryAction {
+.btn-join {
   background: #005CE3;
   background: -moz-linear-gradient(-45deg, #0080FF 0%, #005CE3 100%);
   background: -webkit-linear-gradient(-45deg, #0080FF 0%, #005CE3 100%);
@@ -7501,8 +7436,7 @@ button {
   -o-transform: translateY(-7%);
   transform: translateY(-7%);
 }
-.btn-newsletter,
-.wFormContainer .primaryAction {
+.btn-newsletter {
   white-space: nowrap;
 }
 .btn-newsletter:hover,
@@ -7757,8 +7691,7 @@ button {
 .btn-inline,
 .btn-newsletter,
 .form-select,
-.newsletter-form input,
-.wFormContainer .primaryAction {
+.newsletter-form input {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
@@ -7829,40 +7762,20 @@ h6:focus .anchor {
   cursor: pointer;
 }
 /*
- * Re-styling of the FormAssembly embedded form, class names are theirs.
+ * The form assembly theming is located in a .css as it had to be built from a scss file...
+ * This file is just to fix the form on mobile
  */
-.wFormContainer .primaryAction {
-  margin-top: auto;
-  margin-bottom: 2rem;
-  -webkit-transition: all 320ms ease;
-  -moz-transition: all 320ms ease;
-  -o-transition: all 320ms ease;
-  transition: all 320ms ease;
-  cursor: pointer;
-}
-.wFormContainer .primaryAction:disabled {
-  cursor: not-allowed;
-  opacity: 0.5;
-}
-.wFormContainer .wForm .oneField textarea,
-.wFormContainer .wForm .oneField select,
-.wFormContainer .wForm .oneField input {
-  box-sizing: border-box;
-  border-color: rgba(12, 12, 13, 0.2);
-}
-.wFormContainer .wForm .oneField label {
-  width: 10rem;
-}
-.wFormContainer .wForm .oneField textarea {
-  height: 8rem;
-}
-@media (min-width: 768px) {
-  .wFormContainer .wForm .oneField textarea,
-  .wFormContainer .wForm .oneField select,
-  .wFormContainer .wForm .oneField input {
-    width: 30rem;
+@media (max-width: 768px) {
+  .wFormContainer form,
+  .wFormContainer input {
+    padding: 0 !important;
   }
-}
-.wFormContainer .wForm .actions {
-  min-height: 300px;
+  .wFormContainer label,
+  .wFormContainer select,
+  .wFormContainer input,
+  .wFormContainer textarea,
+  .wFormContainer .oneField,
+  .wFormContainer .inputWrapper {
+    width: 100% !important;
+  }
 }
