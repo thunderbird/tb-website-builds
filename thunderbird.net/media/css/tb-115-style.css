@@ -674,6 +674,10 @@ svg {
   align-items: center;
   gap: 30px;
 }
+/* Hide the header download button if the browser does not support javascript */
+.no-js .header-download {
+  display: none !important;
+}
 .nav-ln,
 .cta-ln,
 .footer-ln {
@@ -743,7 +747,7 @@ header {
   font-weight: 300;
   text-align: center;
   line-height: 1.4;
-  max-inline-size: 55ch;
+  max-inline-size: 50.5rem;
 }
 .tagline {
   font-size: 6rem;
