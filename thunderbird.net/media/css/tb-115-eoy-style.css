@@ -644,6 +644,8 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  z-index: 300;
+  position: relative;
 }
 @media (max-width: 1024px) {
   .eoy-2023-appeal {
