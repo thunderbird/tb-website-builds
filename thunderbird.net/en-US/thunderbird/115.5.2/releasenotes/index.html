@@ -11,13 +11,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
 
-    <title>Thunderbird — Beta Notes (121.0beta) — Thunderbird</title>
+    <title>Thunderbird — Release Notes (115.5.2) — Thunderbird</title>
     <meta name="description" content="">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Thunderbird">
     <meta property="og:locale" content="en_US">
     <meta property="og:image" content="https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png">
-    <meta property="og:title" content="Thunderbird — Beta Notes (121.0beta)">
+    <meta property="og:title" content="Thunderbird — Release Notes (115.5.2)">
     <meta property="og:description" content="">
     <meta property="fb:page_id" content="348169218537151">
     <meta name="twitter:card" content="summary">
@@ -114,58 +114,14 @@
     
   <section class="text-center text-white flex flex-col items-center xl:w-full max-w-6xl mx-auto pl-8 pr-8">
     <h1 class="font-4xl md:font-hero font-thin md:mt-10 mb-8">
-      Thunderbird Beta Notes
+      Thunderbird Release Notes
     </h1>
     <p class="font-lg md:font-xl tracking-wide leading-relaxed max-w-4xl mb-10 mt-0">
-      Version 121.0beta, first offered to  channel users on November 22, 2023
+      Version 115.5.2, first offered to  channel users on December 11, 2023
     </p>
   </section>
   
     
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
     
       
         
@@ -405,11 +361,14 @@
         Check out the notes below for this version of Thunderbird. As always, you’re encouraged to <a href="https://support.mozilla.org/questions/new/thunderbird">tell us what you think</a>, or <a href="https://bugzilla.mozilla.org/">file a bug in Bugzilla</a>
       </p>
       <aside class="font-lg tracking-wider leading-loose mb-6 markup-page">
-        <p><strong>These notes apply to Thunderbird version 121 beta 6 released December 11, 2023.</strong></p>
-<p><strong>System Requirements:</strong> <a href="/en-US/thunderbird/121.0beta/system-requirements/">Details</a></p>
+        <p><strong>For help and a quick start on Thunderbird 115, see
+<a href="https://support.mozilla.org/en-US/kb/thunderbird-115-supernova-faq">Thunderbird 115 Supernova FAQ</a>.</strong></p>
+<p><strong>For more on all the new features in Thunderbird 115, see
+<a href="https://www.thunderbird.net/thunderbird/115.0/whatsnew/">What’s New in Thunderbird 115</a>.</strong></p>
+<p><strong>System Requirements:</strong> <a href="/en-US/thunderbird/115.0/system-requirements/">Details</a></p>
 <ul>
-<li>Windows: Windows 10 or later</li>
-<li>Mac: macOS 10.15 or later</li>
+<li>Windows: Windows 7 or later</li>
+<li>Mac: macOS 10.12 or later</li>
 <li>Linux: GTK+ 3.14 or higher</li>
 </ul>
       </aside>
@@ -459,12 +418,8 @@
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Messages opened in background tab were incorrectly marked as read</p>
+                  <p>"Compact" option was missing from folder context menu for IMAP accounts using maildir</p>
                 </aside>
-                
-                  <aside>
-                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1862822">1862822</a></p>
-                  </aside>
                 
               </aside>
             
@@ -490,12 +445,8 @@
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Thunderbird now attempts to reconnect on a new connection after SMTP 4xx errors</p>
+                  <p>Message list could not be properly read by screen readers in table view</p>
                 </aside>
-                
-                  <aside>
-                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1854567">1854567</a></p>
-                  </aside>
                 
               </aside>
             
@@ -521,12 +472,8 @@
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>IMAP messages deleted in Thunderbird still appeared in other email clients that don't respect messages marked "\deleted"</p>
+                  <p>Messages with slow-loading images were delayed being marked as read</p>
                 </aside>
-                
-                  <aside>
-                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1857881">1857881</a></p>
-                  </aside>
                 
               </aside>
             
@@ -552,12 +499,8 @@
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Mark All Read did not work for virtual folders</p>
+                  <p>Messages opened in background tab were incorrectly marked as read</p>
                 </aside>
-                
-                  <aside>
-                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=519687">519687</a></p>
-                  </aside>
                 
               </aside>
             
@@ -583,12 +526,8 @@
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Unified folders were missing "Mark Folder Read" option in context menu</p>
+                  <p>Mark All Read did not work for virtual folders</p>
                 </aside>
-                
-                  <aside>
-                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1842420">1842420</a></p>
-                  </aside>
                 
               </aside>
             
@@ -614,12 +553,8 @@
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Add tooltip displaying full folder path when hovering over location column of thread pane</p>
+                  <p>Delete (trash icon) in message display did not work in Unified folders</p>
                 </aside>
-                
-                  <aside>
-                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=522768">522768</a></p>
-                  </aside>
                 
               </aside>
             
@@ -645,12 +580,8 @@
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>"Reply to List" was incorrectly disabled in Unified Toolbar since Thunderbird 115.4.1</p>
+                  <p>Unified folders were missing "Mark Folder Read" option in context menu</p>
                 </aside>
-                
-                  <aside>
-                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1862232">1862232</a></p>
-                  </aside>
                 
               </aside>
             
@@ -676,12 +607,8 @@
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Sorting by column with "Grouped By" enabled then performing a quick filter search caused blank message pane</p>
+                  <p>"Reply to List" was incorrectly disabled in Unified Toolbar since Thunderbird 115.4.1</p>
                 </aside>
-                
-                  <aside>
-                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1860322">1860322</a></p>
-                  </aside>
                 
               </aside>
             
@@ -707,12 +634,8 @@
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Star and junk icons showed incorrect state for selected-focused messages in table view</p>
+                  <p>Sorting by column with "Grouped By" enabled then performing a quick filter search caused blank message pane</p>
                 </aside>
-                
-                  <aside>
-                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1863812">1863812</a></p>
-                  </aside>
                 
               </aside>
             
@@ -738,12 +661,8 @@
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>View menu in message window did not initialize correctly</p>
+                  <p>Attachment list did not always appear if remote message content loaded slowly</p>
                 </aside>
-                
-                  <aside>
-                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1862665">1862665</a></p>
-                  </aside>
                 
               </aside>
             
@@ -769,12 +688,8 @@
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Links with IP address as link text and destination incorrectly warned user that link text and destination did not match</p>
+                  <p>Messages in outbox were not shown as unread by default</p>
                 </aside>
-                
-                  <aside>
-                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1804628">1804628</a></p>
-                  </aside>
                 
               </aside>
             
@@ -800,12 +715,8 @@
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Attachment list did not always appear if remote message content loaded slowly</p>
+                  <p>"Apply columns to" sometimes failed to apply columns to a root folder and its descendants</p>
                 </aside>
-                
-                  <aside>
-                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1856929">1856929</a></p>
-                  </aside>
                 
               </aside>
             
@@ -831,12 +742,8 @@
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>OpenPGP signatures rejected due to mismatched signature timestamp now display signature timestamp and clarifying message</p>
+                  <p>Global search results displayed as a list did not allow threads to be collapsed</p>
                 </aside>
-                
-                  <aside>
-                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1863705">1863705</a> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1863707">1863707</a></p>
-                  </aside>
                 
               </aside>
             
@@ -862,12 +769,8 @@
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Advanced address book search did not return results if display name was left blank</p>
+                  <p>"Quick Filter" button on toolbar was disabled when viewing search results as a list</p>
                 </aside>
-                
-                  <aside>
-                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1864124">1864124</a></p>
-                  </aside>
                 
               </aside>
             
@@ -893,12 +796,8 @@
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Clicking on attendee when inviting attendees added the attendee twice</p>
+                  <p>Folder open hover delay was too short when using drag-and-drop</p>
                 </aside>
-                
-                  <aside>
-                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1858629">1858629</a></p>
-                  </aside>
                 
               </aside>
             
@@ -924,12 +823,8 @@
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Various Cards View UX improvements</p>
+                  <p>Parent folders with collapsed subfolders did not consistently display new mail indicator or message count for subfolders</p>
                 </aside>
-                
-                  <aside>
-                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1855824">1855824</a> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1857120">1857120</a> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1858302">1858302</a> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1858578">1858578</a> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1860141">1860141</a> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1860148">1860148</a> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1860599">1860599</a> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1864064">1864064</a> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1865433">1865433</a></p>
-                  </aside>
                 
               </aside>
             
@@ -955,116 +850,13 @@
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Various UX and visual improvements</p>
+                  <p>Message list scroll position could move randomly when switching folders</p>
                 </aside>
-                
-                  <aside>
-                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1824288">1824288</a> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1832149">1832149</a> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1835687">1835687</a> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1856495">1856495</a> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1860757">1860757</a> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1861210">1861210</a> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1861286">1861286</a> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1861383">1861383</a> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1863296">1863296</a> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1864338">1864338</a> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1864979">1864979</a></p>
-                  </aside>
                 
               </aside>
             
           
             
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-        
-          
-            <section class="mt-10 mb-8 flex justify-center items-center w-full">
-              <span class="header-line flex-1"></span>
-              <h2 class="header-section pl-4 pr-4 mb-0 text-center">
-                Fixed in beta 2
-              </h2>
-              <span class="header-line flex-1"></span>
-            </section>
-            
-          
-
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-              
-                <h3 id="fixes" class="header-section pt-14 pb-4">
-                  <span><!-- This Source Code Form is subject to the terms of the Mozilla Public
-   - License, v. 2.0. If a copy of the MPL was not distributed with this
-   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
-</span>Fixes
-                </h3>
               
 
               
@@ -1085,12 +877,8 @@
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>3-pane view was blank after starting Thunderbird with unsent messages in outbox</p>
+                  <p>Undoing deletion of local messages required using "Undo" (Ctrl-Z) twice</p>
                 </aside>
-                
-                  <aside>
-                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1865806">1865806</a></p>
-                  </aside>
                 
               </aside>
             
@@ -1116,45 +904,12 @@
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Messages in outbox were not shown as unread by default</p>
+                  <p>IMAP messages deleted in Thunderbird still appeared in other email clients that don't respect messages marked "\deleted"</p>
                 </aside>
-                
-                  <aside>
-                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1852428">1852428</a></p>
-                  </aside>
                 
               </aside>
             
           
-            
-              
-
-              
-              
-
-              <aside id="note-19"
-                class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
-                <h4 class="font-bold uppercase m-0 p-3 w-24">
-                  
-                    <aside class="flex items-center text-green">
-                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
-   - License, v. 2.0. If a copy of the MPL was not distributed with this
-   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
-</span>
-                      fixed
-                    </aside>
-                  
-                </h4>
-                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>"Apply columns to" sometimes failed to apply columns to a root folder and its descendants</p>
-                </aside>
-                
-                  <aside>
-                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1846127">1846127</a></p>
-                  </aside>
-                
-              </aside>
             
           
             
@@ -1178,12 +933,8 @@
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Global search results displayed as a list did not allow threads to be collapsed</p>
+                  <p>IMAP folder discovery was slowed by status bar message updates</p>
                 </aside>
-                
-                  <aside>
-                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1846127">1846127</a></p>
-                  </aside>
                 
               </aside>
             
@@ -1209,12 +960,8 @@
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>"Quick Filter" button on toolbar was disabled when viewing search results as a list</p>
+                  <p>Servers with non-LDH (letters-digits-hyphens) hostnames, such as those containing non-ASCII Unicode characters, could not be found</p>
                 </aside>
-                
-                  <aside>
-                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1862247">1862247</a></p>
-                  </aside>
                 
               </aside>
             
@@ -1243,10 +990,6 @@
                   <p>Images could not be copied and pasted from one message into another</p>
                 </aside>
                 
-                  <aside>
-                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1862674">1862674</a></p>
-                  </aside>
-                
               </aside>
             
           
@@ -1271,12 +1014,8 @@
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Undoing deletion of local messages required using "Undo" (Ctrl-Z) twice</p>
+                  <p>Troubleshooting page (about:support) did not work on profiles with no outgoing email server, such as news-only profiles</p>
                 </aside>
-                
-                  <aside>
-                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1856427">1856427</a></p>
-                  </aside>
                 
               </aside>
             
@@ -1302,12 +1041,8 @@
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Some labels were missing from Add-ons Manager</p>
+                  <p>Minimize/maximize button order was incorrect when placing window titlebar buttons on left-hand side</p>
                 </aside>
-                
-                  <aside>
-                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1865787">1865787</a></p>
-                  </aside>
                 
               </aside>
             
@@ -1333,116 +1068,13 @@
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Troubleshooting page (about:support) did not work on profiles with no outgoing email server, such as news-only profiles</p>
+                  <p>OpenPGP integraton with smartcard using latest version of Gpg4Win failed</p>
                 </aside>
-                
-                  <aside>
-                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1858028">1858028</a></p>
-                  </aside>
                 
               </aside>
             
           
             
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-        
-          
-            <section class="mt-10 mb-8 flex justify-center items-center w-full">
-              <span class="header-line flex-1"></span>
-              <h2 class="header-section pl-4 pr-4 mb-0 text-center">
-                Fixed in beta 3
-              </h2>
-              <span class="header-line flex-1"></span>
-            </section>
-            
-          
-
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-              
-                <h3 id="fixes" class="header-section pt-14 pb-4">
-                  <span><!-- This Source Code Form is subject to the terms of the Mozilla Public
-   - License, v. 2.0. If a copy of the MPL was not distributed with this
-   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
-</span>Fixes
-                </h3>
               
 
               
@@ -1463,12 +1095,8 @@
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Windows taskbar icon did not have the "Beta" label</p>
+                  <p>Various accessibility improvements</p>
                 </aside>
-                
-                  <aside>
-                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1866730">1866730</a></p>
-                  </aside>
                 
               </aside>
             
@@ -1494,650 +1122,8 @@
                   
                 </h4>
                 <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>HTML FileLink attachments used the wrong encoding</p>
+                  <p>Various UX and visual improvements</p>
                 </aside>
-                
-                  <aside>
-                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1865269">1865269</a></p>
-                  </aside>
-                
-              </aside>
-            
-          
-            
-              
-
-              
-              
-
-              <aside id="note-28"
-                class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
-                <h4 class="font-bold uppercase m-0 p-3 w-24">
-                  
-                    <aside class="flex items-center text-green">
-                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
-   - License, v. 2.0. If a copy of the MPL was not distributed with this
-   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
-</span>
-                      fixed
-                    </aside>
-                  
-                </h4>
-                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>IMAP folder discovery was slowed by status bar message updates</p>
-                </aside>
-                
-                  <aside>
-                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1864776">1864776</a></p>
-                  </aside>
-                
-              </aside>
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-        
-          
-            <section class="mt-10 mb-8 flex justify-center items-center w-full">
-              <span class="header-line flex-1"></span>
-              <h2 class="header-section pl-4 pr-4 mb-0 text-center">
-                Fixed in beta 4
-              </h2>
-              <span class="header-line flex-1"></span>
-            </section>
-            
-          
-
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-              
-                <h3 id="fixes" class="header-section pt-14 pb-4">
-                  <span><!-- This Source Code Form is subject to the terms of the Mozilla Public
-   - License, v. 2.0. If a copy of the MPL was not distributed with this
-   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
-</span>Fixes
-                </h3>
-              
-
-              
-              
-
-              <aside id="note-29"
-                class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
-                <h4 class="font-bold uppercase m-0 p-3 w-24">
-                  
-                    <aside class="flex items-center text-green">
-                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
-   - License, v. 2.0. If a copy of the MPL was not distributed with this
-   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
-</span>
-                      fixed
-                    </aside>
-                  
-                </h4>
-                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Servers with non-LDH (letters-digits-hyphens) hostnames, such as those containing non-ASCII Unicode characters, could not be found</p>
-                </aside>
-                
-                  <aside>
-                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1857824">1857824</a></p>
-                  </aside>
-                
-              </aside>
-            
-          
-            
-              
-
-              
-              
-
-              <aside id="note-30"
-                class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
-                <h4 class="font-bold uppercase m-0 p-3 w-24">
-                  
-                    <aside class="flex items-center text-green">
-                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
-   - License, v. 2.0. If a copy of the MPL was not distributed with this
-   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
-</span>
-                      fixed
-                    </aside>
-                  
-                </h4>
-                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>High CPU usage sometimes occurred with IMAP CONDSTORE (conditional STORE) enabled</p>
-                </aside>
-                
-                  <aside>
-                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1839256">1839256</a></p>
-                  </aside>
-                
-              </aside>
-            
-          
-            
-              
-
-              
-              
-
-              <aside id="note-31"
-                class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
-                <h4 class="font-bold uppercase m-0 p-3 w-24">
-                  
-                    <aside class="flex items-center text-green">
-                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
-   - License, v. 2.0. If a copy of the MPL was not distributed with this
-   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
-</span>
-                      fixed
-                    </aside>
-                  
-                </h4>
-                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Replying to a collapsed thread via keyboard shortcut (Ctrl+R/Cmd+R) opened a reply for every message in the thread</p>
-                </aside>
-                
-                  <aside>
-                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1866819">1866819</a></p>
-                  </aside>
-                
-              </aside>
-            
-          
-            
-              
-
-              
-              
-
-              <aside id="note-32"
-                class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
-                <h4 class="font-bold uppercase m-0 p-3 w-24">
-                  
-                    <aside class="flex items-center text-green">
-                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
-   - License, v. 2.0. If a copy of the MPL was not distributed with this
-   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
-</span>
-                      fixed
-                    </aside>
-                  
-                </h4>
-                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Folder open hover delay was too short when using drag-and-drop</p>
-                </aside>
-                
-                  <aside>
-                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1863845">1863845</a></p>
-                  </aside>
-                
-              </aside>
-            
-          
-            
-              
-
-              
-              
-
-              <aside id="note-33"
-                class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
-                <h4 class="font-bold uppercase m-0 p-3 w-24">
-                  
-                    <aside class="flex items-center text-green">
-                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
-   - License, v. 2.0. If a copy of the MPL was not distributed with this
-   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
-</span>
-                      fixed
-                    </aside>
-                  
-                </h4>
-                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Parent folders with collapsed subfolders did not consistently display new mail indicator or message count for subfolders</p>
-                </aside>
-                
-                  <aside>
-                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1854377">1854377</a></p>
-                  </aside>
-                
-              </aside>
-            
-          
-            
-              
-
-              
-              
-
-              <aside id="note-34"
-                class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
-                <h4 class="font-bold uppercase m-0 p-3 w-24">
-                  
-                    <aside class="flex items-center text-green">
-                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
-   - License, v. 2.0. If a copy of the MPL was not distributed with this
-   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
-</span>
-                      fixed
-                    </aside>
-                  
-                </h4>
-                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Minimize/maximize button order was incorrect when placing window titlebar buttons on left-hand side</p>
-                </aside>
-                
-                  <aside>
-                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1867780">1867780</a></p>
-                  </aside>
-                
-              </aside>
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-        
-          
-            <section class="mt-10 mb-8 flex justify-center items-center w-full">
-              <span class="header-line flex-1"></span>
-              <h2 class="header-section pl-4 pr-4 mb-0 text-center">
-                Fixed in beta 5
-              </h2>
-              <span class="header-line flex-1"></span>
-            </section>
-            
-          
-
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-              
-                <h3 id="fixes" class="header-section pt-14 pb-4">
-                  <span><!-- This Source Code Form is subject to the terms of the Mozilla Public
-   - License, v. 2.0. If a copy of the MPL was not distributed with this
-   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
-</span>Fixes
-                </h3>
-              
-
-              
-              
-
-              <aside id="note-35"
-                class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
-                <h4 class="font-bold uppercase m-0 p-3 w-24">
-                  
-                    <aside class="flex items-center text-green">
-                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
-   - License, v. 2.0. If a copy of the MPL was not distributed with this
-   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
-</span>
-                      fixed
-                    </aside>
-                  
-                </h4>
-                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>OpenPGP integraton with smartcard using latest version of Gpg4Win failed</p>
-                </aside>
-                
-                  <aside>
-                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1868225">1868225</a></p>
-                  </aside>
-                
-              </aside>
-            
-          
-            
-              
-
-              
-              
-
-              <aside id="note-36"
-                class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
-                <h4 class="font-bold uppercase m-0 p-3 w-24">
-                  
-                    <aside class="flex items-center text-green">
-                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
-   - License, v. 2.0. If a copy of the MPL was not distributed with this
-   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
-</span>
-                      fixed
-                    </aside>
-                  
-                </h4>
-                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Message list scroll position could move randomly when switching folders</p>
-                </aside>
-                
-                  <aside>
-                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1866553">1866553</a></p>
-                  </aside>
-                
-              </aside>
-            
-          
-            
-              
-
-              
-              
-
-              <aside id="note-37"
-                class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
-                <h4 class="font-bold uppercase m-0 p-3 w-24">
-                  
-                    <aside class="flex items-center text-green">
-                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
-   - License, v. 2.0. If a copy of the MPL was not distributed with this
-   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
-</span>
-                      fixed
-                    </aside>
-                  
-                </h4>
-                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>macOS Contacts integration with Thunderbird address book did not work</p>
-                </aside>
-                
-                  <aside>
-                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1864521">1864521</a></p>
-                  </aside>
-                
-              </aside>
-            
-          
-            
-          
-        
-          
-            <section class="mt-10 mb-8 flex justify-center items-center w-full">
-              <span class="header-line flex-1"></span>
-              <h2 class="header-section pl-4 pr-4 mb-0 text-center">
-                Fixed in beta 6
-              </h2>
-              <span class="header-line flex-1"></span>
-            </section>
-            
-          
-
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-              
-                <h3 id="fixes" class="header-section pt-14 pb-4">
-                  <span><!-- This Source Code Form is subject to the terms of the Mozilla Public
-   - License, v. 2.0. If a copy of the MPL was not distributed with this
-   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
-</span>Fixes
-                </h3>
-              
-
-              
-              
-
-              <aside id="note-38"
-                class="flex flex-row flex-wrap items-center bg-white shadow-md mb-4 rounded">
-                <h4 class="font-bold uppercase m-0 p-3 w-24">
-                  
-                    <aside class="flex items-center text-green">
-                      <span class="w-4 mr-2"><!-- This Source Code Form is subject to the terms of the Mozilla Public
-   - License, v. 2.0. If a copy of the MPL was not distributed with this
-   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
-</span>
-                      fixed
-                    </aside>
-                  
-                </h4>
-                <aside class="flex-1 p-3 font-md leading-normal markup-page no-padding">
-                  <p>Message selection misbehaved after selecting a sub-message in an expanded thread, collapsing the thread, then pressing up/down to move selection</p>
-                </aside>
-                
-                  <aside>
-                    <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1865548">1865548</a></p>
-                  </aside>
                 
               </aside>
             
