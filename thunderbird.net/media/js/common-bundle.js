@@ -43,6 +43,26 @@ if (typeof Mozilla === 'undefined') {
         }
     };
 
+    /**
+     * Redirects the user to a donation url. This should be triggered after a download.
+     * @param {HTMLAnchorElement} element
+     */
+    Utils.redirectAfterDownload = function(element) {
+        const download_url = element.href;
+        const donate_url = element.getAttribute('data-donate-link') || null;
+
+        // Don't redirect if we're on the failed download page.
+        if ($("body").attr('id') !== 'thunderbird-download') {
+            // MSIE and Edge cancel the download prompt on redirect, so just leave them out.
+            if (!(/msie\s|trident\/|edge\//i.test(navigator.userAgent))) {
+                setTimeout(function() {
+                    window.location.href = donate_url;
+                }, 5000);
+            }
+        }
+        window.Mozilla.Utils.triggerIEDownload(download_url);
+    }
+
     // attach an event to all the download buttons to trigger the special
     // ie functionality if on ie
     Utils.initDownloadLinks = function() {
@@ -50,7 +70,7 @@ if (typeof Mozilla === 'undefined') {
         $('.download-link').each(function() {
             var $el = $(this);
             $el.click(function(e) {
-                window.Mozilla.ABTest.Download(e);
+                Utils.redirectAfterDownload(e.currentTarget);
             });
         });
         $('.download-list').attr('role', 'presentation');
@@ -1701,27 +1721,63 @@ $(function() {
 (function($) {
     'use strict';
 
+    /**
+     * Check to see if we can start an autodownload
+     * @returns {boolean}
+     */
+    function canAutodownload () {
+        var isIELT9 = window.Mozilla.Client.platform === 'windows' && /MSIE\s[1-8]\./.test(navigator.userAgent);
+
+        // IE11 safe check for determining if we've already downloaded Thunderbird
+        var lowercaseQuery = window.location.search.toLowerCase();
+        var isDownloaded = /([?|&]+downloaded=true)/.test(lowercaseQuery) === true;
+        
+        return !isDownloaded && !isIELT9;
+    }
+
     // Only do this on the autodownload page.
     if ($('body').attr('id') == 'thunderbird-download') {
-        var isIELT9 = window.Mozilla.Client.platform === 'windows' && /MSIE\s[1-8]\./.test(navigator.userAgent);
-        var $directDownloadLink = $('#direct-download-link');
-        var $platformLink = $('#download-button-desktop-release .download-list li:visible .download-link');
         var downloadURL;
+        var downloadChannelRegex = /download_channel=(esr|beta|daily)/;
+        var downloadChannel = downloadChannelRegex.exec(window.location.search);
+        var downloadElement = null;
+        var $platformLink = null;
+
+        // If it's not in the url, default it to esr
+        if (downloadChannel === null) {
+            downloadChannel = 'esr';
+        } else {
+            downloadChannel = downloadChannel[1];
+        }
+
+        // Each element as an id equal to their channel so: #esr, #beta, #daily.
+        downloadElement = document.getElementById(downloadChannel);
+        // Remove our display:hidden class
+        downloadElement.className = '';
+
+        // Make sure we've shown the appropriate download link before returning
+        if (!canAutodownload()) {
+            return;
+        }
+
+        // Get the platform link via the active downloadChannel
+        $platformLink = $(`#${downloadChannel} li:visible .download-link`);
 
         // Only auto-start the download if a visible platform link is detected.
         if ($platformLink.length) {
             downloadURL = $platformLink.attr('href');
 
-            // If user is not on an IE that blocks JS triggered downloads, start the
-            // platform-detected download a second after DOM ready event. We don't rely on
+            window._paq = window._paq || [];
+            // Track auto downloads - trackLink( url, linkType )
+            window._paq.push(['trackLink', downloadURL, 'download'])
+
+            // Start the platform-detected download a second after DOM ready event. We don't rely on
             // the window load event as we have third-party tracking pixels.
-            if (!isIELT9) {
-                $(function() {
-                    setTimeout(function() {
-                        window.location.href = downloadURL;
-                    }, 1000);
-                });
-            }
+            $(function() {
+                setTimeout(function() {
+                    window.location.href = downloadURL;
+                }, 1000);
+            });
         }
     }
 })(window.jQuery);
@@ -1735,8 +1791,7 @@ if (typeof Mozilla === 'undefined') {
     'use strict';
 
     var Donation = {};
-    Donation.ANIMATION_DURATION = 250;
-    Donation.WINDOW_POS_KEY = '_tb_donation_position';
+    Donation.NEWSLETTER_URL = `/${window.siteLocale}/newsletter`;
     /**
      * Is the download form visible?
      * @type {boolean}
@@ -1747,105 +1802,97 @@ if (typeof Mozilla === 'undefined') {
      * @type {?string}
      */
     Donation.CurrentDownloadLink = null;
+    /**
+     * Stateful check to determine if the supporter needs to be redirected after the FRU on.checkoutClose event
+     * @type {boolean}
+     */
+    Donation.NeedsNewsletterRedirect = false;
 
     /**
      * Setups our FRU javascript events
      */
     Donation.Init = function() {
         if (!window.FundraiseUp) {
-            console.error("Could not find FundraiseUp");
             return;
         }
+
+        // If a user clicks on a donate button, track the donate link click goal
+        const donateButtons = document.querySelectorAll('[data-donate-btn]');
+        donateButtons.forEach(function(element) {
+            element.addEventListener('click', function() {
+                window._paq = window._paq || [];
+                window._paq.push(['trackGoal', 1]);
+            });
+        });
 
         // Ensure we actually have the javascript loaded, so we can hook up our events.
         const fundraiseUp = window.FundraiseUp;
 
-        // An initial check for our donate buttons
-        Donation.CheckForPosition();
-
         /**
+         * Event fires when the FRU checkout modal opens
          * @param details - See https://fundraiseup.com/docs/parameters/
          */
         fundraiseUp.on('checkoutOpen', function(details) {
-            // Don't start the download if we didn't come from the donation download modal
-            // The absence of Download & Donate element button should handle this
-            if (!details.element || !details.element.id) {
-                return;
-            }
+            window._paq = window._paq || [];
+            window._paq.push(['trackEvent', 'Donation', 'Started']);
+
+            // Reset any stateful variables
+            Donation.NeedsNewsletterRedirect = false;
 
             // Retrieve the current download link before we close the form (as that clears it)
             const download_link = Donation.CurrentDownloadLink;
-
-            Donation.CloseForm();
 
             // No download link? Exit.
             if (!download_link) {
                 return;
             }
 
+            // Send off the download event
+            window._paq.push(['trackLink', download_link, 'download']);
+
             // Timeout is here to prevent url collisions with fundraiseup form.
             window.setTimeout(function() {
                 window.open(download_link, '_self');
             }, 1000);
         });
-        fundraiseUp.on('checkoutClose', function () {
-            const toRemove = [
-                'utm_campaign', 'utm_medium', 'utm_source', 'utm_content', 'form',
-            ];
-            const fullParams = location.href.split("?")[1];
-            const fullUrl = [location.href.split("?")[0]];
-
-            if (!fullParams) {
+        /**
+         * Event fires when the FRU checkout is closed.
+         * @param details - See https://fundraiseup.com/docs/parameters/
+         */
+        fundraiseUp.on('checkoutClose', function (details) {
+            if (!Donation.NeedsNewsletterRedirect) {
                 return;
             }
 
-            const params = new URLSearchParams(fullParams)
-            toRemove.map(function (item) {
-                params.delete(item);
-            });
-
-            if (params.toString().length > 0) {
-                fullUrl.push(params.toString());
+            // Redirect them to the newsletter landing page
+            location.href = Donation.NEWSLETTER_URL;
+        });
+        /**
+         * Event fires when the FRU conversion is completed successfully.
+         * @param details - See https://fundraiseup.com/docs/parameters/
+         */
+        fundraiseUp.on('donationComplete', function(details) {
+            if (!details) {
+                return;
             }
 
-            // FRU "restores" the url state, but forgets our utm tags (which it supports)
-            // Listen to a popstate, so we can accurately clean up after it.
-            window.addEventListener('popstate',  function cleanUTMTags(event) {
-                // Fire only once
-                window.removeEventListener('popstate', cleanUTMTags, false );
-                // Replace the url state with our clean url
-                window.history.replaceState(null, "", fullUrl.join('?'));
-            });
+            window._paq = window._paq || [];
+
+            // TrackEvent: Category, Action, Name
+            window._paq.push(['trackEvent', 'Donation', 'Completed']);
+            window._paq.push(['trackGoal', 7]); // Donation Completed Goal
+
+            if (details.supporter) {
+                const hasSubscribedToNewsletter = details.supporter.mailingListSubscribed || false;
+
+                if (hasSubscribedToNewsletter) {
+                    const state = window.open(Donation.NEWSLETTER_URL, '_blank');
+
+                    // If a browser doesn't want us to open a new tab (due to a pop-up blocker, or chrome's 'user must click once on a page before we allow redirect') then just redirect them.
+                    Donation.NeedsNewsletterRedirect = state === null;
+                }
+            }
         });
-
-    }
-
-    /**
-     * Returns the stored position if available, otherwise returns null.
-     * @returns {number|null}
-     */
-    Donation.GetScrollPosition = function() {
-        const pos = window.sessionStorage.getItem(Donation.WINDOW_POS_KEY);
-
-        if (pos) {
-            return parseFloat(pos);
-        }
-        return null;
-    }
-
-    /**
-     * Set our current position, so we can fix it on page reload.
-     * @see Donation.CheckForPosition
-     */
-    Donation.SetScrollPosition = function() {
-        window.sessionStorage.setItem(Donation.WINDOW_POS_KEY, window.scrollY.toString());
-    }
-
-    /**
-     * Removes our current position.
-     */
-    Donation.RemoveScrollPosition = function() {
-        window.sessionStorage.removeItem(Donation.WINDOW_POS_KEY);
     }
 
     /**
@@ -1854,103 +1901,44 @@ if (typeof Mozilla === 'undefined') {
      * @param utmSource {?string}
      * @param utmMedium {?string}
      * @param utmCampaign {?string}
+     * @param redirect {?string} - Whether we should redirect the user to another page
+     * @deprecated Donation url code has been migrated to static build process. This is left here in case of further AB tests.
      */
-    Donation.Donate = function(utmContent = null, utmSource = 'thunderbird.net', utmMedium = 'fru', utmCampaign = 'donation_flow_2023') {
+    Donation.MakeDonateUrl = function(utmContent = null, utmSource = 'thunderbird.net', utmMedium = 'fru', utmCampaign = 'donation_2023', redirect = null) {
+        /*
+        const is_donate_redirect = redirect === 'donate';
+        const is_download_redirect = redirect && redirect.indexOf('download-') !== -1;
+
+        // en-US gets converted to en, so fix that if needed.
+        const lang = document.documentElement.lang === 'en' ? 'en-US': document.documentElement.lang;
+
         let params = {
-            'form': 'support',
+            // Don't open the form automatically if we're redirecting to donate
+            'form': is_donate_redirect ? null : 'support',
             'utm_content': utmContent,
             'utm_source': utmSource,
             'utm_medium': utmMedium,
-            'utm_campaign': utmCampaign
+            'utm_campaign': utmCampaign,
+            // Split off our download-(esr|beta|daily) query param
+            'download_channel': is_download_redirect ? redirect.split('-')[1] : null,
         };
+
         // Filter nulls from the object (this mutates)
         Object.keys(params).forEach((k) => params[k] == null && delete params[k]);
 
         params = new URLSearchParams(params);
 
-        Donation.SetScrollPosition();
+        const query_params = `?${params.toString()}`;
 
-        // Display the FRU form
-        location.href = `?${params.toString()}`;
-    }
-
-    /**
-     * Close the donation form
-     * This will clear any currently set download link.
-     */
-    Donation.CloseForm = function() {
-        $('#amount-modal').fadeOut(Donation.ANIMATION_DURATION);
-        $('#modal-overlay').fadeOut(Donation.ANIMATION_DURATION);
-        $(document.body).removeClass('overflow-hidden');
-        Donation.IsVisible = false;
-        Donation.CurrentDownloadLink = null;
-        Donation.RemoveScrollPosition();
-    }
-
-    /**
-     * Display the donation download modal for fundraise up
-     * @param download_url - Link to the actual file download
-     */
-    Donation.DisplayDownloadForm = function(download_url) {
-        // Show the donation form.
-        $('#amount-modal').fadeIn(Donation.ANIMATION_DURATION);
-        $('#modal-overlay').fadeIn(Donation.ANIMATION_DURATION);
-        $(document.body).addClass('overflow-hidden');
-        Donation.IsVisible = true;
-        Donation.CurrentDownloadLink = download_url;
-
-        // Define cancel and close button on the donation form.
-        $('#amount-cancel').click(function(e) {
-            e.preventDefault();
-            Donation.CloseForm();
-            location.href = download_url;
-        });
-        $('#close-modal').click(function(e) {
-            e.preventDefault();
-            Donation.CloseForm();
-        });
-
-        // Close modal when clicking the overlay
-        $('#modal-overlay').click(function(e) {
-            e.preventDefault();
-            Donation.CloseForm();
-        });
-
-        // Close modal when pressing escaoe
-        $(document).keyup(function(e) {
-            if (e.key === "Escape") {
-                Donation.CloseForm();
-            }
-        });
-
-        // Define active amount in amount selection.
-        $('#amount-selection > label').click(function() {
-            $('#amount-selection > label.active').removeClass('active');
-            $(this).addClass('active');
-        });
-        $('#amount-other-selection').click(function() {
-            $('#amount-other').focus();
-        });
-        $('#amount-other').click(function() {
-            $('#amount-other-selection').prop('checked', true);
-        });
-        $('#amount-other').on('input', function() {
-            $('#amount-other-selection').val($(this).val());
-        });
-
-        Donation.SetScrollPosition();
-    };
-
-    /**
-     * Checks and applies any position parameter to the window's scrollY
-     * This makes the silly page refresh on the donation modal look less jarring
-     */
-    Donation.CheckForPosition = function() {
-        const pos = Donation.GetScrollPosition();
-        if (pos) {
-            window.scrollTo(0, pos);
-            window.sessionStorage.removeItem(Donation.WINDOW_POS_KEY)
+        if (is_donate_redirect) {
+            // We don't have a good way to get the current environment in javascript right now..
+            return `https://www.thunderbird.net/${lang}/donate/${query_params}#donate`;
+        } else if (is_download_redirect) {
+            return `/${lang}/download/${query_params}`;
         }
+
+        return query_params;
+        */
     }
 
     window.Mozilla.Donation = Donation;
@@ -1967,11 +1955,11 @@ if (typeof Mozilla === 'undefined') {
 
     /**
      * Super simple ABTest module, it puts you in one of the buckets.
-     * Bucket === 0 - FundraiseUp
-     * Bucket === 1 - give.thunderbird.net
+     * Bucket === 0 - A
+     * Bucket === 1 - B
      */
     const ABTest = {};
-    ABTest.bucket = 0;
+    ABTest.bucket = null;
 
     ABTest.RandomInt = function(min, max) {
         return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -1979,16 +1967,41 @@ if (typeof Mozilla === 'undefined') {
 
     /**
      * Pick a random int between 0 - 1.
+     * Once a bucket has been chosen, this function does nothing.
      */
     ABTest.Choose = function() {
+        /*
+        if (ABTest.bucket !== null) {
+            return;
+        }
+
         ABTest.bucket = ABTest.RandomInt(0, 1);
+        */
+    }
+
+    /**
+     * Tracks our bucket choice.
+     * Called from matomo.js, registers a bucket if no bucket has been chosen.
+     */
+    ABTest.Track = function() {
+        /*
+        if (ABTest.bucket === null) {
+            ABTest.Choose();
+        }
+
+        // Initialize the command queue if it's somehow not.
+        const _paq = window._paq = window._paq || [];
+
+        // TrackEvent: Category, Action, Name
+        _paq.push(['trackEvent', 'AB-Test - Test Name Here', 'Bucket Registration', ABTest.bucket === 0 ? 'a' : 'b']);
+        */
     }
 
     /**
      * Are we in the FundraiseUp bucket?
      * @returns {boolean}
      */
-    ABTest.IsInFundraiseUpBucket = function() {
+    ABTest.IsInBucketA = function() {
         return ABTest.bucket === 0;
     }
 
@@ -1996,78 +2009,32 @@ if (typeof Mozilla === 'undefined') {
      * Are we in the legacy give.thunderbird.net bucket?
      * @returns {boolean}
      */
-    ABTest.IsInGiveBucket = function() {
+    ABTest.IsInBucketB = function() {
         return ABTest.bucket === 1;
     }
 
     /**
-     * FundraiseUp's download functionality. This will simply raise the Donation form.
-     * @param download_url
-     * @private
+     * Replaces a 'HTMLAnchorElement' href tag with the bucket's (only FRU right now) equivalent url.
+     * @param element : HTMLAnchorElement
      */
-    ABTest._FundraiseUpDownload = function(download_url) {
-        window.Mozilla.Donation.DisplayDownloadForm(download_url);
-    }
-
-    /**
-     * Legacy give.thunderbird.net download functionality.
-     * This will redirect them to the donation url, which will start the download.
-     * @param download_url
-     * @param donate_url
-     * @private
-     */
-    ABTest._GiveDownload = function(download_url, donate_url) {
-        // Don't redirect if we're on the failed download page.
-        if ($("body").attr('id') !== 'thunderbird-download') {
-            // MSIE and Edge cancel the download prompt on redirect, so just leave them out.
-            if (!(/msie\s|trident\/|edge\//i.test(navigator.userAgent))) {
-                setTimeout(function() {
-                    window.location.href = donate_url;
-                }, 5000);
-            }
-        }
-        window.Mozilla.Utils.triggerIEDownload(download_url);
-    }
-
-    /**
-     * Start the Download, it will handle determining what bucket we're in and what download path we need to go down.
-     * @param event : Event
-     */
-    ABTest.Download = function(event) {
-        const element = event.target;
-        const download_url = element.href;
-        const donate_url = element.dataset.donateLink || null;
-
-        if (ABTest.IsInFundraiseUpBucket()) {
-            event.preventDefault();
-            ABTest._FundraiseUpDownload(download_url);
-        } else {
-            ABTest._GiveDownload(download_url, donate_url);
-        }
-    }
-
-    /**
-     * If FRU prevent the link redirect, and call up the donation form.
-     * @param event : Event
-     */
-    ABTest.Donate = function(event) {
-        if (ABTest.IsInFundraiseUpBucket()) {
-            const element = event.currentTarget;
+    ABTest.ReplaceDonateLinks = function(element) {
+        /*
+        if (ABTest.IsInBucketA()) {
             // If we somehow don't have an element, we can exit and still start any redirects.
             if (!element) {
                 return;
             }
-
-            event.preventDefault();
 
             // Falsey fallback check to transform '' => null
             const utmContent = element.getAttribute('data-donate-content') || null;
             const utmSource = element.getAttribute('data-donate-source') || 'thunderbird.net';
             const utmMedium = element.getAttribute('data-donate-medium') || 'fru';
             const utmCampaign = element.getAttribute('data-donate-campaign') || 'donation_flow_2023';
+            const redirect = element.getAttribute('data-donate-redirect') || null;
 
-            window.Mozilla.Donation.Donate(utmContent, utmSource, utmMedium, utmCampaign);
+            element.href = window.Mozilla.Donation.MakeDonateUrl(utmContent, utmSource, utmMedium, utmCampaign, redirect);
         }
+        */
     }
 
     /**
@@ -2075,17 +2042,91 @@ if (typeof Mozilla === 'undefined') {
      * Called after ABTest is added to the Mozilla namespace.
      */
     ABTest.Init = function() {
-        // Note: Intentionally uncommented for testing.
         // Pick one!
-        //ABTest.Choose();
-
-        const donate_buttons = document.querySelectorAll('[data-donate-btn]');
-        for (const donate_button of donate_buttons) {
-            donate_button.addEventListener('click', ABTest.Donate);
-        }
+        ABTest.Choose();
     }
 
     window.Mozilla.ABTest = ABTest;
 
     ABTest.Init();
+})();
+// Create namespace
+if (typeof Mozilla === 'undefined') {
+    var Mozilla = {};
+}
+
+(function() {
+    'use strict';
+
+    const BetaAppeal = {};
+
+    /**
+     * Hides the appeal, shows the thank you.
+     * @param {MouseEvent} evt
+     * @constructor
+     */
+    BetaAppeal.Upgrade = function(evt) {
+        document.getElementById('ba-step-1').classList.add('hidden');
+        document.getElementById('ba-step-2').classList.remove('hidden');
+
+        // Track this upgrade
+        // Initialize the command queue if it's somehow not.
+        const _paq = window._paq = window._paq || [];
+        // TrackEvent: Category, Action
+        _paq.push(['trackEvent', 'Beta Appeal', 'Upgrade']);
+    }
+
+    /**
+     * Returns information to formulate the download link
+     * @returns {{os: (string), channel: string, locale: string, version: string}}
+     */
+    BetaAppeal.GetDownloadInfo = function() {
+        const url = new URL(window.location.href);
+
+        const archMap = {
+            'darwin': 'osx',
+            'linux-32': 'linux',
+            'linux-64': 'linux64',
+            'winnt-32': 'win',
+            'winnt-64': 'win64'
+        }
+
+        const archSize = window.site.archSize;
+        const osParam = url.searchParams.get('os').toLowerCase();
+        let archKey = osParam;
+
+        // Don't add archSize to Mac (since it reports Mac as 32)
+        if (osParam !== 'darwin') {
+            archKey = `${osParam}-${archSize}`;
+        }
+
+        return {
+            os: archMap[archKey] ?? null,
+            locale: url.searchParams.get('locale') ?? window.siteLocale,
+            channel: url.searchParams.get('channel'),
+            version: url.searchParams.get('version'),
+        }
+    }
+
+    /**
+     * Initializes the event listener for the beta appeal button
+     */
+    BetaAppeal.Init = function() {
+        if (document.getElementById('thunderbird-beta-appeal')) {
+            const downloadInfo = BetaAppeal.GetDownloadInfo();
+            const upgradeBtn = document.getElementById('tb-join-beta-btn');
+
+            // Only replace the download link with our new direct one if they have a detectable operating system
+            if (downloadInfo.os) {
+                upgradeBtn.addEventListener('click', BetaAppeal.Upgrade);
+                // Add our new download link to the anchor, and a tracking class
+                upgradeBtn.href = `https://download.mozilla.org/?product=thunderbird-${window.latestBuild}-SSL&os=${downloadInfo.os}&lang=${downloadInfo.locale}`;
+                upgradeBtn.classList.add('matomo-track-download');
+            }
+        }
+    }
+
+    window.Mozilla.BetaAppeal = BetaAppeal;
+
+    BetaAppeal.Init();
 })();

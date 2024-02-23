@@ -47,11 +47,32 @@ FRU_LANGUAGES = {
     'en-US': 'en-US',
 }
 
+# List of supported FormAssembly locales, scoped to the dropdown on the donor contact form
+# TB Locale -> FA Locale
+FA_LANGUAGES = {
+        'zh-CN': 'zh_CN',
+        'cs': 'cs',
+        'da': 'da',
+        'nl': 'nl',
+        'en-US': 'en_US',
+        'de': 'de',
+        'fr': 'fr',
+        'it': 'it',
+        'ja': 'ja',
+        'pl': 'pl',
+        'pt-BR': 'pt_BR',
+        'ru': 'ru',
+        'es-MX': 'es',
+        'es-AR': 'es',
+        'es-ES': 'es',
+        'es-CL': 'es',
+}
+
 # Map short locale names to long, preferred locale names. This
 # will be used in urlresolvers to determine the
 # best-matching locale from the user's Accept-Language header.
 CANONICAL_LOCALES = {
-    'bn-BD': 'bn',  # https://github.com/thundernest/thunderbird.net-l10n/issues/1
+    'bn-BD': 'bn',  # https://github.com/thunderbird/thunderbird.net-l10n/issues/1
     'bn-IN': 'bn',  # These two locales were merged for the above issue.
     'en': 'en-US',
     'es': 'es-ES',
@@ -65,13 +86,26 @@ CANONICAL_LOCALES = {
     'zh-hant-hk': 'zh-TW',  # Bug 1338072
 }
 
+ENUS_ONLY = [
+    'thunderbird.contact',
+    'thunderbird.careers',
+    'thunderbird.get-involved',
+    'thunderbird.organizations',
+]
+
+# Most pages under /thunderbird/ are en-US only, except these.
+# The What's New page is not here because TB picks the locale.
+ALWAYS_LOCALIZE = [
+    '/appeal',
+    '/eoy',
+    '/beta-appeal',
+    '/holidayeoy'
+]
+
 CANONICAL_URL = 'https://www.thunderbird.net'
 
 # url for the server that serves Thunderbird downloads.
 BOUNCER_URL = 'https://download.mozilla.org/'
-
-# url for the ftp server where Daily builds are hosted.
-DAILY_URL = 'https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central-l10n/'
 
 # url for the mozilla wiki used for some documentation.
 WIKI_URL = 'https://wiki.mozilla.org'
@@ -86,6 +120,7 @@ MEDIA_URL = '/media'
 FAVICON_PATH = '/media/img/thunderbird/favicon.ico'
 
 # path to the website templates
+# templates with paths starting with "_" or "includes" are excluded by builder.py
 WEBSITE_PATH = 'website/'
 
 # path to the start page templates
@@ -99,6 +134,15 @@ START_RENDERPATH = 'site'
 
 CALDATA_URL = MEDIA_URL + '/caldata/'
 
+CALDATA_AUTOGEN_URL = 'media/caldata/autogen/'
+
+CALDATA_AUTOGEN_AUTHOR = 'Thunderbird'
+
+CALDATA_YEARS_TO_GENERATE = 3
+
+# Apple uses this to verify the domain every time the SSL cert expires, disabling will break Apple Pay donations.
+USE_APPLE_PAY_DOMAIN_VERIFICATION = True
+
 # path to product-details json files
 JSON_PATH = 'product-details/public/1.0'
 
@@ -109,7 +153,7 @@ ALL_PLATFORMS = ('windows', 'linux', 'mac')
 URL_MAPPINGS = {
     'blog': 'https://blog.thunderbird.net/',
     'calendar': '/calendar',
-    'contribute': 'https://github.com/thundernest/thunderbird-website',
+    'contribute': 'https://github.com/thunderbird/thunderbird-website',
     'firefox.dnt': 'https://www.mozilla.org/firefox/dnt/',
     'firefox.enterprise': 'https://www.mozilla.org/firefox/enterprise/',
     'firefox.release-calendar': 'https://wiki.mozilla.org/Release_Management/Calendar',
@@ -120,15 +164,26 @@ URL_MAPPINGS = {
     'legal.index': 'https://www.mozilla.org/en-US/about/legal/terms/mozilla/',
     'legal.infringement': 'https://www.mozilla.org/en-US/about/legal/report-infringement/',
     'mozorg.home': 'https://www.mozilla.org/',
+    'mozorg.connect': 'https://connect.mozilla.org/',
+    'mozorg.connect.tb': 'https://connect.mozilla.org/t5/ideas/idb-p/ideas/label-name/thunderbird',
     'mzla.blog-post': 'https://blog.thunderbird.net/2020/01/thunderbirds-new-home/',
     'privacy': 'https://www.mozilla.org/privacy/websites/',
     'privacy.notices.websites': 'https://www.mozilla.org/privacy/websites/#data-tools',
+    'privacy.notices.donations': 'https://www.mozilla.org/privacy/websites/#donations',
     'privacy.notices.thunderbird': 'https://www.mozilla.org/privacy/thunderbird/',
     'support': 'https://support.mozilla.org/products/thunderbird/',
     'thunderbird.about': '/about',
+    'thunderbird.about.our-mission-statement': '/about#our-mission-statement',
     'thunderbird.careers': '/careers',
     'thunderbird.channel': '/channel',
     'thunderbird.contact': '/contact',
+    'thunderbird.donate': '/donate',
+    'thunderbird.donate.form': '/donate?form=support',
+    'thunderbird.donate.faq': '/donate#faq',
+    'thunderbird.donate.ways-to-give': '/donate#ways-to-give',
+    'thunderbird.donate.ways-to-give.check': '/donate#ways-to-give-check',
+    'thunderbird.donate.contact': '/donate/help',
+    'thunderbird.download': '/download',
     'thunderbird.download-beta': '/download/beta',
     'thunderbird.enterprise': 'https://wiki.mozilla.org/Thunderbird/tb-enterprise',
     'thunderbird.enterprise.documentation': 'https://enterprise.thunderbird.net/',
@@ -140,22 +195,16 @@ URL_MAPPINGS = {
     'thunderbird.organizations': '/organizations',
     'thunderbird.releases.index': '/thunderbird/releases',
     'thunderbird.style': 'https://style.thunderbird.net',
-    'thunderbird.site.bug-report': 'https://github.com/thundernest/thunderbird-website/issues',
+    'thunderbird.site.bug-report': 'https://github.com/thunderbird/thunderbird-website/issues',
+    'thunderbird.social.twitter': 'https://twitter.com/mozthunderbird',
+    'thunderbird.social.facebook': 'https://www.facebook.com/Thunderbird/',
+    'thunderbird.social.youtube': 'https://www.youtube.com/@ThunderbirdProject',
+    'thunderbird.social.linkedin': 'https://www.linkedin.com/company/thunderbird-email/',
+    'thunderbird.social.mastodon': 'https://mastodon.online/@thunderbird',
+    'thunderbird.115.whatsnew': '/thunderbird/115.0/whatsnew',
 }
 
-BLOG_FEED_URL = 'https://blog.thunderbird.net/feed/'
-
-ENUS_ONLY = [
-    'thunderbird.contact',
-    'thunderbird.careers',
-    'thunderbird.get-involved',
-    'thunderbird.organizations',
-]
-
-DONATE_LINK = (
-    'https://give.thunderbird.net/'
-    '?utm_source={source}&utm_medium={medium}&utm_content={content}'
-)
+BLOG_FEED_URL = 'https://blog.thunderbird.net/feed/atom/'
 
 # WEBSITE_CSS = {
 #     'calendar-bundle': ['less/thunderbird/calendar.less', 'less/base/menu-resp.less'],
@@ -171,6 +220,9 @@ DONATE_LINK = (
 
 WEBSITE_CSS = {
     'thunderbird-style': ['less/style.less'],
+    'tb-115-style': ['css/115-homepage.css'],
+    # Custom page styles
+    'tb-115-eoy-style': ['less/pages/eoy-2023-style.less'],
 }
 
 WEBSITE_JS = {
@@ -179,7 +231,7 @@ WEBSITE_JS = {
         'js/common/form.js', 'js/common/mozilla-client.js', 'js/common/mozilla-image-helper.js',
         'js/common/nav-main-resp.js', 'js/common/class-list-polyfill.js', 'js/common/mozilla-global-nav.js',
         'js/common/base-page-init.js', 'js/common/core-datalayer.js', 'js/common/core-datalayer-init.js',
-        'js/common/autodownload.js', 'js/common/donations.js', 'js/common/ab-testing.js'
+        'js/common/autodownload.js', 'js/common/donations.js', 'js/common/ab-testing.js', 'js/common/beta-appeal.js'
     ],
     'site-bundle': [
         'js/base/site.js', 'js/base/dnt-helper.js', 'js/base/mozilla-cookie-helper.js',
@@ -188,7 +240,14 @@ WEBSITE_JS = {
 }
 
 START_CSS = {
-    'start-style': ['less.old/sandstone/fonts.less', 'less.old/thunderbird/start.less']
+    'start-style': ['less/start.less'],
+}
+
+START_JS = {
+    'common-bundle': [
+        # Load bearing order..Donation must come before AB testing.
+        'js/common/donations.js', 'js/common/ab-testing.js'
+    ]
 }
 
 CURRENCIES = {
@@ -252,3 +311,124 @@ LOCALE_CURRENCIES = {
     'te': 'inr',
     'zh-TW': 'twd'
  }
+
+CALENDARIFIC_API_URL = "https://calendarific.com/api/v2/holidays"
+
+# Country Code : Calendar Name
+CALENDAR_LOCALES = {
+    'AL': ('Albania', 'sq'),
+    'DZ': [('Algeria (Arabic)', 'ar'), ('Algeria (French)', 'fr')],
+    'AR': ('Argentina', 'es'),
+    'AM': ('Armenia', 'hy'),
+    'AU': ('Australia', 'en'),
+    'AT': ('Austrian', 'de'),
+    'BE': [('Belgian (French)', 'fr'), ('Belgian (Dutch)', 'nl')],
+    'BO': ('Bolivia', 'es'),
+    'BR': ('Brazil', 'pt'),
+    'BG': ('Bulgaria', 'bg'),
+    'CA': [('Canada (English)', 'en'), ('Canada (French)', 'fr')],
+    'CL': ('Chile', 'es'),
+    'CN': ('China', 'zh'),
+    'CO': ('Colombia', 'es'),
+    'CR': ('Costa Rica', 'es'),
+    'HR': ('Croatia', 'hr'),
+    'CZ': ('Czech', 'cs'),
+    'DK': ('Denmark', 'da'),
+    'DO': ('Dominican Republic', 'es'),
+    'NL': [('Netherlands (Dutch)', 'nl'), ('Netherlands (English)', 'en'), ('Netherlands (German)', 'de'), ('Netherlands (French)', 'fr')],
+    'EE': ('Estonia', 'et'),
+    'FI': [('Finland (Finnish)', 'fi'), ('Finland (Swedish)', 'sv')],
+    'FR': ('France', 'fr'),
+    'DE': ('Germany', 'de'),
+    'GR': ('Greece', 'el'),
+    'GY': ('Guyana', 'en'),
+    'HT': ('Haiti', 'ht'),
+    'HK': ('Hong Kong', 'zh'),
+    'HU': ('Hungary', 'hu'),
+    'IS': ('Iceland', 'is'),
+    'IN': ('India', 'hi'),
+    'ID': ('Indonesia', 'id'),
+    'IE': [('Ireland (Irish)', 'ga'), ('Ireland (English)', 'en')],
+    'IL': ('Israel', 'en'),
+    'IT': ('Italy', 'it'),
+    'JP': ('Japan', 'ja'),
+    'KZ': ('Kazakhstan', 'kk'),
+    'KE': ('Kenya', 'sw'),
+    'LV': ('Latvia', 'lv'),
+    'LB': ('Lebanon', 'ar'),
+    'LI': ('Liechtenstein', 'de'),
+    'LT': ('Lithuania', 'lt'),
+    'LU': [('Luxembourg (French)', 'fr'), ('Luxembourg (German)', 'de')],
+    'MY': ('Malaysia', 'ms'),
+    'MT': ('Malta', 'mt'),
+    'MX': ('Mexico', 'es'),
+    'MA': ('Morocco', 'ar'),
+    'NA': ('Namibia', 'en'),
+    'NZ': ('New Zealand', 'en'),
+    'NI': ('Nicaragua', 'en'),
+    'NO': ('Norway', 'no'),
+    'PK': ('Pakistan', 'ur'),
+    'PE': ('Peru', 'es'),
+    'PH': ('Philippines', 'en'),
+    'PL': ('Polish', 'pl'),
+    'PT': ('Portugal', 'pt'),
+    'PR': ('Puerto Rico', 'en'),
+    'RO': ('Romania', 'ro'),
+    'RU': ('Russia', 'ru'),
+    'SG': ('Singapore', 'ms'),
+    'SK': ('Slovakia', 'sk'),
+    'SI': ('Slovenia', 'sl'),
+    'ZA': ('South Africa', 'en'),
+    'KR': ('South Korea', 'ko'),
+    'ES': ('Spain', 'es'),
+    'LK': ('Sri Lanka', 'en'),
+    'SE': ('Swedish', 'sv'),
+    'CH': ('Switzerland', 'en'),
+    'TW': ('Taiwan', 'zh'),
+    'TH': ('Thailand', 'th'),
+    'TT': ('Trinidad and Tobago', 'en'),
+    'TR': ('Turkey', 'tr'),
+    'GB': ('United Kingdom', 'en'),
+    'UA': ('Ukraine', 'uk'),
+    'UY': ('Uruguay', 'es'),
+    'US': ('United States', 'en'),
+    'VN': ('Vietnam', 'vi'),
+}
+
+# Used to normalize filenames for calendar generation
+# This is the first part of the filename, 'Holidays' is bolted on in code.
+# So 'Belgian (Dutch)' will become 'BelgianHoldays.ics'
+# If the value is a tuple, the first part is before 'Holidays' and the second part is after.
+CALENDAR_REMAP = {
+    'Algeria (French)': 'Algeria',
+    'Algeria (Arabic)': ('Algeria', 'Arabic'),
+    'Belgian (Dutch)': 'Belgian',
+    'Belgian (French)': ('Belgian', 'French'),
+    'Bulgaria': 'Bulgarian',
+    'Canada (English)': 'Canada',
+    'Canada (French)': ('Canada', 'French'),
+    'Colombia': 'Colombian',
+    'Finland (Finnish)': 'Finland',
+    'Finland (Swedish)': ('Finland', 'Swedish'),
+    'France': 'French',
+    'Germany': 'German',
+    'Hungary': 'Hungarian',
+    'Ireland (English)': 'Ireland',
+    'Ireland (Irish)': ('Ireland', 'Irish'),
+    'Italy': 'Italian',
+    'Kazakhstan': ('Kazakhstan', 'English'),
+    'Lithuania': 'Lithuanian',
+    'Luxembourg (French)': ('Luxembourg', 'French'),
+    'Luxembourg (German)': ('Luxembourg', 'German'),
+    'Netherlands (Dutch)': 'Dutch',
+    'Netherlands (English)': ('Dutch', 'English'),
+    'Netherlands (German)': ('Dutch', 'German'),
+    'Netherlands (French)': ('Dutch', 'French'),
+    'Norway': 'Norwegian',
+    'Poland': 'Polish',
+    'Slovenia': 'Slovenian',
+    'Slovakia': 'Slovak',
+    'Switzerland': 'Swiss',
+    'United Kingdom': 'UK',
+    'United States': 'US'
+}

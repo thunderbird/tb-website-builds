@@ -10,7 +10,7 @@ def get_language_map():
     :return: dict
     """
     LUM = {i.lower(): i for i in settings.PROD_LANGUAGES}
-    langs = dict(LUM.items() + settings.CANONICAL_LOCALES.items())
+    langs = dict(list(LUM.items()) + list(settings.CANONICAL_LOCALES.items()))
     # Add missing short locales to the list. This will automatically map
     # en to en-GB (not en-US), es to es-AR (not es-ES), etc. in alphabetical
     # order. To override this behavior, explicitly define a preferred locale
@@ -72,7 +72,7 @@ def application(environ, start_response):
 
     req = Request(environ)
 
-    if 'thunderbird' in req.path and 'eoy' not in req.path:
+    if 'thunderbird' in req.path and not any(s in req.path for s in settings.ALWAYS_LOCALIZE):
         # Release notes, system requirements, and 'all' builds pages are only available in English.
         language_code = 'en-US'
     else:
