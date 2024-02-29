@@ -1,0 +1,3 @@
+ErrorDocument 404 /en-US/404.html
+RewriteEngine On
+RewriteRule ^favicon\.ico$ /media/img/thunderbird/favicon.ico

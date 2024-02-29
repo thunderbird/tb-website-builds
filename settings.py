@@ -121,16 +121,18 @@ FAVICON_PATH = '/media/img/thunderbird/favicon.ico'
 
 # path to the website templates
 # templates with paths starting with "_" or "includes" are excluded by builder.py
-WEBSITE_PATH = 'website/'
+WEBSITE_PATH = 'sites/www.thunderbird.net/'
 
 # path to the start page templates
-START_PATH = 'start-page/'
+START_PATH = 'sites/start.thunderbird.net/'
 
 # path for the finished website artifacts.
-WEBSITE_RENDERPATH = 'thunderbird.net'
+WEBSITE_RENDERPATH = 'dist/www.thunderbird.net'
 
 # path for the finished start page artifacts.
-START_RENDERPATH = 'site'
+START_RENDERPATH = 'dist/start.thunderbird.net'
+
+LOCALE_PATH = 'libs/locale'
 
 CALDATA_URL = MEDIA_URL + '/caldata/'
 
@@ -144,7 +146,7 @@ CALDATA_YEARS_TO_GENERATE = 3
 USE_APPLE_PAY_DOMAIN_VERIFICATION = True
 
 # path to product-details json files
-JSON_PATH = 'product-details/public/1.0'
+JSON_PATH = 'libs/product-details/public/1.0'
 
 ALL_PLATFORMS = ('windows', 'linux', 'mac')
 
@@ -163,9 +165,11 @@ URL_MAPPINGS = {
     'legal.fraud-report': 'https://www.mozilla.org/about/legal/fraud-report/',
     'legal.index': 'https://www.mozilla.org/en-US/about/legal/terms/mozilla/',
     'legal.infringement': 'https://www.mozilla.org/en-US/about/legal/report-infringement/',
+    'legal.trademark': 'https://www.mozilla.org/about/legal/defend-mozilla-trademarks/',
     'mozorg.home': 'https://www.mozilla.org/',
     'mozorg.connect': 'https://connect.mozilla.org/',
     'mozorg.connect.tb': 'https://connect.mozilla.org/t5/ideas/idb-p/ideas/label-name/thunderbird',
+    'mozorg.mpl2': 'https://www.mozilla.org/MPL/',
     'mzla.blog-post': 'https://blog.thunderbird.net/2020/01/thunderbirds-new-home/',
     'privacy': 'https://www.mozilla.org/privacy/websites/',
     'privacy.notices.websites': 'https://www.mozilla.org/privacy/websites/#data-tools',
@@ -174,12 +178,15 @@ URL_MAPPINGS = {
     'support': 'https://support.mozilla.org/products/thunderbird/',
     'thunderbird.about': '/about',
     'thunderbird.about.our-mission-statement': '/about#our-mission-statement',
+    'thunderbird.bugzilla.new-bug': 'https://bugzilla.mozilla.org/enter_bug.cgi?product=Thunderbird',
     'thunderbird.careers': '/careers',
     'thunderbird.channel': '/channel',
     'thunderbird.contact': '/contact',
+    'thunderbird.contribute': '/contribute',
     'thunderbird.donate': '/donate',
     'thunderbird.donate.form': '/donate?form=support',
     'thunderbird.donate.faq': '/donate#faq',
+    'thunderbird.donate.modify': 'https://supporter.thunderbird.net/',
     'thunderbird.donate.ways-to-give': '/donate#ways-to-give',
     'thunderbird.donate.ways-to-give.check': '/donate#ways-to-give-check',
     'thunderbird.donate.contact': '/donate/help',
@@ -221,6 +228,8 @@ BLOG_FEED_URL = 'https://blog.thunderbird.net/feed/atom/'
 WEBSITE_CSS = {
     'thunderbird-style': ['less/style.less'],
     'tb-115-style': ['css/115-homepage.css'],
+    # 2024 Redesign
+    'base-style': ['less/base-style.less'],
     # Custom page styles
     'tb-115-eoy-style': ['less/pages/eoy-2023-style.less'],
 }
