@@ -2,16 +2,19 @@
 
 <!doctype html>
 
-<html class="windows x86 no-js" lang="en" dir="ltr">
+
+<html class="windows x86 no-js page-not-set" lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-
-    
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
 
+    
     <title>Thunderbird — 31.5.0 System Requirements — Thunderbird</title>
+    <script type="text/javascript" src="/media/js/site-bundle.js" charset="utf-8"></script>
+      <script type="text/javascript" src="/media/js/common-bundle.js" charset="utf-8" defer></script>
+    
     <meta name="description" content="">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Thunderbird">
@@ -28,7 +31,7 @@
     <link rel="shortcut icon" href="/media/img/thunderbird/favicon.ico">
     
     <link href="/media/css/normalize.css" rel="stylesheet" type="text/css" />
-    <link href="/media/css/thunderbird-style.css" rel="stylesheet" type="text/css" />
+    <link href="/media/css/base-style.css" rel="stylesheet" type="text/css" />
 
     
 
@@ -55,61 +58,112 @@
     
 
     
-  <header id="masthead" class="bg-no-repeat bg-cover bg-top flex flex-col bg-header-page">
-    <section class="flex justify-between items-center p-6 flex-wrap ">
-      
-        <h2 class="mt-0 mb-0">
-          <a href="/en-US/" class="block w-48 lg:w-56" title="Thunderbird" alt="Thunderbird Vector Wordmark">
-            <i class="block">
-              <img src="/media/svg/logo-wordmark-white.svg" alt="Thunderbird Vector Wordmark"/>
-            </i>
-          </a>
-        </h2>
-      
+  <nav class="site-nav">
+    <div class="nav-container">
+      <a href="/en-US/" class="logo" title="Thunderbird"
+        alt="Thunderbird Vector Wordmark">
+        <svg width="3944" height="750" viewBox="0 0 3944 750" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M314.805 154.949H314.865C336.905 77.8991 432.945 40.2891 530.815 40.2891C598.445 40.2891 659.156 61.6991 700.776 95.6891C675.938 96.8603 651.414 101.734 628.016 110.149C661.646 122.649 690.535 141.879 711.945 165.669C695.792 162.889 679.413 161.65 663.026 161.969C703.302 220.312 724.82 289.554 724.706 360.449C724.706 553.749 568.005 710.449 374.705 710.449C184.385 710.449 24.7051 551.099 24.7051 360.449C24.7051 330.339 28.7051 299.249 36.4751 270.089C38.5151 263.969 41.3551 258.099 45.1251 255.949C49.8451 253.259 54.1451 261.279 54.8351 263.889C59.9528 283.059 66.839 301.712 75.4051 319.609C74.6551 279.649 91.7251 243.249 115.205 211.769C130.865 190.779 145.385 171.329 152.085 115.199C152.535 111.429 156.105 108.719 159.715 109.899C210.675 126.579 237.915 211.439 233.685 282.399C261.835 286.429 261.705 257.019 261.705 257.019C252.705 229.359 258.705 177.949 314.705 154.949H314.805Z" fill="url(#paint0_linear_106_1002)"/>
+  <path opacity="0.9" d="M713.254 271.32C721.764 463.82 563.514 629.79 370.544 629.79C189.894 629.79 41.8648 490.16 28.4748 312.94C26.0859 329.536 24.8296 346.274 24.7148 363.04C26.0848 552.66 185.374 710.45 374.714 710.45C568.014 710.45 724.714 553.75 724.714 360.45C724.714 329.65 720.724 299.78 713.254 271.32Z" fill="url(#paint1_radial_106_1002)"/>
+  <path style="mix-blend-mode:screen" d="M366.175 180.459C362.405 173.789 344.995 163.919 337.385 162.199C366.185 69.9491 512.906 41.6291 602.706 57.9491C640.076 64.7491 686.616 85.1091 700.776 95.6891C659.156 61.6991 598.435 40.2891 530.815 40.2891C432.945 40.2891 336.905 77.8991 314.865 154.949H314.705C258.705 177.949 252.705 229.379 261.705 257.029C270.345 224.039 311.455 183.499 366.175 180.459Z" fill="url(#paint2_radial_106_1002)"/>
+  <path d="M467.885 116.748C389.265 132.218 363.575 137.278 337.265 162.288C366.815 84.0583 442.245 68.1983 532.125 103.858C510.734 108.268 489.32 112.568 467.885 116.758V116.748Z" fill="url(#paint3_linear_106_1002)"/>
+  <path d="M43.7049 259.38C22.2249 347.32 38.8249 450.68 136.404 537.42C107.354 505.65 71.8849 388.35 150.154 304.55C155.424 298.9 164.494 303.05 164.784 310.77C171.234 484.93 311.764 591.3 473.784 571.41C423.584 568.59 257.564 510.44 381.064 487.44C445.614 475.41 546.824 456.56 546.824 365.74C546.824 218.52 432.994 175.48 363.964 181.88C316.724 186.26 274.674 216.24 261.734 257.01C266.704 273.08 246.894 284.33 233.684 282.44C237.924 211.49 210.684 126.58 159.714 109.9C156.114 108.72 152.534 111.43 152.084 115.2C145.384 171.33 130.864 190.78 115.214 211.77C91.7249 243.26 74.6549 279.65 75.4049 319.61C66.839 301.713 59.9528 283.06 54.8349 263.89C54.2649 261.73 51.1349 255.7 47.3549 255.42C45.3049 255.27 44.2149 257.27 43.7049 259.38Z" fill="url(#paint4_radial_106_1002)"/>
+  <path style="mix-blend-mode:screen" d="M337.695 496.349C432.735 573.519 623.865 515.659 623.865 328.029C546.705 444.989 448.425 525.669 337.705 496.349H337.695Z" fill="url(#paint5_linear_106_1002)"/>
+  <path style="mix-blend-mode:screen" d="M150.155 304.55C151.019 303.583 152.108 302.844 153.325 302.397C154.542 301.951 155.851 301.811 157.135 301.99C87.0755 387.44 143.586 537.51 182.366 574.38C184.536 580.52 145.575 548.59 140.205 541.12C110.705 516.09 68.4255 392.06 150.155 304.55Z" fill="url(#paint6_linear_106_1002)"/>
+  <path d="M374.705 503.419C469.765 503.419 546.835 440.54 546.835 362.97C546.835 285.4 469.765 222.52 374.705 222.52C293.605 222.52 202.535 275.28 202.575 365.02C202.615 503.69 349.115 583.47 473.995 571.39C464.615 570.3 406.095 567.19 366.545 522.45C362.975 518.42 356.785 511.38 359.595 506.81C362.395 502.24 370.115 503.41 374.695 503.41L374.705 503.419Z" fill="url(#paint7_linear_106_1002)"/>
+  <path opacity="0.6" d="M528.085 299.15L392.045 429.33C379.975 437.91 367.125 438.53 354.445 430.75L221.015 299.63C224.822 293.512 229.102 287.701 233.815 282.25L247.815 295.35C282.855 328.19 311.185 354.72 351.115 388.8C369.135 404.18 374.735 403.88 392.415 388.8C438.095 349.8 471.505 320.3 514.935 281.51C519.776 287.036 524.17 292.938 528.075 299.16L528.085 299.15Z" fill="white"/>
+  <mask id="mask0_106_1002" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="202" y="297" width="345" height="276">
+    <path d="M546.835 362.969C546.835 440.539 469.765 503.419 374.705 503.419C370.115 503.419 362.405 502.239 359.595 506.819C356.785 511.379 362.975 518.419 366.545 522.449C403.705 564.489 457.615 569.779 471.765 571.169L473.995 571.389C349.115 583.469 202.615 503.689 202.575 365.019C202.444 341.93 208.87 319.279 221.105 299.699L355.185 421.479C364.725 430.139 380.795 430.139 390.335 421.479L526.955 297.389C539.655 316.969 546.835 339.289 546.835 362.969Z" fill="white"/>
+  </mask>
+  <g mask="url(#mask0_106_1002)">
+    <path opacity="0.7" d="M162.705 200.979H597.775V595.449H162.705V200.979Z" fill="url(#paint8_linear_106_1002)"/>
+    <g filter="url(#filter0_f_106_1002)">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M334.745 422.298C309.395 395.918 233.475 308.268 233.475 308.268L239.345 308.528L358.205 397.298C367.105 403.768 379.805 403.698 388.625 397.148L505.175 308.648L511.355 308.158C511.355 308.158 437.915 393.728 409.785 421.918C381.655 450.108 360.095 448.678 334.745 422.298Z" fill="#458FCD"/>
+    </g>
+  </g>
+  <path d="M398.855 152.258C417.275 146.458 415.655 128.228 415.655 128.228C415.655 128.228 406.445 117.378 388.195 123.388C371.115 129.018 368.465 141.188 368.465 141.188C368.465 141.188 377.795 158.888 398.855 152.258Z" fill="white"/>
+  <path d="M3287.34 198.867C3277.67 198.867 3269.34 202.367 3262.34 209.367C3255.67 216.034 3252.34 224.034 3252.34 233.367C3252.34 242.701 3255.67 250.867 3262.34 257.867C3269.34 264.867 3277.67 268.367 3287.34 268.367C3296.67 268.367 3304.67 264.867 3311.34 257.867C3318.01 250.867 3321.34 242.701 3321.34 233.367C3321.34 224.034 3318.01 216.034 3311.34 209.367C3304.67 202.367 3296.67 198.867 3287.34 198.867ZM1259.41 216.367V565.867H1320.41V409.367C1320.41 393.701 1326.41 380.534 1338.41 369.867C1350.74 358.867 1365.74 353.367 1383.41 353.367C1399.41 353.367 1412.41 359.034 1422.41 370.367C1432.41 381.367 1437.41 395.701 1437.41 413.367V565.867H1496.91V401.367C1496.91 382.034 1492.74 364.867 1484.41 349.867C1476.41 334.534 1465.07 322.701 1450.41 314.367C1436.07 305.701 1419.57 301.367 1400.91 301.367C1383.91 301.367 1368.24 305.2 1353.91 312.867C1339.57 320.201 1328.41 330.034 1320.41 342.367V216.367H1259.41ZM2331.5 216.367V347.867C2321.5 333.201 2308.67 321.867 2293 313.867C2277.67 305.534 2260.67 301.367 2242 301.367C2219.33 301.367 2199 307.201 2181 318.867C2163 330.201 2148.83 346.201 2138.5 366.867C2128.17 387.201 2123 410.367 2123 436.367C2123 462.367 2128.17 485.701 2138.5 506.367C2148.83 527.034 2163 543.201 2181 554.867C2199 566.201 2219.33 571.867 2242 571.867C2260.67 571.867 2277.67 567.867 2293 559.867C2308.67 551.534 2321.5 540.034 2331.5 525.367V565.867H2392.5V216.367H2331.5ZM2941.4 216.367V565.867H3002.4V525.367C3012.4 540.034 3025.06 551.534 3040.4 559.867C3056.06 567.867 3073.23 571.867 3091.9 571.867C3114.56 571.867 3134.9 566.201 3152.9 554.867C3170.9 543.201 3185.06 527.034 3195.4 506.367C3205.73 485.701 3210.9 462.367 3210.9 436.367C3210.9 410.367 3205.73 387.201 3195.4 366.867C3185.06 346.201 3170.9 330.201 3152.9 318.867C3134.9 307.201 3114.56 301.367 3091.9 301.367C3073.23 301.367 3056.06 305.534 3040.4 313.867C3025.06 321.867 3012.4 333.201 3002.4 347.867V216.367H2941.4ZM3758.12 216.367V347.867C3748.12 333.201 3735.29 321.867 3719.62 313.867C3704.29 305.534 3687.29 301.367 3668.62 301.367C3645.95 301.367 3625.62 307.201 3607.62 318.867C3589.62 330.201 3575.45 346.201 3565.12 366.867C3554.79 387.201 3549.62 410.367 3549.62 436.367C3549.62 462.367 3554.79 485.701 3565.12 506.367C3575.45 527.034 3589.62 543.201 3607.62 554.867C3625.62 566.201 3645.95 571.867 3668.62 571.867C3687.29 571.867 3704.29 567.867 3719.62 559.867C3735.29 551.534 3748.12 540.034 3758.12 525.367V565.867H3819.12V216.367H3758.12ZM925.568 222.367V279.367H1035.57V565.867H1098.07V279.367H1207.57V222.367H925.568ZM3885.62 292.691C3881.09 292.691 3876.9 293.813 3873.04 296.053C3869.26 298.293 3866.22 301.347 3863.92 305.217C3861.68 309.019 3860.57 313.161 3860.57 317.641C3860.57 322.122 3861.68 326.296 3863.92 330.166C3866.22 333.968 3869.26 337.022 3873.04 339.33C3876.9 341.57 3881.09 342.691 3885.62 342.691C3890.08 342.691 3894.21 341.57 3897.99 339.33C3901.85 337.022 3904.89 333.968 3907.12 330.166C3909.42 326.296 3910.57 322.122 3910.57 317.641C3910.57 313.161 3909.42 309.019 3907.12 305.217C3904.89 301.347 3901.85 298.293 3897.99 296.053C3894.21 293.813 3890.08 292.691 3885.62 292.691ZM3885.62 296.357C3889.47 296.357 3893.02 297.308 3896.27 299.209C3899.51 301.11 3902.08 303.688 3903.98 306.947C3905.94 310.206 3906.92 313.772 3906.92 317.641C3906.92 321.511 3905.97 325.109 3904.08 328.436C3902.19 331.694 3899.58 334.273 3896.27 336.174C3893.02 338.075 3889.47 339.025 3885.62 339.025C3881.77 339.025 3878.18 338.075 3874.87 336.174C3871.62 334.205 3869.02 331.591 3867.06 328.332C3865.17 325.073 3864.22 321.511 3864.22 317.641C3864.22 313.772 3865.17 310.206 3867.06 306.947C3869.02 303.688 3871.62 301.11 3874.87 299.209C3878.18 297.308 3881.77 296.357 3885.62 296.357ZM1984.95 301.367C1967.95 301.367 1952.28 305.034 1937.95 312.367C1923.95 319.367 1912.95 329.034 1904.95 341.367V307.367H1843.95V565.867H1904.95V409.367C1904.95 393.701 1910.95 380.534 1922.95 369.867C1934.95 358.867 1949.78 353.367 1967.45 353.367C1983.45 353.367 1996.45 359.034 2006.45 370.367C2016.78 381.367 2021.95 395.701 2021.95 413.367V565.867H2081.45V401.367C2081.45 382.034 2077.28 364.867 2068.95 349.867C2060.95 334.534 2049.61 322.701 2034.95 314.367C2020.28 305.701 2003.61 301.367 1984.95 301.367ZM2572.43 301.367C2548.1 301.367 2525.76 307.201 2505.43 318.867C2485.43 330.534 2469.6 346.534 2457.93 366.867C2446.26 387.201 2440.43 410.201 2440.43 435.867C2440.43 461.867 2446.43 485.201 2458.43 505.867C2470.76 526.534 2487.26 542.701 2507.93 554.367C2528.6 566.034 2551.26 571.867 2575.93 571.867C2594.93 571.867 2614.43 568.201 2634.43 560.867C2654.43 553.201 2669.93 543.534 2680.93 531.867L2645.93 495.867C2637.6 503.867 2626.76 510.367 2613.43 515.367C2600.43 520.367 2587.26 522.867 2573.93 522.867C2554.26 522.867 2537.76 516.701 2524.43 504.367C2511.1 491.701 2502.76 475.034 2499.43 454.367H2699.43C2699.43 407.034 2688.1 369.701 2665.43 342.367C2643.1 315.034 2612.1 301.367 2572.43 301.367ZM2896.55 301.367C2875.88 301.367 2857.38 306.367 2841.05 316.367C2824.72 326.034 2812.38 339.367 2804.05 356.367V307.367H2743.05V565.867H2804.05V435.367C2804.05 410.701 2812.55 390.867 2829.55 375.867C2846.55 360.867 2868.88 353.367 2896.55 353.367V301.367ZM3530.51 301.367C3509.85 301.367 3491.35 306.367 3475.01 316.367C3458.68 326.034 3446.35 339.367 3438.01 356.367V307.367H3377.01V565.867H3438.01V435.367C3438.01 410.701 3446.51 390.867 3463.51 375.867C3480.51 360.867 3502.85 353.367 3530.51 353.367V301.367ZM3873.25 302.467V333.018H3880.85V323.75H3885.52L3892.01 333.018H3899.62L3892.52 322.834C3894.54 322.087 3896.13 320.865 3897.28 319.168C3898.5 317.403 3899.11 315.367 3899.11 313.059C3899.11 309.868 3898.03 307.322 3895.86 305.422C3893.77 303.453 3891 302.467 3887.55 302.467H3873.25ZM1547.4 307.367V471.867C1547.4 491.201 1551.4 508.534 1559.4 523.867C1567.73 538.867 1579.06 550.701 1593.4 559.367C1608.06 567.701 1624.73 571.867 1643.4 571.867C1660.4 571.867 1675.9 568.367 1689.9 561.367C1704.23 554.034 1715.4 544.201 1723.4 531.867V565.867H1784.9V307.367H1723.4V463.867C1723.4 479.534 1717.4 492.867 1705.4 503.867C1693.4 514.534 1678.56 519.867 1660.9 519.867C1644.9 519.867 1631.73 514.367 1621.4 503.367C1611.4 492.034 1606.4 477.534 1606.4 459.867V307.367H1547.4ZM3256.84 307.367V565.867H3317.84V307.367H3256.84ZM3880.85 310.004H3886.74C3888.02 310.004 3889.07 310.309 3889.88 310.92C3890.69 311.463 3891.1 312.176 3891.1 313.059C3891.1 314.009 3890.69 314.789 3889.88 315.4C3889.07 315.943 3888.02 316.215 3886.74 316.215H3880.85V310.004ZM2573.43 350.367C2592.1 350.367 2607.1 356.201 2618.43 367.867C2630.1 379.534 2637.43 394.867 2640.43 413.867H2499.93C2503.93 394.534 2512.6 379.201 2525.93 367.867C2539.26 356.201 2555.1 350.367 2573.43 350.367ZM2258.5 353.367C2279.83 353.367 2297.33 361.201 2311 376.867C2324.67 392.201 2331.5 412.034 2331.5 436.367C2331.5 452.367 2328.33 466.701 2322 479.367C2316 492.034 2307.33 502.034 2296 509.367C2285 516.367 2272.5 519.867 2258.5 519.867C2236.5 519.867 2218.5 512.034 2204.5 496.367C2190.5 480.701 2183.5 460.701 2183.5 436.367C2183.5 412.034 2190.5 392.201 2204.5 376.867C2218.5 361.201 2236.5 353.367 2258.5 353.367ZM3075.4 353.367C3097.4 353.367 3115.4 361.201 3129.4 376.867C3143.4 392.201 3150.4 412.034 3150.4 436.367C3150.4 460.701 3143.4 480.701 3129.4 496.367C3115.4 512.034 3097.4 519.867 3075.4 519.867C3061.4 519.867 3048.73 516.367 3037.4 509.367C3026.4 502.034 3017.73 492.034 3011.4 479.367C3005.4 466.701 3002.4 452.367 3002.4 436.367C3002.4 412.034 3009.23 392.201 3022.9 376.867C3036.56 361.201 3054.06 353.367 3075.4 353.367ZM3685.12 353.367C3706.45 353.367 3723.95 361.201 3737.62 376.867C3751.29 392.201 3758.12 412.034 3758.12 436.367C3758.12 452.367 3754.95 466.701 3748.62 479.367C3742.62 492.034 3733.95 502.034 3722.62 509.367C3711.62 516.367 3699.12 519.867 3685.12 519.867C3663.12 519.867 3645.12 512.034 3631.12 496.367C3617.12 480.701 3610.12 460.701 3610.12 436.367C3610.12 412.034 3617.12 392.201 3631.12 376.867C3645.12 361.201 3663.12 353.367 3685.12 353.367Z" fill="currentColor"/>
+  <defs>
+    <filter id="filter0_f_106_1002" x="201.475" y="276.158" width="341.88" height="198.416" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="16" result="effect1_foregroundBlur_106_1002"/>
+    </filter>
+    <linearGradient id="paint0_linear_106_1002" x1="146.185" y1="155.649" x2="639.585" y2="615.869" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1B91F3"/>
+      <stop offset="1" stop-color="#0B68CB"/>
+    </linearGradient>
+    <radialGradient id="paint1_radial_106_1002" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(145.274 314) rotate(66.5177) scale(295.96 283.519)">
+      <stop offset="0.53" stop-color="#0B4186" stop-opacity="0"/>
+      <stop offset="1" stop-color="#0B4186" stop-opacity="0.45"/>
+    </radialGradient>
+    <radialGradient id="paint2_radial_106_1002" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(383.705 192.449) rotate(-127.997) scale(63.2702 104.698)">
+      <stop stop-color="#EF3ACC" stop-opacity="0"/>
+      <stop offset="1" stop-color="#EF3ACC" stop-opacity="0.64"/>
+    </radialGradient>
+    <linearGradient id="paint3_linear_106_1002" x1="283.475" y1="273.458" x2="461.015" y2="75.8183" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F5DB0"/>
+      <stop offset="1" stop-color="#0F5DB0" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="paint4_radial_106_1002" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(242.704 551.15) rotate(-64.2624) scale(461.716 570.355)">
+      <stop offset="0.02" stop-color="#094188"/>
+      <stop offset="0.97" stop-color="#0B4186" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="paint5_linear_106_1002" x1="594.625" y1="416.559" x2="512.075" y2="619.249" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E247C4" stop-opacity="0"/>
+      <stop offset="1" stop-color="#E247C4" stop-opacity="0.64"/>
+    </linearGradient>
+    <linearGradient id="paint6_linear_106_1002" x1="82.7155" y1="234.79" x2="155.445" y2="527.51" gradientUnits="userSpaceOnUse">
+      <stop offset="0.1" stop-color="#EF3ACC"/>
+      <stop offset="1" stop-color="#EF3ACC" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="paint7_linear_106_1002" x1="374.705" y1="273.95" x2="374.705" y2="569.949" gradientUnits="userSpaceOnUse">
+      <stop stop-color="white"/>
+      <stop offset="0.91" stop-color="#BEE1FE"/>
+      <stop offset="1" stop-color="#96CEFD"/>
+    </linearGradient>
+    <linearGradient id="paint8_linear_106_1002" x1="380.245" y1="441.449" x2="380.245" y2="565.449" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#BCE0FD"/>
+      <stop offset="1" stop-color="#88CCFC"/>
+    </linearGradient>
+  </defs>
+</svg>
 
-      
-        <a href="?form=support&utm_content=header&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023" class="btn-donate md:hidden" data-donate-btn data-donate-content="header">
-          <span class="inline-block w-3 mr-1"><svg viewBox="0 0 14 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      </a>
+      <div class="nav-links">
+        <a href="#" class="nav-ln">Products</a>
+        <a href="#" class="nav-ln">Resources</a>
+        <a href="./about/" class="nav-ln">About</a>
+        <a href="#" class="nav-ln">Contribute</a>
+
+        <div class="header-download">
+          <a href="/en-US/download" class="btn download-link btn-download">
+            <span>Download</span>
+          </a>
+        </div>
+        <div class="header-donate">
+        <a href="?form=support&utm_content=header&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023" class="btn">
+          <span><svg viewBox="0 0 14 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <g id="UI" stroke="none" stroke-width="1" fill="currentColor" fill-rule="evenodd">
         <path d="M7.00000834,12.0000012 C6.8750082,12.0000012 6.75000805,11.9531261 6.65625793,11.859376 L1.78125212,7.15624542 C1.71875205,7.10155785 0,5.53124348 0,3.65624125 C0,1.36717602 1.39843917,-1.31130219e-05 3.73437945,-1.31130219e-05 C5.10156858,-1.31130219e-05 6.38282011,1.07811317 7.00000834,1.6874889 C7.61719658,1.07811317 8.89844811,-1.31130219e-05 10.2656372,-1.31130219e-05 C12.6015775,-1.31130219e-05 14.0000167,1.36717602 14.0000167,3.65624125 C14.0000167,5.53124348 12.2812646,7.10155785 12.2109521,7.17187044 L7.34375875,11.859376 C7.25000864,11.9531261 7.12500849,12.0000012 7.00000834,12.0000012 Z"></path>
     </g>
 </svg>
-</span> Donate
+</span>
         </a>
-        <nav id="nav-main" role="navigation" class="flex-grow md:flex-grow-0">
-          <ul id="nav-main-menu" class="list-none p-0 flex flex-wrap items-center text-white font-md font-semibold justify-around">
-            <li>
-              <a href="/en-US/features" class="nav-link">Features</a>
-            </li>
-            <li>
-              <a href="https://addons.thunderbird.net" class="nav-link">Add-ons</a>
-            </li>
-            <li>
-              <a href="/en-US/get-involved" class="nav-link">Get Involved</a>
-            </li>
-            <li>
-              <a href="https://support.mozilla.org/products/thunderbird/" class="nav-link">Get Help</a>
-            </li>
-            <li>
-              <a href="/en-US/about" class="nav-link">About Us</a>
-            </li>
-            <li>
-              <a href="https://blog.thunderbird.net/" class="nav-link">Blog</a>
-            </li>
-            <li class="hidden md:inline">
-              <a href="?form=support&utm_content=header&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023" class="btn-donate" data-donate-btn data-donate-content="header">
-                <span class="inline-block w-3 mr-1"><svg viewBox="0 0 14 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <g id="UI" stroke="none" stroke-width="1" fill="currentColor" fill-rule="evenodd">
-        <path d="M7.00000834,12.0000012 C6.8750082,12.0000012 6.75000805,11.9531261 6.65625793,11.859376 L1.78125212,7.15624542 C1.71875205,7.10155785 0,5.53124348 0,3.65624125 C0,1.36717602 1.39843917,-1.31130219e-05 3.73437945,-1.31130219e-05 C5.10156858,-1.31130219e-05 6.38282011,1.07811317 7.00000834,1.6874889 C7.61719658,1.07811317 8.89844811,-1.31130219e-05 10.2656372,-1.31130219e-05 C12.6015775,-1.31130219e-05 14.0000167,1.36717602 14.0000167,3.65624125 C14.0000167,5.53124348 12.2812646,7.10155785 12.2109521,7.17187044 L7.34375875,11.859376 C7.25000864,11.9531261 7.12500849,12.0000012 7.00000834,12.0000012 Z"></path>
-    </g>
-</svg>
-</span> Donate
-              </a>
-            </li>
-          </ul>
-        </nav>
-      
-    </section>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+    
+  <header id="masthead">
+
+    
+      <div class="breadcrumbs">
+      Home >  >
+      </div>
+    
 
     
 <section class="text-left text-white flex flex-col items-start lg:w-full max-w-6xl mx-auto pl-8 pr-8">
@@ -120,11 +174,6 @@
 
 
     
-  
-
-
-
-
 <script>
   (function(w,d,s,n,a){if(!w[n]){var l='call,catch,on,once,set,then,track'
   .split(','),i,o=function(n){return'function'==typeof n?o.l.push([arguments])&&o
@@ -139,88 +188,27 @@
 </script>
 
 
-<div id="amount-modal" class="modal rounded-lg w-full max-w-2xl shadow-lg bg-white text-black-lighter fixed z-30 mt-0 mx-auto pin-x hidden">
-  <div id="close-modal" class="absolute p-1 m-2 z-10 pin-t pin-r">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
-      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-      <line x1="18" y1="6" x2="6" y2="18" />
-      <line x1="6" y1="6" x2="18" y2="18" />
-    </svg>
-  </div>
-  <h1 class="text-blue-dark text-center font-4xl font-light">
-    Pay What You Want
-  </h1>
-  <form action="">
-    <section class="font-lg pt-0 pl-6 pb-4 pr-6 leading-normal text-center">
-      <p>Thunderbird is independent, free, and Open Source software sustained by your donations. Help us keep the project alive!</p>
-    </section>
-    <section id="donate-buttons" class="flex justify-center mt-6 mb-6 mx-auto">
-      <a href="#" class="btn-donate-and-download" id="amount-submit" data-donate-content="post_download">
-        <span class="donate-heart">
-          <svg viewBox="0 0 14 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <g id="UI" stroke="none" stroke-width="1" fill="currentColor" fill-rule="evenodd">
-        <path d="M7.00000834,12.0000012 C6.8750082,12.0000012 6.75000805,11.9531261 6.65625793,11.859376 L1.78125212,7.15624542 C1.71875205,7.10155785 0,5.53124348 0,3.65624125 C0,1.36717602 1.39843917,-1.31130219e-05 3.73437945,-1.31130219e-05 C5.10156858,-1.31130219e-05 6.38282011,1.07811317 7.00000834,1.6874889 C7.61719658,1.07811317 8.89844811,-1.31130219e-05 10.2656372,-1.31130219e-05 C12.6015775,-1.31130219e-05 14.0000167,1.36717602 14.0000167,3.65624125 C14.0000167,5.53124348 12.2812646,7.10155785 12.2109521,7.17187044 L7.34375875,11.859376 C7.25000864,11.9531261 7.12500849,12.0000012 7.00000834,12.0000012 Z"></path>
-    </g>
-</svg>
-
-          <span class="donate-wave">
-          <!-- o/ -->
-          </span>
-        </span>
-        <p>Donate & Download</p>
-      </a>
-      <a href="#" class="btn-body btn-secondary donate-download-link" id="amount-cancel">
-        <p>No Thanks, Download Now!</p>
-        <span>
-          <svg viewBox="0 0 7 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <g id="UI" stroke="none" stroke-width="1" fill="currentColor" fill-rule="evenodd">
-              <path d="M6.91574413,5.89284986 C6.91574413,5.97767139 6.87333336,6.07309561 6.80971722,6.13671176 L1.86886311,11.0775659 C1.80524696,11.141182 1.70982274,11.1835928 1.62500121,11.1835928 C1.54017968,11.1835928 1.44475546,11.141182 1.38113932,11.0775659 L0.851004755,10.5474313 C0.787388608,10.4838152 0.744977843,10.3989936 0.744977843,10.3035694 C0.744977843,10.2187479 0.787388608,10.1233237 0.851004755,10.0597075 L5.0178624,5.89284986 L0.851004755,1.72599222 C0.787388608,1.66237607 0.744977843,1.56695185 0.744977843,1.48213032 C0.744977843,1.39730879 0.787388608,1.30188457 0.851004755,1.23826842 L1.38113932,0.70813386 C1.44475546,0.644517713 1.54017968,0.602106948 1.62500121,0.602106948 C1.70982274,0.602106948 1.80524696,0.644517713 1.86886311,0.70813386 L6.80971722,5.64898796 C6.87333336,5.71260411 6.91574413,5.80802833 6.91574413,5.89284986 Z"></path>
-            </g>
-          </svg>
-        </span>
-      </a>
-    </section>
-  </form>
-  <footer class="w-4/5 mx-auto border-0 border-t border-solid border-grey-light p-6">
-    <ul class="flex justify-center uppercase list-none font-xs p-0 m-0">
-      <li class="mr-4">
-        <a class="text-black-lightest no-underline" href="">
-          Secure
-        </a>
-      </li>
-      <li class="mr-4">
-        <a class="text-black-lightest no-underline" href="https://www.mozilla.org/en-US/privacy/websites/">
-          Privacy Policy
-        </a>
-      </li>
-      <li class="mr-4">
-        <a class="text-black-lightest no-underline" href="https://give.thunderbird.net/en-CA/ways-to-give/">
-          Other ways to donate
-        </a>
-      </li>
-      <li>
-        <a class="text-black-lightest no-underline" href="https://give.thunderbird.net/en-CA/faq/">
-          FAQ
-        </a>
-      </li>
-    </ul>
-  </footer>
-</div>
-
-<div id="modal-overlay" class="fixed pin-t pin-l m-0 p-0 w-full h-full z-20 bg-black opacity-50 hidden" tabindex="-1"></div>
-
     
 
+    
+    <div class="header-separator">
+      <svg viewBox="0 0 508 19.395" version="1.1" id="svg64945" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+    <g id="layer1" transform="translate(-4468.845 115.533)">
+        <path id="path31" style="opacity:1;fill:currentColor;fill-opacity:1;stroke:none;stroke-width:1.05833;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:fill markers stroke" d="M4468.845-115.533v4.417l254 14.978 254-14.978v-4.417z"/>
+    </g>
+    <style type="text/css" id="style1070">
+        .st0{fill:#5f6368}.st1{fill:#4285f4}.st2{fill:#34a853}.st3{fill:#fbbc04}.st4{fill:#ea4335}
+    </style>
+</svg>
+
+    </div>
     
 
   </header>
 
 
-    
-      
-    
-
     <main>
+      
       
   <section class="mt-10 flex justify-between items-center pl-8 pr-8">
     <aside class="flex flex-col w-full lg:ml-16 lg:mr-16 font-lg tracking-wider leading-loose -mb-20 markup-page">
@@ -282,811 +270,215 @@
   <section class="pt-20 pb-20 flex bg-calendar">
     &nbsp;
   </section>
-  <section class="pt-10 pb-10 lg:pt-20 lg:pb-20 flex bg-prefooter bg-grey-lighter">
-  <section class="flex flex-col lg:flex-row flex-1 max-w-6xl mx-auto justify-between pl-8 pr-8">
-    <article class="flex flex-1 lg:max-w-md mb-20 lg:mb-0">
-      <aside class="w-16 md:w-24 pt-4">
-        <img class="w-full h-auto" src="/media/img/thunderbird/handshake.png" srcset="/media/img/thunderbird/handshake-high-res.png 1.5x" alt="Get Involved">
-      </aside>
-      <main class="flex flex-col flex-1 ml-4">
-        <h3 class="header-section">Get Involved</h3>
-        <p class="font-lg tracking-wider leading-loose mb-8 mt-0 flex-1">
-          Thunderbird is an open source project, which means anyone can contribute ideas, designs, code, and time helping fellow users.
-        </p>
-        <a href="/en-US/get-involved" class="btn-join self-start ml-3 mr-3">
-          Join Us
-        </a>
-        <p class="font-sm mt-0 text-blue font-semibold self-start">
-          <a href="?form=support&utm_content=pre_footer&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023" class="small-link text-blue" data-donate-btn data-donate-content="pre_footer">Make a Donation</a> &bull;
-          <a href="https://support.mozilla.org/products/thunderbird/"
-            class="small-link text-blue">Get Support</a> &bull;
-          <a href="https://bugzilla.mozilla.org/describecomponents.cgi?product=Thunderbird"
-            class="small-link text-blue">Report a Bug</a>
-        </p>
-      </main>
-    </article>
-
-    <article class="flex flex-1 flex-col lg:max-w-lg mb-10 lg:mb-0 tabs">
-      <input checked="checked" id="release" type="radio" name="pct" class="hidden"/>
-      <input id="beta" type="radio" name="pct" class="hidden"/>
-      <input id="daily" type="radio" name="pct" class="hidden"/>
-      <aside class="self-start text-left lg:-mt-12 ml-20 md:pl-8">
-        <nav>
-          <ul class="list-none p-0 flex flex-wrap font-semibold tabs-nav">
-            <li id="channel" class="release">
-              <label for="release">Release Channel</label>
-            </li>
-            <li class="beta">
-              <label for="beta">Beta Channel</label>
-            </li>
-            <li class="daily">
-              <label for="daily">Daily Channel</label>
-            </li>
-          </ul>
-        </nav>
-      </aside>
-
-      <section class="tab release flex flex-1">
-        <aside class="w-16 md:w-24 pt-4">
-            <img class="w-full h-auto" src="/media/img/thunderbird/logos/release.png" srcset="/media/img/thunderbird/logos/release-high-res.png 1.5x" alt="Thunderbird">
-        </aside>
-        <main class="flex flex-col flex-1 ml-4">
-          <h3 class="header-section">Thunderbird</h3>
-          <p class="font-lg tracking-wider leading-loose mb-8 mt-0 flex-1">
-            Thunderbird is a free email application that’s easy to set up and customize - and it’s loaded with great features!
-          </p>
-          <aside class="ml-0 mr-0 self-start text-center text-green font-semibold">
-            
-  
 
 
-  
-
-
-
-
-
-
-
-
-<div id="download-button-desktop-release" class="download-button">
-  
-  <div class="nojs-download">
-    
-  <div class="download download-dumb">
-    <h4>Download Thunderbird — English (US)</h4>
-    <ul class="list-none p-0 flex flex-wrap max-w-lg self-start">
-      <li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-115.8.0-SSL&os=win64&lang=en-US" class="matomo-track-download download-link btn-download" data-donate-redirect="download-esr" data-donate-content="post_download" data-donate-link="/en-US/download?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=esr">
-            Windows 64-bit
-          </a>
-        </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-115.8.0-msi-SSL&os=win64&lang=en-US" class="matomo-track-download download-link btn-download" data-donate-redirect="download-esr" data-donate-content="post_download" data-donate-link="/en-US/download?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=esr">
-            Windows MSI 64-bit
-          </a>
-        </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-115.8.0-SSL&os=osx&lang=en-US" class="matomo-track-download download-link btn-download" data-donate-redirect="download-esr" data-donate-content="post_download" data-donate-link="/en-US/download?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=esr">
-            macOS
-          </a>
-        </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-115.8.0-SSL&os=linux64&lang=en-US" class="matomo-track-download download-link btn-download" data-donate-redirect="download-esr" data-donate-content="post_download" data-donate-link="/en-US/download?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=esr">
-            Linux 64-bit
-          </a>
-        </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-115.8.0-SSL&os=win&lang=en-US" class="matomo-track-download download-link btn-download" data-donate-redirect="download-esr" data-donate-content="post_download" data-donate-link="/en-US/download?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=esr">
-            Windows 32-bit
-          </a>
-        </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-115.8.0-SSL&os=linux&lang=en-US" class="matomo-track-download download-link btn-download" data-donate-redirect="download-esr" data-donate-content="post_download" data-donate-link="/en-US/download?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=esr">
-            Linux 32-bit
-          </a>
-        </li>
-    </ul>
-  </div>
-
-  </div>
-  <div class="unrecognized-download os_android os_ios">
-    
-  <div class="download download-dumb">
-    <h4>Download Thunderbird — English (US)</h4>
-    <ul class="list-none p-0 flex flex-wrap max-w-lg self-start">
-      <li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-115.8.0-SSL&os=win64&lang=en-US" class="matomo-track-download download-link btn-download" data-donate-redirect="download-esr" data-donate-content="post_download" data-donate-link="/en-US/download?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=esr">
-            Windows 64-bit
-          </a>
-        </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-115.8.0-msi-SSL&os=win64&lang=en-US" class="matomo-track-download download-link btn-download" data-donate-redirect="download-esr" data-donate-content="post_download" data-donate-link="/en-US/download?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=esr">
-            Windows MSI 64-bit
-          </a>
-        </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-115.8.0-SSL&os=osx&lang=en-US" class="matomo-track-download download-link btn-download" data-donate-redirect="download-esr" data-donate-content="post_download" data-donate-link="/en-US/download?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=esr">
-            macOS
-          </a>
-        </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-115.8.0-SSL&os=linux64&lang=en-US" class="matomo-track-download download-link btn-download" data-donate-redirect="download-esr" data-donate-content="post_download" data-donate-link="/en-US/download?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=esr">
-            Linux 64-bit
-          </a>
-        </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-115.8.0-SSL&os=win&lang=en-US" class="matomo-track-download download-link btn-download" data-donate-redirect="download-esr" data-donate-content="post_download" data-donate-link="/en-US/download?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=esr">
-            Windows 32-bit
-          </a>
-        </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-115.8.0-SSL&os=linux&lang=en-US" class="matomo-track-download download-link btn-download" data-donate-redirect="download-esr" data-donate-content="post_download" data-donate-link="/en-US/download?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=esr">
-            Linux 32-bit
-          </a>
-        </li>
-    </ul>
-  </div>
-
-  </div>
-  <p class="unsupported-download p-links">
-    Your system doesn't meet the <a href="/en-US/thunderbird/115.8.0/system-requirements/">requirements</a> to run Thunderbird.
-  </p>
-  <p class="linux-arm-download mb-8 p-links">
-    Please follow <a href="https://support.mozilla.org/kb/installing-thunderbird-linux">these instructions</a> to install Thunderbird.
-  </p>
-  <ul class="download-list list-none p-0 flex flex-wrap max-w-lg mb-0 self-start">
-    
-      <li class="os_win64 ml-3 mr-3">
-        <a class="matomo-track-download download-link btn-download"
-          href="https://download.mozilla.org/?product=thunderbird-115.8.0-SSL&os=win64&lang=en-US"
-          data-donate-redirect="download-esr"
-          data-donate-content="post_download"
-          data-donate-link="/en-US/download?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=esr"
-          >
-          
-            Download Thunderbird
-          
-        </a>
-      </li>
-    
-      <li class="os_msi ml-3 mr-3">
-        <a class="matomo-track-download download-link btn-download"
-          href="https://download.mozilla.org/?product=thunderbird-115.8.0-msi-SSL&os=win64&lang=en-US"
-          data-donate-redirect="download-esr"
-          data-donate-content="post_download"
-          data-donate-link="/en-US/download?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=esr"
-          >
-          
-            Download Thunderbird
-          
-        </a>
-      </li>
-    
-      <li class="os_osx ml-3 mr-3">
-        <a class="matomo-track-download download-link btn-download"
-          href="https://download.mozilla.org/?product=thunderbird-115.8.0-SSL&os=osx&lang=en-US"
-          data-donate-redirect="download-esr"
-          data-donate-content="post_download"
-          data-donate-link="/en-US/download?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=esr"
-          >
-          
-            Download Thunderbird
-          
-        </a>
-      </li>
-    
-      <li class="os_linux64 ml-3 mr-3">
-        <a class="matomo-track-download download-link btn-download"
-          href="https://download.mozilla.org/?product=thunderbird-115.8.0-SSL&os=linux64&lang=en-US"
-          data-donate-redirect="download-esr"
-          data-donate-content="post_download"
-          data-donate-link="/en-US/download?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=esr"
-          >
-          
-            Download Thunderbird
-          
-        </a>
-      </li>
-    
-      <li class="os_win ml-3 mr-3">
-        <a class="matomo-track-download download-link btn-download"
-          href="https://download.mozilla.org/?product=thunderbird-115.8.0-SSL&os=win&lang=en-US"
-          data-donate-redirect="download-esr"
-          data-donate-content="post_download"
-          data-donate-link="/en-US/download?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=esr"
-          >
-          
-            Download Thunderbird
-          
-        </a>
-      </li>
-    
-      <li class="os_linux ml-3 mr-3">
-        <a class="matomo-track-download download-link btn-download"
-          href="https://download.mozilla.org/?product=thunderbird-115.8.0-SSL&os=linux&lang=en-US"
-          data-donate-redirect="download-esr"
-          data-donate-content="post_download"
-          data-donate-link="/en-US/download?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=esr"
-          >
-          
-            Download Thunderbird
-          
-        </a>
-      </li>
-    
-  </ul>
-  
-  <p class="download-other download-other-desktop os_android os_ios os_linux os_linux64 os_osx os_win os_win64 os_winsha1 font-sm mt-0">
-    
       
-        <a href="/en-US/thunderbird/all/" class="small-link  text-blue ">Systems &amp; Languages</a> &bull;
-        <a href="/en-US/thunderbird/115.8.0/releasenotes/" class="small-link  text-blue ">What’s New</a> &bull;
-      
-      <a href="https://www.mozilla.org/privacy/thunderbird/" class="small-link  text-blue ">Privacy</a>
-    
-  </p>
-  
+<div class="pre-footer-cover-container">
+  <div class="page-separator-cover">
+  <svg viewBox="0 0 508 19.395" version="1.1" id="svg64945" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+    <g id="layer1" transform="translate(-4468.845 100.533)">
+        <path id="rect28" style="opacity:1;fill:currentColor;fill-opacity:1;stroke:none;stroke-width:1.05833;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:fill markers stroke" d="m4976.845-100.533-254 14.978-254-14.978v19.396h508z"/>
+    </g>
+    <style type="text/css" id="style1070">
+        .st0{fill:#5f6368}.st1{fill:#4285f4}.st2{fill:#34a853}.st3{fill:#fbbc04}.st4{fill:#ea4335}
+    </style>
+</svg>
+
 </div>
-          </aside>
-        </main>
-      </section>
-
-      <section class="tab beta flex flex-1">
-        <aside class="w-16 md:w-24 pt-4">
-          <img class="w-full h-auto" src="/media/img/thunderbird/logos/beta.png" srcset="/media/img/thunderbird/logos/beta-high-res.png 1.5x" alt="Thunderbird Beta">
-        </aside>
-        <main class="flex flex-col flex-1 ml-4">
-          <h3 class="header-section">The Future of Thunderbird</h3>
-          <p class="font-lg tracking-wider leading-loose mb-8 mt-0 flex-1">
-            Experience cutting edge features. Provide feedback to help refine and polish what will be in the final release.
-          </p>
-          <aside class="ml-0 mr-0 self-start text-left text-blue font-semibold">
-            
-  
-
-
-  
-
-
-
-
-
-
-
-
-<div id="download-button-desktop-beta" class="download-button download-button-beta">
-  
-  <div class="nojs-download">
-    
-  <div class="download download-dumb">
-    <h4>Download Thunderbird — English (US)</h4>
-    <ul class="list-none p-0 flex flex-wrap max-w-lg self-start">
-      <li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-124.0b1-SSL&os=win64&lang=en-US" class="matomo-track-download download-link btn-beta" data-donate-redirect="download-beta" data-donate-content="post_download" data-donate-link="/en-US/download?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=beta">
-            Windows 64-bit
-          </a>
-        </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-124.0b1-msi-SSL&os=win64&lang=en-US" class="matomo-track-download download-link btn-beta" data-donate-redirect="download-beta" data-donate-content="post_download" data-donate-link="/en-US/download?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=beta">
-            Windows MSI 64-bit
-          </a>
-        </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-124.0b1-SSL&os=osx&lang=en-US" class="matomo-track-download download-link btn-beta" data-donate-redirect="download-beta" data-donate-content="post_download" data-donate-link="/en-US/download?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=beta">
-            macOS
-          </a>
-        </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-124.0b1-SSL&os=linux64&lang=en-US" class="matomo-track-download download-link btn-beta" data-donate-redirect="download-beta" data-donate-content="post_download" data-donate-link="/en-US/download?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=beta">
-            Linux 64-bit
-          </a>
-        </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-124.0b1-SSL&os=win&lang=en-US" class="matomo-track-download download-link btn-beta" data-donate-redirect="download-beta" data-donate-content="post_download" data-donate-link="/en-US/download?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=beta">
-            Windows 32-bit
-          </a>
-        </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-124.0b1-SSL&os=linux&lang=en-US" class="matomo-track-download download-link btn-beta" data-donate-redirect="download-beta" data-donate-content="post_download" data-donate-link="/en-US/download?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=beta">
-            Linux 32-bit
-          </a>
-        </li>
-    </ul>
-  </div>
-
-  </div>
-  <div class="unrecognized-download os_android os_ios">
-    
-  <div class="download download-dumb">
-    <h4>Download Thunderbird — English (US)</h4>
-    <ul class="list-none p-0 flex flex-wrap max-w-lg self-start">
-      <li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-124.0b1-SSL&os=win64&lang=en-US" class="matomo-track-download download-link btn-beta" data-donate-redirect="download-beta" data-donate-content="post_download" data-donate-link="/en-US/download?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=beta">
-            Windows 64-bit
-          </a>
-        </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-124.0b1-msi-SSL&os=win64&lang=en-US" class="matomo-track-download download-link btn-beta" data-donate-redirect="download-beta" data-donate-content="post_download" data-donate-link="/en-US/download?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=beta">
-            Windows MSI 64-bit
-          </a>
-        </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-124.0b1-SSL&os=osx&lang=en-US" class="matomo-track-download download-link btn-beta" data-donate-redirect="download-beta" data-donate-content="post_download" data-donate-link="/en-US/download?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=beta">
-            macOS
-          </a>
-        </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-124.0b1-SSL&os=linux64&lang=en-US" class="matomo-track-download download-link btn-beta" data-donate-redirect="download-beta" data-donate-content="post_download" data-donate-link="/en-US/download?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=beta">
-            Linux 64-bit
-          </a>
-        </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-124.0b1-SSL&os=win&lang=en-US" class="matomo-track-download download-link btn-beta" data-donate-redirect="download-beta" data-donate-content="post_download" data-donate-link="/en-US/download?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=beta">
-            Windows 32-bit
-          </a>
-        </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-124.0b1-SSL&os=linux&lang=en-US" class="matomo-track-download download-link btn-beta" data-donate-redirect="download-beta" data-donate-content="post_download" data-donate-link="/en-US/download?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=beta">
-            Linux 32-bit
-          </a>
-        </li>
-    </ul>
-  </div>
-
-  </div>
-  <p class="unsupported-download p-links">
-    Your system doesn't meet the <a href="/en-US/thunderbird/124.0beta/system-requirements/">requirements</a> to run Thunderbird.
-  </p>
-  <p class="linux-arm-download mb-8 p-links">
-    Please follow <a href="https://support.mozilla.org/kb/installing-thunderbird-linux">these instructions</a> to install Thunderbird.
-  </p>
-  <ul class="download-list list-none p-0 flex flex-wrap max-w-lg mb-0 self-start">
-    
-      <li class="os_win64 ml-3 mr-3">
-        <a class="matomo-track-download download-link btn-beta"
-          href="https://download.mozilla.org/?product=thunderbird-124.0b1-SSL&os=win64&lang=en-US"
-          data-donate-redirect="download-beta"
-          data-donate-content="post_download"
-          data-donate-link="/en-US/download?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=beta"
-          >
-          
-            Download Beta
-          
-        </a>
-      </li>
-    
-      <li class="os_msi ml-3 mr-3">
-        <a class="matomo-track-download download-link btn-beta"
-          href="https://download.mozilla.org/?product=thunderbird-124.0b1-msi-SSL&os=win64&lang=en-US"
-          data-donate-redirect="download-beta"
-          data-donate-content="post_download"
-          data-donate-link="/en-US/download?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=beta"
-          >
-          
-            Download Beta
-          
-        </a>
-      </li>
-    
-      <li class="os_osx ml-3 mr-3">
-        <a class="matomo-track-download download-link btn-beta"
-          href="https://download.mozilla.org/?product=thunderbird-124.0b1-SSL&os=osx&lang=en-US"
-          data-donate-redirect="download-beta"
-          data-donate-content="post_download"
-          data-donate-link="/en-US/download?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=beta"
-          >
-          
-            Download Beta
-          
-        </a>
-      </li>
-    
-      <li class="os_linux64 ml-3 mr-3">
-        <a class="matomo-track-download download-link btn-beta"
-          href="https://download.mozilla.org/?product=thunderbird-124.0b1-SSL&os=linux64&lang=en-US"
-          data-donate-redirect="download-beta"
-          data-donate-content="post_download"
-          data-donate-link="/en-US/download?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=beta"
-          >
-          
-            Download Beta
-          
-        </a>
-      </li>
-    
-      <li class="os_win ml-3 mr-3">
-        <a class="matomo-track-download download-link btn-beta"
-          href="https://download.mozilla.org/?product=thunderbird-124.0b1-SSL&os=win&lang=en-US"
-          data-donate-redirect="download-beta"
-          data-donate-content="post_download"
-          data-donate-link="/en-US/download?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=beta"
-          >
-          
-            Download Beta
-          
-        </a>
-      </li>
-    
-      <li class="os_linux ml-3 mr-3">
-        <a class="matomo-track-download download-link btn-beta"
-          href="https://download.mozilla.org/?product=thunderbird-124.0b1-SSL&os=linux&lang=en-US"
-          data-donate-redirect="download-beta"
-          data-donate-content="post_download"
-          data-donate-link="/en-US/download?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=beta"
-          >
-          
-            Download Beta
-          
-        </a>
-      </li>
-    
-  </ul>
-  
-  <p class="download-other download-other-desktop os_android os_ios os_linux os_linux64 os_osx os_win os_win64 os_winsha1 font-sm mt-0">
-    
-      
-        <a href="/en-US/thunderbird/beta/all/" class="small-link  text-blue ">Systems &amp; Languages</a> &bull;
-        <a href="/en-US/thunderbird/124.0beta/releasenotes/" class="small-link  text-blue ">What’s New</a> &bull;
-      
-      <a href="https://www.mozilla.org/privacy/thunderbird/" class="small-link  text-blue ">Privacy</a>
-    
-  </p>
-  
 </div>
-          </aside>
-        </main>
-      </section>
+<section id="whats-next">
+    <div class="container">
+      <div class="section-text">
+        <h2>Learn What’s <span class="txt-gradient">Next</span></h2>
+            <p>
+              
+              Thunderbird keeps getting better. Subscribe to our newsletter and follow us on social media to stay
+              informed.
+              
+            </p>
+      </div>
+      <div class="newsletter">
+        <!-- Begin Mailchimp Signup Form -->
+        <form action="https://thunderbird.us12.list-manage.com/subscribe?u=f8051cc8637cf3ff79661f382&amp;id=56428f2efc"
+          class="newsletter-form" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form">
+          <input id="mce-EMAIL" name="EMAIL" type="email" placeholder="Your Email" required="">
+          <button type="submit" id="mc-embedded-subscribe" class="btn-newsletter btn-newsletter-text">Subscribe</button>
+          <button type="submit" id="mc-embedded-subscribe" class="btn-newsletter btn-newsletter-icon">➜</button>
+          <!-- Prevent Bot signups -->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+              name="b_f8051cc8637cf3ff79661f382_9badb0cec2" tabindex="-1" value=""></div>
+        </form>
+        <!--End mc_embed_signup-->
+      </div>
+      <div class="social-list">
+        <a class="icon" title="Follow @thunderbird@mastodon.online on Mastodon"
+            href="https://mastodon.online/@thunderbird" data-link-type="footer" data-link-name="Mastodon (Thunderbird)" rel="me">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path d="M15.5163 5.00092C12.6243 5.00092 9.84258 5.33386 8.22139 6.08145C8.22139 6.08145 5.00675 7.52014 5.00675 12.4271C5.00675 13.5508 4.98407 14.8949 5.02186 16.3201C5.13865 21.119 5.90212 25.8491 10.3392 27.0234C12.3851 27.565 14.1419 27.6771 15.5565 27.5992C18.1219 27.4556 19.5618 26.6852 19.5618 26.6852L19.4782 24.8227C19.4782 24.8227 17.6445 25.4022 15.5856 25.3316C13.5457 25.2598 11.3929 25.1123 11.063 22.6072C11.0328 22.388 11.0154 22.1494 11.0154 21.9041C11.0154 21.9041 13.0169 22.3925 15.5546 22.5089C17.1064 22.5807 18.5617 22.4185 20.0397 22.2409C22.8741 21.9007 25.3431 20.1572 25.6533 18.5615C26.142 16.0477 26.0997 12.4262 26.0997 12.4262C26.0997 7.51922 22.8851 6.08006 22.8851 6.08006C21.264 5.3355 18.4801 5.02306 15.588 5L15.5163 5.00092ZM12.2433 8.83489C13.448 8.83489 14.3604 9.29779 14.9635 10.2245L15.5497 11.2068L16.1359 10.2245C16.739 9.29817 17.6514 8.83489 18.8562 8.83489C19.8972 8.83489 20.7376 9.20146 21.3782 9.91542C21.9992 10.6294 22.3065 11.5943 22.3065 12.8087V18.7497H19.9534V12.9821C19.9534 11.7663 19.4413 11.1505 18.4181 11.1505C17.2868 11.1505 16.7201 11.8829 16.7201 13.3305V16.4867H14.3794V13.3305C14.3794 11.8829 13.8126 11.1505 12.6814 11.1505C11.6582 11.1505 11.1481 11.7663 11.1481 12.9821V18.7497H8.79297V12.8087C8.79297 11.5943 9.10213 10.6294 9.72338 9.91542C10.3638 9.20146 11.2021 8.83489 12.2433 8.83489Z"/>
+</svg>
 
-      <section class="tab daily flex flex-1">
-        <aside class="w-16 md:w-24 pt-4">
-          <img class="w-full h-auto" src="/media/img/thunderbird/logos/daily.png" srcset="/media/img/thunderbird/logos/daily-high-res.png 1.5x" alt="Thunderbird Daily">
-        </aside>
-        <main class="flex flex-col flex-1 ml-4">
-          <h3 class="header-section">Thunderbird Daily</h3>
-          <p class="font-lg tracking-wider leading-loose mb-8 mt-0 flex-1">
-            Help us test the newest developments made to Thunderbird every day by using the unstable Daily channel.
-          </p>
-          <p class="tracking-wider leading-loose mb-2 mt-0 flex-1 text-black-light">
-            <span class="bg-orange p-1 rounded-sm font-bold mr-1 inline-block leading-none text-white font-sm">
-              WARNING!
-            </span>
-            Daily is an unstable testing and development platform, make sure you back up important data regularly!
-          </p>
-          <aside class="ml-0 mr-0 self-start text-center text-blue font-semibold">
-            
-  
-
-
-  
-
-
-
-
-
-
-
-
-<div id="download-button-desktop-daily" class="download-button download-button-daily">
-  
-  <div class="nojs-download">
-    
-  <div class="download download-dumb">
-    <h4>Download Thunderbird — English (US)</h4>
-    <ul class="list-none p-0 flex flex-wrap max-w-lg self-start">
-      <li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-nightly-latest-SSL&os=win64&lang=en-US" class="matomo-track-download download-link btn-daily" data-donate-redirect="download-daily" data-donate-content="post_download" data-donate-link="/en-US/download?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=daily">
-            Windows 64-bit
-          </a>
-        </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-nightly-latest-SSL&os=win64&lang=en-US" class="matomo-track-download download-link btn-daily" data-donate-redirect="download-daily" data-donate-content="post_download" data-donate-link="/en-US/download?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=daily">
-            Windows MSI 64-bit
-          </a>
-        </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-nightly-latest-SSL&os=osx&lang=en-US" class="matomo-track-download download-link btn-daily" data-donate-redirect="download-daily" data-donate-content="post_download" data-donate-link="/en-US/download?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=daily">
-            macOS
-          </a>
-        </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-nightly-latest-SSL&os=linux64&lang=en-US" class="matomo-track-download download-link btn-daily" data-donate-redirect="download-daily" data-donate-content="post_download" data-donate-link="/en-US/download?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=daily">
-            Linux 64-bit
-          </a>
-        </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-nightly-latest-SSL&os=win&lang=en-US" class="matomo-track-download download-link btn-daily" data-donate-redirect="download-daily" data-donate-content="post_download" data-donate-link="/en-US/download?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=daily">
-            Windows 32-bit
-          </a>
-        </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-nightly-latest-SSL&os=linux&lang=en-US" class="matomo-track-download download-link btn-daily" data-donate-redirect="download-daily" data-donate-content="post_download" data-donate-link="/en-US/download?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=daily">
-            Linux 32-bit
-          </a>
-        </li>
-    </ul>
-  </div>
-
-  </div>
-  <div class="unrecognized-download os_android os_ios">
-    
-  <div class="download download-dumb">
-    <h4>Download Thunderbird — English (US)</h4>
-    <ul class="list-none p-0 flex flex-wrap max-w-lg self-start">
-      <li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-nightly-latest-SSL&os=win64&lang=en-US" class="matomo-track-download download-link btn-daily" data-donate-redirect="download-daily" data-donate-content="post_download" data-donate-link="/en-US/download?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=daily">
-            Windows 64-bit
-          </a>
-        </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-nightly-latest-SSL&os=win64&lang=en-US" class="matomo-track-download download-link btn-daily" data-donate-redirect="download-daily" data-donate-content="post_download" data-donate-link="/en-US/download?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=daily">
-            Windows MSI 64-bit
-          </a>
-        </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-nightly-latest-SSL&os=osx&lang=en-US" class="matomo-track-download download-link btn-daily" data-donate-redirect="download-daily" data-donate-content="post_download" data-donate-link="/en-US/download?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=daily">
-            macOS
-          </a>
-        </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-nightly-latest-SSL&os=linux64&lang=en-US" class="matomo-track-download download-link btn-daily" data-donate-redirect="download-daily" data-donate-content="post_download" data-donate-link="/en-US/download?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=daily">
-            Linux 64-bit
-          </a>
-        </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-nightly-latest-SSL&os=win&lang=en-US" class="matomo-track-download download-link btn-daily" data-donate-redirect="download-daily" data-donate-content="post_download" data-donate-link="/en-US/download?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=daily">
-            Windows 32-bit
-          </a>
-        </li><li class="ml-3 mr-3">
-          <a href="https://download.mozilla.org/?product=thunderbird-nightly-latest-SSL&os=linux&lang=en-US" class="matomo-track-download download-link btn-daily" data-donate-redirect="download-daily" data-donate-content="post_download" data-donate-link="/en-US/download?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=daily">
-            Linux 32-bit
-          </a>
-        </li>
-    </ul>
-  </div>
-
-  </div>
-  <p class="unsupported-download p-links">
-    Your system doesn't meet the <a href="/en-US/thunderbird/125.0a1/system-requirements/">requirements</a> to run Thunderbird.
-  </p>
-  <p class="linux-arm-download mb-8 p-links">
-    Please follow <a href="https://support.mozilla.org/kb/installing-thunderbird-linux">these instructions</a> to install Thunderbird.
-  </p>
-  <ul class="download-list list-none p-0 flex flex-wrap max-w-lg mb-0 self-start">
-    
-      <li class="os_win64 ml-3 mr-3">
-        <a class="matomo-track-download download-link btn-daily"
-          href="https://download.mozilla.org/?product=thunderbird-nightly-latest-SSL&os=win64&lang=en-US"
-          data-donate-redirect="download-daily"
-          data-donate-content="post_download"
-          data-donate-link="/en-US/download?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=daily"
-          >
-          
-            Download Daily
-          
         </a>
-      </li>
-    
-      <li class="os_msi ml-3 mr-3">
-        <a class="matomo-track-download download-link btn-daily"
-          href="https://download.mozilla.org/?product=thunderbird-nightly-latest-SSL&os=win64&lang=en-US"
-          data-donate-redirect="download-daily"
-          data-donate-content="post_download"
-          data-donate-link="/en-US/download?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=daily"
-          >
-          
-            Download Daily
-          
+        <a class="icon" href="https://www.facebook.com/Thunderbird/" data-link-type="footer"
+            data-link-name="Facebook (Thunderbird)">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path d="M18.1247 5C13.1767 5 13.2933 8.86756 13.2933 9.4462V12.6075H11V16.4705H13.2933V27.2449H18.0094V16.4705H21.174C21.174 16.4705 21.4703 14.6149 21.6128 12.589H18.0271V9.95048C18.0271 9.55439 18.5419 9.02175 19.0495 9.02175H21.6164C21.6164 8.49942 21.6165 6.67962 21.6164 5H18.1247Z"/>
+</svg>
+
         </a>
-      </li>
-    
-      <li class="os_osx ml-3 mr-3">
-        <a class="matomo-track-download download-link btn-daily"
-          href="https://download.mozilla.org/?product=thunderbird-nightly-latest-SSL&os=osx&lang=en-US"
-          data-donate-redirect="download-daily"
-          data-donate-content="post_download"
-          data-donate-link="/en-US/download?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=daily"
-          >
-          
-            Download Daily
-          
+        <a class="icon" title="Follow @ThunderbirdProject on YouTube"
+            href="https://www.youtube.com/@ThunderbirdProject" data-link-type="footer" data-link-name="YouTube (Thunderbird)" rel="me">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path d="M15.7733 5C15.7733 5 5.90798 5.00023 3.44876 5.65976C2.09058 6.02259 1.02323 7.09112 0.659641 8.44873C7.56979e-05 10.9084 0 16.0419 0 16.0419C0 16.0419 7.56979e-05 21.1762 0.659641 23.6356C1.02323 24.9936 2.09058 26.061 3.44876 26.4246C5.90798 27.0845 15.7733 27.0843 15.7733 27.0843C15.7733 27.0843 25.6391 27.0845 28.0983 26.4246C29.4564 26.0617 30.5238 24.9936 30.8874 23.6356C31.547 21.1762 31.547 16.0419 31.547 16.0419C31.547 16.0419 31.5444 10.9084 30.8874 8.44873C30.524 7.09112 29.4564 6.02372 28.0983 5.65976C25.6391 5.00023 15.7733 5 15.7733 5ZM12.6156 11.3106L20.8114 16.0424L12.6156 20.7742V11.3106Z"/>
+</svg>
+
         </a>
-      </li>
-    
-      <li class="os_linux64 ml-3 mr-3">
-        <a class="matomo-track-download download-link btn-daily"
-          href="https://download.mozilla.org/?product=thunderbird-nightly-latest-SSL&os=linux64&lang=en-US"
-          data-donate-redirect="download-daily"
-          data-donate-content="post_download"
-          data-donate-link="/en-US/download?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=daily"
-          >
-          
-            Download Daily
-          
+        <a class="icon" title="Follow @mozthunderbird on Twitter"
+            href="https://twitter.com/mozthunderbird" data-link-type="footer" data-link-name="Twitter (Thunderbird)">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path d="M25.0856 10.7482C25.1 10.9523 25.1 11.1628 25.1 11.371C25.1 17.7395 20.252 25.0838 11.3874 25.0838C8.76875 25.0872 6.20452 24.3339 4 22.92C4.38107 22.9691 4.76346 22.9915 5.14711 22.9915C7.31719 22.9934 9.42531 22.2652 11.1326 20.9246C9.07028 20.8754 7.26188 19.5413 6.63014 17.5783C7.35255 17.7181 8.09692 17.688 8.80593 17.4952C6.55758 17.042 4.94004 15.0655 4.94004 12.7717C4.94004 12.7226 4.94004 12.7226 4.94004 12.7113C5.60998 13.0817 6.36004 13.2917 7.12733 13.3148C5.00966 11.8997 4.35693 9.08238 5.63572 6.88005C8.08257 9.89083 11.6928 11.721 15.5682 11.9145C15.18 10.2406 15.7108 8.48699 16.9625 7.31005C18.9036 5.48567 21.9565 5.57886 23.7811 7.51397C24.8605 7.30232 25.8949 6.90567 26.8416 6.34441C26.482 7.46012 25.7289 8.40773 24.723 9.01019C25.6783 8.90058 26.6116 8.64356 27.4905 8.25124C26.8435 9.22069 26.0285 10.0652 25.0856 10.7482Z"/>
+</svg>
+
         </a>
-      </li>
-    
-      <li class="os_win ml-3 mr-3">
-        <a class="matomo-track-download download-link btn-daily"
-          href="https://download.mozilla.org/?product=thunderbird-nightly-latest-SSL&os=win&lang=en-US"
-          data-donate-redirect="download-daily"
-          data-donate-content="post_download"
-          data-donate-link="/en-US/download?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=daily"
-          >
-          
-            Download Daily
-          
+        <a class="icon" title="Follow thunderbird-email on LinkedIn"
+            href="https://www.linkedin.com/company/thunderbird-email/" data-link-type="footer" data-link-name="LinkedIn (Thunderbird)" rel="me">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path d="M8.46849 6C7.11482 6 6 7.1121 6 8.46555C6 9.81976 7.11482 10.9343 8.46849 10.9343C9.82197 10.934 10.937 9.81938 10.937 8.46555C10.9367 7.11248 9.82207 6 8.46849 6ZM21.1269 12.4633C19.5978 12.5124 18.1852 13.3451 17.406 14.6774H17.3473V12.807H13.2658V26.5004H17.5179V19.7266C17.5179 17.94 17.8584 16.2096 20.0731 16.2096C22.2565 16.2096 22.2844 18.2529 22.2844 19.841V26.5004H26.5365L26.5393 18.988C26.5393 15.3003 25.7443 12.4661 21.4345 12.4661C21.3315 12.4623 21.2285 12.4663 21.1269 12.4633ZM6.33824 12.807V26.5004H10.5959V12.807H6.33824Z"/>
+</svg>
+
         </a>
-      </li>
-    
-      <li class="os_linux ml-3 mr-3">
-        <a class="matomo-track-download download-link btn-daily"
-          href="https://download.mozilla.org/?product=thunderbird-nightly-latest-SSL&os=linux&lang=en-US"
-          data-donate-redirect="download-daily"
-          data-donate-content="post_download"
-          data-donate-link="/en-US/download?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=daily"
-          >
-          
-            Download Daily
-          
-        </a>
-      </li>
-    
-  </ul>
-  
-  <p class="download-other download-other-desktop os_android os_ios os_linux os_linux64 os_osx os_win os_win64 os_winsha1 font-sm mt-0">
-    
-      
-      <a href="https://www.mozilla.org/privacy/thunderbird/" class="small-link  text-blue ">Privacy</a>
-    
-  </p>
-  
-</div>
-          </aside>
-        </main>
-      </section>
-    </article>
+      </div>
+      <div class="cta">
+        <a href="https://blog.thunderbird.net/" class="cta-ln">Visit Our Blog</a>
+      </div>
+      <div class="phone">
+        <picture>
+          <source srcset="/media/img/thunderbird/new/phone/cta-phone.avif" type="image/avif">
+          <source srcset="/media/img/thunderbird/new/phone/cta-phone.webp" type="image/webp">
+          <img src="/media/img/thunderbird/new/phone/cta-phone.png" alt="smartphone">
+        </picture>
+      </div>
+    </div>
   </section>
-</section>
-
 
     </main>
 
     
-
-
-    
-    
-
-    
-        <footer id="colophon" class="bg-black-light text-white flex flex-col pt-10 pb-8 pl-4 pr-4">
-  <section class="flex flex-col lg:flex-col justify-between items-center self-center w-full max-w-6xl">
-    <aside class="flex flex-col items-center">
-      <a href="/en-US/" class="block w-40" title="Thunderbird"
-        alt="Thunderbird Vector Wordmark">
-        <img src="/media/svg/logo-wordmark-white.svg" alt="Thunderbird Vector Wordmark"/>
-      </a>
-
-      <nav id="footer-main" role="navigation" class="mt-2">
-        <ul class="list-none p-0 flex flex-wrap items-center text-white nav-footer justify-around">
-          <li>
-            <a href="/en-US/organizations" class="nav-link">For Organizations</a>
-          </li>
-          <li>
-            <a href="/en-US/get-involved" class="nav-link">Get Involved</a>
-          </li>
-          <li>
-            <a href="/en-US/careers" class="nav-link">Careers</a>
-          </li>
-          <li>
-            <a href="https://support.mozilla.org/products/thunderbird/" class="nav-link">Get Help</a>
-          </li>
-          <li>
-            <a href="https://blog.thunderbird.net/" class="nav-link">Blog</a>
-          </li>
-          <li>
-            <a href="/en-US/about" class="nav-link">About Us</a>
-          </li>
-          <li>
-            <a href="/en-US/contact" class="nav-link">Contact Us</a>
-          </li>
-        </ul>
-      </nav>
-    </aside>
-    <aside class="flex flex-col items-center">
-      <ul class="list-none p-0 flex flex-wrap items-center justify-around ">
-        <li class="m-1">
-          <a class="social-link font-semibold" title="Follow @mozthunderbird on Twitter"
-            href="https://twitter.com/mozthunderbird" data-link-type="footer" data-link-name="Twitter (Thunderbird)">
-            <span><svg viewBox="0 0 11 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <g id="UI" stroke="none" stroke-width="1" fill="currentColor" fill-rule="evenodd">
-        <path d="M10.9263515,1.73214611 C10.6317083,2.16071805 10.2634042,2.54241494 9.84152874,2.85045102 C9.84822517,2.94420113 9.84822517,3.03795124 9.84822517,3.13170135 C9.84822517,5.99107976 7.67188329,9.28572655 3.69419998,9.28572655 C2.46875209,9.28572655 1.33035788,8.93081541 0.37276745,8.31474325 C0.5468748,8.33483256 0.714285714,8.34152899 0.895089501,8.34152899 C1.90625142,8.34152899 2.8370561,8.00001073 3.58036056,7.41742075 C2.62946657,7.39733144 1.83259062,6.77456284 1.55803672,5.91741896 C1.69196545,5.93750827 1.82589418,5.95090114 1.96651935,5.95090114 C2.16071601,5.95090114 2.35491267,5.9241154 2.53571646,5.87724034 C1.54464385,5.67634724 0.801339389,4.80581049 0.801339389,3.75446995 C0.801339389,3.74777352 0.801339389,3.73438064 0.801339389,3.72768421 C1.08928616,3.88839868 1.42410799,3.98884523 1.77901913,4.00223811 C1.19642915,3.61384479 0.814732263,2.95089757 0.814732263,2.20089667 C0.814732263,1.79911048 0.921875247,1.43080647 1.10937547,1.10937751 C2.17410888,2.42187908 3.77455722,3.27902296 5.56920222,3.37277307 C5.53572003,3.21205859 5.51563072,3.04464768 5.51563072,2.87723676 C5.51563072,1.68527106 6.47991759,0.714287758 7.67857973,0.714287758 C8.30134833,0.714287758 8.863849,0.975448783 9.25893876,1.39732429 C9.74777863,1.30357417 10.2165292,1.12277039 10.6317083,0.875002235 C10.4709938,1.37723498 10.1294755,1.79911048 9.68081426,2.06696794 C10.1160826,2.02009289 10.5379581,1.89955703 10.9263515,1.73214611 Z"></path>
-    </g>
-</svg>
-</span>
-            @mozthunderbird
-          </a>
-        </li>
-        <li class="m-1">
-          <a class="social-link font-semibold" href="https://www.facebook.com/Thunderbird/" data-link-type="footer"
-            data-link-name="Facebook (Thunderbird)">
-            <span><svg viewBox="0 0 6 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <g id="UI" stroke="none" stroke-width="1" fill="currentColor" fill-rule="evenodd">
-        <path d="M5.78572118,0.0803572387 L5.78572118,1.84821649 L4.73438064,1.84821649 C3.91071895,1.84821649 3.75670091,2.24330625 3.75670091,2.81250335 L3.75670091,4.07812986 L5.71875682,4.07812986 L5.45759579,6.06027508 L3.75670091,6.06027508 L3.75670091,11.1428704 L1.70759132,11.1428704 L1.70759132,6.06027508 L0,6.06027508 L0,4.07812986 L1.70759132,4.07812986 L1.70759132,2.61830669 C1.70759132,0.924108244 2.74553899,0 4.25893365,0 C4.9821488,0 5.6049174,0.0535714924 5.78572118,0.0803572387 Z"></path>
-    </g>
-</svg>
-</span>
-            Thunderbird
-          </a>
-        </li>
-        <li class="m-1">
-          <a class="social-link font-semibold" title="Follow @ThunderbirdProject on YouTube"
-            href="https://www.youtube.com/@ThunderbirdProject" data-link-type="footer" data-link-name="YouTube (Thunderbird)" rel="me">
-            <span><?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   version="1.1"
-   id="svg2"
-   width="32"
-   height="22.545456"
-   viewBox="0 0 32 22.545456"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <defs
-     id="defs6">
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath18">
-      <path
-         d="M 0,192 H 192 V 0 H 0 Z"
-         id="path16" />
-    </clipPath>
-  </defs>
-  <g
-     id="g10"
-     transform="matrix(0.18181818,0,0,-0.18181818,-1.4545454,28.727291)">
-    <g
-       id="g12">
-      <g
-         id="g14"
-         clip-path="url(#clipPath18)">
-        <g
-           id="g20"
-           fill="currentColor"
-           transform="translate(78,69.8311)">
-          <path
-             d="M 0,0 V 52.338 L 46,26.168 Z M 102.322,68.806 C 100.298,76.428 94.334,82.43 86.762,84.467 73.037,88.169 18,88.169 18,88.169 c 0,0 -55.037,0 -68.762,-3.702 C -58.334,82.43 -64.298,76.428 -66.322,68.806 -70,54.992 -70,26.169 -70,26.169 c 0,0 0,-28.822 3.678,-42.637 2.024,-7.622 7.988,-13.624 15.56,-15.662 13.725,-3.701 68.762,-3.701 68.762,-3.701 0,0 55.037,0 68.762,3.701 7.572,2.038 13.536,8.04 15.56,15.662 C 106,-2.653 106,26.169 106,26.169 c 0,0 0,28.823 -3.678,42.637"
-             style="fill:currentColor;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             id="path22" />
-        </g>
-      </g>
+        <footer>
+  <div class="container footer">
+    <a href="/en-US/" class="logo">
+      <svg width="3944" height="750" viewBox="0 0 3944 750" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M314.805 154.949H314.865C336.905 77.8991 432.945 40.2891 530.815 40.2891C598.445 40.2891 659.156 61.6991 700.776 95.6891C675.938 96.8603 651.414 101.734 628.016 110.149C661.646 122.649 690.535 141.879 711.945 165.669C695.792 162.889 679.413 161.65 663.026 161.969C703.302 220.312 724.82 289.554 724.706 360.449C724.706 553.749 568.005 710.449 374.705 710.449C184.385 710.449 24.7051 551.099 24.7051 360.449C24.7051 330.339 28.7051 299.249 36.4751 270.089C38.5151 263.969 41.3551 258.099 45.1251 255.949C49.8451 253.259 54.1451 261.279 54.8351 263.889C59.9528 283.059 66.839 301.712 75.4051 319.609C74.6551 279.649 91.7251 243.249 115.205 211.769C130.865 190.779 145.385 171.329 152.085 115.199C152.535 111.429 156.105 108.719 159.715 109.899C210.675 126.579 237.915 211.439 233.685 282.399C261.835 286.429 261.705 257.019 261.705 257.019C252.705 229.359 258.705 177.949 314.705 154.949H314.805Z" fill="url(#paint0_linear_106_1002)"/>
+  <path opacity="0.9" d="M713.254 271.32C721.764 463.82 563.514 629.79 370.544 629.79C189.894 629.79 41.8648 490.16 28.4748 312.94C26.0859 329.536 24.8296 346.274 24.7148 363.04C26.0848 552.66 185.374 710.45 374.714 710.45C568.014 710.45 724.714 553.75 724.714 360.45C724.714 329.65 720.724 299.78 713.254 271.32Z" fill="url(#paint1_radial_106_1002)"/>
+  <path style="mix-blend-mode:screen" d="M366.175 180.459C362.405 173.789 344.995 163.919 337.385 162.199C366.185 69.9491 512.906 41.6291 602.706 57.9491C640.076 64.7491 686.616 85.1091 700.776 95.6891C659.156 61.6991 598.435 40.2891 530.815 40.2891C432.945 40.2891 336.905 77.8991 314.865 154.949H314.705C258.705 177.949 252.705 229.379 261.705 257.029C270.345 224.039 311.455 183.499 366.175 180.459Z" fill="url(#paint2_radial_106_1002)"/>
+  <path d="M467.885 116.748C389.265 132.218 363.575 137.278 337.265 162.288C366.815 84.0583 442.245 68.1983 532.125 103.858C510.734 108.268 489.32 112.568 467.885 116.758V116.748Z" fill="url(#paint3_linear_106_1002)"/>
+  <path d="M43.7049 259.38C22.2249 347.32 38.8249 450.68 136.404 537.42C107.354 505.65 71.8849 388.35 150.154 304.55C155.424 298.9 164.494 303.05 164.784 310.77C171.234 484.93 311.764 591.3 473.784 571.41C423.584 568.59 257.564 510.44 381.064 487.44C445.614 475.41 546.824 456.56 546.824 365.74C546.824 218.52 432.994 175.48 363.964 181.88C316.724 186.26 274.674 216.24 261.734 257.01C266.704 273.08 246.894 284.33 233.684 282.44C237.924 211.49 210.684 126.58 159.714 109.9C156.114 108.72 152.534 111.43 152.084 115.2C145.384 171.33 130.864 190.78 115.214 211.77C91.7249 243.26 74.6549 279.65 75.4049 319.61C66.839 301.713 59.9528 283.06 54.8349 263.89C54.2649 261.73 51.1349 255.7 47.3549 255.42C45.3049 255.27 44.2149 257.27 43.7049 259.38Z" fill="url(#paint4_radial_106_1002)"/>
+  <path style="mix-blend-mode:screen" d="M337.695 496.349C432.735 573.519 623.865 515.659 623.865 328.029C546.705 444.989 448.425 525.669 337.705 496.349H337.695Z" fill="url(#paint5_linear_106_1002)"/>
+  <path style="mix-blend-mode:screen" d="M150.155 304.55C151.019 303.583 152.108 302.844 153.325 302.397C154.542 301.951 155.851 301.811 157.135 301.99C87.0755 387.44 143.586 537.51 182.366 574.38C184.536 580.52 145.575 548.59 140.205 541.12C110.705 516.09 68.4255 392.06 150.155 304.55Z" fill="url(#paint6_linear_106_1002)"/>
+  <path d="M374.705 503.419C469.765 503.419 546.835 440.54 546.835 362.97C546.835 285.4 469.765 222.52 374.705 222.52C293.605 222.52 202.535 275.28 202.575 365.02C202.615 503.69 349.115 583.47 473.995 571.39C464.615 570.3 406.095 567.19 366.545 522.45C362.975 518.42 356.785 511.38 359.595 506.81C362.395 502.24 370.115 503.41 374.695 503.41L374.705 503.419Z" fill="url(#paint7_linear_106_1002)"/>
+  <path opacity="0.6" d="M528.085 299.15L392.045 429.33C379.975 437.91 367.125 438.53 354.445 430.75L221.015 299.63C224.822 293.512 229.102 287.701 233.815 282.25L247.815 295.35C282.855 328.19 311.185 354.72 351.115 388.8C369.135 404.18 374.735 403.88 392.415 388.8C438.095 349.8 471.505 320.3 514.935 281.51C519.776 287.036 524.17 292.938 528.075 299.16L528.085 299.15Z" fill="white"/>
+  <mask id="mask0_106_1002" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="202" y="297" width="345" height="276">
+    <path d="M546.835 362.969C546.835 440.539 469.765 503.419 374.705 503.419C370.115 503.419 362.405 502.239 359.595 506.819C356.785 511.379 362.975 518.419 366.545 522.449C403.705 564.489 457.615 569.779 471.765 571.169L473.995 571.389C349.115 583.469 202.615 503.689 202.575 365.019C202.444 341.93 208.87 319.279 221.105 299.699L355.185 421.479C364.725 430.139 380.795 430.139 390.335 421.479L526.955 297.389C539.655 316.969 546.835 339.289 546.835 362.969Z" fill="white"/>
+  </mask>
+  <g mask="url(#mask0_106_1002)">
+    <path opacity="0.7" d="M162.705 200.979H597.775V595.449H162.705V200.979Z" fill="url(#paint8_linear_106_1002)"/>
+    <g filter="url(#filter0_f_106_1002)">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M334.745 422.298C309.395 395.918 233.475 308.268 233.475 308.268L239.345 308.528L358.205 397.298C367.105 403.768 379.805 403.698 388.625 397.148L505.175 308.648L511.355 308.158C511.355 308.158 437.915 393.728 409.785 421.918C381.655 450.108 360.095 448.678 334.745 422.298Z" fill="#458FCD"/>
     </g>
   </g>
+  <path d="M398.855 152.258C417.275 146.458 415.655 128.228 415.655 128.228C415.655 128.228 406.445 117.378 388.195 123.388C371.115 129.018 368.465 141.188 368.465 141.188C368.465 141.188 377.795 158.888 398.855 152.258Z" fill="white"/>
+  <path d="M3287.34 198.867C3277.67 198.867 3269.34 202.367 3262.34 209.367C3255.67 216.034 3252.34 224.034 3252.34 233.367C3252.34 242.701 3255.67 250.867 3262.34 257.867C3269.34 264.867 3277.67 268.367 3287.34 268.367C3296.67 268.367 3304.67 264.867 3311.34 257.867C3318.01 250.867 3321.34 242.701 3321.34 233.367C3321.34 224.034 3318.01 216.034 3311.34 209.367C3304.67 202.367 3296.67 198.867 3287.34 198.867ZM1259.41 216.367V565.867H1320.41V409.367C1320.41 393.701 1326.41 380.534 1338.41 369.867C1350.74 358.867 1365.74 353.367 1383.41 353.367C1399.41 353.367 1412.41 359.034 1422.41 370.367C1432.41 381.367 1437.41 395.701 1437.41 413.367V565.867H1496.91V401.367C1496.91 382.034 1492.74 364.867 1484.41 349.867C1476.41 334.534 1465.07 322.701 1450.41 314.367C1436.07 305.701 1419.57 301.367 1400.91 301.367C1383.91 301.367 1368.24 305.2 1353.91 312.867C1339.57 320.201 1328.41 330.034 1320.41 342.367V216.367H1259.41ZM2331.5 216.367V347.867C2321.5 333.201 2308.67 321.867 2293 313.867C2277.67 305.534 2260.67 301.367 2242 301.367C2219.33 301.367 2199 307.201 2181 318.867C2163 330.201 2148.83 346.201 2138.5 366.867C2128.17 387.201 2123 410.367 2123 436.367C2123 462.367 2128.17 485.701 2138.5 506.367C2148.83 527.034 2163 543.201 2181 554.867C2199 566.201 2219.33 571.867 2242 571.867C2260.67 571.867 2277.67 567.867 2293 559.867C2308.67 551.534 2321.5 540.034 2331.5 525.367V565.867H2392.5V216.367H2331.5ZM2941.4 216.367V565.867H3002.4V525.367C3012.4 540.034 3025.06 551.534 3040.4 559.867C3056.06 567.867 3073.23 571.867 3091.9 571.867C3114.56 571.867 3134.9 566.201 3152.9 554.867C3170.9 543.201 3185.06 527.034 3195.4 506.367C3205.73 485.701 3210.9 462.367 3210.9 436.367C3210.9 410.367 3205.73 387.201 3195.4 366.867C3185.06 346.201 3170.9 330.201 3152.9 318.867C3134.9 307.201 3114.56 301.367 3091.9 301.367C3073.23 301.367 3056.06 305.534 3040.4 313.867C3025.06 321.867 3012.4 333.201 3002.4 347.867V216.367H2941.4ZM3758.12 216.367V347.867C3748.12 333.201 3735.29 321.867 3719.62 313.867C3704.29 305.534 3687.29 301.367 3668.62 301.367C3645.95 301.367 3625.62 307.201 3607.62 318.867C3589.62 330.201 3575.45 346.201 3565.12 366.867C3554.79 387.201 3549.62 410.367 3549.62 436.367C3549.62 462.367 3554.79 485.701 3565.12 506.367C3575.45 527.034 3589.62 543.201 3607.62 554.867C3625.62 566.201 3645.95 571.867 3668.62 571.867C3687.29 571.867 3704.29 567.867 3719.62 559.867C3735.29 551.534 3748.12 540.034 3758.12 525.367V565.867H3819.12V216.367H3758.12ZM925.568 222.367V279.367H1035.57V565.867H1098.07V279.367H1207.57V222.367H925.568ZM3885.62 292.691C3881.09 292.691 3876.9 293.813 3873.04 296.053C3869.26 298.293 3866.22 301.347 3863.92 305.217C3861.68 309.019 3860.57 313.161 3860.57 317.641C3860.57 322.122 3861.68 326.296 3863.92 330.166C3866.22 333.968 3869.26 337.022 3873.04 339.33C3876.9 341.57 3881.09 342.691 3885.62 342.691C3890.08 342.691 3894.21 341.57 3897.99 339.33C3901.85 337.022 3904.89 333.968 3907.12 330.166C3909.42 326.296 3910.57 322.122 3910.57 317.641C3910.57 313.161 3909.42 309.019 3907.12 305.217C3904.89 301.347 3901.85 298.293 3897.99 296.053C3894.21 293.813 3890.08 292.691 3885.62 292.691ZM3885.62 296.357C3889.47 296.357 3893.02 297.308 3896.27 299.209C3899.51 301.11 3902.08 303.688 3903.98 306.947C3905.94 310.206 3906.92 313.772 3906.92 317.641C3906.92 321.511 3905.97 325.109 3904.08 328.436C3902.19 331.694 3899.58 334.273 3896.27 336.174C3893.02 338.075 3889.47 339.025 3885.62 339.025C3881.77 339.025 3878.18 338.075 3874.87 336.174C3871.62 334.205 3869.02 331.591 3867.06 328.332C3865.17 325.073 3864.22 321.511 3864.22 317.641C3864.22 313.772 3865.17 310.206 3867.06 306.947C3869.02 303.688 3871.62 301.11 3874.87 299.209C3878.18 297.308 3881.77 296.357 3885.62 296.357ZM1984.95 301.367C1967.95 301.367 1952.28 305.034 1937.95 312.367C1923.95 319.367 1912.95 329.034 1904.95 341.367V307.367H1843.95V565.867H1904.95V409.367C1904.95 393.701 1910.95 380.534 1922.95 369.867C1934.95 358.867 1949.78 353.367 1967.45 353.367C1983.45 353.367 1996.45 359.034 2006.45 370.367C2016.78 381.367 2021.95 395.701 2021.95 413.367V565.867H2081.45V401.367C2081.45 382.034 2077.28 364.867 2068.95 349.867C2060.95 334.534 2049.61 322.701 2034.95 314.367C2020.28 305.701 2003.61 301.367 1984.95 301.367ZM2572.43 301.367C2548.1 301.367 2525.76 307.201 2505.43 318.867C2485.43 330.534 2469.6 346.534 2457.93 366.867C2446.26 387.201 2440.43 410.201 2440.43 435.867C2440.43 461.867 2446.43 485.201 2458.43 505.867C2470.76 526.534 2487.26 542.701 2507.93 554.367C2528.6 566.034 2551.26 571.867 2575.93 571.867C2594.93 571.867 2614.43 568.201 2634.43 560.867C2654.43 553.201 2669.93 543.534 2680.93 531.867L2645.93 495.867C2637.6 503.867 2626.76 510.367 2613.43 515.367C2600.43 520.367 2587.26 522.867 2573.93 522.867C2554.26 522.867 2537.76 516.701 2524.43 504.367C2511.1 491.701 2502.76 475.034 2499.43 454.367H2699.43C2699.43 407.034 2688.1 369.701 2665.43 342.367C2643.1 315.034 2612.1 301.367 2572.43 301.367ZM2896.55 301.367C2875.88 301.367 2857.38 306.367 2841.05 316.367C2824.72 326.034 2812.38 339.367 2804.05 356.367V307.367H2743.05V565.867H2804.05V435.367C2804.05 410.701 2812.55 390.867 2829.55 375.867C2846.55 360.867 2868.88 353.367 2896.55 353.367V301.367ZM3530.51 301.367C3509.85 301.367 3491.35 306.367 3475.01 316.367C3458.68 326.034 3446.35 339.367 3438.01 356.367V307.367H3377.01V565.867H3438.01V435.367C3438.01 410.701 3446.51 390.867 3463.51 375.867C3480.51 360.867 3502.85 353.367 3530.51 353.367V301.367ZM3873.25 302.467V333.018H3880.85V323.75H3885.52L3892.01 333.018H3899.62L3892.52 322.834C3894.54 322.087 3896.13 320.865 3897.28 319.168C3898.5 317.403 3899.11 315.367 3899.11 313.059C3899.11 309.868 3898.03 307.322 3895.86 305.422C3893.77 303.453 3891 302.467 3887.55 302.467H3873.25ZM1547.4 307.367V471.867C1547.4 491.201 1551.4 508.534 1559.4 523.867C1567.73 538.867 1579.06 550.701 1593.4 559.367C1608.06 567.701 1624.73 571.867 1643.4 571.867C1660.4 571.867 1675.9 568.367 1689.9 561.367C1704.23 554.034 1715.4 544.201 1723.4 531.867V565.867H1784.9V307.367H1723.4V463.867C1723.4 479.534 1717.4 492.867 1705.4 503.867C1693.4 514.534 1678.56 519.867 1660.9 519.867C1644.9 519.867 1631.73 514.367 1621.4 503.367C1611.4 492.034 1606.4 477.534 1606.4 459.867V307.367H1547.4ZM3256.84 307.367V565.867H3317.84V307.367H3256.84ZM3880.85 310.004H3886.74C3888.02 310.004 3889.07 310.309 3889.88 310.92C3890.69 311.463 3891.1 312.176 3891.1 313.059C3891.1 314.009 3890.69 314.789 3889.88 315.4C3889.07 315.943 3888.02 316.215 3886.74 316.215H3880.85V310.004ZM2573.43 350.367C2592.1 350.367 2607.1 356.201 2618.43 367.867C2630.1 379.534 2637.43 394.867 2640.43 413.867H2499.93C2503.93 394.534 2512.6 379.201 2525.93 367.867C2539.26 356.201 2555.1 350.367 2573.43 350.367ZM2258.5 353.367C2279.83 353.367 2297.33 361.201 2311 376.867C2324.67 392.201 2331.5 412.034 2331.5 436.367C2331.5 452.367 2328.33 466.701 2322 479.367C2316 492.034 2307.33 502.034 2296 509.367C2285 516.367 2272.5 519.867 2258.5 519.867C2236.5 519.867 2218.5 512.034 2204.5 496.367C2190.5 480.701 2183.5 460.701 2183.5 436.367C2183.5 412.034 2190.5 392.201 2204.5 376.867C2218.5 361.201 2236.5 353.367 2258.5 353.367ZM3075.4 353.367C3097.4 353.367 3115.4 361.201 3129.4 376.867C3143.4 392.201 3150.4 412.034 3150.4 436.367C3150.4 460.701 3143.4 480.701 3129.4 496.367C3115.4 512.034 3097.4 519.867 3075.4 519.867C3061.4 519.867 3048.73 516.367 3037.4 509.367C3026.4 502.034 3017.73 492.034 3011.4 479.367C3005.4 466.701 3002.4 452.367 3002.4 436.367C3002.4 412.034 3009.23 392.201 3022.9 376.867C3036.56 361.201 3054.06 353.367 3075.4 353.367ZM3685.12 353.367C3706.45 353.367 3723.95 361.201 3737.62 376.867C3751.29 392.201 3758.12 412.034 3758.12 436.367C3758.12 452.367 3754.95 466.701 3748.62 479.367C3742.62 492.034 3733.95 502.034 3722.62 509.367C3711.62 516.367 3699.12 519.867 3685.12 519.867C3663.12 519.867 3645.12 512.034 3631.12 496.367C3617.12 480.701 3610.12 460.701 3610.12 436.367C3610.12 412.034 3617.12 392.201 3631.12 376.867C3645.12 361.201 3663.12 353.367 3685.12 353.367Z" fill="currentColor"/>
+  <defs>
+    <filter id="filter0_f_106_1002" x="201.475" y="276.158" width="341.88" height="198.416" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="16" result="effect1_foregroundBlur_106_1002"/>
+    </filter>
+    <linearGradient id="paint0_linear_106_1002" x1="146.185" y1="155.649" x2="639.585" y2="615.869" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1B91F3"/>
+      <stop offset="1" stop-color="#0B68CB"/>
+    </linearGradient>
+    <radialGradient id="paint1_radial_106_1002" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(145.274 314) rotate(66.5177) scale(295.96 283.519)">
+      <stop offset="0.53" stop-color="#0B4186" stop-opacity="0"/>
+      <stop offset="1" stop-color="#0B4186" stop-opacity="0.45"/>
+    </radialGradient>
+    <radialGradient id="paint2_radial_106_1002" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(383.705 192.449) rotate(-127.997) scale(63.2702 104.698)">
+      <stop stop-color="#EF3ACC" stop-opacity="0"/>
+      <stop offset="1" stop-color="#EF3ACC" stop-opacity="0.64"/>
+    </radialGradient>
+    <linearGradient id="paint3_linear_106_1002" x1="283.475" y1="273.458" x2="461.015" y2="75.8183" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F5DB0"/>
+      <stop offset="1" stop-color="#0F5DB0" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="paint4_radial_106_1002" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(242.704 551.15) rotate(-64.2624) scale(461.716 570.355)">
+      <stop offset="0.02" stop-color="#094188"/>
+      <stop offset="0.97" stop-color="#0B4186" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="paint5_linear_106_1002" x1="594.625" y1="416.559" x2="512.075" y2="619.249" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E247C4" stop-opacity="0"/>
+      <stop offset="1" stop-color="#E247C4" stop-opacity="0.64"/>
+    </linearGradient>
+    <linearGradient id="paint6_linear_106_1002" x1="82.7155" y1="234.79" x2="155.445" y2="527.51" gradientUnits="userSpaceOnUse">
+      <stop offset="0.1" stop-color="#EF3ACC"/>
+      <stop offset="1" stop-color="#EF3ACC" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="paint7_linear_106_1002" x1="374.705" y1="273.95" x2="374.705" y2="569.949" gradientUnits="userSpaceOnUse">
+      <stop stop-color="white"/>
+      <stop offset="0.91" stop-color="#BEE1FE"/>
+      <stop offset="1" stop-color="#96CEFD"/>
+    </linearGradient>
+    <linearGradient id="paint8_linear_106_1002" x1="380.245" y1="441.449" x2="380.245" y2="565.449" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#BCE0FD"/>
+      <stop offset="1" stop-color="#88CCFC"/>
+    </linearGradient>
+  </defs>
 </svg>
-</span>
-            Thunderbird
-          </a>
-        </li>
-        <li class="m-1">
-          <a class="social-link font-semibold" title="Follow thunderbird-email on LinkedIn"
-            href="https://www.linkedin.com/company/thunderbird-email/" data-link-type="footer" data-link-name="LinkedIn (Thunderbird)" rel="me">
-            <span><?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   id="Group_1282"
-   data-name="Group 1282"
-   width="32"
-   height="31.998905"
-   viewBox="0 0 32 31.998907"
-   version="1.1"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <defs
-     id="defs8" />
-  <path
-     id="Path_2520"
-     data-name="Path 2520"
-     d="m 27.265515,27.265225 h -4.741399 v -7.425229 c 0,-1.770616 -0.03161,-4.049945 -2.466022,-4.049945 -2.469478,0 -2.847309,1.929157 -2.847309,3.921038 v 7.553642 H 12.469386 V 11.99545 h 4.551743 v 2.086709 h 0.06371 a 4.9883471,4.9883471 0 0 1 4.490994,-2.466515 c 4.805606,0 5.691655,3.160933 5.691655,7.273109 z M 7.1195073,9.9082463 A 2.7514933,2.7514933 0 1 1 9.8705067,7.1562591 2.7514933,2.7514933 0 0 1 7.1195073,9.9082463 M 9.490207,27.265225 H 4.7438687 V 11.99545 H 9.490207 Z M 29.6293,0.00217907 H 2.3613156 A 2.3351391,2.3351391 0 0 0 0,2.3086723 V 29.689759 a 2.3366208,2.3366208 0 0 0 2.3613156,2.308963 H 29.6293 A 2.3415598,2.3415598 0 0 0 32,29.689759 V 2.3066967 A 2.3400781,2.3400781 0 0 0 29.6293,2.0349351e-4"
-     style="fill:currentColor;stroke-width:0.493896" />
+
+    </a>
+    <div class="site-links">
+      <a href="https://support.mozilla.org/products/thunderbird/" class="footer-ln">Get Support</a>
+      <a href="/en-US/get-involved" class="footer-ln">Get Involved</a>
+      <a href="https://blog.thunderbird.net/" class="footer-ln">Blog</a>
+      <a href="/en-US/about" class="footer-ln">About Us</a>
+      <a href="/en-US/contact" class="footer-ln">Contact Us</a>
+      <a href="?form=support&utm_content=footer&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023" class="footer-ln">Donate</a>
+      <a href="/en-US/download" class="footer-ln">Download</a>
+    </div>
+    <div class="mzla">
+      <a href="https://mozilla.org" class="mozilla-logo">
+        <svg width="123" height="27" viewBox="0 0 123 27" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path d="M122.249 23.0134C121.986 23.0886 121.761 23.1262 121.535 23.1262C120.745 23.1262 120.369 22.7878 120.369 21.8101V14.4022C120.369 10.4914 117.248 8.61123 113.601 8.61123C110.818 8.61123 109.276 8.94966 106.305 10.153L105.629 14.0637L109.539 14.4774L110.103 12.5596C110.893 12.146 111.683 12.0708 112.698 12.0708C115.443 12.0708 115.481 14.139 115.481 15.9063V16.4704C114.616 16.3576 113.638 16.32 112.698 16.32C108.787 16.32 104.764 17.2977 104.764 21.5093C104.764 25.0816 107.546 26.3977 110.028 26.3977C112.773 26.3977 114.541 24.7432 115.518 22.9758C115.744 25.044 116.985 26.3977 119.279 26.3977C120.332 26.3977 121.422 26.0969 122.362 25.6081L122.249 23.0134ZM111.758 22.9006C110.291 22.9006 109.765 22.0357 109.765 20.9452C109.765 19.1026 111.269 18.6138 113.036 18.6138C113.826 18.6138 114.691 18.7266 115.481 18.8394C115.33 21.6597 113.488 22.9006 111.758 22.9006ZM105.215 0L97.8446 26.0217H93.0313L100.402 0H105.215ZM95.2876 0L87.9173 26.0217H83.104L90.4743 0H95.2876ZM74.7936 8.94966H79.9077V15.079H74.7936V8.94966ZM74.7936 19.8923H79.9077V26.0217H74.7936V19.8923ZM67.3481 19.6667L71.2212 20.0427L70.1683 26.0217H55.2397L54.7509 23.4647L64.1518 12.6724H58.812L58.06 15.3047L54.5252 14.9286L55.1269 8.94966H70.1307L70.5068 11.5067L61.0307 22.2989H66.5584L67.3481 19.6667ZM42.9057 8.61123C36.7763 8.61123 33.7304 12.7476 33.7304 17.7489C33.7304 23.2014 37.378 26.3977 42.6425 26.3977C48.095 26.3977 52.0434 22.9382 52.0434 17.4857C52.0058 12.7476 49.0351 8.61123 42.9057 8.61123ZM42.7929 22.6374C40.1607 22.6374 38.7693 20.3812 38.7693 17.4105C38.7693 14.1766 40.3111 12.334 42.8305 12.334C45.1243 12.334 47.0045 13.8757 47.0045 17.3353C46.9669 20.6068 45.3124 22.6374 42.7929 22.6374ZM29.3308 22.2989H31.587V26.0217H24.4423V16.3952C24.4423 13.4245 23.4647 12.2964 21.5469 12.2964C19.2154 12.2964 18.2378 13.9509 18.2378 16.3576V22.2989H20.494V26.0217H13.3493V16.3952C13.3493 13.4245 12.3716 12.2964 10.4162 12.2964C8.08478 12.2964 7.10708 13.9509 7.10708 16.3576V22.2989H10.3786V26.0217H0V22.2989H2.25622V12.6348H0V8.91206H7.14469V11.4691C8.15998 9.66413 9.92735 8.57362 12.334 8.57362C14.7782 8.57362 17.072 9.73933 17.8993 12.2588C18.8394 10.0026 20.7572 8.57362 23.4647 8.57362C26.5482 8.57362 29.3308 10.4162 29.3308 14.4774V22.2989Z"/>
 </svg>
-</span>
-            Thunderbird
-          </a>
-        </li>
-        <li class="m-1">
-          <a class="social-link font-semibold" title="Follow @thunderbird@mastodon.online on Mastodon"
-            href="https://mastodon.online/@thunderbird" data-link-type="footer" data-link-name="Mastodon (Thunderbird)" rel="me">
-            <span><?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   xmlns="http://www.w3.org/2000/svg"
-   height="12"
-   width="11.193398"
-   id="svg3"
-   version="1.1"
-   viewBox="0 0 11.193399 12">
-  <path
-     style="fill:currentColor;fill-rule:evenodd"
-     d="m 5.5790063,0 c -1.534141,0.0125 -3.0098524,0.17863 -3.8698611,0.57359 0,0 -1.70561599,0.76301 -1.70561599,3.36618 0,0.5961 -0.01160514,1.30889 0.00727341,2.06474 0.06193718,2.54576 0.46672702,5.05472 2.82046908,5.67771 1.0852583,0.28725 2.0170112,0.34734 2.7674335,0.30609 1.3608723,-0.0754 2.1248476,-0.4856 2.1248476,-0.4856 l -0.044954,-0.98737 c 0,0 -0.9724634,0.30659 -2.0646395,0.26922 C 4.5318688,10.74746 3.3895546,10.66792 3.21454,9.33937 3.198377,9.22267 3.190295,9.09786 3.190295,8.96681 c 0,0 1.0622137,0.25967 2.4084096,0.32134 C 6.4218613,9.32595 7.193777,9.23985 7.9778189,9.14632 9.4813795,8.96678 10.79053,8.04041 10.95507,7.19391 11.214327,5.86046 11.192972,3.93977 11.192972,3.93977 11.192972,1.3366 9.4874568,0.57359 9.4874568,0.57359 8.6275128,0.17863 7.1508275,0.01254 5.6166863,0 Z M 3.8427816,2.03403 c 0.6390261,0 1.1228982,0.24565 1.4428639,0.73694 L 5.596685,3.29233 5.9078258,2.77097 c 0.319901,-0.49129 0.8037728,-0.73694 1.4428636,-0.73694 0.5522624,0 0.9972822,0.19415 1.3370962,0.57288 0.3294049,0.37874 0.4933804,0.8906 0.4933804,1.5348 V 7.29372 H 7.9323605 V 4.23444 c 0,-0.64491 -0.271258,-0.97231 -0.8140164,-0.97231 -0.6001053,0 -0.9008935,0.38835 -0.9008935,1.15617 V 6.0928 H 4.9760202 V 4.4183 c 0,-0.76782 -0.3007881,-1.15617 -0.9008934,-1.15617 -0.5427584,0 -0.8141175,0.3274 -0.8141175,0.97231 V 7.29372 H 2.0122042 V 4.14171 c 0,-0.6442 0.1640115,-1.15606 0.4934811,-1.5348 C 2.8454347,2.22818 3.2904545,2.03403 3.8427816,2.03403 Z"
-     id="path2" />
-</svg>
-</span>
-            @thunderbird@mastodon.online
-          </a>
-        </li>
-      </ul>
-      <aside class="mt-2">
+
+      </a>
+      <div class="legal-links">
+        <a href="https://www.mozilla.org/privacy/websites/" data-link-type="footer"
+        data-link-name="Privacy">Privacy</a>
+        <a href="https://www.mozilla.org/privacy/websites/#data-tools" data-link-type="footer"
+          data-link-name="Cookies">Cookies</a>
+        <a href="https://www.mozilla.org/en-US/about/legal/terms/mozilla/" data-link-type="footer"
+          data-link-name="Legal">Legal</a>
+        <a href="https://www.mozilla.org/en-US/about/legal/report-infringement/" data-link-type="footer"
+          data-link-name="infringement">Send DMCA Notice</a>
+        <a href="https://www.mozilla.org/about/legal/fraud-report/" data-link-type="footer"
+          data-link-name="Report Trademark Misuse">Report Fraud</a>
+        <a href="https://www.mozilla.org/en-US/about/governance/policies/participation/" data-link-type="footer"
+          data-link-name="guidelines">Participation Guidelines</a>
+      </div>
+      <p>
         
+        <small>
+          Thunderbird is part of <a href="https://blog.thunderbird.net/2020/01/thunderbirds-new-home/">MZLA Technologies Corporation</a>, a wholly owned subsidiary of Mozilla Foundation.
+          Portions of this content are ©1998–2023 by individual contributors. Content available under a
+          <a href="https://www.mozilla.org/foundation/licensing/website-content/">Creative Commons license</a>.
+        </small>
+        
+      </p>
+      <small><a href="https://github.com/thunderbird/thunderbird-website" data-link-type="footer"
+        data-link-name="Contribute to this site">Contribute to this site</a></small>
+      
+    </div>
+    <aside>
+      
 <form id="lang_form" method="get" action="/" class="flex items-center justify-end">
   <label for="page-language-select" class="mr-2">
     
@@ -1307,53 +699,11 @@
   </noscript>
 </form>
 
-      </aside>
     </aside>
-  </section>
-  <section class="self-center text-center max-w-5xl mt-8">
-    <ul class="list-none p-0 flex justify-center flex-wrap -mt-2">
-      <li class="ml-2 mr-2 mt-2">
-        <a href="https://www.mozilla.org/privacy/websites/" class="small-link" data-link-type="footer" data-link-name="Privacy">Privacy</a>
-      </li>
-      <li class="ml-2 mr-2 mt-2">
-        <a href="https://www.mozilla.org/privacy/websites/#data-tools" class="small-link" data-link-type="footer" data-link-name="Cookies">Cookies</a>
-      </li>
-      <li class="ml-2 mr-2 mt-2">
-        <a href="https://www.mozilla.org/en-US/about/legal/terms/mozilla/" class="small-link" data-link-type="footer"
-          data-link-name="Legal">Legal</a>
-      </li>
-      <li class="ml-2 mr-2 mt-2">
-        <a href="https://www.mozilla.org/en-US/about/governance/policies/participation/" class="small-link" data-link-type="footer"
-          data-link-name="guidelines">Participation Guidelines</a>
-      </li>
-      <li class="ml-2 mr-2 mt-2">
-        <a href="https://www.mozilla.org/en-US/about/legal/report-infringement/" class="small-link" data-link-type="footer"
-          data-link-name="infringement">Report Trademark or Copyright Infringement</a>
-      </li>
-      <li class="ml-2 mr-2 mt-2">
-        <a href="https://www.mozilla.org/about/legal/fraud-report/" class="small-link" data-link-type="footer"
-          data-link-name="Report Trademark Misuse">Report Misuse of Thunderbird Trademark</a>
-      </li>
-    </ul>
-
-    <p class="mt-6 mb-6 leading-normal">Thunderbird is part of
-      <a href="https://blog.thunderbird.net/2020/01/thunderbirds-new-home/" class="inline-link">MZLA Technologies Corporation</a>,
-      a wholly owned subsidiary of Mozilla Foundation.
-      Portions of this content are ©1998–2024 by individual
-      contributors. Content available under
-      a <a href="https://www.mozilla.org/foundation/licensing/website-content/" class="inline-link">Creative Commons license</a>.</p>
-
-    <a href="https://github.com/thunderbird/thunderbird-website" class="small-link font-semibold" data-link-type="footer"
-      data-link-name="Contribute to this site">Contribute to this site</a>
-    
-  </section>
+  </div>
 </footer>
     
 
-    
-      <script type="text/javascript" src="/media/js/site-bundle.js" charset="utf-8"></script>
-      <script type="text/javascript" src="/media/js/common-bundle.js" charset="utf-8"></script>
-    
     
     
       <script type="text/javascript" src="/media/js/piwik.js" async defer></script>
@@ -1362,12 +712,18 @@
         <p><img src="//thunderbird.innocraft.cloud/piwik.php?idsite=1&rec=1" style="border:0;" alt="" /></p>
       </noscript>
     
-    <!--[if IE 9]>
-      <script src="/media/js/libs/matchMedia.js"></script>
-    <![endif]-->
 
     
+  <script>
+    /*
+    const navbar = document.querySelector(".site-nav");
+    window.addEventListener("scroll", () => {
+      (window.scrollY > 30) ?
+        navbar.classList.add("scrolled-nav") :
+        navbar.classList.remove("scrolled-nav")
+    });
+     */
+  </script>
 
-    
   </body>
 </html>

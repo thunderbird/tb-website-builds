@@ -388,14 +388,28 @@
   --nav-height: 80px;
   --offset-x: 0;
   --offset-y: 0;
+  --page-header-bg: #f2f2f2;
 }
 a {
   color: currentColor;
+  text-decoration: underline;
+  transition: font-size 0.2s, text-decoration-color 0.2s;
+}
+a.dotted {
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
   text-decoration-color: currentColor;
   text-underline-offset: 0.25em;
   text-decoration-thickness: 0.12em;
-  text-decoration-style: dotted;
-  transition: font-size 0.2s, text-decoration-color 0.2s;
+}
+a.strong {
+  text-decoration: none;
+  font-weight: 600;
+}
+a.strong::after {
+  content: '>';
+  margin-left: 0.5rem;
+  color: var(--color-ink-60);
 }
 a.donate,
 a:hover,

@@ -1,2 +1,0 @@
-RewriteEngine On
-RewriteRule .* https://www.thunderbird.net/en-US/thunderbird/124.0beta/releasenotes/
