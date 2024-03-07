@@ -1568,6 +1568,11 @@ button:hover::after {
   grid-row: span 2;
   background-image: linear-gradient(to left, var(--accent), transparent 90%);
 }
+@media (max-width: 768px) {
+  .testimonials .card-lg {
+    display: flex;
+  }
+}
 .testimonials .card-lg:nth-child(even) {
   --accent: var(--color-blue-20);
   grid-column: 2 / span 2;
@@ -1584,6 +1589,11 @@ button:hover::after {
   position: absolute;
   overflow: hidden;
   width: 200%;
+}
+@media (max-width: 768px) {
+  .testimonials .visual {
+    display: none;
+  }
 }
 .testimonials .visual.unified-inbox {
   left: 10%;
@@ -1706,6 +1716,11 @@ button:hover::after {
 .page-index .section-text {
   max-inline-size: 50%;
 }
+@media (max-width: 768px) {
+  .page-index .section-text {
+    max-inline-size: 100%;
+  }
+}
 .page-index .section-text :where(h2) {
   font-size: 2.75rem;
   font-weight: 800;
@@ -1716,6 +1731,11 @@ button:hover::after {
   font-weight: 300;
   margin: 0;
   margin-bottom: 2em;
+}
+@media (max-width: 1024px) {
+  .page-index .testimonials {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 .page-who-we-are .icon-grid-container {
   width: 100%;
