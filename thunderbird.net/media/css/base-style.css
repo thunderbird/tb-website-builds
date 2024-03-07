@@ -822,7 +822,8 @@ section {
   margin-bottom: 1rem;
 }
 .txt-gradient,
-.nav-links .nav-entry .sub-nav-container .sub-nav-panel li:hover h2 {
+.nav-links .nav-entry .sub-nav-container .sub-nav-panel li:hover h2,
+.nav-links .nav-entry .sub-nav-container .sub-nav-panel li:focus-within h2 {
   background-color: var(--accent);
   background-image: linear-gradient(to right, var(--color-blue-50), var(--color-purple-50));
   color: transparent;
@@ -1529,9 +1530,12 @@ button:hover::after {
   align-items: center;
   gap: 30px;
   list-style: none;
+  margin-top: 0;
 }
 .nav-links .nav-entry {
   position: relative;
+  cursor: pointer;
+  padding-top: 18px;
 }
 .nav-links .nav-entry .sub-nav-container {
   display: none;
@@ -1540,7 +1544,6 @@ button:hover::after {
   min-width: 500px;
 }
 .nav-links .nav-entry .sub-nav-container .sub-nav-panel {
-  cursor: pointer;
   background-color: var(--bg);
   color: var(--txt);
   border-radius: 12px;
@@ -1574,6 +1577,7 @@ button:hover::after {
   font-weight: 500;
 }
 .nav-links .nav-entry .sub-nav-container .sub-nav-panel li {
+  cursor: pointer;
   list-style: none;
   padding-top: 1rem;
 }
