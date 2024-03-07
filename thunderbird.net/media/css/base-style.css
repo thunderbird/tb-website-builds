@@ -1526,20 +1526,6 @@ button:hover::after {
   max-width: 1280px;
   margin: 0 auto;
 }
-.card-lg {
-  --accent: var(--color-purple-20);
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-column: span 2;
-  grid-row: span 2;
-  background-image: linear-gradient(to left, var(--accent), transparent 90%);
-}
-.card-lg:nth-child(even) {
-  --accent: var(--color-blue-20);
-  grid-column: 2 / span 2;
-  grid-row: 3 / span 2;
-}
 .testimonials {
   display: grid;
   gap: 60px;
@@ -1571,6 +1557,20 @@ button:hover::after {
   border-radius: 24px;
   box-shadow: 0 4px 12px -2px var(--color-gray-30);
   overflow: hidden;
+}
+.testimonials .card-lg {
+  --accent: var(--color-purple-20);
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column: span 2;
+  grid-row: span 2;
+  background-image: linear-gradient(to left, var(--accent), transparent 90%);
+}
+.testimonials .card-lg:nth-child(even) {
+  --accent: var(--color-blue-20);
+  grid-column: 2 / span 2;
+  grid-row: 3 / span 2;
 }
 .testimonials .quote {
   font-weight: 400;
