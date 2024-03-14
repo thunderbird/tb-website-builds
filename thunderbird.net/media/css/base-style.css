@@ -562,16 +562,11 @@ header .tagline {
 }
 .logo {
   max-height: 100%;
-  max-width: 300px;
   min-width: 200px;
+  max-width: 250px;
   height: 60px;
   width: auto;
   transition: color 0.2s;
-}
-@media (max-width: 1024px) {
-  .logo {
-    width: 25%;
-  }
 }
 .logo:hover,
 .mozilla-logo:hover {
@@ -1489,6 +1484,10 @@ button:hover::after {
   margin-block: 40px;
 }
 .site-nav {
+  --hamburger-background-inactive: var(--color-white);
+  --hamburger-foreground-inactive: var(--color-black);
+  --hamburger-background-active: var(--color-white);
+  --hamburger-foreground-active: var(--color-black);
   box-sizing: border-box;
   position: fixed;
   top: 0;
@@ -1543,10 +1542,13 @@ button:hover::after {
   display: none;
   height: 2.5rem;
   width: 2.5rem;
+  margin-right: 4px;
+  margin-top: 8px;
   padding: 0;
 }
 .hamburger-btn::after {
   background: none;
+  background-color: var(--hamburger-background-inactive);
 }
 @media (max-width: 1024px) {
   .hamburger-btn {
@@ -1554,11 +1556,11 @@ button:hover::after {
   }
 }
 [aria-expanded="true"].hamburger-btn::after {
-  background-color: white;
+  background-color: var(--hamburger-background-active);
   opacity: 100%;
 }
 [aria-expanded="true"] > .hamburger-icon span {
-  border-color: black;
+  border-color: var(--hamburger-foreground-active);
 }
 [aria-expanded="true"] > .hamburger-icon span:nth-child(1) {
   transform: translate(0, 180%) rotateZ(45deg);
@@ -1576,7 +1578,7 @@ button:hover::after {
   margin: auto;
   width: 50%;
   height: 100%;
-  border-bottom: 2px solid var(--color-gray-30);
+  border-bottom: 2px solid var(--hamburger-foreground-inactive);
   min-height: 1px;
   transition: all 0.3s ease-in;
 }
@@ -1714,7 +1716,7 @@ button:hover::after {
   .nav-links .nav-entry .popover-container .popover-panel .entry-text h2 {
     font-size: 1rem;
   }
-  .nav-links .nav-entry:last-child {
+  .nav-links .nav-entry.no-border {
     border: none;
   }
 }
@@ -1925,6 +1927,10 @@ button:hover::after {
 .page-index .site-nav {
   background: var(--nav-bg);
   color: var(--nav-txt);
+  --hamburger-background-inactive: var(--color-black);
+  --hamburger-foreground-inactive: var(--color-gray-30);
+  --hamburger-background-active: var(--color-white);
+  --hamburger-foreground-active: var(--color-black);
 }
 .page-index .section-text {
   max-inline-size: 50%;
