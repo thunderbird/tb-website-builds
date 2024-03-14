@@ -1552,7 +1552,7 @@ button:hover::after {
     display: block;
   }
 }
-[aria-expanded="true"].hamburger-btn::after {
+[aria-expanded="true"].hamburger-btn {
   background-color: var(--hamburger-background-active);
   opacity: 100%;
 }
