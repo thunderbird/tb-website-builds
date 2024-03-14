@@ -1352,8 +1352,7 @@ button {
 .btn-download-inline::before,
 .btn-download-link::before,
 .download-link.btn-download::before,
-a.btn::before,
-button::before {
+a.btn::before {
   content: '';
   position: absolute;
   background: var(--glow);
@@ -1368,8 +1367,7 @@ button::before {
 .btn-download-inline::after,
 .btn-download-link::after,
 .download-link.btn-download::after,
-a.btn::after,
-button::after {
+a.btn::after {
   content: '';
   position: absolute;
   background-color: transparent;
@@ -1377,7 +1375,6 @@ button::after {
   background-size: 400%;
   background-position: center;
   opacity: 0.5;
-  inset: 0;
   z-index: -1;
   transition: all 0.3s;
 }
@@ -1539,6 +1536,7 @@ button:hover::after {
   margin: 0 auto;
 }
 .hamburger-btn {
+  cursor: pointer;
   display: none;
   height: 2.5rem;
   width: 2.5rem;
@@ -1547,8 +1545,7 @@ button:hover::after {
   padding: 0;
 }
 .hamburger-btn::after {
-  background: none;
-  background-color: var(--hamburger-background-inactive);
+  background: var(--hamburger-background-inactive) none;
 }
 @media (max-width: 1024px) {
   .hamburger-btn {
@@ -1566,7 +1563,7 @@ button:hover::after {
   transform: translate(0, 180%) rotateZ(45deg);
 }
 [aria-expanded="true"] > .hamburger-icon span:nth-child(2) {
-  transform: translate(0, -180%) rotateZ(-45deg);
+  transform: translate(0, -180%) rotateZ(-44deg);
 }
 .hamburger-icon {
   content: '';
@@ -1648,9 +1645,21 @@ button:hover::after {
 .nav-links .nav-entry .popover-container .popover-panel .entry-container:last-child > a {
   border: none;
 }
-.nav-links .nav-entry:hover .popover-container,
 .nav-links .nav-entry:focus-within .popover-container {
   display: block;
+}
+@media (min-width: 1024px) {
+  .nav-links .nav-entry:hover .popover-container {
+    display: block;
+  }
+}
+.nav-links .nav-ln {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+}
+.nav-links .nav-ln::after {
+  height: 3px;
 }
 .nav-links .nav-ln:focus + .popover-container {
   display: block;
@@ -1666,9 +1675,10 @@ button:hover::after {
     flex-direction: column;
     background-color: var(--color-white);
     color: var(--txt);
+    box-shadow: var(--shadow-2xl);
     width: 60%;
-    right: 0;
-    top: 64px;
+    right: 1.25rem;
+    top: var(--nav-height);
     border-radius: 12px;
     align-items: unset;
     padding-left: 1rem;
@@ -1677,11 +1687,11 @@ button:hover::after {
   .nav-links.expanded {
     display: block;
   }
-  .nav-links .header-download,
-  .nav-links .header-donate {
+  .nav-links .no-mobile {
     display: none;
   }
   .nav-links .nav-entry {
+    padding: 1rem 1rem;
     border-bottom: 2px var(--color-gray-30) solid;
   }
   .nav-links .nav-entry .popover-container {
@@ -1693,6 +1703,7 @@ button:hover::after {
     border-radius: 0;
     box-shadow: none;
     margin: 0;
+    padding: 1rem 1rem;
   }
   .nav-links .nav-entry .popover-container .popover-panel .entry-container {
     padding: 0;
