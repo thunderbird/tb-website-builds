@@ -1560,16 +1560,19 @@ button:hover::after {
   border-color: var(--hamburger-foreground-active);
 }
 [aria-expanded="true"] > .hamburger-icon span:nth-child(1) {
-  transform: translate(0, 180%) rotateZ(45deg);
+  transform: translate(1px, 195%) rotateZ(45deg);
 }
 [aria-expanded="true"] > .hamburger-icon span:nth-child(2) {
-  transform: translate(0, -180%) rotateZ(-44deg);
+  opacity: 0;
+}
+[aria-expanded="true"] > .hamburger-icon span:nth-child(3) {
+  transform: translate(0, -195%) rotateZ(-45deg);
 }
 .hamburger-icon {
   content: '';
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.2rem;
 }
 .hamburger-icon span {
   margin: auto;
