@@ -1480,6 +1480,17 @@ button:hover::after {
 .download-button ul li {
   margin-block: 40px;
 }
+.form-select {
+  width: 100%;
+  background-color: var(--color-white);
+  padding: 0.75rem;
+  border-radius: var(--border-radius-sm);
+  border: 1px solid var(--color-gray-30);
+  appearance: none;
+  background-image: url("/media/svg/chevron-down.svg");
+  background-position: calc(100% - 0.5rem);
+  background-repeat: no-repeat;
+}
 .site-nav {
   --hamburger-background-inactive: var(--color-white);
   --hamburger-foreground-inactive: var(--color-black);
@@ -2175,6 +2186,12 @@ button:hover::after {
 .page-participate .styled-list {
   text-indent: -2.5rem;
 }
+.page-download .pretend-to-be-h6 {
+  display: inline-block;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 18px;
+}
 .page-download .two-columns {
   display: flex;
   flex-direction: row;
@@ -2291,6 +2308,18 @@ button:hover::after {
   gap: 1rem;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+  width: 100%;
+}
+.page-download .platform-release ul li {
+  white-space: nowrap;
+}
+.page-download .platform-release ul li::after {
+  display: inline;
+  content: '|';
+  padding-left: 0.5rem;
+}
+.page-download .platform-release ul li:last-child::after {
+  content: '';
 }
 @media (max-width: 768px) {
   .page-download .platform-release {
