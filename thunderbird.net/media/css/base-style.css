@@ -2329,3 +2329,37 @@ button:hover::after {
     margin-left: -1rem;
   }
 }
+.page-release-notes .header-section {
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+}
+.page-release-notes .header-section:first-child {
+  margin-top: 0;
+}
+.page-release-notes .note-container {
+  display: flex;
+  align-items: start;
+  flex-direction: row;
+  margin-bottom: 1rem;
+  gap: 3rem;
+}
+.page-release-notes .note-line {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-transform: capitalize;
+}
+.page-release-notes .note-icon {
+  width: 1.5rem;
+  color: var(--color-blue-70);
+}
+.page-release-notes .note-entry {
+  margin: 0;
+}
+.page-release-notes .note-text {
+  text-align: left;
+  font-weight: 500;
+}
+.page-release-notes .note-text p {
+  margin: 0;
+}
