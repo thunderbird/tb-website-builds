@@ -819,6 +819,14 @@ section {
   -webkit-background-clip: text;
   background-clip: text;
 }
+.txt-gradient.beta {
+  background: none;
+  color: var(--txt);
+}
+.txt-gradient.daily {
+  background: none;
+  color: var(--txt);
+}
 .sub-tag {
   margin-top: 0;
 }
