@@ -2337,6 +2337,9 @@ button:hover::after {
     margin-left: -1rem;
   }
 }
+.page-release-notes .wide {
+  width: 60%;
+}
 .page-release-notes .header-section {
   margin-top: 6rem;
   margin-bottom: 2rem;
@@ -2349,21 +2352,19 @@ button:hover::after {
   grid-template-columns: 7rem 2fr;
   grid-template-rows: 1fr 1fr;
   align-items: start;
-  margin-bottom: 1rem;
 }
-.page-release-notes .note-line {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  text-transform: capitalize;
+.page-release-notes .note-category {
+  margin: 0 1rem 0 0;
+  grid-row: 1;
 }
-.page-release-notes .note-icon {
+.page-release-notes .note-category .category-icon {
   width: 1.5rem;
   color: var(--color-blue-70);
 }
-.page-release-notes .note-entry {
-  margin: 0 1rem 0 0;
-  grid-row: 1;
+.page-release-notes .note-category .category-container {
+  display: flex;
+  gap: 0.5rem;
+  text-transform: capitalize;
 }
 .page-release-notes .note-text {
   text-align: left;
