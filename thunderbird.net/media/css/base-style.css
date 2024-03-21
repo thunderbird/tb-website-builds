@@ -729,6 +729,10 @@ h2 {
   position: relative;
   top: -2px;
 }
+.icon-android {
+  position: relative;
+  top: -4px;
+}
 .icon .icon-linux-fg {
   fill: transparent !important;
 }
@@ -1491,6 +1495,9 @@ button:hover::after {
 }
 .download-button ul li {
   margin-block: 40px;
+}
+.download-button {
+  margin: 2rem;
 }
 .download-button .btn-download {
   font-size: var(--font-lg);
