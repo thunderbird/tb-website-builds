@@ -1329,7 +1329,7 @@ footer {
   background: transparent;
 }
 .header-donate a.btn {
-  max-width: 64px;
+  padding: 0.5em 1em;
 }
 .header-donate a.btn::after {
   background: transparent;
