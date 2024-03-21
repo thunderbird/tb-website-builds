@@ -1243,6 +1243,9 @@ footer {
   font-size: 80%;
 }
  */
+.small-link {
+  font-size: 80%;
+}
 :root {
   --bg: white;
   --txt: var(--color-ink-80);
@@ -1488,6 +1491,10 @@ button:hover::after {
 }
 .download-button ul li {
   margin-block: 40px;
+}
+.download-button .btn-download {
+  font-size: var(--font-lg);
+  font-weight: 400;
 }
 .form-select {
   width: 100%;
