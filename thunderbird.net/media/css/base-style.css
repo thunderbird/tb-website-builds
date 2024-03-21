@@ -1959,7 +1959,6 @@ button:hover::after {
   color: var(--accent);
 }
 .page-index .site-nav {
-  background: var(--nav-bg);
   color: var(--nav-txt);
   --hamburger-background-inactive: var(--color-black);
   --hamburger-foreground-inactive: var(--color-gray-30);
