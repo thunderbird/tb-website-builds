@@ -2345,11 +2345,11 @@ button:hover::after {
   margin-top: 0;
 }
 .page-release-notes .note-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
   align-items: start;
-  flex-direction: row;
   margin-bottom: 1rem;
-  gap: 3rem;
 }
 .page-release-notes .note-line {
   display: flex;
@@ -2362,12 +2362,31 @@ button:hover::after {
   color: var(--color-blue-70);
 }
 .page-release-notes .note-entry {
-  margin: 0;
+  margin: 0 3rem 0 0;
+  grid-row: 1;
 }
 .page-release-notes .note-text {
   text-align: left;
   font-weight: 500;
+  grid-row: 1;
 }
 .page-release-notes .note-text p {
   margin: 0;
+}
+.page-release-notes .note-bug-numbers {
+  width: 100%;
+  grid-row: 2;
+  grid-column: 1 / span 2;
+}
+.page-release-notes .note-bug-numbers p {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+}
+.page-release-notes .note-bug-numbers a::after {
+  content: ',';
+}
+.page-release-notes .note-bug-numbers a:last-child::after {
+  content: '';
 }
