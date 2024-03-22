@@ -2474,3 +2474,28 @@ button:hover::after {
 .page-release-notes .note-bug-numbers a:last-child::after {
   content: '';
 }
+.page-releases .release-container {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 1rem;
+  border-bottom: var(--border-size) solid;
+  border-color: var(--border-color);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+@media (max-width: 768px) {
+  .page-releases .release-container {
+    flex-direction: column;
+  }
+}
+.page-releases .release-major {
+  font-size: 150%;
+  min-width: 15%;
+  margin-top: 0;
+}
+.page-releases .release-minors {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
