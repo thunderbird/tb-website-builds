@@ -800,18 +800,18 @@
   <div class="container">
     <div class="section-text">
       <h1>Thunderbird <span class="txt-gradient">Desktop</span></h1>
-      <h3>Version 98.0beta | Released February 9, 2022</h3>
+      <h3>Version 118.0beta | Released August 30, 2023</h3>
       <p>
         Check out the notes below for this version of Thunderbird. As always, you’re encouraged to
         <a href="https://support.mozilla.org/questions/new/thunderbird">tell us what you think</a>, or
         <a href="https://bugzilla.mozilla.org/">file a bug in Bugzilla</a>.
       </p>
       <div class="release-text">
-        <p><strong>These notes apply to Thunderbird version 98 beta 3 released March 1, 2022.</strong></p>
-<p><strong>System Requirements:</strong> <a href="/en-US/thunderbird/98.0beta/system-requirements/">Details</a></p>
+        <p><strong>These notes apply to Thunderbird version 118 beta 6 released September 20, 2023.</strong></p>
+<p><strong>System Requirements:</strong> <a href="/en-US/thunderbird/118.0beta/system-requirements/">Details</a></p>
 <ul>
-<li>Windows: Windows 7 or later</li>
-<li>Mac: macOS 10.12 or later</li>
+<li>Windows: Windows 10 or later</li>
+<li>Mac: macOS 10.15 or later</li>
 <li>Linux: GTK+ 3.14 or higher</li>
 </ul>
       </div>
@@ -842,18 +842,14 @@
   </summary>
   <div class="answer">
     
-        <h3>Operating Systems</h3>
-<ul>
-<li>Windows 7</li>
-<li>Windows 8</li>
-<li>Windows 10</li>
-<li>Windows 11</li>
+        <ul>
+<li>Windows 10 or later</li>
 </ul>
 <h1>Recommended Hardware</h1>
 <ul>
-<li>Pentium 4 or newer processor that supports SSE2</li>
+<li>1GHz or faster Intel/AMD compatible processor</li>
 <li>1GB RAM / 2GB of RAM for the 64-bit version</li>
-<li>200 MB hard drive space</li>
+<li>250 MB hard drive space</li>
 <li>additional hard drive space for mail storage</li>
 </ul>
         
@@ -886,20 +882,14 @@
   </summary>
   <div class="answer">
     
-        <h3>Operating Systems</h3>
-<ul>
-<li>macOS 10.12</li>
-<li>macOS 10.13</li>
-<li>macOS 10.14</li>
-<li>macOS 10.15</li>
-<li>macOS 11</li>
-<li>macOS 12</li>
+        <ul>
+<li>macOS 10.15 or later</li>
 </ul>
 <h3>Recommended Hardware</h3>
 <ul>
-<li>Mac computer with an Intel x86 processor</li>
-<li>512 MB RAM</li>
-<li>200 MB hard drive space</li>
+<li>Mac computer with an Intel x86 or Apple Silicon processor</li>
+<li>1GB RAM</li>
+<li>500 MB hard drive space</li>
 <li>additional hard drive space for mail storage</li>
 </ul>
         
@@ -940,7 +930,10 @@ different requirements.</em></p>
 <ul>
 <li>glibc 2.17 or higher</li>
 <li>GTK+ 3.14 or higher</li>
+<li>libdbus-glib 0.6.0 or higher</li>
+<li>libglib 2.42 or higher</li>
 <li>libstdc++ 4.8.1 or higher</li>
+<li>libxtst 1.2.3 or higher</li>
 <li>X.Org 1.0 or higher (1.7 or higher is recommended)</li>
 </ul>
 </li>
@@ -948,8 +941,6 @@ different requirements.</em></p>
 <p>For optimal functionality, we recommend the following libraries or packages:</p>
 <ul>
 <li>DBus 1.0 or higher</li>
-<li>GNOME 2.16 or higher</li>
-<li>libxtst 1.2.3 or higher</li>
 <li>NetworkManager 0.7 or higher</li>
 <li>PulseAudio</li>
 </ul>
@@ -1001,18 +992,22 @@ different requirements.</em></p>
             
           </h4>
           <div class="note-text">
-            <p>Thunderbird will use the first occurrence of headers that should only appear once</p>
+            <p>Date range intervals in "Find Events" panel updated</p>
           </div>
         </div>
         
         <aside class="note-bug-numbers">
-          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=310189">310189</a></p>
+          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1844408">1844408</a></p>
         </aside>
         
       </div>
       
       
       
+      
+      <h2 id="fixes" class="header-section">
+        What’s Fixed
+      </h2>
       
 
       
@@ -1027,19 +1022,19 @@ different requirements.</em></p>
               <span class="category-icon"><!-- This Source Code Form is subject to the terms of the Mozilla Public
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M14 1a1 1 0 0 0-1 1v1.146A6.948 6.948 0 0 0 1.227 6.307a1 1 0 1 0 1.94.484A4.983 4.983 0 0 1 8 3a4.919 4.919 0 0 1 3.967 2H10a1 1 0 0 0 0 2h4a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm.046 7.481a1 1 0 0 0-1.213.728A4.983 4.983 0 0 1 8 13a4.919 4.919 0 0 1-3.967-2H6a1 1 0 0 0 0-2H2a1 1 0 0 0-1 1v4a1 1 0 0 0 2 0v-1.146a6.948 6.948 0 0 0 11.773-3.161 1 1 0 0 0-.727-1.212z"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
 </span>
-              changed
+              fixed
             </div>
             
           </h4>
           <div class="note-text">
-            <p>Duplicated OpenPGP encrypted attachments were shown when <code>display-attachments-inline</code> was enabled</p>
+            <p>Deleting an attachment from a message on an IMAP server corrupted the local copy when configured with "mark as deleted"</p>
           </div>
         </div>
         
         <aside class="note-bug-numbers">
-          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1749340">1749340</a></p>
+          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1135434">1135434</a></p>
         </aside>
         
       </div>
@@ -1060,29 +1055,25 @@ different requirements.</em></p>
               <span class="category-icon"><!-- This Source Code Form is subject to the terms of the Mozilla Public
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M14 1a1 1 0 0 0-1 1v1.146A6.948 6.948 0 0 0 1.227 6.307a1 1 0 1 0 1.94.484A4.983 4.983 0 0 1 8 3a4.919 4.919 0 0 1 3.967 2H10a1 1 0 0 0 0 2h4a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm.046 7.481a1 1 0 0 0-1.213.728A4.983 4.983 0 0 1 8 13a4.919 4.919 0 0 1-3.967-2H6a1 1 0 0 0 0-2H2a1 1 0 0 0-1 1v4a1 1 0 0 0 2 0v-1.146a6.948 6.948 0 0 0 11.773-3.161 1 1 0 0 0-.727-1.212z"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
 </span>
-              changed
+              fixed
             </div>
             
           </h4>
           <div class="note-text">
-            <p>Thunderbird generated views of meeting invitations are now expanded by default</p>
+            <p>After moving an IMAP message to another folder, the incorrect message was selected in the message list</p>
           </div>
         </div>
         
         <aside class="note-bug-numbers">
-          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1742101">1742101</a></p>
+          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1845376">1845376</a></p>
         </aside>
         
       </div>
       
       
       
-      
-      <h2 id="fixes" class="header-section">
-        What’s Fixed
-      </h2>
       
 
       
@@ -1104,12 +1095,12 @@ different requirements.</em></p>
             
           </h4>
           <div class="note-text">
-            <p>SMTP send progress bar could trigger high CPU usage when the server connection failed</p>
+            <p>Adding a tag to an IMAP message opened in a tab failed</p>
           </div>
         </div>
         
         <aside class="note-bug-numbers">
-          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=742697">742697</a></p>
+          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1844452">1844452</a></p>
         </aside>
         
       </div>
@@ -1137,12 +1128,12 @@ different requirements.</em></p>
             
           </h4>
           <div class="note-text">
-            <p>Improved POP server authentication detection during Account Setup</p>
+            <p>Manually entered passwords were not remembered for OAuth-authenticated accounts such as Yahoo mail</p>
           </div>
         </div>
         
         <aside class="note-bug-numbers">
-          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1752397">1752397</a></p>
+          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1673446">1673446</a></p>
         </aside>
         
       </div>
@@ -1170,12 +1161,12 @@ different requirements.</em></p>
             
           </h4>
           <div class="note-text">
-            <p>Emails were not downloading at startup under some conditions</p>
+            <p>Junk/Spam folders were not always shown in Unified Folders mode</p>
           </div>
         </div>
         
         <aside class="note-bug-numbers">
-          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1735531">1735531</a></p>
+          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1838672">1838672</a></p>
         </aside>
         
       </div>
@@ -1203,12 +1194,12 @@ different requirements.</em></p>
             
           </h4>
           <div class="note-text">
-            <p>Importing an OpenPGP key from an attachment context menu failed</p>
+            <p>Setting an existing folder's type flag did not add descendant folders to the Unified Folders view</p>
           </div>
         </div>
         
         <aside class="note-bug-numbers">
-          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1752718">1752718</a></p>
+          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1848904">1848904</a></p>
         </aside>
         
       </div>
@@ -1236,12 +1227,12 @@ different requirements.</em></p>
             
           </h4>
           <div class="note-text">
-            <p><code>Ctrl+mouse wheel</code> did not zoom in the message source window</p>
+            <p>Middle-clicking a folder or message did not open it in a background tab, as in previous versions</p>
           </div>
         </div>
         
         <aside class="note-bug-numbers">
-          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1749305">1749305</a></p>
+          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1842482">1842482</a></p>
         </aside>
         
       </div>
@@ -1269,12 +1260,12 @@ different requirements.</em></p>
             
           </h4>
           <div class="note-text">
-            <p>Importer did not work with mail directories outside of the profile directory</p>
+            <p>Quick Filter's "Keep filters applied" did not persist after restarting Thunderbird</p>
           </div>
         </div>
         
         <aside class="note-bug-numbers">
-          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1750880">1750880</a></p>
+          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1846880">1846880</a> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1849221">1849221</a></p>
         </aside>
         
       </div>
@@ -1302,12 +1293,12 @@ different requirements.</em></p>
             
           </h4>
           <div class="note-text">
-            <p>Archiving multiple folders at once failed</p>
+            <p>Notifications for new messages with non-ascii characters in the subject were garbled</p>
           </div>
         </div>
         
         <aside class="note-bug-numbers">
-          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1752516">1752516</a></p>
+          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1842384">1842384</a></p>
         </aside>
         
       </div>
@@ -1335,12 +1326,12 @@ different requirements.</em></p>
             
           </h4>
           <div class="note-text">
-            <p>News folders did not display biff indicator</p>
+            <p>Settings tab visual improvements: Advanced Fonts dialog, Section headers hidden behind search box</p>
           </div>
         </div>
         
         <aside class="note-bug-numbers">
-          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1751160">1751160</a></p>
+          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1717382">1717382</a> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1846751">1846751</a></p>
         </aside>
         
       </div>
@@ -1368,12 +1359,12 @@ different requirements.</em></p>
             
           </h4>
           <div class="note-text">
-            <p>News posting failures were not reported when using news-only profiles</p>
+            <p>New Groups tab in NNTP subscribe dialog id not work as expected</p>
           </div>
         </div>
         
         <aside class="note-bug-numbers">
-          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1751466">1751466</a></p>
+          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1848366">1848366</a></p>
         </aside>
         
       </div>
@@ -1401,12 +1392,12 @@ different requirements.</em></p>
             
           </h4>
           <div class="note-text">
-            <p>Newsgroups were not removed from folder pane when unsubscribed and the root folder was collapsed</p>
+            <p>Various visual and style fixes</p>
           </div>
         </div>
         
         <aside class="note-bug-numbers">
-          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1752082">1752082</a></p>
+          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1843707">1843707</a> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1846611">1846611</a> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1848507">1848507</a> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1848834">1848834</a></p>
         </aside>
         
       </div>
@@ -1414,200 +1405,52 @@ different requirements.</em></p>
       
       
       
-
-      
-      
-
-      <div id="note-13"
-           class="note-container">
-        <div class="note-flex">
-          <h4 class="note-category">
-            
-            <div class="category-container">
-              <span class="category-icon"><!-- This Source Code Form is subject to the terms of the Mozilla Public
-   - License, v. 2.0. If a copy of the MPL was not distributed with this
-   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
-</span>
-              fixed
-            </div>
-            
-          </h4>
-          <div class="note-text">
-            <p>LDAP Autoconfig could block Thunderbird startup</p>
-          </div>
-        </div>
-        
-        <aside class="note-bug-numbers">
-          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1752773">1752773</a></p>
-        </aside>
-        
-      </div>
       
       
       
       
-
-      
-      
-
-      <div id="note-14"
-           class="note-container">
-        <div class="note-flex">
-          <h4 class="note-category">
-            
-            <div class="category-container">
-              <span class="category-icon"><!-- This Source Code Form is subject to the terms of the Mozilla Public
-   - License, v. 2.0. If a copy of the MPL was not distributed with this
-   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
-</span>
-              fixed
-            </div>
-            
-          </h4>
-          <div class="note-text">
-            <p>It was possible to create annual calendar events with invalid days</p>
-          </div>
-        </div>
-        
-        <aside class="note-bug-numbers">
-          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1156738">1156738</a></p>
-        </aside>
-        
-      </div>
       
       
       
       
-
-      
-      
-
-      <div id="note-15"
-           class="note-container">
-        <div class="note-flex">
-          <h4 class="note-category">
-            
-            <div class="category-container">
-              <span class="category-icon"><!-- This Source Code Form is subject to the terms of the Mozilla Public
-   - License, v. 2.0. If a copy of the MPL was not distributed with this
-   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
-</span>
-              fixed
-            </div>
-            
-          </h4>
-          <div class="note-text">
-            <p>Mini-month views did not properly update at midnight</p>
-          </div>
-        </div>
-        
-        <aside class="note-bug-numbers">
-          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1648718">1648718</a></p>
-        </aside>
-        
-      </div>
       
       
       
       
-
-      
-      
-
-      <div id="note-16"
-           class="note-container">
-        <div class="note-flex">
-          <h4 class="note-category">
-            
-            <div class="category-container">
-              <span class="category-icon"><!-- This Source Code Form is subject to the terms of the Mozilla Public
-   - License, v. 2.0. If a copy of the MPL was not distributed with this
-   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
-</span>
-              fixed
-            </div>
-            
-          </h4>
-          <div class="note-text">
-            <p>UX improvements when using rotated calendar views</p>
-          </div>
-        </div>
-        
-        <aside class="note-bug-numbers">
-          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1749949">1749949</a></p>
-        </aside>
-        
-      </div>
       
       
       
       
-
-      
-      
-
-      <div id="note-17"
-           class="note-container">
-        <div class="note-flex">
-          <h4 class="note-category">
-            
-            <div class="category-container">
-              <span class="category-icon"><!-- This Source Code Form is subject to the terms of the Mozilla Public
-   - License, v. 2.0. If a copy of the MPL was not distributed with this
-   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
-</span>
-              fixed
-            </div>
-            
-          </h4>
-          <div class="note-text">
-            <p>Port numbers were not shown in "Confirm Security Exception" dialog for CalDAV connections</p>
-          </div>
-        </div>
-        
-        <aside class="note-bug-numbers">
-          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1750655">1750655</a></p>
-        </aside>
-        
-      </div>
       
       
       
       
-
       
       
-
-      <div id="note-18"
-           class="note-container">
-        <div class="note-flex">
-          <h4 class="note-category">
-            
-            <div class="category-container">
-              <span class="category-icon"><!-- This Source Code Form is subject to the terms of the Mozilla Public
-   - License, v. 2.0. If a copy of the MPL was not distributed with this
-   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
-</span>
-              fixed
-            </div>
-            
-          </h4>
-          <div class="note-text">
-            <p>Dark theme fixes</p>
-          </div>
-        </div>
-        
-        <aside class="note-bug-numbers">
-          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1751732">1751732</a> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1751918">1751918</a></p>
-        </aside>
-        
-      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       
       
       
@@ -1627,23 +1470,11 @@ different requirements.</em></p>
       
       
       <h2>
-        New & Fixed in Beta 2
+        New, changed, & fixed in beta 2
       </h2>
       
       
 
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
       
       
       
@@ -1681,7 +1512,7 @@ different requirements.</em></p>
       
       
 
-      <div id="note-19"
+      <div id="note-13"
            class="note-container">
         <div class="note-flex">
           <h4 class="note-category">
@@ -1697,12 +1528,49 @@ different requirements.</em></p>
             
           </h4>
           <div class="note-text">
-            <p>What's new link displayed in About: dialog</p>
+            <p>Column separators are now shown between all columns in tree view</p>
           </div>
         </div>
         
         <aside class="note-bug-numbers">
-          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1619815">1619815</a></p>
+          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1847441">1847441</a></p>
+        </aside>
+        
+      </div>
+      
+      
+      
+      
+      <h2 id="changes" class="header-section">
+        What’s Changed
+      </h2>
+      
+
+      
+      
+
+      <div id="note-14"
+           class="note-container">
+        <div class="note-flex">
+          <h4 class="note-category">
+            
+            <div class="category-container">
+              <span class="category-icon"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M14 1a1 1 0 0 0-1 1v1.146A6.948 6.948 0 0 0 1.227 6.307a1 1 0 1 0 1.94.484A4.983 4.983 0 0 1 8 3a4.919 4.919 0 0 1 3.967 2H10a1 1 0 0 0 0 2h4a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm.046 7.481a1 1 0 0 0-1.213.728A4.983 4.983 0 0 1 8 13a4.919 4.919 0 0 1-3.967-2H6a1 1 0 0 0 0-2H2a1 1 0 0 0-1 1v4a1 1 0 0 0 2 0v-1.146a6.948 6.948 0 0 0 11.773-3.161 1 1 0 0 0-.727-1.212z"></path></svg>
+</span>
+              changed
+            </div>
+            
+          </h4>
+          <div class="note-text">
+            <p>Card view and vertical layout are now default for new profiles</p>
+          </div>
+        </div>
+        
+        <aside class="note-bug-numbers">
+          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1849000">1849000</a></p>
         </aside>
         
       </div>
@@ -1713,6 +1581,171 @@ different requirements.</em></p>
       <h2 id="fixes" class="header-section">
         What’s Fixed
       </h2>
+      
+
+      
+      
+
+      <div id="note-15"
+           class="note-container">
+        <div class="note-flex">
+          <h4 class="note-category">
+            
+            <div class="category-container">
+              <span class="category-icon"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>
+              fixed
+            </div>
+            
+          </h4>
+          <div class="note-text">
+            <p>"Mark Thread As Read" did not work when some messages in thread were already read</p>
+          </div>
+        </div>
+        
+        <aside class="note-bug-numbers">
+          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1850850">1850850</a></p>
+        </aside>
+        
+      </div>
+      
+      
+      
+      
+
+      
+      
+
+      <div id="note-16"
+           class="note-container">
+        <div class="note-flex">
+          <h4 class="note-category">
+            
+            <div class="category-container">
+              <span class="category-icon"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>
+              fixed
+            </div>
+            
+          </h4>
+          <div class="note-text">
+            <p>"Tools" menu was blank when opened from compose window on macOS</p>
+          </div>
+        </div>
+        
+        <aside class="note-bug-numbers">
+          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1848155">1848155</a></p>
+        </aside>
+        
+      </div>
+      
+      
+      
+      
+
+      
+      
+
+      <div id="note-17"
+           class="note-container">
+        <div class="note-flex">
+          <h4 class="note-category">
+            
+            <div class="category-container">
+              <span class="category-icon"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>
+              fixed
+            </div>
+            
+          </h4>
+          <div class="note-text">
+            <p>Negative values were allowed in "Share for files larger than" field</p>
+          </div>
+        </div>
+        
+        <aside class="note-bug-numbers">
+          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1850281">1850281</a></p>
+        </aside>
+        
+      </div>
+      
+      
+      
+      
+
+      
+      
+
+      <div id="note-18"
+           class="note-container">
+        <div class="note-flex">
+          <h4 class="note-category">
+            
+            <div class="category-container">
+              <span class="category-icon"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>
+              fixed
+            </div>
+            
+          </h4>
+          <div class="note-text">
+            <p>Newsgroup field in compose window did not autocomplete with suggested newsgroup names</p>
+          </div>
+        </div>
+        
+        <aside class="note-bug-numbers">
+          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1670457">1670457</a></p>
+        </aside>
+        
+      </div>
+      
+      
+      
+      
+
+      
+      
+
+      <div id="note-19"
+           class="note-container">
+        <div class="note-flex">
+          <h4 class="note-category">
+            
+            <div class="category-container">
+              <span class="category-icon"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>
+              fixed
+            </div>
+            
+          </h4>
+          <div class="note-text">
+            <p>Canceling newsgroup messages did not check if sender matched user's own identity</p>
+          </div>
+        </div>
+        
+        <aside class="note-bug-numbers">
+          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1823274">1823274</a></p>
+        </aside>
+        
+      </div>
+      
+      
+      
       
 
       
@@ -1734,12 +1767,12 @@ different requirements.</em></p>
             
           </h4>
           <div class="note-text">
-            <p>Copy/Cut/Paste actions not working in Thunderbird Preferences</p>
+            <p>Event dialog with several invitees expanded beyond screen height</p>
           </div>
         </div>
         
         <aside class="note-bug-numbers">
-          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1731934">1731934</a></p>
+          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1848261">1848261</a></p>
         </aside>
         
       </div>
@@ -1757,8 +1790,46 @@ different requirements.</em></p>
       
       
       
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       <h2>
-        Fixed in Beta 3
+        Fixed in beta 3
       </h2>
       
       
@@ -1832,12 +1903,12 @@ different requirements.</em></p>
             
           </h4>
           <div class="note-text">
-            <p>Opening <code>mid:</code> URLs on macOS failed</p>
+            <p>Thunderbird sometimes crashed when deleting a parent folder with subfolders</p>
           </div>
         </div>
         
         <aside class="note-bug-numbers">
-          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1753887">1753887</a></p>
+          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1851293">1851293</a></p>
         </aside>
         
       </div>
@@ -1865,12 +1936,12 @@ different requirements.</em></p>
             
           </h4>
           <div class="note-text">
-            <p>Address books stored in older formats were loaded as SQLite files, causing a crash</p>
+            <p>"Send Message Error" appeared intermittently while Thunderbird was idle</p>
           </div>
         </div>
         
         <aside class="note-bug-numbers">
-          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1739498">1739498</a></p>
+          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1801668">1801668</a></p>
         </aside>
         
       </div>
@@ -1898,12 +1969,12 @@ different requirements.</em></p>
             
           </h4>
           <div class="note-text">
-            <p>Address book dialogs could be obscured by a contact details pane</p>
+            <p>Go &gt; Folder menu was disabled</p>
           </div>
         </div>
         
         <aside class="note-bug-numbers">
-          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1756854">1756854</a></p>
+          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1849919">1849919</a></p>
         </aside>
         
       </div>
@@ -1931,12 +2002,12 @@ different requirements.</em></p>
             
           </h4>
           <div class="note-text">
-            <p>Replicated LDAP directories were lost after switching Thunderbird to "Offline"`mode</p>
+            <p>Top-level Quick Filter settings did not persist after restart</p>
           </div>
         </div>
         
         <aside class="note-bug-numbers">
-          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1754186">1754186</a></p>
+          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1849249">1849249</a></p>
         </aside>
         
       </div>
@@ -1964,19 +2035,955 @@ different requirements.</em></p>
             
           </h4>
           <div class="note-text">
-            <p>Importing webcals from the commandline failed if the URI ended with an <code>.ics</code> file extension</p>
+            <p>Focused but not selected messages were missing visual indication of focus in card view</p>
           </div>
         </div>
         
         <aside class="note-bug-numbers">
-          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1754682">1754682</a></p>
+          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1844263">1844263</a></p>
         </aside>
         
       </div>
       
       
       
+      
 
+      
+      
+
+      <div id="note-26"
+           class="note-container">
+        <div class="note-flex">
+          <h4 class="note-category">
+            
+            <div class="category-container">
+              <span class="category-icon"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>
+              fixed
+            </div>
+            
+          </h4>
+          <div class="note-text">
+            <p>Message check boxes were partially obstructed in message list</p>
+          </div>
+        </div>
+        
+        <aside class="note-bug-numbers">
+          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1850760">1850760</a></p>
+        </aside>
+        
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <h2>
+        New and fixed in beta 4
+      </h2>
+      
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <h2 id="whatsnew" class="header-section">
+        What’s New
+      </h2>
+      
+
+      
+      
+
+      <div id="note-27"
+           class="note-container">
+        <div class="note-flex">
+          <h4 class="note-category">
+            
+            <div class="category-container">
+              <span class="category-icon"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M3.8 15.922a1.1 1.1 0 0 1-1.09-1.253l.609-4.36L.392 7.163a1.1 1.1 0 0 1 .616-1.833l4.081-.73L7.015.734a1.1 1.1 0 0 1 1.969 0L10.911 4.6l4.084.729a1.1 1.1 0 0 1 .611 1.833L12.68 10.31l.609 4.359a1.1 1.1 0 0 1-1.6 1.127L8 13.873 4.307 15.8a1.093 1.093 0 0 1-.507.122zm-.415-1.9zm9.228 0zM2.981 7.01l2.451 2.635-.5 3.572L8 11.618l3.067 1.6-.5-3.572 2.451-2.636-3.45-.616L8 3.244l-1.569 3.15zm11.659.29zm-13.278 0zm12.78-1.5zm-12.286 0z"></path></svg>
+</span>
+              new
+            </div>
+            
+          </h4>
+          <div class="note-text">
+            <p>OpenPGP no longer attempts to re-initialize secret key storage if individual OpenPGP secret key passphrases have been enabled</p>
+          </div>
+        </div>
+        
+        <aside class="note-bug-numbers">
+          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1842629">1842629</a></p>
+        </aside>
+        
+      </div>
+      
+      
+      
+      
+      <h2 id="fixes" class="header-section">
+        What’s Fixed
+      </h2>
+      
+
+      
+      
+
+      <div id="note-28"
+           class="note-container">
+        <div class="note-flex">
+          <h4 class="note-category">
+            
+            <div class="category-container">
+              <span class="category-icon"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>
+              fixed
+            </div>
+            
+          </h4>
+          <div class="note-text">
+            <p>Notification dot did not disappear from taskbar icon on Windows after messages had already been read</p>
+          </div>
+        </div>
+        
+        <aside class="note-bug-numbers">
+          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1824889">1824889</a></p>
+        </aside>
+        
+      </div>
+      
+      
+      
+      
+
+      
+      
+
+      <div id="note-29"
+           class="note-container">
+        <div class="note-flex">
+          <h4 class="note-category">
+            
+            <div class="category-container">
+              <span class="category-icon"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>
+              fixed
+            </div>
+            
+          </h4>
+          <div class="note-text">
+            <p>Multiple selected messages could not be opened simultaneously if selection included more than 19 messages</p>
+          </div>
+        </div>
+        
+        <aside class="note-bug-numbers">
+          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1851563">1851563</a></p>
+        </aside>
+        
+      </div>
+      
+      
+      
+      
+
+      
+      
+
+      <div id="note-30"
+           class="note-container">
+        <div class="note-flex">
+          <h4 class="note-category">
+            
+            <div class="category-container">
+              <span class="category-icon"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>
+              fixed
+            </div>
+            
+          </h4>
+          <div class="note-text">
+            <p>Email replies received via BCC incorrectly populated From field with default identity</p>
+          </div>
+        </div>
+        
+        <aside class="note-bug-numbers">
+          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1851512">1851512</a></p>
+        </aside>
+        
+      </div>
+      
+      
+      
+      
+
+      
+      
+
+      <div id="note-31"
+           class="note-container">
+        <div class="note-flex">
+          <h4 class="note-category">
+            
+            <div class="category-container">
+              <span class="category-icon"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>
+              fixed
+            </div>
+            
+          </h4>
+          <div class="note-text">
+            <p>Thunderbird did not always delete all temporary mail files, sometimes preventing messages from being sent</p>
+          </div>
+        </div>
+        
+        <aside class="note-bug-numbers">
+          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=673703">673703</a></p>
+        </aside>
+        
+      </div>
+      
+      
+      
+      
+
+      
+      
+
+      <div id="note-32"
+           class="note-container">
+        <div class="note-flex">
+          <h4 class="note-category">
+            
+            <div class="category-container">
+              <span class="category-icon"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>
+              fixed
+            </div>
+            
+          </h4>
+          <div class="note-text">
+            <p>Status bar in Message Compose window could not be hidden</p>
+          </div>
+        </div>
+        
+        <aside class="note-bug-numbers">
+          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1806860">1806860</a></p>
+        </aside>
+        
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <h2>
+        Fixed in beta 5
+      </h2>
+      
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <h2 id="fixes" class="header-section">
+        What’s Fixed
+      </h2>
+      
+
+      
+      
+
+      <div id="note-33"
+           class="note-container">
+        <div class="note-flex">
+          <h4 class="note-category">
+            
+            <div class="category-container">
+              <span class="category-icon"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>
+              fixed
+            </div>
+            
+          </h4>
+          <div class="note-text">
+            <p>Message header was intermittently missing from message preview</p>
+          </div>
+        </div>
+        
+        <aside class="note-bug-numbers">
+          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1840943">1840943</a></p>
+        </aside>
+        
+      </div>
+      
+      
+      
+      
+
+      
+      
+
+      <div id="note-34"
+           class="note-container">
+        <div class="note-flex">
+          <h4 class="note-category">
+            
+            <div class="category-container">
+              <span class="category-icon"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>
+              fixed
+            </div>
+            
+          </h4>
+          <div class="note-text">
+            <p>OAuth2 did not work on some profiles created in Thunderbird 102.6.1 or earlier</p>
+          </div>
+        </div>
+        
+        <aside class="note-bug-numbers">
+          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1814823">1814823</a></p>
+        </aside>
+        
+      </div>
+      
+      
+      
+      
+
+      
+      
+
+      <div id="note-35"
+           class="note-container">
+        <div class="note-flex">
+          <h4 class="note-category">
+            
+            <div class="category-container">
+              <span class="category-icon"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>
+              fixed
+            </div>
+            
+          </h4>
+          <div class="note-text">
+            <p>Opening folder in new tab by clicking scroll wheel/middle mouse button did not work in Folder Pane</p>
+          </div>
+        </div>
+        
+        <aside class="note-bug-numbers">
+          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1836853">1836853</a></p>
+        </aside>
+        
+      </div>
+      
+      
+      
+      
+
+      
+      
+
+      <div id="note-36"
+           class="note-container">
+        <div class="note-flex">
+          <h4 class="note-category">
+            
+            <div class="category-container">
+              <span class="category-icon"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>
+              fixed
+            </div>
+            
+          </h4>
+          <div class="note-text">
+            <p>In Vertical View, decrypted subject lines were displayed as ellipsis ("...") in message list</p>
+          </div>
+        </div>
+        
+        <aside class="note-bug-numbers">
+          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1831764">1831764</a></p>
+        </aside>
+        
+      </div>
+      
+      
+      
+      
+
+      
+      
+
+      <div id="note-37"
+           class="note-container">
+        <div class="note-flex">
+          <h4 class="note-category">
+            
+            <div class="category-container">
+              <span class="category-icon"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>
+              fixed
+            </div>
+            
+          </h4>
+          <div class="note-text">
+            <p>Condensed address preference (mail.showCondensedAddresses) did not show condensed addresses in message list</p>
+          </div>
+        </div>
+        
+        <aside class="note-bug-numbers">
+          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1831280">1831280</a></p>
+        </aside>
+        
+      </div>
+      
+      
+      
+      
+
+      
+      
+
+      <div id="note-38"
+           class="note-container">
+        <div class="note-flex">
+          <h4 class="note-category">
+            
+            <div class="category-container">
+              <span class="category-icon"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>
+              fixed
+            </div>
+            
+          </h4>
+          <div class="note-text">
+            <p>User was not always notified of message send failures in outbox</p>
+          </div>
+        </div>
+        
+        <aside class="note-bug-numbers">
+          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1851542">1851542</a></p>
+        </aside>
+        
+      </div>
+      
+      
+      
+      
+
+      
+      
+
+      <div id="note-39"
+           class="note-container">
+        <div class="note-flex">
+          <h4 class="note-category">
+            
+            <div class="category-container">
+              <span class="category-icon"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>
+              fixed
+            </div>
+            
+          </h4>
+          <div class="note-text">
+            <p>Spam folder could not be assigned non-ASCII names with IMAP UTF-8 enabled</p>
+          </div>
+        </div>
+        
+        <aside class="note-bug-numbers">
+          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1816332">1816332</a></p>
+        </aside>
+        
+      </div>
+      
+      
+      
+      
+
+      
+      
+
+      <div id="note-40"
+           class="note-container">
+        <div class="note-flex">
+          <h4 class="note-category">
+            
+            <div class="category-container">
+              <span class="category-icon"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>
+              fixed
+            </div>
+            
+          </h4>
+          <div class="note-text">
+            <p>Tag dialog did not close properly after editing tag</p>
+          </div>
+        </div>
+        
+        <aside class="note-bug-numbers">
+          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1852414">1852414</a></p>
+        </aside>
+        
+      </div>
+      
+      
+      
+      
+
+      
+      
+
+      <div id="note-41"
+           class="note-container">
+        <div class="note-flex">
+          <h4 class="note-category">
+            
+            <div class="category-container">
+              <span class="category-icon"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>
+              fixed
+            </div>
+            
+          </h4>
+          <div class="note-text">
+            <p>Importing some CalDAV calendars with yearly recurrence events caused Thunderbird to freeze</p>
+          </div>
+        </div>
+        
+        <aside class="note-bug-numbers">
+          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1850732">1850732</a></p>
+        </aside>
+        
+      </div>
+      
+      
+      
+      
+
+      
+      
+
+      <div id="note-42"
+           class="note-container">
+        <div class="note-flex">
+          <h4 class="note-category">
+            
+            <div class="category-container">
+              <span class="category-icon"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>
+              fixed
+            </div>
+            
+          </h4>
+          <div class="note-text">
+            <p>Context menu items did not display a hover background color</p>
+          </div>
+        </div>
+        
+        <aside class="note-bug-numbers">
+          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1852732">1852732</a></p>
+        </aside>
+        
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      <h2>
+        Fixed in beta 6
+      </h2>
+      
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <h2 id="fixes" class="header-section">
+        What’s Fixed
+      </h2>
+      
+
+      
+      
+
+      <div id="note-43"
+           class="note-container">
+        <div class="note-flex">
+          <h4 class="note-category">
+            
+            <div class="category-container">
+              <span class="category-icon"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M6 14a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414l2.157 2.157 6.316-9.023a1 1 0 0 1 1.639 1.146l-7 10a1 1 0 0 1-.732.427A.863.863 0 0 1 6 14z"></path></svg>
+</span>
+              fixed
+            </div>
+            
+          </h4>
+          <div class="note-text">
+            <p>Message header was not displayed until images finished loading, causing noticeable delay for messages containing large images</p>
+          </div>
+        </div>
+        
+        <aside class="note-bug-numbers">
+          <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1851871">1851871</a></p>
+        </aside>
+        
+      </div>
+      
+      
+      
+      
+      
+
+      
+      <h2 id="known-issues" class="header-section">
+        Known Issues
+      </h2>
+      
+      <aside id="note-" class="note-container">
+        <div class="note-category">
+          <aside class="category-container">
+            <span class="category-icon"><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M3.8 15.922a1.1 1.1 0 0 1-1.09-1.253l.609-4.36L.392 7.163a1.1 1.1 0 0 1 .616-1.833l4.081-.73L7.015.734a1.1 1.1 0 0 1 1.969 0L10.911 4.6l4.084.729a1.1 1.1 0 0 1 .611 1.833L12.68 10.31l.609 4.359a1.1 1.1 0 0 1-1.6 1.127L8 13.873 4.307 15.8a1.093 1.093 0 0 1-.507.122zm-.415-1.9zm9.228 0zM2.981 7.01l2.451 2.635-.5 3.572L8 11.618l3.067 1.6-.5-3.572 2.451-2.636-3.45-.616L8 3.244l-1.569 3.15zm11.659.29zm-13.278 0zm12.78-1.5zm-12.286 0z"></path></svg>
+</span>
+            unresolved
+          </aside>
+        </div>
+        <aside class="note-text">
+          <p>Some folders missing from Unified Folders</p>
+          
+        </aside>
+        
+        <aside>
+          
+        </aside>
+        
+      </aside>
+      
       
     </div>
 
