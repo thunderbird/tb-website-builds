@@ -2386,11 +2386,38 @@ button:hover::after {
   margin-left: auto;
   margin-right: auto;
 }
+.page-release-notes .release-notes-container {
+  padding-top: 0;
+}
 .page-release-notes .release-text {
+  text-align: left;
   margin-bottom: 2rem;
 }
 .page-release-notes .release-text li {
   list-style: none;
+}
+.page-release-notes .system-requirements ul {
+  list-style: none;
+  margin-left: 0;
+  margin-bottom: 1.5rem;
+  text-indent: -1rem;
+  line-height: 30px;
+}
+.page-release-notes .system-requirements ul li {
+  margin-bottom: 0.5rem;
+}
+.page-release-notes .system-requirements ul li:before {
+  content: '●';
+  color: var(--accent);
+  margin-right: 0.75rem;
+}
+@media (max-width: 768px) {
+  .page-release-notes .system-requirements ul {
+    text-indent: -2.5rem;
+  }
+  .page-release-notes .system-requirements ul li:before {
+    margin-right: 1rem;
+  }
 }
 .page-release-notes .wide {
   width: 60%;
