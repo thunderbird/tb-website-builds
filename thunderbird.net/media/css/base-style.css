@@ -1287,6 +1287,11 @@ footer {
   margin-bottom: 2rem;
   text-align: left;
 }
+.accordion span {
+  display: flex;
+  align-content: center;
+  margin-right: 0.5rem;
+}
 @media (max-width: 1280px) {
   .accordion {
     min-width: 100%;
@@ -2374,6 +2379,18 @@ button:hover::after {
     padding-left: 1rem;
     margin-left: -1rem;
   }
+}
+.page-release-notes .accordion {
+  width: 100%;
+  min-width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.page-release-notes .release-text {
+  margin-bottom: 2rem;
+}
+.page-release-notes .release-text li {
+  list-style: none;
 }
 .page-release-notes .wide {
   width: 60%;
