@@ -40,6 +40,616 @@
 
     
     
+<style>
+  /* Fallback for no :has support - Only display the current locale's download. */
+  .lang-link {
+    display: none;
+  }
+  .lang-link[lang='nl'] {
+    display: inline-block;
+  }
+  /*
+  Maybe being too smart here to avoid having to create a no-js download page...
+  We use has for the display:none so browsers without has support will still display the current page's download links.
+  */
+  li:has(.lang-link[lang='ach']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='ach']:checked) ~ .platform-release .lang-link[lang='ach'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='af']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='af']:checked) ~ .platform-release .lang-link[lang='af'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='an']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='an']:checked) ~ .platform-release .lang-link[lang='an'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='ar']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='ar']:checked) ~ .platform-release .lang-link[lang='ar'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='as']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='as']:checked) ~ .platform-release .lang-link[lang='as'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='ast']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='ast']:checked) ~ .platform-release .lang-link[lang='ast'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='az']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='az']:checked) ~ .platform-release .lang-link[lang='az'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='be']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='be']:checked) ~ .platform-release .lang-link[lang='be'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='bg']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='bg']:checked) ~ .platform-release .lang-link[lang='bg'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='bn']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='bn']:checked) ~ .platform-release .lang-link[lang='bn'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='br']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='br']:checked) ~ .platform-release .lang-link[lang='br'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='bs']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='bs']:checked) ~ .platform-release .lang-link[lang='bs'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='ca']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='ca']:checked) ~ .platform-release .lang-link[lang='ca'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='cak']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='cak']:checked) ~ .platform-release .lang-link[lang='cak'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='cs']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='cs']:checked) ~ .platform-release .lang-link[lang='cs'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='cy']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='cy']:checked) ~ .platform-release .lang-link[lang='cy'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='da']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='da']:checked) ~ .platform-release .lang-link[lang='da'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='de']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='de']:checked) ~ .platform-release .lang-link[lang='de'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='dsb']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='dsb']:checked) ~ .platform-release .lang-link[lang='dsb'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='el']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='el']:checked) ~ .platform-release .lang-link[lang='el'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='en-CA']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='en-CA']:checked) ~ .platform-release .lang-link[lang='en-CA'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='en-GB']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='en-GB']:checked) ~ .platform-release .lang-link[lang='en-GB'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='en-US']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='en-US']:checked) ~ .platform-release .lang-link[lang='en-US'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='en-ZA']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='en-ZA']:checked) ~ .platform-release .lang-link[lang='en-ZA'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='eo']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='eo']:checked) ~ .platform-release .lang-link[lang='eo'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='es-AR']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='es-AR']:checked) ~ .platform-release .lang-link[lang='es-AR'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='es-CL']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='es-CL']:checked) ~ .platform-release .lang-link[lang='es-CL'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='es-ES']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='es-ES']:checked) ~ .platform-release .lang-link[lang='es-ES'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='es-MX']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='es-MX']:checked) ~ .platform-release .lang-link[lang='es-MX'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='et']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='et']:checked) ~ .platform-release .lang-link[lang='et'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='eu']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='eu']:checked) ~ .platform-release .lang-link[lang='eu'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='fa']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='fa']:checked) ~ .platform-release .lang-link[lang='fa'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='ff']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='ff']:checked) ~ .platform-release .lang-link[lang='ff'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='fi']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='fi']:checked) ~ .platform-release .lang-link[lang='fi'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='fr']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='fr']:checked) ~ .platform-release .lang-link[lang='fr'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='fy-NL']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='fy-NL']:checked) ~ .platform-release .lang-link[lang='fy-NL'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='ga-IE']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='ga-IE']:checked) ~ .platform-release .lang-link[lang='ga-IE'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='gd']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='gd']:checked) ~ .platform-release .lang-link[lang='gd'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='gl']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='gl']:checked) ~ .platform-release .lang-link[lang='gl'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='gn']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='gn']:checked) ~ .platform-release .lang-link[lang='gn'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='gu-IN']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='gu-IN']:checked) ~ .platform-release .lang-link[lang='gu-IN'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='he']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='he']:checked) ~ .platform-release .lang-link[lang='he'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='hi-IN']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='hi-IN']:checked) ~ .platform-release .lang-link[lang='hi-IN'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='hr']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='hr']:checked) ~ .platform-release .lang-link[lang='hr'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='hsb']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='hsb']:checked) ~ .platform-release .lang-link[lang='hsb'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='hu']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='hu']:checked) ~ .platform-release .lang-link[lang='hu'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='hy-AM']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='hy-AM']:checked) ~ .platform-release .lang-link[lang='hy-AM'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='id']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='id']:checked) ~ .platform-release .lang-link[lang='id'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='is']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='is']:checked) ~ .platform-release .lang-link[lang='is'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='it']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='it']:checked) ~ .platform-release .lang-link[lang='it'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='ja']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='ja']:checked) ~ .platform-release .lang-link[lang='ja'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='ka']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='ka']:checked) ~ .platform-release .lang-link[lang='ka'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='kab']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='kab']:checked) ~ .platform-release .lang-link[lang='kab'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='kk']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='kk']:checked) ~ .platform-release .lang-link[lang='kk'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='km']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='km']:checked) ~ .platform-release .lang-link[lang='km'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='kn']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='kn']:checked) ~ .platform-release .lang-link[lang='kn'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='ko']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='ko']:checked) ~ .platform-release .lang-link[lang='ko'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='lij']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='lij']:checked) ~ .platform-release .lang-link[lang='lij'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='lt']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='lt']:checked) ~ .platform-release .lang-link[lang='lt'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='ltg']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='ltg']:checked) ~ .platform-release .lang-link[lang='ltg'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='lv']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='lv']:checked) ~ .platform-release .lang-link[lang='lv'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='mai']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='mai']:checked) ~ .platform-release .lang-link[lang='mai'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='mk']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='mk']:checked) ~ .platform-release .lang-link[lang='mk'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='ml']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='ml']:checked) ~ .platform-release .lang-link[lang='ml'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='mr']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='mr']:checked) ~ .platform-release .lang-link[lang='mr'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='ms']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='ms']:checked) ~ .platform-release .lang-link[lang='ms'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='my']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='my']:checked) ~ .platform-release .lang-link[lang='my'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='nb-NO']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='nb-NO']:checked) ~ .platform-release .lang-link[lang='nb-NO'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='ne-NP']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='ne-NP']:checked) ~ .platform-release .lang-link[lang='ne-NP'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='nl']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='nl']:checked) ~ .platform-release .lang-link[lang='nl'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='nn-NO']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='nn-NO']:checked) ~ .platform-release .lang-link[lang='nn-NO'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='oc']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='oc']:checked) ~ .platform-release .lang-link[lang='oc'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='or']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='or']:checked) ~ .platform-release .lang-link[lang='or'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='pa-IN']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='pa-IN']:checked) ~ .platform-release .lang-link[lang='pa-IN'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='pl']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='pl']:checked) ~ .platform-release .lang-link[lang='pl'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='pt-BR']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='pt-BR']:checked) ~ .platform-release .lang-link[lang='pt-BR'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='pt-PT']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='pt-PT']:checked) ~ .platform-release .lang-link[lang='pt-PT'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='rm']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='rm']:checked) ~ .platform-release .lang-link[lang='rm'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='ro']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='ro']:checked) ~ .platform-release .lang-link[lang='ro'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='ru']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='ru']:checked) ~ .platform-release .lang-link[lang='ru'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='si']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='si']:checked) ~ .platform-release .lang-link[lang='si'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='sk']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='sk']:checked) ~ .platform-release .lang-link[lang='sk'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='sl']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='sl']:checked) ~ .platform-release .lang-link[lang='sl'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='son']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='son']:checked) ~ .platform-release .lang-link[lang='son'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='sq']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='sq']:checked) ~ .platform-release .lang-link[lang='sq'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='sr']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='sr']:checked) ~ .platform-release .lang-link[lang='sr'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='sv-SE']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='sv-SE']:checked) ~ .platform-release .lang-link[lang='sv-SE'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='ta']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='ta']:checked) ~ .platform-release .lang-link[lang='ta'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='te']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='te']:checked) ~ .platform-release .lang-link[lang='te'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='th']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='th']:checked) ~ .platform-release .lang-link[lang='th'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='tr']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='tr']:checked) ~ .platform-release .lang-link[lang='tr'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='uk']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='uk']:checked) ~ .platform-release .lang-link[lang='uk'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='ur']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='ur']:checked) ~ .platform-release .lang-link[lang='ur'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='uz']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='uz']:checked) ~ .platform-release .lang-link[lang='uz'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='vi']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='vi']:checked) ~ .platform-release .lang-link[lang='vi'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='xh']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='xh']:checked) ~ .platform-release .lang-link[lang='xh'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='zh-CN']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='zh-CN']:checked) ~ .platform-release .lang-link[lang='zh-CN'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='zh-TW']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='zh-TW']:checked) ~ .platform-release .lang-link[lang='zh-TW'] {
+      display: inline-block;
+    }
+  li:has(.lang-link[lang='zu']) > a {
+      display: none;
+    }
+    .section-text:has(#download-language-select > option[value='zu']:checked) ~ .platform-release .lang-link[lang='zu'] {
+      display: inline-block;
+    }
+  
+
+</style>
+
     <!--<![endif]-->
 
     
@@ -802,8 +1412,8 @@
           <div class="section-title">
             <h1>Thunderbird <span class="txt-gradient">Desktop</span></h1>
           </div>
-          <p>These are officially maintained and distributed by Thunderbird Desktop. Download the latest <span class="txt-gradient">Release version</span> unless you wish to test the <span class="txt-gradient beta">Beta version</span> and report bugs.</p>
-          <p>The <span class="txt-gradient daily">Daily version</span> is an unstable testing and development platform, make sure you back up important data regularly!</p>
+          <p>These are officially maintained and distributed by Thunderbird Desktop. Download the latest Release version unless you wish to test the Beta version and report bugs.</p>
+          <p>The Daily version is an unstable testing and development platform, make sure you back up important data regularly!</p>
         </div>
         <div class="section-text">
           <label class="pretend-to-be-h6" for="download-language-select">
@@ -1167,7 +1777,7 @@
             </div>
               
             <div class="platform-list-builds release">
-              <h5 class="txt-gradient release">Release:</h5>
+              <h5 class="channel-name release">Release:</h5>
               <ul>
                 
                 
@@ -1885,7 +2495,7 @@
             </div>
               
             <div class="platform-list-builds beta">
-              <h5 class="txt-gradient beta">Beta:</h5>
+              <h5 class="channel-name beta">Beta:</h5>
               <ul>
                 
                 
@@ -2609,7 +3219,7 @@
             </div>
               
             <div class="platform-list-builds daily">
-              <h5 class="txt-gradient daily">Daily:</h5>
+              <h5 class="channel-name daily">Daily:</h5>
               <ul>
                 
                 
@@ -3355,7 +3965,7 @@
             </div>
               
             <div class="platform-list-builds release">
-              <h5 class="txt-gradient release">Release:</h5>
+              <h5 class="channel-name release">Release:</h5>
               <ul>
                 
                 
@@ -3836,7 +4446,7 @@
             </div>
               
             <div class="platform-list-builds beta">
-              <h5 class="txt-gradient beta">Beta:</h5>
+              <h5 class="channel-name beta">Beta:</h5>
               <ul>
                 
                 
@@ -4321,7 +4931,7 @@
             </div>
               
             <div class="platform-list-builds daily">
-              <h5 class="txt-gradient daily">Daily:</h5>
+              <h5 class="channel-name daily">Daily:</h5>
               <ul>
                 
                 
@@ -4829,7 +5439,7 @@
             </div>
               
             <div class="platform-list-builds release">
-              <h5 class="txt-gradient release">Release:</h5>
+              <h5 class="channel-name release">Release:</h5>
               <ul>
                 
                 
@@ -5073,7 +5683,7 @@
             </div>
               
             <div class="platform-list-builds beta">
-              <h5 class="txt-gradient beta">Beta:</h5>
+              <h5 class="channel-name beta">Beta:</h5>
               <ul>
                 
                 
@@ -5319,7 +5929,7 @@
             </div>
               
             <div class="platform-list-builds daily">
-              <h5 class="txt-gradient daily">Daily:</h5>
+              <h5 class="channel-name daily">Daily:</h5>
               <ul>
                 
                 
@@ -5649,615 +6259,6 @@
     </div>
   </div>
 </section>
-<style>
-  /* Fallback for no :has support - Only display the current locale's download. */
-  .lang-link {
-    display: none;
-  }
-  .lang-link[lang='nl'] {
-    display: inline-block;
-  }
-  /*
-  Maybe being too smart here to avoid having to create a no-js download page...
-  We use has for the display:none so browsers without has support will still display the current page's download links.
-  */
-  li:has(.lang-link[lang='ach']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='ach']:checked) ~ .platform-release .lang-link[lang='ach'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='af']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='af']:checked) ~ .platform-release .lang-link[lang='af'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='an']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='an']:checked) ~ .platform-release .lang-link[lang='an'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='ar']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='ar']:checked) ~ .platform-release .lang-link[lang='ar'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='as']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='as']:checked) ~ .platform-release .lang-link[lang='as'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='ast']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='ast']:checked) ~ .platform-release .lang-link[lang='ast'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='az']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='az']:checked) ~ .platform-release .lang-link[lang='az'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='be']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='be']:checked) ~ .platform-release .lang-link[lang='be'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='bg']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='bg']:checked) ~ .platform-release .lang-link[lang='bg'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='bn']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='bn']:checked) ~ .platform-release .lang-link[lang='bn'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='br']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='br']:checked) ~ .platform-release .lang-link[lang='br'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='bs']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='bs']:checked) ~ .platform-release .lang-link[lang='bs'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='ca']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='ca']:checked) ~ .platform-release .lang-link[lang='ca'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='cak']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='cak']:checked) ~ .platform-release .lang-link[lang='cak'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='cs']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='cs']:checked) ~ .platform-release .lang-link[lang='cs'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='cy']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='cy']:checked) ~ .platform-release .lang-link[lang='cy'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='da']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='da']:checked) ~ .platform-release .lang-link[lang='da'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='de']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='de']:checked) ~ .platform-release .lang-link[lang='de'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='dsb']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='dsb']:checked) ~ .platform-release .lang-link[lang='dsb'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='el']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='el']:checked) ~ .platform-release .lang-link[lang='el'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='en-CA']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='en-CA']:checked) ~ .platform-release .lang-link[lang='en-CA'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='en-GB']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='en-GB']:checked) ~ .platform-release .lang-link[lang='en-GB'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='en-US']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='en-US']:checked) ~ .platform-release .lang-link[lang='en-US'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='en-ZA']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='en-ZA']:checked) ~ .platform-release .lang-link[lang='en-ZA'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='eo']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='eo']:checked) ~ .platform-release .lang-link[lang='eo'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='es-AR']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='es-AR']:checked) ~ .platform-release .lang-link[lang='es-AR'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='es-CL']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='es-CL']:checked) ~ .platform-release .lang-link[lang='es-CL'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='es-ES']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='es-ES']:checked) ~ .platform-release .lang-link[lang='es-ES'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='es-MX']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='es-MX']:checked) ~ .platform-release .lang-link[lang='es-MX'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='et']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='et']:checked) ~ .platform-release .lang-link[lang='et'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='eu']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='eu']:checked) ~ .platform-release .lang-link[lang='eu'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='fa']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='fa']:checked) ~ .platform-release .lang-link[lang='fa'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='ff']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='ff']:checked) ~ .platform-release .lang-link[lang='ff'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='fi']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='fi']:checked) ~ .platform-release .lang-link[lang='fi'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='fr']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='fr']:checked) ~ .platform-release .lang-link[lang='fr'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='fy-NL']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='fy-NL']:checked) ~ .platform-release .lang-link[lang='fy-NL'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='ga-IE']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='ga-IE']:checked) ~ .platform-release .lang-link[lang='ga-IE'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='gd']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='gd']:checked) ~ .platform-release .lang-link[lang='gd'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='gl']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='gl']:checked) ~ .platform-release .lang-link[lang='gl'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='gn']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='gn']:checked) ~ .platform-release .lang-link[lang='gn'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='gu-IN']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='gu-IN']:checked) ~ .platform-release .lang-link[lang='gu-IN'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='he']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='he']:checked) ~ .platform-release .lang-link[lang='he'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='hi-IN']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='hi-IN']:checked) ~ .platform-release .lang-link[lang='hi-IN'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='hr']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='hr']:checked) ~ .platform-release .lang-link[lang='hr'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='hsb']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='hsb']:checked) ~ .platform-release .lang-link[lang='hsb'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='hu']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='hu']:checked) ~ .platform-release .lang-link[lang='hu'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='hy-AM']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='hy-AM']:checked) ~ .platform-release .lang-link[lang='hy-AM'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='id']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='id']:checked) ~ .platform-release .lang-link[lang='id'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='is']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='is']:checked) ~ .platform-release .lang-link[lang='is'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='it']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='it']:checked) ~ .platform-release .lang-link[lang='it'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='ja']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='ja']:checked) ~ .platform-release .lang-link[lang='ja'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='ka']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='ka']:checked) ~ .platform-release .lang-link[lang='ka'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='kab']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='kab']:checked) ~ .platform-release .lang-link[lang='kab'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='kk']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='kk']:checked) ~ .platform-release .lang-link[lang='kk'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='km']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='km']:checked) ~ .platform-release .lang-link[lang='km'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='kn']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='kn']:checked) ~ .platform-release .lang-link[lang='kn'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='ko']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='ko']:checked) ~ .platform-release .lang-link[lang='ko'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='lij']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='lij']:checked) ~ .platform-release .lang-link[lang='lij'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='lt']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='lt']:checked) ~ .platform-release .lang-link[lang='lt'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='ltg']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='ltg']:checked) ~ .platform-release .lang-link[lang='ltg'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='lv']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='lv']:checked) ~ .platform-release .lang-link[lang='lv'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='mai']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='mai']:checked) ~ .platform-release .lang-link[lang='mai'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='mk']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='mk']:checked) ~ .platform-release .lang-link[lang='mk'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='ml']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='ml']:checked) ~ .platform-release .lang-link[lang='ml'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='mr']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='mr']:checked) ~ .platform-release .lang-link[lang='mr'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='ms']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='ms']:checked) ~ .platform-release .lang-link[lang='ms'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='my']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='my']:checked) ~ .platform-release .lang-link[lang='my'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='nb-NO']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='nb-NO']:checked) ~ .platform-release .lang-link[lang='nb-NO'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='ne-NP']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='ne-NP']:checked) ~ .platform-release .lang-link[lang='ne-NP'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='nl']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='nl']:checked) ~ .platform-release .lang-link[lang='nl'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='nn-NO']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='nn-NO']:checked) ~ .platform-release .lang-link[lang='nn-NO'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='oc']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='oc']:checked) ~ .platform-release .lang-link[lang='oc'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='or']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='or']:checked) ~ .platform-release .lang-link[lang='or'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='pa-IN']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='pa-IN']:checked) ~ .platform-release .lang-link[lang='pa-IN'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='pl']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='pl']:checked) ~ .platform-release .lang-link[lang='pl'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='pt-BR']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='pt-BR']:checked) ~ .platform-release .lang-link[lang='pt-BR'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='pt-PT']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='pt-PT']:checked) ~ .platform-release .lang-link[lang='pt-PT'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='rm']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='rm']:checked) ~ .platform-release .lang-link[lang='rm'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='ro']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='ro']:checked) ~ .platform-release .lang-link[lang='ro'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='ru']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='ru']:checked) ~ .platform-release .lang-link[lang='ru'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='si']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='si']:checked) ~ .platform-release .lang-link[lang='si'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='sk']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='sk']:checked) ~ .platform-release .lang-link[lang='sk'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='sl']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='sl']:checked) ~ .platform-release .lang-link[lang='sl'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='son']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='son']:checked) ~ .platform-release .lang-link[lang='son'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='sq']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='sq']:checked) ~ .platform-release .lang-link[lang='sq'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='sr']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='sr']:checked) ~ .platform-release .lang-link[lang='sr'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='sv-SE']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='sv-SE']:checked) ~ .platform-release .lang-link[lang='sv-SE'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='ta']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='ta']:checked) ~ .platform-release .lang-link[lang='ta'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='te']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='te']:checked) ~ .platform-release .lang-link[lang='te'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='th']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='th']:checked) ~ .platform-release .lang-link[lang='th'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='tr']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='tr']:checked) ~ .platform-release .lang-link[lang='tr'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='uk']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='uk']:checked) ~ .platform-release .lang-link[lang='uk'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='ur']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='ur']:checked) ~ .platform-release .lang-link[lang='ur'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='uz']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='uz']:checked) ~ .platform-release .lang-link[lang='uz'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='vi']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='vi']:checked) ~ .platform-release .lang-link[lang='vi'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='xh']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='xh']:checked) ~ .platform-release .lang-link[lang='xh'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='zh-CN']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='zh-CN']:checked) ~ .platform-release .lang-link[lang='zh-CN'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='zh-TW']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='zh-TW']:checked) ~ .platform-release .lang-link[lang='zh-TW'] {
-      display: inline-block;
-    }
-  li:has(.lang-link[lang='zu']) > a {
-      display: none;
-    }
-    .section-text:has(#download-language-select > option[value='zu']:checked) ~ .platform-release .lang-link[lang='zu'] {
-      display: inline-block;
-    }
-  
-
-</style>
 
       
 <div class="pre-footer-cover-container">

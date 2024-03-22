@@ -2224,6 +2224,10 @@ button:hover::after {
 .page-participate .styled-list {
   text-indent: -2.5rem;
 }
+.page-download .channel-name.beta,
+.page-download .channel-name.daily {
+  font-size: 70%;
+}
 .page-download .pretend-to-be-h6 {
   display: inline-block;
   margin-top: 1rem;
