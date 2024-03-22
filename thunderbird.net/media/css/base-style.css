@@ -592,6 +592,9 @@ header .tagline {
   max-width: 1280px;
   overflow: hidden;
 }
+.container.no-gap {
+  gap: 0;
+}
 @media (max-width: 768px) {
   .container {
     width: calc(100% - 1rem);
@@ -2120,9 +2123,6 @@ button:hover::after {
 .page-who-we-are .job-grid .person span {
   font-size: var(--font-regular);
 }
-.page-contact-us .container {
-  gap: 0;
-}
 .page-contact-us .block-grid {
   display: flex;
   flex-wrap: wrap;
@@ -2158,9 +2158,6 @@ button:hover::after {
 }
 .page-contact-us .block-head h2 {
   margin: 0;
-}
-.page-participate .container {
-  gap: 0;
 }
 .page-participate .accordion {
   width: 60%;
@@ -2473,9 +2470,6 @@ button:hover::after {
 }
 .page-release-notes .note-bug-numbers a:last-child::after {
   content: '';
-}
-.page-releases .container-closer {
-  gap: 0;
 }
 .page-releases .release-container {
   display: flex;
