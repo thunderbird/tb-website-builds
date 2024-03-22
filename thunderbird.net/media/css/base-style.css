@@ -2474,6 +2474,9 @@ button:hover::after {
 .page-release-notes .note-bug-numbers a:last-child::after {
   content: '';
 }
+.page-releases .container-closer {
+  gap: 0;
+}
 .page-releases .release-container {
   display: flex;
   flex-direction: row;
@@ -2488,6 +2491,9 @@ button:hover::after {
   .page-releases .release-container {
     flex-direction: column;
   }
+}
+.page-releases .release-container:last-child {
+  border: none;
 }
 .page-releases .release-major {
   font-size: 150%;
