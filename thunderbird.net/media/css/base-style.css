@@ -2266,6 +2266,11 @@ button:hover::after {
   margin-top: 0;
 }
 @media (max-width: 1024px) {
+  .page-download .two-columns .column .section-text {
+    padding: 0;
+  }
+}
+@media (max-width: 1024px) {
   .page-download .two-columns {
     flex-direction: column;
   }
@@ -2276,7 +2281,6 @@ button:hover::after {
 @media (max-width: 768px) {
   .page-download .two-columns {
     width: 100%;
-    flex-direction: column-reverse;
   }
   .page-download .two-columns .column {
     max-width: 100%;
