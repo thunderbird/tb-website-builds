@@ -2230,6 +2230,14 @@ button:hover::after {
 .page-participate .styled-list {
   text-indent: -2.5rem;
 }
+.page-download .accordion {
+  margin-top: 1rem;
+  min-width: auto;
+}
+.page-download .download-button {
+  color: var(--txt);
+  text-align: center;
+}
 .page-download .channel-name.beta,
 .page-download .channel-name.daily {
   font-size: 70%;

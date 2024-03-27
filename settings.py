@@ -191,7 +191,7 @@ URL_MAPPINGS = {
     'thunderbird.donate.ways-to-give': '/donate#ways-to-give',
     'thunderbird.donate.ways-to-give.check': '/donate#ways-to-give-check',
     'thunderbird.donate.contact': '/donate/help',
-    'thunderbird.download': '/download',
+    'thunderbird.download': '/download',  # Doesn't exist anymore!
     'thunderbird.download-beta': '/download/beta',
     'thunderbird.download.thank-you': '/download/thank-you',
     'thunderbird.enterprise': 'https://wiki.mozilla.org/Thunderbird/tb-enterprise',
@@ -243,7 +243,8 @@ WEBSITE_JS = {
         'js/common/form.js', 'js/common/mozilla-client.js', 'js/common/mozilla-image-helper.js',
         'js/common/class-list-polyfill.js', 'js/common/mozilla-global-nav.js',
         'js/common/base-page-init.js', 'js/common/core-datalayer.js', 'js/common/core-datalayer-init.js',
-        'js/common/autodownload.js', 'js/common/donations.js', 'js/common/ab-testing.js', 'js/common/beta-appeal.js'
+        'js/common/autodownload.js', 'js/common/donations.js', 'js/common/ab-testing.js', 'js/common/beta-appeal.js',
+        'js/common/download.js',
     ],
     'site-bundle': [
         'js/base/site.js', 'js/base/dnt-helper.js', 'js/base/mozilla-cookie-helper.js',
