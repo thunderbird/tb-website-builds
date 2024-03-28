@@ -1513,9 +1513,6 @@ button:hover::after {
 .download-button ul li {
   margin-block: 40px;
 }
-.download-button {
-  margin: 2rem;
-}
 .download-button .btn-download {
   font-size: var(--font-lg);
   font-weight: 400;
