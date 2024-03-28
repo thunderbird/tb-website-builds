@@ -1748,13 +1748,13 @@ if (typeof Mozilla === 'undefined') {
       'linux64': 'Linux',
       'linux': 'Linux',
       'osx': 'MacOS',
-      'android': 'Android'
+      //'android': 'Android'
     };
 
     // Setup download link
     DownloadInfo.Update();
 
-    defaultOS = platformMap[platform];
+    defaultOS = platformMap[platform] ?? defaultOS;
 
     // Channel Selection calls OS Selection
     DownloadInfo.OnChannelSelection(channelSelect.value);
@@ -1800,6 +1800,10 @@ if (typeof Mozilla === 'undefined') {
    * @param os {string}
    */
   DownloadInfo.OnOSSelection = function(os) {
+    if (!os) {
+      DownloadInfo.ChangeSelection('[data-for-os]', `[data-for-os='Windows']`);
+      return;
+    }
     DownloadInfo.ChangeSelection('[data-for-os]', `[data-for-os=${os}]`);
   }
 

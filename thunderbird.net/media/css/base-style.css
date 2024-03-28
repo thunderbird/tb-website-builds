@@ -2241,6 +2241,7 @@ button:hover::after {
   min-width: auto;
 }
 .page-download .download-button {
+  margin-top: 5rem;
   color: var(--txt);
   text-align: center;
 }
@@ -2555,4 +2556,38 @@ button:hover::after {
   display: flex;
   gap: 0.5rem;
   flex-wrap: wrap;
+}
+.page-system-requirements .release-notes-container ul {
+  list-style: none;
+  margin-left: 0;
+  margin-bottom: 1.5rem;
+  text-indent: -1rem;
+  line-height: 30px;
+}
+.page-system-requirements .release-notes-container ul li {
+  margin-bottom: 0.5rem;
+}
+.page-system-requirements .release-notes-container ul li:before {
+  content: '●';
+  color: var(--accent);
+  margin-right: 0.75rem;
+}
+@media (max-width: 768px) {
+  .page-system-requirements .release-notes-container ul {
+    text-indent: -2.5rem;
+  }
+  .page-system-requirements .release-notes-container ul li:before {
+    margin-right: 1rem;
+  }
+}
+.page-system-requirements .release-notes-container li p {
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+.page-system-requirements .release-notes-container hr {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.page-system-requirements .section-text {
+  text-align: left;
 }
