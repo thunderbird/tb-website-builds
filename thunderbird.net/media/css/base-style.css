@@ -2238,6 +2238,9 @@ button:hover::after {
   color: var(--txt);
   text-align: center;
 }
+.page-download .download-button a::after {
+  background: none;
+}
 .page-download .channel-name.beta,
 .page-download .channel-name.daily {
   font-size: 70%;
