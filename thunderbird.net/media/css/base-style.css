@@ -1095,6 +1095,18 @@ section {
   margin: 0;
   font-size: 1rem;
 }
+@media (max-width: 768px) {
+  .newsletter-form {
+    display: flex;
+  }
+  .newsletter-form input {
+    width: 100%;
+  }
+  .newsletter-form button {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
 .btn-newsletter {
   position: relative;
   background: none;
