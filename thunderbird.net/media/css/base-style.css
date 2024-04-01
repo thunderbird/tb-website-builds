@@ -2254,12 +2254,12 @@ button:hover::after {
   margin-top: 1rem;
   min-width: auto;
 }
-.page-download .download-button {
+.page-download .download-button-page {
   margin-top: 5rem;
   color: var(--txt);
   text-align: center;
 }
-.page-download .download-button a::after {
+.page-download .download-button-page a::after {
   background: var(--color-white);
 }
 .page-download .channel-name.beta,
