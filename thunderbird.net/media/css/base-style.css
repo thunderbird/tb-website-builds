@@ -1352,8 +1352,11 @@ footer {
 .header-download .download-link.btn-download:after {
   background: transparent;
 }
+.header-donate {
+  margin-left: -1rem;
+}
 .header-donate a.btn {
-  padding: 0.5em 1em;
+  padding: 0.75em 1em;
 }
 .header-donate a.btn::after {
   background: transparent;
