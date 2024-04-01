@@ -2243,7 +2243,7 @@ button:hover::after {
   text-align: center;
 }
 .page-download .download-button a::after {
-  background: none;
+  background: var(--color-white);
 }
 .page-download .channel-name.beta,
 .page-download .channel-name.daily {
