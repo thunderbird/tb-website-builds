@@ -2452,6 +2452,9 @@ button:hover::after {
 .page-download .warning-panel a {
   color: var(--warning-links);
 }
+.page-release-notes {
+  --heading-spacing: 6rem;
+}
 .page-release-notes .accordion {
   width: 100%;
   min-width: auto;
@@ -2463,6 +2466,10 @@ button:hover::after {
 }
 .page-release-notes .release-notes-container {
   padding-top: 0;
+}
+.page-release-notes .release-group {
+  text-transform: capitalize;
+  margin-top: var(--heading-spacing);
 }
 .page-release-notes .release-text {
   text-align: left;
@@ -2504,7 +2511,7 @@ button:hover::after {
   }
 }
 .page-release-notes .header-section {
-  margin-top: 6rem;
+  margin-top: var(--heading-spacing);
   margin-bottom: 2rem;
 }
 .page-release-notes .header-section:first-child {
