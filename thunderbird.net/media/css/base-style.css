@@ -1353,6 +1353,7 @@ footer {
   background: transparent;
 }
 .header-donate {
+  margin-top: -0.05rem;
   margin-left: -1rem;
 }
 .header-donate a.btn {
