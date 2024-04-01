@@ -2251,8 +2251,15 @@ button:hover::after {
   display: none;
 }
 .page-download .accordion {
+  cursor: pointer;
   margin-top: 1rem;
   min-width: auto;
+}
+.page-download .accordion summary {
+  display: flex;
+}
+.page-download .accordion[open=""] .chevron {
+  transform: rotateZ(-90deg);
 }
 .page-download .download-button-page {
   margin-top: 5rem;
