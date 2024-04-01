@@ -1353,11 +1353,11 @@ footer {
   background: transparent;
 }
 .header-donate {
-  margin-top: -0.05rem;
   margin-left: -1rem;
 }
 .header-donate a.btn {
-  padding: 0.75em 1em;
+  padding: 0.72em 1em;
+  border-width: 2px;
 }
 .header-donate a.btn::after {
   background: transparent;
@@ -2476,7 +2476,7 @@ button:hover::after {
   margin-top: var(--heading-spacing);
 }
 .page-release-notes .release-text {
-  text-align: left;
+  text-align: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
@@ -2565,6 +2565,10 @@ button:hover::after {
 }
 .page-release-notes .note-bug-numbers a:last-child::after {
   content: '';
+}
+.page-release-notes .see-all-releases {
+  margin-top: 6rem;
+  font-size: var(--font-lg);
 }
 .page-releases .release-container {
   display: flex;
