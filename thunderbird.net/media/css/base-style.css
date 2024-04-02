@@ -2006,7 +2006,7 @@ button:hover::after {
   overflow: hidden;
 }
 .page-index #free-from-manipulation .container {
-  margin-bottom: 330px;
+  margin-bottom: 400px;
 }
 .page-index #free-from-manipulation .cta {
   margin-top: 1.5rem;
@@ -2015,13 +2015,17 @@ button:hover::after {
   position: absolute;
   inset: 0;
   z-index: -1;
+  max-width: 1900px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
 }
 .page-index .planet-thunderbird {
   position: absolute;
   inset-inline: 0;
   bottom: 0;
   filter: drop-shadow(0 0 50px var(--color-blue-20));
-  left: -11.5%;
+  left: -11.25%;
 }
 .page-index .planet-thunderbird picture,
 .page-index .planet-thunderbird img {
