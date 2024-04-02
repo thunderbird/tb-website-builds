@@ -1263,6 +1263,9 @@ footer {
 .header-donate svg {
   width: 1rem;
 }
+.btn-newsletter {
+  cursor: pointer;
+}
 .btn-donate,
 .btn-donate-lg,
 .btn-download-inline,
@@ -1418,6 +1421,18 @@ button:hover::after {
 .download-button .btn-download {
   font-size: var(--font-lg);
   font-weight: 400;
+}
+.btn-no-bg::after {
+  background: transparent;
+}
+.btn-white-bg::after {
+  background: var(--color-white);
+}
+.btn-white-bg:hover,
+.btn-no-bg:hover {
+  background: linear-gradient(white, white) padding-box, linear-gradient(to right, var(--color-blue-50), var(--color-purple-50)) border-box;
+  border-color: transparent;
+  transition: all 250ms;
 }
 .form-select {
   width: 100%;
