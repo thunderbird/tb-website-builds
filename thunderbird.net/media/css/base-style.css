@@ -1433,6 +1433,11 @@ button:hover::after {
   background: linear-gradient(white, white) padding-box, linear-gradient(to right, var(--color-blue-50), var(--color-purple-50)) border-box;
   border-color: transparent;
   transition: all 250ms;
+  color: black;
+}
+.btn-white-bg:hover::after,
+.btn-no-bg:hover::after {
+  opacity: 0.75;
 }
 .form-select {
   width: 100%;
@@ -1475,6 +1480,13 @@ button:hover::after {
 .site-nav button::before {
   display: none;
 }
+.page-index .btn-no-bg::after {
+  background-color: var(--hamburger-background-active);
+}
+.page-index .btn-no-bg:hover {
+  background: linear-gradient(var(--hamburger-foreground-active), var(--hamburger-foreground-active)) padding-box, linear-gradient(to right, var(--color-blue-50), var(--color-purple-50)) border-box;
+  color: var(--hamburger-background-active);
+}
 .scrolled-nav {
   --nav-height: 60px;
   border-color: rgba(255, 255, 255, 0.25);
@@ -1489,6 +1501,13 @@ button:hover::after {
   --hamburger-foreground-inactive: var(--nav-txt);
   margin: 0;
   transition: margin 0.2s;
+}
+.scrolled-nav .btn-no-bg::after {
+  background-color: var(--hamburger-background-active);
+}
+.scrolled-nav .btn-no-bg:hover {
+  background: linear-gradient(var(--hamburger-foreground-active), var(--hamburger-foreground-active)) padding-box, linear-gradient(to right, var(--color-blue-50), var(--color-purple-50)) border-box;
+  color: var(--hamburger-background-active);
 }
 .scrolled-nav .nav-ln,
 .scrolled-nav button,
