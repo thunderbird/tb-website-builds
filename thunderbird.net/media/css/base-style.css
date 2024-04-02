@@ -386,6 +386,11 @@ a {
   text-decoration: underline;
   transition: font-size 0.2s, text-decoration-color 0.2s;
 }
+a:focus-visible,
+a.focused {
+  outline: var(--focus-outline);
+  outline-offset: var(--focus-outline-offset);
+}
 a.dotted {
   text-decoration-line: underline;
   text-decoration-style: dotted;
@@ -1160,6 +1165,10 @@ footer {
   --border-radius: var(--border-radius-md);
   --border-color: #DEDEE0;
   --border-size: 1px;
+  outline: 1px dotted ButtonText;
+  --focus-outline-color: var(--color-blue-50);
+  --focus-outline-offset: 2px;
+  --focus-outline: 2px solid var(--focus-outline-color);
 }
 .accordion {
   position: relative;
@@ -1217,6 +1226,15 @@ footer {
   .accordion[open] summary ~ * {
     animation: none;
   }
+}
+.btn:focus-visible,
+.btn-download:focus-visible,
+[type="button"]:focus-visible,
+.btn.focused,
+.btn-download.focused,
+[type="button"].focused {
+  outline: var(--focus-outline);
+  outline-offset: var(--focus-outline-offset);
 }
 /* Remove some list padding */
 .download-dumb > ul {
@@ -1537,7 +1555,7 @@ button:hover::after {
   display: none;
   position: absolute;
   margin-left: -2rem;
-  min-width: 500px;
+  min-width: 470px;
 }
 .nav-links .nav-entry .popover-container .popover-panel {
   background-color: var(--bg);
@@ -1545,7 +1563,7 @@ button:hover::after {
   border-radius: var(--border-radius-lg);
   box-shadow: var(--shadow-2xl);
   margin: 1rem 1rem 1rem 0;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
 }
 @media (prefers-contrast: more) {
   .nav-links .nav-entry .popover-container .popover-panel {

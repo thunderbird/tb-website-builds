@@ -386,6 +386,11 @@ a {
   text-decoration: underline;
   transition: font-size 0.2s, text-decoration-color 0.2s;
 }
+a:focus-visible,
+a.focused {
+  outline: var(--focus-outline);
+  outline-offset: var(--focus-outline-offset);
+}
 a.dotted {
   text-decoration-line: underline;
   text-decoration-style: dotted;
