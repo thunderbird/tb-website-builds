@@ -866,9 +866,6 @@ section {
   max-width: none;
   bottom: -1px;
 }
-.cta {
-  margin-top: 80px;
-}
 .graphic {
   position: relative;
   isolation: isolate;
@@ -1004,32 +1001,6 @@ section {
   --set-y: 25%;
   animation-delay: 2s;
 }
-#free-from-manipulation {
-  background-image: linear-gradient(to top, color-mix(in srgb, var(--color-purple-10) 50%, transparent), transparent 20%);
-  background-position: bottom center;
-  background-repeat: no-repeat;
-  overflow: hidden;
-}
-.planets {
-  position: absolute;
-  inset: 0;
-  opacity: 0.3;
-  z-index: -1;
-}
-.planet-thunderbird {
-  position: absolute;
-  inset-inline: 0;
-  bottom: 0;
-  filter: drop-shadow(0 0 50px var(--color-blue-30));
-}
-.planet-firefox {
-  position: absolute;
-  right: 0;
-  bottom: 20%;
-  height: 280px;
-  width: 280px;
-  filter: drop-shadow(0 0 50px var(--color-orange-40));
-}
 .cta-sub-heading {
   font-family: 'Inter', sans-serif;
   font-size: 1.5rem;
@@ -1041,110 +1012,6 @@ section {
   font-weight: 900;
   line-height: 1.3;
   margin: 0;
-}
-#free-your-inbox .cta {
-  --btn-bg: color-mix(in srgb, var(--bg) 90%, transparent);
-  display: grid;
-  place-items: center;
-  gap: 9px;
-  margin: 0;
-}
-#free-your-inbox .mask {
-  --bg: black;
-}
-#whats-next {
-  background-color: black;
-  background-image: linear-gradient(to top, var(--color-ink-90), black 80%);
-  background-size: auto 80vh, 100%;
-  background-position: bottom center, center;
-  background-repeat: no-repeat;
-  color: var(--color-gray-20);
-  overflow: hidden;
-}
-#whats-next .container {
-  gap: 0;
-}
-#whats-next p {
-  margin-block: 0;
-  max-inline-size: 45ch;
-}
-.social-list {
-  display: flex;
-  gap: 24px;
-  justify-content: center;
-  margin-block: 60px;
-}
-.newsletter {
-  display: grid;
-  place-items: center;
-  margin: 0;
-}
-.newsletter-form {
-  border: 2px solid currentColor;
-  border-radius: 6px;
-  max-width: 100%;
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
-}
-.newsletter-form input {
-  background: none;
-  border: none;
-  color: currentColor;
-  padding: 0.75rem 1rem;
-  margin: 0;
-  font-size: 1rem;
-}
-@media (max-width: 768px) {
-  .newsletter-form {
-    display: flex;
-  }
-  .newsletter-form input {
-    width: 100%;
-  }
-  .newsletter-form button {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-}
-.btn-newsletter {
-  position: relative;
-  background: none;
-  border: none;
-  border-radius: 0;
-  border-inline-start: 2px solid currentColor;
-  padding: 0.75rem 2.5rem;
-  margin: 0;
-  font-size: 1rem;
-}
-.btn-newsletter::after {
-  content: '';
-  position: absolute;
-  background-color: transparent;
-  background-image: radial-gradient(circle, var(--accent), var(--color-purple-60) 20%);
-  background-size: 0;
-  background-position: center;
-  opacity: 0;
-  inset: 0;
-  z-index: 0;
-  transition: all 0.3s;
-}
-.btn-newsletter:hover::after {
-  opacity: 0.25;
-  background-size: 800%;
-}
-.btn-newsletter-icon {
-  display: none;
-  padding: 0.75em 1em;
-}
-.social-list a {
-  text-decoration: none;
-}
-.phone {
-  max-width: calc(100vw - 2rem);
-  width: 500px;
-  margin-inline: auto;
-  margin-block: -125px -650px;
 }
 footer {
   background-color: black;
@@ -1924,6 +1791,103 @@ button:hover::after {
   align-self: start;
   font-size: 0.9rem;
 }
+#whats-next {
+  background-color: black;
+  background-image: linear-gradient(to top, var(--color-ink-90), black 80%);
+  background-size: auto 80vh, 100%;
+  background-position: bottom center, center;
+  background-repeat: no-repeat;
+  color: var(--color-gray-20);
+  overflow: hidden;
+}
+#whats-next .cta {
+  margin-top: 80px;
+}
+#whats-next .container {
+  gap: 0;
+}
+#whats-next p {
+  margin-block: 0;
+  max-inline-size: 45ch;
+}
+#whats-next .social-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-block: 60px;
+}
+#whats-next .newsletter {
+  display: grid;
+  place-items: center;
+  margin: 0;
+}
+#whats-next .newsletter-form {
+  border: 2px solid currentColor;
+  border-radius: 6px;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+#whats-next .newsletter-form input {
+  background: none;
+  border: none;
+  color: currentColor;
+  padding: 0.75rem 1rem;
+  margin: 0;
+  font-size: 1rem;
+}
+@media (max-width: 768px) {
+  #whats-next .newsletter-form {
+    display: flex;
+  }
+  #whats-next .newsletter-form input {
+    width: 100%;
+  }
+  #whats-next .newsletter-form button {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+#whats-next .btn-newsletter {
+  position: relative;
+  background: none;
+  border: none;
+  border-radius: 0;
+  border-inline-start: 2px solid currentColor;
+  padding: 0.75rem 2.5rem;
+  margin: 0;
+  font-size: 1rem;
+}
+#whats-next .btn-newsletter::after {
+  content: '';
+  position: absolute;
+  background-color: transparent;
+  background-image: radial-gradient(circle, var(--accent), var(--color-purple-60) 20%);
+  background-size: 0;
+  background-position: center;
+  opacity: 0;
+  inset: 0;
+  z-index: 0;
+  transition: all 0.3s;
+}
+#whats-next .btn-newsletter:hover::after {
+  opacity: 0.25;
+  background-size: 800%;
+}
+#whats-next .btn-newsletter-icon {
+  display: none;
+  padding: 0.75em 1em;
+}
+#whats-next .social-list a {
+  text-decoration: none;
+}
+#whats-next .phone {
+  max-width: calc(100vw - 2rem);
+  width: 500px;
+  margin-inline: auto;
+  margin-block: -125px -650px;
+}
 .page-donations .image {
   padding: 6rem;
 }
@@ -1989,16 +1953,6 @@ button:hover::after {
   text-align: center;
   margin-bottom: 1rem;
 }
-.page-index {
-  /*
-  .section-text :where(h3) {
-    font-size: 1.4rem;
-    font-weight: 300;
-    margin: 0;
-    margin-bottom: 2em;
-  }
-*/
-}
 .page-index #masthead,
 .page-index header {
   display: grid;
@@ -2043,6 +1997,68 @@ button:hover::after {
 @media (max-width: 1024px) {
   .page-index .testimonials {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+.page-index #free-from-manipulation {
+  background-image: linear-gradient(to top, color-mix(in srgb, var(--color-purple-10) 50%, transparent), transparent 20%);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.page-index #free-from-manipulation .container {
+  margin-bottom: 330px;
+}
+.page-index #free-from-manipulation .cta {
+  margin-top: 1.5rem;
+}
+.page-index .planets {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+.page-index .planet-thunderbird {
+  position: absolute;
+  inset-inline: 0;
+  bottom: 0;
+  filter: drop-shadow(0 0 50px var(--color-blue-20));
+  left: -11.5%;
+}
+.page-index .planet-thunderbird picture,
+.page-index .planet-thunderbird img {
+  max-width: 110%;
+  width: 110%;
+}
+.page-index .planet-firefox {
+  position: absolute;
+  right: 7%;
+  bottom: 25%;
+  height: 200px;
+  width: 200px;
+  filter: drop-shadow(0 0 50px var(--color-orange-30));
+}
+.page-index #free-your-inbox .cta {
+  --btn-bg: color-mix(in srgb, var(--bg) 90%, transparent);
+  display: grid;
+  place-items: center;
+  gap: 9px;
+}
+.page-index #free-your-inbox .mask {
+  --bg: black;
+}
+@media (max-width: 768px) {
+  .page-index #free-from-manipulation .container {
+    margin-bottom: 100px;
+  }
+  .page-index .planet-thunderbird {
+    margin-bottom: -10px;
+  }
+  .page-index .planet-firefox {
+    display: none;
+  }
+}
+@media (max-width: 640px) {
+  .page-index #free-from-manipulation .container {
+    margin-bottom: 50px;
   }
 }
 .page-who-we-are .icon-grid-container {
