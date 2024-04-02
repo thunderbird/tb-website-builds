@@ -2678,6 +2678,22 @@ button:hover::after {
   margin-top: 6rem;
   font-size: var(--font-lg);
 }
+@media (max-width: 768px) {
+  .page-release-notes code {
+    line-break: anywhere;
+  }
+  .page-release-notes .section-text.wide {
+    padding: 0;
+    max-inline-size: none;
+    width: 100%;
+  }
+  .page-release-notes .note-flex {
+    flex-direction: column;
+  }
+  .page-release-notes .category-icon {
+    display: none;
+  }
+}
 .page-releases .release-container {
   display: flex;
   flex-direction: row;
