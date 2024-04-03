@@ -566,7 +566,7 @@ header .breadcrumbs {
 #masthead .tagline,
 header .tagline {
   margin-top: 1rem;
-  font-size: 4rem;
+  font-size: 5rem;
 }
 @media (max-width: 768px) {
   #masthead,
@@ -814,16 +814,6 @@ section {
   position: relative;
   text-align: center;
   scroll-padding: var(--nav-size);
-}
-.container.hero {
-  padding-block: 10vh 40vh;
-}
-.hero-text {
-  font-size: 1.5rem;
-  font-weight: 300;
-  text-align: center;
-  line-height: 1.4;
-  max-inline-size: 50.5rem;
 }
 .tagline {
   font-size: 6rem;
@@ -1144,6 +1134,7 @@ footer {
 }
  */
 .small-link {
+  font-weight: 400;
   font-size: 80%;
 }
 :root {
@@ -1952,6 +1943,15 @@ button:hover::after {
   margin-inline: auto;
   margin-block: -125px -650px;
 }
+.site-announcement {
+  position: absolute;
+  top: 0;
+  height: 32px;
+  width: 100%;
+  background-color: var(--color-blue-80);
+  color: var(--accent);
+  text-align: center;
+}
 .page-donations .image {
   padding: 6rem;
 }
@@ -2034,6 +2034,24 @@ button:hover::after {
   color: var(--color-gray-20);
   padding-top: var(--nav-size);
   isolation: isolate;
+}
+.page-index .container.hero {
+  padding-block: 25vh 40vh;
+  gap: 20px;
+}
+.page-index .tagline {
+  font-weight: 800;
+  margin-bottom: 0;
+}
+.page-index .hero-text {
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.4;
+  max-inline-size: 50.5rem;
+}
+.page-index .hero-text .sub-tag {
+  max-inline-size: 38rem;
 }
 .page-index .logo {
   --accent: var(--color-blue-20);
