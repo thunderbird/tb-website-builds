@@ -415,7 +415,7 @@ a.strong::after {
   background-image: var(--bg-img);
   content: '';
   margin-left: 0.5rem;
-  background-color: var(--color-ink-50);
+  background-color: var(--color-blue-50);
   mask-image: var(--bg-img);
   mask-repeat: no-repeat;
   -webkit-mask-image: var(--bg-img);
