@@ -578,6 +578,10 @@ header .tagline {
   header {
     min-height: 300px;
   }
+  #masthead .tagline,
+  header .tagline {
+    font-size: 4rem;
+  }
 }
 .logo {
   max-height: 100%;
@@ -1890,11 +1894,6 @@ button:hover::after {
 .page-index .section-text {
   max-inline-size: 50%;
 }
-@media (max-width: 768px) {
-  .page-index .section-text {
-    max-inline-size: 100%;
-  }
-}
 .page-index .section-heading {
   font-size: 2.75rem;
   font-weight: 800;
@@ -2077,6 +2076,12 @@ button:hover::after {
   animation-delay: 2s;
 }
 @media (max-width: 768px) {
+  .page-index .section-text {
+    max-inline-size: 100%;
+  }
+  .page-index #free-your-inbox .section-text {
+    max-inline-size: 100%;
+  }
   .page-index #free-from-manipulation .container {
     margin-bottom: 100px;
   }
