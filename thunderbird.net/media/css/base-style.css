@@ -971,7 +971,7 @@ footer {
   width: 100%;
   min-width: 900px;
   min-height: 16px;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   text-align: left;
 }
 .accordion span {
@@ -1003,7 +1003,7 @@ footer {
   position: absolute;
   margin: auto auto;
   right: 0;
-  padding-right: 0.5rem;
+  padding-right: 1rem;
   content: url("/media/svg/zoom-out.svg");
 }
 .accordion[open] .question::after {
