@@ -1945,6 +1945,7 @@ button:hover::after {
 }
 .page-index #free-your-inbox .mask {
   --bg: black;
+  filter: none;
 }
 .page-index #free-your-inbox .section-text {
   max-inline-size: 60%;
