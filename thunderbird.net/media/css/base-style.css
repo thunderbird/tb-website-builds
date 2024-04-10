@@ -425,9 +425,6 @@ a:hover,
 a:hover:visited {
   text-decoration-color: var(--accent);
 }
-a:visited {
-  text-decoration-color: var(--color-purple-50);
-}
 /*-------------------------
 * Media Queries
 *--------------------------*/
