@@ -1692,6 +1692,9 @@ button:hover::after {
   margin: 0;
   overflow: hidden;
 }
+#whats-next .btn-newsletter-text {
+  font-weight: 600;
+}
 #whats-next .newsletter-form input {
   background: none;
   border: none;
