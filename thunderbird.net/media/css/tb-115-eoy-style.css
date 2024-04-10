@@ -406,7 +406,6 @@ a.strong::after {
   --bg-img: url('/media/svg/chevron-right.svg');
   position: relative;
   top: 0.17rem;
-  left: -0.25rem;
   display: inline-block;
   width: 1rem;
   height: 1rem;

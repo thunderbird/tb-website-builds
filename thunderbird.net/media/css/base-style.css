@@ -406,7 +406,6 @@ a.strong::after {
   --bg-img: url('/media/svg/chevron-right.svg');
   position: relative;
   top: 0.17rem;
-  left: -0.25rem;
   display: inline-block;
   width: 1rem;
   height: 1rem;
@@ -526,6 +525,21 @@ a:visited {
   --font-4xl: 41px;
   --font-hero: 59px;
 }
+.section-text :where(h2) {
+  font-size: 2.75rem;
+  font-weight: 800;
+  margin-bottom: 0;
+}
+.section-text :where(h3) {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.section-text :where(h4) {
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin: 0 0 1em;
+}
 .header-separator {
   position: absolute;
   bottom: 0;
@@ -638,21 +652,6 @@ header .tagline {
   .section-text.wide {
     max-inline-size: 90%;
   }
-}
-.section-text :where(h1) {
-  font-size: 2.5rem;
-  font-weight: 800;
-  margin-bottom: 0;
-}
-.section-text :where(h2) {
-  font-size: 2rem;
-  font-weight: 600;
-  margin: 0;
-}
-.section-text :where(h3) {
-  font-size: 1.25rem;
-  font-weight: 400;
-  margin: 0 0 1em;
 }
 .styled-list {
   list-style: none;
@@ -1786,10 +1785,6 @@ button:hover::after {
     width: 100%;
   }
 }
-.page-donations .section-text {
-  margin: auto;
-  min-width: 50%;
-}
 .page-donations .two-columns {
   display: flex;
   flex-direction: row;
@@ -1820,6 +1815,7 @@ button:hover::after {
   justify-content: center;
   align-items: center;
   text-align: center;
+  min-width: 50%;
   min-height: 480px;
 }
 .page-donations .two-columns .donation-column iframe {
@@ -1837,7 +1833,7 @@ button:hover::after {
   font-size: var(--font-sm);
   width: 100%;
 }
-.page-donations .faq h1 {
+.page-donations .faq h2 {
   text-align: center;
   margin-bottom: 1rem;
 }
@@ -1891,14 +1887,6 @@ button:hover::after {
   --hamburger-background-active: var(--color-white);
   --hamburger-foreground-active: var(--color-black);
 }
-.page-index .section-text {
-  max-inline-size: 50%;
-}
-.page-index .section-heading {
-  font-size: 2.75rem;
-  font-weight: 800;
-  margin: 0;
-}
 @media (max-width: 1024px) {
   .page-index .testimonials {
     grid-template-columns: repeat(3, 1fr);
@@ -1944,6 +1932,10 @@ button:hover::after {
   height: 200px;
   width: 200px;
   filter: drop-shadow(0 0 50px var(--color-orange-30));
+}
+.page-index #free-your-inbox {
+  padding-top: 10px;
+  padding-bottom: 30px;
 }
 .page-index #free-your-inbox .cta {
   --btn-bg: color-mix(in srgb, var(--bg) 90%, transparent);
@@ -2096,6 +2088,9 @@ button:hover::after {
   .page-index #free-from-manipulation .container {
     margin-bottom: 50px;
   }
+}
+.page-who-we-are #meet-thunderbird .section-text {
+  margin-bottom: 0;
 }
 .page-who-we-are .icon-grid-container {
   width: 100%;
