@@ -742,6 +742,11 @@ h2 {
   font-family: 'Metropolis', sans-serif;
   font-weight: 600;
 }
+.os-list {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
 .icon {
   display: inline-block;
   height: 32px;
@@ -1215,11 +1220,17 @@ button:hover::after {
   list-style: none;
 }
 .download-button ul li {
+  margin-block: 20px;
+}
+.download-dumb ul li {
   margin-block: 40px;
+}
+.all-downloads-link {
+  margin-bottom: 60px;
 }
 .download-button .btn-download {
   font-size: var(--font-lg);
-  font-weight: 400;
+  font-weight: 600;
 }
 .btn-no-bg {
   --btn-background-color: var(--color-white);
