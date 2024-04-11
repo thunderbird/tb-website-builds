@@ -1010,11 +1010,10 @@ footer {
   content: url("/media/svg/zoom-in.svg");
 }
 .accordion .answer {
+  padding-left: 1rem;
+  padding-right: 1rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
-}
-.accordion .answer p {
-  padding: 1rem;
 }
 .accordion .answer br {
   margin-bottom: 1rem;
