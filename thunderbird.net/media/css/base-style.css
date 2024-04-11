@@ -2531,6 +2531,7 @@ button:hover::after {
 }
 .page-release-notes {
   --heading-spacing: 6rem;
+  --line-height: 30px;
 }
 .page-release-notes .accordion {
   width: 100%;
@@ -2555,6 +2556,9 @@ button:hover::after {
 }
 .page-release-notes .release-text li {
   list-style: none;
+}
+.page-release-notes .release-text ul {
+  padding: 0;
 }
 .page-release-notes .system-requirements ul {
   list-style: none;
@@ -2607,8 +2611,11 @@ button:hover::after {
 }
 .page-release-notes .note-category {
   margin: 0 1rem 0 0;
+  line-height: var(--line-height);
 }
 .page-release-notes .note-category .category-icon {
+  display: flex;
+  align-items: center;
   width: 1.5rem;
   color: var(--color-blue-70);
 }
@@ -2616,10 +2623,14 @@ button:hover::after {
   display: flex;
   gap: 0.5rem;
   text-transform: capitalize;
+  font-weight: 700;
+  align-items: center;
+  font-size: 16px;
 }
 .page-release-notes .note-text {
   text-align: left;
   font-weight: 500;
+  line-height: var(--line-height);
 }
 .page-release-notes .note-text p {
   margin: 0;
@@ -2718,8 +2729,12 @@ button:hover::after {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+.page-system-requirements .section-heading {
+  text-align: center;
+}
 .page-system-requirements .section-text {
   text-align: left;
+  margin-bottom: 200px;
 }
 .page-newsletter .header-separator {
   background-color: var(--color-black);
