@@ -1266,6 +1266,15 @@ button:hover::after {
   background-position: calc(100% - 0.5rem);
   background-repeat: no-repeat;
 }
+#lang_form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+}
+#lang_form .form-select {
+  font-size: 0.9rem;
+}
 .site-nav {
   --hamburger-background-inactive: var(--color-white);
   --hamburger-foreground-inactive: var(--color-black);
@@ -1334,15 +1343,6 @@ button:hover::after {
 .scrolled-nav .btn-no-bg:hover {
   background: linear-gradient(var(--btn-background-color), var(--btn-background-color)) padding-box, linear-gradient(to right, var(--color-blue-50), var(--color-purple-50)) border-box;
   color: currentColor;
-}
-.scrolled-nav .nav-ln,
-.scrolled-nav button,
-.scrolled-nav a.btn {
-  transition: font-size 0.2s;
-  font-size: 1rem;
-}
-.scrolled-nav .nav-ln:hover {
-  font-size: 1rem;
 }
 .nav-container {
   display: flex;
