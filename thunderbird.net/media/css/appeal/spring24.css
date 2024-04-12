@@ -183,7 +183,9 @@
   --color-appeal-bg: #82C3F5;
   --color-appeal-main-bg: var(--color-white);
   --color-footer-txt: #105BBC;
+  --color-legal-txt: var(--color-ink-70);
 
+  --bg-appeal-glow: linear-gradient(129.83deg, #00FFFF 0%, #DB00FF 100%) !important;
   --bg2: var(--color-appeal-main-bg);
   --bg: var(--color-appeal-bg);
   --txt: var(--color-appeal-txt);
@@ -198,6 +200,7 @@
     --color-appeal-txt: #F2F7FC;
     --color-appeal-main-bg: #2C343E;
     --color-footer-txt: #89BCFF;
+    --color-legal-txt: var(--color-white);
 
     --shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
   }
@@ -290,13 +293,16 @@ section {
   font-weight: 400;
 }
 
+#appeal-body strong {
+  font-weight: 600;
+}
+
 main {
   padding: 1em;
   margin: 0 auto;
   max-width: 800px;
   position: relative;
 }
-
 
 .accent-text {
   color: var(--accent-text);
@@ -624,7 +630,7 @@ main {
 }
 
 .letter-container {
-  padding: 60px;
+  padding: 60px 60px 30px;
   background: var(--bg2);
   border-radius: 6px;
   box-shadow: var(--shadow);
@@ -635,7 +641,7 @@ main {
 .letter-container:before {
   content: '';
   position: absolute;
-  background: linear-gradient(129.83deg, #00FFFF 0%, #DB00FF 100%) !important;
+  background: var(--bg-appeal-glow);
   inset: -4px;
   border-radius: 12px;
   filter: blur(64px);
@@ -712,11 +718,88 @@ main {
   border-top: 1px solid var(--color-blue-40);
 }
 
+#footer {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 400;
+  width: 100%;
+}
+
+/* Here until the new design is merged */
+#footer.container {
+  position: relative;
+  display: grid;
+  gap: 60px;
+  padding-inline: 1rem;
+  margin-inline: auto;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+#footer.container.footer {
+  place-items: center;
+  padding-inline: 1rem;
+  padding-block: 1.25rem;
+}
+
+#footer a {
+  color: var(--color-legal-txt);
+  text-decoration-color: var(--color-legal-txt);
+  text-underline-offset: 0.25em;
+  text-decoration-thickness: .12em;
+  text-decoration-style: solid;
+  transition: font-size .2s,
+              text-decoration-color .2s;
+}
+
+#footer a.donate,
+#footer a:hover,
+#footer a:hover:visited {
+  text-decoration-color: var(--accent);
+}
+
+#footer a:visited {
+  text-decoration-color: var(--color-purple-50);
+}
+
+#footer .mzla {
+  display: grid;
+  place-items: center;
+  gap: 15px;
+  text-align: center;
+  max-inline-size: 75ch;
+}
+
+#footer .mozilla-logo {
+  --accent: white;
+  max-width: 200px;
+}
+
+#footer .site-links,
+#footer .legal-links {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#footer .legal-links {
+  font-size: 1rem;
+}
+
 /*
  * Media Queries
  */
 
+@media (max-width: 512px) {
+  #footer.container {
+    padding-inline: 0.25rem;
+    padding-block: 32px;
+  }
+}
+
 @media (max-width: 600px) {
+
   main {
     padding: 0;
   }
