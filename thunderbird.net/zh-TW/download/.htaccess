@@ -1,2 +1,3 @@
-RewriteEngine On
+Rewrite Engine On
+RewriteCond %{REQUEST_URI} !^thank-you
 RewriteRule .* https://www.thunderbird.net
