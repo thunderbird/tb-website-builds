@@ -511,16 +511,17 @@ a:hover:visited {
   --shadow-none: none;
 }
 :root {
-  --font-base: 13px;
-  --font-xs: 9px;
-  --font-sm: 11px;
-  --font-regular: 12px;
-  --font-md: 15px;
-  --font-lg: 19px;
-  --font-2xl: 21px;
-  --font-3xl: 25px;
-  --font-4xl: 41px;
-  --font-hero: 59px;
+  --font-base: 0.8125rem;
+  --font-xs: 0.5625rem;
+  --font-sm: 0.6875rem;
+  --font-regular: 0.75rem;
+  --font-md: 1rem;
+  --font-lg: 1.1875rem;
+  --font-2xl: 1.3125rem;
+  --font-3xl: 1.5625rem;
+  --font-4xl: 2.5625rem;
+  --font-hero: 3.6875rem;
+  --font-body: 1.125rem;
 }
 .section-text :where(h2) {
   font-size: 2.75rem;
@@ -568,7 +569,7 @@ a:hover:visited {
 header {
   display: flex;
   flex-direction: column;
-  min-height: 200px;
+  min-height: 12.5rem;
   background-color: var(--page-header-bg);
   color: var(--txt);
   padding-top: calc(var(--nav-height) * 2);
@@ -584,7 +585,7 @@ header .tagline {
   margin-top: 1rem;
   font-size: 5rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   #masthead,
   header {
     min-height: 300px;
@@ -620,7 +621,7 @@ header .tagline {
 .container.no-gap {
   gap: 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .container {
     width: calc(100% - 1rem);
     box-sizing: border-box;
@@ -631,7 +632,7 @@ header .tagline {
   margin-inline: auto;
   margin-bottom: 2em;
   font-weight: 400;
-  font-size: 16px;
+  font-size: var(--font-md);
 }
 .section-text.tight {
   max-inline-size: 42%;
@@ -639,7 +640,7 @@ header .tagline {
 .section-text.wide {
   max-inline-size: 70%;
 }
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .section-text {
     max-inline-size: 90%;
     margin-inline: unset;
@@ -665,7 +666,7 @@ header .tagline {
   color: var(--accent);
   margin-right: 0.75rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .styled-list {
     text-indent: -2.5rem;
   }
@@ -703,7 +704,7 @@ header .tagline {
 .site-links .site-link-section:nth-child(2) {
   grid-area: b;
 }
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .site-links {
     display: flex;
     flex-direction: column;
@@ -725,7 +726,7 @@ img {
   max-width: 100%;
 }
 body {
-  font-size: 18px;
+  font-size: var(--font-body);
   line-height: 1.5;
   font-weight: 300;
   background: var(--bg);
@@ -955,13 +956,13 @@ footer {
   --separator-color: var(--color-gray-20);
   --nav-bg: transparent;
   --nav-txt: white;
-  --nav-height: 80px;
+  --nav-height: 5rem;
   --offset-x: 0;
   --offset-y: 0;
   --page-header-bg: #f2f2f2;
-  --border-radius-sm: 3px;
-  --border-radius-md: 6px;
-  --border-radius-lg: 12px;
+  --border-radius-sm: 0.1875rem;
+  --border-radius-md: 0.375rem;
+  --border-radius-lg: 0.75rem;
   --border-radius-circle: 100%;
   --border-radius: var(--border-radius-md);
   --border-color: #DEDEE0;
@@ -984,7 +985,7 @@ footer {
   align-content: center;
   margin-right: 0.5rem;
 }
-@media (max-width: 1280px) {
+@media (max-width: 80rem) {
   .accordion {
     min-width: 100%;
   }
@@ -1059,7 +1060,7 @@ footer {
 }
 .header-donate a.btn {
   padding: 0.72em 1em;
-  border-width: 2px;
+  border-width: 0.125rem;
 }
 .header-donate a.btn::after {
   background: transparent;
@@ -1079,7 +1080,7 @@ a.btn,
 button {
   font-size: 1rem;
   background: var(--btn-bg, transparent);
-  border-radius: 6px;
+  border-radius: 0.375rem;
   border: 0.12em solid currentColor;
   color: currentColor;
   padding: 0.5em 3em;
@@ -1129,7 +1130,7 @@ button:hover::after {
 /** HACK for Mozilla Firefox */
 @-moz-document url-prefix() {
   .download-link.btn-download::after {
-    inset-inline-end: 4px;
+    inset-inline-end: 0.25rem;
   }
 }
 .download-button .ios-download,
@@ -1181,7 +1182,7 @@ button:hover::after {
 .oldwin .download-button .unsupported-download,
 .oldmac .download-button .unsupported-download {
   display: block;
-  max-width: 250px;
+  max-width: 15.625rem;
 }
 .windows.arm .download-button .fx-privacy-link,
 .linux.arm .download-button .fx-privacy-link,
@@ -1220,13 +1221,13 @@ button:hover::after {
   list-style: none;
 }
 .download-button ul li {
-  margin-block: 20px;
+  margin-block: 1.25rem;
 }
 .download-dumb ul li {
-  margin-block: 40px;
+  margin-block: 2.5rem;
 }
 .all-downloads-link {
-  margin-bottom: 60px;
+  margin-bottom: 3.75rem;
 }
 .download-button .btn-download {
   font-size: var(--font-lg);
@@ -1320,7 +1321,7 @@ button:hover::after {
   color: currentColor;
 }
 .scrolled-nav {
-  --nav-height: 60px;
+  --nav-height: 3.75rem;
   border-color: rgba(255, 255, 255, 0.25);
   box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.25);
   background-color: rgba(0, 0, 0, 0.8);
@@ -1364,7 +1365,7 @@ button:hover::after {
 .hamburger-btn::after {
   background: var(--hamburger-background-inactive) none;
 }
-@media (max-width: 1024px) {
+@media (max-width: 64rem) {
   .hamburger-btn {
     display: block;
   }
@@ -1468,7 +1469,7 @@ button:hover::after {
 .nav-links .nav-entry:focus-within .popover-container {
   display: block;
 }
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   .nav-links .nav-entry:hover .popover-container {
     display: block;
   }
@@ -1490,7 +1491,7 @@ button:hover::after {
 .nav-links .nav-ln:has(+ .popover-container:focus-within)::after {
   width: 100%;
 }
-@media (max-width: 1024px) {
+@media (max-width: 64rem) {
   .nav-links {
     display: none;
     position: absolute;
@@ -1556,7 +1557,7 @@ button:hover::after {
 .always-show-for-nojs-on-mobile {
   display: none;
 }
-@media (max-width: 1024px) {
+@media (max-width: 64rem) {
   .always-show-for-nojs-on-mobile {
     position: relative;
     display: flex;
@@ -1570,7 +1571,7 @@ button:hover::after {
     width: 100%;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 64rem) {
   .no-js .hamburger-btn {
     display: none;
   }
@@ -1585,12 +1586,12 @@ button:hover::after {
   max-width: 1000px;
   text-align: left;
 }
-@media (max-width: 1024px) {
+@media (max-width: 64rem) {
   .testimonials {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .testimonials {
     display: flex;
     flex-direction: column;
@@ -1616,7 +1617,7 @@ button:hover::after {
   grid-row: span 2;
   background-image: linear-gradient(to left, var(--accent), transparent 90%);
 }
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .testimonials .card-lg {
     display: flex;
   }
@@ -1638,7 +1639,7 @@ button:hover::after {
   overflow: hidden;
   width: 200%;
 }
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .testimonials .visual {
     display: none;
   }
@@ -1677,7 +1678,7 @@ button:hover::after {
 }
 #whats-next {
   background-color: black;
-  background-image: linear-gradient(to top, var(--color-ink-90), black 37rem);
+  background-image: linear-gradient(to top, var(--color-ink-90), black 600px);
   background-size: auto 80vh, 100%;
   background-position: bottom center, center;
   background-repeat: no-repeat;
@@ -1685,7 +1686,7 @@ button:hover::after {
   overflow: hidden;
 }
 #whats-next .cta {
-  margin-top: 80px;
+  margin-top: 5rem;
 }
 #whats-next .container {
   gap: 0;
@@ -1696,9 +1697,9 @@ button:hover::after {
 }
 #whats-next .social-list {
   display: flex;
-  gap: 24px;
+  gap: 1.5rem;
   justify-content: center;
-  margin-block: 60px;
+  margin-block: 3.75rem;
 }
 #whats-next .newsletter {
   display: grid;
@@ -1706,8 +1707,8 @@ button:hover::after {
   margin: 0;
 }
 #whats-next .newsletter-form {
-  border: 2px solid currentColor;
-  border-radius: 6px;
+  border: 0.125rem solid currentColor;
+  border-radius: 0.375rem;
   max-width: 100%;
   padding: 0;
   margin: 0;
@@ -1724,7 +1725,7 @@ button:hover::after {
   margin: 0;
   font-size: 1rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   #whats-next .newsletter-form {
     display: flex;
   }
@@ -1771,12 +1772,12 @@ button:hover::after {
 }
 #whats-next .phone {
   max-width: calc(100vw - 2rem);
-  width: 500px;
+  width: 31.25rem;
   margin-inline: auto;
-  margin-block: -125px -650px;
+  margin-block: -7.8125rem -40.625rem;
 }
 :root {
-  --site-announcement-height: 42px;
+  --site-announcement-height: 2.625rem;
 }
 .site-announcement {
   display: flex;
@@ -1802,7 +1803,7 @@ button:hover::after {
 .page-donations .image {
   padding: 6rem;
 }
-@media (max-width: 1024px) {
+@media (max-width: 64rem) {
   .page-donations .image {
     order: -1;
     padding: 0;
@@ -1815,7 +1816,7 @@ button:hover::after {
   gap: 2rem;
   margin: auto;
 }
-@media (max-width: 1024px) {
+@media (max-width: 64rem) {
   .page-donations .two-columns {
     flex-direction: column;
     margin: 0;
@@ -1911,7 +1912,7 @@ button:hover::after {
   --hamburger-background-active: var(--color-white);
   --hamburger-foreground-active: var(--color-black);
 }
-@media (max-width: 1024px) {
+@media (max-width: 64rem) {
   .page-index .testimonials {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -2092,7 +2093,7 @@ button:hover::after {
   --set-y: 25%;
   animation-delay: 2s;
 }
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .page-index .section-text {
     max-inline-size: 100%;
   }
@@ -2109,7 +2110,7 @@ button:hover::after {
     display: none;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 40rem) {
   .page-index #free-from-manipulation .container {
     margin-bottom: 50px;
   }
@@ -2129,7 +2130,7 @@ button:hover::after {
   flex-direction: row;
   margin: auto;
 }
-@media (max-width: 1024px) {
+@media (max-width: 64rem) {
   .page-who-we-are .icon-grid {
     width: 100%;
     gap: 4rem;
@@ -2157,7 +2158,7 @@ button:hover::after {
   margin-left: 10rem;
   max-width: 300px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 64rem) {
   .page-who-we-are .value-section {
     flex-direction: column;
     width: 100%;
@@ -2176,7 +2177,7 @@ button:hover::after {
   margin-left: 0;
   margin-right: 10rem;
 }
-@media (max-width: 1024px) {
+@media (max-width: 64rem) {
   .page-who-we-are .values-freedom {
     flex-direction: column;
     width: 100%;
@@ -2216,7 +2217,7 @@ button:hover::after {
   gap: 1.5rem;
   margin-bottom: 200px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 64rem) {
   .page-contact-us .block-grid {
     padding: 1rem;
   }
@@ -2230,7 +2231,7 @@ button:hover::after {
   width: 20rem;
   text-align: left;
 }
-@media (max-width: 1024px) {
+@media (max-width: 64rem) {
   .page-contact-us .block {
     width: 100%;
   }
@@ -2256,7 +2257,7 @@ button:hover::after {
   align-content: center;
   margin-right: 0.5rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .page-participate .accordion {
     width: 100%;
   }
@@ -2273,7 +2274,7 @@ button:hover::after {
 .page-participate .two-columns div:first-child {
   margin-left: 5rem;
 }
-@media (max-width: 1024px) {
+@media (max-width: 64rem) {
   .page-participate .two-columns div:first-child {
     margin: 0;
   }
@@ -2281,7 +2282,7 @@ button:hover::after {
 .page-participate .two-columns div:nth-child(2) {
   margin-right: 5rem;
 }
-@media (max-width: 1024px) {
+@media (max-width: 64rem) {
   .page-participate .two-columns div:nth-child(2) {
     margin: 0;
   }
@@ -2290,7 +2291,7 @@ button:hover::after {
   text-align: left;
   max-width: 500px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 64rem) {
   .page-participate .two-columns {
     flex-direction: column-reverse;
   }
@@ -2311,7 +2312,7 @@ button:hover::after {
 .page-participate .three-columns a {
   text-decoration-style: dotted;
 }
-@media (max-width: 640px) {
+@media (max-width: 40rem) {
   .page-participate .three-columns {
     gap: 1rem;
   }
@@ -2378,12 +2379,12 @@ button:hover::after {
 .page-download .two-columns .column .section-text p {
   margin-top: 0;
 }
-@media (max-width: 1024px) {
+@media (max-width: 64rem) {
   .page-download .two-columns .column .section-text {
     padding: 0;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 64rem) {
   .page-download .two-columns {
     flex-direction: column;
   }
@@ -2391,7 +2392,7 @@ button:hover::after {
     max-width: 100%;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .page-download .two-columns {
     width: 100%;
   }
@@ -2431,12 +2432,12 @@ button:hover::after {
 .page-download .platform-release .platform-title {
   margin: 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .page-download .platform-release .platform-title {
     text-align: center;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .page-download .platform-release .platform-icon {
     margin: auto;
   }
@@ -2446,7 +2447,7 @@ button:hover::after {
   display: flex;
   flex-direction: column;
 }
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .page-download .platform-release .platform-text {
     justify-content: center;
     margin: auto;
@@ -2465,7 +2466,7 @@ button:hover::after {
 .page-download .platform-release .platform-list-builds.release > h5 {
   font-weight: 500;
 }
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .page-download .platform-release .platform-list-builds {
     flex-direction: column;
     margin-bottom: 1rem;
@@ -2495,7 +2496,7 @@ button:hover::after {
 .page-download .platform-release ul li:last-child::after {
   content: '';
 }
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .page-download .platform-release {
     border-left: 3px solid var(--color-ink-70);
     border-radius: 3px;
@@ -2610,7 +2611,7 @@ button:hover::after {
   color: var(--accent);
   margin-right: 0.75rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .page-release-notes .system-requirements ul {
     text-indent: -2.5rem;
   }
@@ -2621,7 +2622,7 @@ button:hover::after {
 .page-release-notes .wide {
   max-inline-size: 60%;
 }
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .page-release-notes .wide {
     max-inline-size: 90%;
   }
@@ -2689,7 +2690,7 @@ button:hover::after {
   margin-top: 6rem;
   font-size: var(--font-lg);
 }
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .page-release-notes code {
     line-break: anywhere;
   }
@@ -2715,7 +2716,7 @@ button:hover::after {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .page-releases .release-container {
     flex-direction: column;
   }
@@ -2748,7 +2749,7 @@ button:hover::after {
   color: var(--accent);
   margin-right: 0.75rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .page-system-requirements .release-notes-container ul {
     text-indent: -2.5rem;
   }
