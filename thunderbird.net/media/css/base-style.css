@@ -588,11 +588,17 @@ header .tagline {
 @media (max-width: 48rem) {
   #masthead,
   header {
-    min-height: 300px;
+    min-height: 18.75rem;
   }
   #masthead .tagline,
   header .tagline {
     font-size: 4rem;
+  }
+}
+@media (min-width: 80rem) {
+  #masthead,
+  header {
+    min-height: 18.75rem;
   }
 }
 .logo {
