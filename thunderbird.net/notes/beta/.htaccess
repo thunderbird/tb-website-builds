@@ -1,2 +1,2 @@
-Rewrite Engine On
+RewriteEngine On
 RewriteRule .* https://www.thunderbird.net/en-US/thunderbird/125.0beta/releasenotes/
