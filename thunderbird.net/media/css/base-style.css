@@ -2563,6 +2563,11 @@ button:hover::after {
   --heading-spacing: 6rem;
   --line-height: 30px;
 }
+.page-release-notes kbd {
+  border-radius: 4px;
+  padding: 1px 2px 0;
+  border: 1px solid black;
+}
 .page-release-notes .accordion {
   width: 100%;
   min-width: auto;
