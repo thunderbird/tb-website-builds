@@ -2205,7 +2205,7 @@ button:hover::after {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 8rem;
+  gap: 5rem;
 }
 .page-who-we-are .job-grid .person {
   width: 8rem;
