@@ -2205,14 +2205,20 @@ button:hover::after {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 4rem;
+  gap: 8rem;
 }
+.page-who-we-are .job-grid .person {
+  width: 8rem;
+}
+.page-who-we-are .job-grid .person picture,
 .page-who-we-are .job-grid .person img {
+  width: 8rem;
   border-radius: 100%;
 }
 .page-who-we-are .job-grid .person h5 {
-  margin: 0;
-  word-wrap: break-word;
+  font-size: var(--font-lg);
+  margin: auto;
+  width: min-content;
 }
 .page-who-we-are .job-grid .person span {
   font-size: var(--font-regular);
