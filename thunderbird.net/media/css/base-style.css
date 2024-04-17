@@ -2799,3 +2799,13 @@ button:hover::after {
   margin-right: auto;
   max-inline-size: 80%;
 }
+.page-donations-help .section-text {
+  text-align: left;
+  font-family: 'Inter', sans-serif !important;
+}
+.page-donations-help .intro {
+  font-size: var(--font-body);
+}
+.page-donations-help .container {
+  gap: 1rem;
+}
