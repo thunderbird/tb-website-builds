@@ -2803,9 +2803,27 @@ button:hover::after {
   text-align: left;
   font-family: 'Inter', sans-serif !important;
 }
+@media (max-width: 48rem) {
+  .page-donations-help .section-text {
+    max-inline-size: 100%;
+    padding-inline: 0;
+  }
+}
 .page-donations-help .intro {
   font-size: var(--font-body);
 }
 .page-donations-help .container {
   gap: 1rem;
+}
+@media (max-width: 48rem) {
+  .page-donations-help .container {
+    padding-block: 0;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 48rem) {
+  .page-donations-help .wFormContainer .wForm form {
+    padding: 0;
+  }
 }
