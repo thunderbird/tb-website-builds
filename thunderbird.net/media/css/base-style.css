@@ -1905,6 +1905,7 @@ button:hover::after {
 }
 .page-index .hero-text .sub-tag {
   max-inline-size: 38rem;
+  margin: auto;
 }
 .page-index .logo {
   --accent: var(--color-blue-20);
