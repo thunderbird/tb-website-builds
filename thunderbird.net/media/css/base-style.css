@@ -2320,22 +2320,25 @@ button:hover::after {
   width: 100%;
   font-weight: 400;
 }
-.page-participate .three-columns li {
-  font-size: 1.05rem;
-}
-.page-participate .three-columns a {
-  text-decoration-style: dotted;
-}
 @media (max-width: 40rem) {
   .page-participate .three-columns {
     gap: 1rem;
   }
 }
+.page-participate .three-columns .styled-list {
+  text-indent: -2.5rem;
+}
 .page-participate .testimonials {
   grid-template-rows: auto;
 }
 .page-participate .styled-list {
-  text-indent: -2.5rem;
+  font-weight: 400;
+}
+.page-participate .styled-list li {
+  font-size: 1.05rem;
+}
+.page-participate .styled-list a {
+  text-decoration-style: dotted;
 }
 /* thunderbird/all/index.html */
 .js #all-downloads {
