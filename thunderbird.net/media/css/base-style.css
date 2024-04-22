@@ -901,18 +901,6 @@ section {
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
-.cta-sub-heading {
-  font-family: 'Inter', sans-serif;
-  font-size: 1.25rem;
-  font-weight: 500;
-  line-height: 1.5;
-}
-.cta-heading {
-  font-size: 5rem;
-  font-weight: 900;
-  line-height: 1.3;
-  margin: 0;
-}
 footer {
   background-color: black;
   color: var(--color-gray-20);
@@ -1702,6 +1690,7 @@ button:hover::after {
 #whats-next p {
   margin-block: 0;
   max-inline-size: 45ch;
+  margin: auto;
 }
 #whats-next .social-list {
   display: flex;
@@ -1971,6 +1960,22 @@ button:hover::after {
   padding-top: 10px;
   padding-bottom: 30px;
 }
+.page-index #free-your-inbox .cta-sub-heading {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.page-index #free-your-inbox .cta-heading {
+  font-size: 5rem;
+  font-weight: 900;
+  line-height: 1.3;
+  margin: 0;
+}
+.page-index #free-your-inbox .cta-section {
+  display: flex;
+  flex-direction: column-reverse;
+}
 .page-index #free-your-inbox .cta {
   --btn-bg: color-mix(in srgb, var(--bg) 90%, transparent);
   display: grid;
@@ -2108,6 +2113,9 @@ button:hover::after {
   }
   .page-index #free-your-inbox .section-text {
     max-inline-size: 100%;
+  }
+  .page-index #free-your-inbox .cta-heading {
+    font-size: 2.75rem;
   }
   .page-index #free-from-manipulation .container {
     margin-bottom: 100px;
