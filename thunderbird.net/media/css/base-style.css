@@ -2239,9 +2239,6 @@ button:hover::after {
 .page-who-we-are .job-grid .person .pixel {
   image-rendering: pixelated;
 }
-.page-who-we-are .job-grid .person .border {
-  border: 1px solid var(--color-ink-70);
-}
 .page-who-we-are .job-grid .person h5 {
   font-size: var(--font-lg);
   margin: auto;
