@@ -1882,6 +1882,10 @@ footer {
   text-align: center;
   margin-bottom: 1rem;
 }
+.page-donations .check-address {
+  list-style: none;
+  padding-left: 0;
+}
 .page-index #masthead,
 .page-index header {
   --bg-hero-gradient: linear-gradient(to top, var(--color-ink-90), black 80%);
