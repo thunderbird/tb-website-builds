@@ -2681,6 +2681,9 @@ footer {
 .page-release-notes .release-text ul {
   padding: 0;
 }
+.page-release-notes .system-requirements h2 {
+  display: none;
+}
 .page-release-notes .system-requirements ul {
   list-style: none;
   margin-left: 0;
@@ -2703,6 +2706,9 @@ footer {
   .page-release-notes .system-requirements ul li:before {
     margin-right: 1rem;
   }
+}
+.page-release-notes .system-requirements .question {
+  text-transform: capitalize;
 }
 .page-release-notes .wide {
   max-inline-size: 60%;
