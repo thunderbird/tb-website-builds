@@ -1065,10 +1065,10 @@ section {
 .download-link.btn-download,
 .btn,
 button {
-  font-size: 1rem;
+  font-size: var(--font-md);
   background: var(--btn-bg, transparent);
   border-radius: 0.375rem;
-  border: 0.12em solid currentColor;
+  border: 0.125em solid currentColor;
   color: currentColor;
   padding: 0.5em 3em;
   position: relative;
@@ -1259,7 +1259,7 @@ button:hover::after {
   border-inline-start: 2px solid currentColor;
   padding: 0.75rem 2.5rem;
   margin: 0;
-  font-size: 1rem;
+  font-size: var(--font-md);
   --btn-background-color: rgba(0, 0, 0, 0.8);
 }
 .btn-newsletter::after {
@@ -2942,4 +2942,31 @@ footer {
   justify-content: space-between;
   margin: auto auto 2rem;
   text-align: left;
+}
+.page-survey body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.page-survey .container {
+  display: flex;
+  flex-direction: column;
+}
+.page-survey .logo {
+  display: block;
+  width: 10rem;
+}
+.page-survey .btn {
+  font-size: var(--font-lg);
+  font-weight: 600;
+}
+.page-survey .section-text {
+  text-align: left;
+}
+.page-survey .footer {
+  padding-bottom: 2rem;
+}
+.page-survey .mozilla-logo {
+  --accent: var(--color-ink-60);
 }
