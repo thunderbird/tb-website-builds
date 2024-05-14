@@ -1840,7 +1840,7 @@ footer {
   max-width: 200px;
 }
 .page-donations .image {
-  padding: 6rem;
+  padding: 2rem;
 }
 @media (max-width: 64rem) {
   .page-donations .image {
