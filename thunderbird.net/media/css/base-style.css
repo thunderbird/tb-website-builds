@@ -1058,9 +1058,6 @@ section {
 .header-donate svg {
   width: 1rem;
 }
-.btn-newsletter {
-  cursor: pointer;
-}
 .btn-donate,
 .btn-donate-lg,
 .btn-download-inline,
@@ -1230,12 +1227,19 @@ button:hover::after {
 .btn-white-bg {
   --btn-background-color: var(--color-white);
 }
+.btn-black-bg {
+  --btn-background-color: var(--color-black);
+}
 .btn-no-bg::after {
   background: transparent;
 }
 .btn-white-bg::after {
   background: var(--color-white);
 }
+.btn-black-bg::after {
+  background: var(--color-black);
+}
+.btn-black-bg:hover,
 .btn-white-bg:hover,
 .btn-no-bg:hover {
   background: linear-gradient(var(--btn-background-color), var(--btn-background-color)) padding-box, linear-gradient(to right, var(--color-blue-50), var(--color-purple-50)) border-box;
@@ -1243,9 +1247,39 @@ button:hover::after {
   transition: all 250ms;
   color: black;
 }
+.btn-black-bg:hover::after,
 .btn-white-bg:hover::after,
 .btn-no-bg:hover::after {
   opacity: 0.75;
+}
+.btn-newsletter {
+  position: relative;
+  border: none;
+  border-radius: 0;
+  border-inline-start: 2px solid currentColor;
+  padding: 0.75rem 2.5rem;
+  margin: 0;
+  font-size: 1rem;
+  --btn-background-color: rgba(0, 0, 0, 0.8);
+}
+.btn-newsletter::after {
+  background-color: var(--btn-background-color);
+}
+.btn-newsletter:hover {
+  background: linear-gradient(var(--btn-background-color), var(--btn-background-color)) padding-box, linear-gradient(to right, var(--color-blue-50), var(--color-purple-50)) border-box;
+  color: currentColor;
+}
+.btn-newsletter-icon {
+  display: none;
+  padding: 0.75em 1em;
+}
+@media (max-width: 40rem) {
+  .btn-newsletter-text {
+    display: none;
+  }
+  .btn-newsletter-icon {
+    display: block;
+  }
 }
 .form-select {
   width: 100%;
@@ -1737,36 +1771,6 @@ button:hover::after {
     padding-left: 1rem;
     padding-right: 1rem;
   }
-}
-#whats-next .btn-newsletter {
-  position: relative;
-  background: none;
-  border: none;
-  border-radius: 0;
-  border-inline-start: 2px solid currentColor;
-  padding: 0.75rem 2.5rem;
-  margin: 0;
-  font-size: 1rem;
-}
-#whats-next .btn-newsletter::after {
-  content: '';
-  position: absolute;
-  background-color: transparent;
-  background-image: radial-gradient(circle, var(--accent), var(--color-purple-60) 20%);
-  background-size: 0;
-  background-position: center;
-  opacity: 0;
-  inset: 0;
-  z-index: 0;
-  transition: all 0.3s;
-}
-#whats-next .btn-newsletter:hover::after {
-  opacity: 0.25;
-  background-size: 800%;
-}
-#whats-next .btn-newsletter-icon {
-  display: none;
-  padding: 0.75em 1em;
 }
 #whats-next .social-list a {
   text-decoration: none;
