@@ -226,7 +226,7 @@ URL_MAPPINGS = {
     'thunderbird.download': '/download',  # Redirects to home now
     'thunderbird.download-beta': '/download/beta',
     'thunderbird.download.thank-you': '/thank-you',
-    'thunderbird.enterprise': 'https://wiki.mozilla.org/Thunderbird/tb-enterprise',
+    'thunderbird.enterprise': 'https://wiki.mozilla.org/Thunderbird/Enterprise',
     'thunderbird.enterprise.documentation': 'https://enterprise.thunderbird.net/',
     'thunderbird.features': '/features',
     'thunderbird.get-involved': '/get-involved',
@@ -248,7 +248,7 @@ URL_MAPPINGS = {
 
 BLOG_FEED_URL = 'https://blog.thunderbird.net/feed/atom/'
 
-ACTIVE_SURVEY_URL = '#'
+ACTIVE_SURVEY_URL = '/'
 
 # WEBSITE_CSS = {
 #     'calendar-bundle': ['less/thunderbird/calendar.less', 'less/base/menu-resp.less'],
