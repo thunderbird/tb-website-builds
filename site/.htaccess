@@ -1,2 +1,2 @@
 RewriteEngine On
-RewriteRule ^favicon\.ico$ /media/img/thunderbird/favicon.ico
+RewriteRule ^favicon.ico$ /media/img/thunderbird/favicon.ico
