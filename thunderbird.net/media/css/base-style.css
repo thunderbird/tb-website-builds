@@ -2845,6 +2845,20 @@ footer {
   gap: 0.5rem;
   flex-wrap: wrap;
 }
+.page-releases .two-columns {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin: auto;
+  justify-content: center;
+  text-align: left;
+}
+.page-releases .atom-feed {
+  display: flex;
+  width: 4rem;
+  text-align: right;
+  align-items: center;
+}
 .page-system-requirements .release-notes-container ul {
   list-style: none;
   margin-left: 0;
