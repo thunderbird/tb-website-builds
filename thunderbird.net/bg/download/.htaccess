@@ -1,2 +1,3 @@
 RewriteEngine On
-RewriteRule .* https://www.thunderbird.net
+RewriteRule download/beta /bg/thunderbird/all/?release=beta [L]
+RewriteRule .* /bg/thunderbird/all/
