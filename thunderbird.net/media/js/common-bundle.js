@@ -1755,7 +1755,7 @@ if (typeof Mozilla === 'undefined') {
 
     // Check for ?release=<channel> or /download/<channel>
     let overrideRelease = url.searchParams.get('release');
-    if (!overrideRelease && overrideReleasePath.length > 1) {
+    if (!overrideRelease && overrideReleasePath) {
       overrideRelease = overrideReleasePath[1];
     }
 
