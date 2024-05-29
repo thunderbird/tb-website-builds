@@ -3040,6 +3040,7 @@ footer {
 }
 .page-beta-appeal-24 .btn {
   font-weight: 700;
+  font-size: var(--font-lg);
 }
 .page-beta-appeal-24 .appeal-footer-container {
   background-color: var(--color-black);
