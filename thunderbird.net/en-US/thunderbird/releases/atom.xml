@@ -8,7 +8,7 @@
   <title>Thunderbird Release Notes</title>
   <subtitle type="text">Thunderbird Release Notes feed provides a simple way to keep up to date with Thunderbird releases.</subtitle>
 
-  <updated>2024-06-17T21:44:44+00:00</updated>
+  <updated>2024-06-18T12:57:01+00:00</updated>
   <logo>https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png</logo>
   <icon>https://www.thunderbird.net/media/img/thunderbird/favicon-196.png</icon>
 
@@ -18,15 +18,15 @@
   <generator uri="https://www.thunderbird.net" version="1.0">thunderbird-website</generator>
   
   <entry>
-    <id>https://www.thunderbird.net/en-US/thunderbird/115.12.0/releasenotes/</id>
-    <title type="html">Thunderbird 115.12.0</title>
+    <id>https://www.thunderbird.net/en-US/thunderbird/115.12.1/releasenotes/</id>
+    <title type="html">Thunderbird 115.12.1</title>
     <author>
       <name>Thunderbird</name>
       <uri>https://www.thunderbird.net</uri>
     </author>
-    <link rel="alternate" type="text/html" href="https://www.thunderbird.net/en-US/thunderbird/115.12.0/releasenotes/"/>
-    <updated>2024-06-13T00:00:00+00:00</updated>
-    <published>2024-06-13T00:00:00+00:00</published>
+    <link rel="alternate" type="text/html" href="https://www.thunderbird.net/en-US/thunderbird/115.12.1/releasenotes/"/>
+    <updated>2024-06-19T00:00:00+00:00</updated>
+    <published>2024-06-19T00:00:00+00:00</published>
 
     <content type="html"><![CDATA[
       
@@ -153,6 +153,26 @@
     </ul>
   
   
+
+<p>As always, you’re encouraged to <a href="https://support.mozilla.org/questions/new/thunderbird">tell us what you think</a>, or <a href="https://bugzilla.mozilla.org/">file a bug in Bugzilla</a></p>
+<style> li p { display: inline; } </style>
+      ]]>
+    </content>
+  </entry>
+  
+  <entry>
+    <id>https://www.thunderbird.net/en-US/thunderbird/115.12.0/releasenotes/</id>
+    <title type="html">Thunderbird 115.12.0</title>
+    <author>
+      <name>Thunderbird</name>
+      <uri>https://www.thunderbird.net</uri>
+    </author>
+    <link rel="alternate" type="text/html" href="https://www.thunderbird.net/en-US/thunderbird/115.12.0/releasenotes/"/>
+    <updated>2024-06-18T00:00:00+00:00</updated>
+    <published>2024-06-18T00:00:00+00:00</published>
+
+    <content type="html"><![CDATA[
+      
 
 <p>As always, you’re encouraged to <a href="https://support.mozilla.org/questions/new/thunderbird">tell us what you think</a>, or <a href="https://bugzilla.mozilla.org/">file a bug in Bugzilla</a></p>
 <style> li p { display: inline; } </style>
@@ -1542,353 +1562,6 @@
 
         <li>
           <p><a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird115.8">Security fixes</a></p>
-          
-        </li>
-      
-    
-    </ul>
-  
-  
-
-<p>As always, you’re encouraged to <a href="https://support.mozilla.org/questions/new/thunderbird">tell us what you think</a>, or <a href="https://bugzilla.mozilla.org/">file a bug in Bugzilla</a></p>
-<style> li p { display: inline; } </style>
-      ]]>
-    </content>
-  </entry>
-  
-  <entry>
-    <id>https://www.thunderbird.net/en-US/thunderbird/115.7.0/releasenotes/</id>
-    <title type="html">Thunderbird 115.7.0</title>
-    <author>
-      <name>Thunderbird</name>
-      <uri>https://www.thunderbird.net</uri>
-    </author>
-    <link rel="alternate" type="text/html" href="https://www.thunderbird.net/en-US/thunderbird/115.7.0/releasenotes/"/>
-    <updated>2024-01-23T00:00:00+00:00</updated>
-    <published>2024-01-22T00:00:00+00:00</published>
-
-    <content type="html"><![CDATA[
-      
-
-  
-  
-
-  
-    
-
-    
-      
-        
-        
-
-        
-          <h3>What’s New</h3>
-        
-
-        
-        
-          <ul>
-        
-
-        
-        
-
-        <li>
-          <p>Autocrypt Gossip key distribution added</p>
-          
-        </li>
-      
-    
-      
-        
-        
-          </ul>
-        
-
-        
-          <h3>Fixed</h3>
-        
-
-        
-        
-          <ul>
-        
-
-        
-        
-
-        <li>
-          <p>When starting Thunderbird, unread message count did not appear on collapsed accounts</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Blank window was sometimes displayed when starting Thunderbird</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Thunderbird "--chrome" flag incorrectly opened extra messenger.xhtml</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Add-ons did not start correctly when opening Thunderbird from other programs</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Drag-and-drop installation of add-ons did not work if Add-ons Manager was opened from Unified Toolbar</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Double-clicking empty space in message pane incorrectly opened the currently selected message</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Canceling SMTP send before progress reached 100% did not stop message from sending</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>PDF attachments open in a separate tab did not always restore correctly after restarting Thunderbird</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Some OpenPGP dialogs were too small for their contents</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Account Manager did not work with hostnames entered as punycode</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Downloading complete message from POP3 headers caused message tab/window to close when "Close message window/tab on move or delete" was enabled</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Some ECC GPG keys could not be exported</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Contacts deleted from mailing list view still visible in Details view</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>After selecting contacts in Address Book and starting a new search, the search results list did not update</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Various UX and visual improvements</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p><a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird115.7">Security fixes</a></p>
           
         </li>
       
