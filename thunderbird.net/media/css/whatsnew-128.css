@@ -641,7 +641,7 @@ p {
   margin-right: 0;
   margin-left: auto;
 }
-.two-column.rust-revolution .picture svg {
+.two-column.rust-revolution .picture img {
   width: 100%;
   height: 100%;
 }
@@ -665,6 +665,7 @@ p {
   position: relative;
   left: 1rem;
   height: 100%;
+  flex-shrink: 0;
 }
 .three-column .column .content {
   display: flex;
@@ -820,7 +821,7 @@ p {
   .two-column.flipped {
     flex-direction: column-reverse;
   }
-  .two-column .picture svg {
+  .two-column .picture img {
     max-width: 100% !important;
     width: 100% !important;
     height: 100% !important;
@@ -847,7 +848,7 @@ p {
   .appeal-welcome .header-collection .screenshot-128 {
     padding-bottom: 24rem;
   }
-  .appeal-welcome .nebula-branding svg {
+  .appeal-welcome .nebula-branding img {
     width: 100%;
     height: 100%;
   }
@@ -875,7 +876,7 @@ p {
   .appeal-welcome .header-collection .screenshot-128 {
     padding-bottom: 24rem;
   }
-  .appeal-welcome .nebula-branding svg {
+  .appeal-welcome .nebula-branding img {
     width: 100%;
     height: 100%;
   }
