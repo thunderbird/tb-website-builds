@@ -620,6 +620,7 @@ p {
 }
 .two-column .copy {
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
   gap: 1.8125rem;
   max-width: 30.3125rem;
@@ -640,6 +641,7 @@ p {
 .two-column.rust-revolution .picture {
   margin-right: 0;
   margin-left: auto;
+  margin-bottom: -1rem;
 }
 .two-column.rust-revolution .picture img {
   max-width: 36.25rem;
@@ -657,10 +659,11 @@ p {
   margin: auto;
   justify-content: center;
   gap: 1.875rem;
+  box-sizing: border-box;
 }
 .three-column .column {
-  width: 18.75rem;
   display: flex;
+  flex-basis: 28%;
 }
 .three-column .column .feature {
   position: relative;
@@ -731,35 +734,6 @@ p {
 .fast-and-fluid {
   gap: 0.625rem;
 }
-.cards-view .with-frame {
-  width: 30.9375rem;
-  height: 35.8125rem;
-}
-.cards-view .with-frame img,
-.cards-view .with-frame picture {
-  margin: auto;
-  max-width: 28.9325rem;
-  height: 30.0625rem;
-}
-.accent-colors .with-frame {
-  width: 30.75rem;
-  height: 35.625rem;
-}
-.accent-colors .with-frame img,
-.accent-colors .with-frame picture {
-  width: 100%;
-  height: 100%;
-}
-.folder-pane .with-frame {
-  width: 30.9375rem;
-  height: 33.0625rem;
-}
-.folder-pane .with-frame img,
-.folder-pane .with-frame picture {
-  margin: auto;
-  width: 30.296875rem;
-  height: 29.13125rem;
-}
 .with-frame {
   width: 32.4375rem;
   box-sizing: border-box;
@@ -773,6 +747,16 @@ p {
   justify-content: center;
   justify-self: center;
   flex-shrink: 0;
+  box-sizing: border-box;
+  width: 30.75rem;
+  padding: 2rem 1rem;
+}
+.picture.with-frame img,
+.picture.with-frame picture {
+  width: 100%;
+}
+.accent-colors .with-frame.picture {
+  padding-right: 0;
 }
 .picture.rocket {
   position: relative;
@@ -799,98 +783,73 @@ p {
   color: var(--color-black);
 }
 @media (max-width: 64rem) {
-  .two-column {
-    margin: 1rem;
-    gap: 1rem;
+  .appeal-welcome .nebula-branding {
+    margin: -4.5rem auto 4.375rem;
   }
-  .two-column.rust-revolution .copy {
-    margin: 1rem;
-  }
-}
-@media (max-width: 48rem) {
-  .picture {
-    display: flex;
-    justify-content: center;
-    justify-self: center;
-    flex-shrink: 0;
-  }
-  .two-column {
-    padding: 0 0.25rem;
-    flex-direction: column-reverse;
-    gap: 4rem;
-  }
-  .two-column.flipped {
-    flex-direction: column-reverse;
-  }
-  .two-column .picture img {
-    max-width: 100% !important;
-    width: 100% !important;
-    height: 100% !important;
-  }
-  .with-frame {
-    padding: 1rem;
-    margin: auto;
-    width: 100% !important;
-    height: 100% !important;
-  }
-  .with-frame img,
-  .with-frame svg,
-  .with-frame picture {
-    max-width: 100% !important;
-    width: 100% !important;
-    height: 100% !important;
-  }
-  .appeal-welcome .header-collection {
-    flex-direction: column;
-  }
-  .appeal-welcome .header-collection .space-things {
+  .appeal-welcome .screenshot-128 {
     display: none;
   }
-  .appeal-welcome .header-collection .screenshot-128 {
-    padding-bottom: 24rem;
-  }
-  .appeal-welcome .nebula-branding img {
-    width: 100%;
-    height: 100%;
+  .appeal-welcome .non-carousel-carousel {
+    margin-top: 5rem;
   }
   .appeal-welcome .welcome-message {
-    width: 100%;
-    margin: 0;
+    margin: auto;
+    width: 90%;
+  }
+  .two-column {
+    flex-direction: column;
+  }
+  .two-column .copy {
+    max-width: 80%;
+    margin: auto;
+  }
+  .two-column .with-frame {
+    margin: auto;
+    width: 90%;
+  }
+  .two-column.rust-revolution .picture {
+    margin-bottom: -6rem;
+  }
+  .three-column {
+    flex-direction: column;
+  }
+  .three-column .content {
+    flex-basis: 80%;
+  }
+  .three-column .feature {
+    top: -1rem;
   }
   .pre-footer {
-    max-width: 100%;
     padding-left: 1rem;
     padding-right: 1rem;
   }
-  .pre-footer .three-column {
-    flex-direction: column;
+  .pre-footer .additional-features {
+    padding: 5rem 1rem;
   }
-  .pre-footer .three-column .column {
-    width: 100%;
+  #footer {
+    min-height: 16rem;
   }
 }
 @media (max-width: 40rem) {
-  .main-content .sticky-nebula {
-    display: none;
-  }
-  .appeal-welcome .header-collection {
-    flex-direction: column;
-  }
-  .appeal-welcome .header-collection .space-things {
-    display: none;
-  }
-  .appeal-welcome .header-collection .screenshot-128 {
-    padding-bottom: 24rem;
-  }
-  .appeal-welcome .nebula-branding img {
-    width: 100%;
-    height: 100%;
-  }
   .appeal-welcome .welcome-message {
     width: 100%;
-    margin: 0;
   }
-  .appeal-welcome .non-carousel-carousel {
-    display: none;
+  .two-column .with-frame {
+    width: 100%;
+  }
+  .three-column .column {
+    flex-direction: column;
+  }
+  .three-column .column .feature {
+    left: 0;
+    top: 0;
+    text-align: center;
+  }
+  .three-column .column .content,
+  .three-column .column p {
+    text-align: center;
+  }
+  .pre-footer .additional-features {
+    padding: 5rem 0;
   }
 }
