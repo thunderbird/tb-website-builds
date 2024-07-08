@@ -733,6 +733,7 @@ p {
 }
 .fast-and-fluid {
   gap: 0.625rem;
+  width: 100%;
 }
 .with-frame {
   width: 32.4375rem;
@@ -760,14 +761,13 @@ p {
 }
 .picture.rocket {
   position: relative;
+  min-height: 400px;
   height: 100%;
   width: 100%;
-}
-.picture.rocket > :first-of-type {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  background-image: url('/media/svg/appeal/whatsnew-128/fast-and-fluid-rocket.svg'), url('/media/svg/appeal/whatsnew-128/fast-and-fluid-stars.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
 }
 @media (min-width: 64rem) {
   .accent-colors .picture {
@@ -786,6 +786,7 @@ p {
   .two-column {
     margin: 0 1rem;
   }
+  .two-column.fast-and-fluid .copy,
   .two-column.rust-revolution .copy {
     margin-left: 1rem;
   }
@@ -814,6 +815,9 @@ p {
   .two-column .with-frame {
     margin: auto;
     width: 90%;
+  }
+  .two-column.fast-and-fluid .copy {
+    margin-left: auto;
   }
   .two-column.rust-revolution .copy {
     margin-left: auto;
