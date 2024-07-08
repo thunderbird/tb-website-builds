@@ -488,6 +488,7 @@ a:hover:visited {
 * Media Queries
 *--------------------------*/
 :root {
+  --color-purple-20: #F5E8FF;
   --text-color: var(--color-white);
   --extension-background: #1A202C;
   --appeal-background: linear-gradient(169.85deg, #121621 2.48%, #16294D 32.48%);
@@ -520,6 +521,7 @@ h6 {
   line-height: 1.21;
 }
 h2 {
+  color: var(--color-purple-20);
   font-weight: 200;
   font-size: 3rem;
 }
@@ -546,12 +548,13 @@ p {
   line-height: 1.375;
 }
 .main-content {
+  --main-content-gap: 6.25rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
-  gap: 6.25rem;
+  gap: var(--main-content-gap);
 }
 .main-content .overlay {
   position: absolute;
@@ -570,8 +573,8 @@ p {
   position: fixed;
   background-image: url('/media/img/thunderbird/appeal/whatsnew-128/nebula-background.png');
   background-repeat: no-repeat;
-  background-size: 66.6875rem 61.4375rem;
-  background-position: top -5.3125rem center;
+  background-size: min(90%, 66.75rem);
+  background-position: top center;
   width: 100%;
   height: 100%;
   z-index: 0;
@@ -612,17 +615,19 @@ p {
 }
 .two-column {
   display: flex;
-  max-width: 68.75rem;
+  position: relative;
+  width: 100%;
   gap: 5.9375rem;
   z-index: 1;
+  max-width: 66.875rem;
   justify-content: center;
   align-items: start;
 }
 .two-column .copy {
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
   gap: 1.8125rem;
-  max-width: 30.3125rem;
 }
 .two-column h3 {
   margin-top: -2.5rem;
@@ -632,23 +637,28 @@ p {
 }
 .two-column.rust-revolution {
   width: 100%;
-  max-width: var(--canvas-width);
+  margin-bottom: calc(-1 * var(--main-content-gap));
 }
 .two-column.rust-revolution .copy {
-  margin-left: auto;
+  max-width: 59%;
+  margin-right: auto;
 }
-.two-column.rust-revolution .picture {
-  margin-right: 0;
-  margin-left: auto;
+.two-column.flipped {
+  flex-direction: row-reverse;
 }
-.two-column.rust-revolution .picture svg {
+@media (max-width: 64rem) {
+  .two-column.flipped {
+    flex-direction: column;
+  }
+}
+.right-wrap {
+  margin: -28.5rem 0 -1rem auto;
+  z-index: 1;
+}
+.right-wrap img {
+  max-width: 36.25rem;
   width: 100%;
   height: 100%;
-}
-@media (min-width: 64rem) {
-  .two-column.flipped {
-    flex-direction: row-reverse;
-  }
 }
 .three-column {
   display: flex;
@@ -656,15 +666,17 @@ p {
   margin: auto;
   justify-content: center;
   gap: 1.875rem;
+  box-sizing: border-box;
 }
 .three-column .column {
-  width: 18.75rem;
   display: flex;
+  flex-basis: 28%;
 }
 .three-column .column .feature {
   position: relative;
   left: 1rem;
   height: 100%;
+  flex-shrink: 0;
 }
 .three-column .column .content {
   display: flex;
@@ -728,35 +740,7 @@ p {
 }
 .fast-and-fluid {
   gap: 0.625rem;
-}
-.cards-view .with-frame {
-  width: 30.9375rem;
-  height: 35.8125rem;
-}
-.cards-view .with-frame img,
-.cards-view .with-frame picture {
-  margin: auto;
-  max-width: 28.9325rem;
-  height: 30.0625rem;
-}
-.accent-colors .with-frame {
-  width: 30.75rem;
-  height: 35.625rem;
-}
-.accent-colors .with-frame img,
-.accent-colors .with-frame picture {
   width: 100%;
-  height: 100%;
-}
-.folder-pane .with-frame {
-  width: 30.9375rem;
-  height: 33.0625rem;
-}
-.folder-pane .with-frame img,
-.folder-pane .with-frame picture {
-  margin: auto;
-  width: 30.296875rem;
-  height: 29.13125rem;
 }
 .with-frame {
   width: 32.4375rem;
@@ -771,22 +755,26 @@ p {
   justify-content: center;
   justify-self: center;
   flex-shrink: 0;
+  box-sizing: border-box;
+  width: 30.75rem;
+  padding: 2rem 1rem;
+}
+.picture.with-frame img,
+.picture.with-frame picture {
+  width: 100%;
+}
+.accent-colors .with-frame.picture {
+  padding-right: 0;
 }
 .picture.rocket {
   position: relative;
+  min-height: 400px;
   height: 100%;
   width: 100%;
-}
-.picture.rocket > :first-of-type {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-@media (min-width: 64rem) {
-  .accent-colors .picture {
-    justify-self: end;
-  }
+  background-image: url('/media/svg/appeal/whatsnew-128/fast-and-fluid-rocket.svg'), url('/media/svg/appeal/whatsnew-128/fast-and-fluid-stars.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
 }
 .page-separator-cover {
   position: relative;
@@ -796,94 +784,93 @@ p {
   line-height: 0;
   color: var(--color-black);
 }
-@media (max-width: 64rem) {
+@media (max-width: 80rem) {
   .two-column {
-    margin: 1rem;
-    gap: 1rem;
+    margin: 0 1rem;
   }
   .two-column.rust-revolution .copy {
-    margin: 1rem;
+    max-width: 80%;
+  }
+  .right-wrap {
+    margin-top: 0;
   }
 }
-@media (max-width: 48rem) {
-  .picture {
-    display: flex;
-    justify-content: center;
-    justify-self: center;
-    flex-shrink: 0;
+@media (max-width: 64rem) {
+  .appeal-welcome .nebula-branding {
+    margin: 4.8125rem auto 4.375rem;
   }
-  .two-column {
-    padding: 0 0.25rem;
-    flex-direction: column-reverse;
-    gap: 4rem;
-  }
-  .two-column.flipped {
-    flex-direction: column-reverse;
-  }
-  .two-column .picture svg {
-    max-width: 100% !important;
-    width: 100% !important;
-    height: 100% !important;
-  }
-  .with-frame {
-    padding: 1rem;
-    margin: auto;
-    width: 100% !important;
-    height: 100% !important;
-  }
-  .with-frame img,
-  .with-frame svg,
-  .with-frame picture {
-    max-width: 100% !important;
-    width: 100% !important;
-    height: 100% !important;
-  }
-  .appeal-welcome .header-collection {
-    flex-direction: column;
-  }
-  .appeal-welcome .header-collection .space-things {
+  .appeal-welcome .space-things,
+  .appeal-welcome .screenshot-128 {
     display: none;
   }
-  .appeal-welcome .header-collection .screenshot-128 {
-    padding-bottom: 24rem;
-  }
-  .appeal-welcome .nebula-branding svg {
-    width: 100%;
-    height: 100%;
+  .appeal-welcome .non-carousel-carousel {
+    margin-top: 5rem;
   }
   .appeal-welcome .welcome-message {
-    width: 100%;
-    margin: 0;
+    margin: auto;
+    width: 80%;
   }
-  .pre-footer .three-column {
+  .two-column {
     flex-direction: column;
   }
-  .pre-footer .three-column .column {
-    width: 100%;
+  .two-column .copy {
+    max-width: 80%;
+    margin: auto;
+  }
+  .two-column .with-frame {
+    margin: auto;
+    width: 80%;
+  }
+  .two-column.fast-and-fluid .copy {
+    margin-left: auto;
+  }
+  .two-column.rust-revolution .copy {
+    margin-left: auto;
+  }
+  .right-wrap {
+    margin-bottom: -6rem;
+  }
+  .three-column {
+    flex-direction: column;
+  }
+  .three-column .content {
+    flex-basis: 80%;
+  }
+  .three-column .feature {
+    top: -1rem;
+  }
+  .pre-footer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-image: url('/media/svg/appeal/whatsnew-128/blurred-blobs-bg-90deg.svg');
+  }
+  .pre-footer .additional-features {
+    padding: 5rem 1rem;
+  }
+  #footer {
+    min-height: 16rem;
   }
 }
 @media (max-width: 40rem) {
-  .main-content .sticky-nebula {
-    display: none;
-  }
-  .appeal-welcome .header-collection {
-    flex-direction: column;
-  }
-  .appeal-welcome .header-collection .space-things {
-    display: none;
-  }
-  .appeal-welcome .header-collection .screenshot-128 {
-    padding-bottom: 24rem;
-  }
-  .appeal-welcome .nebula-branding svg {
-    width: 100%;
-    height: 100%;
-  }
   .appeal-welcome .welcome-message {
     width: 100%;
-    margin: 0;
   }
-  .appeal-welcome .non-carousel-carousel {
-    display: none;
+  .two-column .with-frame {
+    width: 100%;
+  }
+  .three-column .column {
+    flex-direction: column;
+  }
+  .three-column .column .feature {
+    left: 0;
+    top: 0;
+    text-align: center;
+  }
+  .three-column .column .content,
+  .three-column .column p {
+    text-align: center;
+  }
+  .pre-footer .additional-features {
+    padding: 5rem 0;
   }
 }
