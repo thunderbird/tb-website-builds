@@ -642,6 +642,7 @@ p {
   margin-left: auto;
 }
 .two-column.rust-revolution .picture img {
+  max-width: 36.25rem;
   width: 100%;
   height: 100%;
 }
@@ -855,6 +856,11 @@ p {
   .appeal-welcome .welcome-message {
     width: 100%;
     margin: 0;
+  }
+  .pre-footer {
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
   .pre-footer .three-column {
     flex-direction: column;

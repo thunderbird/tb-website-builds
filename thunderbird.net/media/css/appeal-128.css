@@ -1119,7 +1119,7 @@ main {
 /*
  * Media Queries
  */
-@media (max-width: 1000px) {
+@media (max-width: 64rem) {
   #appeal-header {
     padding-top: 4rem;
     position: static;
@@ -1147,7 +1147,7 @@ main {
     top: -240px;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 40rem) {
   main {
     padding: 0;
   }
@@ -1168,7 +1168,7 @@ main {
     inset: 0;
   }
 }
-@media (max-width: 512px) {
+@media (max-width: 30rem) {
   #footer.container {
     padding-inline: 0.25rem;
     padding-block: 32px;
