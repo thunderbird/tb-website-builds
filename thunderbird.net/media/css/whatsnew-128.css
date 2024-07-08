@@ -643,9 +643,12 @@ p {
   max-width: 59%;
   margin-right: auto;
 }
-@media (min-width: 64rem) {
+.two-column.flipped {
+  flex-direction: row-reverse;
+}
+@media (max-width: 64rem) {
   .two-column.flipped {
-    flex-direction: row-reverse;
+    flex-direction: column;
   }
 }
 .right-wrap {
@@ -773,11 +776,6 @@ p {
   background-position: center center;
   background-size: 100% 100%;
 }
-@media (min-width: 64rem) {
-  .accent-colors .picture {
-    justify-self: end;
-  }
-}
 .page-separator-cover {
   position: relative;
   pointer-events: none;
@@ -793,6 +791,9 @@ p {
   .two-column.rust-revolution .copy {
     max-width: 80%;
   }
+  .right-wrap {
+    margin-top: 0;
+  }
 }
 @media (max-width: 64rem) {
   .appeal-welcome .nebula-branding {
@@ -807,7 +808,7 @@ p {
   }
   .appeal-welcome .welcome-message {
     margin: auto;
-    width: 90%;
+    width: 80%;
   }
   .two-column {
     flex-direction: column;
@@ -827,7 +828,6 @@ p {
     margin-left: auto;
   }
   .right-wrap {
-    margin-top: 0;
     margin-bottom: -6rem;
   }
   .three-column {
