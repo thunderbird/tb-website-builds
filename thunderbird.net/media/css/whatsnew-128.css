@@ -795,8 +795,9 @@ p {
 }
 @media (max-width: 64rem) {
   .appeal-welcome .nebula-branding {
-    margin: -4.5rem auto 4.375rem;
+    margin: 4.8125rem auto 4.375rem;
   }
+  .appeal-welcome .space-things,
   .appeal-welcome .screenshot-128 {
     display: none;
   }
