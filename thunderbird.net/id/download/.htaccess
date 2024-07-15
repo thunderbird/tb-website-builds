@@ -1,3 +1,2 @@
 RewriteEngine On
-RewriteRule download/beta /id/thunderbird/all/?release=beta [L]
 RewriteRule .* /id/thunderbird/all/

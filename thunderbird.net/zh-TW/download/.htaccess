@@ -1,3 +1,2 @@
 RewriteEngine On
-RewriteRule download/beta /zh-TW/thunderbird/all/?release=beta [L]
 RewriteRule .* /zh-TW/thunderbird/all/
