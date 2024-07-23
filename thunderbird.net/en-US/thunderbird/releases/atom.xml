@@ -8,7 +8,7 @@
   <title>Thunderbird Release Notes</title>
   <subtitle type="text">Thunderbird Release Notes feed provides a simple way to keep up to date with Thunderbird releases.</subtitle>
 
-  <updated>2024-07-21T19:16:45+00:00</updated>
+  <updated>2024-07-23T20:01:15+00:00</updated>
   <logo>https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png</logo>
   <icon>https://www.thunderbird.net/media/img/thunderbird/favicon-196.png</icon>
 
@@ -125,13 +125,13 @@
   </entry>
   
   <entry>
-    <id>https://www.thunderbird.net/en-US/thunderbird/115.13.0/releasenotes/</id>
-    <title type="html">Thunderbird 115.13.0</title>
+    <id>https://www.thunderbird.net/en-US/thunderbird/115.13.0esr/releasenotes/</id>
+    <title type="html">Thunderbird 115.13.0esr</title>
     <author>
       <name>Thunderbird</name>
       <uri>https://www.thunderbird.net</uri>
     </author>
-    <link rel="alternate" type="text/html" href="https://www.thunderbird.net/en-US/thunderbird/115.13.0/releasenotes/"/>
+    <link rel="alternate" type="text/html" href="https://www.thunderbird.net/en-US/thunderbird/115.13.0esr/releasenotes/"/>
     <updated>2024-07-16T00:00:00+00:00</updated>
     <published>2024-07-16T00:00:00+00:00</published>
 
@@ -3030,13 +3030,13 @@
   </entry>
   
   <entry>
-    <id>https://www.thunderbird.net/en-US/thunderbird/115.12.2/releasenotes/</id>
-    <title type="html">Thunderbird 115.12.2</title>
+    <id>https://www.thunderbird.net/en-US/thunderbird/115.12.2esr/releasenotes/</id>
+    <title type="html">Thunderbird 115.12.2esr</title>
     <author>
       <name>Thunderbird</name>
       <uri>https://www.thunderbird.net</uri>
     </author>
-    <link rel="alternate" type="text/html" href="https://www.thunderbird.net/en-US/thunderbird/115.12.2/releasenotes/"/>
+    <link rel="alternate" type="text/html" href="https://www.thunderbird.net/en-US/thunderbird/115.12.2esr/releasenotes/"/>
     <updated>2024-06-22T00:00:00+00:00</updated>
     <published>2024-06-22T00:00:00+00:00</published>
 
@@ -3083,13 +3083,13 @@
   </entry>
   
   <entry>
-    <id>https://www.thunderbird.net/en-US/thunderbird/115.12.1/releasenotes/</id>
-    <title type="html">Thunderbird 115.12.1</title>
+    <id>https://www.thunderbird.net/en-US/thunderbird/115.12.1esr/releasenotes/</id>
+    <title type="html">Thunderbird 115.12.1esr</title>
     <author>
       <name>Thunderbird</name>
       <uri>https://www.thunderbird.net</uri>
     </author>
-    <link rel="alternate" type="text/html" href="https://www.thunderbird.net/en-US/thunderbird/115.12.1/releasenotes/"/>
+    <link rel="alternate" type="text/html" href="https://www.thunderbird.net/en-US/thunderbird/115.12.1esr/releasenotes/"/>
     <updated>2024-06-19T00:00:00+00:00</updated>
     <published>2024-06-19T00:00:00+00:00</published>
 
@@ -3226,13 +3226,13 @@
   </entry>
   
   <entry>
-    <id>https://www.thunderbird.net/en-US/thunderbird/115.12.0/releasenotes/</id>
-    <title type="html">Thunderbird 115.12.0</title>
+    <id>https://www.thunderbird.net/en-US/thunderbird/115.12.0esr/releasenotes/</id>
+    <title type="html">Thunderbird 115.12.0esr</title>
     <author>
       <name>Thunderbird</name>
       <uri>https://www.thunderbird.net</uri>
     </author>
-    <link rel="alternate" type="text/html" href="https://www.thunderbird.net/en-US/thunderbird/115.12.0/releasenotes/"/>
+    <link rel="alternate" type="text/html" href="https://www.thunderbird.net/en-US/thunderbird/115.12.0esr/releasenotes/"/>
     <updated>2024-06-18T00:00:00+00:00</updated>
     <published>2024-06-18T00:00:00+00:00</published>
 
@@ -3246,13 +3246,13 @@
   </entry>
   
   <entry>
-    <id>https://www.thunderbird.net/en-US/thunderbird/115.11.1/releasenotes/</id>
-    <title type="html">Thunderbird 115.11.1</title>
+    <id>https://www.thunderbird.net/en-US/thunderbird/115.11.1esr/releasenotes/</id>
+    <title type="html">Thunderbird 115.11.1esr</title>
     <author>
       <name>Thunderbird</name>
       <uri>https://www.thunderbird.net</uri>
     </author>
-    <link rel="alternate" type="text/html" href="https://www.thunderbird.net/en-US/thunderbird/115.11.1/releasenotes/"/>
+    <link rel="alternate" type="text/html" href="https://www.thunderbird.net/en-US/thunderbird/115.11.1esr/releasenotes/"/>
     <updated>2024-05-29T00:00:00+00:00</updated>
     <published>2024-05-29T00:00:00+00:00</published>
 
@@ -3299,14 +3299,14 @@
   </entry>
   
   <entry>
-    <id>https://www.thunderbird.net/en-US/thunderbird/115.11.0/releasenotes/</id>
-    <title type="html">Thunderbird 115.11.0</title>
+    <id>https://www.thunderbird.net/en-US/thunderbird/115.11.0esr/releasenotes/</id>
+    <title type="html">Thunderbird 115.11.0esr</title>
     <author>
       <name>Thunderbird</name>
       <uri>https://www.thunderbird.net</uri>
     </author>
-    <link rel="alternate" type="text/html" href="https://www.thunderbird.net/en-US/thunderbird/115.11.0/releasenotes/"/>
-    <updated>2024-05-15T00:00:00+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.thunderbird.net/en-US/thunderbird/115.11.0esr/releasenotes/"/>
+    <updated>2024-05-14T00:00:00+00:00</updated>
     <published>2024-05-14T00:00:00+00:00</published>
 
     <content type="html"><![CDATA[
@@ -3388,13 +3388,13 @@
   </entry>
   
   <entry>
-    <id>https://www.thunderbird.net/en-US/thunderbird/115.10.2/releasenotes/</id>
-    <title type="html">Thunderbird 115.10.2</title>
+    <id>https://www.thunderbird.net/en-US/thunderbird/115.10.2esr/releasenotes/</id>
+    <title type="html">Thunderbird 115.10.2esr</title>
     <author>
       <name>Thunderbird</name>
       <uri>https://www.thunderbird.net</uri>
     </author>
-    <link rel="alternate" type="text/html" href="https://www.thunderbird.net/en-US/thunderbird/115.10.2/releasenotes/"/>
+    <link rel="alternate" type="text/html" href="https://www.thunderbird.net/en-US/thunderbird/115.10.2esr/releasenotes/"/>
     <updated>2024-05-01T00:00:00+00:00</updated>
     <published>2024-05-01T00:00:00+00:00</published>
 
