@@ -2838,9 +2838,12 @@ footer {
     display: none;
   }
 }
+.page-releases .release-list {
+  width: 100%;
+}
 .page-releases .release-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: start;
   gap: 1rem;
   border-bottom: var(--border-size) solid;
@@ -2860,11 +2863,22 @@ footer {
   font-size: 150%;
   min-width: 15%;
   margin-top: 0;
+  text-align: left;
 }
 .page-releases .release-minors {
-  display: flex;
+  width: 100%;
+}
+.page-releases .release-minors ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
+  width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
   gap: 0.5rem;
-  flex-wrap: wrap;
+  align-items: start;
+  list-style: none;
+  line-height: 1.5;
+  margin: auto;
 }
 .page-releases .two-columns {
   display: flex;
@@ -2879,6 +2893,12 @@ footer {
   width: 4rem;
   text-align: right;
   align-items: center;
+}
+@media (max-width: 40rem) {
+  .page-releases .release-minors ul {
+    padding: 0;
+    max-height: none;
+  }
 }
 .page-system-requirements .release-notes-container ul {
   list-style: none;
