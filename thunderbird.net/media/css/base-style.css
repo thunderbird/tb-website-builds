@@ -646,6 +646,9 @@ header .tagline {
   color: var(--accent);
   transform: none;
 }
+#main-content {
+  margin-bottom: 5.3125rem;
+}
 .container {
   position: relative;
   display: grid;
@@ -2036,7 +2039,6 @@ footer {
 }
 .page-index #free-your-inbox {
   padding-top: 10px;
-  padding-bottom: 30px;
 }
 .page-index #free-your-inbox .cta-sub-heading {
   font-family: 'Inter', sans-serif;
@@ -2323,7 +2325,6 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
   gap: 1.5rem;
-  margin-bottom: 5rem;
 }
 @media (max-width: 64rem) {
   .page-contact-us .block-grid {
@@ -2440,9 +2441,6 @@ footer {
 }
 .no-js #select-download {
   display: none;
-}
-.page-download .container {
-  padding-bottom: 150px;
 }
 .page-download .accordion {
   cursor: pointer;
