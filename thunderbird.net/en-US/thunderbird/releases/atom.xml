@@ -8,7 +8,7 @@
   <title>Thunderbird Release Notes</title>
   <subtitle type="text">Thunderbird Release Notes feed provides a simple way to keep up to date with Thunderbird releases.</subtitle>
 
-  <updated>2024-08-01T16:42:34+00:00</updated>
+  <updated>2024-08-01T17:18:56+00:00</updated>
   <logo>https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png</logo>
   <icon>https://www.thunderbird.net/media/img/thunderbird/favicon-196.png</icon>
 
@@ -144,61 +144,7 @@
         
 
         <li>
-          <p>"latest" download bouncer aliases were not available</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Flatpak release notes URL was incorrect</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Spell checker dictionary was not available for Flatpak install</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Selecting messages and then switching to a new folder with no selected messages did not clear selected messages count</p>
+          <p>Could not add override for a certificate with the wrong hostname</p>
           
         </li>
       
@@ -234,24 +180,6 @@
         
 
         <li>
-          <p>Could not add override for a certificate with the wrong hostname</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
           <p>Potential memory leak in local folder repair</p>
           
         </li>
@@ -270,43 +198,7 @@
         
 
         <li>
-          <p>Flatpak created a duplicate unpinned icon in Linux dock after launching Thunderbird</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Occasional crash occurred shortly after startup</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Digital signatures on signed-only OpenPGP messages were broken with some providers</p>
+          <p>Selecting messages and then switching to a new folder with no selected messages did not clear selected messages count</p>
           
         </li>
       
@@ -379,6 +271,114 @@
 
         <li>
           <p>Could not access the contents of an S/MIME encrypted message wrapped in a digital signature</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Occasional crash occurred shortly after startup</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Flatpak created a duplicate unpinned icon in Linux dock after launching Thunderbird</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>"latest" download bouncer aliases were not available</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Flatpak release notes URL was incorrect</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Spell checker dictionary was not available for Flatpak install</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Digital signatures on signed-only OpenPGP messages were broken with some providers</p>
           
         </li>
       
