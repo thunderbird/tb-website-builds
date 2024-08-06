@@ -8,7 +8,7 @@
   <title>Thunderbird Release Notes</title>
   <subtitle type="text">Thunderbird Release Notes feed provides a simple way to keep up to date with Thunderbird releases.</subtitle>
 
-  <updated>2024-08-06T00:03:40+00:00</updated>
+  <updated>2024-08-06T19:33:57+00:00</updated>
   <logo>https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png</logo>
   <icon>https://www.thunderbird.net/media/img/thunderbird/favicon-196.png</icon>
 
@@ -324,24 +324,6 @@
         
 
         <li>
-          <p>"latest" download bouncer aliases were not available</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
           <p>Flatpak release notes URL was incorrect</p>
           
         </li>
@@ -401,8 +383,23 @@
         </li>
       
     
+      
+    
     </ul>
   
+  
+    <h3>
+      Known Issues
+    </h3>
+    <ul>
+      
+        <li>
+          <p>"latest" download bouncer aliases are not available for 128.0esr at this time</p>
+          
+          
+        </li>
+      
+    </ul>
   
 
 <p>As always, you’re encouraged to <a href="https://support.mozilla.org/questions/new/thunderbird">tell us what you think</a>, or <a href="https://bugzilla.mozilla.org/">file a bug in Bugzilla</a></p>
@@ -508,8 +505,23 @@
         </li>
       
     
+      
+    
     </ul>
   
+  
+    <h3>
+      Known Issues
+    </h3>
+    <ul>
+      
+        <li>
+          <p>"latest" download bouncer aliases are not available for 128.0esr at this time</p>
+          
+          
+        </li>
+      
+    </ul>
   
 
 <p>As always, you’re encouraged to <a href="https://support.mozilla.org/questions/new/thunderbird">tell us what you think</a>, or <a href="https://bugzilla.mozilla.org/">file a bug in Bugzilla</a></p>
