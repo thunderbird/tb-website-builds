@@ -3028,6 +3028,14 @@ footer {
   margin: auto auto 2rem;
   text-align: left;
 }
+.page-privacy-policy h1 {
+  font-size: var(--font-h2);
+  font-weight: 800;
+}
+.page-privacy-policy .section-text {
+  max-inline-size: 90%;
+  text-align: left;
+}
 .page-survey body {
   min-height: 100vh;
   display: flex;
