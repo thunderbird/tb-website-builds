@@ -8,7 +8,7 @@
   <title>Thunderbird Release Notes</title>
   <subtitle type="text">Thunderbird Release Notes feed provides a simple way to keep up to date with Thunderbird releases.</subtitle>
 
-  <updated>2024-09-17T18:13:03+00:00</updated>
+  <updated>2024-09-17T18:19:04+00:00</updated>
   <logo>https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png</logo>
   <icon>https://www.thunderbird.net/media/img/thunderbird/favicon-196.png</icon>
 
@@ -115,7 +115,7 @@
         
 
         <li>
-          <p>Some users could not log in to Microsoft 365 due to Thunderbird asking for EWS permissions</p>
+          <p>Some users were unable to log in to Microsoft 365</p>
           
         </li>
       
