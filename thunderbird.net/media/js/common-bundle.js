@@ -1731,13 +1731,14 @@ if (typeof Mozilla === 'undefined') {
   const DownloadInfo = {};
 
   const isDownloadPage = document.getElementsByClassName('page-download').length > 0;
+  let pageContainer = document.getElementById('select-download');
   let localeSelect = document.getElementById('download-language-select');
   let channelSelect = document.getElementById('download-release-select');
   let osSelect = document.getElementById('download-os-select');
   let installerSelect = document.getElementById('download-advanced-platform-select');
   let downloadButton = document.getElementById('download-btn');
   let defaultOS = 'Windows';
-  let defaultReleaseChannel = 'release';
+  let defaultReleaseChannel = window._product.defaultChannel ?? 'esr';
 
   // Platform map
   const platformMap = {
@@ -1751,6 +1752,17 @@ if (typeof Mozilla === 'undefined') {
 
 
   /**
+   * Sets the page container's data attributes so it can be used for conditional css/other means
+   * @param elementName {string}
+   * @param elementValue {string}
+   */
+  DownloadInfo.SetDataAttributes = function(elementName, elementValue) {
+    // Capitalize the name
+    const name = elementName.charAt(0).toUpperCase() + elementName.slice(1);
+    pageContainer.dataset[`desktop${name}`] = elementValue;
+  }
+
+  /**
    * Hooks up onChange event handlers, and sets the installer dropdown options / download link
    */
   DownloadInfo.Init = function() {
@@ -1760,7 +1772,7 @@ if (typeof Mozilla === 'undefined') {
     }
 
     // Check to see if we want to show a different release channel on load
-    const regex = /\/download\/(beta|daily)\/?$/gm;
+    const regex = /\/download\/(release|esr|beta|daily)\/?$/gm;
     const url = new URL(location.href);
     const overrideReleasePath = regex.exec(url.pathname)
 
@@ -1770,22 +1782,24 @@ if (typeof Mozilla === 'undefined') {
       overrideRelease = overrideReleasePath[1];
     }
 
-    if (['release', 'beta', 'daily'].indexOf(overrideRelease) !== -1) {
+    if (['esr', 'release', 'beta', 'daily'].indexOf(overrideRelease) !== -1) {
       defaultReleaseChannel = overrideRelease;
-      DownloadInfo.ToggleDailyWarning(defaultReleaseChannel);
+      DownloadInfo.ToggleWarning(defaultReleaseChannel);
     }
 
     channelSelect.addEventListener('change', function(event) {
-      DownloadInfo.ToggleDailyWarning(event.currentTarget.value);
+      DownloadInfo.ToggleWarning(event.currentTarget.value);
     });
     osSelect.addEventListener('change', function(event) {
       DownloadInfo.OnOSSelection(event.currentTarget.value);
     });
     [localeSelect, channelSelect, osSelect, installerSelect].forEach(function(element) {
       element.addEventListener('change', function(event) {
+        DownloadInfo.SetDataAttributes(event.currentTarget.name, event.currentTarget.value);
         DownloadInfo.SetDownloadLink();
       });
     });
+
 
     // Set some defaults
     DownloadInfo.SetDefaults();
@@ -1809,6 +1823,11 @@ if (typeof Mozilla === 'undefined') {
     // Channel Selection calls OS Selection
     DownloadInfo.OnOSSelection(defaultOS);
     DownloadInfo.SetDownloadLink();
+
+    // Set the data attribute defaults
+    [localeSelect, channelSelect, osSelect, installerSelect].forEach(function(element) {
+      DownloadInfo.SetDataAttributes(element.name, element.value);
+    });
   }
 
   /**
@@ -1844,32 +1863,44 @@ if (typeof Mozilla === 'undefined') {
 
     if (firstInstaller) {
       installerSelect.value = firstInstaller;
+      // Also have to update the data attributes
+      DownloadInfo.SetDataAttributes(installerSelect.name, installerSelect.value);
     }
 
     // Hack: We need to hide beta and daily for Windows 7/8.1 builds, and force the release channel.
     if (os === platformMap['windows-7-8']) {
       document.querySelector('#download-release-select [value="beta"]').classList.add('hidden');
       document.querySelector('#download-release-select [value="daily"]').classList.add('hidden');
-      // Force release build
-      channelSelect.value = 'release';
-      DownloadInfo.ToggleDailyWarning(channelSelect.value);
+      document.querySelector('#download-release-select [value="release"]').classList.add('hidden');
+      // Force esr build
+      channelSelect.value = 'esr';
+      DownloadInfo.SetDataAttributes(channelSelect.name, channelSelect.value);
     } else {
       document.querySelector('#download-release-select [value="beta"]').classList.remove('hidden');
       document.querySelector('#download-release-select [value="daily"]').classList.remove('hidden');
+      document.querySelector('#download-release-select [value="release"]').classList.remove('hidden');
     }
+
+    DownloadInfo.ToggleWarning(channelSelect.value);
   }
 
   /**
    * Hides/Shows daily warning
    * @param channel {string}
    */
-  DownloadInfo.ToggleDailyWarning = function(channel) {
+  DownloadInfo.ToggleWarning = function(channel) {
     const dailyWarning = document.getElementById('daily-warning');
+    const releaseWarning = document.getElementById('release-warning');
 
     if (channel === 'daily') {
       dailyWarning.classList.remove('hidden');
     } else {
       dailyWarning.classList.add('hidden');
+    }
+    if (channel === 'release') {
+      releaseWarning.classList.remove('hidden');
+    } else {
+      releaseWarning.classList.add('hidden');
     }
   }
 
@@ -1903,13 +1934,9 @@ if (typeof Mozilla === 'undefined') {
       }
     }
 
-    // For release channel just pull from the hidden no-js section.
-    if (channel === 'release') {
-      const link = document.querySelector(`[data-download-locale="${locale}"][data-download-version="${installer}"]`)?.href;
-      // Ensure it's actually a download.mozilla.org link!
-      if (link && link.indexOf('https://download.mozilla.org/') === 0) {
-        return link;
-      }
+    // This is still provided at the release channel even though it's an esr
+    if (installer === 'win8-64') {
+      channel = window._product.defaultChannel;
     }
 
     // Download links are sleepier than they appear.
@@ -1918,7 +1945,18 @@ if (typeof Mozilla === 'undefined') {
       channel = 'nightly';
     }
 
-    const channelVersion = channel === 'release' ? `latest` : `${channel}-latest`;
+    // For release channel just pull from the hidden no-js section.
+    if (channel === window._product.defaultChannel) {
+      const link = document.querySelector(`[data-download-locale="${locale}"][data-download-version="${installer}"]`)?.href;
+      // Ensure it's actually a download.mozilla.org link!
+      if (link && link.indexOf('https://download.mozilla.org/') === 0) {
+        return link;
+      }
+    }
+
+    const version = window._product.channels[channel]?.version;
+    const downloadVersion = window._product.channels[channel]?.useVersionInDownloadLinks === true ? version : 'latest';
+    const channelVersion = ['esr', 'release'].indexOf(channel) !== -1 ? downloadVersion : `${channel}-${downloadVersion}`;
     return `https://download.mozilla.org/?product=thunderbird-${channelVersion}-SSL&os=${installer}&lang=${locale}`
   }
 

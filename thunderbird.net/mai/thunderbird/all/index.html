@@ -53,6 +53,44 @@
     <script>
       window.siteLocale = "mai";
     </script>
+    
+<script>
+  window._product = {
+    defaultChannel: 'esr',
+    defaultLatestVersion: '128.2.3esr',
+    channels: {
+      
+        'esr': {
+          id: 'esr',
+          name: 'Extended Support Release',
+          version: '128.2.3esr',
+          useVersionInDownloadLinks: true,
+        },
+      
+        'release': {
+          id: 'release',
+          name: 'Release',
+          version: '131.0',
+          useVersionInDownloadLinks: true,
+        },
+      
+        'beta': {
+          id: 'beta',
+          name: 'Beta',
+          version: '131.0b6',
+          useVersionInDownloadLinks: false,
+        },
+      
+        'daily': {
+          id: 'daily',
+          name: 'Daily',
+          version: '133.0a1',
+          useVersionInDownloadLinks: false,
+        },
+      
+    }
+  }
+</script>
   </head>
 
   <body class="html-ltr " >
@@ -531,7 +569,7 @@
 
 
 
-<div id="download-button-desktop-release" class="download-button">
+<div id="download-button-desktop-esr" class="download-button">
   
   
   
@@ -1047,7 +1085,7 @@
 
 
 
-<div id="download-button-desktop-release" class="download-button">
+<div id="download-button-desktop-esr" class="download-button">
   
   
   
@@ -1245,6 +1283,9 @@
         <div class="section-text">
           <div id="daily-warning" class="warning-panel hidden">
             <p>The Daily version is an unstable testing and development platform, make sure you back up important data regularly!</p>
+          </div>
+          <div id="release-warning" class="warning-panel hidden">
+            <p>Thunderbird Release is available for testing purposes only until releases are deemed stable enough for official support. Make sure you backup important data regularly!</p>
           </div>
 
           <!-- 1. Locale -->
@@ -1589,10 +1630,13 @@
           <label class="pretend-to-be-h6" for="download-release-select" role="group">
             <strong>Release Channel</strong>
           </label>
-          <select id="download-release-select" name="download" dir="ltr" class="form-select">
+          <select id="download-release-select" name="channel" dir="ltr" class="form-select">
             
             
-            <option value="release">Thunderbird</option>
+            <option value="esr">Thunderbird Extended Support Release</option>
+            
+            
+            <option value="release">Thunderbird Release</option>
             
             
             <option value="beta">Thunderbird Beta</option>
@@ -1606,7 +1650,7 @@
           <label class="pretend-to-be-h6" for="download-os-select" role="group">
             <strong>Operating System</strong>
           </label>
-          <select id="download-os-select" name="lang" dir="ltr" class="form-select">
+          <select id="download-os-select" name="os" dir="ltr" class="form-select">
             
             <option data-is-mobile="false" value="Windows">Windows</option>
             
@@ -1631,7 +1675,7 @@
               <label class="pretend-to-be-h6" for="download-advanced-platform-select" role="group">
                 <strong>Installer Type</strong>
               </label>
-              <select id="download-advanced-platform-select" name="lang" dir="ltr" class="form-select">
+              <select id="download-advanced-platform-select" name="installer" dir="ltr" class="form-select">
                 
                 
                 
