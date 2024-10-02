@@ -8,7 +8,7 @@
   <title>Thunderbird Release Notes</title>
   <subtitle type="text">Thunderbird Release Notes feed provides a simple way to keep up to date with Thunderbird releases.</subtitle>
 
-  <updated>2024-10-02T06:21:30+00:00</updated>
+  <updated>2024-10-02T11:45:05+00:00</updated>
   <logo>https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png</logo>
   <icon>https://www.thunderbird.net/media/img/thunderbird/favicon-196.png</icon>
 
@@ -49,24 +49,6 @@
         
         
           <ul>
-        
-
-        
-        
-
-        <li>
-          <p>Thunderbird could crash on startup</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
         
 
         
