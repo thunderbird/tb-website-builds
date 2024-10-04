@@ -3050,7 +3050,6 @@ footer {
   transition: all 0.5s ease-in;
   border: var(--border-size) solid var(--border-color);
   border-radius: var(--border-radius);
-  box-shadow: var(--shadow-xl);
 }
 .page-survey body {
   min-height: 100vh;
