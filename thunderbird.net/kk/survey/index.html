@@ -57,7 +57,7 @@
     </script>
     
 <script>
-  window._product = {
+  window._desktop_product = {
     defaultChannel: 'esr',
     defaultLatestVersion: '128.3.3esr',
     channels: {
@@ -89,6 +89,35 @@
           version: '133.0a1',
           useVersionInDownloadLinks: false,
         },
+      
+    }
+  }
+  window._mobile_product = {
+    defaultChannel: 'mobile',
+    platforms: {
+      
+        
+        'gplay': {
+          id: 'gplay',
+          arch: 'android',
+          name: 'Google Play Store',
+          url: 'https://play.google.com/store/apps/details?id=com.fsck.k9',
+        },
+        
+        'fdroid': {
+          id: 'fdroid',
+          arch: 'android',
+          name: 'F-Droid',
+          url: 'https://f-droid.org/packages/com.fsck.k9/',
+        },
+        
+        'apk': {
+          id: 'apk',
+          arch: 'android',
+          name: 'Binary (.apk)',
+          url: 'https://github.com/thunderbird/thunderbird-android/releases',
+        },
+        
       
     }
   }
