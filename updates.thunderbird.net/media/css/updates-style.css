@@ -1544,7 +1544,12 @@ button:hover::after {
   display: block !important;
 }
 .no-js [data-download-platform="other"],
-.other [data-download-platform="other"] {
+.other [data-download-platform="other"],
+.ios [data-download-platform="other"],
+.chromsos [data-download-platform="other"],
+.oldwin [data-download-platform="other"],
+.oldmac [data-download-platform="other"],
+.fxos [data-download-platform="other"] {
   display: block !important;
 }
 .js.osx [data-download-os="osx"] {
