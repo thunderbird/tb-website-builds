@@ -2529,7 +2529,7 @@ main {
   font-size: 5.75rem;
   font-weight: 600;
 }
-@media (max-width: 48rem) {
+@media (max-width: 64rem) {
   .page-appeal-nov24 h1 {
     font-size: 3rem;
   }
@@ -2539,7 +2539,7 @@ main {
   font-size: 2rem;
   font-weight: 500;
 }
-@media (max-width: 48rem) {
+@media (max-width: 64rem) {
   .page-appeal-nov24 h1 > span {
     font-size: 1rem;
   }
@@ -2549,7 +2549,7 @@ main {
   padding-bottom: 0;
   overflow: visible;
 }
-@media (max-width: 48rem) {
+@media (max-width: 64rem) {
   .page-appeal-nov24 .container {
     padding: 0;
   }
@@ -2567,7 +2567,7 @@ main {
   right: 0.6rem;
   position: relative;
 }
-@media (max-width: 48rem) {
+@media (max-width: 64rem) {
   .page-appeal-nov24 .footer-graphic {
     margin-top: 7.5rem;
   }
@@ -2593,13 +2593,13 @@ main {
 .page-appeal-nov24 .copy-section b {
   font-weight: 700;
 }
-@media (max-width: 48rem) {
+@media (max-width: 64rem) {
   .page-appeal-nov24 .copy-section {
     max-width: 18rem;
     padding: 1.5rem 1.5rem !important;
   }
 }
-@media (max-width: 48rem) {
+@media (max-width: 64rem) {
   .page-appeal-nov24 .section-text {
     padding: 0.5rem;
     max-inline-size: 100%;
@@ -2628,7 +2628,7 @@ main {
   height: 76.875rem;
   background-color: var(--bg);
 }
-@media (max-width: 48rem) {
+@media (max-width: 64rem) {
   .page-appeal-nov24 .timeline-line {
     height: calc(76.875rem * 2);
   }
@@ -2784,7 +2784,7 @@ main {
   right: -3rem;
   box-shadow: none;
 }
-@media (max-width: 48rem) {
+@media (max-width: 64rem) {
   .page-appeal-nov24 .features {
     margin-top: -2rem;
     gap: 0;
@@ -2958,7 +2958,7 @@ main {
   color: #7F1D1D;
   margin-bottom: 2rem;
   /*
-    @media (max-width: @md) {
+    @media (max-width: @lg) {
       &::after {
         top: -306px;
         left: -208px;
@@ -2972,7 +2972,7 @@ main {
     }
      */
 }
-@media (max-width: 48rem) {
+@media (max-width: 64rem) {
   .page-appeal-nov24 .donate-banner {
     height: 6.25rem;
   }
