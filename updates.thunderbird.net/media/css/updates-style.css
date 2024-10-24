@@ -987,16 +987,7 @@ section {
   text-wrap: balance;
 }
 .split-text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-@media (max-width: 64rem) {
-  .split-text {
-    justify-content: center;
-    margin-bottom: 0.5rem;
-  }
+  text-align: center;
 }
 .section-title {
   display: flex;
@@ -1039,7 +1030,8 @@ section {
 }
 @media (max-width: 64rem) {
   .two-columns div:first-child {
-    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 .two-columns div:nth-child(2) {
@@ -1048,7 +1040,8 @@ section {
 }
 @media (max-width: 64rem) {
   .two-columns div:nth-child(2) {
-    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 .two-columns .section-text {
