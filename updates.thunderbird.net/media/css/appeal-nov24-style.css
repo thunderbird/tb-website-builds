@@ -2507,8 +2507,8 @@ main {
 }
 .page-appeal-nov24 {
   --bg: #FEFFFF;
-  --bg-img: url('/media/img/thunderbird/appeal/nov24/background-image-high-res.webp');
-  --bg-img-set: image-set(var(--bg-img) type('image/webp'), url('/media/img/thunderbird/appeal/nov24/background-image-high-res.jpeg') type('image/jpeg'));
+  --bg-img: url('/media/img/thunderbird/appeal/nov24/background-image-high-res.jpeg');
+  --bg-img-set: image-set(var(--bg-img) type('image/jpeg'), url('/media/img/thunderbird/appeal/nov24/background-image-high-res.webp') type('image/webp'));
 }
 .page-appeal-nov24 body {
   background-image: var(--bg-img);
