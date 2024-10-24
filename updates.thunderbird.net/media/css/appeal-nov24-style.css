@@ -2977,8 +2977,9 @@ main {
     height: 6.25rem;
   }
   .page-appeal-nov24 .donate-banner #donate-banner-right {
-    position: relative;
-    top: -2.5rem;
+    position: absolute;
+    right: 0;
+    bottom: -0.5rem;
   }
 }
 .page-appeal-nov24 #donate-banner-left,
