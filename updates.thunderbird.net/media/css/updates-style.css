@@ -2356,7 +2356,7 @@ footer {
 }
 #decoration {
   position: absolute;
-  left: -59px;
+  left: -55px;
   display: grid;
   gap: 3px;
   grid-template-columns: repeat(20, 1fr);
@@ -2364,7 +2364,7 @@ footer {
   place-items: stretch;
   height: 90px;
   width: 500px;
-  transform: rotate(-55deg);
+  transform: rotate(-54deg);
   transition: opacity 0.5s ease-in-out;
   z-index: 1;
 }
@@ -2498,7 +2498,7 @@ main {
   position: relative;
   margin-top: auto;
   margin-bottom: 0;
-  min-height: 8rem;
+  min-height: 10rem;
   display: flex;
 }
 #footer .mzla {
