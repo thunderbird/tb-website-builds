@@ -2550,6 +2550,9 @@ main {
   }
 }
 .page-appeal-nov24 .container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
   padding-top: 0;
   padding-bottom: 0;
   overflow: visible;
