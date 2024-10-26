@@ -1,0 +1,120 @@
+/* Bug 993702 */
+
+@font-face {
+    font-family: X-LocaleSpecific-Light;
+    font-weight: normal;
+    src: /* All */
+       local(mplus-2p-light),
+       local(KozGoPro-Light),
+       /* OS X */
+       local(RyoGothicPlusN-Light),
+       local(HiraKakuPro-W3),
+       /* Windows */
+       local(Meiryo),
+       local(MS-PGothic),
+       /* Linux */
+       local('VL PGothic regular'),
+       local('TakaoPGothic Regular'),
+       local('IPA P Gothic');
+}
+
+@font-face {
+    font-family: X-LocaleSpecific-Light;
+    font-weight: bold;
+    src: /* All */
+       local(mplus-2p-medium),
+       local(KozGoPro-Medium),
+       /* OS X */
+       local(RyoGothicPlusN-Medium),
+       local(HiraKakuPro-W6),
+       /* Windows */
+       local(Meiryo-Bold),
+       local(MS-PGothic),
+       /* Linux */
+       local('VL PGothic regular'),
+       local('TakaoPGothic Regular'),
+       local('IPA P Gothic');
+}
+
+@font-face {
+    font-family: X-LocaleSpecific;
+    font-weight: normal;
+    src: /* All */
+       local(mplus-2p-regular),
+       local(KozGoPro-Regular),
+       /* OS X */
+       local(RyoGothicPlusN-Regular),
+       local(HiraKakuPro-W3),
+       /* Windows */
+       local(Meiryo),
+       local(MS-PGothic),
+       /* Linux */
+       local('VL PGothic regular'),
+       local('TakaoPGothic Regular'),
+       local('IPA P Gothic');
+}
+
+@font-face {
+    font-family: X-LocaleSpecific;
+    font-weight: bold;
+    src: /* All */
+       local(mplus-2p-bold),
+       local(KozGoPro-Bold),
+       /* OS X */
+       local(RyoGothicPlusN-Bold),
+       local(HiraKakuPro-W6),
+       /* Windows */
+       local(Meiryo-Bold),
+       local(MS-PGothic),
+       /* Linux */
+       local('VL PGothic regular'),
+       local('TakaoPGothic Regular'),
+       local('IPA P Gothic');
+}
+
+@font-face {
+    font-family: X-LocaleSpecific-Extrabold;
+    font-weight: 800;
+    src: /* All */
+       local(mplus-2p-black),
+       local(KozGoPro-Heavy),
+       /* OS X */
+       local(RyoGothicPlusN-Heavy),
+       local(HiraKakuPro-W6),
+       /* Windows */
+       local(Meiryo-Bold),
+       local(MS-PGothic),
+       /* Linux */
+       local('VL PGothic regular'),
+       local('TakaoPGothic Regular'),
+       local('IPA P Gothic');
+}
+
+.page-index #masthead, header {
+    --bg-hero: url('/media/img/l10n/ja/thunderbird/base/home/banner-high-res.png');
+    --bg-hero-set: image-set(url('/media/img/l10n/ja/thunderbird/base/home/banner-high-res.avif') type('image/avif'),
+    url('/media/img/l10n/ja/thunderbird/base/home/banner-high-res.webp') type('image/webp'),
+    var(--bg-hero) type('image/png'));
+}
+
+/* Bug 973171 */
+
+* {
+    /* !important required for locale specific override */
+    font-style: normal !important;  /* stylelint-disable-line declaration-no-important */
+}
+
+:root {
+  --font-tagline: 4.5rem;
+}
+
+/* Donation appeal button */
+.donate-banner #donate-banner-left > b {
+    font-size: 1.65rem;
+}
+.donate-banner #donate-banner-right {
+    font-size: 1.4rem;
+}
+.donate-banner #donate-banner-right > b {
+    font-size: 1.4rem;
+}
