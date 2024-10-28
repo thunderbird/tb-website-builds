@@ -2615,10 +2615,6 @@ main {
   background: linear-gradient(to right, transparent, white, transparent);
   z-index: 1;
 }
-.page-appeal-nov24 .header-graphic {
-  max-width: 33.5rem;
-  margin: auto;
-}
 .page-appeal-nov24 .footer-graphic {
   z-index: 2;
   margin-top: 2rem;
@@ -3019,6 +3015,12 @@ main {
   font-family: 'Metropolis', sans-serif;
   margin-bottom: 2rem;
 }
+.page-appeal-nov24 .donate-banner #donate-banner-left {
+  text-shadow: 0 2px 0 #af1e1e, 0 -2px 0 #af1e1e, 2px 0 0 #af1e1e, -2px 0 0 #af1e1e, 2px 2px 0 #af1e1e, -2px -2px 0 #af1e1e, 2px -2px 0 #af1e1e, -2px 2px 0 #af1e1e;
+}
+.page-appeal-nov24 .donate-banner #donate-banner-right {
+  text-shadow: 0 2px 0 #ffecea, 0 -2px 0 #ffecea, 2px 0 0 #ffecea, -2px 0 0 #ffecea, 2px 2px 0 #ffecea, -2px -2px 0 #ffecea, 2px -2px 0 #ffecea, -2px 2px 0 #ffecea;
+}
 @media (max-width: 54.375rem) {
   .page-appeal-nov24 .donate-banner {
     height: 6.25rem;
@@ -3031,7 +3033,7 @@ main {
     position: absolute;
     right: 0;
     bottom: -0.5rem;
-    font-size: clamp(1.25rem, 0.6429rem + 1.7857vw, 1.5rem);
+    font-size: clamp(1rem, 0.6429rem + 1.7857vw, 1.5rem);
     font-weight: 400;
   }
   .page-appeal-nov24 .donate-banner #donate-banner-right b {
@@ -3039,9 +3041,9 @@ main {
     font-size: clamp(1.25rem, 1.0714rem + 0.8929vw, 1.5rem);
   }
 }
-@media (max-width: 30rem) {
+@media (max-width: 25rem) {
   .page-appeal-nov24 .donate-banner #donate-banner-right {
-    color: var(--txt);
+    display: none;
   }
 }
 .page-appeal-nov24 #donate-banner-left,
