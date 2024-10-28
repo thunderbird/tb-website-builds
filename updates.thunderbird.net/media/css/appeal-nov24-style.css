@@ -2522,6 +2522,9 @@ main {
   max-width: 100%;
   overflow: hidden;
 }
+.page-appeal-nov24 .section-text {
+  max-inline-size: 90%;
+}
 .page-appeal-nov24 h1,
 .page-appeal-nov24 h1 span {
   --txt: #FEFFFF;
@@ -2534,7 +2537,7 @@ main {
   font-size: 5.75rem;
   font-weight: 600;
 }
-@media (max-width: 54.375rem) {
+@media (max-width: 48rem) {
   .page-appeal-nov24 h1 {
     font-size: 3rem;
   }
@@ -2544,7 +2547,7 @@ main {
   font-size: 2rem;
   font-weight: 500;
 }
-@media (max-width: 54.375rem) {
+@media (max-width: 48rem) {
   .page-appeal-nov24 h1 > span {
     font-size: 1rem;
   }
@@ -2557,7 +2560,7 @@ main {
   padding-bottom: 0;
   overflow: visible;
 }
-@media (max-width: 54.375rem) {
+@media (max-width: 48rem) {
   .page-appeal-nov24 .container {
     padding: 0;
   }
@@ -2621,7 +2624,7 @@ main {
   right: 0.6rem;
   position: relative;
 }
-@media (max-width: 54.375rem) {
+@media (max-width: 48rem) {
   .page-appeal-nov24 .footer-graphic {
     margin-top: 7.5rem;
   }
@@ -2641,13 +2644,10 @@ main {
   margin-bottom: 0;
   padding: 2rem 2.5rem;
 }
-.page-appeal-nov24 .copy-section p {
-  max-inline-size: 90%;
-}
 .page-appeal-nov24 .copy-section b {
   font-weight: 700;
 }
-@media (max-width: 54.375rem) {
+@media (max-width: 48rem) {
   .page-appeal-nov24 .copy-section {
     max-width: 18rem;
     padding: 1.5rem 1.5rem !important;
@@ -2655,7 +2655,7 @@ main {
     margin-right: auto;
   }
 }
-@media (max-width: 54.375rem) {
+@media (max-width: 48rem) {
   .page-appeal-nov24 .section-text {
     padding: 0.5rem;
     max-inline-size: 100%;
@@ -3021,7 +3021,7 @@ main {
 .page-appeal-nov24 .donate-banner #donate-banner-right {
   text-shadow: 0 2px 0 #ffecea, 0 -2px 0 #ffecea, 2px 0 0 #ffecea, -2px 0 0 #ffecea, 2px 2px 0 #ffecea, -2px -2px 0 #ffecea, 2px -2px 0 #ffecea, -2px 2px 0 #ffecea;
 }
-@media (max-width: 54.375rem) {
+@media (max-width: 48rem) {
   .page-appeal-nov24 .donate-banner {
     height: 6.25rem;
   }
