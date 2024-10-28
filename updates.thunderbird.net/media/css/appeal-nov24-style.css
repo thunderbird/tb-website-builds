@@ -2565,6 +2565,56 @@ main {
 .page-appeal-nov24 #twenty-years {
   padding-top: 3.75rem;
 }
+.page-appeal-nov24 #header-graphic {
+  box-sizing: border-box;
+  position: relative;
+  display: grid;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3));
+  place-items: center;
+  isolation: isolate;
+  margin-top: 2rem;
+  margin-bottom: -2rem;
+}
+.page-appeal-nov24 #header-graphic img {
+  box-sizing: border-box;
+  width: 200px;
+  max-width: 100%;
+  z-index: 2;
+}
+.page-appeal-nov24 #header-graphic span {
+  box-sizing: border-box;
+  color: #19518F;
+  font-size: 2.5rem;
+  font-family: Metropolis, sans-serif;
+  font-weight: 600;
+  line-height: 1;
+  /*
+      margin-block-start: calc(-1lh - 0.5rem - 1px);
+      height: calc(1lh + 0.5rem);
+      */
+  top: -3.25rem;
+  position: relative;
+  word-wrap: anywhere;
+  min-width: 12.40625rem;
+  background: white;
+  padding: 0.5rem;
+  border-radius: 9px;
+  text-transform: uppercase;
+  z-index: 2;
+}
+.page-appeal-nov24 #header-graphic::before {
+  box-sizing: border-box;
+  content: '';
+  position: absolute;
+  inset-inline: 0;
+  margin-inline: auto;
+  bottom: 4.75rem;
+  height: 8px;
+  max-width: 800px;
+  display: block;
+  background: linear-gradient(to right, transparent, white, transparent);
+  z-index: 1;
+}
 .page-appeal-nov24 .header-graphic {
   max-width: 33.5rem;
   margin: auto;
