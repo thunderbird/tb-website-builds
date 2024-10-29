@@ -162,8 +162,8 @@ URL_MAPPINGS = {
     'blog': 'https://blog.thunderbird.net/',
     'calendar': '/calendar',
     'contribute': 'https://github.com/thunderbird/thunderbird-website',
-    'download.android.gplay': 'https://play.google.com/store/apps/details?id=com.fsck.k9',
-    'download.android.fdroid': 'https://f-droid.org/packages/com.fsck.k9/',
+    'download.android.gplay': 'https://play.google.com/store/apps/details?id=net.thunderbird.android&referrer=utm_campaign%3Dandroid_website_appeal%26utm_medium%3Dweb%26utm_source%3Dthunderbird.net%26utm_content%3Dlink',
+    'download.android.fdroid': 'https://f-droid.org/packages/net.thunderbird.android',
     'download.android.binary': 'https://github.com/thunderbird/thunderbird-android/releases',
     'download.desktop.flathub': 'https://flathub.org/apps/org.mozilla.Thunderbird',
     'download.desktop.msstore': 'https://apps.microsoft.com/detail/9pm5vm1s3vmq',
@@ -541,4 +541,13 @@ DEFAULT_RELEASE_VERSION = 'esr'
 MATOMO_SITE_IDS = {
     'website': 1,
     'utn': 3,
+}
+
+FRU_FORM_IDS = {
+    # General
+    'support': 'support',
+    'tfa': 'tfa',
+
+    # Appeals
+    '20years': '20years',
 }
