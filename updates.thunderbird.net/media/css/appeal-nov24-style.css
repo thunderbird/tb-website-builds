@@ -2541,6 +2541,7 @@ main {
   gap: 0.5rem;
   font-size: 1rem;
   font-weight: 500;
+  padding: 0.5em clamp(1.25rem, -3.75rem + 40vw, 3rem);
 }
 .page-appeal-nov24 #donate-footer .heart-svg {
   display: flex;
@@ -2983,7 +2984,7 @@ main {
   margin: 1rem 0 !important;
 }
 .page-appeal-nov24 .heart-container {
-  color: var(--color-red-50);
+  color: var(--color-red-30);
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   gap: 32px;
@@ -2991,15 +2992,11 @@ main {
   margin-top: 2em;
   width: 100%;
   max-width: 41.125rem;
+  justify-content: center;
 }
 .page-appeal-nov24 .heart-svg {
   position: relative;
   top: -4px;
-}
-@media (prefers-color-scheme: dark) {
-  .page-appeal-nov24 .heart-container {
-    color: var(--color-red-30);
-  }
 }
 .page-appeal-nov24 .line {
   display: block;
@@ -3013,6 +3010,7 @@ main {
   flex-direction: column;
   gap: 6px;
   justify-self: stretch;
+  overflow: hidden;
 }
 .page-appeal-nov24 .left-lines {
   align-items: end;
