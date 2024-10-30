@@ -2400,6 +2400,7 @@ footer {
   position: relative;
   bottom: 4.6875rem;
   pointer-events: none;
+  overflow: hidden;
 }
 @media (max-width: 48rem) {
   .page-index #freedom-to-go-anywhere .mobile-render img {
