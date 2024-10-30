@@ -1478,6 +1478,12 @@ button:hover::after {
   min-width: 8rem;
   padding: 0.5rem 1rem;
 }
+.btn-no-bg-dark {
+  --btn-background-color: rgba(0, 0, 0, 0.8);
+}
+.btn-no-bg-dark:hover {
+  color: currentColor;
+}
 .download-icon {
   position: relative;
   top: 0.1rem;
@@ -1659,13 +1665,19 @@ button:hover::after {
   padding-left: 2rem;
   padding-right: 2rem;
 }
-.page-index .btn-no-bg {
+.page-index .btn-no-bg,
+.page-desktop .btn-no-bg,
+.page-mobile .btn-no-bg {
   --btn-background-color: rgba(0, 0, 0, 0.8);
 }
-.page-index .btn-no-bg::after {
+.page-index .btn-no-bg::after,
+.page-desktop .btn-no-bg::after,
+.page-mobile .btn-no-bg::after {
   background-color: var(--btn-background-color);
 }
-.page-index .btn-no-bg:hover {
+.page-index .btn-no-bg:hover,
+.page-desktop .btn-no-bg:hover,
+.page-mobile .btn-no-bg:hover {
   background: linear-gradient(var(--btn-background-color), var(--btn-background-color)) padding-box, linear-gradient(to right, var(--color-blue-50), var(--color-purple-50)) border-box;
   color: currentColor;
 }
@@ -2536,6 +2548,9 @@ main {
   align-items: center;
   position: relative;
   top: 0.01rem;
+}
+.page-appeal-nov24 #donate-footer:hover {
+  color: #af1e1e;
 }
 .page-appeal-nov24 .section-text {
   max-inline-size: 90%;
