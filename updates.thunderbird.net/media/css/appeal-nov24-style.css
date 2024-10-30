@@ -3061,7 +3061,7 @@ main {
     position: absolute;
     right: 0;
     bottom: -0.5rem;
-    font-size: clamp(1rem, 0.6429rem + 1.7857vw, 1.5rem);
+    font-size: clamp(0.9rem, 0.6429rem + 1.7857vw, 1.25rem);
     font-weight: 400;
   }
   .page-appeal-nov24 .donate-banner #donate-banner-right b {
