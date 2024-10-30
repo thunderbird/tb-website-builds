@@ -1,8 +1,9 @@
 var _paq = window._paq = window._paq || [];
 var u="https://thunderbird.innocraft.cloud/";
 /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-_paq.push(["disableCookies"]);
 _paq.push(['trackPageView']);
+// Disable cookies needs to be set _after_ trackPageView for it to actually work.
+_paq.push(["disableCookies"]);
 _paq.push(['enableLinkTracking']);
 _paq.push(['setTrackerUrl', u+'matomo.php']);
 _paq.push(["setCookieDomain", "*.thunderbird.net"]);
