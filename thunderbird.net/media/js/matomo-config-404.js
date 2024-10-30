@@ -1,5 +1,6 @@
 var u="//thunderbird.innocraft.cloud/";
 var _paq = _paq || [];
+_paq.push(["disableCookies"]);
 _paq.push(['setDocumentTitle',  '404/URL = ' +
 encodeURIComponent(document.location.pathname+document.location.search) +
 '/From = ' + encodeURIComponent(document.referrer)]);
