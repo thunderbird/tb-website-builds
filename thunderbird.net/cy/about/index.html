@@ -2,7 +2,7 @@
 <!doctype html>
 
 
-<html class="windows x86 no-js page-who-we-are" lang="cy" dir="ltr">
+<html class="other x86 no-js page-who-we-are" lang="cy" dir="ltr">
   <head>
     <meta charset="utf-8">
 
@@ -55,7 +55,7 @@
     </script>
     
 <script>
-  window._product = {
+  window._desktop_product = {
     defaultChannel: 'esr',
     defaultLatestVersion: '128.4.0esr',
     channels: {
@@ -87,6 +87,35 @@
           version: '134.0a1',
           useVersionInDownloadLinks: false,
         },
+      
+    }
+  }
+  window._mobile_product = {
+    defaultChannel: 'mobile',
+    platforms: {
+      
+        
+        'gplay': {
+          id: 'gplay',
+          arch: 'android',
+          name: 'Google Play Store',
+          url: 'https://play.google.com/store/apps/details?id=net.thunderbird.android',
+        },
+        
+        'fdroid': {
+          id: 'fdroid',
+          arch: 'android',
+          name: 'F-Droid',
+          url: 'https://f-droid.org/packages/net.thunderbird.android',
+        },
+        
+        'apk': {
+          id: 'apk',
+          arch: 'android',
+          name: 'Binary (.apk)',
+          url: 'https://github.com/thunderbird/thunderbird-android/releases',
+        },
+        
       
     }
   }
@@ -188,11 +217,10 @@
     </button>
     
 <ul id="nav-menu" class="nav-links">
-  <!--
   <li class="nav-entry nav-expandable" tabindex="0">
     <button
       aria-controls="nav-cat-products"
-      class="nav-ln nav-expandable"
+      class="nav-ln"
     >
       Cynnyrch
     </button>
@@ -200,7 +228,7 @@
       <ul class="popover-panel">
         
 <li class="entry-container">
-  <a href="/cy">
+  <a href="/cy/desktop">
     <div class="entry-icon" aria-hidden="true">
       <svg width="35.697" height="23.951" viewBox="0 0 9.445 6.337" version="1.1" id="svg64945" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
     <g id="layer1" transform="translate(-863.955 227.05)">
@@ -226,7 +254,7 @@
 
         
 <li class="entry-container">
-  <a href="/cy">
+  <a href="/cy/mobile">
     <div class="entry-icon" aria-hidden="true">
       <svg width="34.787" height="31.397" viewBox="0 0 9.204 8.307" version="1.1" id="svg64945" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
     <g id="layer1" transform="translate(-864.285 198.622)">
@@ -258,7 +286,6 @@
       </ul>
     </div>
   </li>
-  -->
   <li class="nav-entry nav-expandable" tabindex="0">
     <button
       aria-controls="nav-cat-resources"
@@ -304,15 +331,16 @@
 <li class="entry-container">
   <a href="https://support.mozilla.org/products/thunderbird/">
     <div class="entry-icon" aria-hidden="true">
-      <svg width="33.785" height="27.482" viewBox="0 0 8.939 7.271" version="1.1" id="svg64945" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
-    <g id="layer1" transform="translate(-1516.713 134.471)">
-        <g id="g45" transform="translate(0 455.137)">
-            <path id="path43-1" style="opacity:.2;fill:#3e3c67;fill-opacity:1;stroke:none;stroke-width:.264583;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" d="M1523.498-589.476a2.045 2.045 0 0 0-1.485.603l-.83.83v.001l1.203 1.205c.23.23.241.589.025.805-.215.216-.574.204-.804-.026l-1.203-1.204-2.127 2.128 2.49 2.493c.23.23.6.23.83 0l3.322-3.324a2.057 2.057 0 0 0 0-2.908v-.004a2.049 2.049 0 0 0-1.416-.599z"/>
-            <path id="path43" style="opacity:1;fill:none;fill-opacity:1;stroke:#3e3c67;stroke-width:.264583;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" d="M1523.499-589.476a2.045 2.045 0 0 0-1.486.603l-.83.83h.001v.001l1.203 1.205c.229.23.24.589.025.805-.216.216-.574.204-.804-.026l-1.204-1.204-2.127 2.128 2.491 2.493c.23.23.6.23.83 0l3.321-3.324a2.057 2.057 0 0 0 0-2.908v-.004a2.049 2.049 0 0 0-1.416-.599z"/>
-            <path style="fill:#fff;fill-opacity:1;stroke:#3e3c67;stroke-width:.264583;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" d="m1520.537-582.871 1.426-1.427" id="path45-7"/>
-            <path style="fill:#fff;fill-opacity:1;stroke:#3e3c67;stroke-width:.264583;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" d="m1519.852-583.61 1.426-1.428" id="path45-2"/>
-            <path style="fill:#fff;fill-opacity:1;stroke:#3e3c67;stroke-width:.264583;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" d="m1519.057-584.407 1.426-1.427" id="path45-2-7"/>
-            <path id="path43-0" style="fill:none;fill-opacity:1;stroke:#3e3c67;stroke-width:.264583;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" d="M1518.862-589.472a2.054 2.054 0 0 0-1.415 3.508l.83.83 2.127-2.128 1.203 1.204c.23.23.589.242.805.026.215-.216.204-.575-.025-.805l-1.204-1.204v-.001l-.415-.415-.415-.416c-.018-.017-.037-.033-.055-.047a2.054 2.054 0 0 0-1.434-.552z"/>
+      <svg width="35.695" height="23.949" viewBox="0 0 9.444 6.336" version="1.1" id="svg64945" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+    <g id="layer1" transform="translate(-1568.775 214.43)">
+        <g id="layer1-7" transform="translate(704.836 12.616) scale(.99998)">
+            <g id="g697-7-9" transform="translate(538.725 35.123)">
+                <path id="path734-1-2-2" style="font-variation-settings:normal;opacity:.2;vector-effect:none;fill:#3e3c67;fill-opacity:1;stroke:none;stroke-width:.264583;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers fill stroke;stop-color:#000" d="M326.586-261.564c-.305 0-.304 0-.304.304v4.394l7.34.017v-4.412c0-.304-.002-.303-.308-.303zm2.737 1.234c.3 0 .507.19.623.34a.838.838 0 0 1 .686-.332c.214 0 .404.087.537.244a.758.758 0 0 1 .155.62c-.05.287-.279.518-.461.704a9.999 9.999 0 0 1-.826.788l-.087.074-.08-.08-.226-.216c-.134-.127-.273-.258-.408-.396-.038-.04-.082-.081-.127-.126-.193-.186-.413-.397-.502-.637a.687.687 0 0 1 .084-.623.783.783 0 0 1 .632-.36z"/>
+                <path d="M329.323-260.33c.3 0 .506.19.623.34a.838.838 0 0 1 .686-.332c.214 0 .404.087.536.244a.758.758 0 0 1 .155.62c-.05.287-.278.518-.46.704a9.999 9.999 0 0 1-.826.788l-.086.074-.081-.08-.226-.216c-.134-.127-.273-.258-.408-.396-.038-.04-.082-.081-.128-.126-.193-.186-.412-.397-.5-.637a.688.688 0 0 1 .083-.623.783.783 0 0 1 .632-.36z" style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;stroke:#3e3c67;stroke-width:.264588;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers fill stroke;stop-color:#000" id="path1-94"/>
+                <path id="rect733-3-0" style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;stroke:#3e3c67;stroke-width:.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers fill stroke;stop-color:#000" d="M334.542-256.849h-9.18v.267c0 .34.274.614.614.614h7.951c.34 0 .615-.274.615-.614z"/>
+                <path id="path735-6-2" style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;stroke:#3e3c67;stroke-width:.264583;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers fill stroke;stop-color:#000" d="M326.47-262.04a.613.613 0 0 0-.614.614v4.577h8.191v-4.577a.613.613 0 0 0-.614-.614z"/>
+                <path id="path734-1-3" style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;stroke:#3e3c67;stroke-width:.264583;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers fill stroke;stop-color:#000" d="M326.586-261.564c-.305 0-.304 0-.304.304v4.394l7.339.017v-4.412c0-.304-.001-.303-.307-.303z"/>
+            </g>
         </g>
     </g>
     <style type="text/css" id="style1070">
@@ -322,48 +350,31 @@
 
     </div>
     <div class="entry-text">
-      <h2 aria-label="Derbyn Cymorth.">Derbyn Cymorth</h2>
-      <h6>Find the help you need configuring and using Thunderbird.</h6>
+      <h2 aria-label="Cymorth Bwrdd Gwaith.">Cymorth Bwrdd Gwaith</h2>
+      <h6>Dewch o hyd i'r cymorth sydd ei angen arnoch i ffurfweddu a defnyddio Thunderbird Bwrdd Gwaith.</h6>
     </div>
   </a>
 </li>
 
-        <!--
-<li class="entry-container">
-  <a href="https://blog.thunderbird.net/">
-    <div class="entry-icon" aria-hidden="true">
-      <svg width="35.71" height="32.759" viewBox="0 0 9.448 8.667" version="1.1" id="svg64945" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
-    <g id="layer1" transform="translate(-1515.716 110.5)">
-        <g id="g713-2-7" transform="translate(658.06 -338.151)">
-            <path id="rect700-0-1-9" style="font-variation-settings:normal;opacity:.2;vector-effect:none;fill:#3e3c67;fill-opacity:1;stroke:none;stroke-width:.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers fill stroke" d="M861.894 227.784a2.873 2.873 0 0 0-2.881 2.877v1.746a2.032 1.972 0 0 1 .472-.134v-1.076c0-1.594 1.097-2.326 2.46-2.326h.832c1.363 0 2.46.732 2.46 2.326v1.069a2.032 1.972 0 0 1 .512.141v-1.746a2.873 2.873 0 0 0-2.881-2.877zm-1.92 4.458a.8.8 0 0 0-.802.802v2.341a.8.8 0 0 0 .801.802.8.8 0 0 0 .802-.802v-2.341a.8.8 0 0 0-.802-.802zm4.973 0a.8.8 0 0 0-.8.802v2.341a.8.8 0 0 0 .8.802.8.8 0 0 0 .802-.802v-2.341a.8.8 0 0 0-.802-.802zm-3.053-4.458a2.873 2.873 0 0 0-2.881 2.877v1.746a2.032 1.972 0 0 1 .472-.134v-1.076c0-1.594 1.097-2.326 2.46-2.326h.832c1.363 0 2.46.732 2.46 2.326v1.069a2.032 1.972 0 0 1 .512.141v-1.746a2.873 2.873 0 0 0-2.881-2.877zm-1.92 4.458a.8.8 0 0 0-.802.802v2.341a.8.8 0 0 0 .801.802.8.8 0 0 0 .802-.802v-2.341a.8.8 0 0 0-.802-.802zm4.973 0a.8.8 0 0 0-.8.802v2.341a.8.8 0 0 0 .8.802.8.8 0 0 0 .802-.802v-2.341a.8.8 0 0 0-.802-.802z"/>
-            <path id="rect700-0-1" style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#3e3c67;stroke-width:.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers fill stroke" d="M861.894 227.784a2.873 2.873 0 0 0-2.881 2.877v1.746a2.032 1.972 0 0 1 .472-.134v-1.076c0-1.594 1.097-2.326 2.46-2.326h.832c1.363 0 2.46.732 2.46 2.326v1.069a2.032 1.972 0 0 1 .512.141v-1.746a2.873 2.873 0 0 0-2.881-2.877zm-1.92 4.458a.8.8 0 0 0-.802.802v2.341a.8.8 0 0 0 .801.802.8.8 0 0 0 .802-.802v-2.341a.8.8 0 0 0-.802-.802zm4.973 0a.8.8 0 0 0-.8.802v2.341a.8.8 0 0 0 .8.802.8.8 0 0 0 .802-.802v-2.341a.8.8 0 0 0-.802-.802zm-3.053-4.458a2.873 2.873 0 0 0-2.881 2.877v1.746a2.032 1.972 0 0 1 .472-.134v-1.076c0-1.594 1.097-2.326 2.46-2.326h.832c1.363 0 2.46.732 2.46 2.326v1.069a2.032 1.972 0 0 1 .512.141v-1.746a2.873 2.873 0 0 0-2.881-2.877zm-1.92 4.458a.8.8 0 0 0-.802.802v2.341a.8.8 0 0 0 .801.802.8.8 0 0 0 .802-.802v-2.341a.8.8 0 0 0-.802-.802zm4.973 0a.8.8 0 0 0-.8.802v2.341a.8.8 0 0 0 .8.802.8.8 0 0 0 .802-.802v-2.341a.8.8 0 0 0-.802-.802z"/>
-            <path id="path711-1-5" style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;stroke:#3e3c67;stroke-width:.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers fill stroke" d="M232.242 864.941h0c0 .001 0 0 0 0zm.007.107a.8.8 0 0 0 .795.701h2.342c.41 0 .746-.306.794-.703a2.04 2.04 0 0 1-.979 1.655 1.922 1.922 0 0 1-1.972 0 2.04 2.04 0 0 1-.98-1.653zm3.938-.107h0v.003-.003z" transform="matrix(0 1 1 0 0 0)"/>
-            <path id="path712-7-1" style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;stroke:#3e3c67;stroke-width:.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers fill stroke" d="M232.242-859.82a1.972 2.032 0 0 0 .986 1.759 1.972 2.032 0 0 0 1.973 0 1.972 2.032 0 0 0 .986-1.76h-.015a.8.8 0 0 1-.787.65h-2.341a.8.8 0 0 1-.787-.65z" transform="rotate(90)"/>
-        </g>
-    </g>
-    <style type="text/css" id="style1070">
-        .st0{fill:#5f6368}.st1{fill:#4285f4}.st2{fill:#34a853}.st3{fill:#fbbc04}.st4{fill:#ea4335}
-    </style>
-</svg>
-
-    </div>
-    <div class="entry-text">
-      <h2 aria-label="Podcasts.">Podcasts</h2>
-      <h6>Meet interesting people and hear their Thunderbird stories.</h6>
-    </div>
-  </a>
-</li>
--->
         
 <li class="entry-container">
-  <a href="/cy/thunderbird/all/">
+  <a href="https://support.mozilla.org/products/thunderbird-android/">
     <div class="entry-icon" aria-hidden="true">
-      <svg width="27.6" height="36.522" viewBox="0 0 7.303 9.663" version="1.1" id="svg64945" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
-    <g id="layer1" transform="translate(-1516.789 82.946)">
-        <g id="g686-8-3" transform="translate(658.477 -217.242)">
-            <path id="path684-7-9-2" style="font-variation-settings:normal;opacity:.2;vector-effect:none;fill:#3e3c67;fill-opacity:1;stroke:none;stroke-width:.264583;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers fill stroke" d="M858.876 139.812c-.125 0-.302.071-.358.182a.7.7 0 0 0 .132.811l2.816 2.817a.701.701 0 0 0 .994 0l2.816-2.817a.7.7 0 0 0 .155-.76c-.059-.143-.281-.233-.437-.233h-.63l-1.904 1.904a.701.701 0 0 1-.994 0l-1.904-1.904z"/>
-            <path id="path684-7-9" style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;stroke:#3e3c67;stroke-width:.264583;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers fill stroke" d="M857.488 140.607c-.126 0-.303.07-.36.182a.7.7 0 0 0 .133.81l2.816 2.817a.701.701 0 0 0 .994 0l2.816-2.816a.7.7 0 0 0 .155-.76c-.059-.144-.281-.233-.437-.233h-.63l-1.904 1.904a.701.701 0 0 1-.994 0l-1.904-1.904z" transform="translate(1.389 -.795)"/>
-            <path id="rect683-6-4" style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;stroke:#3e3c67;stroke-width:.264583;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers fill stroke" d="M860.238 137.128c-.643 0-1.16.518-1.16 1.16v1.975a.343.343 135 0 1-.343.343h-1.247c-.125 0-.303.072-.359.183a.701.701 0 0 0 .132.811l2.816 2.816a.701.701 0 0 0 .994 0l2.816-2.816a.701.701 0 0 0 .155-.76c-.059-.144-.282-.234-.437-.234h-1.167a.343.343 45 0 1-.343-.343v-1.975c0-.642-.518-1.16-1.16-1.16z" transform="translate(1.389 -2.7)"/>
+      <svg width="34.789" height="31.395" viewBox="0 0 9.205 8.307" version="1.1" id="svg64945" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+    <g id="layer1" transform="translate(-1569.695 203.589)">
+        <g id="layer1-92" transform="matrix(1 0 0 1 705.406 -4.966)">
+            <g id="g695-2-2" transform="translate(538.725 35.652)">
+                <g id="g694-9-8">
+                    <path id="rect738-1-4-9" style="font-variation-settings:normal;opacity:.2;vector-effect:none;fill:#3e3c67;fill-opacity:1;stroke:none;stroke-width:.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers fill stroke" d="M326.414-233.636a.146.146 0 0 0-.147.147v4.846c0 .081.065.147.147.147h2.715v-3.993c0-.37.3-.67.672-.67h3.033a.67.67 0 0 1 .672.67v3.993h.403a.147.147 0 0 0 .147-.147v-4.846a.147.147 0 0 0-.147-.147z"/>
+                    <path id="rect739-3-7" style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;stroke:#3e3c67;stroke-width:.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers fill stroke" d="M326.25-234.141a.557.557 0 0 0-.559.558v5.035c0 .309.25.558.56.558h2.878v-4.327h4.377v4.327h.566c.31 0 .559-.25.559-.558v-5.035c0-.31-.25-.558-.559-.558z"/>
+                    <path id="path738-4-3" style="font-variation-settings:normal;opacity:.2;vector-effect:none;fill:#3e3c67;fill-opacity:1;stroke:none;stroke-width:.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers fill stroke" d="M329.129-232.317v5.352h4.377v-5.352zm1.56 1.433c.3 0 .507.19.623.341a.838.838 0 0 1 .686-.332c.214 0 .404.086.536.244a.758.758 0 0 1 .155.62c-.05.286-.278.518-.46.703a10.002 10.002 0 0 1-.826.788l-.086.074-.081-.08-.226-.215c-.134-.127-.273-.259-.408-.396-.038-.04-.082-.082-.127-.126-.193-.187-.413-.398-.502-.638a.687.687 0 0 1 .084-.623.783.783 0 0 1 .632-.36z"/>
+                    <path d="M330.689-230.884c.3 0 .506.19.623.341a.838.838 0 0 1 .686-.332c.214 0 .404.086.536.243a.758.758 0 0 1 .155.621c-.05.286-.278.518-.46.703a10.002 10.002 0 0 1-.826.788l-.086.074-.081-.08-.226-.215c-.134-.127-.273-.259-.408-.397-.038-.039-.082-.08-.127-.125-.193-.187-.413-.398-.502-.638a.688.688 0 0 1 .084-.623.783.783 0 0 1 .633-.36z" style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;stroke:#3e3c67;stroke-width:.264582;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers fill stroke;stop-color:#000" id="path1-94-8"/>
+                    <path id="path738-4-0-6" style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;stroke:#3e3c67;stroke-width:.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers fill stroke" d="M333.506-232.317h-4.377v5.352h4.377z"/>
+                    <path id="rect738-1-1" style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;stroke:#3e3c67;stroke-width:.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers fill stroke" d="M326.414-233.636a.146.146 0 0 0-.147.147v4.846c0 .081.065.147.147.147h2.715v-3.993c0-.37.3-.67.672-.67h3.033a.67.67 0 0 1 .672.67v3.993h.403a.147.147 0 0 0 .147-.147v-4.846a.147.147 0 0 0-.147-.147z"/>
+                    <path id="path737-7-2" style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;stroke:#3e3c67;stroke-width:.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers fill stroke" d="M329.8-233.159a.67.67 0 0 0-.671.67v.172h4.377v-.172a.67.67 0 0 0-.672-.67z"/>
+                    <path id="rect736-9-9" style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;stroke:#3e3c67;stroke-width:.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers fill stroke" d="M333.506-226.965h-4.377v.196c0 .371.3.67.672.67h3.033a.67.67 0 0 0 .672-.67z"/>
+                </g>
+            </g>
         </g>
     </g>
     <style type="text/css" id="style1070">
@@ -373,8 +384,8 @@
 
     </div>
     <div class="entry-text">
-      <h2 aria-label="Llwytho i Lawr.">Llwytho i Lawr</h2>
-      <h6>Dewch o hyd i'r fersiwn diweddaraf o Thunderbird.</h6>
+      <h2 aria-label="Cymorth Symudol.">Cymorth Symudol</h2>
+      <h6>Dewch o hyd i'r help sydd ei angen arnoch i ffurfweddu a defnyddio Thunderbird Symudol.</h6>
     </div>
   </a>
 </li>
@@ -479,7 +490,7 @@
       </ul>
     </div>
   </li>
-  <li class="nav-entry no-border nav-expandable" tabindex="0">
+  <li class="nav-entry nav-expandable" tabindex="0">
     <button
       aria-controls="nav-cat-contribute"
       class="nav-ln"
@@ -556,135 +567,22 @@
       </ul>
     </div>
   </li>
-  <li class="nav-entry no-border no-mobile">
+  <li class="nav-entry no-border no-desktop">
+    <a
+      href="/cy/thunderbird/all/"
+      class="nav-ln"
+    >
+      Llwytho i Lawr
+    </a>
+  </li>
+  <li class="nav-entry no-border no-mobile nav-button-fix">
     <div class="header-download">
-      
-
-  
-
-
-
-
-
-
-
-
-<div id="download-button-desktop-esr" class="download-button">
-  
-  
-  
-  <ul class="download-list list-none p-0 flex flex-wrap max-w-lg mb-0 justify-center">
-    
-      <li class="os_win64">
-        <a class="matomo-track-download download-link btn-download btn-no-bg"
-          href="https://download.mozilla.org/?product=thunderbird-128.4.0esr-SSL&os=win64&lang=cy"
-          data-donate-redirect="download-esr"
-          data-donate-content="post_download"
-          data-donate-link="/cy/thank-you?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=esr"
-          >
-          
-            Llwytho i Lawr
-          
-        </a>
-      </li>
-    
-      <li class="os_msi">
-        <a class="matomo-track-download download-link btn-download btn-no-bg"
-          href="https://download.mozilla.org/?product=thunderbird-128.4.0esr-msi-SSL&os=win64&lang=cy"
-          data-donate-redirect="download-esr"
-          data-donate-content="post_download"
-          data-donate-link="/cy/thank-you?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=esr"
-          >
-          
-            Llwytho i Lawr
-          
-        </a>
-      </li>
-    
-      <li class="os_osx">
-        <a class="matomo-track-download download-link btn-download btn-no-bg"
-          href="https://download.mozilla.org/?product=thunderbird-128.4.0esr-SSL&os=osx&lang=cy"
-          data-donate-redirect="download-esr"
-          data-donate-content="post_download"
-          data-donate-link="/cy/thank-you?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=esr"
-          >
-          
-            Llwytho i Lawr
-          
-        </a>
-      </li>
-    
-      <li class="os_linux64">
-        <a class="matomo-track-download download-link btn-download btn-no-bg"
-          href="https://download.mozilla.org/?product=thunderbird-128.4.0esr-SSL&os=linux64&lang=cy"
-          data-donate-redirect="download-esr"
-          data-donate-content="post_download"
-          data-donate-link="/cy/thank-you?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=esr"
-          >
-          
-            Llwytho i Lawr
-          
-        </a>
-      </li>
-    
-      <li class="os_win">
-        <a class="matomo-track-download download-link btn-download btn-no-bg"
-          href="https://download.mozilla.org/?product=thunderbird-128.4.0esr-SSL&os=win&lang=cy"
-          data-donate-redirect="download-esr"
-          data-donate-content="post_download"
-          data-donate-link="/cy/thank-you?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=esr"
-          >
-          
-            Llwytho i Lawr
-          
-        </a>
-      </li>
-    
-      <li class="os_linux">
-        <a class="matomo-track-download download-link btn-download btn-no-bg"
-          href="https://download.mozilla.org/?product=thunderbird-128.4.0esr-SSL&os=linux&lang=cy"
-          data-donate-redirect="download-esr"
-          data-donate-content="post_download"
-          data-donate-link="/cy/thank-you?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=esr"
-          >
-          
-            Llwytho i Lawr
-          
-        </a>
-      </li>
-    
-      <li class="os_win8-64">
-        <a class="matomo-track-download download-link btn-download btn-no-bg"
-          href="https://download.mozilla.org/?product=thunderbird-115.16.2-SSL&os=win64&lang=cy"
-          data-donate-redirect="download-esr"
-          data-donate-content="post_download"
-          data-donate-link="/cy/thank-you?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=esr"
-          >
-          
-            Llwytho i Lawr
-          
-        </a>
-      </li>
-    
-      <li class="os_win8">
-        <a class="matomo-track-download download-link btn-download btn-no-bg"
-          href="https://download.mozilla.org/?product=thunderbird-115.16.2-SSL&os=win&lang=cy"
-          data-donate-redirect="download-esr"
-          data-donate-content="post_download"
-          data-donate-link="/cy/thank-you?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=esr"
-          >
-          
-            Llwytho i Lawr
-          
-        </a>
-      </li>
-    
-  </ul>
-  
-</div>
+      <a href="/cy/thunderbird/all/" class="btn btn-no-bg" aria-label="Llwytho i Lawr" title="Dewch o hyd i'r fersiwn diweddaraf o Thunderbird.">
+        Downloads
+      </a>
     </div>
   </li>
-  <li class="nav-entry no-border no-mobile">
+  <li class="nav-entry no-border no-mobile nav-button-fix">
     <div class="header-donate">
       <a href="?form=support&utm_content=header&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023" class="btn btn-no-bg" aria-label="Cyfrannwch" title="Cyfrannwch">
         <span aria-hidden="true"><svg viewBox="0 0 14 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -704,11 +602,10 @@
   <div class="always-show-for-nojs-on-mobile">
     
 <ul id="nav-menu" class="nav-links">
-  <!--
   <li class="nav-entry nav-expandable" tabindex="0">
     <button
       aria-controls="nav-cat-products"
-      class="nav-ln nav-expandable"
+      class="nav-ln"
     >
       Cynnyrch
     </button>
@@ -716,7 +613,7 @@
       <ul class="popover-panel">
         
 <li class="entry-container">
-  <a href="/cy">
+  <a href="/cy/desktop">
     <div class="entry-icon" aria-hidden="true">
       <svg width="35.697" height="23.951" viewBox="0 0 9.445 6.337" version="1.1" id="svg64945" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
     <g id="layer1" transform="translate(-863.955 227.05)">
@@ -742,7 +639,7 @@
 
         
 <li class="entry-container">
-  <a href="/cy">
+  <a href="/cy/mobile">
     <div class="entry-icon" aria-hidden="true">
       <svg width="34.787" height="31.397" viewBox="0 0 9.204 8.307" version="1.1" id="svg64945" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
     <g id="layer1" transform="translate(-864.285 198.622)">
@@ -774,7 +671,6 @@
       </ul>
     </div>
   </li>
-  -->
   <li class="nav-entry nav-expandable" tabindex="0">
     <button
       aria-controls="nav-cat-resources"
@@ -820,15 +716,16 @@
 <li class="entry-container">
   <a href="https://support.mozilla.org/products/thunderbird/">
     <div class="entry-icon" aria-hidden="true">
-      <svg width="33.785" height="27.482" viewBox="0 0 8.939 7.271" version="1.1" id="svg64945" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
-    <g id="layer1" transform="translate(-1516.713 134.471)">
-        <g id="g45" transform="translate(0 455.137)">
-            <path id="path43-1" style="opacity:.2;fill:#3e3c67;fill-opacity:1;stroke:none;stroke-width:.264583;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" d="M1523.498-589.476a2.045 2.045 0 0 0-1.485.603l-.83.83v.001l1.203 1.205c.23.23.241.589.025.805-.215.216-.574.204-.804-.026l-1.203-1.204-2.127 2.128 2.49 2.493c.23.23.6.23.83 0l3.322-3.324a2.057 2.057 0 0 0 0-2.908v-.004a2.049 2.049 0 0 0-1.416-.599z"/>
-            <path id="path43" style="opacity:1;fill:none;fill-opacity:1;stroke:#3e3c67;stroke-width:.264583;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" d="M1523.499-589.476a2.045 2.045 0 0 0-1.486.603l-.83.83h.001v.001l1.203 1.205c.229.23.24.589.025.805-.216.216-.574.204-.804-.026l-1.204-1.204-2.127 2.128 2.491 2.493c.23.23.6.23.83 0l3.321-3.324a2.057 2.057 0 0 0 0-2.908v-.004a2.049 2.049 0 0 0-1.416-.599z"/>
-            <path style="fill:#fff;fill-opacity:1;stroke:#3e3c67;stroke-width:.264583;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" d="m1520.537-582.871 1.426-1.427" id="path45-7"/>
-            <path style="fill:#fff;fill-opacity:1;stroke:#3e3c67;stroke-width:.264583;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" d="m1519.852-583.61 1.426-1.428" id="path45-2"/>
-            <path style="fill:#fff;fill-opacity:1;stroke:#3e3c67;stroke-width:.264583;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" d="m1519.057-584.407 1.426-1.427" id="path45-2-7"/>
-            <path id="path43-0" style="fill:none;fill-opacity:1;stroke:#3e3c67;stroke-width:.264583;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" d="M1518.862-589.472a2.054 2.054 0 0 0-1.415 3.508l.83.83 2.127-2.128 1.203 1.204c.23.23.589.242.805.026.215-.216.204-.575-.025-.805l-1.204-1.204v-.001l-.415-.415-.415-.416c-.018-.017-.037-.033-.055-.047a2.054 2.054 0 0 0-1.434-.552z"/>
+      <svg width="35.695" height="23.949" viewBox="0 0 9.444 6.336" version="1.1" id="svg64945" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+    <g id="layer1" transform="translate(-1568.775 214.43)">
+        <g id="layer1-7" transform="translate(704.836 12.616) scale(.99998)">
+            <g id="g697-7-9" transform="translate(538.725 35.123)">
+                <path id="path734-1-2-2" style="font-variation-settings:normal;opacity:.2;vector-effect:none;fill:#3e3c67;fill-opacity:1;stroke:none;stroke-width:.264583;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers fill stroke;stop-color:#000" d="M326.586-261.564c-.305 0-.304 0-.304.304v4.394l7.34.017v-4.412c0-.304-.002-.303-.308-.303zm2.737 1.234c.3 0 .507.19.623.34a.838.838 0 0 1 .686-.332c.214 0 .404.087.537.244a.758.758 0 0 1 .155.62c-.05.287-.279.518-.461.704a9.999 9.999 0 0 1-.826.788l-.087.074-.08-.08-.226-.216c-.134-.127-.273-.258-.408-.396-.038-.04-.082-.081-.127-.126-.193-.186-.413-.397-.502-.637a.687.687 0 0 1 .084-.623.783.783 0 0 1 .632-.36z"/>
+                <path d="M329.323-260.33c.3 0 .506.19.623.34a.838.838 0 0 1 .686-.332c.214 0 .404.087.536.244a.758.758 0 0 1 .155.62c-.05.287-.278.518-.46.704a9.999 9.999 0 0 1-.826.788l-.086.074-.081-.08-.226-.216c-.134-.127-.273-.258-.408-.396-.038-.04-.082-.081-.128-.126-.193-.186-.412-.397-.5-.637a.688.688 0 0 1 .083-.623.783.783 0 0 1 .632-.36z" style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;stroke:#3e3c67;stroke-width:.264588;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers fill stroke;stop-color:#000" id="path1-94"/>
+                <path id="rect733-3-0" style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;stroke:#3e3c67;stroke-width:.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers fill stroke;stop-color:#000" d="M334.542-256.849h-9.18v.267c0 .34.274.614.614.614h7.951c.34 0 .615-.274.615-.614z"/>
+                <path id="path735-6-2" style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;stroke:#3e3c67;stroke-width:.264583;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers fill stroke;stop-color:#000" d="M326.47-262.04a.613.613 0 0 0-.614.614v4.577h8.191v-4.577a.613.613 0 0 0-.614-.614z"/>
+                <path id="path734-1-3" style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;stroke:#3e3c67;stroke-width:.264583;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers fill stroke;stop-color:#000" d="M326.586-261.564c-.305 0-.304 0-.304.304v4.394l7.339.017v-4.412c0-.304-.001-.303-.307-.303z"/>
+            </g>
         </g>
     </g>
     <style type="text/css" id="style1070">
@@ -838,48 +735,31 @@
 
     </div>
     <div class="entry-text">
-      <h2 aria-label="Derbyn Cymorth.">Derbyn Cymorth</h2>
-      <h6>Find the help you need configuring and using Thunderbird.</h6>
+      <h2 aria-label="Cymorth Bwrdd Gwaith.">Cymorth Bwrdd Gwaith</h2>
+      <h6>Dewch o hyd i'r cymorth sydd ei angen arnoch i ffurfweddu a defnyddio Thunderbird Bwrdd Gwaith.</h6>
     </div>
   </a>
 </li>
 
-        <!--
-<li class="entry-container">
-  <a href="https://blog.thunderbird.net/">
-    <div class="entry-icon" aria-hidden="true">
-      <svg width="35.71" height="32.759" viewBox="0 0 9.448 8.667" version="1.1" id="svg64945" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
-    <g id="layer1" transform="translate(-1515.716 110.5)">
-        <g id="g713-2-7" transform="translate(658.06 -338.151)">
-            <path id="rect700-0-1-9" style="font-variation-settings:normal;opacity:.2;vector-effect:none;fill:#3e3c67;fill-opacity:1;stroke:none;stroke-width:.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers fill stroke" d="M861.894 227.784a2.873 2.873 0 0 0-2.881 2.877v1.746a2.032 1.972 0 0 1 .472-.134v-1.076c0-1.594 1.097-2.326 2.46-2.326h.832c1.363 0 2.46.732 2.46 2.326v1.069a2.032 1.972 0 0 1 .512.141v-1.746a2.873 2.873 0 0 0-2.881-2.877zm-1.92 4.458a.8.8 0 0 0-.802.802v2.341a.8.8 0 0 0 .801.802.8.8 0 0 0 .802-.802v-2.341a.8.8 0 0 0-.802-.802zm4.973 0a.8.8 0 0 0-.8.802v2.341a.8.8 0 0 0 .8.802.8.8 0 0 0 .802-.802v-2.341a.8.8 0 0 0-.802-.802zm-3.053-4.458a2.873 2.873 0 0 0-2.881 2.877v1.746a2.032 1.972 0 0 1 .472-.134v-1.076c0-1.594 1.097-2.326 2.46-2.326h.832c1.363 0 2.46.732 2.46 2.326v1.069a2.032 1.972 0 0 1 .512.141v-1.746a2.873 2.873 0 0 0-2.881-2.877zm-1.92 4.458a.8.8 0 0 0-.802.802v2.341a.8.8 0 0 0 .801.802.8.8 0 0 0 .802-.802v-2.341a.8.8 0 0 0-.802-.802zm4.973 0a.8.8 0 0 0-.8.802v2.341a.8.8 0 0 0 .8.802.8.8 0 0 0 .802-.802v-2.341a.8.8 0 0 0-.802-.802z"/>
-            <path id="rect700-0-1" style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#3e3c67;stroke-width:.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers fill stroke" d="M861.894 227.784a2.873 2.873 0 0 0-2.881 2.877v1.746a2.032 1.972 0 0 1 .472-.134v-1.076c0-1.594 1.097-2.326 2.46-2.326h.832c1.363 0 2.46.732 2.46 2.326v1.069a2.032 1.972 0 0 1 .512.141v-1.746a2.873 2.873 0 0 0-2.881-2.877zm-1.92 4.458a.8.8 0 0 0-.802.802v2.341a.8.8 0 0 0 .801.802.8.8 0 0 0 .802-.802v-2.341a.8.8 0 0 0-.802-.802zm4.973 0a.8.8 0 0 0-.8.802v2.341a.8.8 0 0 0 .8.802.8.8 0 0 0 .802-.802v-2.341a.8.8 0 0 0-.802-.802zm-3.053-4.458a2.873 2.873 0 0 0-2.881 2.877v1.746a2.032 1.972 0 0 1 .472-.134v-1.076c0-1.594 1.097-2.326 2.46-2.326h.832c1.363 0 2.46.732 2.46 2.326v1.069a2.032 1.972 0 0 1 .512.141v-1.746a2.873 2.873 0 0 0-2.881-2.877zm-1.92 4.458a.8.8 0 0 0-.802.802v2.341a.8.8 0 0 0 .801.802.8.8 0 0 0 .802-.802v-2.341a.8.8 0 0 0-.802-.802zm4.973 0a.8.8 0 0 0-.8.802v2.341a.8.8 0 0 0 .8.802.8.8 0 0 0 .802-.802v-2.341a.8.8 0 0 0-.802-.802z"/>
-            <path id="path711-1-5" style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;stroke:#3e3c67;stroke-width:.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers fill stroke" d="M232.242 864.941h0c0 .001 0 0 0 0zm.007.107a.8.8 0 0 0 .795.701h2.342c.41 0 .746-.306.794-.703a2.04 2.04 0 0 1-.979 1.655 1.922 1.922 0 0 1-1.972 0 2.04 2.04 0 0 1-.98-1.653zm3.938-.107h0v.003-.003z" transform="matrix(0 1 1 0 0 0)"/>
-            <path id="path712-7-1" style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;stroke:#3e3c67;stroke-width:.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers fill stroke" d="M232.242-859.82a1.972 2.032 0 0 0 .986 1.759 1.972 2.032 0 0 0 1.973 0 1.972 2.032 0 0 0 .986-1.76h-.015a.8.8 0 0 1-.787.65h-2.341a.8.8 0 0 1-.787-.65z" transform="rotate(90)"/>
-        </g>
-    </g>
-    <style type="text/css" id="style1070">
-        .st0{fill:#5f6368}.st1{fill:#4285f4}.st2{fill:#34a853}.st3{fill:#fbbc04}.st4{fill:#ea4335}
-    </style>
-</svg>
-
-    </div>
-    <div class="entry-text">
-      <h2 aria-label="Podcasts.">Podcasts</h2>
-      <h6>Meet interesting people and hear their Thunderbird stories.</h6>
-    </div>
-  </a>
-</li>
--->
         
 <li class="entry-container">
-  <a href="/cy/thunderbird/all/">
+  <a href="https://support.mozilla.org/products/thunderbird-android/">
     <div class="entry-icon" aria-hidden="true">
-      <svg width="27.6" height="36.522" viewBox="0 0 7.303 9.663" version="1.1" id="svg64945" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
-    <g id="layer1" transform="translate(-1516.789 82.946)">
-        <g id="g686-8-3" transform="translate(658.477 -217.242)">
-            <path id="path684-7-9-2" style="font-variation-settings:normal;opacity:.2;vector-effect:none;fill:#3e3c67;fill-opacity:1;stroke:none;stroke-width:.264583;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers fill stroke" d="M858.876 139.812c-.125 0-.302.071-.358.182a.7.7 0 0 0 .132.811l2.816 2.817a.701.701 0 0 0 .994 0l2.816-2.817a.7.7 0 0 0 .155-.76c-.059-.143-.281-.233-.437-.233h-.63l-1.904 1.904a.701.701 0 0 1-.994 0l-1.904-1.904z"/>
-            <path id="path684-7-9" style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;stroke:#3e3c67;stroke-width:.264583;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers fill stroke" d="M857.488 140.607c-.126 0-.303.07-.36.182a.7.7 0 0 0 .133.81l2.816 2.817a.701.701 0 0 0 .994 0l2.816-2.816a.7.7 0 0 0 .155-.76c-.059-.144-.281-.233-.437-.233h-.63l-1.904 1.904a.701.701 0 0 1-.994 0l-1.904-1.904z" transform="translate(1.389 -.795)"/>
-            <path id="rect683-6-4" style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;stroke:#3e3c67;stroke-width:.264583;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers fill stroke" d="M860.238 137.128c-.643 0-1.16.518-1.16 1.16v1.975a.343.343 135 0 1-.343.343h-1.247c-.125 0-.303.072-.359.183a.701.701 0 0 0 .132.811l2.816 2.816a.701.701 0 0 0 .994 0l2.816-2.816a.701.701 0 0 0 .155-.76c-.059-.144-.282-.234-.437-.234h-1.167a.343.343 45 0 1-.343-.343v-1.975c0-.642-.518-1.16-1.16-1.16z" transform="translate(1.389 -2.7)"/>
+      <svg width="34.789" height="31.395" viewBox="0 0 9.205 8.307" version="1.1" id="svg64945" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+    <g id="layer1" transform="translate(-1569.695 203.589)">
+        <g id="layer1-92" transform="matrix(1 0 0 1 705.406 -4.966)">
+            <g id="g695-2-2" transform="translate(538.725 35.652)">
+                <g id="g694-9-8">
+                    <path id="rect738-1-4-9" style="font-variation-settings:normal;opacity:.2;vector-effect:none;fill:#3e3c67;fill-opacity:1;stroke:none;stroke-width:.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers fill stroke" d="M326.414-233.636a.146.146 0 0 0-.147.147v4.846c0 .081.065.147.147.147h2.715v-3.993c0-.37.3-.67.672-.67h3.033a.67.67 0 0 1 .672.67v3.993h.403a.147.147 0 0 0 .147-.147v-4.846a.147.147 0 0 0-.147-.147z"/>
+                    <path id="rect739-3-7" style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;stroke:#3e3c67;stroke-width:.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers fill stroke" d="M326.25-234.141a.557.557 0 0 0-.559.558v5.035c0 .309.25.558.56.558h2.878v-4.327h4.377v4.327h.566c.31 0 .559-.25.559-.558v-5.035c0-.31-.25-.558-.559-.558z"/>
+                    <path id="path738-4-3" style="font-variation-settings:normal;opacity:.2;vector-effect:none;fill:#3e3c67;fill-opacity:1;stroke:none;stroke-width:.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers fill stroke" d="M329.129-232.317v5.352h4.377v-5.352zm1.56 1.433c.3 0 .507.19.623.341a.838.838 0 0 1 .686-.332c.214 0 .404.086.536.244a.758.758 0 0 1 .155.62c-.05.286-.278.518-.46.703a10.002 10.002 0 0 1-.826.788l-.086.074-.081-.08-.226-.215c-.134-.127-.273-.259-.408-.396-.038-.04-.082-.082-.127-.126-.193-.187-.413-.398-.502-.638a.687.687 0 0 1 .084-.623.783.783 0 0 1 .632-.36z"/>
+                    <path d="M330.689-230.884c.3 0 .506.19.623.341a.838.838 0 0 1 .686-.332c.214 0 .404.086.536.243a.758.758 0 0 1 .155.621c-.05.286-.278.518-.46.703a10.002 10.002 0 0 1-.826.788l-.086.074-.081-.08-.226-.215c-.134-.127-.273-.259-.408-.397-.038-.039-.082-.08-.127-.125-.193-.187-.413-.398-.502-.638a.688.688 0 0 1 .084-.623.783.783 0 0 1 .633-.36z" style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;stroke:#3e3c67;stroke-width:.264582;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers fill stroke;stop-color:#000" id="path1-94-8"/>
+                    <path id="path738-4-0-6" style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;stroke:#3e3c67;stroke-width:.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers fill stroke" d="M333.506-232.317h-4.377v5.352h4.377z"/>
+                    <path id="rect738-1-1" style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;stroke:#3e3c67;stroke-width:.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers fill stroke" d="M326.414-233.636a.146.146 0 0 0-.147.147v4.846c0 .081.065.147.147.147h2.715v-3.993c0-.37.3-.67.672-.67h3.033a.67.67 0 0 1 .672.67v3.993h.403a.147.147 0 0 0 .147-.147v-4.846a.147.147 0 0 0-.147-.147z"/>
+                    <path id="path737-7-2" style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;stroke:#3e3c67;stroke-width:.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers fill stroke" d="M329.8-233.159a.67.67 0 0 0-.671.67v.172h4.377v-.172a.67.67 0 0 0-.672-.67z"/>
+                    <path id="rect736-9-9" style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;stroke:#3e3c67;stroke-width:.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers fill stroke" d="M333.506-226.965h-4.377v.196c0 .371.3.67.672.67h3.033a.67.67 0 0 0 .672-.67z"/>
+                </g>
+            </g>
         </g>
     </g>
     <style type="text/css" id="style1070">
@@ -889,8 +769,8 @@
 
     </div>
     <div class="entry-text">
-      <h2 aria-label="Llwytho i Lawr.">Llwytho i Lawr</h2>
-      <h6>Dewch o hyd i'r fersiwn diweddaraf o Thunderbird.</h6>
+      <h2 aria-label="Cymorth Symudol.">Cymorth Symudol</h2>
+      <h6>Dewch o hyd i'r help sydd ei angen arnoch i ffurfweddu a defnyddio Thunderbird Symudol.</h6>
     </div>
   </a>
 </li>
@@ -995,7 +875,7 @@
       </ul>
     </div>
   </li>
-  <li class="nav-entry no-border nav-expandable" tabindex="0">
+  <li class="nav-entry nav-expandable" tabindex="0">
     <button
       aria-controls="nav-cat-contribute"
       class="nav-ln"
@@ -1072,135 +952,22 @@
       </ul>
     </div>
   </li>
-  <li class="nav-entry no-border no-mobile">
+  <li class="nav-entry no-border no-desktop">
+    <a
+      href="/cy/thunderbird/all/"
+      class="nav-ln"
+    >
+      Llwytho i Lawr
+    </a>
+  </li>
+  <li class="nav-entry no-border no-mobile nav-button-fix">
     <div class="header-download">
-      
-
-  
-
-
-
-
-
-
-
-
-<div id="download-button-desktop-esr" class="download-button">
-  
-  
-  
-  <ul class="download-list list-none p-0 flex flex-wrap max-w-lg mb-0 justify-center">
-    
-      <li class="os_win64">
-        <a class="matomo-track-download download-link btn-download btn-no-bg"
-          href="https://download.mozilla.org/?product=thunderbird-128.4.0esr-SSL&os=win64&lang=cy"
-          data-donate-redirect="download-esr"
-          data-donate-content="post_download"
-          data-donate-link="/cy/thank-you?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=esr"
-          >
-          
-            Llwytho i Lawr
-          
-        </a>
-      </li>
-    
-      <li class="os_msi">
-        <a class="matomo-track-download download-link btn-download btn-no-bg"
-          href="https://download.mozilla.org/?product=thunderbird-128.4.0esr-msi-SSL&os=win64&lang=cy"
-          data-donate-redirect="download-esr"
-          data-donate-content="post_download"
-          data-donate-link="/cy/thank-you?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=esr"
-          >
-          
-            Llwytho i Lawr
-          
-        </a>
-      </li>
-    
-      <li class="os_osx">
-        <a class="matomo-track-download download-link btn-download btn-no-bg"
-          href="https://download.mozilla.org/?product=thunderbird-128.4.0esr-SSL&os=osx&lang=cy"
-          data-donate-redirect="download-esr"
-          data-donate-content="post_download"
-          data-donate-link="/cy/thank-you?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=esr"
-          >
-          
-            Llwytho i Lawr
-          
-        </a>
-      </li>
-    
-      <li class="os_linux64">
-        <a class="matomo-track-download download-link btn-download btn-no-bg"
-          href="https://download.mozilla.org/?product=thunderbird-128.4.0esr-SSL&os=linux64&lang=cy"
-          data-donate-redirect="download-esr"
-          data-donate-content="post_download"
-          data-donate-link="/cy/thank-you?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=esr"
-          >
-          
-            Llwytho i Lawr
-          
-        </a>
-      </li>
-    
-      <li class="os_win">
-        <a class="matomo-track-download download-link btn-download btn-no-bg"
-          href="https://download.mozilla.org/?product=thunderbird-128.4.0esr-SSL&os=win&lang=cy"
-          data-donate-redirect="download-esr"
-          data-donate-content="post_download"
-          data-donate-link="/cy/thank-you?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=esr"
-          >
-          
-            Llwytho i Lawr
-          
-        </a>
-      </li>
-    
-      <li class="os_linux">
-        <a class="matomo-track-download download-link btn-download btn-no-bg"
-          href="https://download.mozilla.org/?product=thunderbird-128.4.0esr-SSL&os=linux&lang=cy"
-          data-donate-redirect="download-esr"
-          data-donate-content="post_download"
-          data-donate-link="/cy/thank-you?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=esr"
-          >
-          
-            Llwytho i Lawr
-          
-        </a>
-      </li>
-    
-      <li class="os_win8-64">
-        <a class="matomo-track-download download-link btn-download btn-no-bg"
-          href="https://download.mozilla.org/?product=thunderbird-115.16.2-SSL&os=win64&lang=cy"
-          data-donate-redirect="download-esr"
-          data-donate-content="post_download"
-          data-donate-link="/cy/thank-you?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=esr"
-          >
-          
-            Llwytho i Lawr
-          
-        </a>
-      </li>
-    
-      <li class="os_win8">
-        <a class="matomo-track-download download-link btn-download btn-no-bg"
-          href="https://download.mozilla.org/?product=thunderbird-115.16.2-SSL&os=win&lang=cy"
-          data-donate-redirect="download-esr"
-          data-donate-content="post_download"
-          data-donate-link="/cy/thank-you?form=support&utm_content=post_download&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023&downloaded=True&download_channel=esr"
-          >
-          
-            Llwytho i Lawr
-          
-        </a>
-      </li>
-    
-  </ul>
-  
-</div>
+      <a href="/cy/thunderbird/all/" class="btn btn-no-bg" aria-label="Llwytho i Lawr" title="Dewch o hyd i'r fersiwn diweddaraf o Thunderbird.">
+        Downloads
+      </a>
     </div>
   </li>
-  <li class="nav-entry no-border no-mobile">
+  <li class="nav-entry no-border no-mobile nav-button-fix">
     <div class="header-donate">
       <a href="?form=support&utm_content=header&utm_source=thunderbird.net&utm_medium=fru&utm_campaign=donation_2023" class="btn btn-no-bg" aria-label="Cyfrannwch" title="Cyfrannwch">
         <span aria-hidden="true"><svg viewBox="0 0 14 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -1441,6 +1208,20 @@
 <img class="" src="/media/img/thunderbird/base/about/contributors.png" srcset="/media/img/thunderbird/base/about/contributors-high-res.png 1.5x" alt="Ein Cyfranwyr">
 </picture>
     <div class="page-separator-cover">
+  <svg viewBox="0 0 508 15.242" version="1.1" id="svg64945" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+    <defs id="defs64942">
+        <clipPath clipPathUnits="userSpaceOnUse" id="clipPath122-9">
+            <path style="fill:#f9f9f9;fill-opacity:1;stroke:none;stroke-width:.529169;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" id="rect123-8" d="M625.564 227.99h508v29.772h-508z"/>
+        </clipPath>
+    </defs>
+    <g id="layer1" transform="translate(-4468.845 61.061)">
+        <path style="fill:none;fill-opacity:1;stroke:#dedede;stroke-width:.264583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke;stop-color:#000" d="m625.564 237.463 254 14.978 254-14.978" id="path111415-3-2" clip-path="url(#clipPath122-9)" transform="translate(3843.28 -298.392)"/>
+    </g>
+    <style type="text/css" id="style1070">
+        .st0{fill:#5f6368}.st1{fill:#4285f4}.st2{fill:#34a853}.st3{fill:#fbbc04}.st4{fill:#ea4335}
+    </style>
+</svg>
+
   <svg viewBox="0 0 508 19.395" version="1.1" id="svg64945" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
     <g id="layer1" transform="translate(-4468.845 100.533)">
         <path id="rect28" style="opacity:1;fill:currentColor;fill-opacity:1;stroke:none;stroke-width:1.05833;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:fill markers stroke" d="m4976.845-100.533-254 14.978-254-14.978v19.396h508z"/>
@@ -2223,6 +2004,20 @@ Montwé</h5>
       
 <div class="pre-footer-cover-container">
   <div class="page-separator-cover">
+  <svg viewBox="0 0 508 15.242" version="1.1" id="svg64945" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+    <defs id="defs64942">
+        <clipPath clipPathUnits="userSpaceOnUse" id="clipPath122-9">
+            <path style="fill:#f9f9f9;fill-opacity:1;stroke:none;stroke-width:.529169;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" id="rect123-8" d="M625.564 227.99h508v29.772h-508z"/>
+        </clipPath>
+    </defs>
+    <g id="layer1" transform="translate(-4468.845 61.061)">
+        <path style="fill:none;fill-opacity:1;stroke:#dedede;stroke-width:.264583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke;stop-color:#000" d="m625.564 237.463 254 14.978 254-14.978" id="path111415-3-2" clip-path="url(#clipPath122-9)" transform="translate(3843.28 -298.392)"/>
+    </g>
+    <style type="text/css" id="style1070">
+        .st0{fill:#5f6368}.st1{fill:#4285f4}.st2{fill:#34a853}.st3{fill:#fbbc04}.st4{fill:#ea4335}
+    </style>
+</svg>
+
   <svg viewBox="0 0 508 19.395" version="1.1" id="svg64945" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
     <g id="layer1" transform="translate(-4468.845 100.533)">
         <path id="rect28" style="opacity:1;fill:currentColor;fill-opacity:1;stroke:none;stroke-width:1.05833;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:fill markers stroke" d="m4976.845-100.533-254 14.978-254-14.978v19.396h508z"/>
@@ -2388,14 +2183,17 @@ Montwé</h5>
         </ul>
       </div>
       <div id="footer-nav" class="site-link-section">
-        
+        <h4>Cynnyrch</h4>
+        <ul>
+          <li><a href="/cy/desktop" class="dotted">Thunderbird y Bwrdd Gwaith</a></li>
+          <li><a href="/cy/mobile" class="dotted">Thunderbird Symudol</a></li>
+        </ul>
       </div>
       <div class="site-link-section">
         <h4>Adnoddau</h4>
         <ul>
           <li><a href="https://blog.thunderbird.net/" class="dotted">Blog</a></li>
           <li><a href="https://support.mozilla.org/products/thunderbird/" class="dotted">Derbyn Cymorth</a></li>
-          
           <li><a href="/cy/thunderbird/all/" class="dotted">Llwytho i Lawr</a></li>
           <li><a href="/cy/thunderbird/releases" class="dotted">Nodiadau Rhyddhau</a></li>
           <li><a href="https://wiki.mozilla.org/Thunderbird/Enterprise" class="dotted">Ar gyfer Mentrau</a></li>

@@ -2,7 +2,7 @@
 <!doctype html>
 
 
-<html class="windows x86 no-js page-support-mobile" lang="pl" dir="ltr">
+<html class="other x86 no-js page-support-mobile" lang="pl" dir="ltr">
   <head>
     <meta charset="utf-8">
 
@@ -57,7 +57,7 @@
     </script>
     
 <script>
-  window._product = {
+  window._desktop_product = {
     defaultChannel: 'esr',
     defaultLatestVersion: '128.4.0esr',
     channels: {
@@ -89,6 +89,35 @@
           version: '134.0a1',
           useVersionInDownloadLinks: false,
         },
+      
+    }
+  }
+  window._mobile_product = {
+    defaultChannel: 'mobile',
+    platforms: {
+      
+        
+        'gplay': {
+          id: 'gplay',
+          arch: 'android',
+          name: 'Google Play Store',
+          url: 'https://play.google.com/store/apps/details?id=net.thunderbird.android',
+        },
+        
+        'fdroid': {
+          id: 'fdroid',
+          arch: 'android',
+          name: 'F-Droid',
+          url: 'https://f-droid.org/packages/net.thunderbird.android',
+        },
+        
+        'apk': {
+          id: 'apk',
+          arch: 'android',
+          name: 'Binary (.apk)',
+          url: 'https://github.com/thunderbird/thunderbird-android/releases',
+        },
+        
       
     }
   }

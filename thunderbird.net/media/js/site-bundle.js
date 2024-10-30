@@ -163,21 +163,18 @@
         var platform = window.site.platform = window.site.getPlatform();
         var version = window.site.platformVersion = window.site.getPlatformVersion();
 
-
         if (platform === 'windows') {
             // Add class to support downloading Firefox for Windows 64-bit on Windows 10 and later
             if (version && parseFloat(version) >= 10.0) {
-                h.className += ' win10up';
+                platform = 'win10up';
             // Windows 7 - 8.1
             } else if (version && parseFloat(version) >= 6.1) {
-                h.className += ' win7-8';
-            } else if (window.site.needsSha1()) {
-                // Add class to support sha-1 downloads for IE on Windows XP, Server 2003, Vista.
-                h.className += ' sha-1';
+                platform = 'win7-8';
             }
-        } else {
-            h.className = h.className.replace('windows', platform);
         }
+
+        h.className = h.className.replace('other', platform);
+
 
         // Add class to reflect the microprocessor architecture info
         var archType = window.site.archType = window.site.getArchType();
@@ -393,6 +390,13 @@ if (typeof Mozilla == 'undefined') {
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 
+/**
+ * This script contains various other scripts that should be organized in the future...
+ */
+
+/**
+ * Handle nav expandables / hamburgers
+ */
 document.addEventListener('DOMContentLoaded', function() {
   const hamburgerBtn = document.getElementById('mobile-hamburger-button');
   const navExpandables = document.getElementsByClassName("nav-expandable");
@@ -440,4 +444,65 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
+});
+
+/**
+ * Handle autoplaying videos, including detecting if the user is requesting reduced motion (in which case we don't autoplay.)
+ */
+document.addEventListener('DOMContentLoaded', function() {
+  const autoplayVideos = document.querySelectorAll('video[autoplay]');
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  console.log(reduceMotion);
+  for (const item of autoplayVideos) {
+    // Disable autoplay and pause playback if they would like reduced motion
+    if (reduceMotion) {
+      item.autoplay = false;
+      item.pause();
+    }
+
+    const togglePlayback = (evt) => {
+      const target = evt.target;
+      const isPaused = target.paused;
+      if (isPaused) {
+        target.play();
+      } else {
+        target.pause();
+      }
+    }
+
+    // Allow toggling playback with a click
+    item.addEventListener('click', togglePlayback);
+    item.addEventListener('keyup', (evt) => {
+      if (evt.key === 'Enter') {
+        togglePlayback(evt);
+      }
+    })
+  }
+});
+
+/**
+ * Handle download redirects
+ */
+document.addEventListener('DOMContentLoaded', function() {
+  const downloadButtons = document.querySelectorAll('[data-donate-link]');
+
+  for (const downloadButton of downloadButtons) {
+    downloadButton.addEventListener('click', (evt) => {
+      const element = evt.currentTarget;
+      const donate_url = element.getAttribute('data-donate-link') || null;
+
+      if (!donate_url) {
+        return;
+      }
+
+      // TODO: Unsure if this check is still needed.
+      // MSIE and Edge cancel the download prompt on redirect, so just leave them out.
+      if (!(/msie\s|trident\/|edge\//i.test(navigator.userAgent))) {
+          setTimeout(function() {
+              window.location.href = donate_url;
+          }, 5000);
+      }
+
+    });
+  }
 });
