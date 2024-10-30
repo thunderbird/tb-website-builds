@@ -2399,6 +2399,7 @@ footer {
   min-height: 39.0625rem;
   position: relative;
   bottom: 4.6875rem;
+  pointer-events: none;
 }
 @media (max-width: 48rem) {
   .page-index #freedom-to-go-anywhere .mobile-render img {
