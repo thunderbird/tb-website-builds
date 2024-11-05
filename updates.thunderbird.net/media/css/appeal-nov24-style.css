@@ -2652,9 +2652,11 @@ main {
   position: relative;
   width: 17.75rem;
 }
+.page-appeal-nov24 .footer-graphic img {
+  width: 100%;
+}
 @media (max-width: 54.375rem) {
   .page-appeal-nov24 .footer-graphic {
-    right: 0.3rem;
     margin-top: 8rem;
   }
 }
