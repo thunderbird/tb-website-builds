@@ -2652,6 +2652,12 @@ main {
   position: relative;
   width: 17.75rem;
 }
+@media (max-width: 54.375rem) {
+  .page-appeal-nov24 .footer-graphic {
+    right: 0.3rem;
+    margin-top: 8rem;
+  }
+}
 @media (max-width: 48rem) {
   .page-appeal-nov24 .footer-graphic {
     margin-top: 7.5rem;
@@ -2697,7 +2703,7 @@ main {
   position: relative;
   width: 4rem;
   height: 1rem;
-  top: -0.015625rem;
+  top: -0.25rem;
 }
 .page-appeal-nov24 .timeline-connector svg {
   position: absolute;
