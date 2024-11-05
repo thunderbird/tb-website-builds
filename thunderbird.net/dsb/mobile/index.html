@@ -62,38 +62,193 @@
   window._desktop_product = {
     defaultChannel: 'esr',
     defaultLatestVersion: '128.4.1esr',
-    channels: {
-      
-        'esr': {
+    channels: {'esr': {
           id: 'esr',
           name: 'Extended Support Release',
           version: '128.4.1esr',
           useVersionInDownloadLinks: true,
-        },
-      
-        'release': {
+          platforms: {'win64': {
+                id: 'win64',
+                arch: 'windows',
+                name: '64-bit (.exe)',
+                url: 'https://download.mozilla.org/?product=thunderbird-128.4.1esr-SSL&os=win64&lang=en-US',
+              },'msi': {
+                id: 'msi',
+                arch: 'windows',
+                name: '64-bit (.msi)',
+                url: 'https://download.mozilla.org/?product=thunderbird-128.4.1esr-msi-SSL&os=win64&lang=en-US',
+              },'win': {
+                id: 'win',
+                arch: 'windows',
+                name: '32-bit (.exe)',
+                url: 'https://download.mozilla.org/?product=thunderbird-128.4.1esr-SSL&os=win&lang=en-US',
+              },'win8-64': {
+                id: 'win8-64',
+                arch: 'windows (7/8.1)',
+                name: '64-bit (.exe)',
+                url: 'https://download.mozilla.org/?product=thunderbird-115.16.2-SSL&os=win64&lang=en-US',
+              },'win8': {
+                id: 'win8',
+                arch: 'windows (7/8.1)',
+                name: '32-bit (.exe)',
+                url: 'https://download.mozilla.org/?product=thunderbird-115.16.2-SSL&os=win&lang=en-US',
+              },'linux64': {
+                id: 'linux64',
+                arch: 'linux',
+                name: '64-bit (binary)',
+                url: 'https://download.mozilla.org/?product=thunderbird-128.4.1esr-SSL&os=linux64&lang=en-US',
+              },'linux': {
+                id: 'linux',
+                arch: 'linux',
+                name: '32-bit (binary)',
+                url: 'https://download.mozilla.org/?product=thunderbird-128.4.1esr-SSL&os=linux&lang=en-US',
+              },'osx': {
+                id: 'osx',
+                arch: 'macos',
+                name: '64-bit (.dmg)',
+                url: 'https://download.mozilla.org/?product=thunderbird-128.4.1esr-SSL&os=osx&lang=en-US',
+              },}
+        },'release': {
           id: 'release',
           name: 'Release',
           version: '132.0',
           useVersionInDownloadLinks: true,
-        },
-      
-        'beta': {
+          platforms: {'win64': {
+                id: 'win64',
+                arch: 'windows',
+                name: '64-bit (.exe)',
+                url: 'https://download.mozilla.org/?product=thunderbird-132.0-SSL&os=win64&lang=en-US',
+              },'msi': {
+                id: 'msi',
+                arch: 'windows',
+                name: '64-bit (.msi)',
+                url: 'https://download.mozilla.org/?product=thunderbird-132.0-msi-SSL&os=win64&lang=en-US',
+              },'win': {
+                id: 'win',
+                arch: 'windows',
+                name: '32-bit (.exe)',
+                url: 'https://download.mozilla.org/?product=thunderbird-132.0-SSL&os=win&lang=en-US',
+              },'win8-64': {
+                id: 'win8-64',
+                arch: 'windows (7/8.1)',
+                name: '64-bit (.exe)',
+                url: 'https://download.mozilla.org/?product=thunderbird-115.16.2-SSL&os=win64&lang=en-US',
+              },'win8': {
+                id: 'win8',
+                arch: 'windows (7/8.1)',
+                name: '32-bit (.exe)',
+                url: 'https://download.mozilla.org/?product=thunderbird-115.16.2-SSL&os=win&lang=en-US',
+              },'linux64': {
+                id: 'linux64',
+                arch: 'linux',
+                name: '64-bit (binary)',
+                url: 'https://download.mozilla.org/?product=thunderbird-132.0-SSL&os=linux64&lang=en-US',
+              },'linux': {
+                id: 'linux',
+                arch: 'linux',
+                name: '32-bit (binary)',
+                url: 'https://download.mozilla.org/?product=thunderbird-132.0-SSL&os=linux&lang=en-US',
+              },'osx': {
+                id: 'osx',
+                arch: 'macos',
+                name: '64-bit (.dmg)',
+                url: 'https://download.mozilla.org/?product=thunderbird-132.0-SSL&os=osx&lang=en-US',
+              },}
+        },'beta': {
           id: 'beta',
           name: 'Beta',
           version: '133.0b1',
           useVersionInDownloadLinks: false,
-        },
-      
-        'daily': {
+          platforms: {'win64': {
+                id: 'win64',
+                arch: 'windows',
+                name: '64-bit (.exe)',
+                url: 'https://download.mozilla.org/?product=thunderbird-133.0b1-SSL&os=win64&lang=en-US',
+              },'msi': {
+                id: 'msi',
+                arch: 'windows',
+                name: '64-bit (.msi)',
+                url: 'https://download.mozilla.org/?product=thunderbird-133.0b1-msi-SSL&os=win64&lang=en-US',
+              },'win': {
+                id: 'win',
+                arch: 'windows',
+                name: '32-bit (.exe)',
+                url: 'https://download.mozilla.org/?product=thunderbird-133.0b1-SSL&os=win&lang=en-US',
+              },'win8-64': {
+                id: 'win8-64',
+                arch: 'windows (7/8.1)',
+                name: '64-bit (.exe)',
+                url: 'https://download.mozilla.org/?product=thunderbird-115.16.2-SSL&os=win64&lang=en-US',
+              },'win8': {
+                id: 'win8',
+                arch: 'windows (7/8.1)',
+                name: '32-bit (.exe)',
+                url: 'https://download.mozilla.org/?product=thunderbird-115.16.2-SSL&os=win&lang=en-US',
+              },'linux64': {
+                id: 'linux64',
+                arch: 'linux',
+                name: '64-bit (binary)',
+                url: 'https://download.mozilla.org/?product=thunderbird-133.0b1-SSL&os=linux64&lang=en-US',
+              },'linux': {
+                id: 'linux',
+                arch: 'linux',
+                name: '32-bit (binary)',
+                url: 'https://download.mozilla.org/?product=thunderbird-133.0b1-SSL&os=linux&lang=en-US',
+              },'osx': {
+                id: 'osx',
+                arch: 'macos',
+                name: '64-bit (.dmg)',
+                url: 'https://download.mozilla.org/?product=thunderbird-133.0b1-SSL&os=osx&lang=en-US',
+              },}
+        },'daily': {
           id: 'daily',
           name: 'Daily',
           version: '134.0a1',
           useVersionInDownloadLinks: false,
-        },
-      
-    }
+          platforms: {'win64': {
+                id: 'win64',
+                arch: 'windows',
+                name: '64-bit (.exe)',
+                url: 'https://download.mozilla.org/?product=thunderbird-nightly-latest-l10n-SSL&os=win64&lang=en-US',
+              },'msi': {
+                id: 'msi',
+                arch: 'windows',
+                name: '64-bit (.msi)',
+                url: 'https://download.mozilla.org/?product=thunderbird-nightly-latest-l10n-SSL&os=win64&lang=en-US',
+              },'win': {
+                id: 'win',
+                arch: 'windows',
+                name: '32-bit (.exe)',
+                url: 'https://download.mozilla.org/?product=thunderbird-nightly-latest-l10n-SSL&os=win&lang=en-US',
+              },'win8-64': {
+                id: 'win8-64',
+                arch: 'windows (7/8.1)',
+                name: '64-bit (.exe)',
+                url: 'https://download.mozilla.org/?product=thunderbird-115.16.2-SSL&os=win64&lang=en-US',
+              },'win8': {
+                id: 'win8',
+                arch: 'windows (7/8.1)',
+                name: '32-bit (.exe)',
+                url: 'https://download.mozilla.org/?product=thunderbird-115.16.2-SSL&os=win&lang=en-US',
+              },'linux64': {
+                id: 'linux64',
+                arch: 'linux',
+                name: '64-bit (binary)',
+                url: 'https://download.mozilla.org/?product=thunderbird-nightly-latest-l10n-SSL&os=linux64&lang=en-US',
+              },'linux': {
+                id: 'linux',
+                arch: 'linux',
+                name: '32-bit (binary)',
+                url: 'https://download.mozilla.org/?product=thunderbird-nightly-latest-l10n-SSL&os=linux&lang=en-US',
+              },'osx': {
+                id: 'osx',
+                arch: 'macos',
+                name: '64-bit (.dmg)',
+                url: 'https://download.mozilla.org/?product=thunderbird-nightly-latest-l10n-SSL&os=osx&lang=en-US',
+              },}
+        },},
   }
+  
   window._mobile_product = {
     defaultChannel: 'mobile',
     platforms: {
@@ -1115,7 +1270,7 @@
 </picture>
         </div>
         <div class="section-text">
-          <h3>No Ads or Spyware</h3>
+          <h3>Žedno wabjenje abo žedna spionažna software</h3>
           <h4>Jo napšawdu dermotny!</h4>
           <p>Instead of making money with ads or data, Thunderbird is developed with donations of time and money from people just like you. Manage your email without giving up more of your privacy.</p>
           <a class="strong" href="/en-US/privacy">Cytajśo naše pšawidła priwatnosći</a>
@@ -1126,7 +1281,7 @@
           <picture>
 <source src="/media/img/thunderbird/base/features/mobile-inbox.avif" srcset="/media/img/thunderbird/base/features/mobile-inbox-high-res.avif 1.5x"/>
 <source src="/media/img/thunderbird/base/features/mobile-inbox.webp" srcset="/media/img/thunderbird/base/features/mobile-inbox-high-res.webp 1.5x"/>
-<img class="" src="/media/img/thunderbird/base/features/mobile-inbox.png" srcset="/media/img/thunderbird/base/features/mobile-inbox-high-res.png 1.5x" alt="A cropped screenshot of the Thunderbird for Android's interface.">
+<img class="" src="/media/img/thunderbird/base/features/mobile-inbox.png" srcset="/media/img/thunderbird/base/features/mobile-inbox-high-res.png 1.5x" alt="Pśirězane foto wobrazowki wužywaŕskego pówjercha Thunderbird za Android.">
 </picture>
         </div>
         <div class="section-text">
@@ -1162,7 +1317,7 @@
         </div>
         <div class="section-text">
           <h3>Rozšyrjone e-mailowe koděrowanje</h3>
-          <h4>Send and receive secure messages on any account.</h4>
+          <h4>Sćelśo a dostańśo wěste powěsći z kuždym kontom.</h4>
           <p>Advanced users who want the highest level of privacy can send and receive encrypted emails using the OpenPGP standard when paired with the free and open source OpenKeychain app. Even your email provider won’t have access to your messages.</p>
         </div>
       </div>
@@ -1264,7 +1419,7 @@
           Wužytne <span class="txt-gradient">resurse</span>
         </h2>
         <h4>
-          Level up your Thunderbird Skills.
+          Pólěpšćo swóje zamóžnosći Thunderbird.
         </h4>
       </div>
       <div class="three-columns">
