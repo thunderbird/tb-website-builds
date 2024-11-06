@@ -3309,6 +3309,12 @@ footer {
   text-align: left;
   margin-bottom: 5rem;
 }
+.page-newsletter #main-content {
+  display: none;
+}
+.page-newsletter .pre-footer-cover-container {
+  display: none;
+}
 .page-newsletter .header-separator {
   background-color: var(--color-black);
 }

@@ -66,87 +66,103 @@
 <style>
     #tfa_95,
     *[id^="tfa_95["] {
-      width: 625px;
+      width: 625px !important;
     }
 
     #tfa_95-D,
     *[id^="tfa_95["][class~="field-container-D"] {
-      width: auto;
+      width: auto !important;
     }
 
     #tfa_95-L,
     label[id^="tfa_95["] {
-      width: 189px;
+      width: 189px !important;
+      min-width: 0px;
+    }
+
+    #tfa_211,
+    *[id^="tfa_211["] {
+      width: 480px !important;
+    }
+
+    #tfa_211-D,
+    *[id^="tfa_211["][class~="field-container-D"] {
+      width: auto !important;
+    }
+
+    #tfa_211-L,
+    label[id^="tfa_211["] {
+      width: 134px !important;
       min-width: 0px;
     }
 
     #tfa_163,
     *[id^="tfa_163["] {
-      width: 625px;
+      width: 625px !important;
     }
 
     #tfa_163-D,
     *[id^="tfa_163["][class~="field-container-D"] {
-      width: auto;
+      width: auto !important;
     }
 
     #tfa_163-L,
     label[id^="tfa_163["] {
-      width: 351px;
+      width: 351px !important;
       min-width: 0px;
     }
 
     #tfa_201-L,
     label[id^="tfa_201["] {
-      width: 419px;
+      width: 419px !important;
       min-width: 0px;
     }
 
     #tfa_1,
     *[id^="tfa_1["] {
-      width: 305px;
+      width: 305px !important;
     }
 
     #tfa_1-D,
     *[id^="tfa_1["][class~="field-container-D"] {
-      width: auto;
+      width: auto !important;
     }
 
     #tfa_1-L,
     label[id^="tfa_1["] {
-      width: 189px;
+      width: 189px !important;
       min-width: 0px;
     }
 
     #tfa_10,
     *[id^="tfa_10["] {
-      width: 305px;
+      width: 305px !important;
     }
 
     #tfa_10-D,
     *[id^="tfa_10["][class~="field-container-D"] {
-      width: auto;
+      width: auto !important;
     }
 
     #tfa_10-L,
     label[id^="tfa_10["] {
-      width: 189px;
+      width: 189px !important;
       min-width: 0px;
     }
 
     #tfa_72,
     *[id^="tfa_72["] {
-      width: 350px;
+      width: 350px !important;
     }
 
     #tfa_72-D,
     *[id^="tfa_72["][class~="field-container-D"] {
-      width: auto;
+      width: auto !important;
     }
 
     #tfa_72-L,
     label[id^="tfa_72["] {
-      width: 189px;
+      width: 189px !important;
       min-width: 0px;
     }
 
@@ -157,151 +173,15 @@
 
     #tfa_163-D,
     *[id^="tfa_163["][class~="field-container-D"] {
-      height: auto;
+      height: auto !important;
     }
 
     #tfa_163-L,
     label[id^="tfa_163["],
     *[id^="tfa_163["][id$="-L"] {
-      height: auto;
+      height: auto !important;
     }
   </style>
-<script type="text/javascript">
-  // initialize our variables
-  var captchaReady = 0;
-  var wFORMSReady = 0;
-  var isConditionalSubmitEnabled = false;
-
-  // when wForms is loaded call this
-  var wformsReadyCallback = function() {
-    // using this var to denote if wForms is loaded
-    wFORMSReady = 1;
-    isConditionalSubmitEnabled = document.getElementById('submit_button').hasAttribute('data-condition');
-    // call our recaptcha function which is dependent on both
-    // wForms and an async call to google
-    // note the meat of this function wont fire until both
-    // wFORMSReady = 1 and captchaReady = 1
-    onloadCallback();
-  }
-  var gCaptchaReadyCallback = function() {
-    // using this var to denote if captcha is loaded
-    captchaReady = 1;
-    isConditionalSubmitEnabled = document.getElementById('submit_button').hasAttribute('data-condition');
-    // call our recaptcha function which is dependent on both
-    // wForms and an async call to google
-    // note the meat of this function wont fire until both
-    // wFORMSReady = 1 and captchaReady = 1
-    onloadCallback();
-  };
-
-  // add event listener to fire when wForms is fully loaded
-  document.addEventListener("wFORMSLoaded", wformsReadyCallback);
-
-  var enableSubmitButton = function() {
-    var submitButton = document.getElementById('submit_button');
-    var explanation = document.getElementById('disabled-explanation');
-    var isConditionalSubmitConditionMet = wFORMS.behaviors.condition.isConditionalSubmitConditionMet;
-    if (
-        submitButton != null &&
-        (isConditionalSubmitEnabled && isConditionalSubmitConditionMet) ||
-        !isConditionalSubmitEnabled
-    ) {
-      submitButton.removeAttribute('disabled');
-      if (explanation != null) {
-        explanation.style.display = 'none';
-      }
-    }
-  };
-  var disableSubmitButton = function() {
-    var submitButton = document.getElementById('submit_button');
-    var explanation = document.getElementById('disabled-explanation');
-    if (submitButton != null) {
-      submitButton.disabled = true;
-      if (explanation != null) {
-        explanation.style.display = 'block';
-      }
-    }
-  };
-
-  // call this on both captcha async complete and wforms fully
-  // initialized since we can't be sure which will complete first
-  // and we need both done for this to function just check that they are
-  // done to fire the functionality
-  var onloadCallback = function() {
-    // if our captcha is ready (async call completed)
-    // and wFORMS is completely loaded then we are ready to add
-    // the captcha to the page
-    if (captchaReady && wFORMSReady) {
-      grecaptcha.enterprise.render('g-recaptcha-render-div', {
-        'sitekey': '6LfMg_EaAAAAAMhDNLMlgqDChzmtYHlx1yU2y7GI',
-        'theme': 'light',
-        'size': 'normal',
-        'callback': 'enableSubmitButton',
-        'expired-callback': 'disableSubmitButton'
-      })
-      var oldRecaptchaCheck = parseInt('1');
-      if (oldRecaptchaCheck === -1) {
-        var standardCaptcha = document.getElementById("tfa_captcha_text");
-        standardCaptcha = standardCaptcha.parentNode.parentNode.parentNode;
-        standardCaptcha.parentNode.removeChild(standardCaptcha);
-      }
-
-      if (!wFORMS.instances['paging']) {
-        document.getElementById("g-recaptcha-render-div").parentNode.parentNode.parentNode.style.display = "block";
-        //document.getElementById("g-recaptcha-render-div").parentNode.parentNode.parentNode.removeAttribute("hidden");
-      }
-      document.getElementById("g-recaptcha-render-div").getAttributeNode('id').value = 'tfa_captcha_text';
-
-      var captchaError = '';
-      if (captchaError == '1') {
-        var errMsgText = 'The CAPTCHA was not completed successfully.';
-        var errMsgDiv = document.createElement('div');
-        errMsgDiv.id = "tfa_captcha_text-E";
-        errMsgDiv.className = "err errMsg";
-        errMsgDiv.innerText = errMsgText;
-        var loc = document.querySelector('.g-captcha-error');
-        loc.insertBefore(errMsgDiv, loc.childNodes[0]);
-
-        /* See wFORMS.behaviors.paging.applyTo for origin of this code */
-        if (wFORMS.instances['paging']) {
-          var b = wFORMS.instances['paging'][0];
-          var pp = base2.DOM.Element.querySelector(document, wFORMS.behaviors.paging.CAPTCHA_ERROR);
-          if (pp) {
-            var lastPage = 1;
-            for (var i = 1; i < 100; i++) {
-              if (b.behavior.isLastPageIndex(i)) {
-                lastPage = i;
-                break;
-              }
-            }
-            b.jumpTo(lastPage);
-          }
-        }
-      }
-    }
-  }
-</script>
-<script src='https://www.google.com/recaptcha/enterprise.js?onload=gCaptchaReadyCallback&render=explicit&hl=en_US' async
-        defer></script>
-<script type="text/javascript">
-  document.addEventListener("DOMContentLoaded", function() {
-    var warning = document.getElementById("javascript-warning");
-    if (warning != null) {
-      warning.parentNode.removeChild(warning);
-    }
-    var oldRecaptchaCheck = parseInt('1');
-    if (oldRecaptchaCheck !== -1) {
-      var explanation = document.getElementById('disabled-explanation');
-      var submitButton = document.getElementById('submit_button');
-      if (submitButton != null) {
-        submitButton.disabled = true;
-        if (explanation != null) {
-          explanation.style.display = 'block';
-        }
-      }
-    }
-  });
-</script>
 <script type="text/javascript">
   document.addEventListener("FA__DOMContentLoaded", function() {
     const FORM_TIME_START = Math.floor((new Date).getTime() / 1000);
@@ -337,20 +217,24 @@
     }
   });
 </script>
-
-<link
-  href="https://mozillafoundation.tfaforms.net/dist/form-builder/5.0.0/wforms-layout.css?v=75513df1680ccc55e2c889a1b1dff356256982a6"
-  rel="stylesheet" type="text/css"/>
-
-<link
-  href="https://mozillafoundation.tfaforms.net/dist/form-builder/5.0.0/wforms-jsonly.css?v=75513df1680ccc55e2c889a1b1dff356256982a6"
-  rel="alternate stylesheet" title="This stylesheet activated by javascript" type="text/css"/>
-<script type="text/javascript"
-        src="https://mozillafoundation.tfaforms.net/wForms/3.11/js/wforms.js?v=75513df1680ccc55e2c889a1b1dff356256982a6"></script>
+<link href="https://mozillafoundation.tfaforms.net/dist/form-builder/5.0.0/wforms-layout.css?v=7e0d7c68797132abc85b3b6c57cdba52a4d73afd" rel="stylesheet" type="text/css"/>
+<link href="https://mozillafoundation.tfaforms.net/uploads/themes/theme-25.css" rel="stylesheet" type="text/css"/>
+<link href="https://mozillafoundation.tfaforms.net/dist/form-builder/5.0.0/wforms-jsonly.css?v=7e0d7c68797132abc85b3b6c57cdba52a4d73afd" rel="alternate stylesheet" title="This stylesheet activated by javascript" type="text/css"/>
+<script type="text/javascript" src="https://mozillafoundation.tfaforms.net/wForms/3.11/js/wforms.js?v=7e0d7c68797132abc85b3b6c57cdba52a4d73afd"></script>
 <script type="text/javascript">
   wFORMS.behaviors.prefill.skip = false;
 </script>
-<script type="text/javascript" src="https://mozillafoundation.tfaforms.net/wForms/3.11/js/localization-cs.js?v=75513df1680ccc55e2c889a1b1dff356256982a6"></script>
+
+<script type="text/javascript" src="https://mozillafoundation.tfaforms.net/wForms/3.11/js/localization-cs.js?v=7e0d7c68797132abc85b3b6c57cdba52a4d73afd"></script>
+
+<script
+  id="open-telemetry-script"
+  type="text/javascript"
+  src="https://mozillafoundation.tfaforms.net/dist/open-telemetry/open-telemetry.e3e59835d0ec08f714f1.js"
+  data-customer-id="170610"
+  data-exporter-url="https://us-east-1-otel.formassembly.com/v1/traces"
+  data-exporter-console="0"
+></script>
 
     <script>
       window.siteLocale = "cs";
@@ -1496,8 +1380,7 @@
       <div id="main-content">
       
   <section id="donate">
-      <div class="container">
-
+    <div class="container">
       <div class="section-text">
         <p class="intro">
           Pokud potřebujete pomoci s darem pro Thunderbird a nenalezli jste odpověď v <a href="/cs/donate#faq">často kladených otázkách</a>, vyplňte tento formulář a my se vám co nejdříve ozveme zpět.
@@ -1514,31 +1397,6 @@
   <script>
     // From Mel A at Thunderbird. 06.09.2023. Edited by Mia to change adding en- locales to map and defaulting to 'Other'. Approved by Mel.
     window.addEventListener('DOMContentLoaded', function() {
-
-      /**
-       * Conditionally hides the captcha if the submit button is also hidden
-       * This is currently impossible to do within FormAssembly :^(
-       */
-      function hideCaptcha() {
-        // Grab our submit button (this guy gets conditionally hidden)
-        const submitButton = document.getElementById('submit_button');
-        // Grab their parent (this element holds both our submit button and the google captcha)
-        const actions = submitButton.parentElement;
-
-        // We only care about class changes
-        const config = {attributes: true, attributeFilter: ['class']};
-
-        const callback = (mutationList) => {
-          for (const mutation of mutationList) {
-            // Set our actions parent div (holds both submit and google captcha) to the hidden state of our submit button
-            actions.hidden = mutation.target.classList.contains('offstate') || false;
-          }
-        };
-
-        const observer = new MutationObserver(callback);
-        observer.observe(submitButton, config);
-      }
-
       /**
        * Sets a hidden locale field based on our url path parameter
        * This expects a locale code to be the first path parameter btw
@@ -1590,7 +1448,6 @@
       }
 
       // Call our functions :^)
-      hideCaptcha();
       setLocale();
     });
 
@@ -1598,109 +1455,94 @@
   <div class="wFormHeader"></div>
   <div>
     <div class="wForm" id="11-WRPR" dir="ltr">
-      <form method="post" action="https://mozillafoundation.tfaforms.net/api_v2/workflow/processor" class=" labelsLeftAligned" id="11" role="form" enctype="multipart/form-data">
+      <form method="post" action="https://mozillafoundation.tfaforms.net/api_v2/workflow/processor" class=" labelsLeftAligned" id="89" role="form" enctype="multipart/form-data">
         <div class="oneField field-container-D  labelsAbove  " id="tfa_95-D">
-          <label id="tfa_95-L" class="label preField reqMark" for="tfa_95">
-            Potřebuji
-          </label>
-          <br>
+          <label id="tfa_95-L" class="label preField reqMark" for="tfa_95">Potřebuji</label><br>
           <div class="inputWrapper">
-            <select aria-required="true" id="tfa_95" name="tfa_95" title="Potřebuji" class="required form-select">
-            <option value="">
-              Zvolte prosím...
-            </option>
-            <option value="tfa_186" id="tfa_186" data-conditionals="#tfa_163,#tfa_201,#submit_button,#tfa_184" class="">
-              Pomoc s darovacím formulářem
-            </option>
-            <option value="tfa_187" id="tfa_187" data-conditionals="#tfa_163,#submit_button,#tfa_210,#tfa_184" class="">
-              Změnit nebo zrušit mé opakované měsíčního darování
-            </option>
-            <option value="tfa_188" id="tfa_188" data-conditionals="#tfa_163,#submit_button,#tfa_184" class="">
-              Aktulizovat svou e-mailovou adresu nebo kontaktních údaje
-            </option>
-            <option value="tfa_189" id="tfa_189" data-conditionals="#tfa_199,#tfa_163,#submit_button,#tfa_184" class="">
-              Pomoc se zasláním daru bankovním převodem (SEPA/IBAN)
-            </option>
-            <option value="tfa_190" id="tfa_190" data-conditionals="#tfa_163,#submit_button,#tfa_184" class="">
-              Pomoc s darem v jiné měně nebo s jinou platební metodou
-            </option>
-            <option value="tfa_191" id="tfa_191" data-conditionals="#tfa_163,#submit_button,#tfa_184" class="">
-              Kopii potvrzení o daru
-            </option>
-            <option value="tfa_192" id="tfa_192" data-conditionals="#tfa_163,#submit_button,#tfa_184" class="">
-              Souhrn darů ke konci roku
-            </option>
-            <option value="tfa_193" id="tfa_193" data-conditionals="#tfa_163,#submit_button,#tfa_184" class="">
-              Nechat si vrátit dar
-            </option>
-            <option value="tfa_194" id="tfa_194" data-conditionals="#tfa_163,#tfa_201,#submit_button,#tfa_184" class="">
-              Pomoc s neoprávněným nebo podvodným darem
-            </option>
-            <option value="tfa_197" id="tfa_197" data-conditionals="#tfa_203" class="">
-              Technickou podporu pro Thunderbird
-            </option>
-            <option value="tfa_198" id="tfa_198" data-conditionals="#tfa_204" class="">
-              Požádat o novou funkci pro Thunderbird
-            </option>
-            <option value="tfa_195" id="tfa_195" data-conditionals="#tfa_163,#submit_button,#tfa_184" class="">
-              Odeslat zpětnou vazbu
-            </option>
-            <option value="tfa_196" id="tfa_196" data-conditionals="#tfa_163,#tfa_201,#submit_button,#tfa_184" class="">
-              Pomoc s něčím jiným
-            </option>
-          </select></div>
+            <select aria-required="true" id="tfa_95" name="tfa_95" title="I need" class="required">
+              <option value="">Zvolte prosím...</option>
+              <option value="tfa_186" id="tfa_186" data-conditionals="#tfa_201,#tfa_163,#tfa_211,#tfa_184,#submit_button,#tfa_217" class="">Pomoc s darovacím formulářem</option>
+              <option value="tfa_193" id="tfa_193" data-conditionals="#tfa_163,#tfa_184,#submit_button" class="">Nechat si vrátit dar</option>
+              <option value="tfa_194" id="tfa_194" data-conditionals="#tfa_201,#tfa_163,#tfa_184,#submit_button" class="">Pomoc s neoprávněným nebo podvodným darem</option>
+              <option value="tfa_188" id="tfa_188" data-conditionals="#tfa_215" class="">Pro aktualizaci mé e-mailové adresy</option>
+              <option value="tfa_187" id="tfa_187" data-conditionals="#tfa_210" class="">Změnit nebo zrušit mé opakované měsíčního darování</option>
+              <option value="tfa_189" id="tfa_189" data-conditionals="#tfa_199" class="">Pomoc se zasláním daru bankovním převodem (SEPA/IBAN)</option>
+              <option value="tfa_190" id="tfa_190" data-conditionals="#tfa_216" class="">Pomoc s darem v jiné měně nebo s jinou platební metodou</option>
+              <option value="tfa_191" id="tfa_191" data-conditionals="#tfa_210" class="">Kopii potvrzení o daru</option>
+              <option value="tfa_197" id="tfa_197" data-conditionals="#tfa_203" class="">Technickou podporu pro Thunderbird</option>
+              <option value="tfa_198" id="tfa_198" data-conditionals="#tfa_204" class="">Požádat o novou funkci pro Thunderbird</option>
+              <option value="tfa_196" id="tfa_196" data-conditionals="#tfa_163,#tfa_211,#tfa_184,#submit_button,#tfa_217" class="">Pomoc s něčím jiným</option>
+            </select></div>
         </div>
         <div id="tfa_199" class="section group" data-condition="`#tfa_189`">
           <div class="htmlSection" id="tfa_200">
             <div class="htmlContent" id="tfa_200-HTML">
-              <span style="font-size:13px;color:#000000;font-weight:normal;text-decoration:none;font-family:'Arial',serif;font-style:normal;text-decoration-skip-ink:none;">
-                Opravdu si vážíme vaší podpory a jsme rádi, že vám nyní můžeme nabídnout jednodušší způsob, jak darovat prostřednictvím online bankovního převodu. Přijímáme dary prostřednictvím přímého debetu v eurech prostřednictvím převodů Single European Payment Area (SEPA).
+              <span data-sheets-root="1" style="font-size:10pt;font-family:Arial;font-style:normal;">
+                Opravdu si vážíme vaší podpory a jsme rádi, že vám můžeme nabídnout snadný způsob, jak poslat dar prostřednictvím <b>online bankovního převodu</b>. Přijímáme dary přes direct debit v eurech <b>převody SEPA ( Single European Payment Area )</b>. Abychom udrželi naše administrativní náklady na minimu, bohužel <b>nemůžeme přijímat SEPA bankovní převody pomocí IBAN</b>.
+                <br><br>
+                <a target="_blank" href="/cs/donate?form=support">Pro odeslání daru prosím navštivte náš zabezpečený <b>online formulář</b></a>.
+                <br>
               </span>
-              <br/>
-              <br/>
-              <div>
-                <b><u><a href="/cs/donate?form=support" target="_blank">Navštivte naši zabezpečenou online stránku pro poslání daru</a></u></b>
-              </div>
-              <br/>
-              <i>Stále máte otázky? Kontaktujte nás zasláním vašeho případu.</i></div>
+            </div>
           </div>
         </div>
-        <div id="tfa_210" class="section group" data-condition="`#tfa_187`">
+        <div id="tfa_210" class="section group" data-condition="`#tfa_187` OR `#tfa_191`">
           <div class="htmlSection" id="tfa_209">
-            <div class="htmlContent" id="tfa_209-HTML"><span style="font-size:13px;color:#000000;font-weight:normal;text-decoration:none;font-family:'Arial',serif;font-style:normal;text-decoration-skip-ink:none;">
-              Přístup k nastavení svého darovacího účtu získáte pomocí tlačítka „<b>Spravovat můj příspěvek</b>“ v e-mailu s posledním potvrzením o daru. Zde můžete změnit částku, frekvenci, způsob platby a datum zaúčtování. Můžete také zrušit svůj plán opakovaného darování.
-              </span><br/><br/>
-              <i>Stále máte otázky? Kontaktujte nás zasláním vašeho případu.</i></div>
+            <div class="htmlContent" id="tfa_209-HTML">
+              <span style="font-size: 13px; color: rgb(0, 0, 0); font-family: &quot;Arial&quot;; font-style: normal; text-decoration-skip-ink: none;">
+                <b>Navštivte náš </b> <a target="_blank" href="https://supporter.thunderbird.net/"><b>Dárcovský portál</b></a> pro <b>přístup k vašim účtenkám a pro úpravu či zrušení pravidelného plánu</b> včetně změny částky, frekvence, způsobu platby a data zaúčtování.
+                <br><br>
+                <i>Poznámka: nejsme schopni poskytnout přizpůsobená či souhrnná stvrzenka.</i>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div id="tfa_217" class="section group" data-condition="`#tfa_196` OR `#tfa_186`">
+          <div class="htmlSection" id="tfa_218">
+            <div class="htmlContent" id="tfa_218-HTML">
+              <span data-sheets-root="1" style="font-size:10pt;font-family:Arial;font-style:normal;">
+                Nezapomeňte se podívat na naši stránku <a target="_blank" href="/cs/donate#faq"><b>Nejčastěji kladené otázky k darování</b></a>, kde možná najdete odpověď na svou otázku.
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="oneField field-container-D    " id="tfa_211-D">
+          <label id="tfa_211-L" class="label preField reqMark" for="tfa_211"><span style="font-size: 13px; color: rgb(0, 0, 0); font-family: &quot;Arial&quot;; font-style: normal; text-decoration-skip-ink: none;">Souhrn problémů</span></label>
+          <div class="inputWrapper">
+            <input aria-required="true" type="text" id="tfa_211" name="tfa_211" value="" data-condition="`#tfa_196` OR `#tfa_186`" title="Souhrn problémů" class="required">
           </div>
         </div>
         <div class="oneField field-container-D  labelsAbove  " id="tfa_163-D">
-          <label id="tfa_163-L" class="label preField " for="tfa_163">Jakékoli další podrobnosti, které by mohly pomoci</label><br>
+          <label id="tfa_163-L" class="label preField " for="tfa_163"><span style="font-size: 13px; color: rgb(0, 0, 0); font-family: &quot;Arial&quot;; font-style: normal; text-decoration-skip-ink: none;">
+            Dle potřeby prosím poskytněte více detailů
+          </span></label><br>
           <div class="inputWrapper">
-            <textarea id="tfa_163" name="tfa_163" data-condition="`#tfa_186` OR `#tfa_187` OR `#tfa_188` OR `#tfa_189` OR `#tfa_190` OR `#tfa_191` OR `#tfa_192` OR `#tfa_193` OR `#tfa_194` OR `#tfa_195` OR `#tfa_196`" title="Jakékoli další podrobnosti, které by mohly pomoci" class=""></textarea>
+            <textarea id="tfa_163" name="tfa_163" data-condition="`#tfa_186` OR `#tfa_193` OR `#tfa_194` OR `#tfa_196`" title="Dle potřeby prosím poskytněte více detailů" class=""></textarea>
           </div>
         </div>
         <div class="oneField field-container-D  labelsAbove hintsBelow " id="tfa_201-D">
-          <label id="tfa_201-L" class="label preField " for="tfa_201">
+          <label id="tfa_201-L" class="label preField " for="tfa_201"><span style="font-size: 13px; color: rgb(0, 0, 0); font-family: &quot;Arial&quot;; font-style: normal; text-decoration-skip-ink: none;">
             Přidejte snímek obrazovky, který nám pomůže s vaším požadavkem (volitelné)
-          </label>
-          <br/>
+          </span>
+          </label><br>
           <div class="inputWrapper">
-            <input type="file" id="tfa_201" name="tfa_201" size="" data-condition="`#tfa_186` OR `#tfa_194` OR `#tfa_196`" title="Přidejte snímek obrazovky, který nám pomůže s vaším požadavkem (volitelné)" class="">
-            <span class="field-hint-inactive" id="tfa_201-H">
-              <span id="tfa_201-HH" class="hint">Pouze soubory JPG, PNG a BMP</span>
-            </span>
+            <input type="file" id="tfa_201" name="tfa_201" size="" data-condition="`#tfa_186` OR `#tfa_194`" title="Přidejte snímek obrazovky, který nám pomůže s vaším požadavkem (volitelné)" class=""><span class="field-hint-inactive" id="tfa_201-H"><span id="tfa_201-HH" class="hint">Pouze soubory JPG, PNG a BMP</span></span>
           </div>
         </div>
-        <div id="tfa_184" class="section group" data-condition="`#tfa_186` OR `#tfa_187` OR `#tfa_188` OR `#tfa_189` OR `#tfa_190` OR `#tfa_191` OR `#tfa_192` OR `#tfa_193` OR `#tfa_194` OR `#tfa_196` OR `#tfa_195`">
+        <div id="tfa_184" class="section group" data-condition="`#tfa_186` OR `#tfa_193` OR `#tfa_194` OR `#tfa_196`">
           <div id="tfa_185" class="section inline group">
             <div class="oneField field-container-D  labelsAbove  " id="tfa_1-D">
-              <label id="tfa_1-L" class="label preField reqMark" for="tfa_1">Jméno</label><br>
+              <label id="tfa_1-L" class="label preField reqMark" for="tfa_1"><span style="font-size: 13px; color: rgb(0, 0, 0); font-family: &quot;Arial&quot;; font-style: normal; text-decoration-skip-ink: none;">
+                Jméno
+              </span></label><br>
               <div class="inputWrapper">
                 <input aria-required="true" type="text" id="tfa_1" name="tfa_1" value="" title="Jméno" class="required">
               </div>
             </div>
             <div class="oneField field-container-D  labelsAbove  " id="tfa_10-D">
-              <label id="tfa_10-L" class="label preField reqMark" for="tfa_10">E-mail</label><br>
+              <label id="tfa_10-L" class="label preField reqMark" for="tfa_10"><span style="font-size: 13px; color: rgb(0, 0, 0); font-family: &quot;Arial&quot;; font-style: normal; text-decoration-skip-ink: none;">
+                E-mail
+              </span></label><br>
               <div class="inputWrapper">
                 <input aria-required="true" type="text" id="tfa_10" name="tfa_10" value="" title="E-mail" class="validate-email required">
               </div>
@@ -1708,93 +1550,126 @@
           </div>
           <div class="htmlSection" id="tfa_182">
             <div class="htmlContent" id="tfa_182-HTML">
-              Thunderbird použije odeslané informace pouze pro účely komunikace ohledně vašeho požadavku. Více informací najdete v našich <a href="https://www.mozilla.org/privacy/websites/">zásadách ochrany osobních údajů</a>.
+              Thunderbird použije odeslané informace pouze pro účely komunikace o vašem požadavku. Další informace naleznete v našich <a href="https://www.mozilla.org/privacy/websites/" target="_blank">zásadách ochrany osobních údajů</a>.
             </div>
           </div>
         </div>
         <div id="tfa_203" class="section group" data-condition="`#tfa_197`">
           <div class="htmlSection" id="tfa_206">
             <div class="htmlContent" id="tfa_206-HTML">
-              S technickými problémy Thunderbirdu vám prostřednictvím formuláře pro dary nemůžeme pomoci.
-              <br>
               <div>
-                Pomůže vám naše <a href="https://connect.mozilla.org/t5/ideas/idb-p/ideas/label-name/thunderbird" target="_blank">databáze znalostí</a> a komunita aktivních uživatelů.
-              </div>
-              <br/>
-              <div>
-                <b>
-                  <a href="https://support.mozilla.org/products/thunderbird/" target="_blank">Navštivte naše stránky technické podpory, kde získáte další pomoc</a>
-                </b>
+                <div><span data-sheets-root="1" style="font-size:10pt;font-family:Arial;font-style:normal;">
+                  Náš tým podpory není schopen odpovědět na žádné dotazy k technické podpoře. Výměnou za finanční dary neposkytujeme technickou podporu. Abyste získali pomoc, kterou potřebujete, <a target="_blank" href="https://support.mozilla.org/products/thunderbird/">navštivte naši stránku technické podpory</a>.
+                  <br><br>
+                  <b>Technická podpora Thunderbirdu je komunitní</b> a je dostupná pro každého. Naše stránka technické podpory <b>zahrnuje články databáze znalostí a komunitu dobrovolníků připravených pomoci</b>!<br><br><a target="_blank" href="https://support.mozilla.org/products/thunderbird/"><b> Navštivte naše stránky technické podpory pro další pomoc</b></a>.
+                </span>
+                  <style type="text/css">td {
+                    border: 1px solid #cccccc;
+                  }
+
+                  br {
+                    mso-data-placement: same-cell;
+                  }</style>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div id="tfa_204" class="section group" data-condition="`#tfa_198`">
           <div class="htmlSection" id="tfa_207">
-            <div class="htmlContent" id="tfa_207-HTML"><span>
-              <a href="https://connect.mozilla.org/" target="_blank">Mozilla Connect</a> je prostor pro spolupráci na nápadech, zpětné vazbě a diskusích, které pomohou utvářet budoucí vydávání Thunderbirdu.
-              <a href="https://connect.mozilla.org/t5/ideas/idb-p/ideas/label-name/thunderbird" target="_blank">Přidejte svůj nápad</a> a nezapomeňte označit štítkem Thunderbirdu, aby vás ostatní mohli najít a hlasovat pro váš návrh.
-            </span>
-              <br/>
-              <div>
-                Pro technickou podporu produktu navštivte naši <a href="https://support.mozilla.org/products/thunderbird/" target="_blank">stránku podpory</a>.
+            <div class="htmlContent" id="tfa_207-HTML"><span></span>
+              <div><span data-sheets-root="1" style="font-size:10pt;font-family:Arial;font-style:normal;">
+              Náš tým podpory pro dárce není schopen reagovat na reakce ani na žádosti o nové funkce Thunderbirdu. Ale chceme slyšet váš názor! Navštivte prosím<b> <a target="_blank" href="https://connect.mozilla.org/">Mozilla Connect</a></b>.
+                <br><br>
+              <a target="_blank" href="https://connect.mozilla.org/"><b>Mozilla Connect</b></a> je prostor pro spolupráci a diskuse o nápadech, zpětné vazbě a diskusích, které pomohou utvářet budoucí vydávání Thunderbirdu. <a target="_blank" href="https://connect.mozilla.org/t5/ideas/idb-p/ideas/label-name/thunderbird"><b>Posílejte své nápady</b></a> a nezapomeňte označit Thunderbird štítkem, aby ostatní mohli vaše návrhy najít a hlasovat o nich.<br> <br> Pro technickou podporu Thunderbirdu navštivte naše <a target="_blank" href="https://support.mozilla.org/products/thunderbird/"><b>stránky podpory</b></a>
+              </span>
               </div>
-              <br/>
               <div>
-                <b>
-                  <a href="https://connect.mozilla.org/t5/ideas/idb-p/ideas/label-name/thunderbird" target="_blank">Navštivte Mozilla Connect a přidejte svůj nápad pro Thunderbird</a>
-                </b>
-                <br/>
+                <span data-sheets-root="1" style="font-size:10pt;font-family:Arial;font-style:normal;"><br></span>
+              </div>
+              <div>
+                <span data-sheets-root="1" style="font-size:10pt;font-family:Arial;font-style:normal;">
+                  <a target="_blank" href="https://connect.mozilla.org/t5/ideas/idb-p/ideas/label-name/thunderbird">
+                    <b>Navštivte Mozilla Connect a pošlete své nápady pro Thunderbird.</b></a></span>
+                <style type="text/css">td {
+                  border: 1px solid #cccccc;
+                }
+
+                br {
+                  mso-data-placement: same-cell;
+                }</style>
               </div>
             </div>
           </div>
         </div>
         <div class="oneField field-container-D  labelsLeftAligned   wf-acl-hidden" id="tfa_72-D">
-          <label id="tfa_72-L" class="label preField " for="tfa_72">Jazyk</label>
-          <div class="inputWrapper">
-            <select id="tfa_72" name="tfa_72" title="Jazyk" class="">
-              <option value="">Zvolte prosím...</option>
-              <option value="tfa_73" id="tfa_73" class="">Čínština (zjednodušená)</option>
-              <option value="tfa_74" id="tfa_74" class="">Čeština</option>
-              <option value="tfa_75" id="tfa_75" class="">Dánština</option>
-              <option value="tfa_76" id="tfa_76" class="">Nizozemština</option>
-              <option value="tfa_77" id="tfa_77" class="">Angličtina</option>
-              <option value="tfa_78" id="tfa_78" class="">Francouzština</option>
-              <option value="tfa_79" id="tfa_79" class="">Němčina</option>
-              <option value="tfa_80" id="tfa_80" class="">Italština</option>
-              <option value="tfa_81" id="tfa_81" class="">Japonština</option>
-              <option value="tfa_82" id="tfa_82" class="">Ostatní</option>
-              <option value="tfa_83" id="tfa_83" class="">Polština</option>
-              <option value="tfa_84" id="tfa_84" class="">Portugalština</option>
-              <option value="tfa_85" id="tfa_85" class="">Ruština</option>
-              <option value="tfa_86" id="tfa_86" class="">Španělština</option>
-            </select>
-          </div>
+          <label id="tfa_72-L" class="label preField " for="tfa_72">Language</label>
+          <div class="inputWrapper"><select id="tfa_72" name="tfa_72" title="Language" class="">
+            <option value="">Zvolte prosím...</option>
+            <option value="tfa_73" id="tfa_73" class="">Čínština (zjednodušená)</option>
+            <option value="tfa_74" id="tfa_74" class="">Čeština</option>
+            <option value="tfa_75" id="tfa_75" class="">Dánština</option>
+            <option value="tfa_76" id="tfa_76" class="">Nizozemština</option>
+            <option value="tfa_77" id="tfa_77" class="">Angličtina</option>
+            <option value="tfa_78" id="tfa_78" class="">Francouzština</option>
+            <option value="tfa_79" id="tfa_79" class="">Němčina</option>
+            <option value="tfa_80" id="tfa_80" class="">Italština</option>
+            <option value="tfa_81" id="tfa_81" class="">Japonština</option>
+            <option value="tfa_82" id="tfa_82" class="">Ostatní</option>
+            <option value="tfa_83" id="tfa_83" class="">Polština</option>
+            <option value="tfa_84" id="tfa_84" class="">Portugalština</option>
+            <option value="tfa_85" id="tfa_85" class="">Ruština</option>
+            <option value="tfa_86" id="tfa_86" class="">Španělština</option>
+          </select></div>
         </div>
-        <div class="actions" id="11-A" data-contentid="submit_button">
-          <div id="google-captcha" style="display: none">
-            <br>
-            <div class="captcha">
-              <div class="oneField">
-                <div class="g-recaptcha" id="g-recaptcha-render-div"></div>
-                <div class="g-captcha-error"></div>
-                <br>
-              </div>
-              <div class="captchaHelp">reCAPTCHA pomáhá předcházet automatizovanému formulářovému SPAMu.<br>
-              </div>
-              <div id="disabled-explanation" class="captchaHelp" style="display: none">
-                Tlačítko pro odeslání nebude dostupné, dokud nedokončíte CAPTCHA.
-              </div>
+        <div id="tfa_215" class="section group" data-condition="`#tfa_188`">
+          <div class="htmlSection" id="tfa_214">
+            <div class="htmlContent" id="tfa_214-HTML">
+              <style type="text/css">td {
+                border: 1px solid #cccccc;
+              }
+
+              br {
+                mso-data-placement: same-cell;
+              }</style>
+              <span data-sheets-root="1" style="font-size:10pt;font-family:Arial;font-style:normal;">
+                Pro aktualizaci e-mailu, který používáte pro odesílání a správu příspěvků, <b>navštivte náš <a target="_blank" href="https://supporter.thunderbird.net/">portál dárců</a></b>.
+                <br><br>
+                Pro přihlášení do dárcovského portálu použijte prosím e-mail, který jste použili pro zaslání příspěvku.
+              </span>
             </div>
           </div>
-          <input type="submit" data-label="Submit" class="btn btn-white-bg" id="submit_button" value="Odeslat" data-condition="`#tfa_186` OR `#tfa_187` OR `#tfa_188` OR `#tfa_189` OR `#tfa_190` OR `#tfa_191` OR `#tfa_191` OR `#tfa_192` OR `#tfa_192` OR `#tfa_193` OR `#tfa_194` OR `#tfa_195` OR `#tfa_196`" data-conditional-mode="hidden">
+        </div>
+        <div id="tfa_216" class="section group" data-condition="`#tfa_190`">
+          <div class="htmlSection" id="tfa_213">
+            <div class="htmlContent" id="tfa_213-HTML">
+              <span data-sheets-root="1" style="font-size:10pt;font-family:Arial;font-style:normal;">
+                Aktuálně <b>prostřednictvím našeho <a target="_blank" href="/cs/donate?form=support">přihlašovacího formuláře</a> přijímáme více než 100 měn!</b>
+              </span>
+              <span data-sheets-root="1" style="font-size:10pt;font-family:Arial;font-style:normal;">
+                Pokud nevidíte svou preferovanou měnu, bohužel tuto měnu nemůžeme akceptovat.
+                <br><br>
+                <b>Přijímáme také mnoho způsobů plateb</b>, které v závislosti na vaší poloze zahrnují kreditní kartu, PayPal, SEPA Direct Debit, iDEAL, Google Pay, Apple Pay a ACH. Pokud nevidíte svůj preferovaný způsob platby, v tuto chvíli ho bohužel neakceptujeme.
+                <br><br>
+                Nepřijímáme dary v kryptoměnách.
+                <br><br>
+                Pokud jste ve Spojených státech (nebo používáte bankovní účet v USA), můžete přispět šekem. Podrobné pokyny jsou k dispozici na naší stránce <a target="_blank" href="/cs/donate#faq"><b>FAQ</b></a>.
+              </span>
+              <style type="text/css">td {
+                border: 1px solid #cccccc;
+              }
+
+              br {
+                mso-data-placement: same-cell;
+              }</style>
+            </div>
+          </div>
+        </div>
+        <div class="actions" id="89-A" data-contentid="submit_button">
+          <input type="submit" data-label="Submit" class="primaryAction" id="submit_button" value="Submit" data-condition="`#tfa_186` OR `#tfa_193` OR `#tfa_194` OR `#tfa_196`" data-conditional-mode="hidden">
         </div>
         <div style="clear:both"></div>
-        <input type="hidden" value="11" name="tfa_dbFormId" id="tfa_dbFormId">
-        <input type="hidden" value="" name="tfa_dbResponseId" id="tfa_dbResponseId"><input type="hidden" value="69375506ef70f34cfe24c2df010f0438" name="tfa_dbControl" id="tfa_dbControl">
-        <input type="hidden" value="" name="tfa_dbWorkflowSessionUuid" id="tfa_dbWorkflowSessionUuid">
-        <input type="hidden" value="27" name="tfa_dbVersionId" id="tfa_dbVersionId">
-        <input type="hidden" value="" name="tfa_switchedoff" id="tfa_switchedoff">
+        <input type="hidden" value="89" name="tfa_dbFormId" id="tfa_dbFormId"><input type="hidden" value="" name="tfa_dbResponseId" id="tfa_dbResponseId"><input type="hidden" value="eed9988885b5ff8bb916a8049de0ca72" name="tfa_dbControl" id="tfa_dbControl"><input type="hidden" value="" name="tfa_dbWorkflowSessionUuid" id="tfa_dbWorkflowSessionUuid"><input type="hidden" value="68" name="tfa_dbVersionId" id="tfa_dbVersionId"><input type="hidden" value="" name="tfa_switchedoff" id="tfa_switchedoff">
       </form>
     </div>
     <div class="wFormFooter"><p class="supportInfo"><br></p></div>
