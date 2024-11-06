@@ -3365,6 +3365,32 @@ footer {
     padding: 0;
   }
 }
+.page-donations-help .warning-panel {
+  --text-gradient: linear-gradient(-270deg, var(--color-magenta-50), var(--color-purple-50));
+  --bg-warning: color-mix(in srgb, var(--color-magenta-50) 5%, transparent);
+  --text-warning: var(--color-magenta-90);
+  --warning-links: var(--color-purple-80);
+  --list-dot-inner: var(--color-magenta-90);
+  --list-dot-outer: var(--color-magenta-10);
+  place-items: center;
+  background: var(--bg-warning);
+  color: var(--text-warning);
+  border: 1px solid var(--text-warning);
+  border-radius: 6px;
+  padding: 0.5em 1em;
+  max-width: 40rem;
+  font-weight: 400;
+  margin: auto;
+}
+.page-donations-help .warning-panel p {
+  margin: 0;
+}
+.page-donations-help .warning-panel b {
+  font-weight: 700;
+}
+.page-donations-help .warning-panel a {
+  color: var(--warning-links);
+}
 .page-holiday-calendar .all-holiday-legend ul {
   list-style: none;
   display: flex;
