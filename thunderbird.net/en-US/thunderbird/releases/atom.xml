@@ -8,7 +8,7 @@
   <title>Thunderbird Release Notes</title>
   <subtitle type="text">Thunderbird Release Notes feed provides a simple way to keep up to date with Thunderbird releases.</subtitle>
 
-  <updated>2024-11-18T22:45:59+00:00</updated>
+  <updated>2024-11-18T23:09:44+00:00</updated>
   <logo>https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png</logo>
   <icon>https://www.thunderbird.net/media/img/thunderbird/favicon-196.png</icon>
 
@@ -98,6 +98,77 @@
 
         <li>
           <p>S/MIME status was not displayed when opening an email from a file</p>
+          
+        </li>
+      
+    
+    </ul>
+  
+  
+
+<p>As always, you’re encouraged to <a href="https://connect.mozilla.org/t5/ideas/idb-p/ideas/label-name/thunderbird">tell us what you think</a>, <a href="https://support.mozilla.org/questions/new/thunderbird">ask for help</a>, or <a href="https://bugzilla.mozilla.org/enter_bug.cgi?product=Thunderbird">file a bug in Bugzilla</a></p>
+<style> li p { display: inline; } </style>
+      ]]>
+    </content>
+  </entry>
+  
+  <entry>
+    <id>https://www.thunderbird.net/en-US/thunderbird/128.4.4esr/releasenotes/</id>
+    <title type="html">Thunderbird 128.4.4esr</title>
+    <author>
+      <name>Thunderbird</name>
+      <uri>https://www.thunderbird.net</uri>
+    </author>
+    <link rel="alternate" type="text/html" href="https://www.thunderbird.net/en-US/thunderbird/128.4.4esr/releasenotes/"/>
+    <updated>2024-11-19T00:00:00+00:00</updated>
+    <published>2024-11-19T00:00:00+00:00</published>
+
+    <content type="html"><![CDATA[
+      
+
+  
+  
+
+  
+    
+
+    
+      
+        
+        
+
+        
+          <h3>Fixed</h3>
+        
+
+        
+        
+          <ul>
+        
+
+        
+        
+
+        <li>
+          <p>QR codes were not scannable by Android app when using most high-contrast themes</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Primary password prompt cancellation during mobile export was confusing</p>
           
         </li>
       
@@ -2010,389 +2081,6 @@
 
         <li>
           <p>Add end of year donation appeal</p>
-          
-        </li>
-      
-    
-    </ul>
-  
-  
-
-<p>As always, you’re encouraged to <a href="https://connect.mozilla.org/t5/ideas/idb-p/ideas/label-name/thunderbird">tell us what you think</a>, <a href="https://support.mozilla.org/questions/new/thunderbird">ask for help</a>, or <a href="https://bugzilla.mozilla.org/enter_bug.cgi?product=Thunderbird">file a bug in Bugzilla</a></p>
-<style> li p { display: inline; } </style>
-      ]]>
-    </content>
-  </entry>
-  
-  <entry>
-    <id>https://www.thunderbird.net/en-US/thunderbird/128.3.2esr/releasenotes/</id>
-    <title type="html">Thunderbird 128.3.2esr</title>
-    <author>
-      <name>Thunderbird</name>
-      <uri>https://www.thunderbird.net</uri>
-    </author>
-    <link rel="alternate" type="text/html" href="https://www.thunderbird.net/en-US/thunderbird/128.3.2esr/releasenotes/"/>
-    <updated>2024-10-17T00:00:00+00:00</updated>
-    <published>2024-10-17T00:00:00+00:00</published>
-
-    <content type="html"><![CDATA[
-      
-
-  
-  
-
-  
-    
-
-    
-      
-        
-        
-
-        
-          <h3>Changed</h3>
-        
-
-        
-        
-          <ul>
-        
-
-        
-        
-
-        <li>
-          <p>Reinstated "All future events" to the calendar event filtering</p>
-          
-        </li>
-      
-    
-      
-        
-        
-          </ul>
-        
-
-        
-          <h3>Fixed</h3>
-        
-
-        
-        
-          <ul>
-        
-
-        
-        
-
-        <li>
-          <p>Ctrl+Drag moved messages instead of copying them when running on Wayland</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Fixed startup crash related to mailbox parsing</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Saving an EML file that was opened from a file did not work</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Delete confirmation could appear twice when using shift+delete</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Performance could be degraded when using cards view with tags</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Stored draft messages were not encrypted when recipients were not specified</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>"Attach this image to the message" checkbox not checked when inserting image</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Quick filter state was not reset when a special view was chosen</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Drag and drop to collapsed folders resulted in incorrect collapsed state</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>RSS feed with invalid hostname broke the RSS feed folder</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>New Account creation could fail to add SMTP server</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Could not drag and drop multiple contacts from address book to destination fields</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Delayed sending of message could fail when retrying copy to Sent folder</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>ICS calendar import could fail if it contained non-UTF-8 data</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Searching with "Find Events Pane" failed if an event did not have a title</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Visual and UX improvements</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Could not import binary OpenPGP key file ending with whitespace</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Thunderbird could crash on startup</p>
           
         </li>
       
