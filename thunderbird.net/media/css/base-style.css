@@ -3440,6 +3440,20 @@ footer {
   max-inline-size: 90%;
   text-align: left;
 }
+.page-privacy-policy .sidebar {
+  align-self: flex-start;
+  margin: 1.8rem 0;
+  padding: 0;
+  width: 100%;
+}
+.page-privacy-policy .sidebar ul {
+  margin: 0;
+  padding: 0;
+}
+.page-privacy-policy .sidebar li {
+  list-style-type: none;
+  padding: 0.67rem 1rem 0.67rem 0;
+}
 .page-support-mobile .container {
   display: flex;
   width: 100%;
