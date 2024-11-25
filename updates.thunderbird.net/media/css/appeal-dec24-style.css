@@ -2652,6 +2652,7 @@ main {
   font-size: 1.25rem;
   font-weight: 700;
   color: var(--txt);
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
 }
 @media (min-width: 25rem) {
   .page-appeal-dec24 #appeal-heading {
@@ -2660,12 +2661,13 @@ main {
 }
 @media (min-width: 48rem) {
   .page-appeal-dec24 #appeal-heading {
-    font-size: 2rem;
+    font-size: 2.25rem;
   }
 }
 @media (min-width: 64rem) {
   .page-appeal-dec24 #appeal-heading {
-    padding: 2.25rem 2rem 1rem 2rem;
+    padding: 2.25rem 2rem 1rem 3rem;
+    margin: -1.8rem 0;
   }
 }
 .page-appeal-dec24 #appeal-heading > span {
@@ -2702,6 +2704,11 @@ main {
 }
 .page-appeal-dec24 #appeal-body {
   box-sizing: border-box;
+}
+@media (min-width: 64rem) {
+  .page-appeal-dec24 #appeal-body {
+    margin-top: -5.7rem;
+  }
 }
 .page-appeal-dec24 #appeal-body:before,
 .page-appeal-dec24 #appeal-body:after {
