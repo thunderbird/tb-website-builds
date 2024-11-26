@@ -2574,9 +2574,13 @@ main {
   padding: 0;
   background: none;
 }
-@media (min-width: 64rem) {
+@media (min-width: 80rem) {
   .page-appeal-dec24 #appeal-header {
     background-size: contain;
+  }
+}
+@media (min-width: 64rem) {
+  .page-appeal-dec24 #appeal-header {
     flex-direction: row;
     height: 32.25rem;
   }
