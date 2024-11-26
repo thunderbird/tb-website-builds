@@ -2543,91 +2543,41 @@ main {
   background-color: black;
 }
 .page-appeal-dec24 body {
-  margin: 0;
+  max-width: 80rem;
+  margin: auto;
   min-width: 23.438rem;
   min-height: 100vh;
-  max-width: 100%;
   font-family: var(--font-content);
   line-height: 1.6;
-  --bg-color: linear-gradient(to bottom, rgba(20, 64, 92, 0) 12%, #0f345e 22%);
-  --bg-position: center 8rem, calc(100%) top;
-  --bg-position-mxl: center 6.5rem, calc(100%) top;
-  --bg-position-xl: center 8.5rem, calc(100%) top;
-  --bg-position-lg: center 2.5rem, calc(100%) top;
-  --bg-position-md: center -3.5rem, calc(100%) top;
-  --bg-position-sm: center 3.5rem, calc(100% + 2.3rem) top;
-  --bg-position-ss: center -1.5rem, calc(100% + 2.3rem) top;
-  --bg-position-xs: center 3.75rem, calc(100% + 2.3rem) top;
-  --bg-position-xms: center 0.75rem, calc(100% + 2.3rem) top;
-  --bg-position-mobile: center -1.75rem, calc(100% + 2.3rem) top;
-  --bg-size: auto, contain;
-  --bg-size-medium: auto, 150%;
-  --bg-size-mobile: auto, 255%;
+  background-color: #0f345e;
+}
+.page-appeal-dec24 #header-gradient {
+  --bg-color: linear-gradient(to bottom, rgba(20, 64, 92, 0) 35%, #0f345e 75%);
   background: var(--bg-color);
-  background-image: var(--bg-color), var(--bg-img);
-  background-image: var(--bg-color), var(--bg-img-set);
-  background-repeat: no-repeat;
-  background-position: var(--bg-position-mobile);
-  background-size: var(--bg-size-mobile);
-}
-@media (min-width: 26.25rem) {
-  .page-appeal-dec24 body {
-    background-position: var(--bg-position-xms);
-  }
-}
-@media (min-width: 30rem) {
-  .page-appeal-dec24 body {
-    background-position: var(--bg-position-xs);
-  }
-}
-@media (min-width: 33rem) {
-  .page-appeal-dec24 body {
-    background-size: var(--bg-size-medium);
-    background-position: var(--bg-position-ss);
-  }
-}
-@media (min-width: 40rem) {
-  .page-appeal-dec24 body {
-    background-position: var(--bg-position-sm);
-  }
-}
-@media (min-width: 48rem) {
-  .page-appeal-dec24 body {
-    background-size: var(--bg-size);
-    background-position: var(--bg-position-md);
-  }
-}
-@media (min-width: 64rem) {
-  .page-appeal-dec24 body {
-    margin: 0 auto;
-    max-width: 80rem;
-    background-position: var(--bg-position-lg);
-  }
-}
-@media (min-width: 80rem) {
-  .page-appeal-dec24 body {
-    background-position: var(--bg-position-xl);
-  }
-}
-@media (min-width: 73.75rem) {
-  .page-appeal-dec24 body {
-    background-position: var(--bg-position-mxl);
-  }
-}
-@media (min-width: 90rem) {
-  .page-appeal-dec24 body {
-    background-position: var(--bg-position);
-  }
+  position: absolute;
+  width: 100%;
+  height: 40rem;
+  overflow: clip;
+  pointer-events: none;
 }
 .page-appeal-dec24 #appeal-header {
   display: flex;
   flex-direction: column-reverse;
   padding-bottom: 7rem;
-  margin: 0 auto;
+  background-image: var(--bg-img);
+  background-image: var(--bg-img-set);
+  background-position: calc(100%) top;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .page-appeal-dec24 #appeal-header header {
   padding: 0;
   background: none;
+}
+@media (min-width: 80rem) {
+  .page-appeal-dec24 #appeal-header {
+    background-size: contain;
+  }
 }
 @media (min-width: 64rem) {
   .page-appeal-dec24 #appeal-header {
@@ -2666,7 +2616,7 @@ main {
 }
 @media (min-width: 64rem) {
   .page-appeal-dec24 #appeal-heading {
-    padding: 2.25rem 2rem 1rem 3rem;
+    padding: 2.25rem 2rem 2rem 3rem;
     margin: -1.8rem 0;
   }
 }
@@ -2732,7 +2682,6 @@ main {
   bottom: -1rem;
 }
 .page-appeal-dec24 .letter-container {
-  position: absolute;
   z-index: 1;
   width: 100%;
   display: flex;
@@ -2744,13 +2693,10 @@ main {
   font-weight: 400;
   line-height: 1.5;
   margin-top: -6rem;
-  padding-top: 6rem;
   background: var(--color-appeal-main-bg);
-  padding-bottom: 0.75rem;
   margin-bottom: 6rem;
   position: relative;
-  padding-left: 1.063rem;
-  padding-right: 1.063rem;
+  padding: 6rem 1.063rem 0.75rem;
   /* Declaring this style here, as it has more precedence. */
 }
 @media (min-width: 48rem) {
