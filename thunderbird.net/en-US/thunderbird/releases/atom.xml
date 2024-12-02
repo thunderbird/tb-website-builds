@@ -8,7 +8,7 @@
   <title>Thunderbird Release Notes</title>
   <subtitle type="text">Thunderbird Release Notes feed provides a simple way to keep up to date with Thunderbird releases.</subtitle>
 
-  <updated>2024-12-02T20:36:07+00:00</updated>
+  <updated>2024-12-02T20:40:28+00:00</updated>
   <logo>https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png</logo>
   <icon>https://www.thunderbird.net/media/img/thunderbird/favicon-196.png</icon>
 
@@ -43,7 +43,7 @@
         
 
         
-          <h3>Fixed</h3>
+          <h3>What’s New</h3>
         
 
         
@@ -63,10 +63,16 @@
       
         
         
-
+          </ul>
         
 
         
+          <h3>Fixed</h3>
+        
+
+        
+        
+          <ul>
         
 
         
