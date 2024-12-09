@@ -1,23 +1,197 @@
 <!DOCTYPE html>
-<html lang="mr" dir="ltr">
-<head>
-  <meta charset="utf-8">
-  <meta name="robots" content="noindex">
-  <title>Unsupported Thunderbird Version!</title>
-  
-  <style>
-    body {
-      background-color: #D46A6A;
-      text-align: center;
-    }
-  </style>
-</head>
-<body>
-<main>
-  <h1><b>This is an unsupported version of Thunderbird!!</b></h1>
-  <h2>Thunderbird monthly releases are not considered stable for general use.</h2>
-  <p><i>Use at your own risk, this build is the same quality as Thunderbird Beta.</i></p>
-  <p><b>We recommend downloading the <a href="https://www.thunderbird.net">latest stable version of Thunderbird</a>.</b></p>
-</main>
-</body>
+<html lang="mr" data-channel="release" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex">
+    <title>Welcome to Thunderbird</title>
+    
+    <link href="/media/css/start-style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body class="start-bg">
+    <main>
+      
+      <header>
+        <div class="header-top">
+          <div class="title">
+            <div class="logo-img"></div>
+            <h1 class="title-text">Welcome to <div class="tb-text">Thunderbird</div></h1>
+          </div>
+
+          <div class="donate">
+            Support us!
+            <a href="https://www.thunderbird.net/mr/donate?utm_content=paragraph_text&utm_source=start_page_tb_release&utm_medium=fru&utm_campaign=donation_2023" class="donate-btn" data-donate-btn data-donate-redirect="donate" data-donate-content="paragraph_text" data-donate-source="start_page_tb_monthly">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" height="16" width="16">
+  <path d="M13.514 8.327c.655-.654.986-1.41.986-2.327 0-.916-.331-1.864-.986-2.518a3.335 3.335 0 0 0-2.365-.982c-.854 0-1.71.558-2.364 1.212l-.789.788-.788-.788C6.553 3.058 5.698 2.5 4.844 2.5c-.855 0-1.71.327-2.365.982C1.824 4.136 1.5 5.084 1.5 6c0 .916.324 1.673.979 2.327C4.1 9.908 5.599 11.4 7.13 13.067c.217.216.542.433.866.433.325 0 .65-.216.867-.433 1.5-1.696 3.05-3.14 4.65-4.74Z" opacity=".2"/>
+  <path d="M4.844 2c-.983 0-1.97.38-2.719 1.129C1.358 3.896 1 4.966 1 6s.392 1.95 1.125 2.682a.5.5 0 0 0 .004.004c1.619 1.578 3.111 3.061 4.633 4.718a.5.5 0 0 0 .015.016c.276.275.672.58 1.22.58.546 0 .944-.305 1.22-.58a.5.5 0 0 0 .02-.022c1.48-1.673 3.022-3.11 4.63-4.716C14.6 7.95 15 7.037 15 6s-.367-2.106-1.133-2.871A3.843 3.843 0 0 0 11.148 2c-1.072 0-2.008.651-2.716 1.36l-.436.433-.434-.434C6.854 2.651 5.917 2 4.845 2Zm0 1c.637 0 1.41.465 2.011 1.066l.788.788a.5.5 0 0 0 .707 0l.789-.788C9.74 3.466 10.51 3 11.149 3a2.83 2.83 0 0 1 2.011.836C13.704 4.38 14 5.204 14 6s-.262 1.395-.84 1.973c-1.585 1.584-3.137 3.032-4.65 4.74-.158.157-.411.287-.514.287-.103 0-.354-.13-.512-.287-1.534-1.67-3.035-3.164-4.652-4.74C2.255 7.396 2 6.798 2 6s.29-1.622.832-2.164A2.83 2.83 0 0 1 4.844 3Z"/>
+</svg>
+
+              देणगी
+            </a>
+          </div>
+        </div>
+
+      <div class="warning-panel">
+          <div>
+            <p class="warning">
+              <!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20" height="20px" width="20px">
+  <path d="M9.5 1.5c-.653 0-1.222.453-1.5 1L.824 14.96C.5 15.5.502 15.611.5 16A1.5 1.5 0 0 0 2 17.5h15a1.5 1.5 0 0 0 1.5-1.5c0-.394 0-.5-.332-1.053L11 2.5c-.282-.553-.844-1-1.5-1z" opacity=".2"/>
+  <path d="M9.5 1c-.884 0-1.593.58-1.945 1.273l.011-.023L.395 14.703v.002c-.34.565-.393.907-.395 1.293A.5.5 0 0 0 0 16c0 1.099.901 2 2 2h15c1.099 0 2-.901 2-2 0-.394-.058-.733-.404-1.31L11.434 2.25l.011.023C11.091 1.578 10.383 1 9.5 1Zm0 1c.429 0 .845.318 1.055.729a.5.5 0 0 0 .011.021l7.168 12.447a.5.5 0 0 0 .006.008c.318.529.26.401.26.795 0 .558-.442 1-1 1H2a.993.993 0 0 1-1-.998V16c.001-.385-.055-.272.252-.783a.5.5 0 0 0 .006-.006L8.434 2.75a.5.5 0 0 0 .011-.023C8.65 2.326 9.078 2 9.5 2Zm0 4a.5.5 0 0 0-.5.5v5a.5.5 0 0 0 .5.5.5.5 0 0 0 .5-.5v-5a.5.5 0 0 0-.5-.5Zm0 7a.5.5 0 0 0-.5.5.5.5 0 0 0 .5.5.5.5 0 0 0 .5-.5.5.5 0 0 0-.5-.5Z"/>
+</svg>
+
+              <strong class="uppercase">Warning!</strong>
+              Monthly release builds can be unstable, and there is potential to lose data.
+            </p>
+            
+            
+          </div>
+        </div>
+      </header>
+
+      <div class="main-content">
+        <div class="content-sections">
+          <section id="donate">
+            <h2 class="section-heading donate">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" height="24" width="24">
+  <path d="M20.907 12.036c1.058-1.072 1.593-2.31 1.593-3.809s-.535-3.05-1.593-4.12a5.352 5.352 0 0 0-3.82-1.607c-1.38 0-2.761.913-3.82 1.984l-1.273 1.289-1.273-1.29C9.663 3.414 8.282 2.5 6.901 2.5c-1.38 0-2.762.536-3.82 1.607C2.023 5.177 1.5 6.728 1.5 8.227c0 1.5.523 2.737 1.581 3.809 2.62 2.586 5.04 5.027 7.514 7.756.35.354.875.708 1.4.708.524 0 1.049-.354 1.398-.708 2.423-2.775 4.929-5.14 7.514-7.756z" opacity=".2"/>
+  <path d="M6.9 2a5.86 5.86 0 0 0-4.175 1.756C1.555 4.939 1 6.61 1 8.226c0 1.617.59 3.01 1.725 4.16a.5.5 0 0 0 .005.007c2.618 2.583 5.03 5.015 7.495 7.734a.5.5 0 0 0 .015.016c.409.413 1.004.857 1.754.857s1.348-.444 1.756-.857a.5.5 0 0 0 .02-.022c2.403-2.752 4.9-5.11 7.492-7.734a.5.5 0 0 0 .002 0C22.398 11.237 23 9.845 23 8.227c0-1.618-.569-3.287-1.736-4.47A5.85 5.85 0 0 0 17.088 2c-1.6 0-3.064 1.008-4.176 2.133l-.918.93-.918-.932C9.966 3.009 8.502 2 6.9 2Zm0 1c1.16 0 2.46.818 3.465 1.834l1.274 1.291a.5.5 0 0 0 .71 0l1.274-1.29C14.629 3.82 15.927 3.002 17.086 3a4.85 4.85 0 0 1 3.463 1.457.5.5 0 0 0 .002.002C21.498 5.417 22 6.847 22 8.227c0 1.379-.468 2.462-1.45 3.457-2.57 2.6-5.078 4.97-7.515 7.757-.29.294-.742.559-1.04.559-.301 0-.752-.264-1.044-.559-2.476-2.73-4.898-5.174-7.514-7.755C2.458 10.692 2 9.61 2 8.226c0-1.382.491-2.81 1.438-3.767A4.846 4.846 0 0 1 6.9 3Z"/>
+</svg>
+
+              Support Us
+            </h2>
+            <p>Thank you for supporting Thunderbird, which is funded by users like you! Producing Thunderbird requires software engineers, designers, system administrators and server infrastructure. So if you like Thunderbird, the best way to ensure Thunderbird remains available is to make a donation.</p>
+            <a href="https://www.thunderbird.net/mr/donate?utm_content=paragraph_text&utm_source=start_page_tb_release&utm_medium=fru&utm_campaign=donation_2023" class="donate" data-donate-btn data-donate-redirect="donate" data-donate-content="paragraph_text" data-donate-source="start_page_tb_release">
+              देणगी
+              <!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 12 12" height="12px" width="12px">
+  <path d="M4 1C2.347 1 1 2.347 1 4v4c0 1.653 1.347 3 3 3h4c1.653 0 3-1.347 3-3v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 0-.5.5V8c0 1.117-.883 2-2 2H4c-1.117 0-2-.883-2-2V4c0-1.117.883-2 2-2h.5a.5.5 0 0 0 .5-.5.5.5 0 0 0-.5-.5Zm2.5 0a.5.5 0 0 0-.5.5.5.5 0 0 0 .5.5h2.793L6.146 5.146a.5.5 0 0 0 0 .708.5.5 0 0 0 .708 0L10 2.707V5.5a.5.5 0 0 0 .5.5.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-.094-.29.5.5 0 0 0-.002-.005.5.5 0 0 0-.004-.004.5.5 0 0 0-.046-.055.5.5 0 0 0-.034-.023.5.5 0 0 0-.062-.045.5.5 0 0 0-.065-.035.5.5 0 0 0-.082-.025.5.5 0 0 0-.072-.012A.5.5 0 0 0 10.5 1Z"/>
+</svg>
+
+            </a>
+          </section>
+
+          <section id="get-involved">
+            <h2 class="section-heading get-involved">
+              <!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" height="24px" width="24px">
+  <path d="M20.713 4.5a6.484 6.484 0 0 0-8.732.4l-.773-.645a1.953 1.953 0 0 0-.484-.28.495.49 0 0 0-.014-.02c-.018-.01-.04-.01-.058-.021-.008-.003-.014-.01-.022-.013v.005C7.983 2.42 4.558 2.942 2.52 5.332a6.3 6.3 0 0 0 .008 8.214.495.49 0 0 0 .042.043l1.46 1.325a.495.49 0 0 0 .452.114c.147.3.385.584.705.85.44.367.9.563 1.34.587.088.005.14-.08.226-.091.04.438.2.977.699 1.393.533.445 1.11.492 1.566.44.026.453.17 1.008.704 1.453.506.422 1.078.489 1.524.451.015.479.224 1.007.789 1.478.33.275.78.422 1.283.41a2.01 2.01 0 0 0 1.484-.703l2.852-3.344 2.553-2.992 1.276-1.496a6.31 6.31 0 0 0-.77-8.965zm-.639.747a5.319 5.319 0 0 1 .652 7.586l-1.277 1.496-2.553 2.992-2.852 3.344a.96.96 0 0 1-.75.354c-.267.006-.533-.104-.622-.178-.484-.403-.508-.636-.483-.83.025-.195.174-.412.322-.585l3.19-3.74c.177-.207.312-.362.312-.362a.495.49 0 0 0-.752-.637l-.316.367-3.191 3.74-.22.26c-.122.042-.719.239-1.175-.142-.457-.38-.361-.995-.34-1.12l3.413-4c.17-.2.315-.357.315-.357a.495.49 0 0 0-.737-.655s-.152.167-.335.381l-3.412 4c-.121.042-.718.238-1.174-.142-.457-.381-.362-.995-.34-1.12l3.413-4 .325-.379a.495.49 0 0 0-.754-.634l-.328.382-3.51 4.115c-.054.062-.14.116-.316.106-.177-.01-.443-.099-.754-.358-.326-.272-.47-.517-.51-.678-.04-.16-.015-.238.066-.332l3.192-3.741 1.595-1.87 2.27 1.893a2.002 2.002 0 0 0 2.79-.234 1.949 1.949 0 0 0-.237-2.759L12.74 5.532a5.465 5.465 0 0 1 7.335-.285Zm-9.504-.244 1.135.947 2.648 2.208a.959.959 0 0 1 .119 1.38.985.985 0 0 1-1.395.117l-2.649-2.209a.495.49 0 0 0-.697.059L7.816 9.749l-3.192 3.74-.305.358-1.042-.946a5.313 5.313 0 0 1-.001-6.938 5.465 5.465 0 0 1 6.928-1.165l-.011-.059a.495.49 0 0 0 .088.096c.104.039.2.094.289.168z"/>
+  <path d="M20.074 5.247a5.319 5.319 0 0 1 .652 7.586l-1.277 1.496-2.553 2.992-2.852 3.344a.96.96 0 0 1-.75.354c-.267.006-.533-.104-.622-.178-.484-.403-.508-.636-.483-.83.025-.195.174-.412.322-.585l3.19-3.74c.177-.207.312-.362.312-.362.418-.494-.322-1.122-.752-.637l-.316.367-3.191 3.74-.22.26c-.122.042-.719.239-1.175-.142-.457-.38-.361-.995-.34-1.12l3.413-4c.17-.2.315-.357.315-.357.44-.486-.296-1.14-.737-.655 0 0-.152.167-.335.381l-3.412 4c-.121.042-.718.238-1.174-.142-.457-.381-.362-.995-.34-1.12l3.413-4 .325-.379c.415-.496-.325-1.118-.754-.634l-.328.382-3.51 4.115c-.054.062-.14.116-.316.106-.177-.01-.443-.099-.754-.358-.326-.272-.47-.517-.51-.678-.04-.16-.015-.238.066-.332l3.192-3.741 1.595-1.87 2.27 1.893a2.002 2.002 0 0 0 2.79-.234 1.949 1.949 0 0 0-.237-2.759L12.74 5.532a5.465 5.465 0 0 1 7.335-.285z" opacity=".2"/>
+</svg>
+
+              Help
+            </h2>
+            <p>Curious about helping? You don’t need to be an expert or know how to code to help other users or offer suggestions about improving the experience! Join us in this open source project where anyone can participate in the Thunderbird community.</p>
+            <a href="https://www.thunderbird.net/participate/" class="get-involved">
+              Get Involved
+              <!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 12 12" height="12px" width="12px">
+  <path d="M4 1C2.347 1 1 2.347 1 4v4c0 1.653 1.347 3 3 3h4c1.653 0 3-1.347 3-3v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 0-.5.5V8c0 1.117-.883 2-2 2H4c-1.117 0-2-.883-2-2V4c0-1.117.883-2 2-2h.5a.5.5 0 0 0 .5-.5.5.5 0 0 0-.5-.5Zm2.5 0a.5.5 0 0 0-.5.5.5.5 0 0 0 .5.5h2.793L6.146 5.146a.5.5 0 0 0 0 .708.5.5 0 0 0 .708 0L10 2.707V5.5a.5.5 0 0 0 .5.5.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-.094-.29.5.5 0 0 0-.002-.005.5.5 0 0 0-.004-.004.5.5 0 0 0-.046-.055.5.5 0 0 0-.034-.023.5.5 0 0 0-.062-.045.5.5 0 0 0-.065-.035.5.5 0 0 0-.082-.025.5.5 0 0 0-.072-.012A.5.5 0 0 0 10.5 1Z"/>
+</svg>
+
+            </a>
+            <p>Share ideas and feedback.</p>
+            <a href="https://connect.mozilla.org/" class="get-involved">
+              Mozilla Connect
+              <!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 12 12" height="12px" width="12px">
+  <path d="M4 1C2.347 1 1 2.347 1 4v4c0 1.653 1.347 3 3 3h4c1.653 0 3-1.347 3-3v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 0-.5.5V8c0 1.117-.883 2-2 2H4c-1.117 0-2-.883-2-2V4c0-1.117.883-2 2-2h.5a.5.5 0 0 0 .5-.5.5.5 0 0 0-.5-.5Zm2.5 0a.5.5 0 0 0-.5.5.5.5 0 0 0 .5.5h2.793L6.146 5.146a.5.5 0 0 0 0 .708.5.5 0 0 0 .708 0L10 2.707V5.5a.5.5 0 0 0 .5.5.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-.094-.29.5.5 0 0 0-.002-.005.5.5 0 0 0-.004-.004.5.5 0 0 0-.046-.055.5.5 0 0 0-.034-.023.5.5 0 0 0-.062-.045.5.5 0 0 0-.065-.035.5.5 0 0 0-.082-.025.5.5 0 0 0-.072-.012A.5.5 0 0 0 10.5 1Z"/>
+</svg>
+
+            </a>
+          </section>
+        </div>
+
+        <div class="content-sections">
+          <section id="support">
+            <h2 class="section-heading support">
+              <!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" height="24px" width="24px">
+  <path d="M11.5 1.5a10 10 0 0 0-10 10 10 10 0 0 0 10 10 10 10 0 0 0 10-10 10 10 0 0 0-10-10zm0 4.5a5.5 5.5 0 0 1 5.5 5.5 5.5 5.5 0 0 1-5.5 5.5A5.5 5.5 0 0 1 6 11.5 5.5 5.5 0 0 1 11.5 6Z" opacity=".2"/>
+  <path d="M11.5 1c-2.377 0-4.57.794-6.332 2.129a1.496 1.496 0 0 0-1.805.24 1.498 1.498 0 0 0-.24 1.807A10.446 10.446 0 0 0 1 11.5c0 2.376.793 4.57 2.127 6.33a1.495 1.495 0 0 0 .236 1.813c.494.493 1.24.57 1.815.234A10.445 10.445 0 0 0 11.5 22c2.373 0 4.563-.792 6.322-2.123.575.336 1.32.26 1.815-.234a1.495 1.495 0 0 0 .236-1.813A10.447 10.447 0 0 0 22 11.5c0-2.374-.791-4.564-2.123-6.324a1.498 1.498 0 0 0-2.045-2.047A10.446 10.446 0 0 0 11.5 1Zm0 1c2.086 0 4.012.67 5.578 1.807l-2.896 2.896a5.459 5.459 0 0 0-5.364 0L5.922 3.807A9.463 9.463 0 0 1 11.5 2ZM3.8 5.93l2.897 2.896A5.46 5.46 0 0 0 6 11.5c0 .974.257 1.887.703 2.682l-2.896 2.896A9.463 9.463 0 0 1 2 11.5c0-2.082.668-4.006 1.8-5.57Zm15.4 0A9.463 9.463 0 0 1 21 11.5c0 2.086-.67 4.012-1.807 5.578l-2.896-2.894A5.46 5.46 0 0 0 17 11.5a5.46 5.46 0 0 0-.697-2.674l2.896-2.896ZM11.5 7c.762 0 1.48.189 2.107.521a1.494 1.494 0 0 0 .372 1.506c.408.409.99.533 1.503.373.33.627.518 1.34.518 2.1 0 .764-.19 1.482-.523 2.111a1.49 1.49 0 0 0-1.498.375 1.496 1.496 0 0 0-.377 1.494A4.49 4.49 0 0 1 11.5 16a4.49 4.49 0 0 1-2.102-.52 1.499 1.499 0 0 0-.377-1.496 1.494 1.494 0 0 0-1.498-.373A4.492 4.492 0 0 1 7 11.5c0-.76.188-1.473.518-2.1.514.16 1.095.036 1.503-.373.41-.409.532-.99.372-1.506A4.492 4.492 0 0 1 11.5 7Zm-2.674 9.303A5.46 5.46 0 0 0 11.5 17a5.46 5.46 0 0 0 2.674-.697l2.896 2.894A9.461 9.461 0 0 1 11.5 21a9.461 9.461 0 0 1-5.57-1.803Z"/>
+</svg>
+
+              Questions? Problems?
+            </h2>
+            <p>Post your general Thunderbird usage questions or problems on the support page, where many knowledgeable users can help you.</p>
+            <a href="https://support.mozilla.org/questions/new/thunderbird" class="support">
+              Support Page
+              <!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 12 12" height="12px" width="12px">
+  <path d="M4 1C2.347 1 1 2.347 1 4v4c0 1.653 1.347 3 3 3h4c1.653 0 3-1.347 3-3v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 0-.5.5V8c0 1.117-.883 2-2 2H4c-1.117 0-2-.883-2-2V4c0-1.117.883-2 2-2h.5a.5.5 0 0 0 .5-.5.5.5 0 0 0-.5-.5Zm2.5 0a.5.5 0 0 0-.5.5.5.5 0 0 0 .5.5h2.793L6.146 5.146a.5.5 0 0 0 0 .708.5.5 0 0 0 .708 0L10 2.707V5.5a.5.5 0 0 0 .5.5.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-.094-.29.5.5 0 0 0-.002-.005.5.5 0 0 0-.004-.004.5.5 0 0 0-.046-.055.5.5 0 0 0-.034-.023.5.5 0 0 0-.062-.045.5.5 0 0 0-.065-.035.5.5 0 0 0-.082-.025.5.5 0 0 0-.072-.012A.5.5 0 0 0 10.5 1Z"/>
+</svg>
+
+            </a>
+          </section>
+
+          <section id="bug">
+            <h2 class="section-heading bug">
+              <!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" height="24px" width="24px">
+  <path d="M12 0a5.866 5.866 0 0 0-5.867 5.867c0 .279.064.543.178.778A8.9 8.9 0 0 0 4.3 9H1V6.434a.5.5 0 0 0-.5-.5.5.5 0 0 0-.5.5V9.5a.5.5 0 0 0 .5.5h3.291a8.928 8.928 0 0 0-.725 3.533V14H.5a.5.5 0 0 0-.5.5.5.5 0 0 0 .5.5h2.566v.066A8.93 8.93 0 0 0 3.75 18.5H.5a.5.5 0 0 0-.5.5v3.066a.5.5 0 0 0 .5.5.5.5 0 0 0 .5-.5V19.5h3.242A8.921 8.921 0 0 0 12 24a8.92 8.92 0 0 0 7.758-4.5H23v2.566a.5.5 0 0 0 .5.5.5.5 0 0 0 .5-.5V19a.5.5 0 0 0-.5-.5h-3.25a8.923 8.923 0 0 0 .684-3.434V15H23.5a.5.5 0 0 0 .5-.5.5.5 0 0 0-.5-.5h-2.566v-.467c0-1.256-.26-2.45-.725-3.533H23.5a.5.5 0 0 0 .5-.5V6.434a.5.5 0 0 0-.5-.5.5.5 0 0 0-.5.5V9h-3.3a8.935 8.935 0 0 0-2.01-2.355 1.78 1.78 0 0 0 .177-.778A5.866 5.866 0 0 0 12 0Zm0 1a4.846 4.846 0 0 1 4.867 4.867c0 .286-.071.416-.244.563-.173.146-.488.284-.928.377-.42.088-.946.136-1.54.162-.613.018-1.313.021-2.155.021-.635 0-1.226 0-1.768-.008h-.03c-.742-.021-1.395-.07-1.897-.175-.44-.093-.755-.23-.928-.377-.173-.147-.244-.277-.244-.563A4.846 4.846 0 0 1 12 1ZM6.951 7.457c.484.225.981.41 1.697.465.365.028.77.043 1.196.053.67.027 1.395.025 2.156.025 1.487 0 2.84.008 3.9-.215l.037-.008a6.58 6.58 0 0 0 1.124-.304c1.737 1.452 2.873 3.603 2.873 6.06v1.533A7.905 7.905 0 0 1 12 23a7.905 7.905 0 0 1-7.934-7.934v-1.533c0-2.464 1.139-4.623 2.885-6.076zM9.5 9A1.5 1.5 0 0 0 8 10.5 1.5 1.5 0 0 0 9.5 12a1.5 1.5 0 0 0 1.5-1.5A1.5 1.5 0 0 0 9.5 9Zm5 0a1.5 1.5 0 0 0-1.5 1.5 1.5 1.5 0 0 0 1.5 1.5 1.5 1.5 0 0 0 1.5-1.5A1.5 1.5 0 0 0 14.5 9Zm-5 4A1.5 1.5 0 0 0 8 14.5 1.5 1.5 0 0 0 9.5 16a1.5 1.5 0 0 0 1.5-1.5A1.5 1.5 0 0 0 9.5 13Zm5 0a1.5 1.5 0 0 0-1.5 1.5 1.5 1.5 0 0 0 1.5 1.5 1.5 1.5 0 0 0 1.5-1.5 1.5 1.5 0 0 0-1.5-1.5Zm-5 4A1.5 1.5 0 0 0 8 18.5 1.5 1.5 0 0 0 9.5 20a1.5 1.5 0 0 0 1.5-1.5A1.5 1.5 0 0 0 9.5 17Zm5 0a1.5 1.5 0 0 0-1.5 1.5 1.5 1.5 0 0 0 1.5 1.5 1.5 1.5 0 0 0 1.5-1.5 1.5 1.5 0 0 0-1.5-1.5Z"/>
+  <path d="M12 .5a5.355 5.355 0 0 1 5.367 5.366C17.367 8.839 14.973 7.5 12 7.5S6.633 8.84 6.633 5.866A5.355 5.355 0 0 1 12 .5Z" opacity=".2"/>
+</svg>
+
+              Report
+            </h2>
+            <p>Think you’ve found a new problem or rough edge? Create a bug report so we can make sure it gets solved, resulting in a better Thunderbird experience for all.</p>
+            <a href="https://bugzilla.mozilla.org/describecomponents.cgi?product=Thunderbird" class="bug">
+              Report a Bug
+              <!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 12 12" height="12px" width="12px">
+  <path d="M4 1C2.347 1 1 2.347 1 4v4c0 1.653 1.347 3 3 3h4c1.653 0 3-1.347 3-3v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 0-.5.5V8c0 1.117-.883 2-2 2H4c-1.117 0-2-.883-2-2V4c0-1.117.883-2 2-2h.5a.5.5 0 0 0 .5-.5.5.5 0 0 0-.5-.5Zm2.5 0a.5.5 0 0 0-.5.5.5.5 0 0 0 .5.5h2.793L6.146 5.146a.5.5 0 0 0 0 .708.5.5 0 0 0 .708 0L10 2.707V5.5a.5.5 0 0 0 .5.5.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-.094-.29.5.5 0 0 0-.002-.005.5.5 0 0 0-.004-.004.5.5 0 0 0-.046-.055.5.5 0 0 0-.034-.023.5.5 0 0 0-.062-.045.5.5 0 0 0-.065-.035.5.5 0 0 0-.082-.025.5.5 0 0 0-.072-.012A.5.5 0 0 0 10.5 1Z"/>
+</svg>
+
+            </a>
+          </section>
+
+          <section id="crash">
+            <h2 class="section-heading crash">
+              <!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" height="24px" width="24px">
+  <path d="M21.5 11.5a10 10 0 0 1-10 10 10 10 0 0 1-10-10 10 10 0 0 1 10-10 10 10 0 0 1 10 10z" opacity=".2"/>
+  <path d="M11.5 1C5.707 1 1 5.707 1 11.5S5.707 22 11.5 22 22 17.293 22 11.5 17.293 1 11.5 1Zm0 1c5.253 0 9.5 4.247 9.5 9.5S16.753 21 11.5 21A9.492 9.492 0 0 1 2 11.5C2 6.247 6.247 2 11.5 2Zm0 5a.5.5 0 0 0-.5.5.5.5 0 0 0 .5.5.5.5 0 0 0 .5-.5.5.5 0 0 0-.5-.5Zm0 3a.5.5 0 0 0-.5.5v4a.5.5 0 0 0 .5.5.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-.5-.5Z"/>
+</svg>
+
+              Crashed?
+            </h2>
+            <p>If Crash Reporter appears when Thunderbird crashes, please provide as many details as possible to help developers.</p>
+            <ul>
+              <li>In Thunderbird do Help > More Troubleshooting Information, scroll to "Crash Reports", click a recent report link to open the crash report page.</li>
+              <li>Click the Bugzilla tab, then click on an existing bug report under "Related Bugs" and add a comment to the bug, or click "Thunderbird" to submit a new bug report.</li>
+            </ul>
+            <a href="https://support.mozilla.org/en-US/kb/mozilla-crash-reporter-tb" class="crash">
+              Crash Reporter
+              <!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 12 12" height="12px" width="12px">
+  <path d="M4 1C2.347 1 1 2.347 1 4v4c0 1.653 1.347 3 3 3h4c1.653 0 3-1.347 3-3v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 0-.5.5V8c0 1.117-.883 2-2 2H4c-1.117 0-2-.883-2-2V4c0-1.117.883-2 2-2h.5a.5.5 0 0 0 .5-.5.5.5 0 0 0-.5-.5Zm2.5 0a.5.5 0 0 0-.5.5.5.5 0 0 0 .5.5h2.793L6.146 5.146a.5.5 0 0 0 0 .708.5.5 0 0 0 .708 0L10 2.707V5.5a.5.5 0 0 0 .5.5.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-.094-.29.5.5 0 0 0-.002-.005.5.5 0 0 0-.004-.004.5.5 0 0 0-.046-.055.5.5 0 0 0-.034-.023.5.5 0 0 0-.062-.045.5.5 0 0 0-.065-.035.5.5 0 0 0-.082-.025.5.5 0 0 0-.072-.012A.5.5 0 0 0 10.5 1Z"/>
+</svg>
+
+            </a>
+          </section>
+      </div>
+
+    </main>
+  </body>
 </html>
