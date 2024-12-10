@@ -8,7 +8,7 @@
   <title>Thunderbird Release Notes</title>
   <subtitle type="text">Thunderbird Release Notes feed provides a simple way to keep up to date with Thunderbird releases.</subtitle>
 
-  <updated>2024-12-10T15:52:33+00:00</updated>
+  <updated>2024-12-10T16:03:29+00:00</updated>
   <logo>https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png</logo>
   <icon>https://www.thunderbird.net/media/img/thunderbird/favicon-196.png</icon>
 
@@ -25,8 +25,8 @@
       <uri>https://www.thunderbird.net</uri>
     </author>
     <link rel="alternate" type="text/html" href="https://www.thunderbird.net/en-US/thunderbird/128.5.2esr/releasenotes/"/>
-    <updated>2024-12-10T00:00:00+00:00</updated>
-    <published>2024-12-10T00:00:00+00:00</published>
+    <updated>2024-12-11T00:00:00+00:00</updated>
+    <published>2024-12-11T00:00:00+00:00</published>
 
     <content type="html"><![CDATA[
       
@@ -49,6 +49,132 @@
         
         
           <ul>
+        
+
+        
+        
+
+        <li>
+          <p>Large virtual folders could be very slow</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Message could disappear after moving from IMAP folder followed by Undo and Redo</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>XMPP chat did not display messages sent inside a CDATA element</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Selected calendar day did not move forward at midnight</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Today pane agenda sometimes scrolled for no apparent reason</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>CalDAV calendars without offline support could degrade start-up performance</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Visual and UX improvements</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
         
 
         
