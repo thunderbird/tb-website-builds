@@ -4,7 +4,7 @@
 <!doctype html>
 
 
-<html class="other x86 no-js page-release-notes" lang="en" dir="ltr">
+<html class="other x86 no-js page-system-requirements" lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
 
@@ -14,13 +14,13 @@
     <link rel="preload" as="script" href="/media/js/common-bundle.js">
 
     
-    <title>Release Notes — Thunderbird</title>
+    <title>System Requirements — Thunderbird</title>
     <meta name="description" content="Thunderbird is a free email application that’s easy to set up and customize - and it’s loaded with great features!">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Thunderbird">
     <meta property="og:locale" content="en_US">
     <meta property="og:image" content="/media/img/thunderbird/thunderbird-256.png">
-    <meta property="og:title" content="Release Notes">
+    <meta property="og:title" content="System Requirements">
     <meta property="og:description" content="Thunderbird is a free email application that’s easy to set up and customize - and it’s loaded with great features!">
     <meta property="fb:page_id" content="348169218537151">
     <meta name="twitter:card" content="summary">
@@ -1153,7 +1153,7 @@
 
   
   <h1 class="tagline">
-    Release Notes
+    System Requirements
   </h1>
   
 
@@ -1195,94 +1195,67 @@
       
       <div id="main-content">
       
-<section>
-  <div class="container release-text-container">
-    <div class="section-text wide">
-      <h2>Thunderbird <span class="txt-gradient">Desktop</span></h2>
-      <h4>Version 115.16.4esr | Released December 11, 2024</h4>
-      <p>
-        Check out the notes below for this version of Thunderbird. As always, you’re encouraged to
-        <a href="https://connect.mozilla.org/t5/ideas/idb-p/ideas/label-name/thunderbird">tell us what you think</a>,
-        <a href="https://support.mozilla.org/questions/new/thunderbird">ask for help</a>, or
-        <a href="https://bugzilla.mozilla.org/enter_bug.cgi?product=Thunderbird">file a bug in Bugzilla</a>.
-      </p>
-      <div class="release-text">
-        <p><strong>Thunderbird 115.16.4esr is the final release of Thunderbird 115.</strong></p>
-<p><strong>For help and a quick start on Thunderbird 115, see
-<a href="https://support.mozilla.org/en-US/kb/thunderbird-115-supernova-faq">Thunderbird 115 Supernova FAQ</a>.</strong></p>
-<p><strong>For more on all the new features in Thunderbird 115, see
-<a href="https://www.thunderbird.net/thunderbird/115.0/whatsnew/">What’s New in Thunderbird 115</a>.</strong></p>
-<p><strong>System Requirements:</strong> <a href="/en-US/thunderbird/115.0/system-requirements/">Details</a></p>
+  <section class="section-text">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Version <span class="txt-gradient">115.18.0esr</span></h2>
+      </div>
+      <div class="release-notes-container">
+        
+            <h2>Windows</h2>
 <ul>
-<li>Windows: Windows 7 or later</li>
-<li>Mac: macOS 10.12 or later</li>
-<li>Linux: GTK+ 3.14 or higher</li>
+<li>Windows 7 or later</li>
 </ul>
-<p><strong>Note that Thunderbird 115 is the final release to support Windows 7 and Windows 8.</strong></p>
-      </div>
-      <div class="system-requirements remove-h2">
+<h3>Windows Recommended Hardware</h3>
+<ul>
+<li>1GHz or faster Intel/AMD compatible processor</li>
+<li>1GB RAM / 2GB of RAM for the 64-bit version</li>
+<li>250 MB hard drive space</li>
+<li>additional hard drive space for mail storage</li>
+</ul>
+<hr />
+<h2>Mac</h2>
+<ul>
+<li>macOS 10.12 or later</li>
+</ul>
+<h3>Recommended Hardware</h3>
+<ul>
+<li>Mac computer with an Intel x86 or Apple Silicon processor</li>
+<li>1GB RAM</li>
+<li>500 MB hard drive space</li>
+<li>additional hard drive space for mail storage</li>
+</ul>
+<hr />
+<h2>GNU/Linux</h2>
+<h3>Software Requirements</h3>
+<p><em>Please note that GNU/Linux distributors may provide packages for your distribution which have
+different requirements.</em></p>
+<ul>
+<li>
+<p>Thunderbird will not run at all without the following libraries or packages:</p>
+<ul>
+<li>glibc 2.17 or higher</li>
+<li>GTK+ 3.14 or higher</li>
+<li>libdbus-glib 0.6.0 or higher</li>
+<li>libglib 2.42 or higher</li>
+<li>libstdc++ 4.8.1 or higher</li>
+<li>libxtst 1.2.3 or higher</li>
+<li>X.Org 1.0 or higher (1.7 or higher is recommended)</li>
+</ul>
+</li>
+<li>
+<p>For optimal functionality, we recommend the following libraries or packages:</p>
+<ul>
+<li>DBus 1.0 or higher</li>
+<li>NetworkManager 0.7 or higher</li>
+<li>PulseAudio</li>
+</ul>
+</li>
+</ul>
         
       </div>
     </div>
-  </div>
-</section>
-
-<section>
-  <div class="container release-notes-container">
-    <div class="section-text wide">
-
-      
-      
-      
-      
-
-      
-      
-      
-      <h3 id="whatsnew" class="header-section">
-        What’s New
-      </h3>
-      
-
-      
-      
-
-      <div id="note-0"
-           class="note-container">
-        <div class="note-flex">
-          <h4 class="note-category">
-            
-            <div class="category-container">
-              <span class="category-icon"><!-- This Source Code Form is subject to the terms of the Mozilla Public
-   - License, v. 2.0. If a copy of the MPL was not distributed with this
-   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M3.8 15.922a1.1 1.1 0 0 1-1.09-1.253l.609-4.36L.392 7.163a1.1 1.1 0 0 1 .616-1.833l4.081-.73L7.015.734a1.1 1.1 0 0 1 1.969 0L10.911 4.6l4.084.729a1.1 1.1 0 0 1 .611 1.833L12.68 10.31l.609 4.359a1.1 1.1 0 0 1-1.6 1.127L8 13.873 4.307 15.8a1.093 1.093 0 0 1-.507.122zm-.415-1.9zm9.228 0zM2.981 7.01l2.451 2.635-.5 3.572L8 11.618l3.067 1.6-.5-3.572 2.451-2.636-3.45-.616L8 3.244l-1.569 3.15zm11.659.29zm-13.278 0zm12.78-1.5zm-12.286 0z"></path></svg>
-</span>
-              new
-            </div>
-            
-          </h4>
-          <div class="note-text">
-            <p>Add end of year donation appeal</p>
-          </div>
-        </div>
-        
-      </div>
-      
-      
-      
-
-      
-      <div class="see-all-releases">
-        <a class="strong" href="/en-US/thunderbird/releases">See All Releases</a>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-
+  </section>
 
       </div>
       

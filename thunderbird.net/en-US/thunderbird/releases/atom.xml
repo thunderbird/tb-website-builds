@@ -8,7 +8,7 @@
   <title>Thunderbird Release Notes</title>
   <subtitle type="text">Thunderbird Release Notes feed provides a simple way to keep up to date with Thunderbird releases.</subtitle>
 
-  <updated>2024-12-11T19:04:26+00:00</updated>
+  <updated>2024-12-11T20:24:58+00:00</updated>
   <logo>https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png</logo>
   <icon>https://www.thunderbird.net/media/img/thunderbird/favicon-196.png</icon>
 
@@ -18,13 +18,13 @@
   <generator uri="https://www.thunderbird.net" version="1.0">thunderbird-website</generator>
   
   <entry>
-    <id>https://www.thunderbird.net/en-US/thunderbird/115.16.4esr/releasenotes/</id>
-    <title type="html">Thunderbird 115.16.4esr</title>
+    <id>https://www.thunderbird.net/en-US/thunderbird/115.18.0esr/releasenotes/</id>
+    <title type="html">Thunderbird 115.18.0esr</title>
     <author>
       <name>Thunderbird</name>
       <uri>https://www.thunderbird.net</uri>
     </author>
-    <link rel="alternate" type="text/html" href="https://www.thunderbird.net/en-US/thunderbird/115.16.4esr/releasenotes/"/>
+    <link rel="alternate" type="text/html" href="https://www.thunderbird.net/en-US/thunderbird/115.18.0esr/releasenotes/"/>
     <updated>2024-12-11T00:00:00+00:00</updated>
     <published>2024-12-11T00:00:00+00:00</published>
 
@@ -56,6 +56,30 @@
 
         <li>
           <p>Add end of year donation appeal</p>
+          
+        </li>
+      
+    
+      
+        
+        
+          </ul>
+        
+
+        
+          <h3>Fixed</h3>
+        
+
+        
+        
+          <ul>
+        
+
+        
+        
+
+        <li>
+          <p><a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird115.18">Security fixes</a></p>
           
         </li>
       
