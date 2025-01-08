@@ -8,7 +8,7 @@
   <title>Thunderbird Release Notes</title>
   <subtitle type="text">Thunderbird Release Notes feed provides a simple way to keep up to date with Thunderbird releases.</subtitle>
 
-  <updated>2025-01-08T14:07:09+00:00</updated>
+  <updated>2025-01-08T14:53:39+00:00</updated>
   <logo>https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png</logo>
   <icon>https://www.thunderbird.net/media/img/thunderbird/favicon-196.png</icon>
 
@@ -240,8 +240,8 @@
       <uri>https://www.thunderbird.net</uri>
     </author>
     <link rel="alternate" type="text/html" href="https://www.thunderbird.net/en-US/thunderbird/134.0/releasenotes/"/>
-    <updated>2025-01-07T00:00:00+00:00</updated>
-    <published>2025-01-07T00:00:00+00:00</published>
+    <updated>2025-01-08T00:00:00+00:00</updated>
+    <published>2025-01-08T00:00:00+00:00</published>
 
     <content type="html"><![CDATA[
       
