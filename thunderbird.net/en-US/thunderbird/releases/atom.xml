@@ -8,7 +8,7 @@
   <title>Thunderbird Release Notes</title>
   <subtitle type="text">Thunderbird Release Notes feed provides a simple way to keep up to date with Thunderbird releases.</subtitle>
 
-  <updated>2025-01-21T14:11:37+00:00</updated>
+  <updated>2025-01-21T16:12:08+00:00</updated>
   <logo>https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png</logo>
   <icon>https://www.thunderbird.net/media/img/thunderbird/favicon-196.png</icon>
 
@@ -16,6 +16,329 @@
   <link rel="self" type="application/atom+xml" href="https://www.thunderbird.net/thunderbird/releases/atom.xml"/>
 
   <generator uri="https://www.thunderbird.net" version="1.0">thunderbird-website</generator>
+  
+  <entry>
+    <id>https://www.thunderbird.net/en-US/thunderbird/128.6.1esr/releasenotes/</id>
+    <title type="html">Thunderbird 128.6.1esr</title>
+    <author>
+      <name>Thunderbird</name>
+      <uri>https://www.thunderbird.net</uri>
+    </author>
+    <link rel="alternate" type="text/html" href="https://www.thunderbird.net/en-US/thunderbird/128.6.1esr/releasenotes/"/>
+    <updated>2025-01-22T00:00:00+00:00</updated>
+    <published>2025-01-22T00:00:00+00:00</published>
+
+    <content type="html"><![CDATA[
+      
+
+  
+  
+
+  
+    
+
+    
+      
+        
+        
+
+        
+          <h3>Fixed</h3>
+        
+
+        
+        
+          <ul>
+        
+
+        
+        
+
+        <li>
+          <p>Link at about:rights pointed to Firefox privacy policy instead of Thunderbird's</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>POP3 'fetch headers only' and 'get selected messages' could delete messages</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>'Search Online' checkbox in saved search properties was incorrectly disabled</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>POP3 status message showed incorrect download count when messages were deleted</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Thunderbird could show incorrect 'From' and 'To' fields for mailing list emails</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Space bar did not always advance to the next unread message</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Folder creation or renaming failed due to incorrect preference settings</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Forwarding/editing S/MIME drafts/templates unusable due to regression</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Sort order in 'Search Messages' panel reset after search or on first launch</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Reply window added an unnecessary third blank line at the top</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Thunderbird spell check box did not allow ENTER to accept suggested changes</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Long email subject lines could overlap window control buttons on macOS</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Flathub manifest link was not correct</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>'Prefer client-side email scheduling' needed to be selected twice</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Duplicate invitations were sent if CALDAV calendar email case did not match</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Visual and UX improvements</p>
+          
+        </li>
+      
+    
+    </ul>
+  
+  
+
+<p>As always, you’re encouraged to <a href="https://connect.mozilla.org/t5/ideas/idb-p/ideas/label-name/thunderbird">tell us what you think</a>, <a href="https://support.mozilla.org/questions/new/thunderbird">ask for help</a>, or <a href="https://bugzilla.mozilla.org/enter_bug.cgi?product=Thunderbird">file a bug in Bugzilla</a></p>
+<style> li p { display: inline; } </style>
+      ]]>
+    </content>
+  </entry>
   
   <entry>
     <id>https://www.thunderbird.net/en-US/thunderbird/128.6.0esr/releasenotes/</id>
@@ -2022,227 +2345,6 @@
 
         <li>
           <p><a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird128.4.3">Security fixes</a></p>
-          
-        </li>
-      
-    
-    </ul>
-  
-  
-
-<p>As always, you’re encouraged to <a href="https://connect.mozilla.org/t5/ideas/idb-p/ideas/label-name/thunderbird">tell us what you think</a>, <a href="https://support.mozilla.org/questions/new/thunderbird">ask for help</a>, or <a href="https://bugzilla.mozilla.org/enter_bug.cgi?product=Thunderbird">file a bug in Bugzilla</a></p>
-<style> li p { display: inline; } </style>
-      ]]>
-    </content>
-  </entry>
-  
-  <entry>
-    <id>https://www.thunderbird.net/en-US/thunderbird/132.0.1/releasenotes/</id>
-    <title type="html">Thunderbird 132.0.1</title>
-    <author>
-      <name>Thunderbird</name>
-      <uri>https://www.thunderbird.net</uri>
-    </author>
-    <link rel="alternate" type="text/html" href="https://www.thunderbird.net/en-US/thunderbird/132.0.1/releasenotes/"/>
-    <updated>2024-11-12T00:00:00+00:00</updated>
-    <published>2024-11-12T00:00:00+00:00</published>
-
-    <content type="html"><![CDATA[
-      
-
-  
-  
-
-  
-    
-
-    
-      
-        
-        
-
-        
-          <h3>Changed</h3>
-        
-
-        
-        
-          <ul>
-        
-
-        
-        
-
-        <li>
-          <p>Increased the auto-compaction threshold to reduce frequency of compaction</p>
-          
-        </li>
-      
-    
-      
-        
-        
-          </ul>
-        
-
-        
-          <h3>Fixed</h3>
-        
-
-        
-        
-          <ul>
-        
-
-        
-        
-
-        <li>
-          <p>Folder corruption could cause Thunderbird to freeze and become unusable</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Folder compaction was not abandoned on shutdown</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Message corruption could be propagated when reading mbox</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Recently deleted messages could become undeleted if message compaction failed</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Folder compaction did not clean up on failure</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Unable to generate QR codes when exporting to mobile in some cases</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Operating system reauthentication was missing when exporting QR codes for mobile</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Could not drag all-day events from one day to another in week view</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p><a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird132.0.1">Security fixes</a></p>
           
         </li>
       
