@@ -1558,9 +1558,9 @@
         <h4>Gubite manje vremena na pronalaženje kartica preglednika.</h4>
         <p>
           
-          Pristupite svim svojim porukama, kalendarima i kontaktima u jednoj brzoj aplikaciji. Filtrirajte i organizirajte
-          baš onako kako želite. Upravljajte svim računima odvojeno ili objedinjeno. Thunderbird
-          čini vaš život jednostavnijim.
+          Pristupi svim svojim porukama, kalendarima i kontaktima u jednoj brzoj aplikaciji. Filtriraj
+          i organiziraj na tvoj način. Upravljaj svim računima odvojeno ili objedinjeno. Thunderbird
+          pojednostavljuje tvoj život.
           
         </p>
       </div>
@@ -2701,11 +2701,20 @@
     
 <script>
   const navbar = document.querySelector(".site-nav");
-  window.addEventListener("scroll", () => {
-    (window.scrollY > 30) ?
-      navbar.classList.add("scrolled-nav") :
-      navbar.classList.remove("scrolled-nav")
-  });
+  if (navbar) {
+    const navbarClass = 'scrolled-nav';
+    let navbarState = navbar.classList.contains(navbarClass);
+
+    window.addEventListener("scroll", () => {
+      if (!navbarState && window.scrollY > 30) {
+        navbar.classList.add(navbarClass);
+        navbarState = true;
+      } else if (navbarState && window.scrollY <= 30) {
+        navbar.classList.remove(navbarClass)
+        navbarState = false;
+      }
+    });
+  }
 </script>
 
   </body>
