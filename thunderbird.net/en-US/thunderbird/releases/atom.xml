@@ -8,7 +8,7 @@
   <title>Thunderbird Release Notes</title>
   <subtitle type="text">Thunderbird Release Notes feed provides a simple way to keep up to date with Thunderbird releases.</subtitle>
 
-  <updated>2025-01-24T12:42:08+00:00</updated>
+  <updated>2025-01-24T21:18:31+00:00</updated>
   <logo>https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png</logo>
   <icon>https://www.thunderbird.net/media/img/thunderbird/favicon-196.png</icon>
 
@@ -110,24 +110,6 @@
 
         <li>
           <p>POP3 status message showed incorrect download count when messages were deleted</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Thunderbird could show incorrect 'From' and 'To' fields for mailing list emails</p>
           
         </li>
       
