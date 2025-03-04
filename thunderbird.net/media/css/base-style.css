@@ -2233,6 +2233,42 @@ footer {
     max-inline-size: 100%;
   }
 }
+.notice-panel.warning {
+  --text-gradient: linear-gradient(-270deg, var(--color-magenta-50), var(--color-purple-50));
+  --bg-warning: color-mix(in srgb, var(--color-magenta-50) 5%, transparent);
+  --text-warning: var(--color-magenta-90);
+  --warning-links: var(--color-purple-80);
+  --list-dot-inner: var(--color-magenta-90);
+  --list-dot-outer: var(--color-magenta-10);
+}
+.notice-panel.info {
+  --text-gradient: linear-gradient(-270deg, var(--color-teal-50), var(--color-blue-50));
+  --bg-warning: color-mix(in srgb, var(--color-teal-50) 5%, transparent);
+  --text-warning: var(--color-teal-90);
+  --warning-links: var(--color-blue-80);
+  --list-dot-inner: var(--color-teal-90);
+  --list-dot-outer: var(--color-teal-10);
+}
+.notice-panel {
+  place-items: center;
+  background: var(--bg-warning);
+  color: var(--text-warning);
+  border: 1px solid var(--text-warning);
+  border-radius: 6px;
+  padding: 0.5em 1em;
+  max-width: 40rem;
+  font-weight: 400;
+  margin: auto;
+}
+.notice-panel p {
+  margin: 0;
+}
+.notice-panel b {
+  font-weight: 700;
+}
+.notice-panel a {
+  color: var(--warning-links);
+}
 .page-donations .image {
   padding: 2rem;
 }
@@ -3032,26 +3068,6 @@ footer {
   gap: 2rem;
   margin-bottom: 1rem;
 }
-.page-download .warning-panel {
-  --text-gradient: linear-gradient(-270deg, var(--color-magenta-50), var(--color-purple-50));
-  --bg-warning: color-mix(in srgb, var(--color-magenta-50) 5%, transparent);
-  --text-warning: var(--color-magenta-90);
-  --warning-links: var(--color-purple-80);
-  --list-dot-inner: var(--color-magenta-90);
-  --list-dot-outer: var(--color-magenta-10);
-  place-items: center;
-  background: var(--bg-warning);
-  color: var(--text-warning);
-  border: 1px solid var(--text-warning);
-  border-radius: 6px;
-  padding: 0.5em 1em;
-}
-.page-download .warning-panel p {
-  margin: 0;
-}
-.page-download .warning-panel a {
-  color: var(--warning-links);
-}
 .page-download .download-spacing {
   margin-top: 4rem;
   margin-bottom: 4rem;
@@ -3379,32 +3395,6 @@ footer {
 }
 .page-donations-help .address-list {
   margin-top: 0;
-}
-.page-donations-help .warning-panel {
-  --text-gradient: linear-gradient(-270deg, var(--color-magenta-50), var(--color-purple-50));
-  --bg-warning: color-mix(in srgb, var(--color-magenta-50) 5%, transparent);
-  --text-warning: var(--color-magenta-90);
-  --warning-links: var(--color-purple-80);
-  --list-dot-inner: var(--color-magenta-90);
-  --list-dot-outer: var(--color-magenta-10);
-  place-items: center;
-  background: var(--bg-warning);
-  color: var(--text-warning);
-  border: 1px solid var(--text-warning);
-  border-radius: 6px;
-  padding: 0.5em 1em;
-  max-width: 40rem;
-  font-weight: 400;
-  margin: auto;
-}
-.page-donations-help .warning-panel p {
-  margin: 0;
-}
-.page-donations-help .warning-panel b {
-  font-weight: 700;
-}
-.page-donations-help .warning-panel a {
-  color: var(--warning-links);
 }
 .page-holiday-calendar .all-holiday-legend ul {
   list-style: none;
