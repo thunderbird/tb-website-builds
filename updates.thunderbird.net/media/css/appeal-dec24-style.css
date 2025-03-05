@@ -2133,13 +2133,23 @@ button:hover::after {
   margin-block: -7.8125rem -40.625rem;
 }
 :root {
+  /* Adjust these as needed by the text amount */
   --site-announcement-height: 2.625rem;
+  --site-announcement-padding: 0rem;
+}
+@media (max-width: 40rem) {
+  :root {
+    --site-announcement-height: 4.25rem;
+    --site-announcement-padding: 0;
+  }
 }
 .site-announcement {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+  padding: var(--site-announcement-padding);
+  text-align: center;
   position: absolute;
   top: 0;
   width: 100%;
@@ -2149,6 +2159,9 @@ button:hover::after {
   color: var(--color-white);
   font-size: 80%;
   font-weight: 500;
+}
+.site-announcement > .strong::after {
+  top: 0.22rem;
 }
 .site-announcement ~ .site-nav {
   top: var(--site-announcement-height);
