@@ -2628,7 +2628,6 @@ main {
   text-align: left;
   display: flex;
   flex-direction: column;
-  text-transform: capitalize;
   font-family: var(--font-content);
   font-size: 1.25rem;
   font-weight: 500;
