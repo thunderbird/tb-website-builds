@@ -2628,7 +2628,7 @@ main {
   text-align: left;
   display: flex;
   flex-direction: column;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-family: var(--font-content);
   font-size: 1.25rem;
   font-weight: 500;
@@ -2658,6 +2658,7 @@ main {
   font-weight: 700;
   line-height: 2.5rem;
   text-shadow: 0 0.125rem 0 #b62749;
+  text-transform: uppercase;
 }
 @media (min-width: 48rem) {
   .page-appeal-apr25 #appeal-heading > span {
