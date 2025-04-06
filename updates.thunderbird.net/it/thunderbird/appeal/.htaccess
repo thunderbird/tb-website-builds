@@ -1,2 +1,2 @@
 RewriteEngine On
-RewriteRule .* /it/thunderbird/128.0/apr25/donate/ [R]
+RewriteRule .* /it/thunderbird/128.0/apr25/ [R]
