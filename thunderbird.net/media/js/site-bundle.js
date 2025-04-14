@@ -497,9 +497,9 @@ document.addEventListener('DOMContentLoaded', function() {
       // TODO: Unsure if this check is still needed.
       // MSIE and Edge cancel the download prompt on redirect, so just leave them out.
       if (!(/msie\s|trident\/|edge\//i.test(navigator.userAgent))) {
-          setTimeout(function() {
-              window.location.href = donate_url;
-          }, 5000);
+        setTimeout(function() {
+          window.location.href = donate_url;
+        }, 5000);
       }
 
     });
@@ -512,6 +512,9 @@ document.addEventListener('DOMContentLoaded', function() {
  */
 document.addEventListener('DOMContentLoaded', () => {
   const fragment = window.location.hash.substring(1);
+  if (!fragment) {
+    return;
+  }
   const element = document.getElementById(fragment);
   if (!element) {
     return;
@@ -522,3 +525,5 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   accordionElement.setAttribute('open', 'open');
 });
+
+
