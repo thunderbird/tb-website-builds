@@ -8,7 +8,7 @@
   <title>Thunderbird Release Notes</title>
   <subtitle type="text">Thunderbird Release Notes feed provides a simple way to keep up to date with Thunderbird releases.</subtitle>
 
-  <updated>2025-05-18T18:35:14+00:00</updated>
+  <updated>2025-05-19T12:51:37+00:00</updated>
   <logo>https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png</logo>
   <icon>https://www.thunderbird.net/media/img/thunderbird/favicon-196.png</icon>
 
@@ -114,8 +114,23 @@
         </li>
       
     
+      
+    
     </ul>
   
+  
+    <h3>
+      Known Issues
+    </h3>
+    <ul>
+      
+        <li>
+          <p>Messages cannot not be viewed if the profile uses a UNC path</p>
+          
+          
+        </li>
+      
+    </ul>
   
 
 <p>As always, you’re encouraged to <a href="https://connect.mozilla.org/t5/ideas/idb-p/ideas/label-name/thunderbird">tell us what you think</a>, <a href="https://support.mozilla.org/questions/new/thunderbird">ask for help</a>, or <a href="https://bugzilla.mozilla.org/enter_bug.cgi?product=Thunderbird">file a bug in Bugzilla</a></p>
@@ -221,8 +236,23 @@
         </li>
       
     
+      
+    
     </ul>
   
+  
+    <h3>
+      Known Issues
+    </h3>
+    <ul>
+      
+        <li>
+          <p>Messages cannot not be viewed if the profile uses a UNC path</p>
+          
+          
+        </li>
+      
+    </ul>
   
 
 <p>As always, you’re encouraged to <a href="https://connect.mozilla.org/t5/ideas/idb-p/ideas/label-name/thunderbird">tell us what you think</a>, <a href="https://support.mozilla.org/questions/new/thunderbird">ask for help</a>, or <a href="https://bugzilla.mozilla.org/enter_bug.cgi?product=Thunderbird">file a bug in Bugzilla</a></p>
