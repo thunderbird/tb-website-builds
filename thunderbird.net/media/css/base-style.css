@@ -2339,6 +2339,8 @@ footer {
   flex-direction: row;
   gap: 2rem;
   margin: auto;
+  padding-inline: 2rem;
+  width: auto;
 }
 @media (max-width: 64rem) {
   .page-donations .two-columns {
@@ -2364,7 +2366,7 @@ footer {
   justify-content: center;
   align-items: center;
   text-align: center;
-  min-width: 50%;
+  min-width: 45%;
   min-height: 480px;
 }
 .page-donations .two-columns .donation-column iframe {
