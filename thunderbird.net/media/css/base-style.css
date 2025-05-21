@@ -2339,6 +2339,8 @@ footer {
   flex-direction: row;
   gap: 2rem;
   margin: auto;
+  padding-inline: 2rem;
+  width: auto;
 }
 @media (max-width: 64rem) {
   .page-donations .two-columns {
@@ -2364,7 +2366,7 @@ footer {
   justify-content: center;
   align-items: center;
   text-align: center;
-  min-width: 50%;
+  min-width: 45%;
   min-height: 480px;
 }
 .page-donations .two-columns .donation-column iframe {
@@ -2405,7 +2407,7 @@ footer {
   background-position: bottom center, center;
   background-repeat: no-repeat;
   color: var(--color-gray-20);
-  padding-top: var(--nav-size);
+  padding-top: 0;
   isolation: isolate;
 }
 .page-index .container.hero {
@@ -3542,16 +3544,8 @@ footer {
   background-repeat: no-repeat;
   color: var(--color-gray-20);
   isolation: isolate;
-  padding-top: var(--nav-size);
+  padding-top: var(--nav-height);
   padding-bottom: 10.5rem;
-}
-@media (max-width: 48rem) {
-  .page-desktop #masthead,
-  .page-mobile #masthead,
-  .page-desktop header,
-  .page-mobile header {
-    margin-top: 0;
-  }
 }
 .page-desktop #masthead .hero,
 .page-mobile #masthead .hero,
@@ -3559,17 +3553,7 @@ footer {
 .page-mobile header .hero {
   --font-tagline-clamp: clamp(var(--font-tagline-min), var(--font-tagline-ideal), 4rem);
   position: relative;
-  top: 12rem;
-  margin-bottom: 5rem;
-}
-@media (max-width: 48rem) {
-  .page-desktop #masthead .hero,
-  .page-mobile #masthead .hero,
-  .page-desktop header .hero,
-  .page-mobile header .hero {
-    top: 5rem;
-    margin-bottom: 5rem;
-  }
+  top: 7rem;
 }
 .page-desktop .container,
 .page-mobile .container {
