@@ -3308,6 +3308,14 @@ footer {
   margin-top: 0;
   text-align: left;
 }
+.page-releases .release-major a {
+  text-decoration-color: var(--bg);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+.page-releases .release-major a:hover {
+  text-decoration-color: var(--accent);
+}
 .page-releases .release-minors {
   width: 100%;
 }
