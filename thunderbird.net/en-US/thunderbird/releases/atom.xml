@@ -8,7 +8,7 @@
   <title>Thunderbird Release Notes</title>
   <subtitle type="text">Thunderbird Release Notes feed provides a simple way to keep up to date with Thunderbird releases.</subtitle>
 
-  <updated>2025-05-23T12:47:54+00:00</updated>
+  <updated>2025-05-23T12:59:46+00:00</updated>
   <logo>https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png</logo>
   <icon>https://www.thunderbird.net/media/img/thunderbird/favicon-196.png</icon>
 
@@ -276,24 +276,6 @@
         
 
         <li>
-          <p>Messages could not be viewed if the profile used a UNC path</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
           <p>Mail window could stop functioning during and after folder compaction</p>
           
         </li>
@@ -313,24 +295,6 @@
 
         <li>
           <p>Full folder sorting logic was not used when inserting folders after move</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Standalone message windows/tabs no longer responded after folder compaction</p>
           
         </li>
       
@@ -546,24 +510,6 @@
         
 
         <li>
-          <p>Thunderbird could crash when importing Outlook messages</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
           <p>System search toggle did not properly reflect and control integration state</p>
           
         </li>
@@ -618,43 +564,7 @@
         
 
         <li>
-          <p>Compacting folders with certain pending operations caused unnecessary warnings</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
           <p>Cancelling a post to a news server could fail and remove the article</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Messages were permanently deleted if Trash folder had non-ASCII Unicode characters</p>
           
         </li>
       
