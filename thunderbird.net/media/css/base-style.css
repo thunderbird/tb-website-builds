@@ -2373,7 +2373,6 @@ footer {
   width: 100%;
   animation-duration: 2s;
   animation-name: fade-in;
-  transition: all 0.5s ease-in;
   border: var(--border-size) solid var(--border-color);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-xl);
@@ -3307,6 +3306,14 @@ footer {
   min-width: 15%;
   margin-top: 0;
   text-align: left;
+}
+.page-releases .release-major a {
+  text-decoration-color: var(--bg);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+.page-releases .release-major a:hover {
+  text-decoration-color: var(--accent);
 }
 .page-releases .release-minors {
   width: 100%;
