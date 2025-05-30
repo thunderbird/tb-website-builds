@@ -2758,6 +2758,9 @@ footer {
 .page-who-we-are .job-grid .person .job-title span {
   font-size: var(--font-regular);
 }
+.page-who-we-are .job-grid #council-tim-maks-van-den-broek > h5 {
+  white-space: collapse;
+}
 .page-contact-us .block-grid {
   display: flex;
   flex-wrap: wrap;
