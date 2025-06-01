@@ -1976,7 +1976,10 @@ if (typeof Mozilla === 'undefined') {
     }
 
     // Only options that pass "has_localized_download" are allowed to be selected which makes this safe!
-    if (locale !== 'en-US') {
+    // Note: The Japanese mac version is an exception here.
+    if (locale === 'ja' && installer === 'osx') {
+      downloadLink = downloadLink.replace('en-US', 'ja-JP-mac');
+    } else if (locale !== 'en-US') {
       downloadLink = downloadLink.replace('en-US', locale);
     }
 
@@ -2052,7 +2055,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const donationButtons = document.querySelectorAll('[data-donate-btn]');
   for (const donationButton of donationButtons) {
     // Any donation button that redirects should be skipped as that's not where the modal will show up.
-    if ('dontShowDonationNotice' in donationButton.dataset) {
+    // Ref: [data-dont-show-donation-blocked-notice]
+    if ('dontShowDonationBlockedNotice' in donationButton.dataset) {
       continue;
     }
     donationButton.addEventListener('click', () => {
