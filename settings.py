@@ -331,13 +331,17 @@ START_JS = {
 
 UPDATES_CSS = {
     "updates-style": ["less/updates-style.less"],
+    "base-style": ["less/base-style.less"],
     "appeal-nov24-style": ["less/appeals/nov24.less"],
     "appeal-dec24-style": ["less/appeals/dec24.less"],
     "appeal-apr25-style": ["less/appeals/apr25.less"],
+    "monthly-style": ["less/monthly.less"],
 }
 
 UPDATES_JS = {
     'common-bundle': [
+        # Necessary for the download button to select the correct platform.
+        'js/base/site.js',
         # Load bearing order..Donation must come before AB testing.
         'js/common/donations.js', 'js/common/ab-testing.js', 'js/common/donation-notice.js'
     ]
@@ -533,6 +537,7 @@ VERSIONS_TO_FILTER = []
 WEBSITE_REDIRECTS = {
     'download': 'thunderbird.latest.all',
     ('download', 'beta'): 'thunderbird.latest.beta',
+    ('thunderbird', 'beta', 'all'): 'thunderbird.latest.beta',
     'get-involved': 'thunderbird.participate',
     'contribute': 'thunderbird.participate',
     'features': 'thunderbird.index',
