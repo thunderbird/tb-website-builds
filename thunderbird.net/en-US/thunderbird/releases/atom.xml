@@ -8,7 +8,7 @@
   <title>Thunderbird Release Notes</title>
   <subtitle type="text">Thunderbird Release Notes feed provides a simple way to keep up to date with Thunderbird releases.</subtitle>
 
-  <updated>2025-06-12T18:42:56+00:00</updated>
+  <updated>2025-06-12T18:48:07+00:00</updated>
   <logo>https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png</logo>
   <icon>https://www.thunderbird.net/media/img/thunderbird/favicon-196.png</icon>
 
@@ -751,6 +751,24 @@
         
 
         <li>
+          <p>Feed subscriptions were broken</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
           <p>Feed body was not rendered when "Message Body As" formatting option selected</p>
           
         </li>
@@ -1327,6 +1345,42 @@
         
 
         <li>
+          <p>Messages with multiple authors or no author were not indexed for global search</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Messages from authors without email address were not indexed for global search</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
           <p>Shutdown could hang due to unterminated search execution</p>
           
         </li>
@@ -1382,6 +1436,24 @@
 
         <li>
           <p>Invite attachments without a name were forwarded as 'Attached Message Part'</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Creating a link from selected text did not work with advanced properties selected</p>
           
         </li>
       
@@ -1472,6 +1544,24 @@
 
         <li>
           <p>macOS system notifications worked but email alerts could not be disabled separately</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Setting different archiving options for multiple identities did not work</p>
           
         </li>
       
@@ -2029,6 +2119,24 @@
         
 
         <li>
+          <p>Reconnecting to an NNTP server was potentially not possible</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
           <p>Nickserv messages appeared during successful authentication</p>
           
         </li>
@@ -2120,6 +2228,24 @@
 
         <li>
           <p>Clicking a <code>mid:</code> link in Calendar opened two copies of the message</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Clicking a 'mid:' link in event created from message did not work</p>
           
         </li>
       
