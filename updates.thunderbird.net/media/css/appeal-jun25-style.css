@@ -2716,6 +2716,8 @@ main {
 :root {
   --bg-img: url('/media/img/thunderbird/appeal/jun25/header-high-res.png');
   --bg-img-set: image-set(url('/media/img/thunderbird/appeal/jun25/header-high-res.avif') type('image/avif'), url('/media/img/thunderbird/appeal/jun25/header-high-res.webp') type('image/webp'), var(--bg-img) type('image/png'));
+  --bg-img-sm: url('/media/img/thunderbird/appeal/jun25/header-sm-high-res.png');
+  --bg-img-sm-set: image-set(url('/media/img/thunderbird/appeal/jun25/header-sm-high-res.avif') type('image/avif'), url('/media/img/thunderbird/appeal/jun25/header-sm-high-res.webp') type('image/webp'), var(--bg-img-sm) type('image/png'));
   --bg-appeal-glow: linear-gradient(130deg, rgba(255, 242, 0, 0.25) 50%, #26BAF5 100%);
   --color-appeal-main-bg: var(--color-white);
   --color-footer-txt: #105BBC;
@@ -2756,46 +2758,59 @@ main {
   padding-bottom: 7rem;
   max-width: 80rem;
   width: 100%;
-  background-image: var(--bg-img);
-  background-image: var(--bg-img-set);
+  background-image: var(--bg-img-sm);
+  background-image: var(--bg-img-sm-set);
   background-position: top center;
   background-position-y: -1rem;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 .page-appeal-jun25 #appeal-header header {
   padding: 0;
   background: none;
 }
-@media (min-width: 80rem) {
+@media (min-width: 64rem) {
   .page-appeal-jun25 #appeal-header {
-    background-size: contain;
+    background-image: var(--bg-img);
+    background-image: var(--bg-img-set);
   }
 }
 .page-appeal-jun25 #appeal-heading {
   margin: 0.5rem 0;
-  padding: 2.2rem 2rem 1.8rem 2rem;
+  padding: 1rem;
   text-align: left;
   display: flex;
   flex-direction: column;
   width: 100%;
+  box-sizing: border-box;
   color: #DCEEFB;
   font-family: Metropolis sans-serif;
-  font-size: 3.375rem;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 600;
   line-height: 110%;
   text-shadow: 0 0.125rem 0.1875rem rgba(0, 0, 0, 0.3);
+}
+@media (min-width: 64rem) {
+  .page-appeal-jun25 #appeal-heading {
+    font-size: 3.375rem;
+    padding: 2.2rem 2rem 1.8rem 2rem;
+  }
 }
 .page-appeal-jun25 #appeal-heading > span {
   background: linear-gradient(180deg, #FFF6BF 30%, #CB8761 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 4.5rem;
+  font-size: 2.25rem;
   font-weight: 700;
   line-height: 110%;
   text-shadow: none;
+}
+@media (min-width: 64rem) {
+  .page-appeal-jun25 #appeal-heading > span {
+    font-size: 4.5rem;
+  }
 }
 .page-appeal-jun25 #illustration {
   width: 100%;
@@ -2977,6 +2992,9 @@ main {
   height: 26.25rem;
   width: 26.25rem;
   transform: rotate(45deg);
+}
+.page-appeal-jun25 .donate-banner:hover::after {
+  transform: scale(3);
 }
 .page-appeal-jun25 .donate-banner #decoration {
   left: 7.2rem;
