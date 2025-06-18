@@ -2773,7 +2773,6 @@ main {
   }
 }
 .page-appeal-jun25 #appeal-heading {
-  --txt: #f7cf78;
   margin: 0.5rem 0;
   padding: 2.2rem 2rem 1.8rem 2rem;
   text-align: left;
@@ -2789,22 +2788,22 @@ main {
   text-shadow: 0 0.125rem 0.1875rem rgba(0, 0, 0, 0.3);
 }
 .page-appeal-jun25 #appeal-heading > span {
-  background: linear-gradient(-180deg, #FFF6BF 0%, #CB8761 100%);
+  background: linear-gradient(180deg, #FFF6BF 30%, #CB8761 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 4.5rem;
   font-weight: 700;
+  line-height: 110%;
+  text-shadow: none;
 }
 .page-appeal-jun25 #illustration {
   width: 100%;
-  text-align: center;
+  text-align: right;
 }
-@media (min-width: 64rem) {
-  .page-appeal-jun25 #illustration #roc {
-    padding-top: 1rem;
-    padding-left: 1rem;
-  }
+.page-appeal-jun25 #illustration #roc {
+  margin-right: 5rem;
+  margin-top: 1rem;
 }
 .page-appeal-jun25 #donate-button-container {
   max-width: 22.188rem;
