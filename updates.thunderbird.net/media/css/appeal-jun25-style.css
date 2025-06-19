@@ -1,3 +1,13 @@
+/*
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ */
+/*
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ */
 /* - Metropolis -*/
 @font-face {
   font-family: metropolis;
@@ -125,6 +135,11 @@
   font-display: swap;
   src: url("/media/fonts/Metropolis/Metropolis-BlackItalic.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-BlackItalic.woff") format("woff");
 }
+/*
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ */
 /* - Inter -*/
 @font-face {
   font-family: 'Inter';
@@ -2194,109 +2209,6 @@ button:hover::after {
 .site-announcement ~ .scrolled-nav {
   top: 0;
 }
-footer {
-  background-color: black;
-  color: var(--color-gray-20);
-}
-.container.footer {
-  place-items: center;
-  padding-inline: 1rem;
-  padding-block: 6rem;
-  box-sizing: border-box;
-  gap: 60px !important;
-}
-.footer-ln {
-  font-size: 1.1rem;
-}
-.legal-links {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.legal-links {
-  font-size: 1rem;
-}
-.mozilla-logo {
-  --accent: white;
-  max-width: 200px;
-}
-#footer {
-  width: 100%;
-  position: relative;
-  margin-top: auto;
-  margin-bottom: 0;
-  padding-bottom: 2rem;
-  min-height: 10rem;
-  display: flex;
-  justify-content: center;
-}
-#footer .mzla {
-  justify-content: flex-start;
-  align-content: center;
-}
-#footer.container {
-  position: relative;
-  display: grid;
-  gap: 60px;
-  padding-inline: 1rem;
-  margin-inline: auto;
-  overflow: hidden;
-  box-sizing: border-box;
-}
-#footer.container.footer {
-  place-items: center;
-  padding-inline: 1rem;
-  padding-block: 1.25rem;
-}
-#footer a {
-  color: var(--color-legal-txt);
-  text-decoration-color: var(--color-legal-txt);
-  text-underline-offset: 0.25em;
-  text-decoration-thickness: 0.12em;
-  text-decoration-style: solid;
-  transition: font-size 0.2s, text-decoration-color 0.2s;
-}
-#footer a.donate,
-#footer a:hover,
-#footer a:hover:visited {
-  text-decoration-color: var(--accent);
-}
-#footer a:visited {
-  text-decoration-color: var(--color-purple-50);
-}
-#footer .mzla {
-  display: grid;
-  place-items: center;
-  gap: 0.9375rem;
-  text-align: center;
-  max-inline-size: 75ch;
-}
-#footer .mozilla-logo {
-  --accent: white;
-  width: 7.6875rem;
-  max-width: 100%;
-}
-#footer .mozilla-logo svg {
-  width: 100%;
-  height: 100%;
-}
-#footer .site-links,
-#footer .legal-links {
-  display: flex;
-  gap: 1.875rem;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-#footer .legal-links {
-  font-size: 1rem;
-}
-@media (max-width: 32rem) {
-  #footer.container {
-    padding-inline: 0.25rem;
-    padding-block: 2rem;
-  }
-}
 .donate-banner {
   --background-left: linear-gradient(92deg, #EA5757 60%, #DD2929 92.83%);
   --background-right: linear-gradient(to right, #FFEFEF, #FFEFEF);
@@ -2562,6 +2474,49 @@ footer {
   top: auto;
   bottom: 0;
 }
+#footer {
+  width: 100%;
+  background-color: black;
+  color: var(--color-gray-20);
+  font-family: "Inter", "sans-serif";
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 100%;
+  display: flex;
+  justify-content: center;
+}
+#footer a:visited {
+  color: var(--color-gray-20);
+}
+#footer .mozilla-logo {
+  --accent: white;
+}
+#footer .mzla,
+#footer .mozilla-logo {
+  max-height: 12.625rem;
+}
+#footer .mzla,
+#footer .legal-links,
+#footer .footer-inner {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+#footer .legal-links {
+  gap: 1.875rem;
+  flex-wrap: wrap;
+}
+#footer .footer-inner {
+  max-width: 80rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10.625rem 2rem;
+}
+@media (max-width: 64rem) {
+  #footer .footer-inner {
+    padding: 0 1rem 2rem;
+  }
+}
 html,
 body {
   min-height: 100%;
@@ -2572,17 +2527,6 @@ body {
 }
 main {
   height: auto;
-}
-#footer {
-  position: relative;
-  margin-top: auto;
-  margin-bottom: 0;
-  min-height: 10rem;
-  display: flex;
-}
-#footer .mzla {
-  justify-content: center;
-  align-content: center;
 }
 /*
  * This Source Code Form is subject to the terms of the Mozilla Public
@@ -2718,7 +2662,7 @@ main {
   --bg-img-set: image-set(url('/media/img/thunderbird/appeal/jun25/header-high-res.avif') type('image/avif'), url('/media/img/thunderbird/appeal/jun25/header-high-res.webp') type('image/webp'), var(--bg-img) type('image/png'));
   --bg-img-sm: url('/media/img/thunderbird/appeal/jun25/header-sm-high-res.png');
   --bg-img-sm-set: image-set(url('/media/img/thunderbird/appeal/jun25/header-sm-high-res.avif') type('image/avif'), url('/media/img/thunderbird/appeal/jun25/header-sm-high-res.webp') type('image/webp'), var(--bg-img-sm) type('image/png'));
-  --bg-appeal-glow: linear-gradient(130deg, rgba(255, 242, 0, 0.25) 50%, #26BAF5 100%);
+  --bg-appeal-glow: linear-gradient(130deg, rgba(13, 44, 91, 0) 0%, #26BAF5 77.4%);
   --color-appeal-main-bg: var(--color-white);
   --color-footer-txt: #105BBC;
   --color-appeal-txt: #18181B;
@@ -2726,6 +2670,7 @@ main {
   --txt: var(--color-appeal-txt);
   --shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   --font-content: Open Sans, system-ui, sans-serif;
+  --alt-font-content: 'Metropolis', sans-serif;
   --min-small-screen: 23.438rem;
 }
 .page-appeal-jun25 {
@@ -2783,7 +2728,7 @@ main {
   width: 100%;
   box-sizing: border-box;
   color: #DCEEFB;
-  font-family: Metropolis sans-serif;
+  font-family: var(--alt-font-content);
   font-size: clamp(1.5rem, 0.7231rem + 3.3149vw, 3.375rem);
   padding: clamp(0rem, -5.4892rem + 23.4206vw, 9.5rem) 1rem 1rem;
   font-style: normal;
@@ -2847,7 +2792,7 @@ main {
   left: 0;
   right: 0;
   background: var(--bg-appeal-glow);
-  margin: -1rem 2.375rem;
+  margin: 0 -10.375rem;
   /* border-radius: 0.75rem; */
   filter: blur(2.75rem);
   opacity: 0.8;
@@ -2908,11 +2853,10 @@ main {
 .page-appeal-jun25 .letter-container .closing-text {
   font-size: 1rem;
 }
-.page-appeal-jun25 .closing-text {
-  /* these styles have lower precedence than .letter-container p */
-  font-family: Metropolis, sans-serif;
-  /* font-size: 1rem; */
-  font-weight: 500;
+.page-appeal-jun25 .letter-container .closing-text {
+  font-family: var(--font-content);
+  font-weight: 400;
+  line-height: 150%;
   text-align: center;
   margin: 1rem 0 !important;
   color: #1373d9;
@@ -2982,7 +2926,7 @@ main {
   box-shadow: 0 0 0.625rem 0 #0000001A;
   border: 0.0625rem solid var(--critical-pressed, #7F1D1D);
   color: #7F1616;
-  font-family: 'Metropolis', sans-serif;
+  font-family: var(--alt-font-content);
   margin: -7.125rem auto 2rem;
   max-width: 28.875rem;
   min-height: 7.6875rem;
