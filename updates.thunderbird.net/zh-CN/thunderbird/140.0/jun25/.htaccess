@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule .* /zh-CN/thunderbird/140.0/jun25a/ [R]
