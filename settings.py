@@ -50,22 +50,22 @@ FRU_LANGUAGES = {
 # List of supported FormAssembly locales, scoped to the dropdown on the donor contact form
 # TB Locale -> FA Locale
 FA_LANGUAGES = {
-        'zh-CN': 'zh_CN',
-        'cs': 'cs',
-        'da': 'da',
-        'nl': 'nl',
-        'en-US': 'en_US',
-        'de': 'de',
-        'fr': 'fr',
-        'it': 'it',
-        'ja': 'ja',
-        'pl': 'pl',
-        'pt-BR': 'pt_BR',
-        'ru': 'ru',
-        'es-MX': 'es',
-        'es-AR': 'es',
-        'es-ES': 'es',
-        'es-CL': 'es',
+    'zh-CN': 'zh_CN',
+    'cs': 'cs',
+    'da': 'da',
+    'nl': 'nl',
+    'en-US': 'en_US',
+    'de': 'de',
+    'fr': 'fr',
+    'it': 'it',
+    'ja': 'ja',
+    'pl': 'pl',
+    'pt-BR': 'pt_BR',
+    'ru': 'ru',
+    'es-MX': 'es',
+    'es-AR': 'es',
+    'es-ES': 'es',
+    'es-CL': 'es',
 }
 
 # Map short locale names to long, preferred locale names. This
@@ -80,9 +80,9 @@ CANONICAL_LOCALES = {
     'no': 'nb-NO',
     'pt': 'pt-BR',
     'sv': 'sv-SE',
-    'zh-hant': 'zh-TW',     # Bug 1263193
+    'zh-hant': 'zh-TW',  # Bug 1263193
     'zh-hant-tw': 'zh-TW',  # Bug 1263193
-    'zh-hk': 'zh-TW',       # Bug 1338072
+    'zh-hk': 'zh-TW',  # Bug 1338072
     'zh-hant-hk': 'zh-TW',  # Bug 1338072
 }
 
@@ -104,6 +104,7 @@ ALWAYS_LOCALIZE = [
 ]
 
 CANONICAL_URL = 'https://www.thunderbird.net'
+CANONICAL_UPDATES_URL = 'https://updates.thunderbird.net'
 
 # url for the server that serves Thunderbird downloads.
 BOUNCER_URL = 'https://download.mozilla.org/'
@@ -157,6 +158,8 @@ ALL_PLATFORMS = ('windows', 'linux', 'mac')
 
 # Mappings for the helper.url function.
 # 'thunderbird.sysreq' and 'wiki.moz' have special behaviour.
+# Keys prefixed with 'thunderbird.' will have the settings.CANONICAL_URL prepended to them if you're building
+# outside of website.
 URL_MAPPINGS = {
     'atn': 'https://addons.thunderbird.net/',
     'blog': 'https://blog.thunderbird.net/',
@@ -273,6 +276,12 @@ URL_MAPPINGS = {
     'updates.128.appeal.dec24.donate': '/thunderbird/128.0/dec24/donate/',
     'updates.128.appeal.apr25': '/thunderbird/128.0/apr25/',
     'updates.128.appeal.apr25.donate': '/thunderbird/128.0/apr25/donate/',
+    'updates.128.monthly': '/thunderbird/128.0/monthly/',
+    'updates.140.whatsnew': '/thunderbird/140.0/whatsnew/',
+    'updates.140.appeal.jun25a': '/thunderbird/140.0/jun25a/',
+    'updates.140.appeal.jun25b': '/thunderbird/140.0/jun25b/',
+    'updates.140.appeal.jun25a.donate': '/thunderbird/140.0/jun25a/donate/',
+    'updates.140.appeal.jun25b.donate': '/thunderbird/140.0/jun25b/donate/',
 }
 
 BLOG_FEED_URL = 'https://blog.thunderbird.net/feed/atom/'
@@ -336,6 +345,8 @@ UPDATES_CSS = {
     "appeal-dec24-style": ["less/appeals/dec24.less"],
     "appeal-apr25-style": ["less/appeals/apr25.less"],
     "monthly-style": ["less/monthly.less"],
+    'whatsnew-140': ['less/whatsnew-140.less'],
+    "appeal-jun25-style": ["less/appeals/jun25.less"],
 }
 
 UPDATES_JS = {
@@ -407,7 +418,7 @@ LOCALE_CURRENCIES = {
     'ta': 'inr',
     'te': 'inr',
     'zh-TW': 'twd'
- }
+}
 
 CALENDARIFIC_API_URL = "https://calendarific.com/api/v2/holidays"
 
@@ -432,7 +443,8 @@ CALENDAR_LOCALES = {
     'CZ': ('Czech', 'cs'),
     'DK': ('Denmark', 'da'),
     'DO': ('Dominican Republic', 'es'),
-    'NL': [('Netherlands (Dutch)', 'nl'), ('Netherlands (English)', 'en'), ('Netherlands (German)', 'de'), ('Netherlands (French)', 'fr')],
+    'NL': [('Netherlands (Dutch)', 'nl'), ('Netherlands (English)', 'en'), ('Netherlands (German)', 'de'),
+           ('Netherlands (French)', 'fr')],
     'EE': ('Estonia', 'et'),
     'FI': [('Finland (Finnish)', 'fi'), ('Finland (Swedish)', 'sv')],
     'FR': ('France', 'fr'),
@@ -543,11 +555,14 @@ WEBSITE_REDIRECTS = {
     'features': 'thunderbird.index',
     ('thunderbird', '128.0esr', 'whatsnew'): 'thunderbird.128.whatsnew',
     ('thunderbird', '128.0', 'releasenotes'): 'thunderbird.128esr.releasenotes',
+    ('thunderbird', '140.0esr', 'whatsnew'): 'updates.140.whatsnew',
+    ('thunderbird', '140.0', 'whatsnew'): 'updates.140.whatsnew',
 }
 
 # Similar to website redirects but for UTN
 UPDATES_REDIRECTS = {
-    ('thunderbird', 'appeal'): 'updates.128.appeal.apr25'
+    ('thunderbird', 'appeal'): 'updates.128.appeal.apr25',
+    ('thunderbird', '140.0', 'jun25'): 'updates.140.appeal.jun25a'
 }
 
 # The default release channel to use when various function defaults are used
@@ -578,3 +593,11 @@ SITE_ANNOUNCEMENT = True
 # Shows a dialog element with information on how to donate if their browser or browser addons have blocked FRU
 # In reality this can trigger for slow internet users, but we don't have a perfect way to detect this.
 SHOW_DONATION_BLOCKED_NOTICE = True
+
+# A list of valid site codes. Their values are accessible through builder.site or in a jinja context via SITE.
+SITE_CODES = {
+    'UNKNOWN': 'unknown',
+    'WEBSITE': 'website',
+    'START': 'start',
+    'UPDATES': 'updates',
+}
