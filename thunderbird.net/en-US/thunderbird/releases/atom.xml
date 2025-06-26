@@ -8,7 +8,7 @@
   <title>Thunderbird Release Notes</title>
   <subtitle type="text">Thunderbird Release Notes feed provides a simple way to keep up to date with Thunderbird releases.</subtitle>
 
-  <updated>2025-06-26T13:42:51+00:00</updated>
+  <updated>2025-06-26T16:42:20+00:00</updated>
   <logo>https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png</logo>
   <icon>https://www.thunderbird.net/media/img/thunderbird/favicon-196.png</icon>
 
@@ -25,8 +25,8 @@
       <uri>https://www.thunderbird.net</uri>
     </author>
     <link rel="alternate" type="text/html" href="https://www.thunderbird.net/en-US/thunderbird/140.0esr/releasenotes/"/>
-    <updated>2025-06-24T00:00:00+00:00</updated>
-    <published>2025-06-24T00:00:00+00:00</published>
+    <updated>2025-06-30T00:00:00+00:00</updated>
+    <published>2025-06-30T00:00:00+00:00</published>
 
     <content type="html"><![CDATA[
       
@@ -2300,6 +2300,24 @@
 
         <li>
           <p>Visual and UX improvements</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p><a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird140">Security fixes</a></p>
           
         </li>
       
