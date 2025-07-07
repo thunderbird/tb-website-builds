@@ -1768,6 +1768,7 @@ if (typeof Mozilla === 'undefined') {
   let osSelect = document.getElementById('download-os-select');
   let installerSelect = document.getElementById('download-advanced-platform-select');
   let downloadButton = document.getElementById('download-btn');
+  let releaseNotesLink = document.getElementById('release-notes-link');
   let defaultOS = 'Windows';
   let defaultReleaseChannel = window._desktop_product.defaultChannel ?? 'esr';
 
@@ -1827,6 +1828,7 @@ if (typeof Mozilla === 'undefined') {
       element.addEventListener('change', function(event) {
         DownloadInfo.SetDataAttributes(event.currentTarget.name, event.currentTarget.value);
         DownloadInfo.SetDownloadLink();
+        DownloadInfo.SetReleaseNotesLink();
       });
     });
 
@@ -1853,6 +1855,7 @@ if (typeof Mozilla === 'undefined') {
     // Channel Selection calls OS Selection
     DownloadInfo.OnOSSelection(defaultOS);
     DownloadInfo.SetDownloadLink();
+    DownloadInfo.SetReleaseNotesLink();
 
     // Set the data attribute defaults
     [localeSelect, channelSelect, osSelect, installerSelect].forEach(function(element) {
@@ -1869,6 +1872,7 @@ if (typeof Mozilla === 'undefined') {
     osSelect = document.getElementById('download-os-select');
     installerSelect = document.getElementById('download-advanced-platform-select');
     downloadButton = document.getElementById('download-btn');
+    releaseNotesLink = document.getElementById('release-notes-link');
   };
 
   /**
@@ -1958,6 +1962,27 @@ if (typeof Mozilla === 'undefined') {
    */
   DownloadInfo.SetDownloadLink = function() {
     downloadButton.href = DownloadInfo.DownloadLink(localeSelect.value, channelSelect.value, osSelect.value, installerSelect.value);
+    DownloadInfo.SetReleaseNotesLink();
+  }
+
+  DownloadInfo.SetReleaseNotesLink = function() {
+    if (!releaseNotesLink) {
+      return;
+    }
+    releaseNotesLink.href = DownloadInfo.ReleaseNotesLink(channelSelect.value);
+  }
+
+  DownloadInfo.ReleaseNotesLink = function(channel) {
+    switch (channel) {
+      case 'beta':
+        return '/notes/beta/';
+      case 'esr':
+        return '/notes/esr/';
+      case 'release':
+        return '/notes/';
+      default:
+        return '#';
+    }
   }
 
   /**
@@ -1992,6 +2017,7 @@ if (typeof Mozilla === 'undefined') {
     DownloadInfo.Init();
   });
 })();
+
 /* This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
