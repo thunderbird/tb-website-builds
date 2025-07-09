@@ -8,7 +8,7 @@
   <title>Thunderbird Release Notes</title>
   <subtitle type="text">Thunderbird Release Notes feed provides a simple way to keep up to date with Thunderbird releases.</subtitle>
 
-  <updated>2025-07-09T20:20:17+00:00</updated>
+  <updated>2025-07-09T20:30:19+00:00</updated>
   <logo>https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png</logo>
   <icon>https://www.thunderbird.net/media/img/thunderbird/favicon-196.png</icon>
 
@@ -55,43 +55,7 @@
         
 
         <li>
-          <p>Autoconfig no longer handled 'No such host' errors correctly</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Inserting a link into an HTML mail did not work as expected</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Thunderbird could crash on startup for POP3</p>
+          <p>What's New page for 140esr was not displayed</p>
           
         </li>
       
@@ -127,24 +91,6 @@
         
 
         <li>
-          <p>NNTP message pane did not show network error page when network was lost</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
           <p>URLs for hovered links in status bar could be immediately overwritten</p>
           
         </li>
@@ -163,7 +109,61 @@
         
 
         <li>
-          <p>What's New page for 140esr was not displayed</p>
+          <p>NNTP message pane did not show network error page when network was lost</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Inserting a link into an HTML mail did not work as expected</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Autoconfig no longer handled 'No such host' errors correctly</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Thunderbird could crash on startup for POP3</p>
           
         </li>
       
