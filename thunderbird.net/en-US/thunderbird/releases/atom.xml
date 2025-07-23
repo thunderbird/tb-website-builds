@@ -8,7 +8,7 @@
   <title>Thunderbird Release Notes</title>
   <subtitle type="text">Thunderbird Release Notes feed provides a simple way to keep up to date with Thunderbird releases.</subtitle>
 
-  <updated>2025-07-23T17:13:17+00:00</updated>
+  <updated>2025-07-23T17:41:33+00:00</updated>
   <logo>https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png</logo>
   <icon>https://www.thunderbird.net/media/img/thunderbird/favicon-196.png</icon>
 
@@ -586,23 +586,8 @@
         </li>
       
     
-      
-    
     </ul>
   
-  
-    <h3>
-      Known Issues
-    </h3>
-    <ul>
-      
-        <li>
-          <p>Passwords are not remembered in 32-bit MAPI use without a compose window</p>
-          
-          
-        </li>
-      
-    </ul>
   
 
 <p>As always, you’re encouraged to <a href="https://connect.mozilla.org/t5/ideas/idb-p/ideas/label-name/thunderbird">tell us what you think</a>, <a href="https://support.mozilla.org/questions/new/thunderbird">ask for help</a>, or <a href="https://bugzilla.mozilla.org/enter_bug.cgi?product=Thunderbird">file a bug in Bugzilla</a></p>
