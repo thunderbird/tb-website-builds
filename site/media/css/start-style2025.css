@@ -388,9 +388,9 @@
 [data-channel="daily"] {
   --bg-gradient: linear-gradient(to top right, rgba(143, 18, 252, 0.14) 0%, rgba(143, 18, 252, 0) 33%, rgba(143, 18, 252, 0) 67%, rgba(143, 18, 252, 0.14) 100%),
     linear-gradient(to right,
-    rgba(32, 12, 252, 0.05) 0%,
-    rgba(32, 12, 252, 0) 30%,
-    rgba(32, 12, 252, 0.05) 100%
+      rgba(32, 12, 252, 0.05) 0%,
+      rgba(32, 12, 252, 0) 30%,
+      rgba(32, 12, 252, 0.05) 100%
     );
   --text-gradient: linear-gradient(90deg, var(--magenta-50) 0%, var(--purple-50) 50%, var(--purple-90) 100%);
   --button-bg: radial-gradient(ellipse at center, rgba(154, 42, 252, 0.25) 0%, transparent 70%);
@@ -398,9 +398,9 @@
 [data-channel="beta"] {
   --bg-gradient: linear-gradient(to top right, rgba(18, 131, 252, 0.14) 0%, rgba(18, 131, 252, 0) 33%, rgba(18, 131, 252, 0) 67%, rgba(18, 131, 252, 0.14) 100%),
     linear-gradient(to right,
-    rgba(12, 244, 252, 0.05) 0%,
-    rgba(12, 244, 252, 0) 30%,
-    rgba(12, 244, 252, 0.05) 100%
+      rgba(12, 244, 252, 0.05) 0%,
+      rgba(12, 244, 252, 0) 30%,
+      rgba(12, 244, 252, 0.05) 100%
     );
   --text-gradient: linear-gradient(90deg, var(--teal-50) 0%, var(--blue-50) 100%);
   --button-bg: radial-gradient(ellipse at center, rgba(42, 143, 252, 0.25) 0%, transparent 70%);
@@ -408,10 +408,11 @@
 [data-channel="release"],
 [data-channel="esr"] {
   --bg-gradient: linear-gradient(to top right, rgba(143, 18, 252, 0.14) 0%, rgba(143, 18, 252, 0) 33%, rgba(143, 18, 252, 0) 67%, rgba(143, 18, 252, 0.14) 100%),
-    linear-gradient(to right,
-    rgba(32, 12, 252, 0.05) 0%,
-    rgba(32, 12, 252, 0) 30%,
-    rgba(32, 12, 252, 0.05) 100%
+    linear-gradient(
+      to right,
+      rgba(32, 12, 252, 0.05) 0%,
+      rgba(32, 12, 252, 0) 30%,
+      rgba(32, 12, 252, 0.05) 100%
     );
   --text-gradient: linear-gradient(90deg, var(--blue-60) 0%, var(--purple-60) 100%);
   --button-bg: radial-gradient(ellipse at center, rgba(58, 42, 252, 0.25) 0%, transparent 70%);
@@ -454,7 +455,7 @@ body {
   padding: 0;
   background: var(--bg-gradient), var(--bg);
   color: var(--text);
-  line-height: 1.6;
+  line-height: 1.5;
   position: relative;
 }
 h1,
@@ -482,8 +483,8 @@ h3 {
 /* FREEDOM PAGE */
 #start-page {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  line-height: 1.5;
   min-height: 100vh;
+  padding-inline: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -514,7 +515,7 @@ h3 {
   position: absolute;
   top: 2rem;
   left: 1rem;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 600;
 }
 #start-page #release-channel:hover {
@@ -533,7 +534,7 @@ h3 {
   border: none;
   border-radius: 4px;
   padding: 0.55rem 1rem;
-  font-size: 1.05rem;
+  font-size: 1rem;
   font-weight: 600;
   display: flex;
   align-items: center;
@@ -545,7 +546,7 @@ h3 {
   opacity: 0.9;
 }
 #start-page h1 {
-  font-size: clamp(2.25rem, 5vw, 4rem);
+  font-size: clamp(2rem, 5vw, 3.8rem);
   font-weight: 800;
   line-height: 1;
 }
@@ -558,10 +559,11 @@ h3 {
 }
 #start-page .tagline {
   max-width: 40rem;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 600;
 }
 #start-page .btn-set {
+  font-size: 1rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -611,34 +613,32 @@ h3 {
   border: 1px solid var(--border);
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
-  margin: 1.5rem 1rem;
+  margin: 1.5rem 0;
   padding: 4rem 4rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 3rem 4rem;
 }
 #start-page .feature-box h3 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 800;
   margin-bottom: 0.25rem;
 }
 #start-page .feature-box .subhead {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 600;
   margin: 0 0 1rem;
-  padding-left: 0.25rem;
 }
 #start-page .feature-box p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.6;
-  padding-left: 0.25rem;
 }
 #start-page .feature-box ul {
   padding-left: 1.25rem;
 }
 #start-page footer {
-  margin-top: 1.5rem;
-  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
   text-align: center;
 }
 /* BREAKPOINTS */
