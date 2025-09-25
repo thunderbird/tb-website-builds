@@ -3276,6 +3276,7 @@ footer {
 .page-release-notes .note-bug-numbers p {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: left;
   gap: 1rem;
 }
