@@ -8,7 +8,7 @@
   <title>Thunderbird Release Notes</title>
   <subtitle type="text">Thunderbird Release Notes feed provides a simple way to keep up to date with Thunderbird releases.</subtitle>
 
-  <updated>2025-10-07T19:48:42+00:00</updated>
+  <updated>2025-10-07T21:02:19+00:00</updated>
   <logo>https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png</logo>
   <icon>https://www.thunderbird.net/media/img/thunderbird/favicon-196.png</icon>
 
@@ -16,6 +16,191 @@
   <link rel="self" type="application/atom+xml" href="https://www.thunderbird.net/thunderbird/releases/atom.xml"/>
 
   <generator uri="https://www.thunderbird.net" version="1.0">thunderbird-website</generator>
+  
+  <entry>
+    <id>https://www.thunderbird.net/en-US/thunderbird/140.4.0esr/releasenotes/</id>
+    <title type="html">Thunderbird 140.4.0esr</title>
+    <author>
+      <name>Thunderbird</name>
+      <uri>https://www.thunderbird.net</uri>
+    </author>
+    <link rel="alternate" type="text/html" href="https://www.thunderbird.net/en-US/thunderbird/140.4.0esr/releasenotes/"/>
+    <updated>2025-10-14T00:00:00+00:00</updated>
+    <published>2025-10-14T00:00:00+00:00</published>
+
+    <content type="html"><![CDATA[
+      
+
+  
+  
+
+  
+    
+
+    
+      
+        
+        
+
+        
+          <h3>Changed</h3>
+        
+
+        
+        
+          <ul>
+        
+
+        
+        
+
+        <li>
+          <p>Account Hub disabled by default for second email account</p>
+          
+        </li>
+      
+    
+      
+        
+        
+          </ul>
+        
+
+        
+          <h3>Fixed</h3>
+        
+
+        
+        
+          <ul>
+        
+
+        
+        
+
+        <li>
+          <p>Users could not read mail signed with OpenPGP v6 and PQC keys</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Image preview in Insert Image dialog failed with CSP error for web resources</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Emptying trash on exit did not work with some providers</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Thunderbird could crash when applying filters</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Users were unable to override expired mail server certificate</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Opening Website header link in RSS feed incorrectly re-encoded URL parameters</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p><a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird140.4">Security fixes</a></p>
+          
+        </li>
+      
+    
+    </ul>
+  
+  
+
+<p>As always, you’re encouraged to <a href="https://connect.mozilla.org/t5/ideas/idb-p/ideas/label-name/thunderbird">tell us what you think</a>, <a href="https://support.mozilla.org/questions/new/thunderbird">ask for help</a>, or <a href="https://bugzilla.mozilla.org/enter_bug.cgi?product=Thunderbird">file a bug in Bugzilla</a></p>
+<style> li p { display: inline; } </style>
+      ]]>
+    </content>
+  </entry>
   
   <entry>
     <id>https://www.thunderbird.net/en-US/thunderbird/144.0/releasenotes/</id>
@@ -2202,113 +2387,6 @@
 
         <li>
           <p><a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird142">Security fixes</a></p>
-          
-        </li>
-      
-    
-    </ul>
-  
-  
-
-<p>As always, you’re encouraged to <a href="https://connect.mozilla.org/t5/ideas/idb-p/ideas/label-name/thunderbird">tell us what you think</a>, <a href="https://support.mozilla.org/questions/new/thunderbird">ask for help</a>, or <a href="https://bugzilla.mozilla.org/enter_bug.cgi?product=Thunderbird">file a bug in Bugzilla</a></p>
-<style> li p { display: inline; } </style>
-      ]]>
-    </content>
-  </entry>
-  
-  <entry>
-    <id>https://www.thunderbird.net/en-US/thunderbird/140.1.1esr/releasenotes/</id>
-    <title type="html">Thunderbird 140.1.1esr</title>
-    <author>
-      <name>Thunderbird</name>
-      <uri>https://www.thunderbird.net</uri>
-    </author>
-    <link rel="alternate" type="text/html" href="https://www.thunderbird.net/en-US/thunderbird/140.1.1esr/releasenotes/"/>
-    <updated>2025-08-05T00:00:00+00:00</updated>
-    <published>2025-08-05T00:00:00+00:00</published>
-
-    <content type="html"><![CDATA[
-      
-
-  
-  
-
-  
-    
-
-    
-      
-        
-        
-
-        
-          <h3>Fixed</h3>
-        
-
-        
-        
-          <ul>
-        
-
-        
-        
-
-        <li>
-          <p>Users with attachments open in tabs saw an error on Thunderbird restart</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Sending from unified or local folder failed if no default account was set</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Delete button could remove attachment instead of message</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Message list scrolled back when returning to mail tab after opening a message</p>
           
         </li>
       
