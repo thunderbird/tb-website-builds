@@ -8,7 +8,7 @@
   <title>Thunderbird Release Notes</title>
   <subtitle type="text">Thunderbird Release Notes feed provides a simple way to keep up to date with Thunderbird releases.</subtitle>
 
-  <updated>2025-10-08T20:25:16+00:00</updated>
+  <updated>2025-10-10T12:59:32+00:00</updated>
   <logo>https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png</logo>
   <icon>https://www.thunderbird.net/media/img/thunderbird/favicon-196.png</icon>
 
@@ -55,7 +55,25 @@
         
 
         <li>
-          <p>Account Hub disabled by default for second email account</p>
+          <p>Account Hub is now disabled by default for second email account</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Flatpak runtime has been updated to Freedesktop SDK 24.08</p>
           
         </li>
       
@@ -225,6 +243,30 @@
     
       
         
+        
+
+        
+          <h3>Changed</h3>
+        
+
+        
+        
+          <ul>
+        
+
+        
+        
+
+        <li>
+          <p>Flatpak runtime has been updated to Freedesktop SDK 24.08</p>
+          
+        </li>
+      
+    
+      
+        
+        
+          </ul>
         
 
         
