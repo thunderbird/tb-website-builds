@@ -100,7 +100,7 @@
         </div>
       </div>
     </header>
-    <header id="masthead">
+    <header id="masthead" class="primary-block">
       
   <h1>Elevate Thunderbird, <span class="txt-gradient">Do More</span></h1>
   <p>Add powerful cloud capabilities to Thunderbird and fund development of the always free and open source apps you love by subscribing to Pro.</p>
@@ -115,7 +115,7 @@
 
     </header>
 
-    <section id="features">
+    <section id="features" class="primary-block">
       
 <div class="feature-card feature-card-1">
   <div class="card-info">
@@ -169,7 +169,7 @@
     </section>
   </div>
 
-  <section id="reasons">
+  <section id="reasons" class="primary-block">
     
 <header>Made for You</header>
 <div class="reason">
@@ -192,13 +192,201 @@
 </div>
 
   </section>
+  <div class="testimonials-background">
+    <section id="testimonials">
+      
+<header>What people are saying</header>
+<div class="testimonials-slider">
+  <div class="testimonials-track">
 
-  <section id="quotes">
-    <!-- implementation tbd -->
-  </section>
+    <div class="testimonial">
+  <span class="quote-mark"></span>
+  <div class="testimonial-content">
+    <p class="testimonial-text">
+      Even in beta, this new appointment service is easy to use and worth a look if your small business could benefit from online scheduling.
+    </p>
+    <div class="testimonial-attribution">
+      <img class="attribution-avatar" src="" alt="Fred Krueger">
+      <h4 class="attribution-name">Fred Krueger</h4>
+      <span class="attribution-role">Contributing Writer, Website</span>
+    </div>
+  </div>
+</div>
+
+
+    <div class="testimonial">
+  <span class="quote-mark"></span>
+  <div class="testimonial-content">
+    <p class="testimonial-text">
+      Donec pretium posuere tellus. Proin quam nisl, tincidunt et, mattis eget, convallis nec, purus.
+    </p>
+    <div class="testimonial-attribution">
+      <img class="attribution-avatar" src="" alt="Jay Voorhees">
+      <h4 class="attribution-name">Jay Voorhees</h4>
+      <span class="attribution-role">Contributing Writer, Website</span>
+    </div>
+  </div>
+</div>
+
+
+    <div class="testimonial">
+  <span class="quote-mark"></span>
+  <div class="testimonial-content">
+    <p class="testimonial-text">
+      Nulla posuere. Donec vitae dolor. Nullam tristique diam non turpis. Cras placerat accumsan nulla.
+    </p>
+    <div class="testimonial-attribution">
+      <img class="attribution-avatar" src="" alt="Roy Burns">
+      <h4 class="attribution-name">Roy Burns</h4>
+      <span class="attribution-role">Contributing Writer, Website</span>
+    </div>
+  </div>
+</div>
+
+
+    <div class="testimonial">
+  <span class="quote-mark"></span>
+  <div class="testimonial-content">
+    <p class="testimonial-text">
+      Nullam rutrum. Nam vestibulum accumsan nisl. Donec hendrerit tempor tellus.
+    </p>
+    <div class="testimonial-attribution">
+      <img class="attribution-avatar" src="" alt="Pamela Voorhees">
+      <h4 class="attribution-name">Pamela Voorhees</h4>
+      <span class="attribution-role">Contributing Writer, Website</span>
+    </div>
+  </div>
+</div>
+
+
+    <div class="testimonial">
+  <span class="quote-mark"></span>
+  <div class="testimonial-content">
+    <p class="testimonial-text">
+      Fusce suscipit, wisi nec facilisis facilisis, est dui fermentum leo, quis tempor ligula erat quis odio.
+    </p>
+    <div class="testimonial-attribution">
+      <img class="attribution-avatar" src="" alt="Lil Jay Voorhees">
+      <h4 class="attribution-name">Lil Jay Voorhees</h4>
+      <span class="attribution-role">Contributing Writer, Website</span>
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</div>
+
+<div class="testimonials-progress"></div>
+<script>
+  (function () {
+    const SLIDE_INTERVAL_MS = 8000;
+    const track = document.querySelector('.testimonials-track');
+    const testimonials = document.querySelectorAll('.testimonial');
+    const progressContainer = document.querySelector('.testimonials-progress');
+
+    let currentIndex = 0;
+
+    // Sets slider state based on the value of currentIndex.
+    function updateSlider() {
+      const testimonial = testimonials[currentIndex];
+      const sliderWidth = document.querySelector('.testimonials-slider').offsetWidth;
+      const testimonialWidth = testimonial.offsetWidth;
+
+      const gap = parseInt(getComputedStyle(track).gap) || 0;
+
+      const centerOffset = (sliderWidth - testimonialWidth) / 2;
+      const testimonialOffset = currentIndex * (testimonialWidth + gap);
+      const offset = centerOffset - testimonialOffset;
+
+      track.style.transform = `translateX(${offset}px)`;
+
+      // Enable .active class only for current testimonial.
+      testimonials.forEach((testimonial, index) => {
+        testimonial.classList.toggle('active', index === currentIndex);
+      });
+
+      // Update dots
+      const dots = document.querySelectorAll('.progress-dot');
+      dots.forEach((dot, index) => {
+        dot.classList.toggle('active', index === currentIndex);
+      });
+    }
+
+    function nextTestimonial() {
+      currentIndex = (currentIndex + 1) % testimonials.length;
+      updateSlider();
+    }
+
+    function prevTestimonial() {
+      currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
+      updateSlider();
+    }
+
+    // Allow the user to click a testimonial to make it active.
+    // Resets the timeout until the next auto-advance.
+    let timeout;
+
+    // Initialize click handler on each testimonial.
+    testimonials.forEach((testimonial, index) => {
+      testimonial.addEventListener('click', () => {
+        currentIndex = index;
+        updateSlider();
+
+        clearTimeout(timeout);
+        startAutoAdvance();
+      })
+    });
+
+
+    function createDots() {
+      progressContainer.innerHTML = '';
+      testimonials.forEach((_, index) => {
+        const dot = document.createElement('button');
+        dot.classList.add('progress-dot');
+        dot.setAttribute('aria-label', `Go to testimonial ${index + 1}`);
+
+        if (index === 0) {
+          dot.classList.add('active');
+        }
+
+        dot.addEventListener('click', () => {
+          currentIndex = index;
+          updateSlider();
+
+          clearTimeout(timeout);
+          startAutoAdvance();
+        });
+        progressContainer.appendChild(dot);
+      });
+    }
+
+    function startAutoAdvance() {
+      timeout = setTimeout(() => {
+        nextTestimonial();
+        startAutoAdvance(); // Recursively continue advancing
+      }, SLIDE_INTERVAL_MS);
+    }
+
+    // Initialize
+    updateSlider();
+    createDots();
+    startAutoAdvance();
+    console.log('hey you man');
+
+    // Recalculate on resize
+    window.addEventListener('resize', updateSlider);
+  })()
+
+</script>
+
+
+
+    </section>
+  </div>
 
   <div class="lower-gradient">
-    <section id="details">
+    <section id="details" class="primary-block">
       
 <div class="subscription-header">
   <header>
@@ -208,6 +396,7 @@
     Get Thundermail, Appointment, and Send in one simple subscription. You'll love the confidence, ease, and security these services add to Thunderbird. Thank you for supporting freedom.
   </p>
 </div>
+
 <div class="subscription-info">
   <div class="subscription-callout">
     <h3>Standard</h3>
@@ -239,9 +428,10 @@
   </ul>
 </div>
 
+
     </section>
 
-    <section id="faq">
+    <section id="faq" class="primary-block">
       
 <header>Frequently Asked Questions</header>
 <div class="faq-item-list">
