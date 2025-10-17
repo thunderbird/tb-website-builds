@@ -654,7 +654,7 @@ footer#tb-footer #tb-legal a {
   margin-inline: auto;
 }
 header#masthead {
-  --hero-img: url('/media/img/thunderbird/tbpro/orb-graphic-hi-res.png');
+  --hero-img: url('/media/img/thunderbird/tbpro/orb-graphic-high-res.png');
   --button-text-color: #1A202C;
   --color-left-blue: #b4e7ff;
   --color-right-blue: rgba(180, 231, 255, 0.9);
@@ -714,9 +714,10 @@ header#masthead p {
 header#masthead .txt-gradient {
   color: transparent;
   -webkit-background-clip: text;
+  background: linear-gradient(105deg, #58c9ff 45%, #ddb4fe 62%);
   background-clip: text;
-  background-image: linear-gradient(to right, var(--color-left-blue), var(--color-mid-left-purple));
   display: block;
+  width: fit-content;
 }
 header#masthead .cta-button {
   margin-top: 0.75rem;
@@ -767,13 +768,20 @@ section#features {
   }
 }
 section#features .feature-card {
-  border-radius: 1.5rem;
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
   box-shadow: inset 0 0 74px 0 rgba(0, 0, 0, 0.05);
-  padding: 1.5rem;
+  border: solid 1px rgba(255, 255, 255, 0.05);
+  border-radius: 1.5rem;
+  min-width: 0;
   color: var(--color-text-base);
   display: flex;
   flex-direction: column;
-  gap: 1.125rem;
+}
+@media (min-width: 80rem) {
+  section#features .feature-card {
+    gap: 0.875rem;
+  }
 }
 section#features .feature-card + .feature-card {
   margin-top: 16px;
@@ -785,7 +793,7 @@ section#features .feature-card + .feature-card {
 }
 section#features .feature-card .card-info .card-header {
   display: flex;
-  gap: 16px;
+  gap: 0.9375rem;
 }
 section#features .feature-card .card-info .card-header .app-icon {
   flex: 0 0 auto;
@@ -795,7 +803,6 @@ section#features .feature-card .card-info .card-header .app-icon {
   aspect-ratio: 1 / 1;
   height: 48px;
   width: 48px;
-  border: 1px solid red;
 }
 section#features .feature-card .card-info .card-header .app-header {
   flex: 1;
@@ -813,11 +820,29 @@ section#features .feature-card .card-info .card-header .app-header .app-name {
   font-size: 0.75rem;
 }
 section#features .feature-card .card-info .card-header .app-header .app-tagline {
-  font-size: 1.5rem;
+  font-family: Metropolis;
+  font-size: 1.25rem;
+}
+section#features .feature-card .card-info .card-body {
+  font-size: 0.875rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.23;
+  letter-spacing: normal;
+  text-align: left;
 }
 section#features .feature-card .card-image {
-  min-height: 100px;
-  outline: 1px solid blue;
+  background-size: 100% auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+@media (min-width: 80rem) {
+  section#features .feature-card .card-image {
+    aspect-ratio: 21/9;
+  }
 }
 @media (min-width: 80rem) {
   section#features .feature-card:not(:first-child) {
@@ -827,16 +852,47 @@ section#features .feature-card .card-image {
   }
 }
 section#features .feature-card-1 {
-  background-image: linear-gradient(337deg, #0f1623 85%, #06090e, #1373d9);
-  backdrop-filter: blur(24px);
+  background-image: linear-gradient(349deg, #0f1623 0%, #0a0f19 40%, #06090e 85%, #0a3a6d 100%);
+  background-clip: padding-box;
+  justify-content: space-between;
+  padding: 32px 17.4px 16.1px 19px;
+}
+section#features .feature-card-1 .card-image {
+  background-image: url('/media/img/thunderbird/tbpro/xs-thundermail-hero-high-res.png');
+}
+@media (min-width: 80rem) {
+  section#features .feature-card-1 .card-image {
+    outline: 1px dashed red;
+    background-image: url('/media/img/thunderbird/tbpro/xl-thundermail-hero-high-res.png');
+  }
 }
 section#features .feature-card-2 {
-  background-image: linear-gradient(337deg, #0f1623 85%, #06090e, #008080);
-  backdrop-filter: blur(24px);
+  background-image: linear-gradient(349deg, #0f1623 0%, #0a0f19 40%, #06090e 85%, #003e3e 100%);
+  background-clip: padding-box;
+  padding: 32px 1px 4px 32px;
+}
+section#features .feature-card-2 .card-image {
+  background-image: url('/media/img/thunderbird/tbpro/xs-appointment-hero-high-res.png');
+}
+@media (min-width: 80rem) {
+  section#features .feature-card-2 .card-image {
+    aspect-ratio: unset;
+    background-image: url('/media/img/thunderbird/tbpro/xl-appointment-hero-high-res.png');
+  }
 }
 section#features .feature-card-3 {
-  background-image: linear-gradient(337deg, #0f1623 85%, #06090e, #fec18a);
-  backdrop-filter: blur(24px);
+  background-image: linear-gradient(349deg, #0f1623 0%, #0a0f19 40%, #06090e 85%, #f5a760 120%);
+  background-clip: padding-box;
+  padding: 32px 1px 16px 32px;
+}
+section#features .feature-card-3 .card-image {
+  background-image: url('/media/img/thunderbird/tbpro/xs-send-hero-high-res.png');
+}
+@media (min-width: 80rem) {
+  section#features .feature-card-3 .card-image {
+    aspect-ratio: unset;
+    background-image: url('/media/img/thunderbird/tbpro/xl-send-hero-high-res.png');
+  }
 }
 section#reasons {
   background: #fff;
@@ -931,11 +987,22 @@ section#faq .faq-item .faq-question {
 section#faq .faq-item .faq-question::after {
   content: "+";
   flex-shrink: 0;
-  display: grid;
-  place-items: center;
-  inline-size: 2rem;
-  block-size: 1rem;
-  outline: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 0 0.3125rem;
+  margin: 0;
+  font-size: 1.5rem;
+  inline-size: 1.5rem;
+  block-size: 1.5rem;
+  color: #58c9ff;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  transform-origin: center;
+}
+section#faq .faq-item[open] .faq-question::after {
+  transform: rotate(90deg);
 }
 section#faq .faq-item[open] summary ~ * {
   animation: sweep 0.5s ease-in-out;
@@ -1029,8 +1096,11 @@ section#details .subscription-info .subscription-callout {
 }
 section#details .subscription-info .subscription-callout h3 {
   color: transparent;
-  background: linear-gradient(105deg, #58c9ff 45%, #ddb4fe 62%);
+  -webkit-background-clip: text;
+  background: linear-gradient(105deg, #58c9ff 45%, #ddb4fe);
   background-clip: text;
+  width: fit-content;
+  display: inline-block;
 }
 section#details .subscription-info .subscription-callout h4 {
   font-size: 0.75rem;
