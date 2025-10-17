@@ -526,9 +526,10 @@ footer#tb-footer #tb-legal a {
   box-shadow: 0 0.5625rem 1.5rem 0 rgba(0, 0, 0, 0.1);
   padding-block: 0.375rem;
   padding-inline: 1.125rem 16px;
+  min-height: 3rem;
   border: 1px solid transparent;
-  border-radius: 1.5rem;
-  background: linear-gradient(var(--nav-bg-color), var(--nav-bg-color)) padding-box, linear-gradient(to bottom, #feffff, #58c9ff) border-box;
+  border-radius: 1rem;
+  background: linear-gradient(to bottom, #262d3c 0%, #232a37 25%, #202633 50%, #1c222e 75%, #181d26 100%) padding-box, linear-gradient(to bottom, #313845, #1c2633) border-box;
 }
 @media (min-width: 80rem) {
   #site-header #site-header-nav {
@@ -546,7 +547,7 @@ footer#tb-footer #tb-legal a {
   display: grid;
   grid-template-rows: 0fr;
   transition: grid-template-rows 0.1s ease-out;
-  background: var(--nav-bg-color);
+  background: linear-gradient(to top, #262d3c 0%, #232a37 25%, #202633 50%, #1c222e 75%, #181d26 100%);
   position: absolute;
   top: 2.75rem;
   right: 1.125rem;
@@ -554,6 +555,7 @@ footer#tb-footer #tb-legal a {
 }
 @media (min-width: 80rem) {
   #site-header #site-header-nav #nav-menu {
+    background: unset;
     display: grid;
     grid-template-columns: subgrid;
     grid-template-rows: subgrid;
@@ -608,7 +610,7 @@ footer#tb-footer #tb-legal a {
   width: 2rem;
   padding: 0;
   margin: 0;
-  background-color: var(--nav-bg-color);
+  background-color: transparent;
   border: 0;
 }
 @media (min-width: 80rem) {
@@ -641,7 +643,18 @@ footer#tb-footer #tb-legal a {
   }
 }
 .top-gradient {
-  background-image: linear-gradient(355deg, #1A202C 123%, #262d3b -202%);
+  background-color: #18181b;
+  background-image: url('/media/img/thunderbird/tbpro/top-gradient-background.png');
+  background-image: -webkit-image-set(url('/media/img/thunderbird/tbpro/top-gradient-background.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/top-gradient-background.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/top-gradient-background.png'));
+  background-image: image-set(url('/media/img/thunderbird/tbpro/top-gradient-background.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/top-gradient-background.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/top-gradient-background.png'));
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (min-width: 80rem) {
+  .top-gradient {
+    background-size: unset;
+  }
 }
 .lower-gradient {
   background-image: linear-gradient(355deg, #1A202C 123%, #262d3b -202%);
@@ -654,7 +667,6 @@ footer#tb-footer #tb-legal a {
   margin-inline: auto;
 }
 header#masthead {
-  --hero-img: url('/media/img/thunderbird/tbpro/orb-graphic-high-res.png');
   --button-text-color: #1A202C;
   --color-left-blue: #b4e7ff;
   --color-right-blue: rgba(180, 231, 255, 0.9);
@@ -671,7 +683,9 @@ header#masthead {
 header#masthead .hero-image {
   margin: 0 auto;
   max-width: 100vw;
-  background-image: var(--hero-img);
+  background-image: url('/media/img/thunderbird/tbpro/orb-graphic.png');
+  background-image: -webkit-image-set(url('/media/img/thunderbird/tbpro/orb-graphic.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/orb-graphic.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/orb-graphic.png'));
+  background-image: image-set(url('/media/img/thunderbird/tbpro/orb-graphic.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/orb-graphic.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/orb-graphic.png'));
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -685,6 +699,9 @@ header#masthead .hero-image {
     max-width: unset;
     margin: 0;
     margin-top: 2rem;
+    background-image: url('/media/img/thunderbird/tbpro/orb-graphic-high-res.png');
+    background-image: -webkit-image-set(url('/media/img/thunderbird/tbpro/orb-graphic-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/orb-graphic-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/orb-graphic-high-res.png'));
+    background-image: image-set(url('/media/img/thunderbird/tbpro/orb-graphic-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/orb-graphic-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/orb-graphic-high-res.png'));
   }
 }
 header#masthead h1 {
@@ -859,11 +876,15 @@ section#features .feature-card-1 {
 }
 section#features .feature-card-1 .card-image {
   background-image: url('/media/img/thunderbird/tbpro/xs-thundermail-hero-high-res.png');
+  background-image: -webkit-image-set(url('/media/img/thunderbird/tbpro/xs-thundermail-hero-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xs-thundermail-hero-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xs-thundermail-hero-high-res.png'));
+  background-image: image-set(url('/media/img/thunderbird/tbpro/xs-thundermail-hero-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xs-thundermail-hero-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xs-thundermail-hero-high-res.png'));
 }
 @media (min-width: 80rem) {
   section#features .feature-card-1 .card-image {
     outline: 1px dashed red;
     background-image: url('/media/img/thunderbird/tbpro/xl-thundermail-hero-high-res.png');
+    background-image: -webkit-image-set(url('/media/img/thunderbird/tbpro/xl-thundermail-hero-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xl-thundermail-hero-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xl-thundermail-hero-high-res.png'));
+    background-image: image-set(url('/media/img/thunderbird/tbpro/xl-thundermail-hero-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xl-thundermail-hero-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xl-thundermail-hero-high-res.png'));
   }
 }
 section#features .feature-card-2 {
@@ -873,11 +894,15 @@ section#features .feature-card-2 {
 }
 section#features .feature-card-2 .card-image {
   background-image: url('/media/img/thunderbird/tbpro/xs-appointment-hero-high-res.png');
+  background-image: -webkit-image-set(url('/media/img/thunderbird/tbpro/xs-appointment-hero-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xs-appointment-hero-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xs-appointment-hero-high-res.png'));
+  background-image: image-set(url('/media/img/thunderbird/tbpro/xs-appointment-hero-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xs-appointment-hero-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xs-appointment-hero-high-res.png'));
 }
 @media (min-width: 80rem) {
   section#features .feature-card-2 .card-image {
     aspect-ratio: unset;
     background-image: url('/media/img/thunderbird/tbpro/xl-appointment-hero-high-res.png');
+    background-image: -webkit-image-set(url('/media/img/thunderbird/tbpro/xl-appointment-hero-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xl-appointment-hero-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xl-appointment-hero-high-res.png'));
+    background-image: image-set(url('/media/img/thunderbird/tbpro/xl-appointment-hero-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xl-appointment-hero-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xl-appointment-hero-high-res.png'));
   }
 }
 section#features .feature-card-3 {
@@ -887,11 +912,15 @@ section#features .feature-card-3 {
 }
 section#features .feature-card-3 .card-image {
   background-image: url('/media/img/thunderbird/tbpro/xs-send-hero-high-res.png');
+  background-image: -webkit-image-set(url('/media/img/thunderbird/tbpro/xs-send-hero-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xs-send-hero-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xs-send-hero-high-res.png'));
+  background-image: image-set(url('/media/img/thunderbird/tbpro/xs-send-hero-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xs-send-hero-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xs-send-hero-high-res.png'));
 }
 @media (min-width: 80rem) {
   section#features .feature-card-3 .card-image {
     aspect-ratio: unset;
     background-image: url('/media/img/thunderbird/tbpro/xl-send-hero-high-res.png');
+    background-image: -webkit-image-set(url('/media/img/thunderbird/tbpro/xl-send-hero-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xl-send-hero-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xl-send-hero-high-res.png'));
+    background-image: image-set(url('/media/img/thunderbird/tbpro/xl-send-hero-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xl-send-hero-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xl-send-hero-high-res.png'));
   }
 }
 section#reasons {
