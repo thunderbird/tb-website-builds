@@ -651,11 +651,6 @@ footer#tb-footer #tb-legal a {
   background-repeat: no-repeat;
   background-size: cover;
 }
-@media (min-width: 80rem) {
-  .top-gradient {
-    background-size: unset;
-  }
-}
 .lower-gradient {
   background-image: linear-gradient(355deg, #1A202C 123%, #262d3b -202%);
 }
@@ -879,9 +874,14 @@ section#features .feature-card-1 .card-image {
   background-image: -webkit-image-set(url('/media/img/thunderbird/tbpro/xs-thundermail-hero-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xs-thundermail-hero-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xs-thundermail-hero-high-res.png'));
   background-image: image-set(url('/media/img/thunderbird/tbpro/xs-thundermail-hero-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xs-thundermail-hero-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xs-thundermail-hero-high-res.png'));
 }
+@media (min-width: 56.25rem) {
+  section#features .feature-card-1 .card-image {
+    height: 100%;
+    width: 100%;
+  }
+}
 @media (min-width: 80rem) {
   section#features .feature-card-1 .card-image {
-    outline: 1px dashed red;
     background-image: url('/media/img/thunderbird/tbpro/xl-thundermail-hero-high-res.png');
     background-image: -webkit-image-set(url('/media/img/thunderbird/tbpro/xl-thundermail-hero-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xl-thundermail-hero-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xl-thundermail-hero-high-res.png'));
     background-image: image-set(url('/media/img/thunderbird/tbpro/xl-thundermail-hero-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xl-thundermail-hero-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xl-thundermail-hero-high-res.png'));
