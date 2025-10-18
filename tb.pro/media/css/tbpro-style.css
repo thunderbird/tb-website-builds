@@ -814,7 +814,7 @@ section#features .feature-card {
   border: solid 1px rgba(255, 255, 255, 0.05);
   border-radius: 1.5rem;
   min-width: 0;
-  color: var(--color-text-base);
+  color: #eeeef0;
   display: flex;
   flex-direction: column;
 }
@@ -855,7 +855,7 @@ section#features .feature-card .card-info .card-header .app-header > * {
   margin: 0;
 }
 section#features .feature-card .card-info .card-header .app-header .app-name {
-  color: var(--color-text-highlight);
+  color: #58c9ff;
   text-transform: uppercase;
   font-family: 'Metropolis', sans-serif;
   font-size: 0.75rem;
@@ -1583,6 +1583,5 @@ section#testimonials .testimonials-progress .progress-dot:hover {
 }
 section#testimonials .testimonials-progress .progress-dot.active {
   width: var(--active-dot-size);
-  background: linear-gradient(90deg, var(--color-primary-default), #667eea);
   background-image: linear-gradient(to left, #58c9ff, #6b21a8);
 }
