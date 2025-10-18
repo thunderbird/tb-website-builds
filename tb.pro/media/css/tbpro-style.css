@@ -334,6 +334,806 @@
   --color-pink: #fbd3f6;
   --color-ink: #c3cade;
 }
+:root {
+  --height: 2.75rem;
+  --height-small: 2.25rem;
+  --radius: 0.5rem;
+  --border-width: 1px;
+  --button-text-color: #1A202C;
+  --font-color: var(--text-icon-base);
+  --font-size: 0.875rem;
+  --critical-default: #991B1B;
+  --critical-hover: #7F1D1D;
+  --critical-pressed: #450A0A;
+  --primary-hover: #175FB6;
+  --primary-pressed: #19518F;
+  --surface-border: #E4E4E7;
+  --surface-base: #FEFFFF;
+  --surface-lower: #F7F7F7;
+  --surface-deep: #E4E4E7;
+  --text-icon-muted: #737584;
+}
+.button-primary-filled-label {
+  background: linear-gradient(180deg, var(--accents-blue, #37ADF9) -15.91%, var(--primary-default, #1373D9) 20.02%, var(--primary-hover, #175FB6) 100%);
+  color: var(--font-color);
+}
+.button-primary-filled-label:hover {
+  background: var(--primary-hover);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+}
+.button-primary-filled-label:active {
+  background: var(--primary-pressed);
+}
+.button-primary-filled-label:disabled {
+  background: var(--surface-deep);
+  color: var(--text-icon-muted);
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.button-primary-filled-label:focus-visible {
+  outline: none;
+  position: relative;
+  border: 0;
+  background: var(--primary-hover, #175FB6);
+  color: inherit;
+}
+.button-primary-filled-label:focus-visible::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 0.625rem;
+  background: var(--primary-default, #1373D9);
+  box-sizing: border-box;
+  padding: 2px;
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: 1;
+}
+.button-primary-filled-label:focus-visible::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  /* Start where outer border ends */
+  border-radius: inherit;
+  background: white;
+  box-sizing: border-box;
+  padding: 2px;
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: 2;
+}
+.button-primary-outline-label {
+  position: relative;
+  border: 0;
+  background: transparent;
+  color: inherit;
+}
+.button-primary-outline-label::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  /* the gradient or color that will become the border ring */
+  background: linear-gradient(-13deg, #58C9FF, #175FB6);
+  /* ring thickness is controlled by padding on the pseudo-element */
+  box-sizing: border-box;
+  padding: var(--border-width);
+  /* punch out the center on the pseudo-element only */
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  /* Chrome/Safari/Edge */
+  mask-composite: exclude;
+  /* Firefox */
+  pointer-events: none;
+  /* clicks go to the button */
+}
+.button-primary-outline-label:hover {
+  position: relative;
+  border: 0;
+  background: transparent;
+  color: inherit;
+}
+.button-primary-outline-label:hover::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  /* the gradient or color that will become the border ring */
+  background: var(--primary-hover);
+  /* ring thickness is controlled by padding on the pseudo-element */
+  box-sizing: border-box;
+  padding: 0.125rem;
+  /* punch out the center on the pseudo-element only */
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  /* Chrome/Safari/Edge */
+  mask-composite: exclude;
+  /* Firefox */
+  pointer-events: none;
+  /* clicks go to the button */
+}
+.button-primary-outline-label:active {
+  position: relative;
+  border: 0;
+  background: rgba(88, 201, 255, 0.1);
+  color: inherit;
+}
+.button-primary-outline-label:active::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  /* the gradient or color that will become the border ring */
+  background: var(--primary-pressed);
+  /* ring thickness is controlled by padding on the pseudo-element */
+  box-sizing: border-box;
+  padding: 0.125rem;
+  /* punch out the center on the pseudo-element only */
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  /* Chrome/Safari/Edge */
+  mask-composite: exclude;
+  /* Firefox */
+  pointer-events: none;
+  /* clicks go to the button */
+}
+.button-primary-outline-label:disabled {
+  position: relative;
+  border: 0;
+  background: transparent;
+  color: inherit;
+}
+.button-primary-outline-label:disabled::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  /* the gradient or color that will become the border ring */
+  background: var(--surface-border);
+  /* ring thickness is controlled by padding on the pseudo-element */
+  box-sizing: border-box;
+  padding: var(--border-width);
+  /* punch out the center on the pseudo-element only */
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  /* Chrome/Safari/Edge */
+  mask-composite: exclude;
+  /* Firefox */
+  pointer-events: none;
+  /* clicks go to the button */
+}
+.button-primary-small-filled-label {
+  background: linear-gradient(180deg, var(--accents-blue, #37ADF9) -15.91%, var(--primary-default, #1373D9) 20.02%, var(--primary-hover, #175FB6) 100%);
+  color: var(--font-color);
+}
+.button-primary-small-filled-label:hover {
+  background: var(--primary-hover);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+}
+.button-primary-small-filled-label:active {
+  background: var(--primary-pressed);
+}
+.button-primary-small-filled-label:disabled {
+  background: var(--surface-deep);
+  color: var(--text-icon-muted);
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.button-primary-small-outline-label {
+  position: relative;
+  border: 0;
+  background: transparent;
+  color: inherit;
+}
+.button-primary-small-outline-label::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  /* the gradient or color that will become the border ring */
+  background: linear-gradient(-13deg, #58C9FF, #175FB6);
+  /* ring thickness is controlled by padding on the pseudo-element */
+  box-sizing: border-box;
+  padding: var(--border-width);
+  /* punch out the center on the pseudo-element only */
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  /* Chrome/Safari/Edge */
+  mask-composite: exclude;
+  /* Firefox */
+  pointer-events: none;
+  /* clicks go to the button */
+}
+.button-primary-small-outline-label:hover {
+  position: relative;
+  border: 0;
+  background: transparent;
+  color: inherit;
+}
+.button-primary-small-outline-label:hover::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  /* the gradient or color that will become the border ring */
+  background: var(--primary-hover);
+  /* ring thickness is controlled by padding on the pseudo-element */
+  box-sizing: border-box;
+  padding: 0.125rem;
+  /* punch out the center on the pseudo-element only */
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  /* Chrome/Safari/Edge */
+  mask-composite: exclude;
+  /* Firefox */
+  pointer-events: none;
+  /* clicks go to the button */
+}
+.button-primary-small-outline-label:active {
+  position: relative;
+  border: 0;
+  background: rgba(88, 201, 255, 0.1);
+  color: inherit;
+}
+.button-primary-small-outline-label:active::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  /* the gradient or color that will become the border ring */
+  background: var(--primary-pressed);
+  /* ring thickness is controlled by padding on the pseudo-element */
+  box-sizing: border-box;
+  padding: 0.125rem;
+  /* punch out the center on the pseudo-element only */
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  /* Chrome/Safari/Edge */
+  mask-composite: exclude;
+  /* Firefox */
+  pointer-events: none;
+  /* clicks go to the button */
+}
+.button-primary-small-outline-label:disabled {
+  position: relative;
+  border: 0;
+  background: transparent;
+  color: inherit;
+}
+.button-primary-small-outline-label:disabled::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  /* the gradient or color that will become the border ring */
+  background: var(--surface-border);
+  /* ring thickness is controlled by padding on the pseudo-element */
+  box-sizing: border-box;
+  padding: var(--border-width);
+  /* punch out the center on the pseudo-element only */
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  /* Chrome/Safari/Edge */
+  mask-composite: exclude;
+  /* Firefox */
+  pointer-events: none;
+  /* clicks go to the button */
+}
+.button-brand-filled-label-icon {
+  position: relative;
+  border: 0;
+  background: linear-gradient(329deg, #1373D9 -21.06%, #58C9FF 64%);
+  color: inherit;
+  color: var(--button-text-color);
+}
+.button-brand-filled-label-icon::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  /* the gradient or color that will become the border ring */
+  background: linear-gradient(-13deg, #A0E1FF, #2B8CDC);
+  /* ring thickness is controlled by padding on the pseudo-element */
+  box-sizing: border-box;
+  padding: var(--border-width);
+  /* punch out the center on the pseudo-element only */
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  /* Chrome/Safari/Edge */
+  mask-composite: exclude;
+  /* Firefox */
+  pointer-events: none;
+  /* clicks go to the button */
+}
+.button-brand-filled-label-icon:hover {
+  position: relative;
+  border: 0;
+  background: var(--primary-hover);
+  color: inherit;
+  color: var(--surface-base);
+}
+.button-brand-filled-label-icon:hover::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  /* the gradient or color that will become the border ring */
+  background: #A0E1FF;
+  /* ring thickness is controlled by padding on the pseudo-element */
+  box-sizing: border-box;
+  padding: var(--border-width);
+  /* punch out the center on the pseudo-element only */
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  /* Chrome/Safari/Edge */
+  mask-composite: exclude;
+  /* Firefox */
+  pointer-events: none;
+  /* clicks go to the button */
+}
+.button-brand-filled-label-icon:active {
+  position: relative;
+  border: 0;
+  background: var(--primary-pressed);
+  color: inherit;
+  color: var(--surface-base);
+}
+.button-brand-filled-label-icon:active::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  /* the gradient or color that will become the border ring */
+  background: #A0E1FF;
+  /* ring thickness is controlled by padding on the pseudo-element */
+  box-sizing: border-box;
+  padding: var(--border-width);
+  /* punch out the center on the pseudo-element only */
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  /* Chrome/Safari/Edge */
+  mask-composite: exclude;
+  /* Firefox */
+  pointer-events: none;
+  /* clicks go to the button */
+}
+.button-brand-filled-label-icon:focus-visible {
+  outline: none;
+  position: relative;
+  border: 0;
+  background: var(--primary-hover);
+  color: inherit;
+}
+.button-brand-filled-label-icon:focus-visible::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 0.625rem;
+  background: var(--primary-default, #1373D9);
+  box-sizing: border-box;
+  padding: 2px;
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: 1;
+}
+.button-brand-filled-label-icon:focus-visible::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  /* Start where outer border ends */
+  border-radius: inherit;
+  background: white;
+  box-sizing: border-box;
+  padding: 2px;
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: 2;
+}
+.button-brand-outline-label {
+  position: relative;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  color: #1A202C;
+  text-shadow: 0.5px 0.5px 0 rgba(255, 255, 255, 0.1);
+}
+.button-brand-outline-label::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  /* the gradient or color that will become the border ring */
+  background: linear-gradient(-13deg, #A0E1FF, #2B8CDC);
+  /* ring thickness is controlled by padding on the pseudo-element */
+  box-sizing: border-box;
+  padding: var(--border-width);
+  /* punch out the center on the pseudo-element only */
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  /* Chrome/Safari/Edge */
+  mask-composite: exclude;
+  /* Firefox */
+  pointer-events: none;
+  /* clicks go to the button */
+}
+.button-brand-outline-label:hover {
+  position: relative;
+  border: 0;
+  background: var(--surface-base);
+  color: inherit;
+  color: #1A202C;
+  text-shadow: 0.5px 0.5px 0 rgba(255, 255, 255, 0.1);
+}
+.button-brand-outline-label:hover::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  /* the gradient or color that will become the border ring */
+  background: linear-gradient(-13deg, #A0E1FF, #2B8CDC);
+  /* ring thickness is controlled by padding on the pseudo-element */
+  box-sizing: border-box;
+  padding: var(--border-width);
+  /* punch out the center on the pseudo-element only */
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  /* Chrome/Safari/Edge */
+  mask-composite: exclude;
+  /* Firefox */
+  pointer-events: none;
+  /* clicks go to the button */
+}
+.button-brand-outline-label:active {
+  color: #1A202C;
+  text-shadow: 0.5px 0.5px 0 rgba(255, 255, 255, 0.1);
+}
+.button-brand-outline-label:focus-visible {
+  outline: none;
+  position: relative;
+  border: 0;
+  background: var(--surface-base);
+  color: inherit;
+  color: #1A202C;
+  text-shadow: 0.5px 0.5px 0 rgba(255, 255, 255, 0.1);
+}
+.button-brand-outline-label:focus-visible::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: #1373D9;
+  box-sizing: border-box;
+  padding: 2px;
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: 1;
+}
+.button-brand-outline-label:focus-visible::after {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  /* Gap = outer border + space + inner border position */
+  border-radius: inherit;
+  background: linear-gradient(-13deg, #A0E1FF, #2B8CDC);
+  box-sizing: border-box;
+  padding: 2px;
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: 2;
+}
+.button-brand-small-outline-label {
+  position: relative;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  color: #1A202C;
+  text-shadow: 0.5px 0.5px 0 rgba(255, 255, 255, 0.1);
+}
+.button-brand-small-outline-label::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  /* the gradient or color that will become the border ring */
+  background: linear-gradient(-13deg, #A0E1FF, #2B8CDC);
+  /* ring thickness is controlled by padding on the pseudo-element */
+  box-sizing: border-box;
+  padding: var(--border-width);
+  /* punch out the center on the pseudo-element only */
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  /* Chrome/Safari/Edge */
+  mask-composite: exclude;
+  /* Firefox */
+  pointer-events: none;
+  /* clicks go to the button */
+}
+.button-brand-small-outline-label:hover {
+  position: relative;
+  border: 0;
+  background: var(--surface-base);
+  color: inherit;
+  color: #1A202C;
+  text-shadow: 0.5px 0.5px 0 rgba(255, 255, 255, 0.1);
+}
+.button-brand-small-outline-label:hover::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  /* the gradient or color that will become the border ring */
+  background: linear-gradient(-13deg, #A0E1FF, #2B8CDC);
+  /* ring thickness is controlled by padding on the pseudo-element */
+  box-sizing: border-box;
+  padding: var(--border-width);
+  /* punch out the center on the pseudo-element only */
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  /* Chrome/Safari/Edge */
+  mask-composite: exclude;
+  /* Firefox */
+  pointer-events: none;
+  /* clicks go to the button */
+}
+.button-brand-small-outline-label:active {
+  color: #1A202C;
+  text-shadow: 0.5px 0.5px 0 rgba(255, 255, 255, 0.1);
+}
+.button-brand-small-outline-label:focus-visible {
+  outline: none;
+  position: relative;
+  border: 0;
+  background: var(--surface-base);
+  color: inherit;
+  color: #1A202C;
+  text-shadow: 0.5px 0.5px 0 rgba(255, 255, 255, 0.1);
+}
+.button-brand-small-outline-label:focus-visible::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: #1373D9;
+  box-sizing: border-box;
+  padding: 2px;
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: 1;
+}
+.button-brand-small-outline-label:focus-visible::after {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  /* Gap = outer border + space + inner border position */
+  border-radius: inherit;
+  background: linear-gradient(-13deg, #A0E1FF, #2B8CDC);
+  box-sizing: border-box;
+  padding: 2px;
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: 2;
+}
+.button-destructive-filled-label {
+  background: var(--critical-default);
+  color: var(--font-color);
+}
+.button-destructive-filled-label:hover {
+  background: var(--critical-hover);
+  color: var(--font-color);
+}
+.button-destructive-filled-label:active {
+  background: var(--critical-pressed);
+  color: var(--font-color);
+}
+.button-destructive-filled-label:disabled {
+  background: var(--surface-deep);
+  color: var(--font-color);
+  color: var(--text-icon-muted);
+  text-shadow: 0.5px 0.5px 0 rgba(255, 255, 255, 0.1);
+}
+.button-destructive-outline-label {
+  position: relative;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  color: var(--critical-default);
+}
+.button-destructive-outline-label::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  /* the gradient or color that will become the border ring */
+  background: var(--critical-default);
+  /* ring thickness is controlled by padding on the pseudo-element */
+  box-sizing: border-box;
+  padding: var(--border-width);
+  /* punch out the center on the pseudo-element only */
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  /* Chrome/Safari/Edge */
+  mask-composite: exclude;
+  /* Firefox */
+  pointer-events: none;
+  /* clicks go to the button */
+}
+.button-destructive-outline-label:hover {
+  position: relative;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  color: var(--critical-hover);
+}
+.button-destructive-outline-label:hover::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  /* the gradient or color that will become the border ring */
+  background: var(--critical-hover);
+  /* ring thickness is controlled by padding on the pseudo-element */
+  box-sizing: border-box;
+  padding: var(--border-width);
+  /* punch out the center on the pseudo-element only */
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  /* Chrome/Safari/Edge */
+  mask-composite: exclude;
+  /* Firefox */
+  pointer-events: none;
+  /* clicks go to the button */
+}
+.button-destructive-outline-label:active {
+  position: relative;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  color: var(--critical-pressed);
+}
+.button-destructive-outline-label:active::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  /* the gradient or color that will become the border ring */
+  background: var(--critical-pressed);
+  /* ring thickness is controlled by padding on the pseudo-element */
+  box-sizing: border-box;
+  padding: var(--border-width);
+  /* punch out the center on the pseudo-element only */
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  /* Chrome/Safari/Edge */
+  mask-composite: exclude;
+  /* Firefox */
+  pointer-events: none;
+  /* clicks go to the button */
+}
+.button-destructive-outline-label:disabled {
+  position: relative;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  color: var(--text-icon-muted);
+  text-shadow: 0.5px 0.5px 0 rgba(255, 255, 255, 0.1);
+}
+.button-destructive-outline-label:disabled::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  /* the gradient or color that will become the border ring */
+  background: var(--surface-border);
+  /* ring thickness is controlled by padding on the pseudo-element */
+  box-sizing: border-box;
+  padding: var(--border-width);
+  /* punch out the center on the pseudo-element only */
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  /* Chrome/Safari/Edge */
+  mask-composite: exclude;
+  /* Firefox */
+  pointer-events: none;
+  /* clicks go to the button */
+}
+.button-destructive-small-filled-label {
+  background: var(--critical-default);
+  color: var(--font-color);
+}
+.button-destructive-small-filled-label:hover {
+  background: var(--critical-hover);
+  color: var(--font-color);
+}
+.button-destructive-small-filled-label:active {
+  background: var(--critical-pressed);
+  color: var(--font-color);
+}
+.button-destructive-small-filled-label:disabled {
+  background: var(--surface-deep);
+  color: var(--font-color);
+  color: var(--text-icon-muted);
+  text-shadow: 0.5px 0.5px 0 rgba(255, 255, 255, 0.1);
+}
+.button-default,
+.button-primary-filled-label,
+.button-primary-outline-label,
+.button-destructive-filled-label,
+.button-destructive-outline-label,
+.button-small,
+.button-brand-default,
+.button-primary-small-filled-label,
+.button-primary-small-outline-label,
+.button-brand-filled-label-icon,
+.button-brand-outline-label,
+.button-destructive-small-filled-label,
+.button-brand-small,
+.button-brand-small,
+.button-brand-small-outline-label,
+.button-brand-small-outline-label {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 1;
+  height: var(--height);
+  margin: 0;
+  padding: 1.125rem 1rem;
+  box-shadow: 0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.12);
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-size: var(--font-size);
+}
+.button-small,
+.button-primary-small-filled-label,
+.button-primary-small-outline-label,
+.button-destructive-small-filled-label,
+.button-brand-small,
+.button-brand-small-outline-label {
+  height: var(--height-small);
+  padding: 0.375rem 0.75rem;
+}
+.button-brand-default,
+.button-brand-filled-label-icon,
+.button-brand-outline-label,
+.button-brand-small,
+.button-brand-small-outline-label {
+  padding: 1rem 1.5rem;
+  font-size: 0.8125rem;
+  color: var(--text-icon-base, #1A202C);
+  text-shadow: 0.5px 0.5px 0 rgba(255, 255, 255, 0.1);
+  /* web/label/xsmall */
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.33px;
+  text-transform: uppercase;
+}
+.button-brand-small,
+.button-brand-small-outline-label {
+  font-size: 0.6875rem;
+  padding: 0.875rem 1rem;
+}
 *,
 *::before,
 *::after {
@@ -476,7 +1276,6 @@ footer#tb-footer #tb-legal a {
   justify-content: space-between;
   position: relative;
   box-shadow: 0 0.5625rem 1.5rem 0 rgba(0, 0, 0, 0.1);
-  padding-block: 0.375rem;
   padding-inline: 1.125rem 0.875rem;
   height: 3rem;
   border: 1px solid transparent;
@@ -546,7 +1345,7 @@ footer#tb-footer #tb-legal a {
   }
 }
 #site-header #site-header-nav #nav-menu li {
-  display: block;
+  display: flex;
   padding-inline: 16px;
   margin-block: 16px;
 }
@@ -562,6 +1361,11 @@ footer#tb-footer #tb-legal a {
 }
 #site-header #site-header-nav #nav-menu li a:visited {
   color: var(--text-icon-base);
+}
+@media (min-width: 80rem) {
+  #site-header #site-header-nav #nav-menu li a {
+    align-self: center;
+  }
 }
 #site-header #site-header-nav .hamburger-btn {
   cursor: pointer;
@@ -709,22 +1513,6 @@ header#masthead .txt-gradient {
 header#masthead .cta-button {
   margin-top: 0.75rem;
   margin-bottom: 1.125rem;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem 1.5rem;
-  color: var(--button-text-color);
-  text-shadow: 0.03125rem 0.03125rem 0 rgba(255, 255, 255, 0.1);
-  font-size: 0.8rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  letter-spacing: 0.03rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  background: linear-gradient(329deg, #1373D9 -21.06%, #58C9FF 64%) padding-box, linear-gradient(247deg, #2b8cdc 0%, rgba(0, 102, 255, 0) 10%, rgba(0, 102, 255, 0) 90%, #2b8cdc 100%) border-box;
-  border: 0.0625rem solid transparent;
-  border-radius: 1rem;
 }
 @media (min-width: 56.25rem) {
   header#masthead .cta-button {
