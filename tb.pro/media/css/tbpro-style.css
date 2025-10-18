@@ -284,108 +284,55 @@
   src: url("/media/fonts/Inter/Inter-italic.var.woff2?v=3.19") format("woff2");
 }
 :root {
-  --color-on-primary: #ffffff;
-  --color-on-secondary: #ffffff;
-  --color-surface-base: #feffff;
-  --color-surface-raised: #feffff;
-  --color-surface-lower: #f7f7f7;
-  --color-surface-subtle: #f7f7f7;
-  --color-surface-deep: #d9d9de;
-  --color-surface-border: #d9d9de;
-  --color-surface-border-intense: #91939f;
-  --color-primary-soft: #f0f8ff;
-  --color-primary-default: #1373d9;
-  --color-primary-hover: #175fb6;
-  --color-primary-pressed: #19518f;
-  --color-secondary-soft: #faf5ff;
-  --color-secondary-default: #6b21a8;
-  --color-secondary-hover: #571c87;
-  --color-secondary-pressed: #3a0764;
-  --color-success-soft: #f4f9f4;
-  --color-success-default: #1d783b;
-  --color-success-hover: #1c5f32;
-  --color-success-pressed: #194e2c;
-  --color-warning-soft: #fefae8;
-  --color-warning-default: #facc15;
-  --color-warning-hover: #eabd08;
-  --color-warning-pressed: #caa204;
-  --color-critical-soft: #fef2f2;
-  --color-critical-default: #991b1b;
-  --color-critical-hover: #7f1d1d;
-  --color-critical-pressed: #450a0a;
-  --color-text-base: #1a202c;
-  --color-text-secondary: #4c4d58;
-  --color-text-muted: #737584;
-  --color-text-highlight: #1373d9;
-  --color-text-warning: #713f12;
-  --color-text-critical: #dc2626;
-  --color-text-sucess: #1d783b;
-  --color-icon-base: #1a202c;
-  --color-icon-secondary: #4c4d58;
-  --color-icon-muted: #737584;
-  --color-icon-highlight: #1373d9;
-  --color-icon-warning: #713f12;
-  --color-icon-critical: #dc2626;
-  --color-icon-sucess: #1d783b;
-  --color-teal: #25a6a0;
+  --color-on-primary: #003549;
+  --color-on-secondary: #003352;
+  --color-surface-base: #1a202c;
+  --color-surface-raised: #262d3b;
+  --color-surface-lower: #18181b;
+  --color-surface-subtle: #262d3b;
+  --color-surface-deep: #3d4d67;
+  --color-surface-border: #3d4d67;
+  --color-surface-border-intense: #5e7799;
+  --color-primary-soft: #262c40;
+  --color-primary-default: #58c9ff;
+  --color-primary-hover: #32aeff;
+  --color-primary-pressed: #1b90f5;
+  --color-secondary-soft: #3a0764;
+  --color-secondary-default: #f5e8ff;
+  --color-secondary-hover: #ecd5ff;
+  --color-secondary-pressed: #ddb4fe;
+  --color-success-soft: #082b16;
+  --color-success-default: #defae7;
+  --color-success-hover: #c0f2cf;
+  --color-success-pressed: #81d4b5;
+  --color-warning-soft: #423606;
+  --color-warning-default: #fef2c3;
+  --color-warning-hover: #fee78a;
+  --color-warning-pressed: #fdd847;
+  --color-critical-soft: #7f1d1d;
+  --color-critical-default: #fca5a5;
+  --color-critical-hover: #f87171;
+  --color-critical-pressed: #ef4444;
+  --color-text-base: #eeeef0;
+  --color-text-secondary: #e4e4e7;
+  --color-text-muted: #7f94ac;
+  --color-text-highlight: #58c9ff;
+  --color-text-warning: #fee78a;
+  --color-text-critical: #ef4444;
+  --color-text-sucess: #55d37e;
+  --color-icon-base: #eeeef0;
+  --color-icon-secondary: #e4e4e7;
+  --color-icon-muted: #7f94ac;
+  --color-icon-highlight: #58c9ff;
+  --color-icon-warning: #fee78a;
+  --color-icon-critical: #ef4444;
+  --color-icon-sucess: #55d37e;
+  --color-teal: #a3ece3;
   --color-blue: #58c9ff;
-  --color-purple: #ae55f7;
-  --color-orange: #ea7308;
-  --color-pink: #e247c4;
-  --color-ink: #6e6f9b;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-on-primary: #003549;
-    --color-on-secondary: #003352;
-    --color-surface-base: #1a202c;
-    --color-surface-raised: #262d3b;
-    --color-surface-lower: #18181b;
-    --color-surface-subtle: #262d3b;
-    --color-surface-deep: #3d4d67;
-    --color-surface-border: #3d4d67;
-    --color-surface-border-intense: #5e7799;
-    --color-primary-soft: #262c40;
-    --color-primary-default: #58c9ff;
-    --color-primary-hover: #32aeff;
-    --color-primary-pressed: #1b90f5;
-    --color-secondary-soft: #3a0764;
-    --color-secondary-default: #f5e8ff;
-    --color-secondary-hover: #ecd5ff;
-    --color-secondary-pressed: #ddb4fe;
-    --color-success-soft: #082b16;
-    --color-success-default: #defae7;
-    --color-success-hover: #c0f2cf;
-    --color-success-pressed: #81d4b5;
-    --color-warning-soft: #423606;
-    --color-warning-default: #fef2c3;
-    --color-warning-hover: #fee78a;
-    --color-warning-pressed: #fdd847;
-    --color-critical-soft: #7f1d1d;
-    --color-critical-default: #fca5a5;
-    --color-critical-hover: #f87171;
-    --color-critical-pressed: #ef4444;
-    --color-text-base: #eeeef0;
-    --color-text-secondary: #e4e4e7;
-    --color-text-muted: #7f94ac;
-    --color-text-highlight: #58c9ff;
-    --color-text-warning: #fee78a;
-    --color-text-critical: #ef4444;
-    --color-text-sucess: #55d37e;
-    --color-icon-base: #eeeef0;
-    --color-icon-secondary: #e4e4e7;
-    --color-icon-muted: #7f94ac;
-    --color-icon-highlight: #58c9ff;
-    --color-icon-warning: #fee78a;
-    --color-icon-critical: #ef4444;
-    --color-icon-sucess: #55d37e;
-    --color-teal: #a3ece3;
-    --color-blue: #58c9ff;
-    --color-purple: #8022ce;
-    --color-orange: #fec18a;
-    --color-pink: #fbd3f6;
-    --color-ink: #c3cade;
-  }
+  --color-purple: #8022ce;
+  --color-orange: #fec18a;
+  --color-pink: #fbd3f6;
+  --color-ink: #c3cade;
 }
 *,
 *::before,
@@ -1011,19 +958,61 @@ section#reasons > header {
     letter-spacing: -0.5px;
   }
 }
+@media (min-width: 80rem) {
+  section#reasons > header {
+    grid-column: 1 / -1;
+  }
+}
+@media (min-width: 80rem) {
+  section#reasons {
+    grid-template-columns: auto auto 58%;
+    column-gap: 1.125rem;
+    row-gap: 2rem;
+  }
+}
+@media (min-width: 1536px) {
+  section#reasons {
+    padding-inline: unset !important;
+  }
+}
 section#reasons .reason {
-  counter-increment: reason;
+  --gap-size: 1.125rem;
   display: grid;
   grid-template-columns: auto 1fr;
   column-gap: 1.125rem;
   align-items: start;
   position: relative;
 }
+@media (max-width: 79rem) {
+  section#reasons .reason {
+    counter-increment: reason;
+  }
+}
+section#reasons .reason:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: calc(var(--gap-size) / -2);
+  height: 1px;
+  background: #d9d9de;
+}
+@media (min-width: 80rem) {
+  section#reasons .reason:not(:last-child)::after {
+    bottom: calc(2rem / -2);
+  }
+}
+@media (min-width: 80rem) {
+  section#reasons .reason {
+    grid-column: 1 / -1;
+    grid-template-columns: subgrid;
+  }
+}
 section#reasons .reason::before {
   padding-top: 0.1875rem;
   content: counter(reason, decimal-leading-zero);
   font-variant-numeric: tabular-nums;
-  margin-inline-end: 1.125rem;
+  margin-inline-end: var(--gap-size);
   grid-column: 1;
   color: #737584;
   font-family: 'Metropolis', sans-serif;
@@ -1040,13 +1029,21 @@ section#reasons .reason::before {
     line-height: 1.2;
     letter-spacing: normal;
     padding-top: 0.3rem;
+    counter-increment: reason;
   }
 }
 section#reasons .reason .reason-content {
   grid-column: 2;
   row-gap: 0.5625rem;
 }
-section#reasons .reason .reason-title {
+@media (min-width: 80rem) {
+  section#reasons .reason .reason-content {
+    grid-column: 2 / 4;
+    display: grid;
+    grid-template-columns: subgrid;
+  }
+}
+section#reasons .reason .reason-content .reason-title {
   font-family: 'Metropolis', sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
@@ -1056,15 +1053,16 @@ section#reasons .reason .reason-title {
   margin: 0;
 }
 @media (min-width: 80rem) {
-  section#reasons .reason .reason-title {
+  section#reasons .reason .reason-content .reason-title {
     font-family: 'Metropolis', sans-serif;
     font-size: 2.25rem;
     font-weight: 400;
     line-height: 1.2;
     letter-spacing: -0.4px;
+    grid-column: 1;
   }
 }
-section#reasons .reason p {
+section#reasons .reason .reason-content p {
   font-family: 'Inter', sans-serif;
   font-size: 0.875rem;
   font-weight: 400;
@@ -1073,12 +1071,18 @@ section#reasons .reason p {
   color: #4c4d58;
 }
 @media (min-width: 56.25rem) {
-  section#reasons .reason p {
+  section#reasons .reason .reason-content p {
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.32;
     letter-spacing: normal;
+  }
+}
+@media (min-width: 80rem) {
+  section#reasons .reason .reason-content p {
+    grid-column: 2;
+    margin: 0;
   }
 }
 section#faq {
