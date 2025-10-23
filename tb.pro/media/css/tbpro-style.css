@@ -923,7 +923,7 @@ html[data-tbpro-service='send'] {
 .button-brand-outline-label:hover {
   position: relative;
   border: 0;
-  background: #f2f2f2;
+  background: #f2f2f2 url('/media/img/thunderbird/common/noise.png') repeat;
   color: var(--colour-ti-base-light);
 }
 .button-brand-outline-label:hover::before {
@@ -1049,7 +1049,7 @@ html[data-tbpro-service='send'] {
   background: linear-gradient(98.98deg, #58C9FF 19.15%, #6E6F9B 75.77%);
   /* ring thickness is controlled by padding on the pseudo-element */
   box-sizing: border-box;
-  padding: var(--border-width);
+  padding: 0.0625rem;
   /* punch out the center on the pseudo-element only */
   -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
   -webkit-mask-composite: xor;
@@ -1062,7 +1062,7 @@ html[data-tbpro-service='send'] {
 .button-brand-small-outline-label:hover {
   position: relative;
   border: 0;
-  background: #f2f2f2;
+  background: #f2f2f2 url('/media/img/thunderbird/common/noise.png') repeat;
   color: var(--colour-ti-base-light);
 }
 .button-brand-small-outline-label:hover::before {
@@ -1074,7 +1074,7 @@ html[data-tbpro-service='send'] {
   background: linear-gradient(98.98deg, #58C9FF 19.15%, #6E6F9B 75.77%);
   /* ring thickness is controlled by padding on the pseudo-element */
   box-sizing: border-box;
-  padding: var(--border-width);
+  padding: 0.0625rem;
   /* punch out the center on the pseudo-element only */
   -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
   -webkit-mask-composite: xor;
@@ -1099,7 +1099,7 @@ html[data-tbpro-service='send'] {
   background: linear-gradient(98.98deg, #58C9FF 19.15%, #6E6F9B 75.77%);
   /* ring thickness is controlled by padding on the pseudo-element */
   box-sizing: border-box;
-  padding: var(--border-width);
+  padding: 0.0625rem;
   /* punch out the center on the pseudo-element only */
   -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
   -webkit-mask-composite: xor;
@@ -1162,7 +1162,7 @@ html[data-tbpro-service='send'] {
   background: var(--colour-neutral-border);
   /* ring thickness is controlled by padding on the pseudo-element */
   box-sizing: border-box;
-  padding: var(--border-width);
+  padding: 0.0625rem;
   /* punch out the center on the pseudo-element only */
   -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
   -webkit-mask-composite: xor;
@@ -1562,14 +1562,19 @@ html[data-tbpro-service='send'] {
   }
 }
 .calamity-bar-tabs a {
+  font-family: 'Metropolis', sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: normal;
   align-items: center;
   color: rgba(255, 255, 255, 0.6);
   display: flex;
-  padding-block: auto;
   padding-inline: 20px;
   text-decoration: none;
 }
-.calamity-bar-tabs a.active {
+.calamity-bar-tabs a.active,
+.calamity-bar-tabs a:hover {
   background-color: #111;
   color: #58c9ff;
 }
@@ -1848,7 +1853,7 @@ body {
   background-size: cover;
 }
 .lower-gradient {
-  background-image: linear-gradient(355deg, #1A202C 123%, #262d3b -202%);
+  background-color: #222D3C;
 }
 :root {
   --header-color: #1373d9;
@@ -1881,9 +1886,6 @@ header#masthead {
   }
 }
 header#masthead .hero-image {
-  background-image: url('/media/img/thunderbird/tbpro/orb-graphic.png');
-  background-image: -webkit-image-set(url('/media/img/thunderbird/tbpro/orb-graphic.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/orb-graphic.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/orb-graphic.png'));
-  background-image: image-set(url('/media/img/thunderbird/tbpro/orb-graphic.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/orb-graphic.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/orb-graphic.png'));
   aspect-ratio: 1.4/1;
   background-position: top center;
   background-repeat: no-repeat;
@@ -1902,6 +1904,18 @@ header#masthead .hero-image {
     margin-top: 2rem;
     margin: 0;
     max-width: unset;
+  }
+}
+header#masthead .hero-image.tbpro {
+  background-image: url('/media/img/thunderbird/tbpro/orb-graphic.png');
+  background-image: -webkit-image-set(url('/media/img/thunderbird/tbpro/orb-graphic.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/orb-graphic.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/orb-graphic.png'));
+  background-image: image-set(url('/media/img/thunderbird/tbpro/orb-graphic.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/orb-graphic.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/orb-graphic.png'));
+}
+@media (min-width: 56.25rem) {
+  header#masthead .hero-image.tbpro {
+    background-image: url('/media/img/thunderbird/tbpro/orb-graphic-high-res.png');
+    background-image: -webkit-image-set(url('/media/img/thunderbird/tbpro/orb-graphic-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/orb-graphic-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/orb-graphic-high-res.png'));
+    background-image: image-set(url('/media/img/thunderbird/tbpro/orb-graphic-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/orb-graphic-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/orb-graphic-high-res.png'));
   }
 }
 header#masthead h1 {
@@ -1928,7 +1942,7 @@ header#masthead h1 {
 header#masthead p {
   font-family: 'Inter', sans-serif;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.32;
   letter-spacing: normal;
   margin-block: 0.375rem;
@@ -1937,7 +1951,7 @@ header#masthead p {
   header#masthead p {
     font-family: 'Inter', sans-serif;
     font-size: 1.25rem;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 28px;
     letter-spacing: normal;
     grid-column: 1 / span 2;
@@ -2077,9 +2091,10 @@ section#features .feature-card .card-info .card-body {
   section#features .feature-card .card-info .card-body {
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.32;
     letter-spacing: normal;
+    min-width: 311px;
   }
 }
 section#features .feature-card .card-image {
@@ -2108,9 +2123,9 @@ section#features .feature-card-1 {
   padding: 32px 17.4px 16.1px 19px;
 }
 section#features .feature-card-1 .card-image {
-  background-image: url('/media/img/thunderbird/tbpro/xs-thundermail-hero-high-res.png');
-  background-image: -webkit-image-set(url('/media/img/thunderbird/tbpro/xs-thundermail-hero-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xs-thundermail-hero-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xs-thundermail-hero-high-res.png'));
-  background-image: image-set(url('/media/img/thunderbird/tbpro/xs-thundermail-hero-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xs-thundermail-hero-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xs-thundermail-hero-high-res.png'));
+  background-image: url('/media/img/thunderbird/tbpro/xs-thundermail-card-high-res.png');
+  background-image: -webkit-image-set(url('/media/img/thunderbird/tbpro/xs-thundermail-card-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xs-thundermail-card-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xs-thundermail-card-high-res.png'));
+  background-image: image-set(url('/media/img/thunderbird/tbpro/xs-thundermail-card-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xs-thundermail-card-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xs-thundermail-card-high-res.png'));
 }
 @media (min-width: 56.25rem) {
   section#features .feature-card-1 .card-image {
@@ -2120,9 +2135,9 @@ section#features .feature-card-1 .card-image {
 }
 @media (min-width: 80rem) {
   section#features .feature-card-1 .card-image {
-    background-image: url('/media/img/thunderbird/tbpro/xl-thundermail-hero-high-res.png');
-    background-image: -webkit-image-set(url('/media/img/thunderbird/tbpro/xl-thundermail-hero-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xl-thundermail-hero-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xl-thundermail-hero-high-res.png'));
-    background-image: image-set(url('/media/img/thunderbird/tbpro/xl-thundermail-hero-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xl-thundermail-hero-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xl-thundermail-hero-high-res.png'));
+    background-image: url('/media/img/thunderbird/tbpro/xl-thundermail-card-high-res.png');
+    background-image: -webkit-image-set(url('/media/img/thunderbird/tbpro/xl-thundermail-card-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xl-thundermail-card-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xl-thundermail-card-high-res.png'));
+    background-image: image-set(url('/media/img/thunderbird/tbpro/xl-thundermail-card-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xl-thundermail-card-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xl-thundermail-card-high-res.png'));
   }
 }
 section#features .feature-card-2 {
@@ -2131,16 +2146,16 @@ section#features .feature-card-2 {
   padding: 32px 1px 4px 32px;
 }
 section#features .feature-card-2 .card-image {
-  background-image: url('/media/img/thunderbird/tbpro/xs-appointment-hero-high-res.png');
-  background-image: -webkit-image-set(url('/media/img/thunderbird/tbpro/xs-appointment-hero-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xs-appointment-hero-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xs-appointment-hero-high-res.png'));
-  background-image: image-set(url('/media/img/thunderbird/tbpro/xs-appointment-hero-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xs-appointment-hero-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xs-appointment-hero-high-res.png'));
+  background-image: url('/media/img/thunderbird/tbpro/xs-appointment-card-high-res.png');
+  background-image: -webkit-image-set(url('/media/img/thunderbird/tbpro/xs-appointment-card-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xs-appointment-card-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xs-appointment-card-high-res.png'));
+  background-image: image-set(url('/media/img/thunderbird/tbpro/xs-appointment-card-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xs-appointment-card-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xs-appointment-card-high-res.png'));
 }
 @media (min-width: 80rem) {
   section#features .feature-card-2 .card-image {
     aspect-ratio: unset;
-    background-image: url('/media/img/thunderbird/tbpro/xl-appointment-hero-high-res.png');
-    background-image: -webkit-image-set(url('/media/img/thunderbird/tbpro/xl-appointment-hero-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xl-appointment-hero-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xl-appointment-hero-high-res.png'));
-    background-image: image-set(url('/media/img/thunderbird/tbpro/xl-appointment-hero-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xl-appointment-hero-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xl-appointment-hero-high-res.png'));
+    background-image: url('/media/img/thunderbird/tbpro/xl-appointment-card-high-res.png');
+    background-image: -webkit-image-set(url('/media/img/thunderbird/tbpro/xl-appointment-card-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xl-appointment-card-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xl-appointment-card-high-res.png'));
+    background-image: image-set(url('/media/img/thunderbird/tbpro/xl-appointment-card-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xl-appointment-card-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xl-appointment-card-high-res.png'));
   }
 }
 section#features .feature-card-3 {
@@ -2149,16 +2164,16 @@ section#features .feature-card-3 {
   padding: 32px 1px 16px 32px;
 }
 section#features .feature-card-3 .card-image {
-  background-image: url('/media/img/thunderbird/tbpro/xs-send-hero-high-res.png');
-  background-image: -webkit-image-set(url('/media/img/thunderbird/tbpro/xs-send-hero-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xs-send-hero-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xs-send-hero-high-res.png'));
-  background-image: image-set(url('/media/img/thunderbird/tbpro/xs-send-hero-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xs-send-hero-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xs-send-hero-high-res.png'));
+  background-image: url('/media/img/thunderbird/tbpro/xs-send-card-high-res.png');
+  background-image: -webkit-image-set(url('/media/img/thunderbird/tbpro/xs-send-card-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xs-send-card-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xs-send-card-high-res.png'));
+  background-image: image-set(url('/media/img/thunderbird/tbpro/xs-send-card-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xs-send-card-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xs-send-card-high-res.png'));
 }
 @media (min-width: 80rem) {
   section#features .feature-card-3 .card-image {
     aspect-ratio: unset;
-    background-image: url('/media/img/thunderbird/tbpro/xl-send-hero-high-res.png');
-    background-image: -webkit-image-set(url('/media/img/thunderbird/tbpro/xl-send-hero-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xl-send-hero-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xl-send-hero-high-res.png'));
-    background-image: image-set(url('/media/img/thunderbird/tbpro/xl-send-hero-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xl-send-hero-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xl-send-hero-high-res.png'));
+    background-image: url('/media/img/thunderbird/tbpro/xl-send-card-high-res.png');
+    background-image: -webkit-image-set(url('/media/img/thunderbird/tbpro/xl-send-card-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xl-send-card-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xl-send-card-high-res.png'));
+    background-image: image-set(url('/media/img/thunderbird/tbpro/xl-send-card-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xl-send-card-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xl-send-card-high-res.png'));
   }
 }
 section#reasons {
@@ -2285,7 +2300,7 @@ section#reasons .reason .reason-content .reason-title {
   section#reasons .reason .reason-content .reason-title {
     font-family: 'Metropolis', sans-serif;
     font-size: 2.25rem;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.2;
     letter-spacing: -0.4px;
     grid-column: 1;
@@ -2303,7 +2318,7 @@ section#reasons .reason .reason-content p {
   section#reasons .reason .reason-content p {
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.32;
     letter-spacing: normal;
   }
@@ -2398,7 +2413,7 @@ section#faq .faq-item .faq-answer {
   section#faq .faq-item .faq-answer {
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.32;
     letter-spacing: normal;
   }
@@ -2455,7 +2470,7 @@ section#details .subscription-header p {
   section#details .subscription-header p {
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.32;
     letter-spacing: normal;
   }
@@ -2601,7 +2616,7 @@ section#details .subscription-info .subscription-callout p {
   section#details .subscription-info .subscription-callout p {
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.32;
     letter-spacing: normal;
   }
