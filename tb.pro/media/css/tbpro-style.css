@@ -586,6 +586,9 @@ html[data-tbpro-service='send'] {
   --surface-deep: #E4E4E7;
   --text-icon-muted: #737584;
 }
+form.bolt-button-wrapper {
+  display: contents;
+}
 .button-primary-filled-label {
   background: linear-gradient(180deg, var(--colour-accent-blue) -31.82%, var(--colour-primary-default) 8.74%, var(--colour-primary-hover) 100%) border-box;
   color: var(--colour-neutral-base);
@@ -910,7 +913,7 @@ html[data-tbpro-service='send'] {
   background: linear-gradient(98.98deg, #58C9FF 19.15%, #6E6F9B 75.77%);
   /* ring thickness is controlled by padding on the pseudo-element */
   box-sizing: border-box;
-  padding: var(--border-width);
+  padding: 0.0625rem;
   /* punch out the center on the pseudo-element only */
   -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
   -webkit-mask-composite: xor;
@@ -935,7 +938,7 @@ html[data-tbpro-service='send'] {
   background: linear-gradient(98.98deg, #58C9FF 19.15%, #6E6F9B 75.77%);
   /* ring thickness is controlled by padding on the pseudo-element */
   box-sizing: border-box;
-  padding: var(--border-width);
+  padding: 0.0625rem;
   /* punch out the center on the pseudo-element only */
   -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
   -webkit-mask-composite: xor;
@@ -960,7 +963,7 @@ html[data-tbpro-service='send'] {
   background: linear-gradient(98.98deg, #58C9FF 19.15%, #6E6F9B 75.77%);
   /* ring thickness is controlled by padding on the pseudo-element */
   box-sizing: border-box;
-  padding: var(--border-width);
+  padding: 0.0625rem;
   /* punch out the center on the pseudo-element only */
   -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
   -webkit-mask-composite: xor;
@@ -1023,7 +1026,7 @@ html[data-tbpro-service='send'] {
   background: var(--colour-neutral-border);
   /* ring thickness is controlled by padding on the pseudo-element */
   box-sizing: border-box;
-  padding: var(--border-width);
+  padding: 0.0625rem;
   /* punch out the center on the pseudo-element only */
   -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
   -webkit-mask-composite: xor;
@@ -1886,6 +1889,9 @@ header#masthead {
   }
 }
 header#masthead .hero-image {
+  background-image: url('/media/img/thunderbird/tbpro/orb-graphic.png');
+  background-image: -webkit-image-set(url('/media/img/thunderbird/tbpro/orb-graphic.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/orb-graphic.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/orb-graphic.png'));
+  background-image: image-set(url('/media/img/thunderbird/tbpro/orb-graphic.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/orb-graphic.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/orb-graphic.png'));
   aspect-ratio: 1.4/1;
   background-position: top center;
   background-repeat: no-repeat;
@@ -1904,18 +1910,6 @@ header#masthead .hero-image {
     margin-top: 2rem;
     margin: 0;
     max-width: unset;
-  }
-}
-header#masthead .hero-image.tbpro {
-  background-image: url('/media/img/thunderbird/tbpro/orb-graphic.png');
-  background-image: -webkit-image-set(url('/media/img/thunderbird/tbpro/orb-graphic.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/orb-graphic.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/orb-graphic.png'));
-  background-image: image-set(url('/media/img/thunderbird/tbpro/orb-graphic.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/orb-graphic.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/orb-graphic.png'));
-}
-@media (min-width: 56.25rem) {
-  header#masthead .hero-image.tbpro {
-    background-image: url('/media/img/thunderbird/tbpro/orb-graphic-high-res.png');
-    background-image: -webkit-image-set(url('/media/img/thunderbird/tbpro/orb-graphic-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/orb-graphic-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/orb-graphic-high-res.png'));
-    background-image: image-set(url('/media/img/thunderbird/tbpro/orb-graphic-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/orb-graphic-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/orb-graphic-high-res.png'));
   }
 }
 header#masthead h1 {
@@ -1975,12 +1969,6 @@ header#masthead .cta-button {
     grid-row: 4;
     max-width: 180px;
   }
-}
-header#masthead .cta-button img {
-  margin-left: 0.1875rem;
-}
-header#masthead .cta-button:hover {
-  text-decoration: none;
 }
 section#features {
   padding-bottom: 4rem;
@@ -2175,6 +2163,97 @@ section#features .feature-card-3 .card-image {
     background-image: -webkit-image-set(url('/media/img/thunderbird/tbpro/xl-send-card-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xl-send-card-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xl-send-card-high-res.png'));
     background-image: image-set(url('/media/img/thunderbird/tbpro/xl-send-card-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xl-send-card-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xl-send-card-high-res.png'));
   }
+}
+section#overview {
+  background: #fff;
+}
+section#overview header {
+  font-family: 'Metropolis', sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: normal;
+  color: var(--header-color);
+  margin: 0;
+  text-align: center;
+}
+@media (min-width: 56.25rem) {
+  section#overview header {
+    font-family: 'Metropolis', sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+  }
+}
+section#overview p {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9375rem;
+  font-weight: normal;
+  line-height: 1.32;
+  letter-spacing: normal;
+  color: #4c4d58;
+}
+@media (min-width: 80rem) {
+  section#overview p {
+    margin-bottom: 2.25rem;
+    margin-inline: auto;
+    max-width: 711px;
+    text-align: center;
+  }
+}
+@media (min-width: 80rem) {
+  section#overview .overview-card-container {
+    display: grid;
+    gap: 0.75rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  section#overview .overview-card-container .overview-card:first-child {
+    grid-row: 1 / -1;
+    height: 100%;
+  }
+}
+section#overview .overview-card-container .overview-card {
+  border-radius: 1.5rem;
+  padding-block: 1.5rem;
+}
+@media (min-width: 80rem) {
+  section#overview .overview-card-container .overview-card {
+    min-width: 594px;
+    padding-block: 0;
+  }
+}
+section#overview .overview-card-container .overview-card + .overview-card {
+  margin-top: 1rem;
+}
+@media (min-width: 80rem) {
+  section#overview .overview-card-container .overview-card + .overview-card {
+    margin-top: 0;
+  }
+}
+section#overview .overview-card-container .overview-card header {
+  font-family: 'Metropolis', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: normal;
+  padding-inline: 1.25rem;
+  text-align: left;
+}
+@media (min-width: 80rem) {
+  section#overview .overview-card-container .overview-card header {
+    font-family: 'Metropolis', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: normal;
+  }
+}
+section#overview .overview-card-container .overview-card p {
+  margin: 0;
+  padding-inline: 1.25rem;
+  text-align: left;
 }
 section#reasons {
   background: #fff;
