@@ -7,6 +7,22 @@ header#masthead {
 header#masthead > * {
   text-align: center;
 }
+header#masthead p {
+  max-width: 400px;
+}
+@media (min-width: 56.25rem) {
+  header#masthead h1 {
+    font-size: 3rem;
+  }
+  header#masthead p {
+    max-width: 750px;
+  }
+}
+@media (min-width: 80rem) {
+  header#masthead h1 {
+    font-size: 4.5rem;
+  }
+}
 header#masthead .product-logo {
   aspect-ratio: 16/9;
   background-position: top center;
