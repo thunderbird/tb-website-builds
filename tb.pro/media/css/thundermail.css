@@ -7,6 +7,10 @@ header#masthead {
 header#masthead > * {
   text-align: center;
 }
+header#masthead h1 {
+  white-space: wrap;
+  max-width: 80%;
+}
 header#masthead p {
   max-width: 400px;
 }
