@@ -1,3 +1,225 @@
-* {
-  outline: 1px solid blue;
+header#masthead {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+header#masthead > * {
+  text-align: center;
+}
+header#masthead h1 {
+  white-space: wrap;
+  max-width: 80%;
+}
+header#masthead p {
+  max-width: 400px;
+}
+@media (min-width: 56.25rem) {
+  header#masthead h1 {
+    font-size: 3rem;
+  }
+  header#masthead p {
+    max-width: 750px;
+  }
+}
+@media (min-width: 80rem) {
+  header#masthead h1 {
+    font-size: 4.5rem;
+  }
+}
+header#masthead .product-logo {
+  aspect-ratio: 16/9;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80px;
+  background-image: url('/media/img/thunderbird/tbpro/xs-thundermail-logo-high-res.png');
+  background-image: -webkit-image-set(url('/media/img/thunderbird/tbpro/xs-thundermail-logo-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xs-thundermail-logo-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xs-thundermail-logo-high-res.png'));
+  background-image: image-set(url('/media/img/thunderbird/tbpro/xs-thundermail-logo-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xs-thundermail-logo-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xs-thundermail-logo-high-res.png'));
+}
+@media (min-width: 56.25rem) {
+  header#masthead .product-logo {
+    background-image: url('/media/img/thunderbird/tbpro/xl-thundermail-logo-high-res.png');
+    background-image: -webkit-image-set(url('/media/img/thunderbird/tbpro/xl-thundermail-logo-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xl-thundermail-logo-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xl-thundermail-logo-high-res.png'));
+    background-image: image-set(url('/media/img/thunderbird/tbpro/xl-thundermail-logo-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xl-thundermail-logo-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xl-thundermail-logo-high-res.png'));
+  }
+}
+header#masthead .hero-image {
+  aspect-ratio: 1.9/1;
+  width: 100%;
+  background-image: url('/media/img/thunderbird/tbpro/xs-thundermail-card-high-res.png');
+  background-image: -webkit-image-set(url('/media/img/thunderbird/tbpro/xs-thundermail-card-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xs-thundermail-card-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xs-thundermail-card-high-res.png'));
+  background-image: image-set(url('/media/img/thunderbird/tbpro/xs-thundermail-card-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xs-thundermail-card-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xs-thundermail-card-high-res.png'));
+}
+@media (min-width: 56.25rem) {
+  header#masthead .hero-image {
+    background-image: url('/media/img/thunderbird/tbpro/xl-thundermail-card-high-res.png');
+    background-image: -webkit-image-set(url('/media/img/thunderbird/tbpro/xl-thundermail-card-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xl-thundermail-card-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xl-thundermail-card-high-res.png'));
+    background-image: image-set(url('/media/img/thunderbird/tbpro/xl-thundermail-card-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xl-thundermail-card-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xl-thundermail-card-high-res.png'));
+  }
+}
+section#overview {
+  padding-top: 2.25rem;
+}
+section#overview .overview-card-container .overview-card {
+  background-color: #1a202c;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section#overview .overview-card-container .overview-card header,
+section#overview .overview-card-container .overview-card p {
+  color: #fff;
+}
+section#overview .overview-card-container .overview-card .overview-image {
+  width: 100%;
+}
+section#overview .overview-card-container .overview-card-1 {
+  background-image: url('/media/img/thunderbird/tbpro/thundermail-bento-main.png');
+  overflow: hidden;
+}
+@media (min-width: 80rem) {
+  section#overview .overview-card-container .overview-card-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 6fr 1fr 2fr 1fr;
+    gap: 0.5rem;
+  }
+  section#overview .overview-card-container .overview-card-1 header {
+    align-self: end;
+    grid-row: 3;
+    padding-inline: 2rem;
+  }
+  section#overview .overview-card-container .overview-card-1 p {
+    grid-row: 4;
+    max-width: 368px;
+    padding-inline: 2rem;
+  }
+}
+section#overview .overview-card-container .overview-card-1 .overview-image {
+  background-image: url('/media/img/thunderbird/tbpro/xs-bento-standards-high-res.png');
+  background-image: -webkit-image-set(url('/media/img/thunderbird/tbpro/xs-bento-standards-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xs-bento-standards-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xs-bento-standards-high-res.png'));
+  background-image: image-set(url('/media/img/thunderbird/tbpro/xs-bento-standards-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xs-bento-standards-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xs-bento-standards-high-res.png'));
+  aspect-ratio: 2.6/1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+}
+@media (min-width: 80rem) {
+  section#overview .overview-card-container .overview-card-1 .overview-image {
+    background-image: url('/media/img/thunderbird/tbpro/xl-bento-standards-high-res.png');
+    background-image: -webkit-image-set(url('/media/img/thunderbird/tbpro/xl-bento-standards-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xl-bento-standards-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xl-bento-standards-high-res.png'));
+    background-image: image-set(url('/media/img/thunderbird/tbpro/xl-bento-standards-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xl-bento-standards-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xl-bento-standards-high-res.png'));
+    aspect-ratio: 2.3/1;
+    grid-row: 2;
+  }
+}
+section#overview .overview-card-container .overview-card-2 {
+  background-image: url('/media/img/thunderbird/tbpro/thundermail-bento-right-top.png');
+}
+@media (min-width: 80rem) {
+  section#overview .overview-card-container .overview-card-2 {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3fr 4fr;
+    padding-inline: 0.75rem;
+  }
+  section#overview .overview-card-container .overview-card-2 header {
+    align-self: end;
+    grid-column: 1;
+    grid-row: 1;
+    padding: 0;
+    padding-left: 2rem;
+  }
+  section#overview .overview-card-container .overview-card-2 p {
+    min-width: 331px;
+    grid-column: 1;
+    grid-row: 2;
+    padding: 0;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+  }
+}
+section#overview .overview-card-container .overview-card-2 .overview-image {
+  background-image: url('/media/img/thunderbird/tbpro/xs-bento-hosted-high-res.png');
+  background-image: -webkit-image-set(url('/media/img/thunderbird/tbpro/xs-bento-hosted-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xs-bento-hosted-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xs-bento-hosted-high-res.png'));
+  background-image: image-set(url('/media/img/thunderbird/tbpro/xs-bento-hosted-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xs-bento-hosted-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xs-bento-hosted-high-res.png'));
+  aspect-ratio: 1.2/1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  max-width: 180px;
+}
+@media (min-width: 80rem) {
+  section#overview .overview-card-container .overview-card-2 .overview-image {
+    grid-column: 2;
+    grid-row: 1 / -1;
+    height: 100%;
+    justify-self: start;
+    margin-left: 18px;
+    margin-top: 0;
+    max-width: 160px;
+  }
+}
+section#overview .overview-card-container .overview-card-3 {
+  background-image: url('/media/img/thunderbird/tbpro/thundermail-bento-right-bottom.png');
+  padding-bottom: 0;
+  overflow: hidden;
+}
+@media (min-width: 80rem) {
+  section#overview .overview-card-container .overview-card-3 {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3fr 4fr;
+    padding-inline: 0.75rem 0;
+  }
+  section#overview .overview-card-container .overview-card-3 header {
+    align-self: end;
+    grid-column: 1;
+    grid-row: 1;
+    padding: 0;
+    padding-left: 2rem;
+  }
+  section#overview .overview-card-container .overview-card-3 p {
+    min-width: 331px;
+    grid-column: 1;
+    grid-row: 2;
+    padding: 0;
+    padding-left: 2rem;
+  }
+}
+section#overview .overview-card-container .overview-card-3 .overview-image {
+  background-image: url('/media/img/thunderbird/tbpro/xs-bento-domain-high-res.png');
+  background-image: -webkit-image-set(url('/media/img/thunderbird/tbpro/xs-bento-domain-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xs-bento-domain-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xs-bento-domain-high-res.png'));
+  background-image: image-set(url('/media/img/thunderbird/tbpro/xs-bento-domain-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xs-bento-domain-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xs-bento-domain-high-res.png'));
+  aspect-ratio: 1.2/1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  height: 180px;
+  margin-top: 1.125rem;
+  margin-right: -2.5rem;
+  width: 100%;
+}
+@media (min-width: 56.25rem) {
+  section#overview .overview-card-container .overview-card-3 .overview-image {
+    background-image: url('/media/img/thunderbird/tbpro/xl-bento-domain-high-res.png');
+    background-image: -webkit-image-set(url('/media/img/thunderbird/tbpro/xl-bento-domain-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xl-bento-domain-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xl-bento-domain-high-res.png'));
+    background-image: image-set(url('/media/img/thunderbird/tbpro/xl-bento-domain-high-res.avif') type('image/avif'), url('/media/img/thunderbird/tbpro/xl-bento-domain-high-res.webp') type('image/webp'), url('/media/img/thunderbird/tbpro/xl-bento-domain-high-res.png'));
+    aspect-ratio: 0.9/1;
+  }
+}
+@media (min-width: 80rem) {
+  section#overview .overview-card-container .overview-card-3 .overview-image {
+    margin-top: 0;
+    grid-column: 2;
+    grid-row: 1 / -1;
+    height: 100%;
+  }
 }

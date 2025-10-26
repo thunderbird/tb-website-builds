@@ -1,0 +1,391 @@
+<!doctype html>
+<html class="other x86 no-js page-not-set" lang="ff" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    
+    <title>— Thunderbird</title>
+    <meta name="description" content="Thunderbird is a free email application that’s easy to set up and customize - and it’s loaded with great features!">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Thunderbird">
+    <meta property="og:locale" content="ff">
+    <meta property="og:image" content="/media/img/thunderbird/thunderbird-256.png">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="Thunderbird is a free email application that’s easy to set up and customize - and it’s loaded with great features!">
+    <meta property="fb:page_id" content="348169218537151">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:domain" content="thunderbird.net">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="/media/img/thunderbird/ios-icon-180.png">
+    <link rel="icon" type="image/png" sizes="196x196" href="/media/img/thunderbird/favicon-196.png">
+    <link rel="shortcut icon" href="/media/img/thunderbird/favicon.ico">
+    
+
+    <link href="/media/css/normalize.css" rel="stylesheet" type="text/css" />
+
+    
+    <link href="/media/css/tbpro-style.css" rel="stylesheet" type="text/css" />
+    
+
+    
+<link href="/media/css/appointment.css" rel="stylesheet" type="text/css" />
+
+
+    
+
+    <link rel="stylesheet" media="screen,projection,tv" href="/media/css/l10n/ff/intl.css">
+
+    <!--[if !lte IE 8]><!-->
+    
+    
+
+    
+    
+    <!--<![endif]-->
+
+    
+      
+    
+    <script>
+      window.siteLocale = "ff";
+    </script>
+
+  </head>
+  <body>
+    <div id="calamity-bar">
+  <div class="calamity-bar-tabs">
+    <a href="https://www.thunderbird.net">Thunderbird</a>
+    <a href="https://stage.tb.pro" class="active">Thunderbird Pro</a>
+  </div>
+</div>
+
+<script>
+  // Disable link to site that you're currently on.
+  document.querySelectorAll('#calamity-bar a').forEach(link => {
+    const linkHost = new URL(link.href).hostname;
+    const currentHost = window.location.hostname;
+
+    if (linkHost === currentHost) {
+      link.classList.add('active');
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+      });
+      link.style.cursor = 'default';
+    } else {
+      // Remove active class from other links
+      link.classList.remove('active');
+    }
+  });
+</script>
+    <main>
+      <div id="main-content">
+      
+  <div class="top-gradient">
+    <header id="site-header">
+      <div id="site-header-nav">
+        <a id="nav-link-home" href="/ff/">
+          <svg width="162" height="28" viewBox="0 0 162 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M136.481 12.828c0-.963-.783-1.743-1.748-1.743h-3.395v9.322h-2.093v-9.999c0-.78.634-1.41 1.415-1.41h4.073a3.836 3.836 0 0 1 3.841 3.83c0 2.116-1.72 3.83-3.841 3.83h-2.67v-2.087h2.67c.965 0 1.748-.78 1.748-1.743zM145.484 8.98a3.857 3.857 0 0 1 3.862 3.851 3.853 3.853 0 0 1-2.611 3.645l2.747 3.927-.113.078h-2.384l-2.786-3.981c-.561-.803.015-1.904.996-1.904h.289c.977 0 1.769-.79 1.77-1.764a1.768 1.768 0 0 0-1.77-1.765h-3.385v9.362h-2.092V10.391c0-.78.633-1.41 1.414-1.41h4.063zM150.031 14.896c.001-3.294 2.678-5.964 5.98-5.964 1.14 0 2.207.319 3.115.872l.088.054.044.03c.452.32.578.94.278 1.41-.3.472-.916.622-1.398.35l-.046-.028-.114-.07a3.874 3.874 0 0 0-1.967-.531 3.882 3.882 0 0 0-3.887 3.877 3.882 3.882 0 0 0 3.887 3.876 3.883 3.883 0 0 0 3.601-5.341l-.038-.09-.021-.05a1.047 1.047 0 0 1 1.914-.837l.023.05.059.138c.285.697.442 1.458.442 2.254 0 3.293-2.677 5.963-5.98 5.963-3.302 0-5.98-2.67-5.98-5.964z" fill="#1373D9"/>
+    <path d="M5.512 20.348V8.043H.775V5.595H12.92v2.448H8.182v12.305h-2.67zm15.37-11.36c2.432 0 4.133 1.782 4.133 4.295v7.065h-2.54v-6.55c0-1.503-.97-2.577-2.347-2.577-1.486 0-2.714 1.074-2.714 2.405v6.722h-2.627V5.337h2.627v5.433c.668-1.074 1.981-1.782 3.467-1.782zm14.199.257h2.627v11.103H35.08v-1.482c-.69 1.03-1.981 1.74-3.446 1.74-2.433 0-4.134-1.783-4.134-4.296V9.245h2.541v6.55c0 1.503.969 2.577 2.347 2.577 1.378 0 2.52-.923 2.692-2.104V9.245zm11.271-.257c2.433 0 4.134 1.782 4.134 4.295v7.065h-2.54v-6.55c0-1.503-.97-2.577-2.348-2.577s-2.519.923-2.691 2.104v7.023H40.28V9.245h2.627v1.482c.689-1.03 1.98-1.74 3.445-1.74zm15.126-3.651h2.627v15.01h-2.628V18.63c-.882 1.245-2.217 1.976-3.854 1.976-2.95 0-5.103-2.406-5.103-5.82 0-3.393 2.153-5.798 5.103-5.798 1.637 0 2.972.73 3.855 1.975V5.337zm-3.144 13.035c1.851 0 3.143-1.503 3.143-3.586s-1.291-3.565-3.143-3.565c-1.874 0-3.209 1.482-3.209 3.565s1.335 3.586 3.209 3.586zm13.594-.086c1.034 0 2.261-.472 2.886-1.117l1.658 1.718c-.97 1.031-2.907 1.719-4.522 1.719-3.187 0-5.814-2.427-5.814-5.842 0-3.328 2.498-5.776 5.663-5.776 3.445 0 5.448 2.598 5.448 6.7h-8.398c.323 1.524 1.486 2.598 3.08 2.598zm-.021-6.98c-1.464 0-2.649.924-3.036 2.385h5.857c-.302-1.396-1.25-2.384-2.821-2.384zm9.986.087c.71-1.482 2.153-2.405 3.983-2.405v2.233c-2.39 0-3.983 1.417-3.983 3.522v5.605h-2.627V9.245h2.627v2.148zm12.174-2.405c2.95 0 5.103 2.405 5.103 5.798 0 3.414-2.153 5.82-5.103 5.82-1.658 0-2.993-.752-3.876-2.019v1.76h-2.627V5.338h2.627v5.67c.883-1.268 2.218-2.02 3.876-2.02zm-.71 9.384c1.873 0 3.208-1.503 3.208-3.586s-1.335-3.565-3.209-3.565c-1.852 0-3.143 1.482-3.143 3.565s1.291 3.586 3.143 3.586zm9.201-10.802a1.524 1.524 0 0 1-1.507-1.503c0-.795.668-1.482 1.507-1.482a1.5 1.5 0 0 1 1.486 1.482c0 .795-.667 1.503-1.486 1.503zm-1.335 12.778V9.245h2.627v11.103h-2.627zm7.899-8.955c.711-1.482 2.153-2.405 3.984-2.405v2.233c-2.39 0-3.984 1.417-3.984 3.522v5.605h-2.627V9.245h2.627v2.148zm14.069-6.056h2.627v15.01h-2.627V18.63c-.882 1.245-2.217 1.976-3.854 1.976-2.95 0-5.103-2.406-5.103-5.82 0-3.393 2.153-5.798 5.103-5.798 1.637 0 2.972.73 3.854 1.975V5.337zm-3.143 13.035c1.851 0 3.143-1.503 3.143-3.586s-1.292-3.565-3.143-3.565c-1.874 0-3.209 1.482-3.209 3.565s1.335 3.586 3.209 3.586z" fill="#fff"/>
+</svg>
+
+        </a>
+        <button
+          id="mobile-hamburger-button"
+          class="hamburger-btn"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+
+          data-expanded="false"
+          type="button"
+          >
+          <span class="hamburger-icon" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+        <div id="nav-menu">
+          <ul>
+            <li></li>
+            <li>
+              <a href="/ff/thundermail">Thundermail</a>
+            </li>
+            <li>
+              <a href="/ff/appointment">Appointment</a>
+            </li>
+            <li>
+              <a href="/ff/send">Send</a>
+            </li>
+            <li class="nav-item-join-button">
+              <button class="button-brand-small-outline-label">Join Waitlist</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <header id="masthead" class="primary-block">
+      
+<div class="product-logo"></div>
+
+<h1>Plan Less. Do more.</h1>
+<p>
+  Thunderbird Appointment makes it easy to find a time to meet. So you can ditch the admin and streamline your day.
+</p>
+
+<form class="bolt-button-wrapper" action="">
+  <button class="button-brand-filled-label-icon  cta-button">
+    Join Waitlist
+
+    <!-- Using inline SVG so it adopts the current font color. -->
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.663 14.7506C12.9855 15.0789 13.5132 15.0837 13.8415 14.7612L18.0839 10.5945C18.2435 10.4378 18.3334 10.2236 18.3334 10C18.3334 9.77642 18.2435 9.56217 18.0839 9.4055L13.8415 5.23879C13.5132 4.9163 12.9855 4.92105 12.663 5.24941C12.3406 5.57777 12.3454 6.10539 12.6737 6.42788L15.4623 9.16667H2.50002C2.03979 9.16667 1.66669 9.53975 1.66669 10C1.66669 10.4603 2.03979 10.8333 2.50002 10.8333H15.4623L12.6737 13.5722C12.3454 13.8946 12.3406 14.4223 12.663 14.7506Z" fill="currentColor"/>
+    </svg>
+  </button>
+</form>
+
+
+<div class="hero-image appointment"></div>
+
+    </header>
+
+    
+
+  </div>
+
+  
+<section id="overview">
+  <header>Meet Appointment</header>
+  <p>Instead of exchanging multiple messages to schedule a meeting, select your availability and let Appointment handle the rest. Appointment is powered by open standards and compatible with Google Calendar. You can now schedule like a pro.</p>
+  <div class="overview-card-container">
+    <div class="overview-card overview-card-1">
+      <div class="overview-image"></div>
+      <header>Simply Powerful</header>
+      <p>
+        An intuitive interface unlocks powerful capabilities. Select available times, send a customizable link, and track RSVPs real-time.
+      </p>
+    </div>
+    <div class="overview-card overview-card-2">
+      <header>Broadly Compatible</header>
+      <p>
+        Coordinate with contacts using Thunderbird, Google, Microsoft, and more. With unique CalDAV support, syncing is easy and everyone is invited.
+      </p>
+      <div class="overview-image"></div>
+    </div>
+    <div class="overview-card overview-card-3">
+      <header>Private, Open, Practical</header>
+      <p>
+        Appointment is private, open source, and integrates with third-party tools like Zoom to align with the needs of your work and personal life.
+      </p>
+      <div class="overview-image"></div>
+    </div>
+  </div>
+</section>
+
+
+  <section id="reasons" class="primary-block">
+    
+<header>Made for You</header>
+<div class="reason">
+  <div class="reason-content">
+    <h3 class="reason-title">Open Source</h3>
+    <p>The technology powering Thunderbird Pro is freely licensed and open source, offering you transparency, security, and freedom. By subscribing you fund the development of our other open source tools which remain free-of-charge, free-of-ads, and free-of-data-harvesting.</p>
+  </div>
+</div>
+<div class="reason">
+  <div class="reason-content">
+    <h3 class="reason-title">User Focused</h3>
+    <p>Thunderbird Pro is part of our mission to help you communicate, collaborate, and connect freely. The Thunderbird Desktop and Mobile apps remain the core of how we offer these benefits and your subscription helps us make them even better.</p>
+  </div>
+</div>
+<div class="reason">
+  <div class="reason-content">
+    <h3 class="reason-title">Freedom Driven</h3>
+    <p>Money isn't our mission, it is the means to bring freedom and productivity to as many people as possible. Freely licensed software, open source code, and open standards liberate you and remain at the heart of Thunderbird.</p>
+  </div>
+</div>
+
+  </section>
+
+  
+  
+
+  <div class="lower-gradient">
+    <section id="details" class="primary-block">
+      
+<div class="subscription-header">
+  <header>
+    Subscribe to Pro
+  </header>
+  <p>
+    Get Thundermail, Appointment, and Send in one simple subscription. You'll love the confidence, ease, and security these services add to Thunderbird. Thank you for supporting freedom.
+  </p>
+</div>
+
+<div class="subscription-info">
+  <div class="subscription-callout">
+    <h3>Early Bird Plan</h3>
+    <p>Our initial offering, ideal for most users</p>
+    <h4><b>$00</b> per month, paid annually</h4>
+    <button class="button-brand-outline-label">Subscribe Now</button>
+  </div>
+  <ul>
+    <li>
+      <p>
+        <span class="info-number">00 GB</span> <span class="info-desc">of Mail Storage</span>
+      </p>
+    </li>
+    <li>
+      <p>
+        <span class="info-number">000 GB</span> <span class="info-desc">of Send Storage</span>
+      </p>
+    </li>
+    <li>
+      <p>
+        <span class="info-number">0</span> <span class="info-desc">Domains</span>
+      </p>
+    </li>
+    <li>
+      <p>
+        <span class="info-number">00</span> <span class="info-desc">Email Addresses</span>
+      </p>
+    </li>
+  </ul>
+</div>
+
+
+    </section>
+
+    
+<section id="faq" class="primary-block">
+  <header>Frequently Asked Questions</header>
+  <div class="faq-item-list">
+    <details class="faq-item">
+      <summary class="faq-question">
+        <span class="faq-question__text">
+          Vestibulum convallis, lorem a tempus semper, dui dui euismod elit, vitae placerat urna tortor vitae lacus?
+        </span>
+      </summary>
+      <div class="faq-answer">
+        <p>
+          Aliquam erat volutpat.&nbsp;&nbsp;Nunc eleifend leo vitae magna.&nbsp;&nbsp;In id erat non orci commodo lobortis.&nbsp;&nbsp;Proin neque massa, cursus ut, gravida ut, lobortis eget, lacus.&nbsp;&nbsp;Sed diam.&nbsp;&nbsp;Praesent fermentum tempor tellus.&nbsp;&nbsp;Nullam tempus.&nbsp;&nbsp;Mauris ac felis vel velit tristique imperdiet.&nbsp;&nbsp;Donec at pede.&nbsp;&nbsp;Etiam vel neque nec dui dignissim bibendum.&nbsp;&nbsp;Vivamus id enim.&nbsp;&nbsp;Phasellus neque orci, porta a, aliquet quis, semper a, massa.&nbsp;&nbsp;Phasellus purus.&nbsp;&nbsp;Pellentesque tristique imperdiet tortor.&nbsp;&nbsp;Nam euismod tellus id erat.
+        </p>
+        <p>
+          Pellentesque dapibus suscipit ligula.&nbsp;&nbsp;Donec posuere augue in quam.&nbsp;&nbsp;Etiam vel tortor sodales tellus ultricies commodo.&nbsp;&nbsp;Suspendisse potenti.&nbsp;&nbsp;Aenean in sem ac leo mollis blandit.&nbsp;&nbsp;Donec neque quam, dignissim in, mollis nec, sagittis eu, wisi.&nbsp;&nbsp;Phasellus lacus.&nbsp;&nbsp;Etiam laoreet quam sed arcu.&nbsp;&nbsp;Phasellus at dui in ligula mollis ultricies.&nbsp;&nbsp;Integer placerat tristique nisl.&nbsp;&nbsp;Praesent augue.&nbsp;&nbsp;Fusce commodo.&nbsp;&nbsp;Vestibulum convallis, lorem a tempus semper, dui dui euismod elit, vitae placerat urna tortor vitae lacus.&nbsp;&nbsp;Nullam libero mauris, consequat quis, varius et, dictum id, arcu.&nbsp;&nbsp;Mauris mollis tincidunt felis.&nbsp;&nbsp;Aliquam feugiat tellus ut neque.&nbsp;&nbsp;Nulla facilisis, risus a rhoncus fermentum, tellus tellus lacinia purus, et dictum nunc justo sit amet elit.
+        </p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-question">
+        <span class="faq-question__text">Phasellus at dui in ligula mollis ultricies?</span>
+      </summary>
+      <div class="faq-answer">
+        <p>
+          Aliquam erat volutpat.&nbsp;&nbsp;Nunc eleifend leo vitae magna.&nbsp;&nbsp;In id erat non orci commodo lobortis.&nbsp;&nbsp;Proin neque massa, cursus ut, gravida ut, lobortis eget, lacus.&nbsp;&nbsp;Sed diam.&nbsp;&nbsp;Praesent fermentum tempor tellus.&nbsp;&nbsp;Nullam tempus.&nbsp;&nbsp;Mauris ac felis vel velit tristique imperdiet.&nbsp;&nbsp;Donec at pede.&nbsp;&nbsp;Etiam vel neque nec dui dignissim bibendum.&nbsp;&nbsp;Vivamus id enim.&nbsp;&nbsp;Phasellus neque orci, porta a, aliquet quis, semper a, massa.&nbsp;&nbsp;Phasellus purus.&nbsp;&nbsp;Pellentesque tristique imperdiet tortor.&nbsp;&nbsp;Nam euismod tellus id erat.
+        </p>
+        <p>
+          Pellentesque dapibus suscipit ligula.&nbsp;&nbsp;Donec posuere augue in quam.&nbsp;&nbsp;Etiam vel tortor sodales tellus ultricies commodo.&nbsp;&nbsp;Suspendisse potenti.&nbsp;&nbsp;Aenean in sem ac leo mollis blandit.&nbsp;&nbsp;Donec neque quam, dignissim in, mollis nec, sagittis eu, wisi.&nbsp;&nbsp;Phasellus lacus.&nbsp;&nbsp;Etiam laoreet quam sed arcu.&nbsp;&nbsp;Phasellus at dui in ligula mollis ultricies.&nbsp;&nbsp;Integer placerat tristique nisl.&nbsp;&nbsp;Praesent augue.&nbsp;&nbsp;Fusce commodo.&nbsp;&nbsp;Vestibulum convallis, lorem a tempus semper, dui dui euismod elit, vitae placerat urna tortor vitae lacus.&nbsp;&nbsp;Nullam libero mauris, consequat quis, varius et, dictum id, arcu.&nbsp;&nbsp;Mauris mollis tincidunt felis.&nbsp;&nbsp;Aliquam feugiat tellus ut neque.&nbsp;&nbsp;Nulla facilisis, risus a rhoncus fermentum, tellus tellus lacinia purus, et dictum nunc justo sit amet elit.
+        </p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-question">
+        <span class="faq-question__text">Praesent fermentum tempor tellus?</span>
+      </summary>
+      <div class="faq-answer">
+        <p>
+          Aliquam erat volutpat.&nbsp;&nbsp;Nunc eleifend leo vitae magna.&nbsp;&nbsp;In id erat non orci commodo lobortis.&nbsp;&nbsp;Proin neque massa, cursus ut, gravida ut, lobortis eget, lacus.&nbsp;&nbsp;Sed diam.&nbsp;&nbsp;Praesent fermentum tempor tellus.&nbsp;&nbsp;Nullam tempus.&nbsp;&nbsp;Mauris ac felis vel velit tristique imperdiet.&nbsp;&nbsp;Donec at pede.&nbsp;&nbsp;Etiam vel neque nec dui dignissim bibendum.&nbsp;&nbsp;Vivamus id enim.&nbsp;&nbsp;Phasellus neque orci, porta a, aliquet quis, semper a, massa.&nbsp;&nbsp;Phasellus purus.&nbsp;&nbsp;Pellentesque tristique imperdiet tortor.&nbsp;&nbsp;Nam euismod tellus id erat.
+        </p>
+        <p>
+          Pellentesque dapibus suscipit ligula.&nbsp;&nbsp;Donec posuere augue in quam.&nbsp;&nbsp;Etiam vel tortor sodales tellus ultricies commodo.&nbsp;&nbsp;Suspendisse potenti.&nbsp;&nbsp;Aenean in sem ac leo mollis blandit.&nbsp;&nbsp;Donec neque quam, dignissim in, mollis nec, sagittis eu, wisi.&nbsp;&nbsp;Phasellus lacus.&nbsp;&nbsp;Etiam laoreet quam sed arcu.&nbsp;&nbsp;Phasellus at dui in ligula mollis ultricies.&nbsp;&nbsp;Integer placerat tristique nisl.&nbsp;&nbsp;Praesent augue.&nbsp;&nbsp;Fusce commodo.&nbsp;&nbsp;Vestibulum convallis, lorem a tempus semper, dui dui euismod elit, vitae placerat urna tortor vitae lacus.&nbsp;&nbsp;Nullam libero mauris, consequat quis, varius et, dictum id, arcu.&nbsp;&nbsp;Mauris mollis tincidunt felis.&nbsp;&nbsp;Aliquam feugiat tellus ut neque.&nbsp;&nbsp;Nulla facilisis, risus a rhoncus fermentum, tellus tellus lacinia purus, et dictum nunc justo sit amet elit.
+        </p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-question">
+        <span class="faq-question__text">Aliquam feugiat tellus ut neque?</span>
+      </summary>
+      <div class="faq-answer">
+        <p>
+          Aliquam erat volutpat.&nbsp;&nbsp;Nunc eleifend leo vitae magna.&nbsp;&nbsp;In id erat non orci commodo lobortis.&nbsp;&nbsp;Proin neque massa, cursus ut, gravida ut, lobortis eget, lacus.&nbsp;&nbsp;Sed diam.&nbsp;&nbsp;Praesent fermentum tempor tellus.&nbsp;&nbsp;Nullam tempus.&nbsp;&nbsp;Mauris ac felis vel velit tristique imperdiet.&nbsp;&nbsp;Donec at pede.&nbsp;&nbsp;Etiam vel neque nec dui dignissim bibendum.&nbsp;&nbsp;Vivamus id enim.&nbsp;&nbsp;Phasellus neque orci, porta a, aliquet quis, semper a, massa.&nbsp;&nbsp;Phasellus purus.&nbsp;&nbsp;Pellentesque tristique imperdiet tortor.&nbsp;&nbsp;Nam euismod tellus id erat.
+        </p>
+        <p>
+          Pellentesque dapibus suscipit ligula.&nbsp;&nbsp;Donec posuere augue in quam.&nbsp;&nbsp;Etiam vel tortor sodales tellus ultricies commodo.&nbsp;&nbsp;Suspendisse potenti.&nbsp;&nbsp;Aenean in sem ac leo mollis blandit.&nbsp;&nbsp;Donec neque quam, dignissim in, mollis nec, sagittis eu, wisi.&nbsp;&nbsp;Phasellus lacus.&nbsp;&nbsp;Etiam laoreet quam sed arcu.&nbsp;&nbsp;Phasellus at dui in ligula mollis ultricies.&nbsp;&nbsp;Integer placerat tristique nisl.&nbsp;&nbsp;Praesent augue.&nbsp;&nbsp;Fusce commodo.&nbsp;&nbsp;Vestibulum convallis, lorem a tempus semper, dui dui euismod elit, vitae placerat urna tortor vitae lacus.&nbsp;&nbsp;Nullam libero mauris, consequat quis, varius et, dictum id, arcu.&nbsp;&nbsp;Mauris mollis tincidunt felis.&nbsp;&nbsp;Aliquam feugiat tellus ut neque.&nbsp;&nbsp;Nulla facilisis, risus a rhoncus fermentum, tellus tellus lacinia purus, et dictum nunc justo sit amet elit.
+        </p>
+      </div>
+    </details>
+  </div>
+</section>
+
+  </div>
+
+      </div>
+
+    </main>
+
+    
+
+<footer id="tb-footer">
+  <div id="site-nav">
+    <a id="nav-link-home" href="/ff/">
+      <svg width="162" height="28" viewBox="0 0 162 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M136.481 12.828c0-.963-.783-1.743-1.748-1.743h-3.395v9.322h-2.093v-9.999c0-.78.634-1.41 1.415-1.41h4.073a3.836 3.836 0 0 1 3.841 3.83c0 2.116-1.72 3.83-3.841 3.83h-2.67v-2.087h2.67c.965 0 1.748-.78 1.748-1.743zM145.484 8.98a3.857 3.857 0 0 1 3.862 3.851 3.853 3.853 0 0 1-2.611 3.645l2.747 3.927-.113.078h-2.384l-2.786-3.981c-.561-.803.015-1.904.996-1.904h.289c.977 0 1.769-.79 1.77-1.764a1.768 1.768 0 0 0-1.77-1.765h-3.385v9.362h-2.092V10.391c0-.78.633-1.41 1.414-1.41h4.063zM150.031 14.896c.001-3.294 2.678-5.964 5.98-5.964 1.14 0 2.207.319 3.115.872l.088.054.044.03c.452.32.578.94.278 1.41-.3.472-.916.622-1.398.35l-.046-.028-.114-.07a3.874 3.874 0 0 0-1.967-.531 3.882 3.882 0 0 0-3.887 3.877 3.882 3.882 0 0 0 3.887 3.876 3.883 3.883 0 0 0 3.601-5.341l-.038-.09-.021-.05a1.047 1.047 0 0 1 1.914-.837l.023.05.059.138c.285.697.442 1.458.442 2.254 0 3.293-2.677 5.963-5.98 5.963-3.302 0-5.98-2.67-5.98-5.964z" fill="#1373D9"/>
+    <path d="M5.512 20.348V8.043H.775V5.595H12.92v2.448H8.182v12.305h-2.67zm15.37-11.36c2.432 0 4.133 1.782 4.133 4.295v7.065h-2.54v-6.55c0-1.503-.97-2.577-2.347-2.577-1.486 0-2.714 1.074-2.714 2.405v6.722h-2.627V5.337h2.627v5.433c.668-1.074 1.981-1.782 3.467-1.782zm14.199.257h2.627v11.103H35.08v-1.482c-.69 1.03-1.981 1.74-3.446 1.74-2.433 0-4.134-1.783-4.134-4.296V9.245h2.541v6.55c0 1.503.969 2.577 2.347 2.577 1.378 0 2.52-.923 2.692-2.104V9.245zm11.271-.257c2.433 0 4.134 1.782 4.134 4.295v7.065h-2.54v-6.55c0-1.503-.97-2.577-2.348-2.577s-2.519.923-2.691 2.104v7.023H40.28V9.245h2.627v1.482c.689-1.03 1.98-1.74 3.445-1.74zm15.126-3.651h2.627v15.01h-2.628V18.63c-.882 1.245-2.217 1.976-3.854 1.976-2.95 0-5.103-2.406-5.103-5.82 0-3.393 2.153-5.798 5.103-5.798 1.637 0 2.972.73 3.855 1.975V5.337zm-3.144 13.035c1.851 0 3.143-1.503 3.143-3.586s-1.291-3.565-3.143-3.565c-1.874 0-3.209 1.482-3.209 3.565s1.335 3.586 3.209 3.586zm13.594-.086c1.034 0 2.261-.472 2.886-1.117l1.658 1.718c-.97 1.031-2.907 1.719-4.522 1.719-3.187 0-5.814-2.427-5.814-5.842 0-3.328 2.498-5.776 5.663-5.776 3.445 0 5.448 2.598 5.448 6.7h-8.398c.323 1.524 1.486 2.598 3.08 2.598zm-.021-6.98c-1.464 0-2.649.924-3.036 2.385h5.857c-.302-1.396-1.25-2.384-2.821-2.384zm9.986.087c.71-1.482 2.153-2.405 3.983-2.405v2.233c-2.39 0-3.983 1.417-3.983 3.522v5.605h-2.627V9.245h2.627v2.148zm12.174-2.405c2.95 0 5.103 2.405 5.103 5.798 0 3.414-2.153 5.82-5.103 5.82-1.658 0-2.993-.752-3.876-2.019v1.76h-2.627V5.338h2.627v5.67c.883-1.268 2.218-2.02 3.876-2.02zm-.71 9.384c1.873 0 3.208-1.503 3.208-3.586s-1.335-3.565-3.209-3.565c-1.852 0-3.143 1.482-3.143 3.565s1.291 3.586 3.143 3.586zm9.201-10.802a1.524 1.524 0 0 1-1.507-1.503c0-.795.668-1.482 1.507-1.482a1.5 1.5 0 0 1 1.486 1.482c0 .795-.667 1.503-1.486 1.503zm-1.335 12.778V9.245h2.627v11.103h-2.627zm7.899-8.955c.711-1.482 2.153-2.405 3.984-2.405v2.233c-2.39 0-3.984 1.417-3.984 3.522v5.605h-2.627V9.245h2.627v2.148zm14.069-6.056h2.627v15.01h-2.627V18.63c-.882 1.245-2.217 1.976-3.854 1.976-2.95 0-5.103-2.406-5.103-5.82 0-3.393 2.153-5.798 5.103-5.798 1.637 0 2.972.73 3.854 1.975V5.337zm-3.143 13.035c1.851 0 3.143-1.503 3.143-3.586s-1.292-3.565-3.143-3.565c-1.874 0-3.209 1.482-3.209 3.565s1.335 3.586 3.209 3.586z" fill="#fff"/>
+</svg>
+
+    </a>
+    <div class="site-nav-links">
+      <a href="/ff/">Home</a>
+      <a href="/ff/thundermail">Thundermail</a>
+      <a href="/ff/appointment">Appointment</a>
+      <a href="/ff/send">Send</a>
+    </div>
+  </div>
+  <div id="moz-nav">
+    <a id="moz-link-home" href="https://www.mozilla.org/">
+      <svg width="984" height="230" viewBox="0 0 984 230" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M52.3628 84.5469L71.9269 177.526H79.9828L99.5469 84.5469H151.91V227.466H124.098V108.894H116.042L89.3812 227.466H62.4326L35.8676 108.894H27.8117V227.466H0V84.5469H52.3628ZM225.371 118C258.841 118 278.309 137.746 278.309 173.787C278.309 209.829 258.745 229.575 225.371 229.575C191.901 229.575 172.433 209.829 172.433 173.787C172.433 137.65 191.901 118 225.371 118ZM225.371 207.336C241.099 207.336 248.963 199.285 248.963 181.552V165.831C248.963 148.098 241.099 140.047 225.371 140.047C209.643 140.047 201.779 148.098 201.779 165.831V181.552C201.779 199.285 209.643 207.336 225.371 207.336ZM293.174 206.761L349.949 140.718H293.941V120.013H383.323V140.718L326.548 206.761H384.186V227.466H293.174V206.761ZM400.777 120.013H441.823V227.466H414.011V140.718H400.681V120.013H400.777ZM414.011 84.5469H441.823V105.251H414.011V84.5469ZM462.346 84.5469H503.489V227.466H475.677V105.251H462.346V84.5469ZM524.012 84.5469H565.058V227.466H537.246V105.251H523.916V84.5469H524.012ZM630.559 118C646.863 118 657.7 125.86 660.769 139.567H668.825V120.013H702.87V140.718H689.54V206.761H702.87V227.466H686.567C675.058 227.466 668.825 221.235 668.825 209.733V207.912H660.769C657.796 221.619 646.863 229.479 630.559 229.479C604.953 229.479 586.828 208.103 586.828 173.692C586.828 139.28 604.953 118 630.559 118ZM638.999 207.336C654.727 207.336 661.728 199.285 661.728 181.552V165.831C661.728 148.098 654.727 140.047 638.999 140.047C623.654 140.047 616.27 148.098 616.27 165.831V181.552C616.27 199.285 623.654 207.336 638.999 207.336Z" fill="white"/>
+<path d="M816.427 227.463H788.615V0H816.427V227.463ZM840.594 118.764H958.651V110.712L880.49 82.7224V60.1966L958.651 32.2071V24.1553H865.625V0H983.681V45.9143L920.002 67.4815V75.5333L983.681 97.1006V143.015H840.594V118.764ZM840.594 24.1553H865.529V49.0775H840.594V24.1553Z" fill="white"/>
+</svg>
+
+    </a>
+    <div class="moz-nav-links">
+      <a href="https://www.mozilla.org/privacy/websites/">Privacy Policy</a>
+      <a href="https://www.mozilla.org/privacy/websites/#data-tools">Kukiije</a>
+      <a href="https://www.mozilla.org/en-US/about/legal/terms/mozilla/">Laawol</a>
+      <a href="https://www.mozilla.org/en-US/about/legal/report-infringement/">Send DMCA Notice</a>
+      <a href="https://www.mozilla.org/about/legal/fraud-report/">Report Fraud</a>
+      <a href="https://www.mozilla.org/en-US/about/governance/policies/participation/">Participation Guidelines</a>
+    </div>
+    <div id="tb-legal">
+      <p>Thunderbird is part of
+        <a href="https://blog.thunderbird.net/2020/01/thunderbirds-new-home/" class="inline-link">MZLA Technologies Corporation</a>,
+        a wholly owned subsidiary of Mozilla Foundation.
+        Portions of this content are ©1998– by individual
+        contributors. Content available under
+        a <a href="https://www.mozilla.org/foundation/licensing/website-content/" class="inline-link">Creative Commons license</a>.</p>
+      <p>
+        <a href="https://github.com/thunderbird/thunderbird-website">Wallit e ndee lowre</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+    
+
+    
+  <script>
+    const hamburgerBtn = document.querySelector('#mobile-hamburger-button');
+    hamburgerBtn.addEventListener('click', () => {
+        const isExpanded = hamburgerBtn.getAttribute('aria-expanded') === 'true';
+        hamburgerBtn.setAttribute('aria-expanded', !isExpanded);
+    });
+  </script>
+
+  </body>
+</html>
