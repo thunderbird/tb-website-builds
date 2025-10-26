@@ -1541,12 +1541,20 @@ form.bolt-button-wrapper {
 #calamity-bar {
   background-color: #1a202c;
   display: flex;
-  height: 2rem;
+  height: 32px;
   justify-content: center;
+  position: fixed;
+  top: 0;
+  z-index: 9;
   width: 100%;
 }
+body.tbpro #calamity-bar {
+  position: unset;
+  top: unset;
+  z-index: unset;
+}
 @media (min-width: 56.25rem) {
-  #calamity-bar {
+  body.tbpro #calamity-bar {
     padding-inline: calc(9rem - 16px);
   }
 }
@@ -1556,13 +1564,8 @@ form.bolt-button-wrapper {
   gap: 0;
   height: 100%;
   margin-left: 1rem;
-  max-width: 80rem;
+  max-width: calc(1280px + 4.75rem);
   width: 100%;
-}
-@media (min-width: 56.25rem) {
-  .calamity-bar-tabs {
-    margin-left: 0;
-  }
 }
 .calamity-bar-tabs a {
   font-family: 'Metropolis', sans-serif;
@@ -1580,6 +1583,17 @@ form.bolt-button-wrapper {
 .calamity-bar-tabs a:hover {
   background-color: #111;
   color: #58c9ff;
+}
+body.tbpro .calamity-bar-tabs {
+  max-width: 80rem;
+}
+@media (min-width: 56.25rem) {
+  body.tbpro .calamity-bar-tabs {
+    margin-left: 0;
+  }
+}
+#calamity-bar ~ .site-nav {
+  top: 32px;
 }
 footer#tb-footer {
   background-image: linear-gradient(168deg, #1b2128 1%, #171b24 45%);
