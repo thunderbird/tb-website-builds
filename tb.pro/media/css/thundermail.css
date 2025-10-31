@@ -1,3 +1,7 @@
+#nav-link-thundermail {
+  background-color: #1a202c;
+  box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
 header#masthead {
   align-items: center;
   display: flex;
@@ -9,7 +13,6 @@ header#masthead > * {
 }
 header#masthead h1 {
   white-space: wrap;
-  max-width: 80%;
 }
 header#masthead p {
   max-width: 400px;
