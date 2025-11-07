@@ -36,29 +36,29 @@ header#masthead .product-logo {
   background-repeat: no-repeat;
   background-size: cover;
   height: 80px;
-  background-image: url('/media/img/tbpro/xs-thundermail-logo-high-res.png');
-  background-image: -webkit-image-set(url('/media/img/tbpro/xs-thundermail-logo-high-res.avif') type('image/avif'), url('/media/img/tbpro/xs-thundermail-logo-high-res.webp') type('image/webp'), url('/media/img/tbpro/xs-thundermail-logo-high-res.png'));
-  background-image: image-set(url('/media/img/tbpro/xs-thundermail-logo-high-res.avif') type('image/avif'), url('/media/img/tbpro/xs-thundermail-logo-high-res.webp') type('image/webp'), url('/media/img/tbpro/xs-thundermail-logo-high-res.png'));
+  background-image: url('/media/img/tbpro/xs-thundermail-logo.png');
+  background-image: -webkit-image-set(url('/media/img/tbpro/xs-thundermail-logo.avif') type('image/avif') 1x, url('/media/img/tbpro/xs-thundermail-logo.webp') type('image/webp') 1x, url('/media/img/tbpro/xs-thundermail-logo.png') 1x, url('/media/img/tbpro/xs-thundermail-logo-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xs-thundermail-logo-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xs-thundermail-logo-high-res.png') 2x);
+  background-image: image-set(url('/media/img/tbpro/xs-thundermail-logo.avif') type('image/avif') 1x, url('/media/img/tbpro/xs-thundermail-logo.webp') type('image/webp') 1x, url('/media/img/tbpro/xs-thundermail-logo.png') 1x, url('/media/img/tbpro/xs-thundermail-logo-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xs-thundermail-logo-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xs-thundermail-logo-high-res.png') 2x);
 }
 @media (min-width: 56.25rem) {
   header#masthead .product-logo {
-    background-image: url('/media/img/tbpro/xl-thundermail-logo-high-res.png');
-    background-image: -webkit-image-set(url('/media/img/tbpro/xl-thundermail-logo-high-res.avif') type('image/avif'), url('/media/img/tbpro/xl-thundermail-logo-high-res.webp') type('image/webp'), url('/media/img/tbpro/xl-thundermail-logo-high-res.png'));
-    background-image: image-set(url('/media/img/tbpro/xl-thundermail-logo-high-res.avif') type('image/avif'), url('/media/img/tbpro/xl-thundermail-logo-high-res.webp') type('image/webp'), url('/media/img/tbpro/xl-thundermail-logo-high-res.png'));
+    background-image: url('/media/img/tbpro/xl-thundermail-logo.png');
+    background-image: -webkit-image-set(url('/media/img/tbpro/xl-thundermail-logo.avif') type('image/avif') 1x, url('/media/img/tbpro/xl-thundermail-logo.webp') type('image/webp') 1x, url('/media/img/tbpro/xl-thundermail-logo.png') 1x, url('/media/img/tbpro/xl-thundermail-logo-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xl-thundermail-logo-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xl-thundermail-logo-high-res.png') 2x);
+    background-image: image-set(url('/media/img/tbpro/xl-thundermail-logo.avif') type('image/avif') 1x, url('/media/img/tbpro/xl-thundermail-logo.webp') type('image/webp') 1x, url('/media/img/tbpro/xl-thundermail-logo.png') 1x, url('/media/img/tbpro/xl-thundermail-logo-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xl-thundermail-logo-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xl-thundermail-logo-high-res.png') 2x);
   }
 }
 header#masthead .hero-image {
   aspect-ratio: 1.9/1;
   width: 100%;
-  background-image: url('/media/img/tbpro/xs-thundermail-card-high-res.png');
-  background-image: -webkit-image-set(url('/media/img/tbpro/xs-thundermail-card-high-res.avif') type('image/avif'), url('/media/img/tbpro/xs-thundermail-card-high-res.webp') type('image/webp'), url('/media/img/tbpro/xs-thundermail-card-high-res.png'));
-  background-image: image-set(url('/media/img/tbpro/xs-thundermail-card-high-res.avif') type('image/avif'), url('/media/img/tbpro/xs-thundermail-card-high-res.webp') type('image/webp'), url('/media/img/tbpro/xs-thundermail-card-high-res.png'));
+  background-image: url('/media/img/tbpro/xs-thundermail-card.png');
+  background-image: -webkit-image-set(url('/media/img/tbpro/xs-thundermail-card.avif') type('image/avif') 1x, url('/media/img/tbpro/xs-thundermail-card.webp') type('image/webp') 1x, url('/media/img/tbpro/xs-thundermail-card.png') 1x, url('/media/img/tbpro/xs-thundermail-card-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xs-thundermail-card-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xs-thundermail-card-high-res.png') 2x);
+  background-image: image-set(url('/media/img/tbpro/xs-thundermail-card.avif') type('image/avif') 1x, url('/media/img/tbpro/xs-thundermail-card.webp') type('image/webp') 1x, url('/media/img/tbpro/xs-thundermail-card.png') 1x, url('/media/img/tbpro/xs-thundermail-card-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xs-thundermail-card-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xs-thundermail-card-high-res.png') 2x);
 }
 @media (min-width: 56.25rem) {
   header#masthead .hero-image {
-    background-image: url('/media/img/tbpro/xl-thundermail-card-high-res.png');
-    background-image: -webkit-image-set(url('/media/img/tbpro/xl-thundermail-card-high-res.avif') type('image/avif'), url('/media/img/tbpro/xl-thundermail-card-high-res.webp') type('image/webp'), url('/media/img/tbpro/xl-thundermail-card-high-res.png'));
-    background-image: image-set(url('/media/img/tbpro/xl-thundermail-card-high-res.avif') type('image/avif'), url('/media/img/tbpro/xl-thundermail-card-high-res.webp') type('image/webp'), url('/media/img/tbpro/xl-thundermail-card-high-res.png'));
+    background-image: url('/media/img/tbpro/xl-thundermail-card.png');
+    background-image: -webkit-image-set(url('/media/img/tbpro/xl-thundermail-card.avif') type('image/avif') 1x, url('/media/img/tbpro/xl-thundermail-card.webp') type('image/webp') 1x, url('/media/img/tbpro/xl-thundermail-card.png') 1x, url('/media/img/tbpro/xl-thundermail-card-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xl-thundermail-card-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xl-thundermail-card-high-res.png') 2x);
+    background-image: image-set(url('/media/img/tbpro/xl-thundermail-card.avif') type('image/avif') 1x, url('/media/img/tbpro/xl-thundermail-card.webp') type('image/webp') 1x, url('/media/img/tbpro/xl-thundermail-card.png') 1x, url('/media/img/tbpro/xl-thundermail-card-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xl-thundermail-card-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xl-thundermail-card-high-res.png') 2x);
   }
 }
 section#overview .overview-card-container .overview-card {
@@ -75,24 +75,23 @@ section#overview .overview-card-container .overview-card-1 {
   section#overview .overview-card-container .overview-card-1 {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 6fr 1fr 2fr 1fr;
-    gap: 0.5rem;
+    grid-template-rows: 13.13% 42.63% 9.17% auto auto 10.25%;
+    gap: 0;
   }
   section#overview .overview-card-container .overview-card-1 header {
-    align-self: end;
-    grid-row: 3;
+    grid-row: 4;
     padding-inline: 2rem;
   }
   section#overview .overview-card-container .overview-card-1 p {
-    grid-row: 4;
+    grid-row: 5;
     max-width: 368px;
     padding-inline: 2rem;
   }
 }
 section#overview .overview-card-container .overview-card-1 .overview-image {
-  background-image: url('/media/img/tbpro/xs-bento-standards-high-res.png');
-  background-image: -webkit-image-set(url('/media/img/tbpro/xs-bento-standards-high-res.avif') type('image/avif'), url('/media/img/tbpro/xs-bento-standards-high-res.webp') type('image/webp'), url('/media/img/tbpro/xs-bento-standards-high-res.png'));
-  background-image: image-set(url('/media/img/tbpro/xs-bento-standards-high-res.avif') type('image/avif'), url('/media/img/tbpro/xs-bento-standards-high-res.webp') type('image/webp'), url('/media/img/tbpro/xs-bento-standards-high-res.png'));
+  background-image: url('/media/img/tbpro/xs-bento-standards.png');
+  background-image: -webkit-image-set(url('/media/img/tbpro/xs-bento-standards.avif') type('image/avif') 1x, url('/media/img/tbpro/xs-bento-standards.webp') type('image/webp') 1x, url('/media/img/tbpro/xs-bento-standards.png') 1x, url('/media/img/tbpro/xs-bento-standards-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xs-bento-standards-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xs-bento-standards-high-res.png') 2x);
+  background-image: image-set(url('/media/img/tbpro/xs-bento-standards.avif') type('image/avif') 1x, url('/media/img/tbpro/xs-bento-standards.webp') type('image/webp') 1x, url('/media/img/tbpro/xs-bento-standards.png') 1x, url('/media/img/tbpro/xs-bento-standards-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xs-bento-standards-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xs-bento-standards-high-res.png') 2x);
   aspect-ratio: 2.6/1;
   background-size: contain;
   background-repeat: no-repeat;
@@ -102,9 +101,9 @@ section#overview .overview-card-container .overview-card-1 .overview-image {
 }
 @media (min-width: 80rem) {
   section#overview .overview-card-container .overview-card-1 .overview-image {
-    background-image: url('/media/img/tbpro/xl-bento-standards-high-res.png');
-    background-image: -webkit-image-set(url('/media/img/tbpro/xl-bento-standards-high-res.avif') type('image/avif'), url('/media/img/tbpro/xl-bento-standards-high-res.webp') type('image/webp'), url('/media/img/tbpro/xl-bento-standards-high-res.png'));
-    background-image: image-set(url('/media/img/tbpro/xl-bento-standards-high-res.avif') type('image/avif'), url('/media/img/tbpro/xl-bento-standards-high-res.webp') type('image/webp'), url('/media/img/tbpro/xl-bento-standards-high-res.png'));
+    background-image: url('/media/img/tbpro/xl-bento-standards.png');
+    background-image: -webkit-image-set(url('/media/img/tbpro/xl-bento-standards.avif') type('image/avif') 1x, url('/media/img/tbpro/xl-bento-standards.webp') type('image/webp') 1x, url('/media/img/tbpro/xl-bento-standards.png') 1x, url('/media/img/tbpro/xl-bento-standards-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xl-bento-standards-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xl-bento-standards-high-res.png') 2x);
+    background-image: image-set(url('/media/img/tbpro/xl-bento-standards.avif') type('image/avif') 1x, url('/media/img/tbpro/xl-bento-standards.webp') type('image/webp') 1x, url('/media/img/tbpro/xl-bento-standards.png') 1x, url('/media/img/tbpro/xl-bento-standards-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xl-bento-standards-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xl-bento-standards-high-res.png') 2x);
     aspect-ratio: 2.3/1;
     grid-row: 2;
   }
@@ -137,9 +136,9 @@ section#overview .overview-card-container .overview-card-2 {
   }
 }
 section#overview .overview-card-container .overview-card-2 .overview-image {
-  background-image: url('/media/img/tbpro/xs-bento-hosted-high-res.png');
-  background-image: -webkit-image-set(url('/media/img/tbpro/xs-bento-hosted-high-res.avif') type('image/avif'), url('/media/img/tbpro/xs-bento-hosted-high-res.webp') type('image/webp'), url('/media/img/tbpro/xs-bento-hosted-high-res.png'));
-  background-image: image-set(url('/media/img/tbpro/xs-bento-hosted-high-res.avif') type('image/avif'), url('/media/img/tbpro/xs-bento-hosted-high-res.webp') type('image/webp'), url('/media/img/tbpro/xs-bento-hosted-high-res.png'));
+  background-image: url('/media/img/tbpro/xs-bento-hosted.png');
+  background-image: -webkit-image-set(url('/media/img/tbpro/xs-bento-hosted.avif') type('image/avif') 1x, url('/media/img/tbpro/xs-bento-hosted.webp') type('image/webp') 1x, url('/media/img/tbpro/xs-bento-hosted.png') 1x, url('/media/img/tbpro/xs-bento-hosted-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xs-bento-hosted-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xs-bento-hosted-high-res.png') 2x);
+  background-image: image-set(url('/media/img/tbpro/xs-bento-hosted.avif') type('image/avif') 1x, url('/media/img/tbpro/xs-bento-hosted.webp') type('image/webp') 1x, url('/media/img/tbpro/xs-bento-hosted.png') 1x, url('/media/img/tbpro/xs-bento-hosted-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xs-bento-hosted-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xs-bento-hosted-high-res.png') 2x);
   aspect-ratio: 1.2/1;
   background-size: contain;
   background-repeat: no-repeat;
@@ -186,9 +185,9 @@ section#overview .overview-card-container .overview-card-3 {
   }
 }
 section#overview .overview-card-container .overview-card-3 .overview-image {
-  background-image: url('/media/img/tbpro/xs-bento-domain-high-res.png');
-  background-image: -webkit-image-set(url('/media/img/tbpro/xs-bento-domain-high-res.avif') type('image/avif'), url('/media/img/tbpro/xs-bento-domain-high-res.webp') type('image/webp'), url('/media/img/tbpro/xs-bento-domain-high-res.png'));
-  background-image: image-set(url('/media/img/tbpro/xs-bento-domain-high-res.avif') type('image/avif'), url('/media/img/tbpro/xs-bento-domain-high-res.webp') type('image/webp'), url('/media/img/tbpro/xs-bento-domain-high-res.png'));
+  background-image: url('/media/img/tbpro/xs-bento-domain.png');
+  background-image: -webkit-image-set(url('/media/img/tbpro/xs-bento-domain.avif') type('image/avif') 1x, url('/media/img/tbpro/xs-bento-domain.webp') type('image/webp') 1x, url('/media/img/tbpro/xs-bento-domain.png') 1x, url('/media/img/tbpro/xs-bento-domain-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xs-bento-domain-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xs-bento-domain-high-res.png') 2x);
+  background-image: image-set(url('/media/img/tbpro/xs-bento-domain.avif') type('image/avif') 1x, url('/media/img/tbpro/xs-bento-domain.webp') type('image/webp') 1x, url('/media/img/tbpro/xs-bento-domain.png') 1x, url('/media/img/tbpro/xs-bento-domain-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xs-bento-domain-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xs-bento-domain-high-res.png') 2x);
   aspect-ratio: 1.2/1;
   background-size: contain;
   background-repeat: no-repeat;
@@ -200,9 +199,9 @@ section#overview .overview-card-container .overview-card-3 .overview-image {
 }
 @media (min-width: 56.25rem) {
   section#overview .overview-card-container .overview-card-3 .overview-image {
-    background-image: url('/media/img/tbpro/xl-bento-domain-high-res.png');
-    background-image: -webkit-image-set(url('/media/img/tbpro/xl-bento-domain-high-res.avif') type('image/avif'), url('/media/img/tbpro/xl-bento-domain-high-res.webp') type('image/webp'), url('/media/img/tbpro/xl-bento-domain-high-res.png'));
-    background-image: image-set(url('/media/img/tbpro/xl-bento-domain-high-res.avif') type('image/avif'), url('/media/img/tbpro/xl-bento-domain-high-res.webp') type('image/webp'), url('/media/img/tbpro/xl-bento-domain-high-res.png'));
+    background-image: url('/media/img/tbpro/xl-bento-domain.png');
+    background-image: -webkit-image-set(url('/media/img/tbpro/xl-bento-domain.avif') type('image/avif') 1x, url('/media/img/tbpro/xl-bento-domain.webp') type('image/webp') 1x, url('/media/img/tbpro/xl-bento-domain.png') 1x, url('/media/img/tbpro/xl-bento-domain-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xl-bento-domain-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xl-bento-domain-high-res.png') 2x);
+    background-image: image-set(url('/media/img/tbpro/xl-bento-domain.avif') type('image/avif') 1x, url('/media/img/tbpro/xl-bento-domain.webp') type('image/webp') 1x, url('/media/img/tbpro/xl-bento-domain.png') 1x, url('/media/img/tbpro/xl-bento-domain-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xl-bento-domain-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xl-bento-domain-high-res.png') 2x);
     aspect-ratio: 0.9/1;
   }
 }
