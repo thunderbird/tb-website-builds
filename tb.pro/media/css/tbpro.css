@@ -2140,9 +2140,9 @@ section#features .feature-card-1 p {
   padding-right: 14.6px;
 }
 section#features .feature-card-1 .card-image {
-  background-image: url('/media/img/tbpro/xs-thundermail-card.png');
-  background-image: -webkit-image-set(url('/media/img/tbpro/xs-thundermail-card.avif') type('image/avif') 1x, url('/media/img/tbpro/xs-thundermail-card.webp') type('image/webp') 1x, url('/media/img/tbpro/xs-thundermail-card.png') 1x, url('/media/img/tbpro/xs-thundermail-card-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xs-thundermail-card-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xs-thundermail-card-high-res.png') 2x);
-  background-image: image-set(url('/media/img/tbpro/xs-thundermail-card.avif') type('image/avif') 1x, url('/media/img/tbpro/xs-thundermail-card.webp') type('image/webp') 1x, url('/media/img/tbpro/xs-thundermail-card.png') 1x, url('/media/img/tbpro/xs-thundermail-card-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xs-thundermail-card-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xs-thundermail-card-high-res.png') 2x);
+  background-image: url('/media/img/tbpro/xs-graphic-thundermail.png');
+  background-image: -webkit-image-set(url('/media/img/tbpro/xs-graphic-thundermail.avif') type('image/avif') 1x, url('/media/img/tbpro/xs-graphic-thundermail.webp') type('image/webp') 1x, url('/media/img/tbpro/xs-graphic-thundermail.png') 1x, url('/media/img/tbpro/xs-graphic-thundermail-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xs-graphic-thundermail-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xs-graphic-thundermail-high-res.png') 2x);
+  background-image: image-set(url('/media/img/tbpro/xs-graphic-thundermail.avif') type('image/avif') 1x, url('/media/img/tbpro/xs-graphic-thundermail.webp') type('image/webp') 1x, url('/media/img/tbpro/xs-graphic-thundermail.png') 1x, url('/media/img/tbpro/xs-graphic-thundermail-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xs-graphic-thundermail-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xs-graphic-thundermail-high-res.png') 2x);
 }
 @media (min-width: 56.25rem) {
   section#features .feature-card-1 .card-image {
@@ -2152,9 +2152,9 @@ section#features .feature-card-1 .card-image {
 }
 @media (min-width: 80rem) {
   section#features .feature-card-1 .card-image {
-    background-image: url('/media/img/tbpro/xl-thundermail-card.png');
-    background-image: -webkit-image-set(url('/media/img/tbpro/xl-thundermail-card.avif') type('image/avif') 1x, url('/media/img/tbpro/xl-thundermail-card.webp') type('image/webp') 1x, url('/media/img/tbpro/xl-thundermail-card.png') 1x, url('/media/img/tbpro/xl-thundermail-card-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xl-thundermail-card-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xl-thundermail-card-high-res.png') 2x);
-    background-image: image-set(url('/media/img/tbpro/xl-thundermail-card.avif') type('image/avif') 1x, url('/media/img/tbpro/xl-thundermail-card.webp') type('image/webp') 1x, url('/media/img/tbpro/xl-thundermail-card.png') 1x, url('/media/img/tbpro/xl-thundermail-card-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xl-thundermail-card-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xl-thundermail-card-high-res.png') 2x);
+    background-image: url('/media/img/tbpro/xl-graphic-thundermail.png');
+    background-image: -webkit-image-set(url('/media/img/tbpro/xl-graphic-thundermail.avif') type('image/avif') 1x, url('/media/img/tbpro/xl-graphic-thundermail.webp') type('image/webp') 1x, url('/media/img/tbpro/xl-graphic-thundermail.png') 1x, url('/media/img/tbpro/xl-graphic-thundermail-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xl-graphic-thundermail-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xl-graphic-thundermail-high-res.png') 2x);
+    background-image: image-set(url('/media/img/tbpro/xl-graphic-thundermail.avif') type('image/avif') 1x, url('/media/img/tbpro/xl-graphic-thundermail.webp') type('image/webp') 1x, url('/media/img/tbpro/xl-graphic-thundermail.png') 1x, url('/media/img/tbpro/xl-graphic-thundermail-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xl-graphic-thundermail-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xl-graphic-thundermail-high-res.png') 2x);
   }
 }
 section#features .feature-card-2 {
