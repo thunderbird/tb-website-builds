@@ -324,6 +324,9 @@ body .lower-gradient {
   letter-spacing: -0.36px;
   color: #1373d9;
 }
+#waitlist-form #waitlist-welcome {
+  margin-bottom: 3rem;
+}
 #waitlist-form .form-elements {
   display: flex;
   flex-direction: column;

@@ -120,7 +120,9 @@
               <a id="nav-link-send" href="/th/send">Send</a>
             </li>
             <li class="nav-item-join-button">
-              <button class="button-brand-small-outline-label">Sign in</button>
+              <form class="bolt-button-wrapper" action="https://accounts.tb.pro/login/">
+                <button class="button-brand-small-outline-label">Sign in</button>
+              </form>
             </li>
           </ul>
         </div>
@@ -138,8 +140,13 @@
   
 <div id="waitlist-form" class="top-level">
   <h2 id="form-header">Join the Waitlist</h2>
+  <div id="waitlist-welcome">
+    <p>Thunderbird Pro is currently in a closed Early Bird release and available by invitation only.
+Join the waitlist to stay informed on our progress and get early access as we expand availability.Thunderbird Pro is currently in a closed Early Bird beta and available by invitation only.
+Join the waitlist to stay informed on our progress and get early access as we expand availability.</p>
+  </div>
   <div class="form-container">
-    <form action=""
+    <form action="https://thunderbird.us12.list-manage.com/subscribe/post"
           method="post"
           id="mc-embedded-subscribe-form"
           name="mc-embedded-subscribe-form"
@@ -149,43 +156,52 @@
           >
 
       <div class="form-elements">
-        <label class="wrapper" for="first_name" id="first_name">
-          <span class="label">First name
-            <span class="required">*</span>
-          </span>
-          <span class="tbpro-input-wrapper">
-            <input class="tbpro-input-element" type="text" id="first_name" name="first_name" required="" autofocus="">
-          </span>
-        </label>
-        <label class="wrapper" for="last_name" id="last_name">
-          <span class="label">Last name
-            <span class="required">*</span>
-          </span>
-          <span class="tbpro-input-wrapper">
-            <input class="tbpro-input-element" type="text" id="last_name" name="last_name" required="" autofocus="">
-          </span>
-        </label>
+        <input type="hidden" name="u" value="f8051cc8637cf3ff79661f382">
+        <input type="hidden" name="id" value="a508104cf8">
+        <input type="hidden" name="ht" value="e6da924628bffe67fef3d05a9cfe08fb1a9eccab:MTc2Mjc5MjExMC4yMDMz">
 
-        <label class="wrapper" for="email" id="email">
+        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+          <label for="b_name">Name: </label>
+          <input type="text" name="b_name" tabindex="-1" value="" placeholder="Freddie" id="b_name">
+
+          <label for="b_email">Email: </label>
+          <input type="email" name="b_email" tabindex="-1" value="" placeholder="youremail@gmail.com" id="b_email">
+
+          <label for="b_comment">Comment: </label>
+          <textarea name="b_comment" tabindex="-1" placeholder="Please comment" id="b_comment"></textarea>
+        </div>
+
+        <label class="wrapper" for="email" id="MERGE0">
           <span class="label">Email address
             <span class="required">*</span>
           </span>
           <span class="tbpro-input-wrapper">
-            <input class="tbpro-input-element" type="text" id="email" name="email" required="" autofocus="">
+            <input class="tbpro-input-element" type="text" id="MERGE0" name="MERGE0" required autofocus="">
+          </span>
+        </label>
+
+        <label class="wrapper" for="first_name" id="MERGE1">
+          <span class="label">First name</span>
+          <span class="tbpro-input-wrapper">
+            <input class="tbpro-input-element" type="text" id="MERGE1" name="MERGE1" autofocus="">
+          </span>
+        </label>
+        <label class="wrapper" for="last_name" id="MERGE2">
+          <span class="label">Last name</span>
+          <span class="tbpro-input-wrapper">
+            <input class="tbpro-input-element" type="text" id="MERGE2" name="MERGE2" autofocus="">
           </span>
         </label>
 
         <div class="buttons">
-          <form class="bolt-button-wrapper" action="">
-  <button class="button-brand-filled-label-icon  cta-button">
-    Submit
+          <button class="button-brand-filled-label-icon  cta-button" name="submit" type="submit">
+  Submit
 
-    <!-- Using inline SVG so it adopts the current font color. -->
-    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.663 14.7506C12.9855 15.0789 13.5132 15.0837 13.8415 14.7612L18.0839 10.5945C18.2435 10.4378 18.3334 10.2236 18.3334 10C18.3334 9.77642 18.2435 9.56217 18.0839 9.4055L13.8415 5.23879C13.5132 4.9163 12.9855 4.92105 12.663 5.24941C12.3406 5.57777 12.3454 6.10539 12.6737 6.42788L15.4623 9.16667H2.50002C2.03979 9.16667 1.66669 9.53975 1.66669 10C1.66669 10.4603 2.03979 10.8333 2.50002 10.8333H15.4623L12.6737 13.5722C12.3454 13.8946 12.3406 14.4223 12.663 14.7506Z" fill="currentColor"/>
-    </svg>
-  </button>
-</form>
+  <!-- Using inline SVG so it adopts the current font color. -->
+  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.663 14.7506C12.9855 15.0789 13.5132 15.0837 13.8415 14.7612L18.0839 10.5945C18.2435 10.4378 18.3334 10.2236 18.3334 10C18.3334 9.77642 18.2435 9.56217 18.0839 9.4055L13.8415 5.23879C13.5132 4.9163 12.9855 4.92105 12.663 5.24941C12.3406 5.57777 12.3454 6.10539 12.6737 6.42788L15.4623 9.16667H2.50002C2.03979 9.16667 1.66669 9.53975 1.66669 10C1.66669 10.4603 2.03979 10.8333 2.50002 10.8333H15.4623L12.6737 13.5722C12.3454 13.8946 12.3406 14.4223 12.663 14.7506Z" fill="currentColor"/>
+  </svg>
+</button>
 
         </div>
 
