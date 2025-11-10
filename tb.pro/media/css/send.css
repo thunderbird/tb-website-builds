@@ -47,7 +47,7 @@ header#masthead .hero-image {
   background-image: -webkit-image-set(url('/media/img/tbpro/xs-send-hero-graphic.png') 1x, url('/media/img/tbpro/xs-send-hero-graphic-high-res.png') 2x);
   background-image: image-set(url('/media/img/tbpro/xs-send-hero-graphic.png') 1x, url('/media/img/tbpro/xs-send-hero-graphic-high-res.png') 2x);
 }
-@media (min-width: 80rem) {
+@media (min-width: 56.25rem) {
   header#masthead .hero-image {
     background-image: url('/media/img/tbpro/xl-send-hero-graphic.png');
     background-image: -webkit-image-set(url('/media/img/tbpro/xl-send-hero-graphic.png') 1x, url('/media/img/tbpro/xl-send-hero-graphic-high-res.png') 2x);
@@ -97,11 +97,15 @@ section#overview .overview-card-container .overview-card-1 .overview-image {
   max-width: 80%;
   min-width: 0;
 }
-@media (min-width: 80rem) {
+@media (min-width: 56.25rem) {
   section#overview .overview-card-container .overview-card-1 .overview-image {
     background-image: url('/media/img/tbpro/xl-send-bento-left-main.png');
     background-image: -webkit-image-set(url('/media/img/tbpro/xl-send-bento-left-main.png') 1x, url('/media/img/tbpro/xl-send-bento-left-main-high-res.png') 2x);
     background-image: image-set(url('/media/img/tbpro/xl-send-bento-left-main.png') 1x, url('/media/img/tbpro/xl-send-bento-left-main-high-res.png') 2x);
+  }
+}
+@media (min-width: 80rem) {
+  section#overview .overview-card-container .overview-card-1 .overview-image {
     grid-row: 2;
     margin-inline: 2rem;
     max-width: calc(100% - 4rem);

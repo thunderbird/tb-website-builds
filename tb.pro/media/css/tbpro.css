@@ -2148,15 +2148,11 @@ section#features .feature-card-1 .card-image {
 }
 @media (min-width: 56.25rem) {
   section#features .feature-card-1 .card-image {
-    height: 100%;
-    width: 100%;
-  }
-}
-@media (min-width: 80rem) {
-  section#features .feature-card-1 .card-image {
     background-image: url('/media/img/tbpro/xl-graphic-thundermail.png');
     background-image: -webkit-image-set(url('/media/img/tbpro/xl-graphic-thundermail.png') 1x, url('/media/img/tbpro/xl-graphic-thundermail-high-res.png') 2x);
     background-image: image-set(url('/media/img/tbpro/xl-graphic-thundermail.png') 1x, url('/media/img/tbpro/xl-graphic-thundermail-high-res.png') 2x);
+    height: 100%;
+    width: 100%;
   }
 }
 section#features .feature-card-2 {

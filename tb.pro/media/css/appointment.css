@@ -46,7 +46,7 @@ header#masthead .hero-image {
   background-image: -webkit-image-set(url('/media/img/tbpro/xs-appointment-hero.png') 1x, url('/media/img/tbpro/xs-appointment-hero-high-res.png') 2x);
   background-image: image-set(url('/media/img/tbpro/xs-appointment-hero.png') 1x, url('/media/img/tbpro/xs-appointment-hero-high-res.png') 2x);
 }
-@media (min-width: 80rem) {
+@media (min-width: 56.25rem) {
   header#masthead .hero-image {
     background-image: url('/media/img/tbpro/xl-appointment-hero.png');
     background-image: -webkit-image-set(url('/media/img/tbpro/xl-appointment-hero.png') 1x, url('/media/img/tbpro/xl-appointment-hero-high-res.png') 2x);

@@ -309,7 +309,6 @@ body .lower-gradient {
 #waitlist-form {
   color: #4c4d58;
   height: 100%;
-  padding-top: 2rem;
 }
 @media (min-width: 80rem) {
   #waitlist-form {
@@ -325,7 +324,7 @@ body .lower-gradient {
   color: #1373d9;
 }
 #waitlist-form #waitlist-welcome {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 #waitlist-form .form-elements {
   display: flex;
@@ -384,5 +383,6 @@ body .lower-gradient {
 #waitlist-form .form-elements .buttons {
   display: flex;
   justify-content: flex-end;
+  margin-block: 1rem;
   width: 100%;
 }
