@@ -45,7 +45,7 @@ header#masthead .hero-image {
   aspect-ratio: 1.9/1;
   width: 100%;
 }
-@media (min-width: 80rem) {
+@media (min-width: 56.25rem) {
   header#masthead .hero-image {
     background-image: url('/media/img/tbpro/xl-thundermail-hero.png');
     background-image: -webkit-image-set(url('/media/img/tbpro/xl-thundermail-hero.png') 1x, url('/media/img/tbpro/xl-thundermail-hero-high-res.png') 2x);
