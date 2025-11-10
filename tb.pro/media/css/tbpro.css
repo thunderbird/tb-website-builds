@@ -1880,8 +1880,8 @@ body {
 }
 .top-gradient {
   background-image: url('/media/img/tbpro/top-gradient-background.png');
-  background-image: -webkit-image-set(url('/media/img/tbpro/top-gradient-background.avif') type('image/avif') 1x, url('/media/img/tbpro/top-gradient-background.webp') type('image/webp') 1x, url('/media/img/tbpro/top-gradient-background.png') 1x, url('/media/img/tbpro/top-gradient-background-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/top-gradient-background-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/top-gradient-background-high-res.png') 2x);
-  background-image: image-set(url('/media/img/tbpro/top-gradient-background.avif') type('image/avif') 1x, url('/media/img/tbpro/top-gradient-background.webp') type('image/webp') 1x, url('/media/img/tbpro/top-gradient-background.png') 1x, url('/media/img/tbpro/top-gradient-background-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/top-gradient-background-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/top-gradient-background-high-res.png') 2x);
+  background-image: -webkit-image-set(url('/media/img/tbpro/top-gradient-background.png') 1x, url('/media/img/tbpro/top-gradient-background-high-res.png') 2x);
+  background-image: image-set(url('/media/img/tbpro/top-gradient-background.png') 1x, url('/media/img/tbpro/top-gradient-background-high-res.png') 2x);
   background-color: #18181b;
   background-position: center top;
   background-repeat: no-repeat;
@@ -1918,8 +1918,8 @@ header#masthead {
 }
 header#masthead .hero-image {
   background-image: url('/media/img/tbpro/orb-graphic.png');
-  background-image: -webkit-image-set(url('/media/img/tbpro/orb-graphic.avif') type('image/avif') 1x, url('/media/img/tbpro/orb-graphic.webp') type('image/webp') 1x, url('/media/img/tbpro/orb-graphic.png') 1x, url('/media/img/tbpro/orb-graphic-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/orb-graphic-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/orb-graphic-high-res.png') 2x);
-  background-image: image-set(url('/media/img/tbpro/orb-graphic.avif') type('image/avif') 1x, url('/media/img/tbpro/orb-graphic.webp') type('image/webp') 1x, url('/media/img/tbpro/orb-graphic.png') 1x, url('/media/img/tbpro/orb-graphic-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/orb-graphic-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/orb-graphic-high-res.png') 2x);
+  background-image: -webkit-image-set(url('/media/img/tbpro/orb-graphic.png') 1x, url('/media/img/tbpro/orb-graphic-high-res.png') 2x);
+  background-image: image-set(url('/media/img/tbpro/orb-graphic.png') 1x, url('/media/img/tbpro/orb-graphic-high-res.png') 2x);
   aspect-ratio: 1.4/1;
   background-position: top center;
   background-repeat: no-repeat;
@@ -1931,8 +1931,8 @@ header#masthead .hero-image {
 @media (min-width: 56.25rem) {
   header#masthead .hero-image {
     background-image: url('/media/img/tbpro/orb-graphic.png');
-    background-image: -webkit-image-set(url('/media/img/tbpro/orb-graphic.avif') type('image/avif') 1x, url('/media/img/tbpro/orb-graphic.webp') type('image/webp') 1x, url('/media/img/tbpro/orb-graphic.png') 1x, url('/media/img/tbpro/orb-graphic-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/orb-graphic-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/orb-graphic-high-res.png') 2x);
-    background-image: image-set(url('/media/img/tbpro/orb-graphic.avif') type('image/avif') 1x, url('/media/img/tbpro/orb-graphic.webp') type('image/webp') 1x, url('/media/img/tbpro/orb-graphic.png') 1x, url('/media/img/tbpro/orb-graphic-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/orb-graphic-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/orb-graphic-high-res.png') 2x);
+    background-image: -webkit-image-set(url('/media/img/tbpro/orb-graphic.png') 1x, url('/media/img/tbpro/orb-graphic-high-res.png') 2x);
+    background-image: image-set(url('/media/img/tbpro/orb-graphic.png') 1x, url('/media/img/tbpro/orb-graphic-high-res.png') 2x);
     grid-column: 3 / -1;
     grid-row: 2 / -1;
     margin-top: 2rem;
@@ -2141,8 +2141,8 @@ section#features .feature-card-1 p {
 }
 section#features .feature-card-1 .card-image {
   background-image: url('/media/img/tbpro/xs-graphic-thundermail.png');
-  background-image: -webkit-image-set(url('/media/img/tbpro/xs-graphic-thundermail.avif') type('image/avif') 1x, url('/media/img/tbpro/xs-graphic-thundermail.webp') type('image/webp') 1x, url('/media/img/tbpro/xs-graphic-thundermail.png') 1x, url('/media/img/tbpro/xs-graphic-thundermail-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xs-graphic-thundermail-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xs-graphic-thundermail-high-res.png') 2x);
-  background-image: image-set(url('/media/img/tbpro/xs-graphic-thundermail.avif') type('image/avif') 1x, url('/media/img/tbpro/xs-graphic-thundermail.webp') type('image/webp') 1x, url('/media/img/tbpro/xs-graphic-thundermail.png') 1x, url('/media/img/tbpro/xs-graphic-thundermail-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xs-graphic-thundermail-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xs-graphic-thundermail-high-res.png') 2x);
+  background-image: -webkit-image-set(url('/media/img/tbpro/xs-graphic-thundermail.png') 1x, url('/media/img/tbpro/xs-graphic-thundermail-high-res.png') 2x);
+  background-image: image-set(url('/media/img/tbpro/xs-graphic-thundermail.png') 1x, url('/media/img/tbpro/xs-graphic-thundermail-high-res.png') 2x);
 }
 @media (min-width: 56.25rem) {
   section#features .feature-card-1 .card-image {
@@ -2153,8 +2153,8 @@ section#features .feature-card-1 .card-image {
 @media (min-width: 80rem) {
   section#features .feature-card-1 .card-image {
     background-image: url('/media/img/tbpro/xl-graphic-thundermail.png');
-    background-image: -webkit-image-set(url('/media/img/tbpro/xl-graphic-thundermail.avif') type('image/avif') 1x, url('/media/img/tbpro/xl-graphic-thundermail.webp') type('image/webp') 1x, url('/media/img/tbpro/xl-graphic-thundermail.png') 1x, url('/media/img/tbpro/xl-graphic-thundermail-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xl-graphic-thundermail-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xl-graphic-thundermail-high-res.png') 2x);
-    background-image: image-set(url('/media/img/tbpro/xl-graphic-thundermail.avif') type('image/avif') 1x, url('/media/img/tbpro/xl-graphic-thundermail.webp') type('image/webp') 1x, url('/media/img/tbpro/xl-graphic-thundermail.png') 1x, url('/media/img/tbpro/xl-graphic-thundermail-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xl-graphic-thundermail-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xl-graphic-thundermail-high-res.png') 2x);
+    background-image: -webkit-image-set(url('/media/img/tbpro/xl-graphic-thundermail.png') 1x, url('/media/img/tbpro/xl-graphic-thundermail-high-res.png') 2x);
+    background-image: image-set(url('/media/img/tbpro/xl-graphic-thundermail.png') 1x, url('/media/img/tbpro/xl-graphic-thundermail-high-res.png') 2x);
   }
 }
 section#features .feature-card-2 {
@@ -2167,15 +2167,15 @@ section#features .feature-card-2 p {
 }
 section#features .feature-card-2 .card-image {
   background-image: url('/media/img/tbpro/xs-appointment-card.png');
-  background-image: -webkit-image-set(url('/media/img/tbpro/xs-appointment-card.avif') type('image/avif') 1x, url('/media/img/tbpro/xs-appointment-card.webp') type('image/webp') 1x, url('/media/img/tbpro/xs-appointment-card.png') 1x, url('/media/img/tbpro/xs-appointment-card-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xs-appointment-card-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xs-appointment-card-high-res.png') 2x);
-  background-image: image-set(url('/media/img/tbpro/xs-appointment-card.avif') type('image/avif') 1x, url('/media/img/tbpro/xs-appointment-card.webp') type('image/webp') 1x, url('/media/img/tbpro/xs-appointment-card.png') 1x, url('/media/img/tbpro/xs-appointment-card-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xs-appointment-card-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xs-appointment-card-high-res.png') 2x);
+  background-image: -webkit-image-set(url('/media/img/tbpro/xs-appointment-card.png') 1x, url('/media/img/tbpro/xs-appointment-card-high-res.png') 2x);
+  background-image: image-set(url('/media/img/tbpro/xs-appointment-card.png') 1x, url('/media/img/tbpro/xs-appointment-card-high-res.png') 2x);
 }
 @media (min-width: 80rem) {
   section#features .feature-card-2 .card-image {
     aspect-ratio: unset;
     background-image: url('/media/img/tbpro/xl-appointment-card.png');
-    background-image: -webkit-image-set(url('/media/img/tbpro/xl-appointment-card.avif') type('image/avif') 1x, url('/media/img/tbpro/xl-appointment-card.webp') type('image/webp') 1x, url('/media/img/tbpro/xl-appointment-card.png') 1x, url('/media/img/tbpro/xl-appointment-card-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xl-appointment-card-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xl-appointment-card-high-res.png') 2x);
-    background-image: image-set(url('/media/img/tbpro/xl-appointment-card.avif') type('image/avif') 1x, url('/media/img/tbpro/xl-appointment-card.webp') type('image/webp') 1x, url('/media/img/tbpro/xl-appointment-card.png') 1x, url('/media/img/tbpro/xl-appointment-card-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xl-appointment-card-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xl-appointment-card-high-res.png') 2x);
+    background-image: -webkit-image-set(url('/media/img/tbpro/xl-appointment-card.png') 1x, url('/media/img/tbpro/xl-appointment-card-high-res.png') 2x);
+    background-image: image-set(url('/media/img/tbpro/xl-appointment-card.png') 1x, url('/media/img/tbpro/xl-appointment-card-high-res.png') 2x);
   }
 }
 section#features .feature-card-3 {
@@ -2191,14 +2191,14 @@ section#features .feature-card-3 {
 }
 section#features .feature-card-3 .card-image {
   background-image: url('/media/img/tbpro/xs-send-card.png');
-  background-image: -webkit-image-set(url('/media/img/tbpro/xs-send-card.avif') type('image/avif') 1x, url('/media/img/tbpro/xs-send-card.webp') type('image/webp') 1x, url('/media/img/tbpro/xs-send-card.png') 1x, url('/media/img/tbpro/xs-send-card-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xs-send-card-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xs-send-card-high-res.png') 2x);
-  background-image: image-set(url('/media/img/tbpro/xs-send-card.avif') type('image/avif') 1x, url('/media/img/tbpro/xs-send-card.webp') type('image/webp') 1x, url('/media/img/tbpro/xs-send-card.png') 1x, url('/media/img/tbpro/xs-send-card-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xs-send-card-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xs-send-card-high-res.png') 2x);
+  background-image: -webkit-image-set(url('/media/img/tbpro/xs-send-card.png') 1x, url('/media/img/tbpro/xs-send-card-high-res.png') 2x);
+  background-image: image-set(url('/media/img/tbpro/xs-send-card.png') 1x, url('/media/img/tbpro/xs-send-card-high-res.png') 2x);
 }
 @media (min-width: 80rem) {
   section#features .feature-card-3 .card-image {
     background-image: url('/media/img/tbpro/xl-send-card.png');
-    background-image: -webkit-image-set(url('/media/img/tbpro/xl-send-card.avif') type('image/avif') 1x, url('/media/img/tbpro/xl-send-card.webp') type('image/webp') 1x, url('/media/img/tbpro/xl-send-card.png') 1x, url('/media/img/tbpro/xl-send-card-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xl-send-card-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xl-send-card-high-res.png') 2x);
-    background-image: image-set(url('/media/img/tbpro/xl-send-card.avif') type('image/avif') 1x, url('/media/img/tbpro/xl-send-card.webp') type('image/webp') 1x, url('/media/img/tbpro/xl-send-card.png') 1x, url('/media/img/tbpro/xl-send-card-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xl-send-card-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xl-send-card-high-res.png') 2x);
+    background-image: -webkit-image-set(url('/media/img/tbpro/xl-send-card.png') 1x, url('/media/img/tbpro/xl-send-card-high-res.png') 2x);
+    background-image: image-set(url('/media/img/tbpro/xl-send-card.png') 1x, url('/media/img/tbpro/xl-send-card-high-res.png') 2x);
     aspect-ratio: unset;
   }
 }

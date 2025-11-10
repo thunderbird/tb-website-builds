@@ -44,14 +44,14 @@ header#masthead .hero-image {
   background-size: contain;
   width: 100%;
   background-image: url('/media/img/tbpro/xs-send-hero-graphic.png');
-  background-image: -webkit-image-set(url('/media/img/tbpro/xs-send-hero-graphic.avif') type('image/avif') 1x, url('/media/img/tbpro/xs-send-hero-graphic.webp') type('image/webp') 1x, url('/media/img/tbpro/xs-send-hero-graphic.png') 1x, url('/media/img/tbpro/xs-send-hero-graphic-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xs-send-hero-graphic-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xs-send-hero-graphic-high-res.png') 2x);
-  background-image: image-set(url('/media/img/tbpro/xs-send-hero-graphic.avif') type('image/avif') 1x, url('/media/img/tbpro/xs-send-hero-graphic.webp') type('image/webp') 1x, url('/media/img/tbpro/xs-send-hero-graphic.png') 1x, url('/media/img/tbpro/xs-send-hero-graphic-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xs-send-hero-graphic-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xs-send-hero-graphic-high-res.png') 2x);
+  background-image: -webkit-image-set(url('/media/img/tbpro/xs-send-hero-graphic.png') 1x, url('/media/img/tbpro/xs-send-hero-graphic-high-res.png') 2x);
+  background-image: image-set(url('/media/img/tbpro/xs-send-hero-graphic.png') 1x, url('/media/img/tbpro/xs-send-hero-graphic-high-res.png') 2x);
 }
 @media (min-width: 80rem) {
   header#masthead .hero-image {
     background-image: url('/media/img/tbpro/xl-send-hero-graphic.png');
-    background-image: -webkit-image-set(url('/media/img/tbpro/xl-send-hero-graphic.avif') type('image/avif') 1x, url('/media/img/tbpro/xl-send-hero-graphic.webp') type('image/webp') 1x, url('/media/img/tbpro/xl-send-hero-graphic.png') 1x, url('/media/img/tbpro/xl-send-hero-graphic-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xl-send-hero-graphic-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xl-send-hero-graphic-high-res.png') 2x);
-    background-image: image-set(url('/media/img/tbpro/xl-send-hero-graphic.avif') type('image/avif') 1x, url('/media/img/tbpro/xl-send-hero-graphic.webp') type('image/webp') 1x, url('/media/img/tbpro/xl-send-hero-graphic.png') 1x, url('/media/img/tbpro/xl-send-hero-graphic-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xl-send-hero-graphic-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xl-send-hero-graphic-high-res.png') 2x);
+    background-image: -webkit-image-set(url('/media/img/tbpro/xl-send-hero-graphic.png') 1x, url('/media/img/tbpro/xl-send-hero-graphic-high-res.png') 2x);
+    background-image: image-set(url('/media/img/tbpro/xl-send-hero-graphic.png') 1x, url('/media/img/tbpro/xl-send-hero-graphic-high-res.png') 2x);
     max-width: 970px;
   }
 }
@@ -85,8 +85,8 @@ section#overview .overview-card-container .overview-card-1 {
 }
 section#overview .overview-card-container .overview-card-1 .overview-image {
   background-image: url('/media/img/tbpro/xs-send-bento-top.png');
-  background-image: -webkit-image-set(url('/media/img/tbpro/xs-send-bento-top.avif') type('image/avif') 1x, url('/media/img/tbpro/xs-send-bento-top.webp') type('image/webp') 1x, url('/media/img/tbpro/xs-send-bento-top.png') 1x, url('/media/img/tbpro/xs-send-bento-top-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xs-send-bento-top-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xs-send-bento-top-high-res.png') 2x);
-  background-image: image-set(url('/media/img/tbpro/xs-send-bento-top.avif') type('image/avif') 1x, url('/media/img/tbpro/xs-send-bento-top.webp') type('image/webp') 1x, url('/media/img/tbpro/xs-send-bento-top.png') 1x, url('/media/img/tbpro/xs-send-bento-top-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xs-send-bento-top-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xs-send-bento-top-high-res.png') 2x);
+  background-image: -webkit-image-set(url('/media/img/tbpro/xs-send-bento-top.png') 1x, url('/media/img/tbpro/xs-send-bento-top-high-res.png') 2x);
+  background-image: image-set(url('/media/img/tbpro/xs-send-bento-top.png') 1x, url('/media/img/tbpro/xs-send-bento-top-high-res.png') 2x);
   aspect-ratio: 1.77/1;
   background-size: contain;
   background-repeat: no-repeat;
@@ -100,8 +100,8 @@ section#overview .overview-card-container .overview-card-1 .overview-image {
 @media (min-width: 80rem) {
   section#overview .overview-card-container .overview-card-1 .overview-image {
     background-image: url('/media/img/tbpro/xl-send-bento-left-main.png');
-    background-image: -webkit-image-set(url('/media/img/tbpro/xl-send-bento-left-main.avif') type('image/avif') 1x, url('/media/img/tbpro/xl-send-bento-left-main.webp') type('image/webp') 1x, url('/media/img/tbpro/xl-send-bento-left-main.png') 1x, url('/media/img/tbpro/xl-send-bento-left-main-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xl-send-bento-left-main-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xl-send-bento-left-main-high-res.png') 2x);
-    background-image: image-set(url('/media/img/tbpro/xl-send-bento-left-main.avif') type('image/avif') 1x, url('/media/img/tbpro/xl-send-bento-left-main.webp') type('image/webp') 1x, url('/media/img/tbpro/xl-send-bento-left-main.png') 1x, url('/media/img/tbpro/xl-send-bento-left-main-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xl-send-bento-left-main-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xl-send-bento-left-main-high-res.png') 2x);
+    background-image: -webkit-image-set(url('/media/img/tbpro/xl-send-bento-left-main.png') 1x, url('/media/img/tbpro/xl-send-bento-left-main-high-res.png') 2x);
+    background-image: image-set(url('/media/img/tbpro/xl-send-bento-left-main.png') 1x, url('/media/img/tbpro/xl-send-bento-left-main-high-res.png') 2x);
     grid-row: 2;
     margin-inline: 2rem;
     max-width: calc(100% - 4rem);
@@ -136,8 +136,8 @@ section#overview .overview-card-container .overview-card-2 {
 }
 section#overview .overview-card-container .overview-card-2 .overview-image {
   background-image: url('/media/img/tbpro/xs-send-bento-middle.png');
-  background-image: -webkit-image-set(url('/media/img/tbpro/xs-send-bento-middle.avif') type('image/avif') 1x, url('/media/img/tbpro/xs-send-bento-middle.webp') type('image/webp') 1x, url('/media/img/tbpro/xs-send-bento-middle.png') 1x, url('/media/img/tbpro/xs-send-bento-middle-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xs-send-bento-middle-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xs-send-bento-middle-high-res.png') 2x);
-  background-image: image-set(url('/media/img/tbpro/xs-send-bento-middle.avif') type('image/avif') 1x, url('/media/img/tbpro/xs-send-bento-middle.webp') type('image/webp') 1x, url('/media/img/tbpro/xs-send-bento-middle.png') 1x, url('/media/img/tbpro/xs-send-bento-middle-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xs-send-bento-middle-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xs-send-bento-middle-high-res.png') 2x);
+  background-image: -webkit-image-set(url('/media/img/tbpro/xs-send-bento-middle.png') 1x, url('/media/img/tbpro/xs-send-bento-middle-high-res.png') 2x);
+  background-image: image-set(url('/media/img/tbpro/xs-send-bento-middle.png') 1x, url('/media/img/tbpro/xs-send-bento-middle-high-res.png') 2x);
   aspect-ratio: 2.46/1;
   background-size: contain;
   background-repeat: no-repeat;
@@ -149,8 +149,8 @@ section#overview .overview-card-container .overview-card-2 .overview-image {
 @media (min-width: 80rem) {
   section#overview .overview-card-container .overview-card-2 .overview-image {
     background-image: url('/media/img/tbpro/xl-send-bento-right-top.png');
-    background-image: -webkit-image-set(url('/media/img/tbpro/xl-send-bento-right-top.avif') type('image/avif') 1x, url('/media/img/tbpro/xl-send-bento-right-top.webp') type('image/webp') 1x, url('/media/img/tbpro/xl-send-bento-right-top.png') 1x, url('/media/img/tbpro/xl-send-bento-right-top-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xl-send-bento-right-top-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xl-send-bento-right-top-high-res.png') 2x);
-    background-image: image-set(url('/media/img/tbpro/xl-send-bento-right-top.avif') type('image/avif') 1x, url('/media/img/tbpro/xl-send-bento-right-top.webp') type('image/webp') 1x, url('/media/img/tbpro/xl-send-bento-right-top.png') 1x, url('/media/img/tbpro/xl-send-bento-right-top-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xl-send-bento-right-top-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xl-send-bento-right-top-high-res.png') 2x);
+    background-image: -webkit-image-set(url('/media/img/tbpro/xl-send-bento-right-top.png') 1x, url('/media/img/tbpro/xl-send-bento-right-top-high-res.png') 2x);
+    background-image: image-set(url('/media/img/tbpro/xl-send-bento-right-top.png') 1x, url('/media/img/tbpro/xl-send-bento-right-top-high-res.png') 2x);
     align-self: center;
     aspect-ratio: 1.8/1;
     grid-row: 1 / -1;
@@ -187,8 +187,8 @@ section#overview .overview-card-container .overview-card-3 {
 }
 section#overview .overview-card-container .overview-card-3 .overview-image {
   background-image: url('/media/img/tbpro/xs-send-bento-bottom.png');
-  background-image: -webkit-image-set(url('/media/img/tbpro/xs-send-bento-bottom.avif') type('image/avif') 1x, url('/media/img/tbpro/xs-send-bento-bottom.webp') type('image/webp') 1x, url('/media/img/tbpro/xs-send-bento-bottom.png') 1x, url('/media/img/tbpro/xs-send-bento-bottom-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xs-send-bento-bottom-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xs-send-bento-bottom-high-res.png') 2x);
-  background-image: image-set(url('/media/img/tbpro/xs-send-bento-bottom.avif') type('image/avif') 1x, url('/media/img/tbpro/xs-send-bento-bottom.webp') type('image/webp') 1x, url('/media/img/tbpro/xs-send-bento-bottom.png') 1x, url('/media/img/tbpro/xs-send-bento-bottom-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xs-send-bento-bottom-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xs-send-bento-bottom-high-res.png') 2x);
+  background-image: -webkit-image-set(url('/media/img/tbpro/xs-send-bento-bottom.png') 1x, url('/media/img/tbpro/xs-send-bento-bottom-high-res.png') 2x);
+  background-image: image-set(url('/media/img/tbpro/xs-send-bento-bottom.png') 1x, url('/media/img/tbpro/xs-send-bento-bottom-high-res.png') 2x);
   aspect-ratio: 1.7/1;
   background-size: contain;
   background-repeat: no-repeat;
@@ -201,8 +201,8 @@ section#overview .overview-card-container .overview-card-3 .overview-image {
 @media (min-width: 80rem) {
   section#overview .overview-card-container .overview-card-3 .overview-image {
     background-image: url('/media/img/tbpro/xl-send-bento-right-bottom.png');
-    background-image: -webkit-image-set(url('/media/img/tbpro/xl-send-bento-right-bottom.avif') type('image/avif') 1x, url('/media/img/tbpro/xl-send-bento-right-bottom.webp') type('image/webp') 1x, url('/media/img/tbpro/xl-send-bento-right-bottom.png') 1x, url('/media/img/tbpro/xl-send-bento-right-bottom-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xl-send-bento-right-bottom-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xl-send-bento-right-bottom-high-res.png') 2x);
-    background-image: image-set(url('/media/img/tbpro/xl-send-bento-right-bottom.avif') type('image/avif') 1x, url('/media/img/tbpro/xl-send-bento-right-bottom.webp') type('image/webp') 1x, url('/media/img/tbpro/xl-send-bento-right-bottom.png') 1x, url('/media/img/tbpro/xl-send-bento-right-bottom-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xl-send-bento-right-bottom-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xl-send-bento-right-bottom-high-res.png') 2x);
+    background-image: -webkit-image-set(url('/media/img/tbpro/xl-send-bento-right-bottom.png') 1x, url('/media/img/tbpro/xl-send-bento-right-bottom-high-res.png') 2x);
+    background-image: image-set(url('/media/img/tbpro/xl-send-bento-right-bottom.png') 1x, url('/media/img/tbpro/xl-send-bento-right-bottom-high-res.png') 2x);
     height: 100%;
     background-position: center right;
     margin: auto;

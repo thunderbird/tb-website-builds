@@ -39,18 +39,18 @@ header#masthead .product-logo {
   height: 80px;
 }
 header#masthead .hero-image {
+  background-image: url('/media/img/tbpro/xs-thundermail-hero.png');
+  background-image: -webkit-image-set(url('/media/img/tbpro/xs-thundermail-hero.png') 1x, url('/media/img/tbpro/xs-thundermail-hero-high-res.png') 2x);
+  background-image: image-set(url('/media/img/tbpro/xs-thundermail-hero.png') 1x, url('/media/img/tbpro/xs-thundermail-hero-high-res.png') 2x);
   aspect-ratio: 1.9/1;
   width: 100%;
-  background-image: url('/media/img/tbpro/xs-thundermail-hero.png');
-  background-image: -webkit-image-set(url('/media/img/tbpro/xs-thundermail-hero.avif') type('image/avif') 1x, url('/media/img/tbpro/xs-thundermail-hero.webp') type('image/webp') 1x, url('/media/img/tbpro/xs-thundermail-hero.png') 1x, url('/media/img/tbpro/xs-thundermail-hero-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xs-thundermail-hero-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xs-thundermail-hero-high-res.png') 2x);
-  background-image: image-set(url('/media/img/tbpro/xs-thundermail-hero.avif') type('image/avif') 1x, url('/media/img/tbpro/xs-thundermail-hero.webp') type('image/webp') 1x, url('/media/img/tbpro/xs-thundermail-hero.png') 1x, url('/media/img/tbpro/xs-thundermail-hero-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xs-thundermail-hero-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xs-thundermail-hero-high-res.png') 2x);
 }
 @media (min-width: 80rem) {
   header#masthead .hero-image {
     background-image: url('/media/img/tbpro/xl-thundermail-hero.png');
-    background-image: -webkit-image-set(url('/media/img/tbpro/xl-thundermail-hero.avif') type('image/avif') 1x, url('/media/img/tbpro/xl-thundermail-hero.webp') type('image/webp') 1x, url('/media/img/tbpro/xl-thundermail-hero.png') 1x, url('/media/img/tbpro/xl-thundermail-hero-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xl-thundermail-hero-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xl-thundermail-hero-high-res.png') 2x);
-    background-image: image-set(url('/media/img/tbpro/xl-thundermail-hero.avif') type('image/avif') 1x, url('/media/img/tbpro/xl-thundermail-hero.webp') type('image/webp') 1x, url('/media/img/tbpro/xl-thundermail-hero.png') 1x, url('/media/img/tbpro/xl-thundermail-hero-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xl-thundermail-hero-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xl-thundermail-hero-high-res.png') 2x);
-    aspect-ratio: 3.57/1;
+    background-image: -webkit-image-set(url('/media/img/tbpro/xl-thundermail-hero.png') 1x, url('/media/img/tbpro/xl-thundermail-hero-high-res.png') 2x);
+    background-image: image-set(url('/media/img/tbpro/xl-thundermail-hero.png') 1x, url('/media/img/tbpro/xl-thundermail-hero-high-res.png') 2x);
+    aspect-ratio: 2.69/1;
   }
 }
 section#overview .overview-card-container .overview-card {
@@ -82,8 +82,8 @@ section#overview .overview-card-container .overview-card-1 {
 }
 section#overview .overview-card-container .overview-card-1 .overview-image {
   background-image: url('/media/img/tbpro/xs-bento-standards.png');
-  background-image: -webkit-image-set(url('/media/img/tbpro/xs-bento-standards.avif') type('image/avif') 1x, url('/media/img/tbpro/xs-bento-standards.webp') type('image/webp') 1x, url('/media/img/tbpro/xs-bento-standards.png') 1x, url('/media/img/tbpro/xs-bento-standards-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xs-bento-standards-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xs-bento-standards-high-res.png') 2x);
-  background-image: image-set(url('/media/img/tbpro/xs-bento-standards.avif') type('image/avif') 1x, url('/media/img/tbpro/xs-bento-standards.webp') type('image/webp') 1x, url('/media/img/tbpro/xs-bento-standards.png') 1x, url('/media/img/tbpro/xs-bento-standards-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xs-bento-standards-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xs-bento-standards-high-res.png') 2x);
+  background-image: -webkit-image-set(url('/media/img/tbpro/xs-bento-standards.png') 1x, url('/media/img/tbpro/xs-bento-standards-high-res.png') 2x);
+  background-image: image-set(url('/media/img/tbpro/xs-bento-standards.png') 1x, url('/media/img/tbpro/xs-bento-standards-high-res.png') 2x);
   aspect-ratio: 2.6/1;
   background-size: contain;
   background-repeat: no-repeat;
@@ -94,8 +94,8 @@ section#overview .overview-card-container .overview-card-1 .overview-image {
 @media (min-width: 80rem) {
   section#overview .overview-card-container .overview-card-1 .overview-image {
     background-image: url('/media/img/tbpro/xl-bento-standards.png');
-    background-image: -webkit-image-set(url('/media/img/tbpro/xl-bento-standards.avif') type('image/avif') 1x, url('/media/img/tbpro/xl-bento-standards.webp') type('image/webp') 1x, url('/media/img/tbpro/xl-bento-standards.png') 1x, url('/media/img/tbpro/xl-bento-standards-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xl-bento-standards-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xl-bento-standards-high-res.png') 2x);
-    background-image: image-set(url('/media/img/tbpro/xl-bento-standards.avif') type('image/avif') 1x, url('/media/img/tbpro/xl-bento-standards.webp') type('image/webp') 1x, url('/media/img/tbpro/xl-bento-standards.png') 1x, url('/media/img/tbpro/xl-bento-standards-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xl-bento-standards-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xl-bento-standards-high-res.png') 2x);
+    background-image: -webkit-image-set(url('/media/img/tbpro/xl-bento-standards.png') 1x, url('/media/img/tbpro/xl-bento-standards-high-res.png') 2x);
+    background-image: image-set(url('/media/img/tbpro/xl-bento-standards.png') 1x, url('/media/img/tbpro/xl-bento-standards-high-res.png') 2x);
     aspect-ratio: 2.3/1;
     grid-row: 2;
   }
@@ -129,8 +129,8 @@ section#overview .overview-card-container .overview-card-2 {
 }
 section#overview .overview-card-container .overview-card-2 .overview-image {
   background-image: url('/media/img/tbpro/xs-bento-hosted.png');
-  background-image: -webkit-image-set(url('/media/img/tbpro/xs-bento-hosted.avif') type('image/avif') 1x, url('/media/img/tbpro/xs-bento-hosted.webp') type('image/webp') 1x, url('/media/img/tbpro/xs-bento-hosted.png') 1x, url('/media/img/tbpro/xs-bento-hosted-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xs-bento-hosted-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xs-bento-hosted-high-res.png') 2x);
-  background-image: image-set(url('/media/img/tbpro/xs-bento-hosted.avif') type('image/avif') 1x, url('/media/img/tbpro/xs-bento-hosted.webp') type('image/webp') 1x, url('/media/img/tbpro/xs-bento-hosted.png') 1x, url('/media/img/tbpro/xs-bento-hosted-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xs-bento-hosted-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xs-bento-hosted-high-res.png') 2x);
+  background-image: -webkit-image-set(url('/media/img/tbpro/xs-bento-hosted.png') 1x, url('/media/img/tbpro/xs-bento-hosted-high-res.png') 2x);
+  background-image: image-set(url('/media/img/tbpro/xs-bento-hosted.png') 1x, url('/media/img/tbpro/xs-bento-hosted-high-res.png') 2x);
   aspect-ratio: 1.2/1;
   background-size: contain;
   background-repeat: no-repeat;
@@ -178,8 +178,8 @@ section#overview .overview-card-container .overview-card-3 {
 }
 section#overview .overview-card-container .overview-card-3 .overview-image {
   background-image: url('/media/img/tbpro/xs-bento-domain.png');
-  background-image: -webkit-image-set(url('/media/img/tbpro/xs-bento-domain.avif') type('image/avif') 1x, url('/media/img/tbpro/xs-bento-domain.webp') type('image/webp') 1x, url('/media/img/tbpro/xs-bento-domain.png') 1x, url('/media/img/tbpro/xs-bento-domain-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xs-bento-domain-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xs-bento-domain-high-res.png') 2x);
-  background-image: image-set(url('/media/img/tbpro/xs-bento-domain.avif') type('image/avif') 1x, url('/media/img/tbpro/xs-bento-domain.webp') type('image/webp') 1x, url('/media/img/tbpro/xs-bento-domain.png') 1x, url('/media/img/tbpro/xs-bento-domain-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xs-bento-domain-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xs-bento-domain-high-res.png') 2x);
+  background-image: -webkit-image-set(url('/media/img/tbpro/xs-bento-domain.png') 1x, url('/media/img/tbpro/xs-bento-domain-high-res.png') 2x);
+  background-image: image-set(url('/media/img/tbpro/xs-bento-domain.png') 1x, url('/media/img/tbpro/xs-bento-domain-high-res.png') 2x);
   aspect-ratio: 1.2/1;
   background-size: contain;
   background-repeat: no-repeat;
@@ -192,8 +192,8 @@ section#overview .overview-card-container .overview-card-3 .overview-image {
 @media (min-width: 56.25rem) {
   section#overview .overview-card-container .overview-card-3 .overview-image {
     background-image: url('/media/img/tbpro/xl-bento-domain.png');
-    background-image: -webkit-image-set(url('/media/img/tbpro/xl-bento-domain.avif') type('image/avif') 1x, url('/media/img/tbpro/xl-bento-domain.webp') type('image/webp') 1x, url('/media/img/tbpro/xl-bento-domain.png') 1x, url('/media/img/tbpro/xl-bento-domain-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xl-bento-domain-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xl-bento-domain-high-res.png') 2x);
-    background-image: image-set(url('/media/img/tbpro/xl-bento-domain.avif') type('image/avif') 1x, url('/media/img/tbpro/xl-bento-domain.webp') type('image/webp') 1x, url('/media/img/tbpro/xl-bento-domain.png') 1x, url('/media/img/tbpro/xl-bento-domain-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xl-bento-domain-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xl-bento-domain-high-res.png') 2x);
+    background-image: -webkit-image-set(url('/media/img/tbpro/xl-bento-domain.png') 1x, url('/media/img/tbpro/xl-bento-domain-high-res.png') 2x);
+    background-image: image-set(url('/media/img/tbpro/xl-bento-domain.png') 1x, url('/media/img/tbpro/xl-bento-domain-high-res.png') 2x);
     aspect-ratio: 0.9/1;
   }
 }

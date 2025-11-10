@@ -43,14 +43,14 @@ header#masthead .hero-image {
   aspect-ratio: 1.9/1;
   width: 100%;
   background-image: url('/media/img/tbpro/xs-appointment-hero.png');
-  background-image: -webkit-image-set(url('/media/img/tbpro/xs-appointment-hero.avif') type('image/avif') 1x, url('/media/img/tbpro/xs-appointment-hero.webp') type('image/webp') 1x, url('/media/img/tbpro/xs-appointment-hero.png') 1x, url('/media/img/tbpro/xs-appointment-hero-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xs-appointment-hero-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xs-appointment-hero-high-res.png') 2x);
-  background-image: image-set(url('/media/img/tbpro/xs-appointment-hero.avif') type('image/avif') 1x, url('/media/img/tbpro/xs-appointment-hero.webp') type('image/webp') 1x, url('/media/img/tbpro/xs-appointment-hero.png') 1x, url('/media/img/tbpro/xs-appointment-hero-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xs-appointment-hero-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xs-appointment-hero-high-res.png') 2x);
+  background-image: -webkit-image-set(url('/media/img/tbpro/xs-appointment-hero.png') 1x, url('/media/img/tbpro/xs-appointment-hero-high-res.png') 2x);
+  background-image: image-set(url('/media/img/tbpro/xs-appointment-hero.png') 1x, url('/media/img/tbpro/xs-appointment-hero-high-res.png') 2x);
 }
 @media (min-width: 80rem) {
   header#masthead .hero-image {
     background-image: url('/media/img/tbpro/xl-appointment-hero.png');
-    background-image: -webkit-image-set(url('/media/img/tbpro/xl-appointment-hero.avif') type('image/avif') 1x, url('/media/img/tbpro/xl-appointment-hero.webp') type('image/webp') 1x, url('/media/img/tbpro/xl-appointment-hero.png') 1x, url('/media/img/tbpro/xl-appointment-hero-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xl-appointment-hero-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xl-appointment-hero-high-res.png') 2x);
-    background-image: image-set(url('/media/img/tbpro/xl-appointment-hero.avif') type('image/avif') 1x, url('/media/img/tbpro/xl-appointment-hero.webp') type('image/webp') 1x, url('/media/img/tbpro/xl-appointment-hero.png') 1x, url('/media/img/tbpro/xl-appointment-hero-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xl-appointment-hero-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xl-appointment-hero-high-res.png') 2x);
+    background-image: -webkit-image-set(url('/media/img/tbpro/xl-appointment-hero.png') 1x, url('/media/img/tbpro/xl-appointment-hero-high-res.png') 2x);
+    background-image: image-set(url('/media/img/tbpro/xl-appointment-hero.png') 1x, url('/media/img/tbpro/xl-appointment-hero-high-res.png') 2x);
     aspect-ratio: 3.6/1;
     max-width: 970px;
   }
@@ -84,8 +84,8 @@ section#overview .overview-card-container .overview-card-1 {
 }
 section#overview .overview-card-container .overview-card-1 .overview-image {
   background-image: url('/media/img/tbpro/xs-appointment-bento-top.png');
-  background-image: -webkit-image-set(url('/media/img/tbpro/xs-appointment-bento-top.avif') type('image/avif') 1x, url('/media/img/tbpro/xs-appointment-bento-top.webp') type('image/webp') 1x, url('/media/img/tbpro/xs-appointment-bento-top.png') 1x, url('/media/img/tbpro/xs-appointment-bento-top-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xs-appointment-bento-top-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xs-appointment-bento-top-high-res.png') 2x);
-  background-image: image-set(url('/media/img/tbpro/xs-appointment-bento-top.avif') type('image/avif') 1x, url('/media/img/tbpro/xs-appointment-bento-top.webp') type('image/webp') 1x, url('/media/img/tbpro/xs-appointment-bento-top.png') 1x, url('/media/img/tbpro/xs-appointment-bento-top-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xs-appointment-bento-top-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xs-appointment-bento-top-high-res.png') 2x);
+  background-image: -webkit-image-set(url('/media/img/tbpro/xs-appointment-bento-top.png') 1x, url('/media/img/tbpro/xs-appointment-bento-top-high-res.png') 2x);
+  background-image: image-set(url('/media/img/tbpro/xs-appointment-bento-top.png') 1x, url('/media/img/tbpro/xs-appointment-bento-top-high-res.png') 2x);
   aspect-ratio: 1.97/1;
   background-size: contain;
   background-repeat: no-repeat;
@@ -97,8 +97,8 @@ section#overview .overview-card-container .overview-card-1 .overview-image {
 @media (min-width: 80rem) {
   section#overview .overview-card-container .overview-card-1 .overview-image {
     background-image: url('/media/img/tbpro/xl-appointment-bento-left.png');
-    background-image: -webkit-image-set(url('/media/img/tbpro/xl-appointment-bento-left.avif') type('image/avif') 1x, url('/media/img/tbpro/xl-appointment-bento-left.webp') type('image/webp') 1x, url('/media/img/tbpro/xl-appointment-bento-left.png') 1x, url('/media/img/tbpro/xl-appointment-bento-left-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xl-appointment-bento-left-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xl-appointment-bento-left-high-res.png') 2x);
-    background-image: image-set(url('/media/img/tbpro/xl-appointment-bento-left.avif') type('image/avif') 1x, url('/media/img/tbpro/xl-appointment-bento-left.webp') type('image/webp') 1x, url('/media/img/tbpro/xl-appointment-bento-left.png') 1x, url('/media/img/tbpro/xl-appointment-bento-left-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xl-appointment-bento-left-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xl-appointment-bento-left-high-res.png') 2x);
+    background-image: -webkit-image-set(url('/media/img/tbpro/xl-appointment-bento-left.png') 1x, url('/media/img/tbpro/xl-appointment-bento-left-high-res.png') 2x);
+    background-image: image-set(url('/media/img/tbpro/xl-appointment-bento-left.png') 1x, url('/media/img/tbpro/xl-appointment-bento-left-high-res.png') 2x);
     aspect-ratio: 2.09/1;
     grid-row: 2;
     margin-left: 2rem;
@@ -132,8 +132,8 @@ section#overview .overview-card-container .overview-card-2 {
 }
 section#overview .overview-card-container .overview-card-2 .overview-image {
   background-image: url('/media/img/tbpro/xs-appointment-bento-bottom.png');
-  background-image: -webkit-image-set(url('/media/img/tbpro/xs-appointment-bento-bottom.avif') type('image/avif') 1x, url('/media/img/tbpro/xs-appointment-bento-bottom.webp') type('image/webp') 1x, url('/media/img/tbpro/xs-appointment-bento-bottom.png') 1x, url('/media/img/tbpro/xs-appointment-bento-bottom-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xs-appointment-bento-bottom-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xs-appointment-bento-bottom-high-res.png') 2x);
-  background-image: image-set(url('/media/img/tbpro/xs-appointment-bento-bottom.avif') type('image/avif') 1x, url('/media/img/tbpro/xs-appointment-bento-bottom.webp') type('image/webp') 1x, url('/media/img/tbpro/xs-appointment-bento-bottom.png') 1x, url('/media/img/tbpro/xs-appointment-bento-bottom-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xs-appointment-bento-bottom-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xs-appointment-bento-bottom-high-res.png') 2x);
+  background-image: -webkit-image-set(url('/media/img/tbpro/xs-appointment-bento-bottom.png') 1x, url('/media/img/tbpro/xs-appointment-bento-bottom-high-res.png') 2x);
+  background-image: image-set(url('/media/img/tbpro/xs-appointment-bento-bottom.png') 1x, url('/media/img/tbpro/xs-appointment-bento-bottom-high-res.png') 2x);
   aspect-ratio: 1.67/1;
   background-size: contain;
   background-repeat: no-repeat;
@@ -146,8 +146,8 @@ section#overview .overview-card-container .overview-card-2 .overview-image {
 @media (min-width: 80rem) {
   section#overview .overview-card-container .overview-card-2 .overview-image {
     background-image: url('/media/img/tbpro/xl-appointment-bento-top-right.png');
-    background-image: -webkit-image-set(url('/media/img/tbpro/xl-appointment-bento-top-right.avif') type('image/avif') 1x, url('/media/img/tbpro/xl-appointment-bento-top-right.webp') type('image/webp') 1x, url('/media/img/tbpro/xl-appointment-bento-top-right.png') 1x, url('/media/img/tbpro/xl-appointment-bento-top-right-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xl-appointment-bento-top-right-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xl-appointment-bento-top-right-high-res.png') 2x);
-    background-image: image-set(url('/media/img/tbpro/xl-appointment-bento-top-right.avif') type('image/avif') 1x, url('/media/img/tbpro/xl-appointment-bento-top-right.webp') type('image/webp') 1x, url('/media/img/tbpro/xl-appointment-bento-top-right.png') 1x, url('/media/img/tbpro/xl-appointment-bento-top-right-high-res.avif') type('image/avif') 2x, url('/media/img/tbpro/xl-appointment-bento-top-right-high-res.webp') type('image/webp') 2x, url('/media/img/tbpro/xl-appointment-bento-top-right-high-res.png') 2x);
+    background-image: -webkit-image-set(url('/media/img/tbpro/xl-appointment-bento-top-right.png') 1x, url('/media/img/tbpro/xl-appointment-bento-top-right-high-res.png') 2x);
+    background-image: image-set(url('/media/img/tbpro/xl-appointment-bento-top-right.png') 1x, url('/media/img/tbpro/xl-appointment-bento-top-right-high-res.png') 2x);
     aspect-ratio: unset;
     grid-row: 1 / -1;
     justify-self: end;
