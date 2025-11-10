@@ -51,7 +51,7 @@ header#masthead .hero-image {
     background-image: url('/media/img/tbpro/xl-appointment-hero.png');
     background-image: -webkit-image-set(url('/media/img/tbpro/xl-appointment-hero.png') 1x, url('/media/img/tbpro/xl-appointment-hero-high-res.png') 2x);
     background-image: image-set(url('/media/img/tbpro/xl-appointment-hero.png') 1x, url('/media/img/tbpro/xl-appointment-hero-high-res.png') 2x);
-    aspect-ratio: 3.6/1;
+    aspect-ratio: 2.39/1;
     max-width: 970px;
   }
 }
