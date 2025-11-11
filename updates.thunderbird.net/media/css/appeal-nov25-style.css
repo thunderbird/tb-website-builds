@@ -1240,7 +1240,8 @@ body {
 @media (min-width: 90rem) {
   .page-appeal-nov25 main {
     margin: auto;
-    width: 100rem;
+    max-width: 100rem;
+    width: 100%;
   }
 }
 .page-appeal-nov25 #main-content {
@@ -1270,6 +1271,7 @@ body {
     align-items: flex-start;
     flex: 0 0 calc((100% - var(--width-left-column)) - 2rem);
     margin-top: unset;
+    overflow-x: hidden;
   }
 }
 .page-appeal-nov25 #appeal-body::before {
