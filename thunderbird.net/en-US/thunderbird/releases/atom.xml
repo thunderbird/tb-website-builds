@@ -8,7 +8,7 @@
   <title>Thunderbird Release Notes</title>
   <subtitle type="text">Thunderbird Release Notes feed provides a simple way to keep up to date with Thunderbird releases.</subtitle>
 
-  <updated>2025-11-11T13:33:10+00:00</updated>
+  <updated>2025-11-11T14:54:22+00:00</updated>
   <logo>https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png</logo>
   <icon>https://www.thunderbird.net/media/img/thunderbird/favicon-196.png</icon>
 
@@ -240,6 +240,24 @@
         
 
         <li>
+          <p>Special folders are consistently named based on their folder type flag</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
           <p>Skype has been retired and therefore dropped from Address book IM selection</p>
           
         </li>
@@ -409,24 +427,6 @@
 
         <li>
           <p>Emoji sequences were not properly handled in subject lines</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Servers lacking localization showed special folder names in server’s language</p>
           
         </li>
       
