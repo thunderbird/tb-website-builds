@@ -121,6 +121,9 @@ MEDIA_URL = '/media'
 # location of the Thunderbird favicon
 FAVICON_PATH = '/media/img/thunderbird/favicon.ico'
 
+# path to common templates and includes
+COMMON_SEARCHPATH = 'sites/common/'
+
 # path to the website templates
 # templates with paths starting with "_" or "includes" are excluded by builder.py
 WEBSITE_PATH = 'sites/www.thunderbird.net/'
@@ -232,6 +235,10 @@ URL_MAPPINGS = {
     'support': 'https://support.mozilla.org/products/thunderbird/',
     'support.mobile': 'https://support.mozilla.org/products/thunderbird-android/',
     'support.question': 'https://support.mozilla.org/questions/new/thunderbird',
+    'tbpro.home': '/',
+    'tbpro.thundermail': '/thundermail',
+    'tbpro.appointment': '/appointment',
+    'tbpro.send': '/send',
     'thunderbird.about': '/about',
     'thunderbird.about.our-mission-statement': '/about/mission-statement',
     'thunderbird.android.announcement': 'https://blog.thunderbird.net/2024/10/thunderbird-for-android-8-0-takes-flight/',
@@ -289,6 +296,8 @@ URL_MAPPINGS = {
     'updates.140.appeal.jun25b': '/thunderbird/140.0/jun25b/',
     'updates.140.appeal.jun25a.donate': '/thunderbird/140.0/jun25a/donate/',
     'updates.140.appeal.jun25b.donate': '/thunderbird/140.0/jun25b/donate/',
+    'updates.140.appeal.nov25a.donate': '/thunderbird/140.0/nov25a/donate/',
+    'updates.140.appeal.nov25b.donate': '/thunderbird/140.0/nov25b/donate/',
     'updates.release.appeal.sep25r': '/thunderbird/release/sep25r/',
     'updates.release.appeal.sep25r.donate': '/thunderbird/release/sep25r/donate/',
 }
@@ -353,6 +362,7 @@ UPDATES_CSS = {
     "appeal-nov24-style": ["less/appeals/nov24.less"],
     "appeal-dec24-style": ["less/appeals/dec24.less"],
     "appeal-apr25-style": ["less/appeals/apr25.less"],
+    "appeal-nov25-style": ["less/appeals/nov25.less"],
     "monthly-style": ["less/monthly.less"],
     'whatsnew-140': ['less/whatsnew-140.less'],
     "appeal-jun25-style": ["less/appeals/jun25.less"],
@@ -369,7 +379,11 @@ UPDATES_JS = {
 
 
 TBPRO_CSS = {
-    'tbpro-style': ['less/tbpro-style.less'],
+    'tbpro': ['less/tbpro/index.less'],
+    'thundermail': ['less/tbpro/product/thundermail.less'],
+    'appointment': ['less/tbpro/product/appointment.less'],
+    'send': ['less/tbpro/product/send.less'],
+    'waitlist': ['less/tbpro/waitlist.less'],
 }
 
 TBPRO_JS = {
@@ -579,8 +593,9 @@ WEBSITE_REDIRECTS = {
 
 # Similar to website redirects but for UTN
 UPDATES_REDIRECTS = {
-    ('thunderbird', 'appeal'): 'updates.128.appeal.apr25',
-    ('thunderbird', '140.0', 'jun25'): 'updates.140.appeal.jun25a'
+    ('thunderbird', 'appeal'): 'updates.release.appeal.sep25r',
+    ('thunderbird', '140.0', 'jun25'): 'updates.140.appeal.jun25a',
+    ('thunderbird', 'release', 'sep25'): 'updates.release.appeal.sep25r',
 }
 
 # The default release channel to use when various function defaults are used
@@ -606,7 +621,7 @@ DONOR_HELP_SLOW_WARNING = True
 
 # Turning this value to True will enable a thunderbird.net site-wide announcement banner
 # Make sure to edit it in includes/announcement.html !
-SITE_ANNOUNCEMENT = True
+SITE_ANNOUNCEMENT = False
 
 # Shows a dialog element with information on how to donate if their browser or browser addons have blocked FRU
 # In reality this can trigger for slow internet users, but we don't have a perfect way to detect this.
