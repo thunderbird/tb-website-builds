@@ -1195,7 +1195,7 @@ a:hover:visited {
   --color-appeal-main-bg: var(--color-white);
   --color-footer-txt: #105BBC;
   --color-appeal-txt: #18181B;
-  --color-appeal-bg-border: #1373D9;
+  --color-appeal-bg-border: #1373d9;
   --txt: var(--color-appeal-txt);
   --shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   --font-content: Open Sans, system-ui, sans-serif;
@@ -1261,13 +1261,40 @@ body {
   align-items: center;
   display: flex;
   flex-direction: column;
+  margin-bottom: 2rem;
   margin-top: 22rem;
+  position: relative;
 }
 @media (min-width: 64rem) {
   .page-appeal-nov25 #appeal-body {
     align-items: flex-start;
     flex: 0 0 calc((100% - var(--width-left-column)) - 2rem);
     margin-top: unset;
+  }
+}
+.page-appeal-nov25 #appeal-body::before {
+  content: '';
+  position: absolute;
+  top: 4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(var(--appeal--letter-width-mobile) + 16px);
+  height: calc(100% - 4rem);
+  background: radial-gradient(ellipse at bottom right, #a7d4ed, transparent 50%);
+  border-radius: 12px;
+  filter: blur(70px);
+  z-index: 1;
+  pointer-events: none;
+}
+@media (min-width: 40rem) {
+  .page-appeal-nov25 #appeal-body::before {
+    width: calc(var(--appeal-content-width) + 16px);
+  }
+}
+@media (min-width: 64rem) {
+  .page-appeal-nov25 #appeal-body::before {
+    left: 0;
+    transform: none;
   }
 }
 .page-appeal-nov25 #appeal-body #appeal-heading {
@@ -1318,9 +1345,10 @@ body {
   background: var(--color-appeal-main-bg);
   border: 0.063rem solid var(--color-appeal-bg-border);
   border-radius: 0.75rem;
-  box-shadow: var(--shadow);
+  box-shadow: 5px 3px 10px 0px rgba(0, 0, 0, 0.2);
   max-width: var(--appeal--letter-width-mobile);
   padding-bottom: 1rem;
+  z-index: 2;
 }
 @media (min-width: 40rem) {
   .page-appeal-nov25 #appeal-body .letter-container {
