@@ -1839,13 +1839,13 @@ body {
 #site-header #site-header-nav #nav-menu li button:hover {
   color: var(--colour-ti-base);
 }
-#site-header #site-header-nav #nav-menu li.nav-item-join-button {
+#site-header #site-header-nav #nav-menu li.nav-item-cta-button {
   align-self: flex-end;
   margin-left: 1.5rem;
   margin-block: 0.5rem;
 }
 @media (min-width: 80rem) {
-  #site-header #site-header-nav #nav-menu li.nav-item-join-button {
+  #site-header #site-header-nav #nav-menu li.nav-item-cta-button {
     margin-block: unset;
     margin-left: unset;
   }
