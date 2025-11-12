@@ -62,10 +62,28 @@
 </div>
 
 <script>
-  // Disable link to site that you're currently on.
+  const currentHost = window.location.hostname;
+  const isStage = currentHost === 'www-stage.thunderbird.net' ||
+                  currentHost === 'stage.tb.pro' ||
+                  currentHost === 'localhost';
+
+  // Update href values based on environment
   document.querySelectorAll('#tab-navigation-bar a').forEach(link => {
     const linkHost = new URL(link.href).hostname;
-    const currentHost = window.location.hostname;
+
+    // Determine which link this is and update.
+    if (linkHost.includes('thunderbird.net')) {
+      // Thunderbird link
+      link.href = isStage ? 'https://www-stage.thunderbird.net/en-US/' : 'https://www.thunderbird.net/en-US/';
+    } else if (linkHost.includes('tb.pro')) {
+      // Thunderbird Pro link
+      link.href = isStage ? 'https://stage.tb.pro/en-US/' : 'https://tb.pro/en-US/';
+    }
+  });
+
+  // Set .active class accordingly.
+  document.querySelectorAll('#tab-navigation-bar a').forEach(link => {
+    const linkHost = new URL(link.href).hostname;
 
     if (linkHost === currentHost) {
       link.classList.add('active');
@@ -119,8 +137,8 @@
             <li>
               <a id="nav-link-send" href="/sv-SE/send">Send</a>
             </li>
-            <li class="nav-item-join-button">
-              <form class="bolt-button-wrapper" action="https://accounts.tb.pro/login/">
+            <li class="nav-item-cta-button">
+              <form class="bolt-button-wrapper" action="https://accounts-stage.tb.pro/login/" id="signin-button">
                 <button class="button-brand-small-outline-label">Sign in</button>
               </form>
             </li>
@@ -137,7 +155,7 @@
   Thundermail offers you email hosting with the same values as Thunderbird. Enjoy privacy, security, and freedom from client to inbox.
 </p>
 
-<form class="bolt-button-wrapper" action="../waitlist.html">
+<form class="bolt-button-wrapper" action="/sv-SE/waitlist">
   <button class="button-brand-filled-label-icon  cta-button">
     Join Waitlist
 
@@ -243,7 +261,7 @@
     <h3>Early Bird Plan</h3>
     <p>Our initial offering, ideal for most users</p>
     <h4><b><sup>$</sup>9</b><span>per month,<br>paid annually</span></h4>
-    <button class="button-brand-outline-label" onclick="window.location.href='../waitlist.html'">
+    <button class="button-brand-outline-label" onclick="window.location.href='/sv-SE/waitlist'">
       Join Waitlist
 
     <!-- Using inline SVG so it adopts the current font color. -->
@@ -343,6 +361,44 @@
         const isExpanded = hamburgerBtn.getAttribute('aria-expanded') === 'true';
         hamburgerBtn.setAttribute('aria-expanded', !isExpanded);
     });
+
+    // Adjust sign-in URL based on:
+    // - whether we're on prod vs stage
+    // - if we're on the appointment marketing page.
+    const signinBtn = document.getElementById('signin-button');
+
+    if (signinBtn) {
+      const hostname = window.location.hostname;
+      const isStage = hostname === 'stage.tb.pro' || hostname === 'localhost';
+      const pathname = window.location.pathname;
+      let loginUrl;
+
+      // Check if we're on the Appointment marketing page (with or without locale)
+      // Matches: /appointment, /en-US/appointment, /fr-FR/appointment, etc.
+      const isAppointmentPage = pathname === '/appointment' || pathname.includes('/appointment');
+
+      if (isAppointmentPage) {
+        // Appointment-specific login URLs
+        if (isStage) {
+          loginUrl = 'https://appointment-stage.tb.pro/login';
+        } else if (hostname === 'tb.pro') {
+          loginUrl = 'https://appointment.tb.pro/login';
+        }
+      } else {
+        // All other pages - regular accounts login
+        if (isStage) {
+          loginUrl = 'https://accounts-stage.tb.pro/login/';
+        } else {
+          loginUrl = 'https://accounts.tb.pro/login/';
+        }
+      }
+
+      if (loginUrl) {
+        signinBtn.action = loginUrl;
+      }
+    }
+
+
   </script>
 
   </body>
