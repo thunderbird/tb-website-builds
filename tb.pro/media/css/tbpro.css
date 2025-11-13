@@ -2010,15 +2010,6 @@ section#features {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
-  section#features .feature-card:first-child {
-    grid-row: 1 / -1;
-    height: 100%;
-  }
-  section#features .feature-card:not(:first-child) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-  }
 }
 section#features .feature-card {
   -webkit-backdrop-filter: blur(24px);
@@ -2117,7 +2108,6 @@ section#features .feature-card .card-info .card-body {
     font-weight: 300;
     line-height: 1.32;
     letter-spacing: normal;
-    min-width: 311px;
   }
 }
 section#features .feature-card .card-image {
@@ -2137,6 +2127,12 @@ section#features .feature-card-1 {
   background-image: linear-gradient(349deg, #0f1623 0%, #0a0f19 40%, #06090e 85%, #0a3a6d 100%);
   justify-content: space-between;
   padding: 32px 17.4px 16.1px 19px;
+}
+@media (min-width: 80rem) {
+  section#features .feature-card-1 {
+    grid-row: 1 / -1;
+    height: 100%;
+  }
 }
 section#features .feature-card-1 p {
   padding-right: 14.6px;
@@ -2160,8 +2156,22 @@ section#features .feature-card-2 {
   background-image: linear-gradient(349deg, #0f1623 0%, #0a0f19 40%, #06090e 85%, #003e3e 100%);
   padding: 2rem 1px 0.25rem 2rem;
 }
+@media (min-width: 80rem) {
+  section#features .feature-card-2 {
+    box-sizing: border-box;
+    display: grid;
+    gap: 0;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+  }
+}
 section#features .feature-card-2 p {
-  padding-right: 2.5rem;
+  padding-right: 0.5rem;
+}
+@media (min-width: 80rem) {
+  section#features .feature-card-2 p {
+    padding-right: 0.75rem;
+  }
 }
 section#features .feature-card-2 .card-image {
   background-image: url('/media/img/tbpro/xs-appointment-card.png');
@@ -2179,11 +2189,16 @@ section#features .feature-card-2 .card-image {
 section#features .feature-card-3 {
   background-clip: padding-box;
   background-image: linear-gradient(349deg, #0f1623 0%, #0a0f19 40%, #06090e 85%, #f5a760 120%);
+  overflow: hidden;
   padding: 2rem;
   padding-bottom: 1rem;
 }
 @media (min-width: 80rem) {
   section#features .feature-card-3 {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
     padding-right: 0;
   }
 }

@@ -108,7 +108,7 @@ section#overview .overview-card-container .overview-card-2 {
     display: grid;
     gap: 0.5rem;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 3fr 4fr;
+    grid-template-rows: 1fr 2fr;
     padding-inline: 0.75rem;
   }
   section#overview .overview-card-container .overview-card-2 header {
@@ -141,10 +141,10 @@ section#overview .overview-card-container .overview-card-2 .overview-image {
 }
 @media (min-width: 80rem) {
   section#overview .overview-card-container .overview-card-2 .overview-image {
+    align-self: center;
     grid-column: 2;
     grid-row: 1 / -1;
     height: 100%;
-    justify-self: start;
     margin-left: 18px;
     margin-top: 0;
   }
@@ -159,7 +159,7 @@ section#overview .overview-card-container .overview-card-3 {
     display: grid;
     gap: 0.5rem;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 3fr 4fr;
+    grid-template-rows: 1fr 2fr;
     padding-inline: 0.75rem 0;
   }
   section#overview .overview-card-container .overview-card-3 header {
@@ -199,6 +199,7 @@ section#overview .overview-card-container .overview-card-3 .overview-image {
 }
 @media (min-width: 80rem) {
   section#overview .overview-card-container .overview-card-3 .overview-image {
+    background-position: center right;
     margin-top: 0;
     grid-column: 2;
     grid-row: 1 / -1;
