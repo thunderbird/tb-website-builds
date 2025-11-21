@@ -1739,6 +1739,7 @@ body {
   #site-header #site-header-nav #nav-link-home {
     grid-column-start: 1;
     grid-row-start: 1;
+    margin-top: 1rem;
     z-index: 9;
   }
   #site-header #site-header-nav #nav-link-home svg {
@@ -1759,9 +1760,8 @@ body {
 @media (min-width: 80rem) {
   #site-header #site-header-nav #nav-menu {
     background: unset;
-    display: grid;
-    grid-template-columns: subgrid;
-    grid-template-rows: subgrid;
+    display: contents;
+    grid-template-columns: 1fr auto auto auto 1fr;
     grid-column: 1 / -1;
     grid-row-start: 1;
     position: relative;
@@ -1780,10 +1780,11 @@ body {
 }
 @media (min-width: 80rem) {
   #site-header #site-header-nav #nav-menu ul {
+    align-items: center;
     display: grid;
     grid-column: 1 / -1;
-    grid-template-rows: subgrid;
     grid-template-columns: 1fr auto auto auto 1fr;
+    margin-top: -3rem;
   }
   #site-header #site-header-nav #nav-menu ul li:first-child {
     display: block;
