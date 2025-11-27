@@ -1,0 +1,1579 @@
+/*
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ */
+/*
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ */
+/* - Metropolis -*/
+@font-face {
+  font-family: metropolis;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-Regular.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-RegularItalic.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-RegularItalic.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-ExtraLight.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-ExtraLight.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-Light.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-Light.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-Thin.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-Thin.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-ExtraLightItalic.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-ExtraLightItalic.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-LightItalic.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-LightItalic.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-ThinItalic.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-ThinItalic.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-Medium.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-SemiBold.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-SemiBold.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-Bold.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-BoldItalic.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-BoldItalic.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-MediumItalic.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-MediumItalic.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-SemiBoldItalic.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-SemiBoldItalic.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-ExtraBold.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-ExtraBold.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-ExtraBoldItalic.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-ExtraBoldItalic.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-Black.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-Black.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-BlackItalic.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-BlackItalic.woff") format("woff");
+}
+/*
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ */
+/* - Inter -*/
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-Thin.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-Thin.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-ThinItalic.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-ThinItalic.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-ExtraLight.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-ExtraLight.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-ExtraLightItalic.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-ExtraLightItalic.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-Light.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-Light.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-LightItalic.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-LightItalic.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-Regular.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-Regular.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-Italic.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-Italic.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-Medium.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-Medium.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-MediumItalic.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-MediumItalic.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-SemiBold.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-SemiBold.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-SemiBoldItalic.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-SemiBoldItalic.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-Bold.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-Bold.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-BoldItalic.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-BoldItalic.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-ExtraBold.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-ExtraBold.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-ExtraBoldItalic.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-ExtraBoldItalic.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-Black.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-Black.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-BlackItalic.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-BlackItalic.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter var';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: url("/media/fonts/Inter/Inter-roman.var.woff2?v=3.19") format("woff2");
+}
+@font-face {
+  font-family: 'Inter var';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: italic;
+  font-named-instance: 'Italic';
+  src: url("/media/fonts/Inter/Inter-italic.var.woff2?v=3.19") format("woff2");
+}
+:root {
+  --color-red-10: #fee2e2;
+  --color-red-20: #fecaca;
+  --color-red-30: #fca5a5;
+  --color-red-40: #f87171;
+  --color-red-50: #ef4444;
+  --color-red-60: #dc2626;
+  --color-red-70: #b91c1c;
+  --color-red-80: #991b1b;
+  --color-red-90: #7f1d1d;
+  --color-orange-10: #ffedd5;
+  --color-orange-20: #fed7aa;
+  --color-orange-30: #fdba74;
+  --color-orange-40: #fb923c;
+  --color-orange-50: #f97316;
+  --color-orange-60: #ea580c;
+  --color-orange-70: #c2410c;
+  --color-orange-80: #9a3412;
+  --color-orange-90: #7c2d12;
+  --color-amber-10: #fef3c7;
+  --color-amber-20: #fde68a;
+  --color-amber-30: #fcd34d;
+  --color-amber-40: #fbbf24;
+  --color-amber-50: #f59e0b;
+  --color-amber-60: #d97706;
+  --color-amber-70: #b45309;
+  --color-amber-80: #92400e;
+  --color-amber-90: #78350f;
+  --color-yellow-10: #fef9c3;
+  --color-yellow-20: #fef08a;
+  --color-yellow-30: #fde047;
+  --color-yellow-40: #facc15;
+  --color-yellow-50: #eab308;
+  --color-yellow-60: #ca8a04;
+  --color-yellow-70: #a16207;
+  --color-yellow-80: #854d0e;
+  --color-yellow-90: #713f12;
+  --color-green-10: #dcfce7;
+  --color-green-20: #bbf7d0;
+  --color-green-30: #86efac;
+  --color-green-40: #4ade80;
+  --color-green-50: #22c55e;
+  --color-green-60: #16a34a;
+  --color-green-70: #15803d;
+  --color-green-80: #166534;
+  --color-green-90: #14532d;
+  --color-teal-10: #cdfaf7;
+  --color-teal-20: #9ff4f0;
+  --color-teal-30: #62e9e6;
+  --color-teal-40: #27d3d6;
+  --color-teal-50: #0db7bd;
+  --color-teal-60: #0a929d;
+  --color-teal-70: #0e757f;
+  --color-teal-80: #135e67;
+  --color-teal-90: #144e56;
+  --color-blue-10: #ddeefe;
+  --color-blue-20: #bce0fd;
+  --color-blue-30: #88ccfc;
+  --color-blue-40: #4cb1f9;
+  --color-blue-50: #2493ef;
+  --color-blue-60: #1373d9;
+  --color-blue-70: #105bbc;
+  --color-blue-80: #124c9a;
+  --color-blue-90: #15427c;
+  --color-purple-10: #f3e8ff;
+  --color-purple-20: #e9d5ff;
+  --color-purple-30: #d8b4fe;
+  --color-purple-40: #c084fc;
+  --color-purple-50: #a855f7;
+  --color-purple-60: #9333ea;
+  --color-purple-70: #7e22ce;
+  --color-purple-80: #6b21a8;
+  --color-purple-90: #581c87;
+  --color-magenta-10: #fbe7f9;
+  --color-magenta-20: #f8cff3;
+  --color-magenta-30: #f4a9e8;
+  --color-magenta-40: #ee75d7;
+  --color-magenta-50: #e247c4;
+  --color-magenta-60: #cd26a5;
+  --color-magenta-70: #b01a86;
+  --color-magenta-80: #91186e;
+  --color-magenta-90: #79195c;
+  --color-brown-10: #f4e9d7;
+  --color-brown-20: #efdfc4;
+  --color-brown-30: #e4cdab;
+  --color-brown-40: #d7bc96;
+  --color-brown-50: #b6986c;
+  --color-brown-60: #96764b;
+  --color-brown-70: #755b38;
+  --color-brown-80: #51412c;
+  --color-brown-90: #47341f;
+  --color-gray-05: #fafafa;
+  --color-gray-10: #f4f4f5;
+  --color-gray-20: #e4e4e7;
+  --color-gray-30: #d4d4d8;
+  --color-gray-40: #a1a1aa;
+  --color-gray-50: #71717a;
+  --color-gray-60: #52525b;
+  --color-gray-70: #3f3f46;
+  --color-gray-80: #27272a;
+  --color-gray-90: #18181b;
+  --color-ink-10: #f1f3fa;
+  --color-ink-20: #e3e5f2;
+  --color-ink-30: #cdd0e5;
+  --color-ink-40: #9b9ec2;
+  --color-ink-50: #6e6f9b;
+  --color-ink-60: #52507c;
+  --color-ink-70: #3e3c67;
+  --color-ink-80: #2a284b;
+  --color-ink-90: #1a1838;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-link: #1E4EAE;
+  --color-button-border-active: #0B68CB;
+}
+a {
+  color: currentColor;
+  text-decoration: underline;
+  transition: font-size 0.2s, text-decoration-color 0.2s;
+}
+a:focus-visible,
+a.focused {
+  outline: var(--focus-outline);
+  outline-offset: var(--focus-outline-offset);
+}
+a.dotted {
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: currentColor;
+  text-underline-offset: 0.25em;
+  text-decoration-thickness: 0.12em;
+}
+a.strong {
+  text-decoration: none;
+  font-weight: 600;
+}
+a.strong::after {
+  --bg-img: url('/media/svg/chevron-right.svg');
+  position: relative;
+  top: 0.17rem;
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: var(--bg-img);
+  content: '';
+  margin-left: 0.5rem;
+  background-color: var(--color-blue-50);
+  mask-image: var(--bg-img);
+  mask-repeat: no-repeat;
+  -webkit-mask-image: var(--bg-img);
+  -webkit-mask-repeat: no-repeat;
+}
+a.donate,
+a:hover,
+a:hover:visited {
+  text-decoration-color: var(--accent);
+}
+/*-------------------------
+* Media Queries
+*--------------------------*/
+.donate-banner {
+  --background-left: linear-gradient(92deg, #EA5757 60%, #DD2929 92.83%);
+  --background-right: linear-gradient(to right, #FFEFEF, #FFEFEF);
+  --accent-text: #5A0002;
+  background: var(--color-red-50);
+  background-image: var(--background-right);
+  background-position: top left, center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 3px;
+  box-shadow: 4px 4px 24px rgba(0, 0, 0, 0.15);
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 1.125rem;
+  line-height: 1.3;
+  margin: -114px auto 0;
+  text-decoration: none;
+  text-shadow: var(--shadow);
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  max-width: 462px;
+  min-height: 123px;
+  z-index: 10;
+}
+.donate-banner::after {
+  content: '';
+  position: absolute;
+  top: -210px;
+  left: -220px;
+  /* -20px for l10n overlap */
+  height: 420px;
+  width: 420px;
+  background: var(--background-left);
+  transform: rotate(36deg);
+  transition: transform 0.3s ease-in-out;
+}
+.donate-banner:hover {
+  transform: scale(1.05);
+}
+.donate-banner:hover::after {
+  transform: scale(3);
+}
+.donate-banner:hover #decoration,
+.donate-banner:hover #donate-banner-right {
+  opacity: 0;
+}
+.donate-banner:hover #donate-banner-left {
+  transform: translate(24px, 6px);
+}
+#donate-banner-left,
+#donate-banner-right {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  transition: all 0.5s ease-in-out;
+  z-index: 2;
+}
+#donate-banner-left {
+  padding: 11px 12px;
+  font-weight: 300;
+}
+#donate-banner-right {
+  padding: 17px 12px;
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding-inline-start: 3px;
+  text-shadow: 0 0 4px var(--color-gray-10), 0 1px 1px var(--color-gray-10);
+}
+#donate-banner-left > b {
+  font-size: 2.0625rem;
+  font-weight: 700;
+  line-height: 1;
+}
+#donate-banner-right > b {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+#decoration > #pill-1 {
+  animation: 20s infinite pill-float linear;
+  animation-delay: 0.2s;
+}
+#decoration > #pill-2 {
+  animation: 30s infinite pill-float linear;
+}
+#decoration > #pill-3 {
+  animation: 35s infinite pill-float linear;
+  animation-delay: 0.1s;
+}
+#decoration > #pill-4 {
+  animation: 25s infinite pill-float linear;
+  animation-delay: 0.3s;
+}
+#decoration > #pill-5 {
+  animation: 40s infinite pill-float linear;
+  animation-delay: 0.4s;
+}
+#decoration > #pill-6 {
+  animation: 30s infinite pill-float linear;
+  animation-delay: 0.5s;
+}
+#decoration > #pill-7 {
+  animation: 25s infinite pill-float linear;
+  animation-delay: 0.6s;
+}
+#decoration > #pill-8 {
+  animation: 20s infinite pill-float linear;
+  animation-delay: 0.7s;
+}
+#decoration > #pill-9 {
+  animation: 40s infinite pill-float linear;
+  animation-delay: 0.8s;
+}
+#decoration > #pill-10 {
+  animation: 35s infinite pill-float linear;
+  animation-delay: 0.4s;
+}
+#decoration {
+  position: absolute;
+  left: -55px;
+  display: grid;
+  gap: 3px;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  place-items: stretch;
+  height: 90px;
+  width: 500px;
+  transform: rotate(-54deg);
+  transition: opacity 0.5s ease-in-out;
+  z-index: 1;
+}
+.pill {
+  display: block;
+  background: var(--color-red-40);
+  opacity: 0.75;
+  border-radius: 1000px;
+  transform: translateX(-250px);
+}
+@keyframes pill-float {
+  from {
+    transform: translateX(-250px);
+  }
+  to {
+    transform: translateX(250px);
+  }
+}
+#pill-1 {
+  grid-column: 4 / span 8;
+  grid-row: 5 / span 3;
+}
+#pill-2 {
+  grid-column: 10 / span 4;
+  grid-row: 6 / span 1;
+}
+#pill-3 {
+  grid-column: 8 / span 3;
+  grid-row: 3 / span 1;
+}
+#pill-4 {
+  grid-column: 4 / span 3;
+  grid-row: 3 / span 1;
+}
+#pill-5 {
+  grid-column: 6 / span 4;
+  grid-row: 9 / span 1;
+}
+#pill-6 {
+  grid-column: 11 / span 1;
+  grid-row: 9 / span 1;
+}
+#pill-7 {
+  grid-column: 13 / span 2;
+  grid-row: 10 / span 1;
+}
+#pill-8 {
+  grid-column: 13 / span 3;
+  grid-row: 8 / span 1;
+}
+#pill-9 {
+  grid-column: 14 / span 3;
+  grid-row: 4 / span 1;
+}
+#pill-10 {
+  grid-column: 12 / span 1;
+  grid-row: 4 / span 1;
+}
+#hover-hearts {
+  position: absolute;
+  inset-block-end: 12px;
+  inset-inline-end: 13px;
+  display: none;
+  gap: 3px;
+  z-index: 1;
+}
+#hover-heart-1,
+#hover-heart-2,
+#hover-heart-3 {
+  display: flex;
+  align-items: end;
+  opacity: 0;
+}
+#hover-heart-1 > svg {
+  animation-delay: 0.6s;
+}
+#hover-heart-3 {
+  animation-delay: 0.8s;
+}
+#hover-heart-1 > svg {
+  transform: rotate(-45deg);
+  width: 48px;
+  height: 48px;
+}
+#hover-heart-2 > svg {
+  width: 64px;
+  height: 64px;
+  transform: translateY(-9px);
+}
+#hover-heart-3 > svg {
+  transform: rotate(45deg);
+  width: 48px;
+  height: 48px;
+}
+.donate-banner:hover #hover-hearts {
+  display: flex;
+}
+.donate-banner:hover #hover-hearts > #hover-heart-1 {
+  animation: 1s heart-fade forwards ease-in-out;
+  animation-delay: 0.1s;
+}
+.donate-banner:hover #hover-hearts > #hover-heart-2 {
+  animation: 1s heart-fade forwards ease-in-out;
+}
+.donate-banner:hover #hover-hearts > #hover-heart-3 {
+  animation: 1s heart-fade forwards ease-in-out;
+  animation-delay: 0.2s;
+}
+@keyframes heart-fade {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.donate-banner {
+  border-radius: 0.75rem;
+  --background-left: linear-gradient(180deg, #DC2626 20.11%, #761414 100%);
+  --background-right: linear-gradient(180deg, #FFFFFF 0.41%, #FFE8E6 100.41%);
+  box-shadow: 0 0 0.625rem 0 #0000001A;
+  border: 0.0625rem solid var(--critical-pressed, #7F1D1D);
+  color: #7F1D1D;
+  font-family: 'Metropolis', sans-serif;
+  margin: 0 auto 2rem;
+  max-width: 28.875rem;
+  min-height: 7.6875rem;
+}
+.donate-banner::after {
+  top: -13.125rem;
+  left: -13.75rem;
+  height: 26.25rem;
+  width: 26.25rem;
+}
+.donate-banner #donate-banner-left {
+  padding: 0.5rem 1.5rem;
+  text-shadow: 0 2px 0 #af1e1e, 0 -2px 0 #af1e1e, 2px 0 0 #af1e1e, -2px 0 0 #af1e1e, 2px 2px 0 #af1e1e, -2px -2px 0 #af1e1e, 2px -2px 0 #af1e1e, -2px 2px 0 #af1e1e;
+  text-align: left;
+}
+.donate-banner #donate-banner-right {
+  padding: 1.0625rem 0.75rem;
+  padding-inline-start: 0.1875rem;
+  text-shadow: 0 2px 0 #ffecea, 0 -2px 0 #ffecea, 2px 0 0 #ffecea, -2px 0 0 #ffecea, 2px 2px 0 #ffecea, -2px -2px 0 #ffecea, 2px -2px 0 #ffecea, -2px 2px 0 #ffecea;
+  display: none;
+}
+@media (min-width: 48rem) {
+  .donate-banner #donate-banner-right {
+    display: block;
+    align-self: flex-end;
+  }
+}
+@media (max-width: 48rem) {
+  .donate-banner {
+    height: 6.25rem;
+  }
+  .donate-banner #hover-hearts {
+    color: #FFE8E6;
+    opacity: 0.5;
+  }
+  .donate-banner #donate-banner-right {
+    position: absolute;
+    right: 0;
+    bottom: -0.5rem;
+    font-size: clamp(0.9rem, 0.6429rem + 1.7857vw, 1.25rem);
+    font-weight: 400;
+  }
+  .donate-banner #donate-banner-right b {
+    font-weight: 500;
+    font-size: clamp(1.25rem, 1.0714rem + 0.8929vw, 1.5rem);
+  }
+}
+#donate-banner-left,
+#hover-hearts {
+  color: white;
+}
+#donate-banner-right {
+  justify-content: flex-end;
+  text-align: right;
+}
+.closing-text {
+  /* these styles have lower precedence than .letter-container p */
+  font-family: Metropolis, sans-serif;
+  /* font-size: 1rem; */
+  font-weight: 500;
+  text-align: center;
+  margin: 1rem 0 !important;
+  color: #1373d9;
+}
+.heart-container {
+  color: var(--color-red-30);
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 1.75rem;
+  width: 100%;
+  max-width: 41.125rem;
+  justify-content: center;
+}
+.heart-svg {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.line {
+  display: block;
+  height: 0.0625rem;
+  width: 100%;
+  border-top: 0.0625rem solid var(--color-blue-40);
+}
+.left-lines,
+.right-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+  justify-self: stretch;
+  overflow: hidden;
+}
+.left-lines {
+  align-items: end;
+}
+.left-lines > .line:nth-child(2) {
+  width: 50%;
+  margin-right: 0.1875rem;
+  border-top: 0.0625rem solid var(--color-blue-40);
+}
+.left-lines > .line:nth-child(1) {
+  width: 30%;
+  border-top: 0.0625rem solid var(--color-blue-40);
+}
+.right-lines > .line:nth-child(2) {
+  width: 50%;
+  margin-left: 0.1875rem;
+  border-top: 0.0625rem solid var(--color-blue-40);
+}
+.right-lines > .line:nth-child(1) {
+  width: 30%;
+  border-top: 0.0625rem solid var(--color-blue-40);
+}
+#decoration {
+  left: -3.4375rem;
+  gap: 0.1875rem;
+  height: 5.625rem;
+  width: 31.25rem;
+}
+/*
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ */
+/*
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ */
+/* - Metropolis -*/
+@font-face {
+  font-family: metropolis;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-Regular.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-RegularItalic.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-RegularItalic.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-ExtraLight.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-ExtraLight.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-Light.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-Light.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-Thin.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-Thin.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-ExtraLightItalic.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-ExtraLightItalic.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-LightItalic.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-LightItalic.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-ThinItalic.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-ThinItalic.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-Medium.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-SemiBold.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-SemiBold.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-Bold.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-BoldItalic.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-BoldItalic.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-MediumItalic.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-MediumItalic.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-SemiBoldItalic.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-SemiBoldItalic.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-ExtraBold.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-ExtraBold.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-ExtraBoldItalic.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-ExtraBoldItalic.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-Black.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-Black.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-BlackItalic.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-BlackItalic.woff") format("woff");
+}
+/*
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ */
+/* - Inter -*/
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-Thin.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-Thin.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-ThinItalic.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-ThinItalic.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-ExtraLight.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-ExtraLight.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-ExtraLightItalic.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-ExtraLightItalic.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-Light.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-Light.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-LightItalic.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-LightItalic.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-Regular.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-Regular.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-Italic.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-Italic.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-Medium.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-Medium.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-MediumItalic.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-MediumItalic.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-SemiBold.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-SemiBold.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-SemiBoldItalic.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-SemiBoldItalic.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-Bold.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-Bold.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-BoldItalic.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-BoldItalic.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-ExtraBold.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-ExtraBold.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-ExtraBoldItalic.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-ExtraBoldItalic.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-Black.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-Black.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-BlackItalic.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-BlackItalic.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter var';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: url("/media/fonts/Inter/Inter-roman.var.woff2?v=3.19") format("woff2");
+}
+@font-face {
+  font-family: 'Inter var';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: italic;
+  font-named-instance: 'Italic';
+  src: url("/media/fonts/Inter/Inter-italic.var.woff2?v=3.19") format("woff2");
+}
+/*
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ */
+/* Open Sans */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/media/fonts/opensans-regular.woff2") format("woff2"), url("/media/fonts/opensans-regular.woff") format("woff");
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/media/fonts/opensans-italic.woff2") format("woff2"), url("/media/fonts/opensans-italic.woff") format("woff");
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/media/fonts/opensans-light.woff2") format("woff2"), url("/media/fonts/opensans-light.woff") format("woff");
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/media/fonts/opensans-lightitalic.woff2") format("woff2"), url("/media/fonts/opensans-lightitalic.woff") format("woff");
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/media/fonts/opensans-semibold.woff2") format("woff2"), url("/media/fonts/opensans-semibold.woff") format("woff");
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/media/fonts/opensans-semibolditalic.woff2") format("woff2"), url("/media/fonts/opensans-semibolditalic.woff") format("woff");
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/media/fonts/opensans-bold.woff2") format("woff2"), url("/media/fonts/opensans-bold.woff") format("woff");
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/media/fonts/opensans-bolditalic.woff2") format("woff2"), url("/media/fonts/opensans-bolditalic.woff") format("woff");
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/media/fonts/opensans-extrabold.woff2") format("woff2"), url("/media/fonts/opensans-extrabold.woff") format("woff");
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/media/fonts/opensans-extrabolditalic.woff2") format("woff2"), url("/media/fonts/opensans-extrabolditalic.woff") format("woff");
+}
+/* Nicer fallbacks */
+@font-face {
+  font-family: 'system-ui';
+  font-style: normal;
+  font-weight: 300;
+  src: local(".SFNS-Light"), local(".SFNSText-Light"), local("Segoe UI Light"), local("Ubuntu Light");
+}
+@font-face {
+  font-family: 'system-ui';
+  font-style: italic;
+  font-weight: 300;
+  src: local(".SFNS-LightItalic"), local(".SFNSText-LightItalic"), local("Segoe UI Light Italic"), local("Ubuntu Light Italic");
+}
+@font-face {
+  font-family: 'system-ui';
+  font-style: normal;
+  font-weight: 400;
+  src: local(".SFNS-Regular"), local(".SFNSText-Regular"), local("Segoe UI"), local("Ubuntu");
+}
+@font-face {
+  font-family: 'system-ui';
+  font-style: italic;
+  font-weight: 400;
+  src: local(".SFNS-Italic"), local(".SFNSText-Italic"), local("Segoe UI Italic"), local("Ubuntu Italic");
+}
+@font-face {
+  font-family: 'system-ui';
+  font-style: normal;
+  font-weight: 500;
+  src: local(".SFNS-Medium"), local(".SFNSText-Medium"), local("Segoe UI Semibold"), local("Ubuntu Medium");
+}
+@font-face {
+  font-family: 'system-ui';
+  font-style: italic;
+  font-weight: 500;
+  src: local(".SFNS-MediumItalic"), local(".SFNSText-MediumItalic"), local("Segoe UI Semibold Italic"), local("Ubuntu Medium Italic");
+}
+@font-face {
+  font-family: 'system-ui';
+  font-style: normal;
+  font-weight: 700;
+  src: local(".SFNS-Bold"), local(".SFNSText-Bold"), local("Segoe UI Bold"), local("Ubuntu Bold");
+}
+@font-face {
+  font-family: 'system-ui';
+  font-style: italic;
+  font-weight: 700;
+  src: local(".SFNS-BoldItalic"), local(".SFNSText-BoldItalic"), local("Segoe UI Bold Italic"), local("Ubuntu Bold Italic");
+}
+#moz-footer {
+  --footer-text-color: #eeeef0;
+  color: var(--footer-text-color);
+  display: grid;
+  gap: 1rem;
+  margin: 0 auto;
+  max-width: 100rem;
+  padding-block: 3rem;
+  padding-inline: 2rem;
+}
+#moz-footer a {
+  text-decoration: none;
+}
+#moz-footer a:hover {
+  text-decoration: underline;
+}
+@media (min-width: 64rem) {
+  #moz-footer {
+    column-gap: 6rem;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: auto auto;
+    padding-inline: 10rem;
+  }
+}
+#moz-footer #moz-link-home svg {
+  height: 36px;
+  width: 150px;
+}
+@media (min-width: 64rem) {
+  #moz-footer #moz-link-home {
+    grid-row: 1 / 3;
+    grid-column: 1;
+  }
+}
+#moz-footer #moz-nav-links {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: normal;
+  display: grid;
+  gap: 0.5625rem;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
+  margin-top: 0.375rem;
+}
+#moz-footer #moz-nav-links a {
+  font-size: 0.75rem;
+}
+@media (min-width: 64rem) {
+  #moz-footer #moz-nav-links {
+    display: flex;
+    gap: 2rem;
+    grid-row: 1;
+    grid-column: 2;
+  }
+}
+#moz-footer #tb-legal {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: normal;
+  line-height: 1.46;
+}
+@media (min-width: 64rem) {
+  #moz-footer #tb-legal {
+    grid-row: 2;
+    grid-column: 2;
+  }
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+:root {
+  --appeal-content-width: 34.625rem;
+  --appeal--letter-width-mobile: 23.8125rem;
+  --background-illustration-height: 1070px;
+  --background-dark-blue: #1a202c;
+  --background-yellow: #FBEA8B;
+  --background-page-and-footer: #1a202c;
+  --color-appeal-main-bg: var(--color-white);
+  --color-footer-txt: #105BBC;
+  --color-appeal-txt: #18181B;
+  --color-appeal-bg-border: #1373d9;
+  --color-headline: #FFDF99;
+  --color-illustration-credit: #FEFFFF;
+  --txt: var(--color-appeal-txt);
+  --shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  --font-content: Open Sans, system-ui, sans-serif;
+  --min-small-screen: 23.438rem;
+}
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+}
+.page-appeal-nov25 {
+  background-color: var(--background-dark-blue);
+}
+.page-appeal-nov25 body {
+  display: flex;
+  flex-direction: column;
+}
+.page-appeal-nov25 main {
+  background-image: url('/media/img/thunderbird/appeal/dec25-1/appeal-Dec3-wallpaper-XS.webp');
+  background-image: -webkit-image-set(url('/media/img/thunderbird/appeal/dec25-1/appeal-Dec3-wallpaper-XS.webp') 1x, url('/media/img/thunderbird/appeal/dec25-1/appeal-Dec3-wallpaper-XS-high-res.webp') 2x);
+  background-image: image-set(url('/media/img/thunderbird/appeal/dec25-1/appeal-Dec3-wallpaper-XS.webp') 1x, url('/media/img/thunderbird/appeal/dec25-1/appeal-Dec3-wallpaper-XS-high-res.webp') 2x);
+  background-color: var(--background-dark-blue);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  flex-grow: 0;
+  padding-bottom: 5rem;
+  min-width: 23.438rem;
+}
+@media (min-width: 64rem) {
+  .page-appeal-nov25 main {
+    background-image: url('/media/img/thunderbird/appeal/dec25-1/appeal-Dec3-wallpaper-XL.webp');
+    background-image: -webkit-image-set(url('/media/img/thunderbird/appeal/dec25-1/appeal-Dec3-wallpaper-XL.webp') 1x, url('/media/img/thunderbird/appeal/dec25-1/appeal-Dec3-wallpaper-XL-high-res.webp') 2x);
+    background-image: image-set(url('/media/img/thunderbird/appeal/dec25-1/appeal-Dec3-wallpaper-XL.webp') 1x, url('/media/img/thunderbird/appeal/dec25-1/appeal-Dec3-wallpaper-XL-high-res.webp') 2x);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    min-height: var(--background-illustration-height);
+    padding-bottom: unset;
+  }
+}
+@media (min-width: 90rem) {
+  .page-appeal-nov25 main {
+    margin: auto;
+    max-width: 100rem;
+    width: 100%;
+  }
+}
+.page-appeal-nov25 #main-content {
+  --width-left-column: 53%;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 64rem) {
+  .page-appeal-nov25 #main-content {
+    flex-direction: row;
+  }
+  .page-appeal-nov25 #main-content::before {
+    content: '';
+    flex: 0 0 var(--width-left-column);
+  }
+}
+.page-appeal-nov25 #appeal-body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  margin-top: 22rem;
+  position: relative;
+}
+@media (min-width: 64rem) {
+  .page-appeal-nov25 #appeal-body {
+    align-items: flex-start;
+    flex: 0 0 calc((100% - var(--width-left-column)) - 2rem);
+    margin-top: unset;
+  }
+}
+.page-appeal-nov25 #appeal-body #appeal-heading {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: normal;
+  color: var(--color-headline);
+  filter: drop-shadow(0px 2px 3px #0000004c);
+  margin-block: 4rem;
+  max-width: var(--appeal--letter-width-mobile);
+  width: 100%;
+  text-transform: uppercase;
+}
+.page-appeal-nov25 #appeal-body #appeal-heading.with-lowercase {
+  text-transform: unset;
+}
+@media (min-width: 40rem) {
+  .page-appeal-nov25 #appeal-body #appeal-heading {
+    max-width: var(--appeal-content-width);
+  }
+}
+.page-appeal-nov25 #appeal-body #appeal-heading span {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-shadow: 0px 2px 3px #0000004c;
+  text-transform: uppercase;
+}
+@media (min-width: 80rem) {
+  .page-appeal-nov25 #appeal-body #appeal-heading span {
+    font-size: 4.5rem;
+  }
+}
+.page-appeal-nov25 #appeal-body .letter-container {
+  border: 0.063rem solid var(--color-appeal-bg-border);
+  border-radius: 0.75rem;
+  box-shadow: 5px 3px 10px 0px rgba(0, 0, 0, 0.2);
+  max-width: var(--appeal--letter-width-mobile);
+  padding-bottom: 1rem;
+  position: relative;
+  z-index: 2;
+}
+@media (min-width: 40rem) {
+  .page-appeal-nov25 #appeal-body .letter-container {
+    max-width: var(--appeal-content-width);
+  }
+}
+.page-appeal-nov25 #appeal-body .letter-container::before {
+  background: var(--color-appeal-main-bg);
+  border-radius: 0.75rem;
+  content: '';
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+.page-appeal-nov25 #appeal-body .letter-container::after {
+  background: linear-gradient(130deg, rgba(13, 44, 91, 0) 0%, #26BAF5 77.4%);
+  bottom: 0px;
+  content: '';
+  filter: blur(50px);
+  height: 80%;
+  position: absolute;
+  right: 10px;
+  width: 80%;
+  z-index: -2;
+}
+.page-appeal-nov25 #appeal-body .letter-container #donate-button-container {
+  margin: 0 auto;
+  margin-left: -1px;
+  margin-right: -1px;
+  margin-top: -3rem;
+}
+@media (min-width: 48rem) {
+  .page-appeal-nov25 #appeal-body .letter-container #donate-button-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 29.375rem;
+  }
+}
+.page-appeal-nov25 #appeal-body .letter-container #donate-button-container .donate-banner {
+  margin: 0 auto 2rem;
+}
+.page-appeal-nov25 #appeal-body .letter-container #donate-button-container .donate-banner #decoration {
+  left: -85px;
+}
+@media (min-width: 48rem) {
+  .page-appeal-nov25 #appeal-body .letter-container #donate-button-container .donate-banner #decoration {
+    left: 25px;
+  }
+}
+.page-appeal-nov25 #appeal-body .letter-container #donate-button-container .donate-banner::after {
+  left: -263px;
+}
+@media (min-width: 48rem) {
+  .page-appeal-nov25 #appeal-body .letter-container #donate-button-container .donate-banner::after {
+    left: -163px;
+  }
+}
+.page-appeal-nov25 #appeal-body .letter-container #donate-button-container #donate-banner-left {
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+.page-appeal-nov25 #appeal-body .letter-container #donate-button-container #donate-banner-left b {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 2.21px;
+}
+@media (min-width: 48rem) {
+  .page-appeal-nov25 #appeal-body .letter-container #donate-button-container #donate-banner-left {
+    font-size: 1.5rem;
+  }
+  .page-appeal-nov25 #appeal-body .letter-container #donate-button-container #donate-banner-left b {
+    font-size: 2.5rem;
+  }
+}
+.page-appeal-nov25 #appeal-body .letter-container #donate-button-container #donate-banner-right {
+  display: block;
+  font-weight: 400;
+}
+.page-appeal-nov25 #appeal-body .letter-container #donate-button-container #donate-banner-right b {
+  display: block;
+  font-weight: 600;
+}
+.page-appeal-nov25 #appeal-body .letter-container #letter-contents {
+  padding-inline: 1.25rem;
+  /* Declaring this style here, as it has more precedence. */
+}
+@media (min-width: 48rem) {
+  .page-appeal-nov25 #appeal-body .letter-container #letter-contents {
+    padding-inline: 2.6875rem;
+  }
+}
+.page-appeal-nov25 #appeal-body .letter-container #letter-contents p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.375rem;
+  font-weight: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  width: 100%;
+}
+.page-appeal-nov25 #appeal-body .letter-container #letter-contents .closing-text {
+  font-size: 1rem;
+}
+.page-appeal-nov25 #appeal-body #illustration-credit {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  max-width: var(--appeal--letter-width-mobile);
+  margin-top: 2rem;
+  width: 100%;
+}
+@media (min-width: 40rem) {
+  .page-appeal-nov25 #appeal-body #illustration-credit {
+    max-width: var(--appeal-content-width);
+  }
+}
+@media (min-width: 90rem) {
+  .page-appeal-nov25 #appeal-body #illustration-credit {
+    margin-top: 3rem;
+    max-width: calc(var(--appeal-content-width) + 2rem);
+  }
+}
+.page-appeal-nov25 #appeal-body #illustration-credit p {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: normal;
+  color: var(--color-illustration-credit);
+  margin: 0;
+}
+.page-appeal-nov25 #footer-wrapper {
+  background: var(--background-page-and-footer);
+  flex-grow: 1;
+}
