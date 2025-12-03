@@ -1699,6 +1699,7 @@ body.tbpro #tab-navigation-bar {
   letter-spacing: normal;
   align-items: center;
   color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
   display: flex;
   padding-inline: 20px;
   text-decoration: none;
@@ -1707,6 +1708,9 @@ body.tbpro #tab-navigation-bar {
 .tab-navigation-links a:hover {
   background-color: #111;
   color: #58c9ff;
+}
+.tab-navigation-links a.active {
+  cursor: default;
 }
 #tab-navigation-bar ~ .site-nav {
   top: 32px;
