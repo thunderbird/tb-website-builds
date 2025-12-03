@@ -1842,8 +1842,7 @@ body {
 }
 @media (min-width: 80rem) {
   #site-header {
-    padding-top: 1.5rem;
-    margin-top: -0.25rem;
+    padding-top: 1.25rem;
   }
 }
 #site-header #site-header-nav {
