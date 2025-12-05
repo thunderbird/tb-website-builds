@@ -434,11 +434,7 @@ body .lower-gradient {
 #waitlist-form {
   color: #4c4d58;
   height: 100%;
-}
-@media (min-width: 80rem) {
-  #waitlist-form {
-    margin-inline: 1rem;
-  }
+  padding-inline: 1rem;
 }
 #waitlist-form #form-header {
   font-family: 'Metropolis', sans-serif;
