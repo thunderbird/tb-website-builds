@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule .* /be/thunderbird/140.0/dec25-2c/ [R]
