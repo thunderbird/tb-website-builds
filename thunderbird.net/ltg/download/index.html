@@ -1,38 +1,5 @@
 
-<div id="tab-navigation-bar">
-  <div class="tab-navigation-links">
-    <a href="https://www.thunderbird.net" data-stage-url="https://www-stage.thunderbird.net">Thunderbird</a>
-    <a href="https://www.tb.pro" class="active" data-stage-url="https://stage.tb.pro">Thunderbird Pro</a>
-  </div>
-</div>
-
-<script>
-  const stageHosts = ["www-stage.thunderbird.net", "stage.tb.pro", "stage.thunderbird.net", "localhost"];
-  const currentHost = window.location.hostname.replace('www.', '');
-  const isStage = stageHosts.includes(currentHost);
-
-  if (isStage) {
-    // Replace with stage.* URLs
-    document.querySelectorAll('#tab-navigation-bar a').forEach(link => {
-      link.href = link.dataset.stageUrl;
-    });
-  }
-
-  // Set .active class accordingly.
-  document.querySelectorAll('#tab-navigation-bar a').forEach(link => {
-    const linkHost = new URL(link.href).hostname.replace('www', '');
-
-    if (linkHost === currentHost) {
-      link.classList.add('active');
-      link.addEventListener('click', (e) => {
-        e.preventDefault();
-      });
-    } else {
-      // Remove active class from other links
-      link.classList.remove('active');
-    }
-  });
-</script><!doctype html>
+<!doctype html>
 
 
 <html class="other x86 no-js page-download" lang="ltg" dir="ltr">
@@ -419,7 +386,41 @@
 
   <body class="html-ltr " >
     <div id="strings" ></div>
+    <div id="tab-navigation-bar">
+  <div class="tab-navigation-links">
+    <a href="https://www.thunderbird.net" data-stage-url="https://www-stage.thunderbird.net">Thunderbird</a>
+    <a href="https://www.tb.pro" class="active" data-stage-url="https://stage.tb.pro">Thunderbird Pro</a>
+  </div>
+</div>
 
+<script>
+  const PREFIX = /^www[.-]/;
+  const stageHosts = ["www-stage.thunderbird.net", "stage.tb.pro", "stage.thunderbird.net", "localhost"];
+  const currentHost = window.location.hostname.replace(PREFIX, '');
+  const isStage = stageHosts.includes(currentHost);
+
+  if (isStage) {
+    // Replace with stage.* URLs
+    document.querySelectorAll('#tab-navigation-bar a').forEach(link => {
+      link.href = link.dataset.stageUrl;
+    });
+  }
+
+  // Set .active class accordingly.
+  document.querySelectorAll('#tab-navigation-bar a').forEach(link => {
+    const linkHost = new URL(link.href).hostname.replace(PREFIX, '');
+
+    if (linkHost === currentHost) {
+      link.classList.add('active');
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+      });
+    } else {
+      // Remove active class from other links
+      link.classList.remove('active');
+    }
+  });
+</script>
     
     
 
