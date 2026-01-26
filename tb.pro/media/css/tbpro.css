@@ -1733,15 +1733,6 @@ footer#tb-footer a {
 footer#tb-footer a:visited {
   color: var(--text-icon-base);
 }
-footer#tb-footer #nav-link-home,
-footer#tb-footer #nav-link-home svg {
-  width: 208px;
-  height: 36px;
-}
-footer#tb-footer #moz-link-home svg {
-  width: 150px;
-  height: 36px;
-}
 footer#tb-footer #site-nav {
   align-items: start;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -1766,13 +1757,22 @@ footer#tb-footer #site-nav .site-nav-links a {
     grid-template: 1fr / 1fr auto;
   }
 }
-footer#tb-footer #moz-nav {
+#nav-link-home,
+#nav-link-home svg {
+  width: 208px;
+  height: 36px;
+}
+#moz-link-home svg {
+  width: 150px;
+  height: 36px;
+}
+#moz-nav {
   display: grid;
   gap: 16px;
   padding-bottom: 0.5625rem;
   padding-top: 1.5rem;
 }
-footer#tb-footer #moz-nav .moz-nav-links {
+#moz-nav .moz-nav-links {
   display: grid;
   gap: 0.5625rem;
   grid-auto-flow: column;
@@ -1780,34 +1780,34 @@ footer#tb-footer #moz-nav .moz-nav-links {
   grid-template-rows: repeat(3, auto);
   margin-top: 0.375rem;
 }
-footer#tb-footer #moz-nav .moz-nav-links a {
+#moz-nav .moz-nav-links a {
   font-size: 0.75rem;
 }
 @media (min-width: 80rem) {
-  footer#tb-footer #moz-nav {
+  #moz-nav {
     grid-template-columns: auto 1fr;
     align-items: start;
     column-gap: 6rem;
   }
-  footer#tb-footer #moz-nav #moz-link-home {
+  #moz-nav #moz-link-home {
     grid-column: 1;
     grid-row: 1 / span 2;
   }
-  footer#tb-footer #moz-nav .moz-nav-links {
+  #moz-nav .moz-nav-links {
     grid-column: 2;
     grid-row: 1;
     display: flex;
     gap: 2rem;
   }
-  footer#tb-footer #moz-nav #tb-legal {
+  #moz-nav #tb-legal {
     grid-column: 2;
     grid-row: 2;
   }
 }
-footer#tb-footer #tb-legal {
+#tb-legal {
   font-size: 0.75rem;
 }
-footer#tb-footer #tb-legal a {
+#tb-legal a {
   text-decoration: underline;
 }
 *,
