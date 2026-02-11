@@ -1775,9 +1775,7 @@ footer#tb-footer #site-nav .site-nav-links a {
 #moz-nav .moz-nav-links {
   display: grid;
   gap: 0.5625rem;
-  grid-auto-flow: column;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(3, auto);
+  grid-template-columns: repeat(2, 1fr);
   margin-top: 0.375rem;
 }
 #moz-nav .moz-nav-links a {
@@ -1797,7 +1795,7 @@ footer#tb-footer #site-nav .site-nav-links a {
     grid-column: 2;
     grid-row: 1;
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
   }
   #moz-nav #tb-legal {
     grid-column: 2;

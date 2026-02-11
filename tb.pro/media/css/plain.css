@@ -1,0 +1,453 @@
+/*
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ */
+/*
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ */
+/* - Metropolis -*/
+@font-face {
+  font-family: metropolis;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-Regular.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-RegularItalic.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-RegularItalic.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-ExtraLight.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-ExtraLight.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-Light.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-Light.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-Thin.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-Thin.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-ExtraLightItalic.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-ExtraLightItalic.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-LightItalic.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-LightItalic.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-ThinItalic.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-ThinItalic.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-Medium.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-SemiBold.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-SemiBold.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-Bold.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-BoldItalic.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-BoldItalic.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-MediumItalic.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-MediumItalic.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-SemiBoldItalic.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-SemiBoldItalic.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-ExtraBold.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-ExtraBold.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-ExtraBoldItalic.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-ExtraBoldItalic.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-Black.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-Black.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-BlackItalic.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-BlackItalic.woff") format("woff");
+}
+/*
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ */
+/* - Inter -*/
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-Thin.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-Thin.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-ThinItalic.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-ThinItalic.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-ExtraLight.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-ExtraLight.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-ExtraLightItalic.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-ExtraLightItalic.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-Light.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-Light.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-LightItalic.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-LightItalic.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-Regular.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-Regular.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-Italic.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-Italic.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-Medium.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-Medium.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-MediumItalic.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-MediumItalic.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-SemiBold.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-SemiBold.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-SemiBoldItalic.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-SemiBoldItalic.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-Bold.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-Bold.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-BoldItalic.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-BoldItalic.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-ExtraBold.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-ExtraBold.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-ExtraBoldItalic.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-ExtraBoldItalic.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-Black.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-Black.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-BlackItalic.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-BlackItalic.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter var';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: url("/media/fonts/Inter/Inter-roman.var.woff2?v=3.19") format("woff2");
+}
+@font-face {
+  font-family: 'Inter var';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: italic;
+  font-named-instance: 'Italic';
+  src: url("/media/fonts/Inter/Inter-italic.var.woff2?v=3.19") format("woff2");
+}
+/*
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ */
+/* Open Sans */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/media/fonts/opensans-regular.woff2") format("woff2"), url("/media/fonts/opensans-regular.woff") format("woff");
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/media/fonts/opensans-italic.woff2") format("woff2"), url("/media/fonts/opensans-italic.woff") format("woff");
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/media/fonts/opensans-light.woff2") format("woff2"), url("/media/fonts/opensans-light.woff") format("woff");
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/media/fonts/opensans-lightitalic.woff2") format("woff2"), url("/media/fonts/opensans-lightitalic.woff") format("woff");
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/media/fonts/opensans-semibold.woff2") format("woff2"), url("/media/fonts/opensans-semibold.woff") format("woff");
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/media/fonts/opensans-semibolditalic.woff2") format("woff2"), url("/media/fonts/opensans-semibolditalic.woff") format("woff");
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/media/fonts/opensans-bold.woff2") format("woff2"), url("/media/fonts/opensans-bold.woff") format("woff");
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/media/fonts/opensans-bolditalic.woff2") format("woff2"), url("/media/fonts/opensans-bolditalic.woff") format("woff");
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/media/fonts/opensans-extrabold.woff2") format("woff2"), url("/media/fonts/opensans-extrabold.woff") format("woff");
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/media/fonts/opensans-extrabolditalic.woff2") format("woff2"), url("/media/fonts/opensans-extrabolditalic.woff") format("woff");
+}
+/* Nicer fallbacks */
+@font-face {
+  font-family: 'system-ui';
+  font-style: normal;
+  font-weight: 300;
+  src: local(".SFNS-Light"), local(".SFNSText-Light"), local("Segoe UI Light"), local("Ubuntu Light");
+}
+@font-face {
+  font-family: 'system-ui';
+  font-style: italic;
+  font-weight: 300;
+  src: local(".SFNS-LightItalic"), local(".SFNSText-LightItalic"), local("Segoe UI Light Italic"), local("Ubuntu Light Italic");
+}
+@font-face {
+  font-family: 'system-ui';
+  font-style: normal;
+  font-weight: 400;
+  src: local(".SFNS-Regular"), local(".SFNSText-Regular"), local("Segoe UI"), local("Ubuntu");
+}
+@font-face {
+  font-family: 'system-ui';
+  font-style: italic;
+  font-weight: 400;
+  src: local(".SFNS-Italic"), local(".SFNSText-Italic"), local("Segoe UI Italic"), local("Ubuntu Italic");
+}
+@font-face {
+  font-family: 'system-ui';
+  font-style: normal;
+  font-weight: 500;
+  src: local(".SFNS-Medium"), local(".SFNSText-Medium"), local("Segoe UI Semibold"), local("Ubuntu Medium");
+}
+@font-face {
+  font-family: 'system-ui';
+  font-style: italic;
+  font-weight: 500;
+  src: local(".SFNS-MediumItalic"), local(".SFNSText-MediumItalic"), local("Segoe UI Semibold Italic"), local("Ubuntu Medium Italic");
+}
+@font-face {
+  font-family: 'system-ui';
+  font-style: normal;
+  font-weight: 700;
+  src: local(".SFNS-Bold"), local(".SFNSText-Bold"), local("Segoe UI Bold"), local("Ubuntu Bold");
+}
+@font-face {
+  font-family: 'system-ui';
+  font-style: italic;
+  font-weight: 700;
+  src: local(".SFNS-BoldItalic"), local(".SFNSText-BoldItalic"), local("Segoe UI Bold Italic"), local("Ubuntu Bold Italic");
+}
+html,
+body {
+  height: 100%;
+}
+body .lower-gradient {
+  display: none;
+}
+#masthead {
+  display: none !important;
+}
+#site-header {
+  padding-bottom: 2rem;
+}
+#main-content {
+  height: 100%;
+}
+#plain-page {
+  color: #4c4d58;
+  height: 100%;
+  padding-inline: 1rem;
+}
+#plain-page #page-header {
+  font-family: 'Metropolis', sans-serif;
+  font-size: 2.25rem;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.36px;
+  color: #1373d9;
+}
+#plain-page li + li {
+  margin-top: 1rem;
+}
+#plain-page table {
+  border-top: 1px solid #1A202C;
+  border-left: 1px solid #1A202C;
+}
+#plain-page table td,
+#plain-page table th {
+  border-bottom: 1px solid #1A202C;
+  border-right: 1px solid #1A202C;
+  padding-inline: 0.5rem;
+  padding-block: 0.5rem;
+}
