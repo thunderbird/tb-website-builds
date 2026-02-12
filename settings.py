@@ -108,10 +108,13 @@ CANONICAL_STAGE_URL = 'https://www-stage.thunderbird.net'
 CANONICAL_UPDATES_URL = 'https://updates.thunderbird.net'
 CANONICAL_TBPRO_URL = 'https://www.tb.pro'
 CANONICAL_TBPRO_STAGE_URL = 'https://stage.tb.pro'
+CANONICAL_ROADMAPS_URL = 'https://roadmaps.thunderbird.net'
+CANONICAL_ROADMAPS_STAGE_URL = 'https://roadmaps-stage.thunderbird.net'
 
 STAGE_HOSTS = [
     CANONICAL_STAGE_URL.replace('https://', ''),
     CANONICAL_TBPRO_STAGE_URL.replace('https://', ''),
+    CANONICAL_ROADMAPS_STAGE_URL.replace('https://', ''),
     'stage.thunderbird.net',
     'localhost']
 
@@ -144,6 +147,9 @@ UPDATES_PATH = 'sites/updates.thunderbird.net/'
 
 TBPRO_PATH = 'sites/tb.pro/'
 
+ROADMAPS_SRC = 'libs/thunderbird_roadmaps/docs/'
+ROADMAPS_PATH = 'sites/roadmaps.thunderbird.net/'
+
 # path for the finished website artifacts.
 WEBSITE_RENDERPATH = 'dist/www.thunderbird.net'
 
@@ -153,6 +159,8 @@ START_RENDERPATH = 'dist/start.thunderbird.net'
 UPDATES_RENDERPATH = 'dist/updates.thunderbird.net'
 
 TBPRO_RENDERPATH = 'dist/tb.pro'
+
+ROADMAPS_RENDERPATH = 'dist/roadmaps.thunderbird.net'
 
 LOCALE_PATH = 'libs/locale'
 
@@ -197,7 +205,7 @@ URL_MAPPINGS = {
     'firefox.release-calendar': 'https://wiki.mozilla.org/Release_Management/Calendar',
     'foundation.licensing.website-content': 'https://www.mozilla.org/foundation/licensing/website-content/',
     'foundation.about': 'https://foundation.mozilla.org/about/',
-    'guidelines': 'https://www.mozilla.org/en-US/about/governance/policies/participation/',
+    'guidelines': 'https://www.mozilla.org/about/governance/policies/participation/',
     'legal.fraud-report': 'https://www.mozilla.org/about/legal/fraud-report/',
     'legal.index': 'https://www.mozilla.org/en-US/about/legal/terms/mozilla/',
     'legal.infringement': 'https://www.mozilla.org/en-US/about/legal/report-infringement/',
@@ -248,8 +256,13 @@ URL_MAPPINGS = {
     'tbpro.home': '/',
     'tbpro.thundermail': '/thundermail',
     'tbpro.appointment': '/appointment',
+    'tbpro.privacy': '/privacy',
     'tbpro.send': '/send',
+    'tbpro.terms': '/terms',
     'tbpro.waitlist': '/waitlist',
+    'tbpro.status': 'https://status.tb.pro/',
+    'tbpro.support': 'https://support.tb.pro/',
+    'tbpro.ideas': 'https://ideas.tb.pro',
     'thunderbird.about': '/about',
     'thunderbird.about.our-mission-statement': '/about/mission-statement',
     'thunderbird.android.announcement': 'https://blog.thunderbird.net/2024/10/thunderbird-for-android-8-0-takes-flight/',
@@ -418,6 +431,8 @@ TBPRO_CSS = {
     'appointment': ['less/tbpro/product/appointment.less'],
     'send': ['less/tbpro/product/send.less'],
     'waitlist': ['less/tbpro/waitlist.less'],
+    # Purely informational, like /terms and /privacy
+    'plain': ['less/tbpro/plain.less'],
 }
 
 TBPRO_JS = {
@@ -434,6 +449,14 @@ TBPRO_DEFAULT_PLAN = {
     'send_storage': '300',  # GB
     'num_domains': '3',
     'num_email_addresses': '15',
+}
+
+
+ROADMAPS_CSS = {
+    'roadmaps': ['less/roadmaps/index.less'],
+}
+
+ROADMAPS_JS = {
 }
 
 
