@@ -2361,6 +2361,7 @@ section#overview {
   padding-top: 2.25rem;
 }
 section#overview header {
+  font-weight: lighter;
   font-family: 'Metropolis', sans-serif;
   font-size: 2rem;
   font-weight: 400;
@@ -2461,6 +2462,7 @@ section#reasons {
   row-gap: 1.5rem;
 }
 section#reasons > header {
+  font-weight: lighter;
   font-family: 'Metropolis', sans-serif;
   font-size: 2rem;
   font-weight: 400;
@@ -2928,6 +2930,7 @@ section#testimonials {
   padding-block: 6rem;
 }
 section#testimonials header {
+  font-weight: lighter;
   font-family: 'Metropolis', sans-serif;
   font-size: 2rem;
   font-weight: 400;
