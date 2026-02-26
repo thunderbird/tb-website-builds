@@ -1,0 +1,1452 @@
+:root {
+  --bg: white;
+  --txt: var(--color-ink-80);
+  --color-black: #000;
+  --color-gray-30: #d4d4d8;
+  --color-ink-70: #3e3c67;
+  --color-ink-80: #2a284b;
+  --color-white: #fff;
+  --font-body: 1.125rem;
+  --font-lg: 1.1875rem;
+  --font-2xl: 1.3125rem;
+  --border-radius-lg: 0.75rem;
+  --nav-bg: transparent;
+  --nav-txt: white;
+  --nav-height: 5rem;
+  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+:root {
+  --color-gray-20: #e4e4e7;
+}
+.site-nav {
+  --hamburger-background-inactive: var(--color-white);
+  --hamburger-foreground-inactive: var(--color-black);
+  --hamburger-background-active: var(--color-white);
+  --hamburger-foreground-active: var(--color-black);
+  /*
+   * left-align is used to translate the fixed element right a bit. (hence negative)
+   * right-align is used to enforce a maximum screen right value so the popover doesn't get cut off.
+   * I tried to make this smarter, but in the end I used a @xxl media query to manually enforce this.
+   */
+  --popover-left-align: -2rem;
+  --popover-right-align: auto;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  inset-inline: 0;
+  display: flex;
+  padding-inline: 1rem;
+  padding-block: 12px;
+  background: var(--nav-bg);
+  color: var(--txt);
+  border-bottom: 1px solid transparent;
+  box-shadow: none;
+  height: var(--nav-height);
+  backdrop-filter: blur(32px);
+  transition: height 0.2s;
+  z-index: 100000;
+  max-width: 100vw;
+}
+@media (max-width: 90rem) {
+  .site-nav #nav-cat-about,
+  .site-nav #nav-cat-contribute {
+    --popover-left-align: 0;
+    --popover-right-align: 0.5rem;
+  }
+}
+@media (max-width: 80rem) {
+  .site-nav {
+    --popover-left-align: 0;
+    --popover-right-align: 0.5rem;
+  }
+}
+.site-nav .btn-donate::before,
+.site-nav .btn-donate-lg::before,
+.site-nav .btn-download-inline::before,
+.site-nav .btn-download-link::before,
+.site-nav .download-link.btn-download::before,
+.site-nav a.btn::before,
+.site-nav button::before {
+  display: none;
+}
+.site-nav .download-link {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.page-index .btn-no-bg,
+.page-desktop .btn-no-bg,
+.page-mobile .btn-no-bg {
+  --btn-background-color: rgba(0, 0, 0, 0.8);
+}
+.page-index .btn-no-bg::after,
+.page-desktop .btn-no-bg::after,
+.page-mobile .btn-no-bg::after {
+  background-color: var(--btn-background-color);
+}
+.page-index .btn-no-bg:hover,
+.page-desktop .btn-no-bg:hover,
+.page-mobile .btn-no-bg:hover {
+  background: linear-gradient(var(--btn-background-color), var(--btn-background-color)) padding-box, linear-gradient(to right, var(--color-blue-50), var(--color-purple-50)) border-box;
+  color: currentColor;
+}
+.scrolled-nav {
+  --nav-height: 3.75rem;
+  border-color: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: var(--nav-txt);
+  backdrop-filter: blur(24px) saturate(120%);
+  transition: all 0.5s;
+  z-index: 100000;
+}
+.scrolled-nav .hamburger-btn {
+  --hamburger-foreground-inactive: var(--nav-txt);
+  margin: 0;
+  transition: margin 0.2s;
+}
+.scrolled-nav .btn-no-bg {
+  --btn-background-color: rgba(0, 0, 0, 0.8);
+}
+.scrolled-nav .btn-no-bg::after {
+  background-color: var(--btn-background-color);
+}
+.scrolled-nav .btn-no-bg:hover {
+  background: linear-gradient(var(--btn-background-color), var(--btn-background-color)) padding-box, linear-gradient(to right, var(--color-blue-50), var(--color-purple-50)) border-box;
+  color: currentColor;
+}
+.nav-container {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.hamburger-btn {
+  cursor: pointer;
+  display: none;
+  height: 2.5rem;
+  width: 2.5rem;
+  margin-right: 4px;
+  margin-top: 8px;
+  transition: margin 0.2s;
+  padding: 0;
+}
+.hamburger-btn::after {
+  background: var(--hamburger-background-inactive) none;
+}
+@media (max-width: 80rem) {
+  .hamburger-btn {
+    display: block;
+  }
+}
+[aria-expanded="true"].hamburger-btn {
+  background-color: var(--hamburger-background-active);
+  opacity: 100%;
+}
+[aria-expanded="true"] > .hamburger-icon span {
+  border-color: var(--hamburger-foreground-active);
+}
+[aria-expanded="true"] > .hamburger-icon span:nth-child(1) {
+  transform: translate(1px, 195%) rotateZ(45deg);
+}
+[aria-expanded="true"] > .hamburger-icon span:nth-child(2) {
+  opacity: 0;
+}
+[aria-expanded="true"] > .hamburger-icon span:nth-child(3) {
+  transform: translate(0, -195%) rotateZ(-45deg);
+}
+.hamburger-icon {
+  content: '';
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.hamburger-icon span {
+  margin: auto;
+  width: 50%;
+  height: 100%;
+  border-bottom: 2px solid var(--hamburger-foreground-inactive);
+  min-height: 1px;
+  transition: all 0.3s ease-in;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  margin-top: 0;
+  /*
+   * Annoyingly buttons margin-left: -1rem
+   * So we need to add some padding back to fix positioning
+   */
+}
+.nav-links .nav-entry {
+  position: relative;
+  cursor: pointer;
+  padding-top: 18px;
+}
+.nav-links .nav-entry .popover-container {
+  display: none;
+  position: fixed;
+  right: var(--popover-right-align);
+  translate: var(--popover-left-align);
+  width: 100%;
+  max-width: 30rem;
+}
+.nav-links .nav-entry .popover-container .popover-panel {
+  position: relative;
+  top: 0.25rem;
+  background-color: var(--bg);
+  color: var(--txt);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-2xl);
+  margin: 1rem 1rem 1rem 0;
+  padding: 1rem 1rem;
+}
+@media (prefers-contrast: more) {
+  .nav-links .nav-entry .popover-container .popover-panel {
+    border: 2px solid var(--color-ink-70);
+  }
+}
+.nav-links .nav-entry .popover-container .popover-panel .entry-icon {
+  display: flex;
+  margin: 0.5rem;
+  min-width: 48px;
+  height: 100%;
+  justify-content: center;
+}
+.nav-links .nav-entry .popover-container .popover-panel .entry-icon svg {
+  width: 100%;
+}
+.nav-links .nav-entry .popover-container .popover-panel .entry-text {
+  padding-right: 2rem;
+}
+.nav-links .nav-entry .popover-container .popover-panel .entry-text h2,
+.nav-links .nav-entry .popover-container .popover-panel .entry-text h6 {
+  margin: 0;
+}
+.nav-links .nav-entry .popover-container .popover-panel .entry-text h6 {
+  font-weight: 600;
+}
+.nav-links .nav-entry .popover-container .popover-panel .entry-container {
+  cursor: pointer;
+  list-style: none;
+  padding-top: 1rem;
+}
+.nav-links .nav-entry .popover-container .popover-panel .entry-container > a {
+  display: flex;
+  min-height: 4rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px var(--color-gray-30) solid;
+  text-decoration: none;
+}
+.nav-links .nav-entry .popover-container .popover-panel .entry-container:last-child > a {
+  border: none;
+}
+.nav-links .nav-entry:focus-within .popover-container {
+  display: block;
+}
+@media (min-width: 80rem) {
+  .nav-links .nav-entry:hover .popover-container {
+    display: block;
+  }
+}
+.nav-links .nav-ln {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+.nav-links .nav-ln::after {
+  height: 3px;
+}
+.nav-links .nav-ln:focus + .popover-container {
+  display: block;
+}
+.nav-links .nav-ln:has(+ .popover-container:hover)::after,
+.nav-links .nav-ln:has(+ .popover-container:focus-within)::after {
+  width: 100%;
+}
+.nav-links .no-desktop {
+  display: none;
+}
+.nav-links .nav-button-fix {
+  padding-left: 1rem;
+}
+@media (max-width: 80rem) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    background-color: var(--color-white);
+    color: var(--txt);
+    box-shadow: var(--shadow-2xl);
+    width: 60%;
+    right: 1.25rem;
+    top: var(--nav-height);
+    border-radius: 12px;
+    align-items: unset;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .nav-links.expanded {
+    display: block;
+  }
+  .nav-links .no-desktop {
+    display: block;
+  }
+  .nav-links .no-mobile {
+    display: none;
+  }
+  .nav-links .nav-entry {
+    padding: 1rem 1rem;
+    border-bottom: 2px var(--color-gray-30) solid;
+  }
+  .nav-links .nav-entry .popover-container {
+    margin-left: 0;
+    min-width: 100%;
+    position: relative;
+  }
+  .nav-links .nav-entry .popover-container .popover-panel {
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0;
+    padding: 1rem 1rem;
+  }
+  .nav-links .nav-entry .popover-container .popover-panel .entry-container {
+    padding: 0;
+  }
+  .nav-links .nav-entry .popover-container .popover-panel .entry-container > a {
+    min-height: var(--font-2xl);
+    margin: 1rem 0;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  .nav-links .nav-entry .popover-container .popover-panel .entry-icon {
+    display: none;
+  }
+  .nav-links .nav-entry .popover-container .popover-panel .entry-icon svg {
+    width: 0;
+  }
+  .nav-links .nav-entry .popover-container .popover-panel .entry-text {
+    padding: 0;
+  }
+  .nav-links .nav-entry .popover-container .popover-panel .entry-text h6 {
+    display: none;
+  }
+  .nav-links .nav-entry .popover-container .popover-panel .entry-text h2 {
+    font-size: var(--font-lg);
+  }
+  .nav-links .nav-entry.no-border {
+    border: none;
+  }
+}
+@media (max-width: 37.5rem) {
+  .nav-links {
+    width: 80%;
+  }
+}
+.always-show-for-nojs-on-mobile {
+  display: none;
+}
+@media (max-width: 80rem) {
+  .always-show-for-nojs-on-mobile {
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin-top: var(--nav-height);
+  }
+  .always-show-for-nojs-on-mobile .nav-links {
+    display: block;
+    position: static;
+    left: 0;
+    width: 100%;
+  }
+}
+@media (max-width: 80rem) {
+  .no-js .hamburger-btn {
+    display: none;
+  }
+}
+.form-select {
+  width: 100%;
+  background-color: var(--color-white);
+  padding-inline: 0.25rem;
+  padding-block: 0.15rem;
+  border-radius: var(--border-radius-sm);
+  border: 1px solid var(--color-gray-30);
+  appearance: none;
+  background-image: url("/media/svg/chevron-down.svg");
+  background-position: calc(100% - 0.5rem);
+  background-repeat: no-repeat;
+}
+#lang_form {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  text-align: center;
+}
+#lang_form label {
+  font-size: 1rem;
+  font-weight: 500;
+}
+#lang_form .form-select {
+  font-size: 0.9rem;
+}
+/*
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ */
+/*
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ */
+/* - Metropolis -*/
+@font-face {
+  font-family: metropolis;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-Regular.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-RegularItalic.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-RegularItalic.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-ExtraLight.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-ExtraLight.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-Light.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-Light.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-Thin.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-Thin.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-ExtraLightItalic.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-ExtraLightItalic.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-LightItalic.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-LightItalic.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-ThinItalic.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-ThinItalic.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-Medium.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-SemiBold.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-SemiBold.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-Bold.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-BoldItalic.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-BoldItalic.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-MediumItalic.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-MediumItalic.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-SemiBoldItalic.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-SemiBoldItalic.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-ExtraBold.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-ExtraBold.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-ExtraBoldItalic.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-ExtraBoldItalic.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-Black.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-Black.woff") format("woff");
+}
+@font-face {
+  font-family: metropolis;
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url("/media/fonts/Metropolis/Metropolis-BlackItalic.woff2") format("woff2"), url("/media/fonts/Metropolis/Metropolis-BlackItalic.woff") format("woff");
+}
+/*
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ */
+/* - Inter -*/
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-Thin.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-Thin.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-ThinItalic.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-ThinItalic.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-ExtraLight.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-ExtraLight.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-ExtraLightItalic.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-ExtraLightItalic.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-Light.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-Light.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-LightItalic.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-LightItalic.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-Regular.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-Regular.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-Italic.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-Italic.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-Medium.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-Medium.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-MediumItalic.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-MediumItalic.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-SemiBold.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-SemiBold.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-SemiBoldItalic.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-SemiBoldItalic.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-Bold.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-Bold.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-BoldItalic.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-BoldItalic.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-ExtraBold.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-ExtraBold.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-ExtraBoldItalic.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-ExtraBoldItalic.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-Black.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-Black.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url("/media/fonts/Inter/Inter-BlackItalic.woff2?v=3.19") format("woff2"), url("/media/fonts/Inter/Inter-BlackItalic.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'Inter var';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: url("/media/fonts/Inter/Inter-roman.var.woff2?v=3.19") format("woff2");
+}
+@font-face {
+  font-family: 'Inter var';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: italic;
+  font-named-instance: 'Italic';
+  src: url("/media/fonts/Inter/Inter-italic.var.woff2?v=3.19") format("woff2");
+}
+/*
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ */
+/* Open Sans */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/media/fonts/opensans-regular.woff2") format("woff2"), url("/media/fonts/opensans-regular.woff") format("woff");
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/media/fonts/opensans-italic.woff2") format("woff2"), url("/media/fonts/opensans-italic.woff") format("woff");
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/media/fonts/opensans-light.woff2") format("woff2"), url("/media/fonts/opensans-light.woff") format("woff");
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/media/fonts/opensans-lightitalic.woff2") format("woff2"), url("/media/fonts/opensans-lightitalic.woff") format("woff");
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/media/fonts/opensans-semibold.woff2") format("woff2"), url("/media/fonts/opensans-semibold.woff") format("woff");
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/media/fonts/opensans-semibolditalic.woff2") format("woff2"), url("/media/fonts/opensans-semibolditalic.woff") format("woff");
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/media/fonts/opensans-bold.woff2") format("woff2"), url("/media/fonts/opensans-bold.woff") format("woff");
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/media/fonts/opensans-bolditalic.woff2") format("woff2"), url("/media/fonts/opensans-bolditalic.woff") format("woff");
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/media/fonts/opensans-extrabold.woff2") format("woff2"), url("/media/fonts/opensans-extrabold.woff") format("woff");
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/media/fonts/opensans-extrabolditalic.woff2") format("woff2"), url("/media/fonts/opensans-extrabolditalic.woff") format("woff");
+}
+/* Nicer fallbacks */
+@font-face {
+  font-family: 'system-ui';
+  font-style: normal;
+  font-weight: 300;
+  src: local(".SFNS-Light"), local(".SFNSText-Light"), local("Segoe UI Light"), local("Ubuntu Light");
+}
+@font-face {
+  font-family: 'system-ui';
+  font-style: italic;
+  font-weight: 300;
+  src: local(".SFNS-LightItalic"), local(".SFNSText-LightItalic"), local("Segoe UI Light Italic"), local("Ubuntu Light Italic");
+}
+@font-face {
+  font-family: 'system-ui';
+  font-style: normal;
+  font-weight: 400;
+  src: local(".SFNS-Regular"), local(".SFNSText-Regular"), local("Segoe UI"), local("Ubuntu");
+}
+@font-face {
+  font-family: 'system-ui';
+  font-style: italic;
+  font-weight: 400;
+  src: local(".SFNS-Italic"), local(".SFNSText-Italic"), local("Segoe UI Italic"), local("Ubuntu Italic");
+}
+@font-face {
+  font-family: 'system-ui';
+  font-style: normal;
+  font-weight: 500;
+  src: local(".SFNS-Medium"), local(".SFNSText-Medium"), local("Segoe UI Semibold"), local("Ubuntu Medium");
+}
+@font-face {
+  font-family: 'system-ui';
+  font-style: italic;
+  font-weight: 500;
+  src: local(".SFNS-MediumItalic"), local(".SFNSText-MediumItalic"), local("Segoe UI Semibold Italic"), local("Ubuntu Medium Italic");
+}
+@font-face {
+  font-family: 'system-ui';
+  font-style: normal;
+  font-weight: 700;
+  src: local(".SFNS-Bold"), local(".SFNSText-Bold"), local("Segoe UI Bold"), local("Ubuntu Bold");
+}
+@font-face {
+  font-family: 'system-ui';
+  font-style: italic;
+  font-weight: 700;
+  src: local(".SFNS-BoldItalic"), local(".SFNSText-BoldItalic"), local("Segoe UI Bold Italic"), local("Ubuntu Bold Italic");
+}
+#tab-navigation-bar {
+  background-color: #1a202c;
+  display: flex;
+  height: 32px;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+  width: 100%;
+}
+body.tbpro #tab-navigation-bar {
+  position: unset;
+  top: unset;
+  z-index: unset;
+}
+@media (min-width: 56.25rem) {
+  body.tbpro #tab-navigation-bar {
+    padding-inline: calc(9rem - 16px);
+  }
+}
+.tab-navigation-links {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  height: 100%;
+  max-width: 80rem;
+  width: 100%;
+}
+.tab-navigation-links a {
+  font-family: 'Metropolis', sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: normal;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  display: flex;
+  padding-inline: 20px;
+  text-decoration: none;
+}
+.tab-navigation-links a.active,
+.tab-navigation-links a:hover {
+  background-color: #111;
+  color: #58c9ff;
+}
+.tab-navigation-links a.active {
+  cursor: default;
+}
+#tab-navigation-bar ~ .site-nav {
+  top: 32px;
+}
+footer#tb-footer {
+  background-image: linear-gradient(168deg, #1b2128 1%, #171b24 45%);
+  display: grid;
+  padding-block: 2rem;
+  padding-inline: 16px;
+}
+@media (min-width: 56.25rem) {
+  footer#tb-footer {
+    padding-inline: 9rem;
+  }
+}
+footer#tb-footer a {
+  color: var(--text-icon-base);
+  text-decoration: none;
+}
+footer#tb-footer a:visited {
+  color: var(--text-icon-base);
+}
+footer#tb-footer #site-nav {
+  align-items: start;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: grid;
+  gap: 16px;
+  grid-template: 1fr auto / auto;
+  padding-bottom: 1.5rem;
+  width: 100%;
+}
+footer#tb-footer #site-nav .site-nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+footer#tb-footer #site-nav .site-nav-links a {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+footer#tb-footer #site-nav .additional-tbpro-links {
+  display: flex;
+  font-size: 0.75rem;
+  gap: 0.375rem;
+}
+@media (min-width: 56.25rem) {
+  footer#tb-footer #site-nav .additional-tbpro-links {
+    grid-column: 2;
+    justify-self: end;
+  }
+}
+footer#tb-footer #site-nav .additional-tbpro-links a {
+  text-decoration: underline;
+}
+@media (min-width: 56.25rem) {
+  footer#tb-footer #site-nav {
+    align-items: center;
+    grid-template: 1fr / 1fr auto;
+  }
+}
+#nav-link-home,
+#nav-link-home svg {
+  width: 208px;
+  height: 36px;
+}
+#moz-link-home svg {
+  width: 150px;
+  height: 36px;
+}
+#moz-nav {
+  display: grid;
+  gap: 16px;
+  padding-bottom: 0.5625rem;
+  padding-top: 1.5rem;
+}
+#moz-nav .moz-nav-links {
+  display: grid;
+  gap: 0.5625rem;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 0.375rem;
+}
+#moz-nav .moz-nav-links a {
+  font-size: 0.75rem;
+}
+@media (min-width: 80rem) {
+  #moz-nav {
+    grid-template-columns: auto 1fr;
+    align-items: start;
+    column-gap: 6rem;
+  }
+  #moz-nav #moz-link-home {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+  }
+  #moz-nav .moz-nav-links {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    gap: 1.5rem;
+  }
+  #moz-nav #tb-legal {
+    grid-column: 2;
+    grid-row: 2;
+  }
+}
+#tb-legal {
+  font-size: 0.75rem;
+}
+#tb-legal a {
+  text-decoration: underline;
+}
+footer {
+  background-color: black;
+  color: var(--color-gray-20);
+}
+.container.footer {
+  place-items: center;
+  padding-inline: 1rem;
+  padding-block: 6rem;
+  box-sizing: border-box;
+  gap: 2rem !important;
+}
+.footer-ln {
+  font-size: 1.1rem;
+}
+.legal-links {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.legal-links {
+  font-size: 1rem;
+}
+.mozilla-logo {
+  --accent: white;
+  max-width: 200px;
+}
+#footer {
+  width: 100%;
+  position: relative;
+  margin-top: auto;
+  margin-bottom: 0;
+  padding-bottom: 2rem;
+  min-height: 10rem;
+  display: flex;
+  justify-content: center;
+}
+#footer .mzla {
+  justify-content: flex-start;
+  align-content: center;
+}
+.moz-footer-border {
+  border-top: 1px solid #121212;
+  padding-bottom: 0.25rem;
+}
+:root {
+  --colour-primary-default: #58c9ff;
+  --colour-text-icon-base: #eeeef0;
+  --colour-text-icon-highlight: #58c9ff;
+  --colour-surface-base: #1a202c;
+  --colour-surface-border: #3d4d67;
+  --colour-surface-lower: #18181b;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-blue-50: #2493ef;
+  --color-purple-50: #a855f7;
+  --color-gray-30: #d4d4d8;
+  --color-ink-70: #3e3c67;
+  --color-ink-80: #2a284b;
+  --color-link: #1E4EAE;
+}
+.fill-current {
+  display: none;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 300;
+  font-weight: var(--font-body);
+  letter-spacing: normal;
+  line-height: 1.5;
+  font-weight: 300;
+  background: var(--colour-surface-lower);
+  color: var(--txt);
+  position: relative;
+  scroll-padding-top: var(--nav-height);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.site-nav {
+  color: var(--nav-txt);
+  --hamburger-background-inactive: var(--color-black);
+  --hamburger-foreground-inactive: var(--color-gray-30);
+  --hamburger-background-active: var(--color-white);
+  --hamburger-foreground-active: var(--color-black);
+}
+.site-nav .nav-links .nav-ln {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.site-nav h2 {
+  font-weight: 400;
+}
+.site-nav .entry-text {
+  line-height: 27px;
+}
+.site-nav h6 {
+  font-size: 12.06px;
+  line-height: 18.09px;
+}
+.site-nav .header-donate,
+.site-nav .header-download {
+  font-weight: 500;
+  margin-top: -0.05rem;
+  margin-left: -1rem;
+}
+.site-nav .header-donate a.btn,
+.site-nav .header-download a.btn {
+  padding: 0.72em 1em;
+  border-width: 0.125rem;
+}
+.site-nav .header-donate a.btn::after,
+.site-nav .header-download a.btn::after {
+  background: transparent;
+}
+.site-nav .header-donate svg,
+.site-nav .header-download svg {
+  width: 1rem;
+}
+.btn-donate,
+.btn-donate-lg,
+.btn-download-inline,
+.btn-download-link,
+.download-link.btn-download,
+.btn,
+button {
+  font-size: var(--font-md);
+  background: var(--btn-bg, transparent);
+  border-radius: 0.375rem;
+  border: 0.125em solid currentColor;
+  color: currentColor;
+  padding: 0.5em 3em;
+  position: relative;
+  transition: font-size 0.2s;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.btn-no-bg {
+  --btn-background-color: rgba(0, 0, 0, 0.8);
+}
+.btn-no-bg::after {
+  background-color: var(--btn-background-color);
+}
+.btn-no-bg:hover {
+  background: linear-gradient(var(--btn-background-color), var(--btn-background-color)) padding-box, linear-gradient(to right, var(--color-blue-50), var(--color-purple-50)) border-box;
+  color: currentColor;
+}
+a {
+  color: currentColor;
+}
+.container.footer h4 {
+  font-weight: 400;
+}
+.container.footer a {
+  --accent: var(--color-link);
+  color: currentColor;
+  text-decoration: underline;
+  transition: font-size 0.2s, text-decoration-color 0.2s;
+}
+.container.footer a.dotted {
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: currentColor;
+  text-underline-offset: 0.25em;
+  text-decoration-thickness: 0.12em;
+}
+.container.footer a.donate,
+.container.footer a:hover,
+.container.footer a:hover:visited {
+  text-decoration-color: var(--accent);
+}
+.site-links {
+  font-size: var(--font-md);
+  display: grid;
+  gap: 30px;
+  width: 100%;
+  grid-template: "a c d e" 30px "b c d e";
+}
+.site-links .site-link-section {
+  display: flex;
+  flex-direction: column;
+  height: 180px;
+}
+.site-links .site-link-section h4 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding-left: 40px;
+}
+.site-links .site-link-section .home {
+  font-weight: 600;
+}
+.site-links .site-link-section ul {
+  list-style: none;
+  margin: 0;
+}
+.site-links .site-link-section li {
+  margin-bottom: 0.5rem;
+}
+.site-links .site-link-section:nth-child(2) {
+  grid-area: b;
+}
+@media (max-width: 56.25rem) {
+  .site-links {
+    display: flex;
+    flex-direction: column;
+  }
+  .site-links .site-link-section {
+    height: auto;
+  }
+}
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-inline: 1rem;
+  padding-block: clamp(1rem, 5.469vw, 4.375rem);
+  margin-inline: auto;
+  max-width: 1280px;
+  overflow: hidden;
+}
+.container.container-tight {
+  max-width: 1040px;
+}
+.container.no-gap {
+  gap: 0;
+}
+@media (max-width: 56.25rem) {
+  .container {
+    width: calc(100% - 1rem);
+    box-sizing: border-box;
+  }
+}
+.logo {
+  max-height: 100%;
+  min-width: 250px;
+  max-width: 250px;
+  height: 60px;
+  width: auto;
+  transition: color 0.2s;
+}
+.logo:hover,
+.mozilla-logo:hover {
+  color: var(--accent);
+  transform: none;
+}
+svg {
+  max-height: 100%;
+  max-width: 100%;
+}
+main {
+  color: var(--colour-text-icon-base);
+  margin-top: 122px;
+  height: 100%;
+  flex: 1 1 auto;
+}
+#donation {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+#donation p {
+  margin: 0;
+}
+#donation a {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: normal;
+  color: var(--colour-text-icon-highlight);
+}
+#donation .donation-icon {
+  display: inline-block;
+  height: 1.5rem;
+  width: 1.5rem;
+  background-image: url("/media/svg/roadmaps/heart-24-default.svg");
+}
+#main-content {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.32;
+  letter-spacing: normal;
+  margin: 0 auto;
+  max-width: 90rem;
+  padding-block: 1.5rem;
+  padding-inline: 1rem;
+}
+@media (min-width: 56.25rem) {
+  #main-content {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: normal;
+  }
+}
+#main-content h1 {
+  font-weight: lighter;
+  font-family: 'Metropolis', sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: normal;
+  margin: 0;
+  padding: 0;
+}
+@media (min-width: 56.25rem) {
+  #main-content h1 {
+    font-family: 'Metropolis', sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+  }
+}
+#main-content h1 + p {
+  margin-top: 1rem;
+}
+#main-content h1 + ul {
+  margin-top: 1rem;
+}
+#main-content ul + h1,
+#main-content p + h1 {
+  margin-top: 2.25rem;
+}
+#main-content ul,
+#main-content li {
+  margin: 0;
+  padding: 0;
+}
+#main-content li + li {
+  margin-top: 0.5rem;
+}
+#main-content li {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: normal;
+  line-height: 1.075rem;
+  background-color: var(--colour-surface-base);
+  border: 1px solid var(--colour-surface-border);
+  border-radius: 0.5rem;
+  color: var(--colour-text-icon-base);
+  list-style: none;
+  position: relative;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  column-gap: 1rem;
+  row-gap: 0.5rem;
+  padding-block: 0.75rem 1rem;
+  padding-inline: 0.75rem;
+}
+@media (min-width: 56.25rem) {
+  #main-content li {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.32;
+    letter-spacing: normal;
+  }
+}
+#main-content li strong {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: normal;
+  display: block;
+}
+@media (min-width: 56.25rem) {
+  #main-content li strong {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: normal;
+  }
+}
+#main-content li a {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: normal;
+  margin-top: 0.25rem;
+  border: 1px solid var(--colour-primary-default);
+  border-radius: 0.5rem;
+  color: var(--colour-primary-default);
+  display: inline-block;
+  justify-self: start;
+  text-decoration: none;
+  padding-block: 0.84375rem;
+  padding-inline: 1rem;
+}
+@media (min-width: 56.25rem) {
+  #main-content .card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+@media (min-width: 80rem) {
+  #main-content .card-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 90rem) {
+  #main-content .card-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+#main-content .card + .card {
+  margin-top: 1rem;
+}
+@media (min-width: 56.25rem) {
+  #main-content .card + .card {
+    margin-top: 0;
+  }
+}
+#main-content .card-icon {
+  grid-template-columns: 1rem 1fr;
+}
+#main-content .card-icon::before {
+  content: "";
+  height: 1.5rem;
+  width: 1.5rem;
+  display: inline-block;
+  grid-column: 1;
+  grid-row: 1 / span 3;
+  align-self: start;
+  justify-self: center;
+  background-color: var(--colour-primary-default);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+}
+#main-content .card-android::before {
+  -webkit-mask-image: url("/media/svg/roadmaps/android-logo.svg");
+  mask-image: url("/media/svg/roadmaps/android-logo.svg");
+}
+#main-content .card-desktop::before {
+  -webkit-mask-image: url("/media/svg/roadmaps/desktop-tower.svg");
+  mask-image: url("/media/svg/roadmaps/desktop-tower.svg");
+}
+#main-content .card-ios::before {
+  -webkit-mask-image: url("/media/svg/roadmaps/apple-logo.svg");
+  mask-image: url("/media/svg/roadmaps/apple-logo.svg");
+}
+#main-content .card-services::before {
+  -webkit-mask-image: url("/media/svg/roadmaps/globe.svg");
+  mask-image: url("/media/svg/roadmaps/globe.svg");
+}
+@media (min-width: 80rem) {
+  #main-content .product-roadmap {
+    display: grid;
+    grid-template-columns: 26rem auto 1fr;
+    align-items: start;
+    row-gap: 2rem;
+    max-width: 90rem;
+    padding-left: 5rem;
+  }
+  #main-content .product-roadmap p {
+    grid-column: 1/-1;
+    margin-bottom: 1rem;
+  }
+  #main-content .product-roadmap h1 {
+    grid-column: 1;
+    margin: 0;
+    margin-left: 5rem;
+  }
+  #main-content .product-roadmap ul {
+    grid-column: 3;
+    margin: 0;
+  }
+}
