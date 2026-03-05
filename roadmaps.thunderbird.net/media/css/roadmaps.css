@@ -1016,6 +1016,8 @@ footer {
   --colour-surface-base: #1a202c;
   --colour-surface-border: #3d4d67;
   --colour-surface-lower: #18181b;
+  --color-surface-raised: #262d3b;
+  --color-surface-deep: #3d4d67;
   --color-white: #fff;
   --color-black: #000;
   --color-blue-50: #2493ef;
@@ -1030,11 +1032,8 @@ footer {
 }
 body {
   font-family: 'Inter', sans-serif;
-  font-size: 300;
-  font-weight: var(--font-body);
-  letter-spacing: normal;
-  line-height: 1.5;
   font-weight: 300;
+  line-height: 1.5;
   background: var(--colour-surface-lower);
   color: var(--txt);
   position: relative;
@@ -1225,13 +1224,15 @@ main {
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1;
-  letter-spacing: normal;
+  letter-spacing: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.75rem;
-  margin-top: 0.5rem;
+  margin-top: 0.75rem;
   margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  line-height: 1.23;
 }
 #donation p {
   margin: 0;
@@ -1241,8 +1242,9 @@ main {
   font-size: 0.75rem;
   font-weight: 400;
   line-height: 1;
-  letter-spacing: normal;
+  letter-spacing: 0;
   color: var(--colour-text-icon-highlight);
+  line-height: normal;
 }
 #donation .donation-icon {
   display: inline-block;
@@ -1250,28 +1252,65 @@ main {
   width: 1.5rem;
   background-image: url("/media/svg/roadmaps/heart-24-default.svg");
 }
+#roadmaps-site-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0.75rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 3.25rem;
+}
+#roadmaps-site-nav h4 {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0;
+  margin-bottom: 1rem;
+}
+#roadmaps-site-nav div {
+  display: flex;
+  flex-direction: row;
+  gap: 1.25rem;
+}
+#roadmaps-site-nav div a {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0;
+}
+#roadmaps-site-nav div a.active {
+  text-decoration: none;
+  cursor: unset;
+}
 #main-content {
   font-family: 'Inter', sans-serif;
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.32;
-  letter-spacing: normal;
+  letter-spacing: 0;
   margin: 0 auto;
-  max-width: 90rem;
-  padding-block: 1.5rem;
-  padding-inline: 1rem;
+  max-width: 76rem;
+  padding-top: 2.25rem;
+  padding-bottom: 2rem;
+  padding-inline: 2rem;
 }
 @media (min-width: 56.25rem) {
   #main-content {
     font-family: 'Inter', sans-serif;
     font-size: 1.25rem;
-    font-weight: 300;
-    line-height: 28px;
-    letter-spacing: normal;
+    line-height: 1.75;
+    letter-spacing: 0;
+    font-weight: 400;
+    line-height: 1.75rem;
   }
 }
 #main-content h1 {
-  font-weight: lighter;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 2rem;
+  letter-spacing: 0;
   font-family: 'Metropolis', sans-serif;
   font-size: 2rem;
   font-weight: 400;
@@ -1284,13 +1323,17 @@ main {
   #main-content h1 {
     font-family: 'Metropolis', sans-serif;
     font-size: 3rem;
-    font-weight: 400;
-    line-height: 1.2;
     letter-spacing: -0.5px;
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: -0.03rem;
   }
 }
 #main-content h1 + p {
   margin-top: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 1.25rem;
+  max-width: 50.313rem;
 }
 #main-content h1 + ul {
   margin-top: 1rem;
@@ -1312,7 +1355,7 @@ main {
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1;
-  letter-spacing: normal;
+  letter-spacing: 0;
   line-height: 1.075rem;
   background-color: var(--colour-surface-base);
   border: 1px solid var(--colour-surface-border);
@@ -1324,16 +1367,18 @@ main {
   grid-template-rows: auto 1fr auto;
   column-gap: 1rem;
   row-gap: 0.5rem;
-  padding-block: 0.75rem 1rem;
-  padding-inline: 0.75rem;
+  box-sizing: border-box;
+  padding-inline: 1rem;
+  padding-block: 1rem 1.5rem;
+  min-height: 10.563rem;
 }
 @media (min-width: 56.25rem) {
   #main-content li {
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.32;
-    letter-spacing: normal;
+    letter-spacing: 0;
   }
 }
 #main-content li strong {
@@ -1341,7 +1386,7 @@ main {
   font-size: 1rem;
   font-weight: 600;
   line-height: 1;
-  letter-spacing: normal;
+  letter-spacing: 0;
   display: block;
 }
 @media (min-width: 56.25rem) {
@@ -1350,40 +1395,20 @@ main {
     font-size: 1.25rem;
     font-weight: 600;
     line-height: 1;
-    letter-spacing: normal;
+    letter-spacing: 0;
+    line-height: normal;
   }
 }
-#main-content li a {
-  font-family: 'Inter', sans-serif;
-  font-size: 0.875rem;
-  font-weight: 400;
-  line-height: 1;
-  letter-spacing: normal;
-  margin-top: 0.25rem;
-  border: 1px solid var(--colour-primary-default);
-  border-radius: 0.5rem;
-  color: var(--colour-primary-default);
-  display: inline-block;
+#main-content li bolt-primary-button {
   justify-self: start;
-  text-decoration: none;
+  margin-top: 0.25rem;
   padding-block: 0.84375rem;
-  padding-inline: 1rem;
 }
 @media (min-width: 56.25rem) {
   #main-content .card-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-  }
-}
-@media (min-width: 80rem) {
-  #main-content .card-container {
     grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media (min-width: 90rem) {
-  #main-content .card-container {
-    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
   }
 }
 #main-content .card + .card {
@@ -1395,7 +1420,7 @@ main {
   }
 }
 #main-content .card-icon {
-  grid-template-columns: 1rem 1fr;
+  grid-template-columns: 1.5rem 1fr;
 }
 #main-content .card-icon::before {
   content: "";
@@ -1405,7 +1430,6 @@ main {
   grid-column: 1;
   grid-row: 1 / span 3;
   align-self: start;
-  justify-self: center;
   background-color: var(--colour-primary-default);
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
@@ -1427,26 +1451,98 @@ main {
   -webkit-mask-image: url("/media/svg/roadmaps/globe.svg");
   mask-image: url("/media/svg/roadmaps/globe.svg");
 }
+#main-content.product-or-service {
+  padding-inline: 2rem;
+  padding-top: 2.25rem;
+  padding-bottom: 2rem;
+  max-width: 80rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+}
+#main-content.product-or-service h1,
+#main-content.product-or-service h1 ~ p {
+  grid-column: 1/4;
+}
+#main-content.product-or-service h1 ~ p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 2rem;
+  margin-top: 1.25rem;
+  max-width: 50.313rem;
+}
+#main-content.product-or-service h1 ~ p a {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0;
+  color: var(--colour-ti-highlight);
+  font-size: 0.75rem;
+  line-height: 1rem;
+  text-decoration-thickness: 13%;
+  text-underline-offset: 25%;
+}
+#main-content.product-or-service h1 ~ p a::after {
+  content: " \2192";
+  display: inline-block;
+  margin-left: 0.25rem;
+  letter-spacing: -2px;
+  vertical-align: middle;
+}
+#main-content.product-or-service h1 ~ p:last-of-type {
+  padding-block-end: 2.25rem;
+}
 @media (min-width: 80rem) {
-  #main-content .product-roadmap {
+  #main-content.product-or-service .product-roadmap {
     display: grid;
-    grid-template-columns: 26rem auto 1fr;
-    align-items: start;
-    row-gap: 2rem;
     max-width: 90rem;
-    padding-left: 5rem;
+    grid-template-columns: 14.5rem 1fr;
+    padding-inline: 3.75rem 6.438rem;
+    margin-top: 2.25rem;
+    column-gap: 1rem;
+    row-gap: 2.25rem;
+    align-items: start;
   }
-  #main-content .product-roadmap p {
-    grid-column: 1/-1;
-    margin-bottom: 1rem;
-  }
-  #main-content .product-roadmap h1 {
+  #main-content.product-or-service .product-roadmap h2 {
+    position: sticky;
+    top: 100px;
+    background: var(--colour-surface-lower);
     grid-column: 1;
+    font-family: metropolis;
+    font-weight: 300;
+    font-size: 2.25rem;
+    line-height: 120%;
+    letter-spacing: -0.025rem;
     margin: 0;
-    margin-left: 5rem;
   }
-  #main-content .product-roadmap ul {
+  #main-content.product-or-service .product-roadmap ul {
     grid-column: 3;
     margin: 0;
+    max-width: 52.313rem;
+  }
+  #main-content.product-or-service .product-roadmap li {
+    box-sizing: border-box;
+    padding-inline: 1rem;
+    padding-block: 0.688rem 0.438rem;
+    font-weight: 400;
+    background-color: var(--color-surface-raised);
+  }
+  #main-content.product-or-service .product-roadmap li:has(.text) {
+    padding-bottom: 1rem;
+  }
+  #main-content.product-or-service .product-roadmap li .date-badge {
+    border-radius: 4rem;
+    background-color: var(--color-surface-deep);
+    width: fit-content;
+    padding-inline: 0.75rem;
+    padding-block-end: 0.188rem;
+  }
+  #main-content.product-or-service .product-roadmap li .date-badge .text {
+    margin: auto;
+    font-size: 0.6875rem;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
   }
 }

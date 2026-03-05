@@ -25,9 +25,21 @@
     
 
     <link href="/media/css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="/media/css/bolt-webcomponents.css" rel="stylesheet" type="text/css" />
 
     
     <link href="/media/css/roadmaps.css" rel="stylesheet" type="text/css" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
     
 
     
@@ -946,30 +958,28 @@
 </noscript>
 
     <main>
-      <div id="main-content">
+      <div id="main-content"
+           class="product-or-service"
+      >
       
 <div class="product-roadmap">
   
-<p>Welcome to the <strong>Thunderbird for Android</strong> roadmap!</p>
-<h1>🏗️ Active</h1>
+<h1>Android Roadmap</h1>
+<p>Thunderbird for Android. Follow the roadmap from active work to to future ideas. Timelines may shift as we learn and iterate.</p>
+<p>Download Thunderbird for Android - <a href="https://play.google.com/store/apps/details?id=net.thunderbird.android&amp;hl=en_US">Google Play Store</a>, <a href="https://f-droid.org/en/packages/net.thunderbird.android/">F-Droid</a></p>
+<h2><i class="ph ph-pulse"></i> Active</h2>
 <ul>
-<li><strong>Rearchitecture and Core Maintenance</strong> - Modernize the source code that we inherited from K9, tackle the most glaring maintenance and stability issues, and restructure the core architecture for faster and easier development. </li>
-<li><strong>Message View Improvements</strong> - Modernize the message view to address the most glaring issues like attachment handling, message loading, zoom, remove images, and so on. Making the experience comparable to the competition. </li>
+<li><strong>Rearchitecture and Core Maintenance</strong> Modernize the source code that we inherited from K9, tackle the most glaring maintenance and stability issues, and restructure the core architecture for faster and easier development.</li>
+<li><strong>Message View Improvements</strong> Modernize the message view to address the most glaring issues like attachment handling, message loading, zoom, remove images, and so on. Making the experience comparable to the competition.</li>
 </ul>
-<h1>📋 Planned</h1>
+<h2><i class="ph ph-calendar-blank"></i> Planned</h2>
 <ul>
-<li><strong>Message List Improvements</strong> - Users spend most of their time on the message list, waiting for messages to load, scrolling to find messages, and quickly interacting with them through swipe actions. This effort is aimed at improving this primary view and addressing all major concerns. </li>
-<li><strong>HTML Signature</strong> - Give users a way to set HTML signatures. This is a long time requested feature that alongside Sync will strengthen the continuity between our apps and the first step towards a working ecosystem. </li>
+<li><strong>Message List Improvements</strong> Users spend most of their time on the message list, waiting for messages to load, scrolling to find messages, and quickly interacting with them through swipe actions. This effort is aimed at improving this primary view and addressing all major concerns.</li>
+<li><strong>HTML Signature</strong> Give users a way to set HTML signatures. This is a long time requested feature that alongside Sync will strengthen the continuity between our apps and the first step towards a working ecosystem.</li>
 </ul>
-<h1>🚀 Launched</h1>
+<h2><i class="ph ph-rocket-launch"></i> Launched</h2>
 <ul>
-<li><strong>CASA Approval</strong> - Complete the Cloud Application Security Assessment (CASA)</li>
-</ul>
-<h1>🗃️ Backlog</h1>
-<ul>
-<li><strong>JMAP Support Exploration</strong> - Planning for JMAP integration, learning what it means to add a new protocol on Android, and ensuring future proofing against proprietary protocols.</li>
-<li><strong>Exchange Support Exploration</strong> - Supporting Exchange will allow Desktop users to stay inside our ecosystem and not need to switch between applications.</li>
-<li><strong>Calendar Exploration</strong> - Emails and Calendars go hand in hand and it's time to start exploring the implementation of CalDav support and plan for a proper calendar integration on Android.</li>
+<li><strong>CASA Approval</strong> Complete the Cloud Application Security Assessment (CASA)</li>
 </ul>
   
 
@@ -978,11 +988,33 @@
 
       </div>
 
-      <div id="donation">
-        <p>Fund the work behind these roadmaps.</p>
-        <a href="">Donate Now</a>
-        <span class="donation-icon"></span>
-      </div>
+      
+<div id="roadmaps-site-nav">
+  <h4>Project roadmaps</h4>
+  <div>
+    <a href="/cs/desktop">Desktop</a>
+    <a href="/cs/android">Android</a>
+    <a href="/cs/ios">iOS</a>
+    <a href="/cs/services">Services</a>
+  </div>
+</div>
+<script>
+  (function () {
+    const currentUrl = window.location.pathname;
+    document.querySelectorAll('#roadmaps-site-nav a').forEach(link => {
+      const linkUrl = new URL(link.href).pathname;
+      if (currentUrl.startsWith(linkUrl)) {
+        link.classList.add('active');
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+        });
+      } else {
+        link.classList.remove('active');
+      }
+    });
+  })();
+</script>
+
 
     </main>
 
@@ -1140,6 +1172,15 @@ přispěvateli. Obsah je k dispozici pod
     <script type="text/javascript" src="/media/js/roadmaps-bundle.js" charset="utf-8"></script>
     <script>
       (function (){
+        // Handle light/dark mode preference
+        const browserPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+        if (browserPrefersDark) {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+
         // Allow page to show hamburger menu.
         document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/, "js");
 

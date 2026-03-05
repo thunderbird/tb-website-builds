@@ -25,9 +25,21 @@
     
 
     <link href="/media/css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="/media/css/bolt-webcomponents.css" rel="stylesheet" type="text/css" />
 
     
     <link href="/media/css/roadmaps.css" rel="stylesheet" type="text/css" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
     
 
     
@@ -946,7 +958,9 @@
 </noscript>
 
     <main>
-      <div id="main-content">
+      <div id="main-content"
+           class=""
+      >
       
 <h1>Roadmaps</h1>
 <p>Welcome to the Thunderbird roadmaps for our Desktop, Android, and iOS clients!</p>
@@ -958,34 +972,58 @@
 
     Thunderbird for Windows, macOS, and Linux. Follow the roadmap from active work to future ideas. Timelines may shift as we learn and iterate.
 
-    <a href="/en-GB/desktop">View roadmap</a>
+    <bolt-primary-button
+      variant="outline"
+      href="/en-GB/desktop">
+      View roadmap
+    </bolt-primary-button>
   </li>
   <li class="card card-icon card-android">
     <strong>
         Android
     </strong>
 
-    Thunderbird for Windows, macOS, and Linux. Follow the roadmap from active work to future ideas. Timelines may shift as we learn and iterate.
 
-    <a href="/en-GB/android">View roadmap</a>
+    A transparent view of upcoming Android features and improvements. Track progress by milestone.
+
+    <bolt-primary-button
+      variant="outline"
+      href="/en-GB/android">
+      View roadmap
+    </bolt-primary-button>
   </li>
   <li class="card card-icon card-ios">
     <strong>
         iOS
     </strong>
 
-    Thunderbird for Windows, macOS, and Linux. Follow the roadmap from active work to future ideas. Timelines may shift as we learn and iterate.
+    Priorities for performance, accessibility, and a gesture-first mobile UX on iPhone and iPad.
 
-    <a href="/en-GB/ios">View roadmap</a>
+    <bolt-primary-button
+      variant="outline"
+      href="/en-GB/ios">
+      View roadmap
+    </bolt-primary-button>
   </li>
   <li class="card card-icon card-services">
     <strong>
         Services
     </strong>
 
-    Thunderbird for Windows, macOS, and Linux. Follow the roadmap from active work to future ideas. Timelines may shift as we learn and iterate.
+    Project-Id-Version: PROJECT VERSION
+Language: en_GB
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 8bit
+Plural-Forms: nplurals=2; plural=(n != 1);
+Generated-By: Pontoon
 
-    <a href="/en-GB/services">View roadmap</a>
+
+    <bolt-primary-button
+      variant="outline"
+      href="/en-GB/services">
+      View roadmap
+    </bolt-primary-button>
   </li>
 </ul>
 
@@ -993,11 +1031,13 @@
 
       </div>
 
-      <div id="donation">
-        <p>Fund the work behind these roadmaps.</p>
-        <a href="">Donate Now</a>
-        <span class="donation-icon"></span>
-      </div>
+      
+<div id="donation">
+  <p>Fund the work behind these roadmaps.</p>
+  <a href="">Donate Now</a>
+  <span class="donation-icon"></span>
+</div>
+
 
     </main>
 
@@ -1155,6 +1195,15 @@
     <script type="text/javascript" src="/media/js/roadmaps-bundle.js" charset="utf-8"></script>
     <script>
       (function (){
+        // Handle light/dark mode preference
+        const browserPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+        if (browserPrefersDark) {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+
         // Allow page to show hamburger menu.
         document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/, "js");
 

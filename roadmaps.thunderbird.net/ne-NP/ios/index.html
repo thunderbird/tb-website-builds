@@ -25,9 +25,21 @@
     
 
     <link href="/media/css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="/media/css/bolt-webcomponents.css" rel="stylesheet" type="text/css" />
 
     
     <link href="/media/css/roadmaps.css" rel="stylesheet" type="text/css" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
     
 
     
@@ -946,31 +958,29 @@
 </noscript>
 
     <main>
-      <div id="main-content">
+      <div id="main-content"
+           class="product-or-service"
+      >
       
 <div class="product-roadmap">
   
-<p>Welcome to the <strong>Thunderbird for iOS</strong> client roadmap!</p>
-<h1>🏗️ Active</h1>
+<h1>iOS Roadmap</h1>
+<p>Thunderbird for iOS. Follow the roadmap from active work to future ideas. Timelines may shift as we learn and iterate.</p>
+<h2><i class="ph ph-pulse"></i> Active</h2>
 <ul>
-<li><strong>Account Creation Flow</strong> - Implement a full automated and manual setup, including autodiscovery and OAuth.</li>
-<li><strong>IMAP Support</strong> - Implement the IMAP protocol first as it's the most widespread protocol currently in use.</li>
-<li><strong>Full Email Writing and Reading Experience</strong> - Implement the full reading and writing email experience on mobile, including initial support for encrypted messages (OpenPGP and S/MIME with existing libraries).</li>
+<li><strong>Account Creation Flow</strong> Implement a full automated and manual setup, including autodiscovery and OAuth.</li>
+<li><strong>IMAP Support</strong> Implement the IMAP protocol first as it's the most widespread protocol currently in use.</li>
+<li><strong>Full Email Writing and Reading Experience</strong> Implement the full reading and writing email experience on mobile, including initial support for encrypted messages (OpenPGP and S/MIME with existing libraries).</li>
 </ul>
-<h1>📋 Planned</h1>
+<h2><i class="ph ph-calendar-blank"></i>Planned</h2>
 <ul>
-<li><strong>JMAP Support</strong> - Support the JMAP protocol as one of the first extra protocols we ship with by default outside of IMAP.</li>
-<li><strong>HTML Signatures</strong> - A long time requested feature that alongside Sync will strengthen the continuity between our apps and the first step towards a working ecosystem.</li>
+<li><strong>JMAP Support</strong> Support the JMAP protocol as one of the first extra protocols we ship with by default outside of IMAP.</li>
+<li><strong>HTML Signatures</strong> A long time requested feature that alongside Sync will strengthen the continuity between our apps and the first step towards a working ecosystem.</li>
 </ul>
-<h1>🚀 Launched</h1>
+<h2><i class="ph ph-rocket-launch"></i> Launched</h2>
 <ul>
-<li><strong>Architecture</strong> - Establish a robust and scalable architecture to begin the Thunderbird for iOS project and create the backend. This architecture will include strategies for code sharing across platforms, taking into account the Android and Desktop clients.</li>
-<li><strong>Autoconfiguration</strong> - Add DNS MX lookup to autoconfig feature library and move SRV record lookup into autoconfig feature library and delete Autodiscover core library</li>
-</ul>
-<h1>🗃️ Backlog</h1>
-<ul>
-<li><strong>Swipe Actions</strong> - Implement the most common swipe actions to interact with the message list.</li>
-<li><strong>Calendar Exploration</strong> - Emails and Calendars go hand in hand and we can start exploring the implementation of CalDav support and plan for a proper calendar integration on iOS.</li>
+<li><strong>Architecture</strong> Establish a robust and scalable architecture to begin the Thunderbird for iOS project and create the backend. This architecture will include strategies for code sharing across platforms, taking into account the Android and Desktop clients.</li>
+<li><strong>Autoconfiguration</strong> Add DNS MX lookup to autoconfig feature library and move SRV record lookup into autoconfig feature library and delete Autodiscover core library</li>
 </ul>
   
 
@@ -979,11 +989,33 @@
 
       </div>
 
-      <div id="donation">
-        <p>Fund the work behind these roadmaps.</p>
-        <a href="">Donate Now</a>
-        <span class="donation-icon"></span>
-      </div>
+      
+<div id="roadmaps-site-nav">
+  <h4>Project roadmaps</h4>
+  <div>
+    <a href="/ne-NP/desktop">Desktop</a>
+    <a href="/ne-NP/android">Android</a>
+    <a href="/ne-NP/ios">iOS</a>
+    <a href="/ne-NP/services">Services</a>
+  </div>
+</div>
+<script>
+  (function () {
+    const currentUrl = window.location.pathname;
+    document.querySelectorAll('#roadmaps-site-nav a').forEach(link => {
+      const linkUrl = new URL(link.href).pathname;
+      if (currentUrl.startsWith(linkUrl)) {
+        link.classList.add('active');
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+        });
+      } else {
+        link.classList.remove('active');
+      }
+    });
+  })();
+</script>
+
 
     </main>
 
@@ -1141,6 +1173,15 @@
     <script type="text/javascript" src="/media/js/roadmaps-bundle.js" charset="utf-8"></script>
     <script>
       (function (){
+        // Handle light/dark mode preference
+        const browserPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+        if (browserPrefersDark) {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+
         // Allow page to show hamburger menu.
         document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/, "js");
 
