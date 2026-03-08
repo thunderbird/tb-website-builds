@@ -2088,7 +2088,7 @@ header#masthead h1 {
   font-size: 2rem;
   font-weight: 300;
   line-height: 1;
-  letter-spacing: normal;
+  letter-spacing: 0;
   margin: 0;
   text-shadow: 0 4px 2px rgba(0, 0, 0, 0.05);
   white-space: pre;
@@ -2097,7 +2097,7 @@ header#masthead h1 {
   header#masthead h1 {
     font-family: 'Metropolis', sans-serif;
     font-size: 4.5rem;
-    font-weight: 300;
+    font-weight: 200;
     line-height: 1.1;
     letter-spacing: normal;
     grid-column: 1 / -1;
@@ -2107,18 +2107,18 @@ header#masthead h1 {
 header#masthead p {
   font-family: 'Inter', sans-serif;
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.32;
-  letter-spacing: normal;
+  letter-spacing: 0;
   margin-block: 0.375rem;
 }
 @media (min-width: 56.25rem) {
   header#masthead p {
     font-family: 'Inter', sans-serif;
     font-size: 1.25rem;
-    font-weight: 300;
-    line-height: 28px;
-    letter-spacing: normal;
+    font-weight: 400;
+    line-height: 1.75;
+    letter-spacing: 0;
     grid-column: 1 / span 2;
     grid-row: 3;
   }
@@ -2222,7 +2222,7 @@ section#features .feature-card .card-info .card-header .app-header .app-tagline 
   font-size: 1.25rem;
   font-weight: 500;
   line-height: 1.2;
-  letter-spacing: normal;
+  letter-spacing: 0;
 }
 @media (min-width: 80rem) {
   section#features .feature-card .card-info .card-header .app-header .app-tagline {
@@ -2230,7 +2230,7 @@ section#features .feature-card .card-info .card-header .app-header .app-tagline 
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 1.2;
-    letter-spacing: normal;
+    letter-spacing: 0;
   }
 }
 section#features .feature-card .card-info .card-body {
@@ -2238,7 +2238,7 @@ section#features .feature-card .card-info .card-body {
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1;
-  letter-spacing: normal;
+  letter-spacing: 0;
   line-height: 1.23;
   text-align: left;
 }
@@ -2246,9 +2246,9 @@ section#features .feature-card .card-info .card-body {
   section#features .feature-card .card-info .card-body {
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.32;
-    letter-spacing: normal;
+    letter-spacing: 0;
   }
 }
 section#features .feature-card .card-image {
@@ -2361,7 +2361,10 @@ section#overview {
   padding-top: 2.25rem;
 }
 section#overview header {
-  font-weight: lighter;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 2rem;
+  letter-spacing: 0;
   font-family: 'Metropolis', sans-serif;
   font-size: 2rem;
   font-weight: 400;
@@ -2375,7 +2378,7 @@ section#overview header {
   section#overview header {
     font-family: 'Metropolis', sans-serif;
     font-size: 3rem;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.2;
     letter-spacing: -0.5px;
   }
@@ -2442,7 +2445,7 @@ section#overview .overview-card-container .overview-card header {
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 1.2;
-    letter-spacing: normal;
+    letter-spacing: 0;
   }
 }
 section#overview .overview-card-container .overview-card p {
@@ -2462,7 +2465,10 @@ section#reasons {
   row-gap: 1.5rem;
 }
 section#reasons > header {
-  font-weight: lighter;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 2rem;
+  letter-spacing: 0;
   font-family: 'Metropolis', sans-serif;
   font-size: 2rem;
   font-weight: 400;
@@ -2476,7 +2482,7 @@ section#reasons > header {
   section#reasons > header {
     font-family: 'Metropolis', sans-serif;
     font-size: 3rem;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.2;
     letter-spacing: -0.5px;
   }
@@ -2585,16 +2591,16 @@ section#reasons .reason .reason-content p {
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1;
-  letter-spacing: normal;
+  letter-spacing: 0;
   color: #4c4d58;
 }
 @media (min-width: 56.25rem) {
   section#reasons .reason .reason-content p {
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.32;
-    letter-spacing: normal;
+    letter-spacing: 0;
   }
 }
 @media (min-width: 80rem) {
@@ -2681,15 +2687,15 @@ section#faq .faq-item .faq-answer {
   font-size: 0.9375rem;
   font-weight: 400;
   line-height: 1.32;
-  letter-spacing: normal;
+  letter-spacing: 0;
 }
 @media (min-width: 80rem) {
   section#faq .faq-item .faq-answer {
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.32;
-    letter-spacing: normal;
+    letter-spacing: 0;
   }
 }
 section#faq .faq-item[open] .faq-question::after {
@@ -2743,9 +2749,9 @@ section#details .subscription-header p {
   section#details .subscription-header p {
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.32;
-    letter-spacing: normal;
+    letter-spacing: 0;
   }
 }
 section#details .subscription-info {
@@ -2862,7 +2868,7 @@ section#details .subscription-info .subscription-callout h3 {
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 1.2;
-    letter-spacing: normal;
+    letter-spacing: 0;
   }
 }
 section#details .subscription-info .subscription-callout h4 {
@@ -2901,9 +2907,9 @@ section#details .subscription-info .subscription-callout p {
   section#details .subscription-info .subscription-callout p {
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.32;
-    letter-spacing: normal;
+    letter-spacing: 0;
   }
 }
 section#details + section#faq {
@@ -2930,7 +2936,10 @@ section#testimonials {
   padding-block: 6rem;
 }
 section#testimonials header {
-  font-weight: lighter;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 2rem;
+  letter-spacing: 0;
   font-family: 'Metropolis', sans-serif;
   font-size: 2rem;
   font-weight: 400;
@@ -2944,7 +2953,7 @@ section#testimonials header {
   section#testimonials header {
     font-family: 'Metropolis', sans-serif;
     font-size: 3rem;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.2;
     letter-spacing: -0.5px;
   }
@@ -3019,7 +3028,7 @@ section#testimonials .testimonials-slider .testimonial .testimonial-text {
   font-size: 0.9375rem;
   font-weight: 400;
   line-height: 1.32;
-  letter-spacing: normal;
+  letter-spacing: 0;
   color: #4c4d58;
   margin: 0;
   min-height: 100px;
