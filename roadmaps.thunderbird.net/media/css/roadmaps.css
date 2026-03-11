@@ -1051,6 +1051,7 @@ body {
   --hamburger-foreground-inactive: var(--color-gray-30);
   --hamburger-background-active: var(--color-white);
   --hamburger-foreground-active: var(--color-black);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 .site-nav .nav-links .nav-ln {
   font-size: 1rem;
@@ -1153,6 +1154,7 @@ a {
   margin-top: 0;
   margin-bottom: 1rem;
   padding-left: 40px;
+  outline: 1px solid red;
 }
 .site-links .site-link-section .home {
   font-weight: 600;
@@ -1391,6 +1393,7 @@ main {
   font-weight: 400;
   line-height: 1;
   letter-spacing: 0;
+  font-weight: 300;
   line-height: 1.075rem;
   background-color: var(--colour-surface-base);
   border: 1px solid var(--colour-surface-border);
@@ -1433,6 +1436,8 @@ main {
   line-height: 1;
   letter-spacing: 0;
   display: block;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
 }
 @media (min-width: 56.25rem) {
   #main-content li strong {
@@ -1442,11 +1447,14 @@ main {
     line-height: 1;
     letter-spacing: 0;
     line-height: normal;
+    font-weight: 500;
+    margin-bottom: 0;
   }
 }
 #main-content li bolt-primary-button {
   justify-self: start;
   margin-top: 0.25rem;
+  align-self: end;
 }
 @media (min-width: 56.25rem) {
   #main-content .card-container {
@@ -1591,6 +1599,8 @@ main {
   letter-spacing: 0;
   margin: 0;
   margin-bottom: 1.35rem;
+  display: flex;
+  gap: 0.75rem;
 }
 @media (min-width: 80rem) {
   #main-content.product-or-service .product-roadmap h2 {
