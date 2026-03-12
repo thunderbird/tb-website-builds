@@ -1531,6 +1531,9 @@ main {
 #main-content.product-or-service i.ph.ph-rocket-launch {
   color: var(--dark-text-icon-highlight);
 }
+#main-content.product-or-service .product-roadmap {
+  --colour-ti-highlight: #58C9FF;
+}
 @media (min-width: 80rem) {
   #main-content.product-or-service .product-roadmap {
     display: grid;
