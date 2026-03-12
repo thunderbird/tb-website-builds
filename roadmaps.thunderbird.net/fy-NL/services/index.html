@@ -1211,6 +1211,13 @@ Webmail will be built with JMAP as a backend, and we need to explore how users c
 
         // Allow page to show hamburger menu.
         document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/, "js");
+
+        // Fix the donation button
+        const donationBtn = document.querySelector(`[data-donate-btn]`);
+        if (donationBtn) {
+          donationBtn.setAttribute('href', 'https://www.thunderbird.net/fy-NL/donate')
+        }
+
       })()
     </script>
     
