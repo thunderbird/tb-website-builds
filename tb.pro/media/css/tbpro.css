@@ -2361,9 +2361,7 @@ section#overview {
   padding-top: 2.25rem;
 }
 section#overview header {
-  font-size: 1rem;
   font-weight: 300;
-  line-height: 2rem;
   letter-spacing: 0;
   font-family: 'Metropolis', sans-serif;
   font-size: 2rem;
@@ -2465,9 +2463,7 @@ section#reasons {
   row-gap: 1.5rem;
 }
 section#reasons > header {
-  font-size: 1rem;
   font-weight: 300;
-  line-height: 2rem;
   letter-spacing: 0;
   font-family: 'Metropolis', sans-serif;
   font-size: 2rem;
@@ -2936,9 +2932,7 @@ section#testimonials {
   padding-block: 6rem;
 }
 section#testimonials header {
-  font-size: 1rem;
   font-weight: 300;
-  line-height: 2rem;
   letter-spacing: 0;
   font-family: 'Metropolis', sans-serif;
   font-size: 2rem;

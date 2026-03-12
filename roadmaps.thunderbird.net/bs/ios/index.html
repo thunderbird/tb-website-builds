@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="other x86 no-js page-not-set" lang="bs" dir="ltr">
+<html class="dark other x86 no-js page-not-set" lang="bs" dir="ltr">
   <head>
     <meta charset="utf-8">
 
@@ -76,9 +76,14 @@
 
 <script>
   const PREFIX = /^www[.-]/;
-  const stageHosts = ["www-stage.thunderbird.net", "stage.tb.pro", "roadmaps-stage.thunderbird.net", "stage.thunderbird.net", "localhost"];
+  const stageHosts = ["www-stage.thunderbird.net", "stage.tb.pro", "roadmaps-stage.thunderbird.net", "stage.thunderbird.net"];
+  let roadmapsHosts = ["roadmaps.thunderbird.net", "roadmaps-stage.thunderbird.net"];
+  let wwwHosts = ["www.thunderbird.net", "www-stage.thunderbird.net", "stage.thunderbird.net"];
   const currentHost = window.location.hostname.replace(PREFIX, '');
   const isStage = stageHosts.includes(currentHost);
+
+  roadmapsHosts = roadmapsHosts.map((host) => host.replace(PREFIX, ''));
+  wwwHosts = wwwHosts.map((host) => host.replace(PREFIX, ''));
 
   if (isStage) {
     // Replace with stage.* URLs
@@ -90,8 +95,11 @@
   // Set .active class accordingly.
   document.querySelectorAll('#tab-navigation-bar a').forEach(link => {
     const linkHost = new URL(link.href).hostname.replace(PREFIX, '');
+    const isRoadmaps = roadmapsHosts.includes(currentHost) && wwwHosts.includes(linkHost);
 
-    if (linkHost === currentHost) {
+    // Highlight link for matching site.
+    // Force-highlight www link for roadmaps site.
+    if ((linkHost === currentHost) || isRoadmaps) {
       link.classList.add('active');
       link.addEventListener('click', (e) => {
         e.preventDefault();
@@ -1116,6 +1124,7 @@
           <li><a href="https://www.thunderbird.net/bs/thunderbird/releases" class="dotted">Release Notes</a></li>
           <li><a href="https://wiki.mozilla.org/Thunderbird/Enterprise" class="dotted">For Enterprises</a></li>
           <li><a href="https://www.thunderbird.net/bs/calendar/holidays" class="dotted">Holiday Calendars</a></li>
+          <li><a href="https://roadmaps.thunderbird.net/" class="dotted">Roadmaps</a></li>
         </ul>
       </div>
       <div class="site-link-section">
@@ -1188,22 +1197,12 @@
         // Allow page to show hamburger menu.
         document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/, "js");
 
-        // From main tb website
-        const navbar = document.querySelector(".site-nav");
-        if (navbar) {
-          const navbarClass = 'scrolled-nav';
-          let navbarState = navbar.classList.contains(navbarClass);
-
-          window.addEventListener("scroll", () => {
-            if (!navbarState && window.scrollY > 30) {
-              navbar.classList.add(navbarClass);
-              navbarState = true;
-            } else if (navbarState && window.scrollY <= 30) {
-              navbar.classList.remove(navbarClass)
-              navbarState = false;
-            }
-          });
+        // Fix the donation button
+        const donationBtn = document.querySelector(`[data-donate-btn]`);
+        if (donationBtn) {
+          donationBtn.setAttribute('href', 'https://www.thunderbird.net/bs/donate')
         }
+
       })()
     </script>
     

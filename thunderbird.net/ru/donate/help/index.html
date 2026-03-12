@@ -581,9 +581,14 @@
 
 <script>
   const PREFIX = /^www[.-]/;
-  const stageHosts = ["www-stage.thunderbird.net", "stage.tb.pro", "roadmaps-stage.thunderbird.net", "stage.thunderbird.net", "localhost"];
+  const stageHosts = ["www-stage.thunderbird.net", "stage.tb.pro", "roadmaps-stage.thunderbird.net", "stage.thunderbird.net"];
+  let roadmapsHosts = ["roadmaps.thunderbird.net", "roadmaps-stage.thunderbird.net"];
+  let wwwHosts = ["www.thunderbird.net", "www-stage.thunderbird.net", "stage.thunderbird.net"];
   const currentHost = window.location.hostname.replace(PREFIX, '');
   const isStage = stageHosts.includes(currentHost);
+
+  roadmapsHosts = roadmapsHosts.map((host) => host.replace(PREFIX, ''));
+  wwwHosts = wwwHosts.map((host) => host.replace(PREFIX, ''));
 
   if (isStage) {
     // Replace with stage.* URLs
@@ -595,8 +600,11 @@
   // Set .active class accordingly.
   document.querySelectorAll('#tab-navigation-bar a').forEach(link => {
     const linkHost = new URL(link.href).hostname.replace(PREFIX, '');
+    const isRoadmaps = roadmapsHosts.includes(currentHost) && wwwHosts.includes(linkHost);
 
-    if (linkHost === currentHost) {
+    // Highlight link for matching site.
+    // Force-highlight www link for roadmaps site.
+    if ((linkHost === currentHost) || isRoadmaps) {
       link.classList.add('active');
       link.addEventListener('click', (e) => {
         e.preventDefault();
@@ -1625,14 +1633,15 @@
                 <p><b>Обратите внимание, что из-за ограниченной контактной информации, которую мы получаем, мы не можем выдавать квитанции или подтверждения пожертвований.</b></p>
                 <ul class="unstyled-list">
                   <li><b>Валюта счёта:</b> Euro (EUR)</li>
-                  <li><b>Имя получателя:</b> FCB-SVB MZLA Technologies Corporation</li>
+                  <li><b>Beneficiary Bank:</b> Silicon Valley Bank, a division of First-Citizens Bank</li>
+                  <li><b>Name of payee (Care of):</b> MZLA Technologies Corporation</li>
                   <li><b>IBAN:</b> DE05 5123 0500 0500 2158 09</li>
                   <li><b>Назначение:</b> Thunderbird</li>
                 </ul>
                 <ul class="unstyled-list">
-                  <li><b>Банк получателя:</b> Standard Chartered Bank</li>
+                  <li><b>Receiving Bank (Pay to):</b> Standard Chartered Bank</li>
                   <li><b>Адрес:</b> Frankfurt, Germany</li>
-                  <li><b>БИК:</b> SCBLDEFX</li>
+                  <li><b>SWIFT Code (BIC):</b> SCBLDEFX</li>
                 </ul>
                 <p>Если вашему банку требуется адрес нашего офиса:</p>
                 <ul class="unstyled-list address-list">
@@ -2036,6 +2045,7 @@
           <li><a href="/ru/thunderbird/releases" class="dotted">Примечания к выпуску</a></li>
           <li><a href="https://wiki.mozilla.org/Thunderbird/Enterprise" class="dotted">Для организаций</a></li>
           <li><a href="/ru/calendar/holidays" class="dotted">Календари праздников</a></li>
+          <li><a href="https://roadmaps.thunderbird.net/" class="dotted">Roadmaps</a></li>
         </ul>
       </div>
       <div class="site-link-section">
