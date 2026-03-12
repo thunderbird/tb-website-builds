@@ -1523,6 +1523,11 @@ main {
 #main-content.product-or-service i.ph {
   font-size: 1.5rem;
 }
+@media (min-width: 80rem) {
+  #main-content.product-or-service i.ph {
+    margin-left: 1rem;
+  }
+}
 #main-content.product-or-service i.ph.ph-pulse {
   color: var(--user-green);
 }
@@ -1614,6 +1619,9 @@ main {
     letter-spacing: -0.025rem;
     padding-left: 5.75rem;
     margin-bottom: 0;
+    gap: 1rem;
+    flex-direction: row;
+    align-items: center;
   }
 }
 #main-content.product-or-service .product-roadmap ul + h2 {
