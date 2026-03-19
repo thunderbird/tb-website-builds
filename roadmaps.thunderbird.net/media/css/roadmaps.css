@@ -1429,7 +1429,6 @@ main {
   line-height: 1;
   letter-spacing: 0;
   display: block;
-  font-weight: 500;
   margin-bottom: 0.25rem;
 }
 @media (min-width: 56.25rem) {
@@ -1440,7 +1439,6 @@ main {
     line-height: 1;
     letter-spacing: 0;
     line-height: normal;
-    font-weight: 500;
     margin-bottom: 0;
   }
 }
@@ -1512,16 +1510,11 @@ main {
     padding-inline: 2rem;
     padding-top: 2.25rem;
     padding-bottom: 2rem;
-    max-width: 80rem;
+    max-width: 76rem;
   }
 }
 #main-content.product-or-service i.ph {
   font-size: 1.5rem;
-}
-@media (min-width: 80rem) {
-  #main-content.product-or-service i.ph {
-    margin-left: 1rem;
-  }
 }
 #main-content.product-or-service i.ph.ph-pulse {
   color: var(--user-green);
@@ -1538,7 +1531,7 @@ main {
 @media (min-width: 80rem) {
   #main-content.product-or-service .product-roadmap {
     display: grid;
-    grid-template-columns: 20.5rem 1fr;
+    grid-template-columns: 18.25rem 1fr;
     column-gap: 1rem;
     row-gap: 2.25rem;
     align-items: start;
@@ -1549,7 +1542,7 @@ main {
 }
 @media (min-width: 80rem) {
   #main-content.product-or-service .product-roadmap .product-roadmap-header {
-    padding-inline: 2rem;
+    padding-inline: 0;
     margin-bottom: 2rem;
     grid-column: 1 / 4;
   }
@@ -1615,7 +1608,7 @@ main {
     font-size: 2.25rem;
     line-height: 120%;
     letter-spacing: -0.025rem;
-    padding-left: 5.75rem;
+    padding-left: 3.75rem;
     margin-bottom: 0;
     gap: 1rem;
     flex-direction: row;
@@ -1646,12 +1639,8 @@ main {
 }
 @media (min-width: 56.25rem) {
   #main-content.product-or-service .product-roadmap li {
-    padding-inline: 0.75rem;
-  }
-}
-@media (min-width: 56.25rem) {
-  #main-content.product-or-service .product-roadmap li:has(.text) {
-    padding-bottom: 1rem;
+    padding: 1rem;
+    padding-top: 0.75rem;
   }
 }
 @media (min-width: 56.25rem) {
