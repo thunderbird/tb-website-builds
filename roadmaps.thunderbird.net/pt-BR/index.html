@@ -974,9 +974,9 @@
 <p>Welcome to the Thunderbird roadmaps for our Desktop, Android, and iOS clients!</p>
 <ul class="card-container">
   <li class="card card-icon card-desktop">
-    <strong>
+    <h2>
         Thunderbird for Desktop
-    </strong>
+    </h2>
 
     Thunderbird for Windows, macOS, and Linux. Follow the roadmap from active work to future ideas. Timelines may shift as we learn and iterate.
 
@@ -987,9 +987,9 @@
     </bolt-primary-button>
   </li>
   <li class="card card-icon card-android">
-    <strong>
+    <h2>
         Android
-    </strong>
+    </h2>
 
 
     A transparent view of upcoming Android features and improvements. Track progress by milestone.
@@ -1001,9 +1001,9 @@
     </bolt-primary-button>
   </li>
   <li class="card card-icon card-ios">
-    <strong>
+    <h2>
         iOS
-    </strong>
+    </h2>
 
     Priorities for performance, accessibility, and a gesture-first mobile UX on iPhone and iPad.
 
@@ -1014,9 +1014,9 @@
     </bolt-primary-button>
   </li>
   <li class="card card-icon card-services">
-    <strong>
+    <h2>
         Services
-    </strong>
+    </h2>
 
     Follow the services roadmap to learn what's coming up next for Thunderbird Pro, Websites and Infrastructure projects.
 
@@ -1219,5 +1219,82 @@
     </script>
     
     
+<script>
+  customElements.whenDefined('bolt-primary-button').then(() => {
+    requestAnimationFrame(() => {
+      const buttons = Array.from(
+        document.querySelectorAll('.card-container > .card > bolt-primary-button')
+      );
+      if (!buttons.length) return;
+
+      function getFocusTarget(btn) {
+        const sr = btn.shadowRoot;
+        return (sr && sr.querySelector('a, button')) || btn;
+      }
+
+      function buildGrid() {
+        const rows = [];
+        let lastTop = -Infinity;
+        buttons.forEach((btn, i) => {
+          const top = btn.getBoundingClientRect().top;
+          if (i === 0 || Math.abs(top - lastTop) > 10) {
+            rows.push([]);
+            lastTop = top;
+          }
+          rows[rows.length - 1].push(i);
+        });
+        return rows;
+      }
+
+      function findInGrid(rows, idx) {
+        for (let r = 0; r < rows.length; r++) {
+          const c = rows[r].indexOf(idx);
+          if (c >= 0) return { row: r, col: c };
+        }
+        return null;
+      }
+
+      function navigate(grid, { row, col }, key) {
+        const wrap = (r) => (r + grid.length) % grid.length;
+        const clamp = (r, c) => grid[r][Math.min(c, grid[r].length - 1)];
+
+        switch (key) {
+          case 'ArrowRight':
+            if (col + 1 < grid[row].length) {
+              return grid[row][col + 1];
+            }
+            return grid[wrap(row + 1)][0];
+          case 'ArrowLeft':
+            if (col > 0) {
+              return grid[row][col - 1];
+            }
+            const r = wrap(row - 1);
+            return grid[r][grid[r].length - 1];
+          case 'ArrowDown':
+            return clamp(wrap(row + 1), col);
+          case 'ArrowUp':
+            return clamp(wrap(row - 1), col);
+          default:
+            return -1;
+        }
+      }
+
+      buttons.forEach((btn, i) => {
+        getFocusTarget(btn).addEventListener('keydown', (e) => {
+          const grid = buildGrid();
+          const pos = findInGrid(grid, i);
+          if (!pos) return;
+
+          const next = navigate(grid, pos, e.key);
+          if (next >= 0) {
+            e.preventDefault();
+            getFocusTarget(buttons[next]).focus();
+          }
+        });
+      });
+    });
+  });
+</script>
+
   </body>
 </html>
