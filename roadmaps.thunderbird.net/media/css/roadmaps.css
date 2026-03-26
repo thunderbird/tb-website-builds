@@ -1467,12 +1467,6 @@ main {
 #roadmaps-site-nav div {
   display: flex;
   gap: 1.25rem;
-  flex-direction: column;
-}
-@media (min-width: 56.25rem) {
-  #roadmaps-site-nav div {
-    flex-direction: row;
-  }
 }
 #roadmaps-site-nav div a {
   font-family: 'Inter', sans-serif;
@@ -1629,12 +1623,6 @@ main {
 #main-content li strong {
   font-weight: 600;
   font-size: 1rem;
-  line-height: 1;
-}
-@media (min-width: 56.25rem) {
-  #main-content li strong {
-    font-size: 1.25rem;
-  }
 }
 #main-content li bolt-primary-button {
   --colour-primary-hover: #58c9ff;
@@ -1846,7 +1834,11 @@ main {
   border-radius: 4rem;
   background-color: var(--color-surface-deep);
   width: fit-content;
-  padding: 0.5rem 0.75rem;
+  padding-inline: 0.75rem;
+  padding-block: 0.35rem;
+  padding-top: 0.5rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
   font-size: 0.6875rem;
   font-weight: 600;
   line-height: normal;
