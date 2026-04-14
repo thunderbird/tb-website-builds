@@ -1,0 +1,100 @@
+
+
+<!DOCTYPE html>
+<html lang="cs" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vaše práva</title>
+  <style>
+    body {
+      max-width: 48em;
+      margin: 2em auto;
+      padding: 0 1.5em;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.6;
+      color: #1a1a1a;
+      background: #fff;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { color: #e0e0e0; background: #1c1b22; }
+      a { color: #8cb4ff; }
+      a:visited { color: #b5a0ff; }
+    }
+    h1 { font-size: 1.5em; margin: 0 0 0.6em; }
+    h2 { font-size: 1.2em; margin: 1.4em 0 0.5em; }
+    h3 { font-size: 1em; margin: 1.2em 0 0.4em; }
+    ul, ol { padding-left: 2em; }
+    li { margin-bottom: 0.6em; }
+    a { color: #0060df; }
+    a:visited { color: #6e42a0; }
+  </style>
+</head>
+<body>
+  <h1>Vaše práva</h1>
+  <p>
+    Thunderbird je svobodný software s otevřeným zdrojovým kódem, který je vytvářen tisíci dobrovolníky z celého světa. Je zde ale několik věcí, které byste měli vědět:
+  </p>
+  <ul>
+    <li>
+      { -brand-short-name.gender -> [masculine] Thunderbird je dostupný [feminine] Thunderbird je dostupná [neuter] Thunderbird je dostupné *[other] Aplikace Thunderbird je dostupná } za podmínek stanovených licencí <a href="https://www.mozilla.org/MPL/">Mozilla Public License</a> (MPL). Ta vám umožňuje aplikaci Thunderbird používat, kopírovat a šířit. Pokud potřebujete, můžete také pozměnit zdrojový kód aplikace Thunderbird podle vašich potřeb. MPL vám dává také právo šířit vámi pozměněné verze.
+    </li>
+    <li>
+      Nejsou vám však podstoupena žádná práva ani licence k ochranným známkám Mozilla Foundation, či třetích stran, a to zejména k logu a názvu Thunderbird. Podrobnější informace o ochranných známkách jsou dostupné <a href="https://www.mozilla.org/about/legal/defend-mozilla-trademarks/">zde</a>.
+    </li>
+    <li>
+      { -vendor-short-name.case-status -> [with-cases] Některé funkce aplikace Thunderbird, jako např. hlášení pádů, vám umožní odeslat zpětnou vazbu { -vendor-short-name(case: "dat") }. Odesláním zpětné vazby poskytujete { -vendor-short-name(case: "dat") } povolení k jejímu použití pro vylepšování produktů, zveřejnění na stránkách a distribuci. *[no-cases] Některé funkce aplikace Thunderbird, jako např. hlášení pádů, vám umožní odeslat zpětnou vazbu organizaci Mozilla. Odesláním zpětné vazby poskytujete organizaci Mozilla povolení k jejímu použití pro vylepšování produktů, zveřejnění na stránkách a distribuci. }
+    </li>
+    <li>
+      { -vendor-short-name.case-status -> [with-cases] Způsoby užití osobních informací a zpětné vazby odeslané { -vendor-short-name(case: "dat") } pomocí aplikace Thunderbird jsou popsány v <a href="https://www.thunderbird.net/en-US/privacy">zásadách aplikace Thunderbird pro ochranu osobních údajů</a>. *[no-cases] Způsoby užití osobních informací a zpětné vazby odeslané organizaci Mozilla pomocí aplikace Thunderbird jsou popsány v <a href="https://www.thunderbird.net/en-US/privacy">zásadách aplikace Thunderbird pro ochranu osobních údajů</a>. }
+    </li>
+    <li>
+      Některé funkce aplikace Thunderbird využívají webové informační služby. U těchto služeb nelze garantovat jejich 100% správnost a bezchybnost. Více podrobností, včetně informací jak tyto služby zakázat, lze nalézt v <a href="#webservices">podmínkách služeb</a>.
+    </li>
+    <li>
+      Pro přehrání některých typů video obsahu Thunderbird stáhne odpovídající dešifrovací moduly třetích stran.
+    </li>
+  </ul>
+
+  <h2 id="webservices">{ -brand-full-name.case-status -> [with-cases] Webové informační služby { -brand-full-name(case: "gen") } *[no-cases] Webové informační služby aplikace Thunderbird }</h2>
+  <p>
+    Thunderbird používá webové informační služby („Služby") z důvodu zajištění některých funkcí dostupných v rámci této binární verze aplikace Thunderbird za podmínek popsaných níže. Pokud si nepřejete jednu nebo více Služeb používat nebo jsou pro vás níže uvedené podmínky neakceptovatelné, lze tyto služby vypnout. Postup, jak lze vypnout určitou funkcionalitu nebo Službu, lze najít <a href="#disabling-webservices">zde</a>. Další funkce a Služby lze zakázat v nastavení aplikace.
+  </p>
+
+  <h3 id="disabling-webservices">Prohlížení se znalostí polohy</h3>
+  <p>
+    <strong>Prohlížení se znalostí polohy:</strong> Služby se znalostí polohy si vždy musí vyžádat váš souhlas, bez kterého nejsou odeslány žádné informace o poloze. Pokud ale chcete tuto funkci zakázat, postupujte podle těchto kroků:
+  </p>
+  <ul>
+    <li>Do pole adresy zadejte <code>about:config</code></li>
+    <li>a potvrďte varování. Zadejte hledat „geo.enabled"</li>
+    <li>Z místní nabídky přepněte předvolbu na hodnotu false</li>
+    <li>Prohlížení se znalostí polohy je momentálně vypnuto</li>
+  </ul>
+
+  <ol>
+    <li>
+      { -vendor-short-name.gender -> [masculine] Mozilla, jeho [feminine] Mozilla, její [neuter] Mozilla, jeho *[other] Organizace Mozilla, její } přispěvatelé, držitelé licencí a partneři se snaží poskytovat co nejpřesnější a nejaktuálnější Služby. Přesto není možné garantovat, že poskytované informace jsou ucelené a bezchybné. Např. služba bezpečného prohlížení nemusí rozpoznat některé zákeřné stránky a může chybně označit některé bezpečné stránky. V rámci služeb se znalostí polohy jsou i všechny polohy vrácené našimi poskytovateli služeb pouze odhadem. Ani my ani náš poskytovatel služby negarantujeme přesnost poskytnuté polohy.
+    </li>
+    <li>
+      Mozilla může libovolně ukončit nebo změnit užívání Služeb.
+    </li>
+    <li>
+      Jste zváni k užití Služeb spojených s touto verzí aplikace Thunderbird a Mozilla vám zaručuje právo toto činit. Mozilla a držitelé licencí si vyhrazují všechna ostatní práva spojená se Službami. Cílem těchto podmínek není omezení žádných práv udělených v rámci licencí svobodného softwaru vztahujících se na aplikaci Thunderbird a na odpovídající zdrojový kód této verze aplikace Thunderbird.
+    </li>
+    <li>
+      <strong>Služby jsou poskytovány „tak jak jsou". { -vendor-short-name.gender -> [masculine] Mozilla, jeho [feminine] Mozilla, její [neuter] Mozilla, jeho *[other] Organizace Mozilla, její } přispěvatelé, držitelé licencí a distributoři se zříkají všech záruk, ať už vyjádřených nebo předpokládaných, včetně ale nikoliv výhradně, záruk zpeněžitelnosti Služeb a vhodnosti k vašemu určitému účelu. Jste plně zodpovědní za veškerá rizika spojená s volbou Služeb pro vaše účely, a to jak do kvality, tak do výkonnosti Služeb. Některé právní systémy nepovolují vyloučení nebo omezení předpokládaných záruk, v takovém případě toto zřeknutí pro vás neplatí.</strong>
+    </li>
+    <li>
+      <strong>{ -vendor-short-name.gender -> [masculine] Mozilla, jeho [feminine] Mozilla, její [neuter] Mozilla, jeho *[other] Organizace Mozilla, její } přispěvatelé, držitelé licencí a distributoři nejsou mimo výjimky dané zákonem zodpovědní za žádné nepřímé, mimořádné, nahodilé škody (a ani za sankční náhradu škody) vyplývající ze způsobu použití nebo ze způsobu souvisejícího s použitím aplikace Thunderbird a Služeb. Souhrnná odpovědnost za těchto podmínek nepřesáhne $500 (pět set dolarů). Některé právní systémy nepovolují vyloučení odpovědnosti za určité škody, v takovém případě tato vyloučení a omezení pro vás neplatí.</strong>
+    </li>
+    <li>
+      { -vendor-short-name.case-status -> [with-cases] Mozilla může dle nutnosti tyto podmínky libovolně aktualizovat. Tyto podmínky nelze měnit či zrušit bez písemného souhlasu { -vendor-short-name(case: "gen") }. *[no-cases] Mozilla může dle nutnosti tyto podmínky libovolně aktualizovat. Tyto podmínky nelze měnit či zrušit bez písemného souhlasu organizace Mozilla. }
+    </li>
+    <li>
+      Tyto podmínky se řídí zákony státu Kalifornie, U.S.A., vyjma neshod se zákonnými ustanoveními. Pokud se ukáže, že některá část těchto podmínek je neplatná či nevynutitelná, zůstávají zbylé podmínky v plné platnosti. V případě rozporu mezi touto přeloženou verzí podmínek a anglickou verzí podmínek je autoritativní anglická verze.
+    </li>
+  </ol>
+</body>
+</html>
