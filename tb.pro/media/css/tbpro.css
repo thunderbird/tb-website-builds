@@ -2812,7 +2812,7 @@ section#details .subscription-info .subscription-callout {
   border-radius: 0.75rem;
   margin-block: 16px;
   margin-inline: 2rem;
-  padding: 2rem;
+  padding: 1.5rem 16px;
   text-align: center;
   width: 100%;
 }
