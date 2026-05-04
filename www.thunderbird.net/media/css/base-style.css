@@ -4364,11 +4364,17 @@ footer#tb-footer #nav-link-home svg {
     grid-row: 2;
   }
 }
-#tb-legal {
+footer#tb-footer #tb-legal {
   font-size: 0.75rem;
 }
-#tb-legal a {
+footer#tb-footer #tb-legal a {
+  --accent: #1E4EAE;
   text-decoration: underline;
+  text-decoration-color: currentColor;
+}
+footer#tb-footer #tb-legal a:hover,
+footer#tb-footer #tb-legal a:focus {
+  text-decoration-color: var(--accent);
 }
 h1,
 h2,
