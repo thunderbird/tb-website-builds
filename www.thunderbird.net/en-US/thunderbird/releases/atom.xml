@@ -8,7 +8,7 @@
   <title>Thunderbird Release Notes</title>
   <subtitle type="text">Thunderbird Release Notes feed provides a simple way to keep up to date with Thunderbird releases.</subtitle>
 
-  <updated>2026-05-16T05:52:23+00:00</updated>
+  <updated>2026-05-18T12:45:58+00:00</updated>
   <logo>https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png</logo>
   <icon>https://www.thunderbird.net/media/img/thunderbird/favicon-196.png</icon>
 
@@ -337,6 +337,24 @@
 
         <li>
           <p>Search result count was missing when using 'Find in Message' or Ctrl+F</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Search results showed older irrelevant emails before newer exact matches</p>
           
         </li>
       
