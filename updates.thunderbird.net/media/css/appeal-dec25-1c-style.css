@@ -1415,10 +1415,6 @@ body {
     max-width: var(--appeal-content-width);
   }
 }
-@media (min-width: 48rem) {
-}
-@media (min-width: 80rem) {
-}
 .page-appeal-nov25 #appeal-body #appeal-heading span {
   display: block;
   font-size: 3.75rem;
