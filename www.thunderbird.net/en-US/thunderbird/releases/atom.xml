@@ -8,7 +8,7 @@
   <title>Thunderbird Release Notes</title>
   <subtitle type="text">Thunderbird Release Notes feed provides a simple way to keep up to date with Thunderbird releases.</subtitle>
 
-  <updated>2026-06-15T16:12:51+00:00</updated>
+  <updated>2026-06-15T18:16:53+00:00</updated>
   <logo>https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png</logo>
   <icon>https://www.thunderbird.net/media/img/thunderbird/favicon-196.png</icon>
 
@@ -43,7 +43,7 @@
         
 
         
-          <h3>Changed</h3>
+          <h3>Fixed</h3>
         
 
         
@@ -55,7 +55,7 @@
         
 
         <li>
-          <p>There are no Thunderbird changes requiring release notes in this release</p>
+          <p><a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird140.12">Security fixes</a></p>
           
         </li>
       
@@ -841,6 +841,24 @@
 
         <li>
           <p>Visual and UX improvements</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p><a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird152">Security fixes</a></p>
           
         </li>
       
