@@ -101,6 +101,9 @@
     // Force-highlight www link for roadmaps site.
     if ((linkHost === currentHost) || isRoadmaps) {
       link.classList.add('active');
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+      });
     } else {
       // Remove active class from other links
       link.classList.remove('active');
@@ -971,23 +974,23 @@
   
 <div class="product-roadmap-header">
 <h1>Foaie de parcurs Android</h1>
-<p>Thunderbird for Android. Follow the roadmap from active work to to future ideas. Timelines may shift as we learn and iterate.</p>
+<p>Thunderbird pentru Android. Urmărește foaia de parcurs de la munca activă la ideile viitoare. Cronologia se poate modifica pe măsură ce învățăm și iterăm.</p>
 <p style="font-size: 16px;">Ultima actualizare la 31 martie 2026</p>
 <p><a href="https://www.thunderbird.net/en-US/thunderbird/all/#select-download-mobile">Descarcă Thunderbird pentru Android</a></p>
 </div>
 <h2><i class="ph ph-pulse"></i>Activ</h2>
 <ul>
-<li><strong>Rearchitecture and Core Maintenance</strong>Modernize the source code that we inherited from K9, tackle the most glaring maintenance and stability issues, and restructure the core architecture for faster and easier development.</li>
-<li><strong>Message View Improvements</strong>Modernize the message view to address the most glaring issues like attachment handling, message loading, zoom, remove images, and so on. Making the experience comparable to the competition.</li>
+<li><strong>Refacere arhitectură și întreținere nucleu</strong>Modernizează codul-sursă pe care l-am moștenit de la K9, abordează cele mai dificile probleme de întreținere și stabilitate și restructurează arhitectura nucleului pentru dezvoltare mai rapidă și mai ușoară.</li>
+<li><strong>Îmbunătățiri ale vizualizării mesajelor</strong>Modernizează vizualizarea mesajelor pentru abordarea celor mai dificile probleme precum gestionarea atașamentelor, încărcarea mesajelor, zoom, eliminarea imaginilor ș.a.m.d. Experiența devine comparabilă cu cea a concurenței.</li>
 </ul>
 <h2><i class="ph ph-calendar-blank"></i>Planificat</h2>
 <ul>
-<li><strong>Message List Improvements</strong>Users spend most of their time on the message list, waiting for messages to load, scrolling to find messages, and quickly interacting with them through swipe actions. This effort is aimed at improving this primary view and addressing all major concerns.</li>
-<li><strong>Explorarea suportului JMAP</strong>Exploring JMAP integration, learning what it means to add a new protocol on Android, and ensuring future proofing against proprietary protocols.</li>
+<li><strong>Îmbunătățiri ale listei de mesaje</strong>Utilizatorii își petrec majoritatea timpului în lista de mesaje, așteptând încărcarea mesajelor, derulând ca să găsească mesaje și interacționând rapid cu ele prin acțiuni de glisare. Efortul are menirea de a îmbunătăți această vizualizare primară și să rezolve toate preocupările majore.</li>
+<li><strong>Explorarea suportului JMAP</strong>Explorarea integrării JMAP, înțelegerea a ce înseamnă adăugarea unui protocol nou în Android și asigurarea compatibilității viitoare cu protocoalele proprietare.</li>
 </ul>
-<h2><i class="ph ph-rocket-launch"></i>Shipped</h2>
+<h2><i class="ph ph-rocket-launch"></i>Expediat</h2>
 <ul>
-<li><strong>CASA Approval</strong>Complete the Cloud Application Security Assessment (CASA)<div class="date-badge">Martie 2025</div></li>
+<li><strong>Aprobare CASA</strong>Finalizează evaluarea securității aplicațiilor în cloud (CASA)<div class="date-badge">Martie 2025</div></li>
 </ul>
   
 
@@ -1160,12 +1163,12 @@
     
   </div>
   <div id="tb-legal">
-    <p>Thunderbird is part of
+    <p>Thunderbird face parte din
       <a href="https://blog.thunderbird.net/2020/01/thunderbirds-new-home/" class="inline-link">MZLA Technologies Corporation</a>,
-      a wholly owned subsidiary of the not-for-profit Mozilla.org.
-      Portions of this content are ©1998– by individual
-      contributors. Content available under
-      a <a href="https://www.mozilla.org/foundation/licensing/website-content/" class="inline-link">Creative Commons license</a>.</p>
+      o filială deținută în totalitate de organizația non-profit Mozilla.org.
+      Porțiuni din acest conținut sunt ©1998– de către contribuitori
+       individuali. Conținut disponibil sub
+      o <a href="https://www.mozilla.org/foundation/licensing/website-content/" class="inline-link">licență Creative Commons</a>.</p>
     <p>
       <a href="https://github.com/thunderbird/thunderbird-website">Contribuie la această pagină</a>
     </p>

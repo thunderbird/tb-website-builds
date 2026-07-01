@@ -101,6 +101,9 @@
     // Force-highlight www link for roadmaps site.
     if ((linkHost === currentHost) || isRoadmaps) {
       link.classList.add('active');
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+      });
     } else {
       // Remove active class from other links
       link.classList.remove('active');
@@ -975,14 +978,14 @@
         Thunderbird pentru desktop
     </h2>
 
-    Thunderbird for Windows, macOS, and Linux. Follow the roadmap from active work to future ideas. Timelines may shift as we learn and iterate.
+    Thunderbird pentru Windows, macOS și Linux. Urmărește foaia de parcurs de la munca activă la ideile viitoare. Cronologia se poate modifica pe măsură ce învățăm și iterăm.
 
     <bolt-primary-button
       variant="outline"
       href="/ro/desktop"
-      aria-label="View desktop roadmap"
+      aria-label="Vezi foaia de parcurs pentru desktop"
     >
-      View roadmap
+      Vezi foaia de parcurs
     </bolt-primary-button>
   </li>
   <li class="card card-icon card-android">
@@ -991,14 +994,14 @@
     </h2>
 
 
-    A transparent view of upcoming Android features and improvements. Track progress by milestone.
+    O vizualizare transparentă a viitoarelor funcții și îmbunătățiri Android. Urmărește progresul pe etape.
 
     <bolt-primary-button
       variant="outline"
       href="/ro/android"
-      aria-label="View Android roadmap"
+      aria-label="Vezi foaia de parcurs pentru Android"
     >
-      View roadmap
+      Vezi foaia de parcurs
     </bolt-primary-button>
   </li>
   <li class="card card-icon card-ios">
@@ -1011,9 +1014,9 @@
     <bolt-primary-button
       variant="outline"
       href="/ro/ios"
-      aria-label="View iOS roadmap"
+      aria-label="Vezi foaia de parcurs pentru iOS"
     >
-      View roadmap
+      Vezi foaia de parcurs
     </bolt-primary-button>
   </li>
   <li class="card card-icon card-services">
@@ -1021,14 +1024,14 @@
         Servicii
     </h2>
 
-    Follow the services roadmap to learn what's coming up next for Thunderbird Pro, Websites and Infrastructure projects.
+    Urmărește foaia de parcurs a serviciilor pentru a afla ce urmează în proiectele Thunderbird Pro, site-uri web și de infrastructură.
 
     <bolt-primary-button
       variant="outline"
       href="/ro/services"
-      aria-label="View services roadmap"
+      aria-label="Vezi foaia de parcurs a serviciilor"
     >
-      View roadmap
+      Vezi foaia de parcurs
     </bolt-primary-button>
   </li>
 </ul>
@@ -1181,12 +1184,12 @@
     
   </div>
   <div id="tb-legal">
-    <p>Thunderbird is part of
+    <p>Thunderbird face parte din
       <a href="https://blog.thunderbird.net/2020/01/thunderbirds-new-home/" class="inline-link">MZLA Technologies Corporation</a>,
-      a wholly owned subsidiary of the not-for-profit Mozilla.org.
-      Portions of this content are ©1998– by individual
-      contributors. Content available under
-      a <a href="https://www.mozilla.org/foundation/licensing/website-content/" class="inline-link">Creative Commons license</a>.</p>
+      o filială deținută în totalitate de organizația non-profit Mozilla.org.
+      Porțiuni din acest conținut sunt ©1998– de către contribuitori
+       individuali. Conținut disponibil sub
+      o <a href="https://www.mozilla.org/foundation/licensing/website-content/" class="inline-link">licență Creative Commons</a>.</p>
     <p>
       <a href="https://github.com/thunderbird/thunderbird-website">Contribuie la această pagină</a>
     </p>

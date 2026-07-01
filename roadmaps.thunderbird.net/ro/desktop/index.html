@@ -101,6 +101,9 @@
     // Force-highlight www link for roadmaps site.
     if ((linkHost === currentHost) || isRoadmaps) {
       link.classList.add('active');
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+      });
     } else {
       // Remove active class from other links
       link.classList.remove('active');
@@ -970,31 +973,31 @@
 <div class="product-roadmap">
   
 <div class="product-roadmap-header">
-<h1>Desktop Roadmap</h1>
-<p>Thunderbird for Windows, macOS, and Linux. Follow the roadmap from active work to future ideas. Timelines may shift as we learn and iterate.</p>
+<h1>Foaie de parcurs pentru desktop</h1>
+<p>Thunderbird pentru Windows, macOS și Linux. Urmărește foaia de parcurs de la munca activă la ideile viitoare. Cronologia se poate modifica pe măsură ce învățăm și iterăm.</p>
 <p style="font-size: 16px;">Ultima actualizare la 31 martie 2026</p>
 <p><a href="https://www.thunderbird.net/en-US/thunderbird/all/#select-download-desktop">Descarcă Thunderbird pentru desktop</a></p>
 </div>
 <h2><i class="ph ph-pulse"></i>Activ</h2>
 <ul>
-<li><strong>Exchange (EWS, GraphAPI)</strong>Finalize the work on the Exchange protocol in order to support all versions of Exchange and Microsoft 365, including calendar and address book support.</li>
-<li><strong>Global Database</strong>Continue the work on the new Panorama database, allowing users to start testing the new database, and handle a consistent data migration.</li>
-<li><strong>Improve and extend existing add-ons APIs</strong>Improve the currently available APIs, focus on giving access to new sections and core features, as well as introducing new APIs for specific sections.</li>
+<li><strong>Exchange (EWS, GraphAPI)</strong>Finalizează lucrările la protocolul Exchange pentru suport pentru toate versiunile Exchange și Microsoft 365, inclusiv suport pentru calendar și agenda de contacte.</li>
+<li><strong>Bază de date globală</strong>Continuă lucrările la noua bază de date Panorama, permițând utilizatorilor să înceapă să testeze noua bază de date și să gestioneze o migrare coerentă a datelor.</li>
+<li><strong>Îmbunătățește și extinde API-urile suplimentelor existente</strong>Îmbunătățește API-urile disponibile în prezent, cu focalizare pe acces la noi secțiuni și funcționalități ale nucleului, precum și introducerea de API-uri noi pentru secțiuni specifice.</li>
 </ul>
 <h2><i class="ph ph-calendar-blank"></i>Planificat</h2>
 <ul>
-<li><strong>Calendar Dialogs UI/UX</strong>Complete the refresh of the calendar interface and user experience. Some protocols handling changes might be needed.</li>
-<li><strong>Settings Interface Improvements</strong>Clean up and reorganize the settings into more discoverable sections and improve its search.</li>
+<li><strong>Interfață de dialog UI/UX pentru calendar</strong>Finalizează actualizarea interfeței calendarului și experienței utilizatorului. Este posibil să necesite unele protocoale de gestionare a modificărilor.</li>
+<li><strong>Îmbunătățiri la nivelul interfeței de setări</strong>Clean up and reorganize the settings into more discoverable sections and improve its search.</li>
 <li><strong>Encryption and Security Improvements</strong>Improve the support and discovery of OpenPGP and S/MIME, improve email tracking protection, and harden phishing email prevention.</li>
 </ul>
-<h2><i class="ph ph-rocket-launch"></i>Shipped</h2>
+<h2><i class="ph ph-rocket-launch"></i>Expediat</h2>
 <ul>
 <li><strong>First Time User Experience: Account Hub</strong>Complete Account Hub for all account creations, enable it for first time users.<div class="date-badge">Martie 2026</div></li>
 <li><strong>Unobtrusive Signatures</strong>This was part of the larger “Encryption and Security Improvements” initiative and has been completed to reduce confusion around OpenPGP signatures.<div class="date-badge">Martie 2026</div></li>
-<li><strong>Exchange Email Support</strong>Full support of email operations and account creation.<div class="date-badge">November 2025</div></li>
+<li><strong>Suport pentru e-mailuri Exchange</strong>Suport complet pentru operații de e-mail și crearea de conturi.<div class="date-badge">Noiembrie 2025</div></li>
 <li><strong>Notificări native sistem de operare</strong>Add quick actions to reply, delete, mark messages as read/unread, and manage the notifications.<div class="date-badge">Iulie 2025</div></li>
 <li><strong>Implement Glean Telemetry</strong>Move away from the old telemetry implementation and add the new Glean Telemetry.<div class="date-badge">Aprilie 2025</div></li>
-<li><strong>In-App Notifications</strong>Implement a new notification system that allows the Thunderbird team to push important, time-sensitive information directly to a user's Thunderbird desktop client.<div class="date-badge">Mai 2025</div></li>
+<li><strong>Notificări în aplicație</strong>Implement a new notification system that allows the Thunderbird team to push important, time-sensitive information directly to a user's Thunderbird desktop client.<div class="date-badge">Mai 2025</div></li>
 </ul>
   
 
@@ -1167,12 +1170,12 @@
     
   </div>
   <div id="tb-legal">
-    <p>Thunderbird is part of
+    <p>Thunderbird face parte din
       <a href="https://blog.thunderbird.net/2020/01/thunderbirds-new-home/" class="inline-link">MZLA Technologies Corporation</a>,
-      a wholly owned subsidiary of the not-for-profit Mozilla.org.
-      Portions of this content are ©1998– by individual
-      contributors. Content available under
-      a <a href="https://www.mozilla.org/foundation/licensing/website-content/" class="inline-link">Creative Commons license</a>.</p>
+      o filială deținută în totalitate de organizația non-profit Mozilla.org.
+      Porțiuni din acest conținut sunt ©1998– de către contribuitori
+       individuali. Conținut disponibil sub
+      o <a href="https://www.mozilla.org/foundation/licensing/website-content/" class="inline-link">licență Creative Commons</a>.</p>
     <p>
       <a href="https://github.com/thunderbird/thunderbird-website">Contribuie la această pagină</a>
     </p>
