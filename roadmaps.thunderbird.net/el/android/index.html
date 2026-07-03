@@ -101,6 +101,9 @@
     // Force-highlight www link for roadmaps site.
     if ((linkHost === currentHost) || isRoadmaps) {
       link.classList.add('active');
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+      });
     } else {
       // Remove active class from other links
       link.classList.remove('active');
@@ -982,12 +985,12 @@
 </ul>
 <h2><i class="ph ph-calendar-blank"></i>Μελλοντικά</h2>
 <ul>
-<li><strong>Βελτιώσεις λίστας μηνυμάτων</strong>Users spend most of their time on the message list, waiting for messages to load, scrolling to find messages, and quickly interacting with them through swipe actions. This effort is aimed at improving this primary view and addressing all major concerns.</li>
-<li><strong>Εξερεύνηση υποστήριξης JMAP</strong>Exploring JMAP integration, learning what it means to add a new protocol on Android, and ensuring future proofing against proprietary protocols.</li>
+<li><strong>Βελτιώσεις λίστας μηνυμάτων</strong>Οι χρήστες περνούν τον περισσότερο χρόνο τους στη λίστα μηνυμάτων, περιμένοντας να φορτωθούν τα μηνύματα, κάνοντας κύλιση για εύρεση μηνυμάτων και αλληλεπιδρώντας γρήγορα μαζί τους μέσω των ενεργειών ολίσθησης. Αυτή η προσπάθεια έχει ως στόχο τη βελτίωση αυτής της βασικής προβολής και την αντιμετώπιση όλων των σημαντικών προβλημάτων.</li>
+<li><strong>Εξερεύνηση υποστήριξης JMAP</strong>Διερεύνηση της ενσωμάτωσης του JMAP, κατανόηση της σημασίας της προσθήκης ενός νέου πρωτοκόλλου στο Android και διασφάλιση της μελλοντικής βιωσιμότητας έναντι ιδιόκτητων πρωτοκόλλων.</li>
 </ul>
 <h2><i class="ph ph-rocket-launch"></i>Παραδομένα</h2>
 <ul>
-<li><strong>Έγκριση CASA</strong>Complete the Cloud Application Security Assessment (CASA)<div class="date-badge">Μάρτιος 2025</div></li>
+<li><strong>Έγκριση CASA</strong>Ολοκλήρωση της αξιολόγησης ασφάλειας εφαρμογών cloud (CASA)<div class="date-badge">Μάρτιος 2025</div></li>
 </ul>
   
 
