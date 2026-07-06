@@ -101,6 +101,9 @@
     // Force-highlight www link for roadmaps site.
     if ((linkHost === currentHost) || isRoadmaps) {
       link.classList.add('active');
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+      });
     } else {
       // Remove active class from other links
       link.classList.remove('active');
@@ -971,7 +974,7 @@
   
 <div class="product-roadmap-header">
 <h1>Android-vegkart</h1>
-<p>Thunderbird for Android. Follow the roadmap from active work to to future ideas. Timelines may shift as we learn and iterate.</p>
+<p>Thunderbird for Android. Følg vegkartet frå det pågåande arbeidet til framtidige idear. Tidslinjene kan endre seg etter kvart som vi lærer og forbetrar ting.</p>
 <p style="font-size: 16px;">Sist oppdatert 31. mars, 2026</p>
 <p><a href="https://www.thunderbird.net/en-US/thunderbird/all/#select-download-mobile">Last ned Thunderbird for Android</a></p>
 </div>

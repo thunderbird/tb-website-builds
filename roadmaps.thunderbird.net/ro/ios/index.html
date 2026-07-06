@@ -101,6 +101,9 @@
     // Force-highlight www link for roadmaps site.
     if ((linkHost === currentHost) || isRoadmaps) {
       link.classList.add('active');
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+      });
     } else {
       // Remove active class from other links
       link.classList.remove('active');
@@ -977,18 +980,18 @@
 </div>
 <h2><i class="ph ph-pulse"></i>Activ</h2>
 <ul>
-<li><strong>Creare de protocoale, baze de date și cadru pentru iOS</strong>Implement the IMAP protocol first as it's the most widespread protocol currently in use.</li>
-<li><strong>Full Email Writing and Reading Experience</strong>Implement the full reading and writing email experience on mobile, including initial support for encrypted messages (OpenPGP and S/MIME with existing libraries).</li>
+<li><strong>Creare de protocoale, baze de date și cadru pentru iOS</strong>Implementează mai întâi protocolul IMAP ca cel mai larg utilizat protocol utilizat în prezent.</li>
+<li><strong>Experiență completă de scriere și citire a mesajelor pe e-mail</strong>Implementează experiența completă de scriere și citire a mesajelor de e-mail pe dispozitive mobile, inclusiv suportul inițial pentru mesaje criptate (OpenPGP și S/MIME cu bibliotecile existente).</li>
 </ul>
 <h2><i class="ph ph-calendar-blank"></i>Planificat</h2>
 <ul>
-<li><strong>Suport JMAP</strong>Support the JMAP protocol as one of the first extra protocols we ship with by default outside of IMAP.</li>
+<li><strong>Suport JMAP</strong>Susține protocolul JMAP ca unul dintre primele protocoale extra pe care le furnizăm implicit în afara IMAP.</li>
 </ul>
 <h2><i class="ph ph-rocket-launch"></i>Expediat</h2>
 <ul>
-<li><strong>Account Creation Flow</strong>Implement a full automated and manual setup, including autodiscovery and OAuth.<div class="date-badge">Martie 2026</div></li>
-<li><strong>Arhitectură</strong>Establish a robust and scalable architecture to begin the Thunderbird for iOS project and create the backend. This architecture will include strategies for code sharing across platforms, taking into account the Android and Desktop clients.<div class="date-badge">Iulie 2025</div></li>
-<li><strong>Autoconfigurare</strong>Add DNS MX lookup to autoconfig feature library and move SRV record lookup into autoconfig feature library and delete Autodiscover core library<div class="date-badge">Septembrie 2025</div></li>
+<li><strong>Flux de creare a contului</strong>Implementează o configurare complet automată și manuală, inclusiv descoperire automată și OAuth.<div class="date-badge">Martie 2026</div></li>
+<li><strong>Arhitectură</strong>Stabilește o arhitectură robustă și scalabilă pentru demararea proiectului Thunderbird pentru iOS și creează backendul. Această arhitectură va include strategii de partajare de coduri pe mai multe platforme, luând în calcul clienții Android și Desktop.<div class="date-badge">Iulie 2025</div></li>
+<li><strong>Autoconfigurare</strong>Adaugă căutarea DNS MX la biblioteca de funcționalități de autoconfigurare și mută căutarea de înregistrări SRV în biblioteca de funcționalități de autoconfigurare și șterge biblioteca principală Autodiscover<div class="date-badge">Septembrie 2025</div></li>
 </ul>
   
 

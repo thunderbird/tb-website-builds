@@ -101,6 +101,9 @@
     // Force-highlight www link for roadmaps site.
     if ((linkHost === currentHost) || isRoadmaps) {
       link.classList.add('active');
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+      });
     } else {
       // Remove active class from other links
       link.classList.remove('active');
@@ -1006,7 +1009,7 @@
         iOS
     </h2>
 
-    Priorities for performance, accessibility, and a gesture-first mobile UX on iPhone and iPad.
+    Priorități pentru performanță, accesibilitate și o experiență prin gesturi pe iPhone și iPad.
 
     <bolt-primary-button
       variant="outline"

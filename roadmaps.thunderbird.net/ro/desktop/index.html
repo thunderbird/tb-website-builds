@@ -101,6 +101,9 @@
     // Force-highlight www link for roadmaps site.
     if ((linkHost === currentHost) || isRoadmaps) {
       link.classList.add('active');
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+      });
     } else {
       // Remove active class from other links
       link.classList.remove('active');
@@ -984,17 +987,17 @@
 <h2><i class="ph ph-calendar-blank"></i>Planificat</h2>
 <ul>
 <li><strong>Interfață de dialog UI/UX pentru calendar</strong>Finalizează actualizarea interfeței calendarului și experienței utilizatorului. Este posibil să necesite unele protocoale de gestionare a modificărilor.</li>
-<li><strong>Îmbunătățiri la nivelul interfeței de setări</strong>Clean up and reorganize the settings into more discoverable sections and improve its search.</li>
-<li><strong>Encryption and Security Improvements</strong>Improve the support and discovery of OpenPGP and S/MIME, improve email tracking protection, and harden phishing email prevention.</li>
+<li><strong>Îmbunătățiri la nivelul interfeței de setări</strong>Curăță și reorganizează setările în secțiuni mia ușor de găsit și îmbunătățește căutările.</li>
+<li><strong>Îmbunătățiri de criptare și securitate</strong>Îmbunătățește suportul și descoperirea OpenPGP și S/MIME, îmbunătățește protecția împotriva urmăririi pe e-mail și consolidează prevenția atacurilor phishing pe e-mail.</li>
 </ul>
 <h2><i class="ph ph-rocket-launch"></i>Expediat</h2>
 <ul>
-<li><strong>First Time User Experience: Account Hub</strong>Complete Account Hub for all account creations, enable it for first time users.<div class="date-badge">Martie 2026</div></li>
-<li><strong>Unobtrusive Signatures</strong>This was part of the larger “Encryption and Security Improvements” initiative and has been completed to reduce confusion around OpenPGP signatures.<div class="date-badge">Martie 2026</div></li>
+<li><strong>Prima experiență de utilizare: Centrul de cont</strong>Centru complet al contului pentru crearea tuturor conturilor, activează-l pentru utilizatorii noi.<div class="date-badge">Martie 2026</div></li>
+<li><strong>Semnături neinvazive</strong>A făcut parte din inițiativa mai largă privind „Îmbunătățirea criptării și a securității” și a fost finalizată pentru reducerea confuziei în ceea ce privește semnăturile OpenPGP.<div class="date-badge">Martie 2026</div></li>
 <li><strong>Suport pentru e-mailuri Exchange</strong>Suport complet pentru operații de e-mail și crearea de conturi.<div class="date-badge">Noiembrie 2025</div></li>
-<li><strong>Notificări native sistem de operare</strong>Add quick actions to reply, delete, mark messages as read/unread, and manage the notifications.<div class="date-badge">Iulie 2025</div></li>
-<li><strong>Implement Glean Telemetry</strong>Move away from the old telemetry implementation and add the new Glean Telemetry.<div class="date-badge">Aprilie 2025</div></li>
-<li><strong>Notificări în aplicație</strong>Implement a new notification system that allows the Thunderbird team to push important, time-sensitive information directly to a user's Thunderbird desktop client.<div class="date-badge">Mai 2025</div></li>
+<li><strong>Notificări native sistem de operare</strong>Adaugă acțiuni rapide pentru a răspunde, șterge și marca mesajele ca citite/necitite și gestionarea notificărilor.<div class="date-badge">Iulie 2025</div></li>
+<li><strong>Implementează telemetria Glean</strong>Renunță la implementarea veche a telemetriei și adaugă noua telemetrie Glean.<div class="date-badge">Aprilie 2025</div></li>
+<li><strong>Notificări în aplicație</strong>Implementează un sistem nou de notificări care permite echipei Thunderbird să transmită informații importante și urgente direct unui client de desktop Thunderbird al utilizatorului.<div class="date-badge">Mai 2025</div></li>
 </ul>
   
 

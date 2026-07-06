@@ -101,6 +101,9 @@
     // Force-highlight www link for roadmaps site.
     if ((linkHost === currentHost) || isRoadmaps) {
       link.classList.add('active');
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+      });
     } else {
       // Remove active class from other links
       link.classList.remove('active');
@@ -971,21 +974,21 @@
   
 <div class="product-roadmap-header">
 <h1>Foaie de parcurs pentru servicii</h1>
-<p>Thunderbird Pro Services and Infrastructure Support. Follow the roadmap from active work to future ideas. Timelines may change as we learn and iterate.</p>
+<p>Suport pentru serviciile și infrastructura Thunderbird Pro. Urmează foaia de parcurs de la lucrările curente la ideile viitoare. Cronologia se poate modifica pe măsură ce învățăm și iterăm.</p>
 <p style="font-size: 16px;">Ultima actualizare la 19 martie 2026</p>
 <p><a href="https://ideas.tb.pro">Trimite-ți ideile pentru Thunderbird Pro</a></p>
 </div>
 <h2><i class="ph ph-pulse"></i>Activ</h2>
 <ul>
-<li><strong>Send UI Completion</strong>Send was the one product we haven't been able to complete UI overhaul work. We don't need to block the rollout for this, but we should work on this to keep it up to par with the other products and create consistency.</li>
-<li><strong>Integrate Thunderbird Appointment into Pro add-on</strong>As a Pro user, you want to be able to quickly copy your scheduling link when in Thunderbird. Integrate so it can be inserted into emails, or easily copied from the main toolbar.</li>
+<li><strong>Finalizare interfață de utilizator Send</strong>Send a fost singurul produs pentru care nu am putut finaliza lucrările de revizuire a interfeței pentru utilizator. Nu trebuie să blocăm lansarea din această cauză, dar trebui să lucrăm pentru a-l menține la același nivel cu celelalte produse și să asigurăm coerența.</li>
+<li><strong>Integrează Thunderbird Appointment în suplimentul Pro</strong>Ca utilizator Pro, vrei să poți să îți copiezi rapid linkul de programare când ești în Thunderbird. Integrează ca să fie inserat în mesaje pe e-mail sau să poată fi copiat ușor din bara de instrumente principală.</li>
 </ul>
 <h2><i class="ph ph-calendar-blank"></i>Planificat</h2>
 <ul>
-<li><strong>Sesiuni active</strong>Give the user a view on their active sessions and allow them to end the session.</li>
+<li><strong>Sesiuni active</strong>Dă utilizatorului o imagine a sesiunilor active și îi permite să încheie o sesiune.</li>
 <li><strong>Suport MFA</strong>Autentificare multifactor prin TOTP sau similar. Nu am ajuns la asta în 2025 și este o caracteristică esențială de securitate.</li>
-<li><strong>Inițiativă selectată de comunitate</strong>No doubt the community will have a bunch of great ideas on https://ideas.tb.pro that we can build on. We're making sure we have time to work on one of the top community suggestions that will fit well into the Thunderbird Pro ecosystem.</li>
-<li><strong>Improve Pro Add-on Integration</strong>We are shipping an Thunderbird Pro add-on to enable Pro features in Thunderbird desktop. For a low barrier of entry we want to improve integration by using the system add-on or new account add-on mechanism. This allows us to make these features easier to discover and use within Thunderbird.</li>
+<li><strong>Inițiativă selectată de comunitate</strong>Fără îndoială că comunitatea va avea o mulțime de idei grozave pe https://ideas.tb.pro pe care putem construi mai departe. Ne asigurăm că avem timpul necesar să lucrăm pe una dintre sugestiile de top din comunitate, care să se potrivească bine în ecosistemul Thunderbird Pro.</li>
+<li><strong>Îmbunătățește integrarea suplimentului Pro</strong>Propunem un supliment Thunderbird Pro care să activeze funcționalități Pro în desktopul Thunderbird. Pentru o barieră joasă de intrare, vrem să îmbunătățim integrarea folosind mecanismul de supliment de sistem sau supliment de cont nou. Ne permite să facem funcționalitățile mai ușor de descoperit și de folosit în Thunderbird.</li>
 <li><strong>Thundermail: Webmail</strong>What would an email service be without webmail? We will spend time making the proof of concept more usable, and enable this as an experimental feature for users willing to try new things earyly. The scope will initially be limited to basic folder visibility and message display.
 Webmail will be built with JMAP as a backend, and we need to explore how users can benefit from Webmail while still being encouraged to use end to end encryption and allowing search across folders.</li>
 </ul>
