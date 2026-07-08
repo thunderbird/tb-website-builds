@@ -101,6 +101,9 @@
     // Force-highlight www link for roadmaps site.
     if ((linkHost === currentHost) || isRoadmaps) {
       link.classList.add('active');
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+      });
     } else {
       // Remove active class from other links
       link.classList.remove('active');
@@ -978,11 +981,11 @@
 <h2><i class="ph ph-pulse"></i>開發中</h2>
 <ul>
 <li><strong>架構調整與核心維護</strong>將我們從 K9 繼承的原始碼現代化、解決最明顯的維護與穩定性問題。並重構核心架構，讓開發更快、更簡單。</li>
-<li><strong>郵件畫面改進</strong>Modernize the message view to address the most glaring issues like attachment handling, message loading, zoom, remove images, and so on. Making the experience comparable to the competition.</li>
+<li><strong>郵件畫面改進</strong>將訊息畫面現代化，以解決附件處理、訊息載入、縮放、刪除圖片等最明顯的問題。讓使用體驗可與競爭者匹敵。</li>
 </ul>
 <h2><i class="ph ph-calendar-blank"></i>已規劃</h2>
 <ul>
-<li><strong>郵件清單改進</strong>Users spend most of their time on the message list, waiting for messages to load, scrolling to find messages, and quickly interacting with them through swipe actions. This effort is aimed at improving this primary view and addressing all major concerns.</li>
+<li><strong>郵件清單改進</strong>使用者大部分的時間都花在訊息清單中，等待訊息載入、捲動尋找訊息，並透過滑動動作來快速操作。這份工作的目標是希望改善此主要畫面，並解決所有主要問題。</li>
 <li><strong>探索 JMAP 支援</strong>探索 JMAP 整合功能、了解在 Android 上新增通訊協定的意義，並確保未來能因應專有通訊協定的任何變化。</li>
 </ul>
 <h2><i class="ph ph-rocket-launch"></i>已推出</h2>
