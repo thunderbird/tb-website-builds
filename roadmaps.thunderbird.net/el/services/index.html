@@ -101,6 +101,9 @@
     // Force-highlight www link for roadmaps site.
     if ((linkHost === currentHost) || isRoadmaps) {
       link.classList.add('active');
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+      });
     } else {
       // Remove active class from other links
       link.classList.remove('active');
@@ -985,13 +988,13 @@
 <li><strong>Ενεργές συνεδρίες</strong>Παροχή στον χρήστη μιας προβολής των ενεργών συνεδριών του και της δυνατότητας τερματισμού τους.</li>
 <li><strong>Υποστήριξη MFA</strong>Έλεγχος ταυτότητας πολλαπλών παραγόντων μέσω TOTP ή παρόμοιας μεθόδου. Δεν προλάβαμε να το υλοποιήσουμε το 2025 και αποτελεί βασικό χαρακτηριστικό ασφαλείας.</li>
 <li><strong>Πρωτοβουλία επιλεγμένη από την κοινότητα</strong>Δεν υπάρχει αμφιβολία ότι η κοινότητα θα έχει ένα σωρό εξαιρετικές ιδέες στο https://ideas.tb.pro, πάνω στις οποίες μπορούμε να βασιστούμε. Διασφαλίζουμε ότι έχουμε χρόνο για να εργαστούμε σε μία από τις κορυφαίες προτάσεις της κοινότητας, η οποία θα ταιριάζει απόλυτα στο οικοσύστημα του Thunderbird Pro.</li>
-<li><strong>Improve Pro Add-on Integration</strong>We are shipping an Thunderbird Pro add-on to enable Pro features in Thunderbird desktop. For a low barrier of entry we want to improve integration by using the system add-on or new account add-on mechanism. This allows us to make these features easier to discover and use within Thunderbird.</li>
-<li><strong>Thundermail: Webmail</strong>What would an email service be without webmail? We will spend time making the proof of concept more usable, and enable this as an experimental feature for users willing to try new things earyly. The scope will initially be limited to basic folder visibility and message display.
-Webmail will be built with JMAP as a backend, and we need to explore how users can benefit from Webmail while still being encouraged to use end to end encryption and allowing search across folders.</li>
+<li><strong>Βελτίωση της ενσωμάτωσης των προσθέτων Pro</strong>Διαθέτουμε το πρόσθετο Thunderbird Pro για την ενεργοποίηση των δυνατοτήτων Pro στην έκδοση του Thunderbird για υπολογιστές. Για να μειώσουμε τα εμπόδια πρόσβασης των χρηστών, θέλουμε να βελτιώσουμε την ενσωμάτωση χρησιμοποιώντας τον μηχανισμό πρόσθετων συστήματος ή τον μηχανισμό πρόσθετων για νέους λογαριασμούς. Αυτό μας επιτρέπει να διευκολύνουμε την εύρεση και χρήση αυτών των λειτουργιών μέσα στο Thunderbird.</li>
+<li><strong>Thundermail: Webmail</strong>Τι θα ήταν μια υπηρεσία ηλεκτρονικού ταχυδρομείου χωρίς το webmail; Θα αφιερώσουμε χρόνο για να κάνουμε αυτήν την ιδέα πιο εύχρηστη και θα την ενεργοποιήσουμε ως πειραματική λειτουργία για τους χρήστες που θέλουν να δοκιμάζουν νέα πράγματα σε πρώιμο στάδιο. Το πεδίο εφαρμογής θα περιοριστεί αρχικά στη βασική ορατότητα φακέλων και την εμφάνιση μηνυμάτων.
+Το webmail θα αναπτυχθεί με το JMAP ως backend. Επιπλέον, πρέπει να εξερευνήσουμε πώς οι χρήστες μπορούν να επωφεληθούν από το webmail, ενώ παράλληλα θα ενθαρρύνονται να χρησιμοποιούν τη διατερματική κρυπτογράφηση και θα επιτρέπεται η αναζήτηση σε όλους τους φακέλους.</li>
 </ul>
 <h2><i class="ph ph-rocket-launch"></i>Παραδομένα</h2>
 <ul>
-<li><strong>Thundermail: Φιλτράρισμα ανεπιθύμητων μηνυμάτων</strong>The spam filtering was very aggressive, causing many emails to unintentionally land in the spam folder. The filtering mechanism has been changed to significantly improve this behavior. A big thank you to Mauro and team from Stalwart, who have made the spam detection algorithm more sophisticated and accurate!<div class="date-badge">Μάρτιος 2026</div></li>
+<li><strong>Thundermail: Φιλτράρισμα ανεπιθύμητων μηνυμάτων</strong>Το φιλτράρισμα των ανεπιθύμητων μηνυμάτων ήταν πολύ επιθετικό, με αποτέλεσμα πολλά email να καταλήγουν στον φάκελο ανεπιθύμητων. Ο μηχανισμός φιλτραρίσματος έχει αλλάξει ώστε να βελτιωθεί σημαντικά αυτή η συμπεριφορά. Ευχαριστούμε πολύ τον Mauro και την ομάδα της Stalwart, που έκαναν τον αλγόριθμο εντοπισμού ανεπιθύμητων μηνυμάτων πιο εξελιγμένο και ακριβή!<div class="date-badge">Μάρτιος 2026</div></li>
 </ul>
   
 
@@ -1164,12 +1167,12 @@ Webmail will be built with JMAP as a backend, and we need to explore how users c
     
   </div>
   <div id="tb-legal">
-    <p>Thunderbird is part of
+    <p>Το Thunderbird είναι μέρος της
       <a href="https://blog.thunderbird.net/2020/01/thunderbirds-new-home/" class="inline-link">MZLA Technologies Corporation</a>,
-      a wholly owned subsidiary of the not-for-profit Mozilla.org.
-      Portions of this content are ©1998– by individual
-      contributors. Content available under
-      a <a href="https://www.mozilla.org/foundation/licensing/website-content/" class="inline-link">Creative Commons license</a>.</p>
+      μιας θυγατρικής εταιρείας που ανήκει εξ ολοκλήρου στο Mozilla.org.
+      Τμήματα αυτού του περιεχομένου ανήκουν σε εθελοντές
+      ©1998–. Το περιεχόμενο διατίθεται υπό την
+      <a href="https://www.mozilla.org/foundation/licensing/website-content/" class="inline-link">άδεια Creative Commons</a>.</p>
     <p>
       <a href="https://github.com/thunderbird/thunderbird-website">Συνεισφορά στον ιστότοπο</a>
     </p>

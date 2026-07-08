@@ -101,6 +101,9 @@
     // Force-highlight www link for roadmaps site.
     if ((linkHost === currentHost) || isRoadmaps) {
       link.classList.add('active');
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+      });
     } else {
       // Remove active class from other links
       link.classList.remove('active');
@@ -1160,12 +1163,12 @@
     
   </div>
   <div id="tb-legal">
-    <p>Thunderbird is part of
+    <p>Το Thunderbird είναι μέρος της
       <a href="https://blog.thunderbird.net/2020/01/thunderbirds-new-home/" class="inline-link">MZLA Technologies Corporation</a>,
-      a wholly owned subsidiary of the not-for-profit Mozilla.org.
-      Portions of this content are ©1998– by individual
-      contributors. Content available under
-      a <a href="https://www.mozilla.org/foundation/licensing/website-content/" class="inline-link">Creative Commons license</a>.</p>
+      μιας θυγατρικής εταιρείας που ανήκει εξ ολοκλήρου στο Mozilla.org.
+      Τμήματα αυτού του περιεχομένου ανήκουν σε εθελοντές
+      ©1998–. Το περιεχόμενο διατίθεται υπό την
+      <a href="https://www.mozilla.org/foundation/licensing/website-content/" class="inline-link">άδεια Creative Commons</a>.</p>
     <p>
       <a href="https://github.com/thunderbird/thunderbird-website">Συνεισφορά στον ιστότοπο</a>
     </p>
