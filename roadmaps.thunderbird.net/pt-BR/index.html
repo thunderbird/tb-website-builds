@@ -101,6 +101,9 @@
     // Force-highlight www link for roadmaps site.
     if ((linkHost === currentHost) || isRoadmaps) {
       link.classList.add('active');
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+      });
     } else {
       // Remove active class from other links
       link.classList.remove('active');
@@ -1018,7 +1021,7 @@
   </li>
   <li class="card card-icon card-services">
     <h2>
-        Services
+        Serviços
     </h2>
 
     Follow the services roadmap to learn what's coming up next for Thunderbird Pro, Websites and Infrastructure projects.
