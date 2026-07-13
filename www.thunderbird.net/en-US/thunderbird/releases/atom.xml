@@ -8,7 +8,7 @@
   <title>Thunderbird Release Notes</title>
   <subtitle type="text">Thunderbird Release Notes feed provides a simple way to keep up to date with Thunderbird releases.</subtitle>
 
-  <updated>2026-07-11T22:32:22+00:00</updated>
+  <updated>2026-07-13T21:14:15+00:00</updated>
   <logo>https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png</logo>
   <icon>https://www.thunderbird.net/media/img/thunderbird/favicon-196.png</icon>
 
@@ -871,24 +871,6 @@
         
 
         <li>
-          <p>Flatpak runtime has been updated to Freedesktop SDK 24.08</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
           <p>Use of the string "Junk" has been replaced with "Spam"</p>
           
         </li>
@@ -1201,7 +1183,7 @@
         
 
         <li>
-          <p>Memory was not cleaned up after opening New Window from folder pane context menu</p>
+          <p>Memory leak after opening New Window from folder pane context menu</p>
           
         </li>
       
@@ -3109,7 +3091,7 @@
         
 
         <li>
-          <p>Contact was not found in Advanced Address Book Search if phone number had a period</p>
+          <p>Contact not found in Advanced Address Book Search if phone number had a period</p>
           
         </li>
       
@@ -3523,7 +3505,7 @@
         
 
         <li>
-          <p>Spam was not checked with <code>mail.server.default.check_all_folders_for_new</code> on</p>
+          <p>Spam not checked with <code>mail.server.default.check_all_folders_for_new</code> on</p>
           
         </li>
       
@@ -3829,7 +3811,7 @@
         
 
         <li>
-          <p>Enterprise policy use was not indicated in about:preferences with a link to about:policies</p>
+          <p>Enterprise policy use not indicated in about:preferences with link to about:policies</p>
           
         </li>
       
