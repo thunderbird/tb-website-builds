@@ -8,7 +8,7 @@
   <title>Thunderbird Release Notes</title>
   <subtitle type="text">Thunderbird Release Notes feed provides a simple way to keep up to date with Thunderbird releases.</subtitle>
 
-  <updated>2026-07-14T20:41:07+00:00</updated>
+  <updated>2026-07-14T20:47:59+00:00</updated>
   <logo>https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png</logo>
   <icon>https://www.thunderbird.net/media/img/thunderbird/favicon-196.png</icon>
 
@@ -2588,6 +2588,24 @@
 
         <li>
           <p>Thunderbird could crash when using Find and Replace All</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Compose with PDF attachments opened PDFs instead of creating a new email</p>
           
         </li>
       
