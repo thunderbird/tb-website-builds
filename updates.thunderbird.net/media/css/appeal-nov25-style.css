@@ -1447,6 +1447,8 @@ body {
     max-width: var(--appeal-content-width);
   }
 }
+@media (min-width: 48rem) {
+}
 @media (min-width: 80rem) {
   .page-appeal-nov25 #appeal-body #appeal-heading {
     font-size: 4rem;
