@@ -1,0 +1,6616 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed
+  xmlns="http://www.w3.org/2005/Atom"
+  xmlns:thr="http://purl.org/syndication/thread/1.0"
+  xml:lang="en-US"
+>
+  <id>https://www.thunderbird.net/thunderbird/releases/atom.xml</id>
+  <title>Thunderbird Release Notes</title>
+  <subtitle type="text">Thunderbird Release Notes feed provides a simple way to keep up to date with Thunderbird releases.</subtitle>
+
+  <updated>2026-07-21T12:45:40+00:00</updated>
+  <logo>https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png</logo>
+  <icon>https://www.thunderbird.net/media/img/thunderbird/favicon-196.png</icon>
+
+  <link rel="alternate" type="text/html" href="https://www.thunderbird.net//en-US/thunderbird/releases"/>
+  <link rel="self" type="application/atom+xml" href="https://www.thunderbird.net/thunderbird/releases/atom.xml"/>
+
+  <generator uri="https://www.thunderbird.net" version="1.0">thunderbird-website</generator>
+  
+  <entry>
+    <id>https://www.thunderbird.net/en-US/thunderbird/140.13.0esr/releasenotes/</id>
+    <title type="html">Thunderbird 140.13.0esr</title>
+    <author>
+      <name>Thunderbird</name>
+      <uri>https://www.thunderbird.net</uri>
+    </author>
+    <link rel="alternate" type="text/html" href="https://www.thunderbird.net/en-US/thunderbird/140.13.0esr/releasenotes/"/>
+    <updated>2026-07-21T00:00:00+00:00</updated>
+    <published>2026-07-21T00:00:00+00:00</published>
+
+    <content type="html"><![CDATA[
+      
+
+  
+  
+
+  
+    
+
+    
+      
+        
+        
+
+        
+          <h3>Fixed</h3>
+        
+
+        
+        
+          <ul>
+        
+
+        
+        
+
+        <li>
+          <p><a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird140.13">Security fixes</a></p>
+          
+        </li>
+      
+    
+    </ul>
+  
+  
+
+<p>As always, you’re encouraged to <a href="https://connect.mozilla.org/t5/ideas/idb-p/ideas/label-name/thunderbird">tell us what you think</a>, <a href="https://support.mozilla.org/questions/new/thunderbird">ask for help</a>, or <a href="https://bugzilla.mozilla.org/enter_bug.cgi?product=Thunderbird">file a bug in Bugzilla</a></p>
+<style> li p { display: inline; } </style>
+      ]]>
+    </content>
+  </entry>
+  
+  <entry>
+    <id>https://www.thunderbird.net/en-US/thunderbird/153.0esr/releasenotes/</id>
+    <title type="html">Thunderbird 153.0esr</title>
+    <author>
+      <name>Thunderbird</name>
+      <uri>https://www.thunderbird.net</uri>
+    </author>
+    <link rel="alternate" type="text/html" href="https://www.thunderbird.net/en-US/thunderbird/153.0esr/releasenotes/"/>
+    <updated>2026-07-21T00:00:00+00:00</updated>
+    <published>2026-07-21T00:00:00+00:00</published>
+
+    <content type="html"><![CDATA[
+      
+
+  
+  
+
+  
+    
+
+    
+      
+        
+        
+
+        
+          <h3>What’s New</h3>
+        
+
+        
+        
+          <ul>
+        
+
+        
+        
+
+        <li>
+          <p>Visual signatures can be added to PDF attachments opened in Thunderbird</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>'Copy Message Link' and 'Copy News Link' added to header pane 'More actions'</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Accessiblity is improved in various tree views</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Added 'Archive' action to mail notifications</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Add "Show Full Path" folder pane option for compact view modes</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Unified folders now display account color indicator with account name tooltip</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Folder copy enabled within mail server accounts and local folders</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>'Reset Folder Order' option added to folder pane to reset custom folder sorting</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Add `mail.useLocalizedFolderNames' to toggle special folder name localization</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>'Favorites' added as destination for 'Move To' and 'File' buttons</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Composer now shows a warning if user's configured OpenPGP key expires soon</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Enabled configuration of preferred OpenPGP keyserver via the UI</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Add <code>mail.openpgp.load_untested_gpgme_version</code> to load untested GPGME version</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Added support for generating Unobtrusive Signatures (OpenPGP)</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Implemented option to show only messages without any tag</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Message body search enabled for OpenPGP and S/MIME encrypted messages</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>SecurityDevices enabled in enterprise policies</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Enable support for DNS over HTTPS</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>OAuth login for mail accounts now opens in default web browser</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Thundermail services can now be used without installing an add-on</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>OAuth responses now verify issuer fields and reject missing required issuers</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Enable the "Sign in with Thundermail" button in Account Hub</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Account hub is opened on the first run of Thunderbird</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Account Hub email manual config option added</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Enable Thundermail OAuth sign-in with account auto-configuration</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Address book cards can be copied to the clipboard as vCard</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Enable exporting selected address book cards</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Custom Accent Color can be chosen in Appearance Settings</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Enable support for Microsoft Exchange via Exchange Web Services</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Calendar month/multiweek views are now scrollable with touch screen</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Tasks can be sorted by created or modified date</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>PDF pages can be reorganized directly in the PDF viewer</p>
+          
+        </li>
+      
+    
+      
+        
+        
+          </ul>
+        
+
+        
+          <h3>Changed</h3>
+        
+
+        
+        
+          <ul>
+        
+
+        
+        
+
+        <li>
+          <p>'Copy Message Location' removed from mail context menu</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Read folders are now removed from Unread Folders view</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Special folders are now localized based on a restricted set of names</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>OpenPGP public key no longer attached by default in signed-only messages</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Address books are now created in Account Hub</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Yahoo, AT&amp;T, AOL accounts migrated to OAuth 2.0 with PKCE for improved security</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>GMail OAuth updated to use PKCE</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Skype has been retired and therefore dropped from Address book IM selection</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Removed pref <code>default_supports_diskspace.{HOST}</code></p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Removed pref <code>default_offline_support_level.{HOST}</code></p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Removed Odnoklassniki chat setup and directed users to XMPP configuration</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Use of the string "Junk" has been replaced with "Spam"</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Updated about:rights to replace local with hosted url</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Stop shipping 32-bit Linux x86 binaries</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>'Hide completed tasks' now also hides cancelled tasks</p>
+          
+        </li>
+      
+    
+      
+        
+        
+          </ul>
+        
+
+        
+          <h3>Fixed</h3>
+        
+
+        
+        
+          <ul>
+        
+
+        
+        
+
+        <li>
+          <p>Thunderbird could crash when parsing message state</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>The English string for the Angry emoji was incorrectly named as the Yell emoji</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Notification sounds did not respect operating system's do-not-disturb mode</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Non-English localized Thunderbird created English special folders on first start</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Copying text from some error alerts was not possible</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Fastmail CalDAV app password access failed due to forced OAuth regression</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Thunderbird could crash in server subscription logic</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Could not distinguish folders with same name in 'Recent Destinations' and 'Favorites'</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Donation banner stole focus when Thunderbird was running in the background</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Unknown command-line arguments passed to Thunderbird did not print warning</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Thunderbird could crash when processing new incoming messages</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Spam messages triggered new mail notifications before being moved to Spam folder</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Web pages with bad certificates displayed as blank</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Memory leak after opening New Window from folder pane context menu</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Importing a vCard only displayed VCF files in the file picker</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Calendar view tabs were not properly keyboard accessible</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Ctrl+S did not save PDF attachments opened in Thunderbird tabs</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>TLS errors incorrectly reported all unknown failures as untrusted certificates</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Thunderbird could crash when copying an empty list of messages</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Incorrect roaming data directory caused regression on Windows and macOS</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Changing to new drafts folder and then back did not correctly restore the folder</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Message headers were re-downloaded at every startup</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Old IMAP profile migration deleted INBOX and other mailbox files</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>'Search Messages...' dialog could not be opened outside the email tab</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Option did not exist to create new address book under File -&gt; New</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Newly created folder was missing under "Recent" when moving a message</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Could not compose new message if the folder pane was empty</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>'Delete' was missing from context menu when multiple IMAP folders were selected</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Compacting multiple folders failed and did not compact</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Shift-click for 'Edit' button in drafts header view did not work</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>"Replace All" in Compose did not update plain text until dialog closed</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Status bar messages displayed unlocalized folder names or IMAP mailbox names</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Saved email filenames were not not always cross-platform safe</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Space bar did not scroll in PDF attachments opened from emails</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Folder location widget used non-localised name</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Empty confirmation dialog when more messages opened in tabs than <code>mailnews.open_tab_warning</code></p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Removing tags from IMAP messages could fail and tags reappeared after refresh</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Toggling dark message mode did not restore focus and scroll position</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>'Show remote content' did not display remote content for EML message</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Emoji sequences were not properly handled in subject lines</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>'Delete' button in unified toolbar could delete attachments instead of message</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>"Repair text encoding" could duplicate recipient and attachments</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Some IMAP emails showed current time instead of correct received date</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Deleting a single message in folder using 'Group by Sort' failed after CTRL+A</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>New newsgroups were not added in alphabetical order by default</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Sorting by threads only brought threads with unread top messages to the top</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>News message marked read after NNTP error prevented retrieval from server</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>'Recent destinations' submenu was not sorted by time of modification</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Account column could display incorrect account name</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>'Tag' submenu of mail context menu could be populated incorrectly</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Unified archive subfolders could show wrong names and no messages</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Moving saved search/virtual folder under IMAP could fail</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>New Folder dialog allowed invalid folder creation without a selected parent folder</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>New/unread messages in collapsed thread were not obvious enough</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Pressing Delete on Trash folder could remove it without confirmation</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Renaming of a 'unified folder' created a duplicate</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Clicking on a folder in the folder pane did not always open folder</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Messages nested deeper than 255 levels disappeared from threading view</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Performing Delete followed by Undo on thread parent message could corrupt view</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Single messages still appeared collapsible after thread members were deleted</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Updated threads remained misordered until folder refresh or resort</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Global search failed to display inaccessible messages found in local folders</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Numeric subfolders were sorted alphabetically instead of naturally</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Virtual folder folder-picker showed unlabeled IM account as selectable folder</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Some folders showed new mail count prior to receiving mail</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Menu Bar -&gt; View contained duplicate accelerator keys</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Unified toolbar Spam button did not switch to "Not Spam" when spam message selected</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Warning was not logged if <code>mail.openpgp.alias_rules_file</code> file did not exist</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Not all headers were signed when creating digitally signed OpenPGP email</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>When configuring external GnuPG, user was not promted to import public key</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>"Open and Show" for OpenPGP-signed message (.eml) did not work</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Invalidly signed unencrypted emails were indicated as worse than unsigned ones</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Reason for revoked certificate was not shown</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Apple Mail OpenPGP emails failed to decrypt due to hidden recipient key ID</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>OpenPGP import of public key with experimental packets failed with unclear error</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Opening messages with OpenPGP keys was slow and blocked the UI for large keyrings</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>OpenPGP key refresh failed when fingerprint lookup returned multiple results</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Encrypted Gmail CSE emails with outer opaque S/MIME were not readable</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Invalid S/MIME encryption certificate caused misleading send errors</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>"Search Messages" search did not finish due to unparsable local folders</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Search results showed older irrelevant emails before newer exact matches</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Filter search on Body missed draft messages containing German umlauts</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Esc cleared quick filter pin after changing folder</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Thunderbird could crash during local message search</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Replying could fail with <code>mailnews.reply_quoting_selection.multi_word</code> set false</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Drag-drop of unselected contact inserted wrong or no email address</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Changing identity in compose window caused modified draft not to be saved</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Shift-click 'Compose Message To' on 'mailto' link did not open in plain text</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Reply with selected text lost formatting for HTML messages containing &lt;/pre&gt;</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Multipart/related attachments were not preserved when editing or forwarding</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Forwarded malformed MIME email had empty body and extra attachment</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Message compose window was removed from Task Bar after saving as draft or template</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Dragging email address between compose windows failed to add recipients</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Thunderbird could crash when using Find and Replace All</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Compose with PDF attachments opened PDFs instead of creating a new email</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Multiple saves while using 'Options' -&gt; 'Send a Copy' resulted in multiple copies</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Search for "Attachment" in Settings menu did not find "Files and Attachments"</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Add-on account creation did not work with Account Hub</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Owl install did not show link to website in Account Hub</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Username field did not appear in Account Hub when exchange authentication failed</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Account Hub advanced config setup did not include default outgoing config</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Disabled inputs could be toggled in Account Hub address book</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Users could not disable spinning overlay in Account Hub for email</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Account Hub local address book creation could continue with blank name</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Account Hub email success messages were not always accurate about config source</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Calendar/address book sections were shown in Account Hub when there were none</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>New password-based Exchange accounts failed to save passwords in login manager</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Account hub showed connection security instead of actual authentication method</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>New identity dialog lacked reply-matching and end-to-end encryption settings</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Thunderbird could fail to shut down cleanly during active OAuth requests</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Account Hub kept OAuth selected after changing to hostname without OAuth support</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Account Hub autodetect wrongly prompted for a password when auth was unavailable</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Interrupted external OAuth2 setup required restarting Thunderbird</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>The default account could be reset after restart if uninitialized</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Virtual folders did not update correctly for filtered POP3 messages</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>'Copy Message to' action in a newsgroup filter did not work</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Thunderbird could crash while importing mail thread</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Thunderbird did not clearly fail when importing profile from a bad source</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Thunderbird could not import profile located at the top level of zip file</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>'Any Number' was unavailable in address book search with 'Match all of the following'</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Contact not found in Advanced Address Book Search if phone number had a period</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Thunderbird did not display contact photos in WebP format from CardDAV servers</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Opening a vCard (.vcf) from file manager or CLI did not work in some cases</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Redirected CardDAV URLs resolved relative URLs against the wrong host</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Installations from Microsoft Store did not open when clicking 'mailto:' links</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Windows new message notification click did not bring Thunderbird to foreground</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Microsoft Store installs did not open when clicking 'news://' link or .eml file</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Using thunderbird -compose with double quotes made last email address invalid</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Clicking the backspace icon in the quick filter field cleared the input field</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Subfolder kept stale accessibility unread count after unread messages were deleted</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Moving virtual folder within maildir based IMAP or local folder could fail</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Thunderbird could crash when completing folder copy/move</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>'Edit as New Message' and inline 'Forward' not possible with PGP-signed messages</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Various MIME improvements</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Forwarding some Apple Mail messages incorrectly attached inline text as a file</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Thunderbird could crash when marking all messages as read</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Auto-compaction could corrupt database and cause crashes during syncs</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>'news:' URIs without specific server had incorrect format displayed in status bar</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>'Mark' -&gt; 'All Read' affected newsgroup messages that had not been fetched yet</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Thunderbird could not reconnect to newsgroups after connection loss until restarted</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Sending a newsgroup post appeared successful when it had actually failed</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Saving a new draft retained superceded version</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Thunderbird hung when auto-checking multiple accounts for new messages</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Spam not checked with <code>mail.server.default.check_all_folders_for_new</code> on</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Startup could be slow with large number of folders not using subscriptions</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Saved search in unified folder resulted in server error</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Thunderbird did not report refused POP3 connection</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Remove message body retention policy was not functional</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>POP3 could stop downloading mail until restart</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>With auto-mark-read disabled, large mail still marked as read during load delay</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>IMAP "Show only subscribed folders" could not be changed without restart</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>POP3 deadlocked when server went silent without closing socket</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Thunderbird could crash when mail folder was renamed or moved</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>NNTP server with invalid TLS certificate could not be added to certificate exceptions</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Cancelled message send could not be retried and hung with SMTP timeout errors</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Corrupted NNTP account data caused excessive memory use and startup crash</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Multiple selected IMAP folders could not be moved or deleted together</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Non-Latin IMAP keywords were lowercased and encoded incorrectly as MUTF-7</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Message tags were lost when moving folder from local folder to IMAP folder</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Removing a chat account threw an exception and failed to clear the UI</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Enterprise policy use not indicated in about:preferences with link to about:policies</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Language field in settings was empty after restart in Troubleshoot Mode</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Primary Password policy was detected but not enforced for saved account passwords</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Archived RSS feed messages were sent to the archive folder of default identity</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Broken feed icon could prevent updating of feeds</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Task reminders could fail for tasks without end dates or with shifted due dates</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Calendar did not alert user for connection issues</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Copying one recurring event occurrence failed to set the date when pasted</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Could not copy an event in multiweek or month view by drag-and-drop</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Duplicate attendees were added to invitations instead of being filtered out</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Calendar discovery with certificate error displayed multiple exceptions</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>It was not possible to create date-only all-day tasks</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Task percentage complete was not preserved separately from status in tooltips</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Calendar invites were incorrectly marked processed after calendar sync completed</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>ICS event comments were not displayed in Thunderbird event details</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Dismissed Gmail calendar reminder did nothing and item stayed visible</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>iCal imports misread unknown timezones as GMT, creating events at wrong times</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Could not export local calendar as HTML</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Cancelled filter edit dialog closed the message filter dialog</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Visual and UX improvements</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p><a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird153">Security fixes</a></p>
+          
+        </li>
+      
+    
+    </ul>
+  
+  
+
+<p>As always, you’re encouraged to <a href="https://connect.mozilla.org/t5/ideas/idb-p/ideas/label-name/thunderbird">tell us what you think</a>, <a href="https://support.mozilla.org/questions/new/thunderbird">ask for help</a>, or <a href="https://bugzilla.mozilla.org/enter_bug.cgi?product=Thunderbird">file a bug in Bugzilla</a></p>
+<style> li p { display: inline; } </style>
+      ]]>
+    </content>
+  </entry>
+  
+  <entry>
+    <id>https://www.thunderbird.net/en-US/thunderbird/153.0/releasenotes/</id>
+    <title type="html">Thunderbird 153.0</title>
+    <author>
+      <name>Thunderbird</name>
+      <uri>https://www.thunderbird.net</uri>
+    </author>
+    <link rel="alternate" type="text/html" href="https://www.thunderbird.net/en-US/thunderbird/153.0/releasenotes/"/>
+    <updated>2026-07-21T00:00:00+00:00</updated>
+    <published>2026-07-21T00:00:00+00:00</published>
+
+    <content type="html"><![CDATA[
+      
+
+  
+  
+
+  
+    
+
+    
+      
+        
+        
+
+        
+          <h3>What’s New</h3>
+        
+
+        
+        
+          <ul>
+        
+
+        
+        
+
+        <li>
+          <p>Unified folders now display account color indicator with account name tooltip</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>OAuth login for mail accounts now opens in default web browser</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Thundermail services can now be used without installing an add-on</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>OAuth responses now verify issuer fields and reject missing required issuers</p>
+          
+        </li>
+      
+    
+      
+        
+        
+          </ul>
+        
+
+        
+          <h3>Changed</h3>
+        
+
+        
+        
+          <ul>
+        
+
+        
+        
+
+        <li>
+          <p>Removed Odnoklassniki chat setup and directed users to XMPP configuration</p>
+          
+        </li>
+      
+    
+      
+        
+        
+          </ul>
+        
+
+        
+          <h3>Fixed</h3>
+        
+
+        
+        
+          <ul>
+        
+
+        
+        
+
+        <li>
+          <p>Ctrl+S did not save PDF attachments opened in Thunderbird tabs</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>TLS errors incorrectly reported all unknown failures as untrusted certificates</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Thunderbird could crash during shutdown</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Thunderbird could crash when copying an empty list of messages</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>New mail alerts incorrectly sized or positioned on some multi-monitor setups</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Old IMAP profile migration deleted INBOX and other mailbox files</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Space bar did not scroll in PDF attachments opened from emails</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>'Search Messages' shortcut (Ctrl+Shift+F) failed in standalone message window</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Folder location widget used non-localised name</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Empty confirmation dialog when more messages opened in tabs than <code>mailnews.open_tab_warning</code></p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Removing tags from IMAP messages could fail and tags reappeared after refresh</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Folder pane could not be horizontally resized in additional 3-pane tabs</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Global search failed to display inaccessible messages found in local folders</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Numeric subfolders were sorted alphabetically instead of naturally</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Virtual folder folder-picker showed unlabeled IM account as selectable folder</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Virtual folders failed to preserve the online search setting</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Apple Mail OpenPGP emails failed to decrypt due to hidden recipient key ID</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>OpenPGP import of public key with experimental packets failed with unclear error</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Performance issue when decrypting encrypted messages</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Opening messages with OpenPGP keys was slow and blocked the UI for large keyrings</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>OpenPGP key refresh failed when fingerprint lookup returned multiple results</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Invalid S/MIME encryption certificate caused misleading send errors</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Esc cleared quick filter pin after changing folder</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Dragging email address between compose windows failed to add recipients</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Thunderbird could crash when using Find and Replace All</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Sending Message dialog got stuck on "Filter complete." after successful send</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Compose with PDF attachments opened PDFs instead of creating a new email</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Attachments opened via -compose on Windows could use incorrect filenames</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Ctrl+Enter opened attachment instead of sending the message</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Compose window remained open when delayed sending was enabled</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Account hub showed connection security instead of actual authentication method</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Account Hub GSSAPI autoconfiguration incorrectly prompted for a password</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>New identity dialog lacked reply-matching and end-to-end encryption settings</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Account Hub manual EWS setup lacked OAuth authentication option</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Thunderbird could fail to shut down cleanly during active OAuth requests</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Account Hub kept OAuth selected after changing to hostname without OAuth support</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Account Hub showed a false error when returning from EWS manual configuration</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Account Hub autodetect wrongly prompted for a password when auth was unavailable</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>QR exports with SMTP passwords generated invalid data for Thunderbird for Android</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Message Filters 'Run Now' button remained disabled after filter run or mail check</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Redirected CardDAV URLs resolved relative URLs against the wrong host</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Thunderbird could crash when completing folder copy/move</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Forwarding some Apple Mail messages incorrectly attached inline text as a file</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Auto-compaction could corrupt database and cause crashes during syncs</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>NNTP server with invalid TLS certificate could not be added to certificate exceptions</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Sent message in EWS account showed message as unread in the sent items folder</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>EWS NTLM authentication triggered login failures despite successful syncs</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Saving inline Exchange images used incorrect filenames and file types</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Cancelled message send could not be retried and hung with SMTP timeout errors</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>EWS folders failed to show new mail notifications until the folder was selected</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Corrupted NNTP account data caused excessive memory use and startup crash</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Multiple selected IMAP folders could not be moved or deleted together</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Non-Latin IMAP keywords were lowercased and encoded incorrectly as MUTF-7</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Message tags were lost when moving folder from local folder to IMAP folder</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Reply All button was missing for some EWS messages with multiple recipients</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>EWS users could not permanently delete individual Trash messages</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Removing a chat account threw an exception and failed to clear the UI</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Primary Password policy was detected but not enforced for saved account passwords</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Copying one recurring event occurrence failed to set the date when pasted</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Calendar invites were incorrectly marked processed after calendar sync completed</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>ICS event comments were not displayed in Thunderbird event details</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Visual and UX improvements</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p><a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird153">Security fixes</a></p>
+          
+        </li>
+      
+    
+    </ul>
+  
+  
+
+<p>As always, you’re encouraged to <a href="https://connect.mozilla.org/t5/ideas/idb-p/ideas/label-name/thunderbird">tell us what you think</a>, <a href="https://support.mozilla.org/questions/new/thunderbird">ask for help</a>, or <a href="https://bugzilla.mozilla.org/enter_bug.cgi?product=Thunderbird">file a bug in Bugzilla</a></p>
+<style> li p { display: inline; } </style>
+      ]]>
+    </content>
+  </entry>
+  
+  <entry>
+    <id>https://www.thunderbird.net/en-US/thunderbird/140.12.1esr/releasenotes/</id>
+    <title type="html">Thunderbird 140.12.1esr</title>
+    <author>
+      <name>Thunderbird</name>
+      <uri>https://www.thunderbird.net</uri>
+    </author>
+    <link rel="alternate" type="text/html" href="https://www.thunderbird.net/en-US/thunderbird/140.12.1esr/releasenotes/"/>
+    <updated>2026-06-30T00:00:00+00:00</updated>
+    <published>2026-06-30T00:00:00+00:00</published>
+
+    <content type="html"><![CDATA[
+      
+
+  
+  
+
+  
+    
+
+    
+      
+        
+        
+
+        
+          <h3>Fixed</h3>
+        
+
+        
+        
+          <ul>
+        
+
+        
+        
+
+        <li>
+          <p><a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird140.12.1">Security fixes</a></p>
+          
+        </li>
+      
+    
+    </ul>
+  
+  
+
+<p>As always, you’re encouraged to <a href="https://connect.mozilla.org/t5/ideas/idb-p/ideas/label-name/thunderbird">tell us what you think</a>, <a href="https://support.mozilla.org/questions/new/thunderbird">ask for help</a>, or <a href="https://bugzilla.mozilla.org/enter_bug.cgi?product=Thunderbird">file a bug in Bugzilla</a></p>
+<style> li p { display: inline; } </style>
+      ]]>
+    </content>
+  </entry>
+  
+  <entry>
+    <id>https://www.thunderbird.net/en-US/thunderbird/152.0.1/releasenotes/</id>
+    <title type="html">Thunderbird 152.0.1</title>
+    <author>
+      <name>Thunderbird</name>
+      <uri>https://www.thunderbird.net</uri>
+    </author>
+    <link rel="alternate" type="text/html" href="https://www.thunderbird.net/en-US/thunderbird/152.0.1/releasenotes/"/>
+    <updated>2026-07-01T00:00:00+00:00</updated>
+    <published>2026-06-30T00:00:00+00:00</published>
+
+    <content type="html"><![CDATA[
+      
+
+  
+  
+
+  
+    
+
+    
+      
+        
+        
+
+        
+          <h3>Fixed</h3>
+        
+
+        
+        
+          <ul>
+        
+
+        
+        
+
+        <li>
+          <p>Reply All button was missing for some EWS messages with multiple recipients</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p><a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird152.0.1">Security fixes</a></p>
+          
+        </li>
+      
+    
+    </ul>
+  
+  
+
+<p>As always, you’re encouraged to <a href="https://connect.mozilla.org/t5/ideas/idb-p/ideas/label-name/thunderbird">tell us what you think</a>, <a href="https://support.mozilla.org/questions/new/thunderbird">ask for help</a>, or <a href="https://bugzilla.mozilla.org/enter_bug.cgi?product=Thunderbird">file a bug in Bugzilla</a></p>
+<style> li p { display: inline; } </style>
+      ]]>
+    </content>
+  </entry>
+  
+  <entry>
+    <id>https://www.thunderbird.net/en-US/thunderbird/140.12.0esr/releasenotes/</id>
+    <title type="html">Thunderbird 140.12.0esr</title>
+    <author>
+      <name>Thunderbird</name>
+      <uri>https://www.thunderbird.net</uri>
+    </author>
+    <link rel="alternate" type="text/html" href="https://www.thunderbird.net/en-US/thunderbird/140.12.0esr/releasenotes/"/>
+    <updated>2026-06-16T00:00:00+00:00</updated>
+    <published>2026-06-16T00:00:00+00:00</published>
+
+    <content type="html"><![CDATA[
+      
+
+  
+  
+
+  
+    
+
+    
+      
+        
+        
+
+        
+          <h3>Fixed</h3>
+        
+
+        
+        
+          <ul>
+        
+
+        
+        
+
+        <li>
+          <p><a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird140.12">Security fixes</a></p>
+          
+        </li>
+      
+    
+    </ul>
+  
+  
+
+<p>As always, you’re encouraged to <a href="https://connect.mozilla.org/t5/ideas/idb-p/ideas/label-name/thunderbird">tell us what you think</a>, <a href="https://support.mozilla.org/questions/new/thunderbird">ask for help</a>, or <a href="https://bugzilla.mozilla.org/enter_bug.cgi?product=Thunderbird">file a bug in Bugzilla</a></p>
+<style> li p { display: inline; } </style>
+      ]]>
+    </content>
+  </entry>
+  
+  <entry>
+    <id>https://www.thunderbird.net/en-US/thunderbird/152.0/releasenotes/</id>
+    <title type="html">Thunderbird 152.0</title>
+    <author>
+      <name>Thunderbird</name>
+      <uri>https://www.thunderbird.net</uri>
+    </author>
+    <link rel="alternate" type="text/html" href="https://www.thunderbird.net/en-US/thunderbird/152.0/releasenotes/"/>
+    <updated>2026-06-16T00:00:00+00:00</updated>
+    <published>2026-06-16T00:00:00+00:00</published>
+
+    <content type="html"><![CDATA[
+      
+
+  
+  
+
+  
+    
+
+    
+      
+        
+        
+
+        
+          <h3>What’s New</h3>
+        
+
+        
+        
+          <ul>
+        
+
+        
+        
+
+        <li>
+          <p>SecurityDevices enabled in enterprise policies</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>One-click account setup for Thundermail accounts</p>
+          
+        </li>
+      
+    
+      
+        
+        
+          </ul>
+        
+
+        
+          <h3>Changed</h3>
+        
+
+        
+        
+          <ul>
+        
+
+        
+        
+
+        <li>
+          <p>Use 'Add' instead of 'New' for account, calendar, address book creation buttons</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>GMail OAuth updated to use PKCE</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Mail server hostname also checked when detecting address books and calendars</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Updated about:rights to replace local with hosted url</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>'Hide completed tasks' now also hides cancelled tasks</p>
+          
+        </li>
+      
+    
+      
+        
+        
+          </ul>
+        
+
+        
+          <h3>Fixed</h3>
+        
+
+        
+        
+          <ul>
+        
+
+        
+        
+
+        <li>
+          <p>New mail alerts appeared on wrong monitor in three-monitor setup</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Spam messages triggered new mail notifications before being moved to Spam folder</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Filtered IMAP or NNTP subscriptions were lost after closing Subscribe dialog</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>'Download Headers' dialog for newsgroups failed to open</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Messages nested deeper than 255 levels disappeared from threading view</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Performing Delete followed by Undo on thread parent message could corrupt view</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Single messages still appeared collapsible after thread members were deleted</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Updated threads remained misordered until folder refresh or resort</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Non-threaded subject sorting separated 'RE:' replies from original messages</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>BCC recipients were included in signed email headers</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Filter search on Body missed draft messages containing German umlauts</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Thunderbird could crash during local message search</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Blocked file warning showed without 'Unblock File' button in compose window</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Forwarding/Redirecting Exchange messages failed with NS_ERROR_OUT_OF_MEMORY</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Compose window closed early and send progress dialog hung after NNTP failure</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Compose window stayed open after sending when <code>mailnews.sendInBackground</code> set</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Microsoft OAuth2 failed when HTTPS localhost redirect was not intercepted</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Pasting contact photos stopped working when photo button had focus</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Filter dialog lacked focus ring and had poorly distinguishable buttons</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Subfolder kept stale accessibility unread count after unread messages were deleted</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>'Edit as New Message' and inline 'Forward' not possible with PGP-signed messages</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Various MIME improvements</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>EWS messages could go missing from folder view</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>IMAP "Show only subscribed folders" could not be changed without restart</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Unable to delete more than 1000 messages at a time on Microsoft 365</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>EWS folders in Trash were moved to Trash again instead of being hard deleted</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>IMAP notifications repeated for emails read on another device after sleep wake</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>POP3 deadlocked when server went silent without closing socket</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Calendar acceptance no longer distinguished between single occurrence and series</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Transparent popups on macOS made calendar event editing difficult</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Duplicate attendees were added to invitations instead of being filtered out</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Task percentage complete was not preserved separately from status in tooltips</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Visual and UX improvements</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p><a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird152">Security fixes</a></p>
+          
+        </li>
+      
+    
+    </ul>
+  
+  
+
+<p>As always, you’re encouraged to <a href="https://connect.mozilla.org/t5/ideas/idb-p/ideas/label-name/thunderbird">tell us what you think</a>, <a href="https://support.mozilla.org/questions/new/thunderbird">ask for help</a>, or <a href="https://bugzilla.mozilla.org/enter_bug.cgi?product=Thunderbird">file a bug in Bugzilla</a></p>
+<style> li p { display: inline; } </style>
+      ]]>
+    </content>
+  </entry>
+  
+  <entry>
+    <id>https://www.thunderbird.net/en-US/thunderbird/140.11.1esr/releasenotes/</id>
+    <title type="html">Thunderbird 140.11.1esr</title>
+    <author>
+      <name>Thunderbird</name>
+      <uri>https://www.thunderbird.net</uri>
+    </author>
+    <link rel="alternate" type="text/html" href="https://www.thunderbird.net/en-US/thunderbird/140.11.1esr/releasenotes/"/>
+    <updated>2026-05-26T00:00:00+00:00</updated>
+    <published>2026-05-26T00:00:00+00:00</published>
+
+    <content type="html"><![CDATA[
+      
+
+  
+  
+
+  
+    
+
+    
+      
+        
+        
+
+        
+          <h3>Changed</h3>
+        
+
+        
+        
+          <ul>
+        
+
+        
+        
+
+        <li>
+          <p>There are no Thunderbird changes requiring release notes in this release</p>
+          
+        </li>
+      
+    
+    </ul>
+  
+  
+
+<p>As always, you’re encouraged to <a href="https://connect.mozilla.org/t5/ideas/idb-p/ideas/label-name/thunderbird">tell us what you think</a>, <a href="https://support.mozilla.org/questions/new/thunderbird">ask for help</a>, or <a href="https://bugzilla.mozilla.org/enter_bug.cgi?product=Thunderbird">file a bug in Bugzilla</a></p>
+<style> li p { display: inline; } </style>
+      ]]>
+    </content>
+  </entry>
+  
+  <entry>
+    <id>https://www.thunderbird.net/en-US/thunderbird/151.0.1/releasenotes/</id>
+    <title type="html">Thunderbird 151.0.1</title>
+    <author>
+      <name>Thunderbird</name>
+      <uri>https://www.thunderbird.net</uri>
+    </author>
+    <link rel="alternate" type="text/html" href="https://www.thunderbird.net/en-US/thunderbird/151.0.1/releasenotes/"/>
+    <updated>2026-05-26T00:00:00+00:00</updated>
+    <published>2026-05-26T00:00:00+00:00</published>
+
+    <content type="html"><![CDATA[
+      
+
+  
+  
+
+  
+    
+
+    
+      
+        
+        
+
+        
+          <h3>Fixed</h3>
+        
+
+        
+        
+          <ul>
+        
+
+        
+        
+
+        <li>
+          <p>Forwarding/Redirecting Exchange messages failed with NS_ERROR_OUT_OF_MEMORY</p>
+          
+        </li>
+      
+    
+    </ul>
+  
+  
+
+<p>As always, you’re encouraged to <a href="https://connect.mozilla.org/t5/ideas/idb-p/ideas/label-name/thunderbird">tell us what you think</a>, <a href="https://support.mozilla.org/questions/new/thunderbird">ask for help</a>, or <a href="https://bugzilla.mozilla.org/enter_bug.cgi?product=Thunderbird">file a bug in Bugzilla</a></p>
+<style> li p { display: inline; } </style>
+      ]]>
+    </content>
+  </entry>
+  
+  <entry>
+    <id>https://www.thunderbird.net/en-US/thunderbird/140.11.0esr/releasenotes/</id>
+    <title type="html">Thunderbird 140.11.0esr</title>
+    <author>
+      <name>Thunderbird</name>
+      <uri>https://www.thunderbird.net</uri>
+    </author>
+    <link rel="alternate" type="text/html" href="https://www.thunderbird.net/en-US/thunderbird/140.11.0esr/releasenotes/"/>
+    <updated>2026-05-19T00:00:00+00:00</updated>
+    <published>2026-05-19T00:00:00+00:00</published>
+
+    <content type="html"><![CDATA[
+      
+
+  
+  
+
+  
+    
+
+    
+      
+        
+        
+
+        
+          <h3>Fixed</h3>
+        
+
+        
+        
+          <ul>
+        
+
+        
+        
+
+        <li>
+          <p><a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird140.11">Security fixes</a></p>
+          
+        </li>
+      
+    
+    </ul>
+  
+  
+
+<p>As always, you’re encouraged to <a href="https://connect.mozilla.org/t5/ideas/idb-p/ideas/label-name/thunderbird">tell us what you think</a>, <a href="https://support.mozilla.org/questions/new/thunderbird">ask for help</a>, or <a href="https://bugzilla.mozilla.org/enter_bug.cgi?product=Thunderbird">file a bug in Bugzilla</a></p>
+<style> li p { display: inline; } </style>
+      ]]>
+    </content>
+  </entry>
+  
+</feed>
