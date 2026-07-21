@@ -320,6 +320,7 @@ URL_MAPPINGS = {
     'support.mobile': 'https://support.mozilla.org/products/thunderbird-android/',
     'support.question': 'https://support.mozilla.org/questions/new/thunderbird',
     'tbpro.home': '/',
+    'tbpro.thundermail': '/thundermail',
     'tbpro.appointment': '/appointment',
     'tbpro.privacy': '/privacy',
     'tbpro.send': '/send',
@@ -712,10 +713,6 @@ WEBSITE_REDIRECTS = {
     ('thunderbird', '128.0', 'releasenotes'): 'thunderbird.128esr.releasenotes',
     ('thunderbird', '140.0esr', 'whatsnew'): 'updates.140.whatsnew',
     ('thunderbird', '140.0', 'whatsnew'): 'updates.140.whatsnew',
-}
-
-TBPRO_REDIRECTS = {
-    'thundermail': 'tbpro.home',
 }
 
 # Similar to website redirects but for UTN
