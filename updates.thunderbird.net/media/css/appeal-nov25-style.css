@@ -593,9 +593,6 @@ a:hover:visited {
     transform: translateX(250px);
   }
 }
-:root.tab-inactive .pill {
-  animation-play-state: paused !important;
-}
 #pill-1 {
   grid-column: 4 / span 8;
   grid-row: 5 / span 3;
@@ -1449,6 +1446,8 @@ body {
   .page-appeal-nov25 #appeal-body #appeal-heading {
     max-width: var(--appeal-content-width);
   }
+}
+@media (min-width: 48rem) {
 }
 @media (min-width: 80rem) {
   .page-appeal-nov25 #appeal-body #appeal-heading {
