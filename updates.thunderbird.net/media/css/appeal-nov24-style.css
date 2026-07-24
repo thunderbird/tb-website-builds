@@ -2363,9 +2363,6 @@ button:hover::after {
     transform: translateX(250px);
   }
 }
-:root.tab-inactive .pill {
-  animation-play-state: paused !important;
-}
 #pill-1 {
   grid-column: 4 / span 8;
   grid-row: 5 / span 3;
