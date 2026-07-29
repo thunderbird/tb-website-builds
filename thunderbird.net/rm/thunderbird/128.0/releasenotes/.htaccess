@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule .* /rm/thunderbird/128.0esr/releasenotes
