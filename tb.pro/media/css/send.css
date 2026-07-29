@@ -19,9 +19,6 @@ header#masthead p {
   max-width: 400px;
 }
 @media (min-width: 56.25rem) {
-  header#masthead {
-    margin-top: 3.5rem;
-  }
   header#masthead h1 {
     font-size: 3rem;
   }
