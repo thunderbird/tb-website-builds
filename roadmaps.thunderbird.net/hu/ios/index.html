@@ -972,23 +972,25 @@
 <div class="product-roadmap-header">
 <h1>iOS-es ütemterv</h1>
 <p>Thunderbird for iOS. Kövesse az ütemtervet az aktív munkától a jövőbeli ötletekig. Az idővonalak eltolódhatnak, ahogy többet tudunk meg és iterálunk.</p>
-<p style="font-size: 16px;">Legutóbbi frissítés: 2026. március 31.</p>
+<p style="font-size: 16px;">Last updated July 23, 2026</p>
 <p><a href="https://testflight.apple.com/join/ER3hRBSz">A TestFlight alkalmazás letöltése</a></p>
 </div>
 <h2><i class="ph ph-pulse"></i>Aktív</h2>
 <ul>
-<li><strong>Az iOS-es protokoll, adatbázis és keretrendszer létrehozása</strong>Az IMAP protokoll megvalósítása elsőként, mert jelenleg ez a legelterjedtebb protokoll.</li>
-<li><strong>Teljes e-mail-írási és -olvasási élmény</strong>A teljes olvasást és írást támogató felhasználói élmény mobilon, beleértve a titkosított üzenetek kezdeti támogatását (OpenPGP és S/MIME, meglévő programkönyvtárakkal).</li>
+<li><strong>Teljes e-mail-írási és -olvasási élmény</strong>Implement the full reading and writing email experience on mobile, including initial support for encrypted messages (OpenPGP and S/MIME with existing libraries). WYSIWYG is now wrapping up. The next piece is to connect the protocol and database to render email.</li>
+<li><strong>JMAP Support - Exploration</strong>Already 80% finished. The intention is to implement the full protocol with all the basic infrastructure in place.</li>
 </ul>
 <h2><i class="ph ph-calendar-blank"></i>Tervezve</h2>
 <ul>
-<li><strong>JMAP támogatás</strong>A JMAP protokoll támogatása, amely az első további protokoll, amelyet alapértelmezés szerint az IMAP-on kívül szállítunk.</li>
+<li><strong>JMAP Support - Complete Implemenation</strong>Support the JMAP protocol as one of the first extra protocols we ship with by default outside of IMAP. Currently we are prioritizing IMAP and a first user release.</li>
+<li><strong>Database</strong>We’re changing how we cache the email to be able to consume the UI faster, and moving the database work for after the first version is out to the users.</li>
 </ul>
 <h2><i class="ph ph-rocket-launch"></i>Leszállítva</h2>
 <ul>
-<li><strong>Fióklétrehozási folyamat</strong>Egy teljesen automatizált és egy kézi beállítás megvalósítása, beleértve az automatikus felfedezést és az OAuth hitelesítést.<div class="date-badge">2026. március</div></li>
 <li><strong>Architektúra</strong>Robusztus és skálázható architektúra létrehozása, hogy elkezdjük a Thunderbird for iOS projektet, és létrehozzuk a háttérszolgáltatást. Ez az architektúra platformok közti kódmegosztási stratégiákat fog tartalmazni, melyek figyelembe veszik az androidos és asztali klienseket.<div class="date-badge">2025. július</div></li>
 <li><strong>Automatikus beállítás</strong>DNS MX keresés hozzáadása és az SRV-rekordkereső áthelyezése az automatikus konfigurációt biztosító programkönyvtárba, valamint az Autodiscover központi programkönyvtár törlése<div class="date-badge">2025. szeptember</div></li>
+<li><strong>Fióklétrehozási folyamat</strong>Egy teljesen automatizált és egy kézi beállítás megvalósítása, beleértve az automatikus felfedezést és az OAuth hitelesítést.<div class="date-badge">2026. március</div></li>
+<li><strong>iOS Create Protocol &amp; Framework</strong>Implement the IMAP protocol first as it's the most widespread protocol currently in use. We completed the protocol work and basic framework.<div class="date-badge">June 2026</div> </li>
 </ul>
   
 

@@ -972,23 +972,25 @@
 <div class="product-roadmap-header">
 <h1>iOS 版路线图</h1>
 <p>Thunderbird iOS 版。按照路线图从积极的工作到未来的想法。随着我们的了解和迭代时间线可能会发生变化。</p>
-<p style="font-size: 16px;">最后更新于 2026 年 3 月 31 日</p>
+<p style="font-size: 16px;">Last updated July 23, 2026</p>
 <p><a href="https://testflight.apple.com/join/ER3hRBSz">下载 TestFlight 应用</a></p>
 </div>
 <h2><i class="ph ph-pulse"></i>进行中</h2>
 <ul>
-<li><strong>iOS 创建协议、数据库等框架</strong>首先实现 IMAP 协议因为它是目前使用最广泛的协议。</li>
-<li><strong>完整的邮件读写体验</strong>实现移动设备上完整的读写邮件体验包括初步支持加密邮件OpenPGP 和 S/MIME 以及现有的库。</li>
+<li><strong>完整的邮件读写体验</strong>Implement the full reading and writing email experience on mobile, including initial support for encrypted messages (OpenPGP and S/MIME with existing libraries). WYSIWYG is now wrapping up. The next piece is to connect the protocol and database to render email.</li>
+<li><strong>JMAP Support - Exploration</strong>Already 80% finished. The intention is to implement the full protocol with all the basic infrastructure in place.</li>
 </ul>
 <h2><i class="ph ph-calendar-blank"></i>计划</h2>
 <ul>
-<li><strong>JMAP 支持</strong>支持 JMAP 协议作为我们默认附带的除 IMAP 之外的首批额外协议之一。</li>
+<li><strong>JMAP Support - Complete Implemenation</strong>Support the JMAP protocol as one of the first extra protocols we ship with by default outside of IMAP. Currently we are prioritizing IMAP and a first user release.</li>
+<li><strong>Database</strong>We’re changing how we cache the email to be able to consume the UI faster, and moving the database work for after the first version is out to the users.</li>
 </ul>
 <h2><i class="ph ph-rocket-launch"></i>已推出</h2>
 <ul>
-<li><strong>账户创建流程</strong>实现全自动和手动设置包括自动发现和 OAuth。<div class="date-badge">2026 年 3 月</div></li>
 <li><strong>架构</strong>建立一个健壮且可扩展的架构以开始 Thunderbird iOS 版项目并创建后端。此架构将包含跨平台代码共享的策略同时兼顾 Android 和桌面客户端。<div class="date-badge">2025 年 7 月</div></li>
 <li><strong>自动配置</strong>已将 DNS MX 查询添加至自动配置功能库并将 SRV 记录查找移动至自动配置功能库并删除自动发现核心功能库<div class="date-badge">2025 年 9 月</div></li>
+<li><strong>账户创建流程</strong>实现全自动和手动设置包括自动发现和 OAuth。<div class="date-badge">2026 年 3 月</div></li>
+<li><strong>iOS Create Protocol &amp; Framework</strong>Implement the IMAP protocol first as it's the most widespread protocol currently in use. We completed the protocol work and basic framework.<div class="date-badge">June 2026</div> </li>
 </ul>
   
 
