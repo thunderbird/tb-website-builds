@@ -972,23 +972,25 @@
 <div class="product-roadmap-header">
 <h1>Lộ trình ứng dụng iOS</h1>
 <p>Thunderbird dành cho iOS. Theo dõi lộ trình từ những công việc đang thực hiện đến những ý tưởng tương lai. Thời gian biểu có thể thay đổi khi chúng tôi học hỏi và cải tiến.</p>
-<p style="font-size: 16px;">Cập nhật lần cuối ngày 31 tháng 3 năm 2026</p>
+<p style="font-size: 16px;">Last updated July 23, 2026</p>
 <p><a href="https://testflight.apple.com/join/ER3hRBSz">Tải xuống ứng dụng TestFlight</a></p>
 </div>
 <h2><i class="ph ph-pulse"></i>Hoạt động</h2>
 <ul>
-<li><strong>Khởi tạo giao thức, cơ sở dữ liệu &amp; framework trên iOS</strong>Triển khai giao thức IMAP trước tiên vì đây là giao thức phổ biến nhất đang được sử dụng hiện nay.</li>
-<li><strong>Trải nghiệm viết và đọc email toàn diện</strong>Triển khai đầy đủ trải nghiệm đọc và viết email trên thiết bị di động, bao gồm hỗ trợ ban đầu cho thư mã hóa (OpenPGP và S/MIME với các thư viện hiện có).</li>
+<li><strong>Trải nghiệm viết và đọc email toàn diện</strong>Implement the full reading and writing email experience on mobile, including initial support for encrypted messages (OpenPGP and S/MIME with existing libraries). WYSIWYG is now wrapping up. The next piece is to connect the protocol and database to render email.</li>
+<li><strong>JMAP Support - Exploration</strong>Already 80% finished. The intention is to implement the full protocol with all the basic infrastructure in place.</li>
 </ul>
 <h2><i class="ph ph-calendar-blank"></i>Đã lên kế hoạch</h2>
 <ul>
-<li><strong>Hỗ trợ JMAP</strong>Hỗ trợ giao thức JMAP như một trong những giao thức bổ sung đầu tiên được tích hợp sẵn theo mặc định, bên cạnh IMAP.</li>
+<li><strong>JMAP Support - Complete Implementation</strong>Support the JMAP protocol as one of the first extra protocols we ship with by default outside of IMAP. Currently we are prioritizing IMAP and a first user release.</li>
+<li><strong>Database</strong>We’re changing how we cache the email to be able to consume the UI faster, and moving the database work for after the first version is out to the users.</li>
 </ul>
 <h2><i class="ph ph-rocket-launch"></i>Đã phát hành</h2>
 <ul>
-<li><strong>Quy trình tạo tài khoản</strong>Triển khai thiết lập hoàn toàn tự động và thủ công, bao gồm tự động phát hiện và xác thực OAuth.<div class="date-badge">Tháng 3 năm 2026</div></li>
 <li><strong>Kiến trúc</strong>Xây dựng một kiến ​​trúc mạnh mẽ và có khả năng mở rộng để bắt đầu dự án Thunderbird cho iOS và tạo ra phần backend. Kiến trúc này sẽ bao gồm các chiến lược chia sẻ mã nguồn giữa các nền tảng, có tính đến cả ứng dụng Android và máy tính.<div class="date-badge">Tháng 7 năm 2025</div></li>
 <li><strong>Cấu hình tự động</strong>Thêm cơ chế tra cứu DNS MX vào thư viện tính năng autoconfig, chuyển phần tra cứu bản ghi SRV vào thư viện này, đồng thời xóa bỏ thư viện cốt lõi Autodiscover<div class="date-badge">Tháng 9 năm 2025</div></li>
+<li><strong>Quy trình tạo tài khoản</strong>Triển khai thiết lập hoàn toàn tự động và thủ công, bao gồm tự động phát hiện và xác thực OAuth.<div class="date-badge">Tháng 3 năm 2026</div></li>
+<li><strong>iOS Create Protocol &amp; Framework</strong>Implement the IMAP protocol first as it's the most widespread protocol currently in use. We completed the protocol work and basic framework.<div class="date-badge">June 2026</div></li>
 </ul>
   
 

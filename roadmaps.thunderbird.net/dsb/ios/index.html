@@ -972,23 +972,25 @@
 <div class="product-roadmap-header">
 <h1>Wuwijański plan za iOS</h1>
 <p>Thunderbird za iOS. Slědujśo wuwijańskemu planoju wót aktiwnego źěła do pśichodnych idejow. Casowe plany mógu se změniś, dokulaž wuknjomy a wóspjetujomy.</p>
-<p style="font-size: 16px;">Slědna aktualizacija: 31. měrca 2026</p>
+<p style="font-size: 16px;">Last updated July 23, 2026</p>
 <p><a href="https://testflight.apple.com/join/ER3hRBSz">Nałoženje Testflight ześěgnuś</a></p>
 </div>
 <h2><i class="ph ph-pulse"></i>Aktiwny</h2>
 <ul>
-<li><strong>iOS: Protokol, datowu banku a seś załožyś</strong>Ako prědne implementěrowanje protokola IMAP, dokulaž jo tuchylu nejdalej rozšyrjony protokol.</li>
-<li><strong>Wobšyrne dožywjenje pśi pisanju a cytanju mejlkow</strong>Implementěrowanje dopołnego cytaskego a pisańskego e-mailowego dožywjenja na mobilnem rěźe, inkluziwnje zachopnu pódpěru za skoděrowane powěsći (OpenPGP a S/MIME z eksistěrujucymi bibliotekami).</li>
+<li><strong>Wobšyrne dožywjenje pśi pisanju a cytanju mejlkow</strong>Implement the full reading and writing email experience on mobile, including initial support for encrypted messages (OpenPGP and S/MIME with existing libraries). WYSIWYG is now wrapping up. The next piece is to connect the protocol and database to render email.</li>
+<li><strong>JMAP Support - Exploration</strong>Already 80% finished. The intention is to implement the full protocol with all the basic infrastructure in place.</li>
 </ul>
 <h2><i class="ph ph-calendar-blank"></i>Planowany</h2>
 <ul>
-<li><strong>Pódpěra JMAP</strong>Pódpěranje protokola JMAP ako jaden z prědnych pśidatnych protokolow, kótarež pó standarźe zwenka IMAP póbitujomy.</li>
+<li><strong>JMAP Support - Complete Implementation</strong>Support the JMAP protocol as one of the first extra protocols we ship with by default outside of IMAP. Currently we are prioritizing IMAP and a first user release.</li>
+<li><strong>Database</strong>We’re changing how we cache the email to be able to consume the UI faster, and moving the database work for after the first version is out to the users.</li>
 </ul>
 <h2><i class="ph ph-rocket-launch"></i>Librowany</h2>
 <ul>
-<li><strong>Wótběg kontowego załoženja</strong>Implementěrowanje dopołneje awtomatizěrowaneje a manuelneje konfiguracije, inkluziwnje awtomatiske namakanje a OAuth.<div class="date-badge">Měrc 2026</div></li>
 <li><strong>Architektura</strong>Napóranje robustneje a skalěrujobneje architektury za wózjawjenje projekta Thunderbird za iOS a napóranje backenda. Toś ta architektura buźo strategije za źělenje koda pśez platformy wopśimowaś, źiwajucy na klienty za Android a desktop.<div class="date-badge">Julij 2025</div></li>
 <li><strong>Awtomatiska konfiguracija</strong>Pśidaśe wótpšašowanja DNS MX k bibliotece funkcijow awtomatiskeje konfiguracije a pśesunjenje wótpšašowanja zapiskow do biblioteki funkcijow awtomatiskeje konfiguracije a lašowanje jědroweje biblioteki Autodiscover<div class="date-badge">September 2025</div></li>
+<li><strong>Wótběg kontowego załoženja</strong>Implementěrowanje dopołneje awtomatizěrowaneje a manuelneje konfiguracije, inkluziwnje awtomatiske namakanje a OAuth.<div class="date-badge">Měrc 2026</div></li>
+<li><strong>iOS Create Protocol &amp; Framework</strong>Implement the IMAP protocol first as it's the most widespread protocol currently in use. We completed the protocol work and basic framework.<div class="date-badge">June 2026</div></li>
 </ul>
   
 

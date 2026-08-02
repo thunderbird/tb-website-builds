@@ -972,23 +972,25 @@
 <div class="product-roadmap-header">
 <h1>Vegkart for iOS</h1>
 <p>Thunderbird for iOS. Følg med på vegkartet frå aktuelle prosjekt til framtidige idéar. Tidsplanane kan endre seg medan vi lærer og gjer tilpassingar.</p>
-<p style="font-size: 16px;">Sist oppdatert 31. mars, 2026</p>
+<p style="font-size: 16px;">Last updated July 23, 2026</p>
 <p><a href="https://testflight.apple.com/join/ER3hRBSz">Last ned TestFlight-app</a></p>
 </div>
 <h2><i class="ph ph-pulse"></i>Aktiv</h2>
 <ul>
-<li><strong>iOS: Opprett protokoll, database og rammeverk</strong>Implementer IMAP-protokollen først, sidan han er den mest utbreidde protokollen som blir brukt i dag.</li>
-<li><strong>Full oppleving for skriving og lesing av e-post</strong>Implementer ei full oppleving for lesing og skriving av e-post på mobil, inkludert innleiande støtte for krypterte meldingar (OpenPGP og S/MIME med eksisterande bibliotek).</li>
+<li><strong>Full oppleving for skriving og lesing av e-post</strong>Implement the full reading and writing email experience on mobile, including initial support for encrypted messages (OpenPGP and S/MIME with existing libraries). WYSIWYG is now wrapping up. The next piece is to connect the protocol and database to render email.</li>
+<li><strong>JMAP Support - Exploration</strong>Already 80% finished. The intention is to implement the full protocol with all the basic infrastructure in place.</li>
 </ul>
 <h2><i class="ph ph-calendar-blank"></i>Planlagt</h2>
 <ul>
-<li><strong>JMAP-støtte</strong>Støtt JMAP-protokollen som ein av dei første ekstra protokollane vi leverer som standard, utover IMAP.</li>
+<li><strong>JMAP Support - Complete Implementation</strong>Support the JMAP protocol as one of the first extra protocols we ship with by default outside of IMAP. Currently we are prioritizing IMAP and a first user release.</li>
+<li><strong>Database</strong>We’re changing how we cache the email to be able to consume the UI faster, and moving the database work for after the first version is out to the users.</li>
 </ul>
 <h2><i class="ph ph-rocket-launch"></i>Lansert</h2>
 <ul>
-<li><strong>Flyt for kontooppretting</strong>Implementer eit fullstendig automatisk og manuelt oppsett, inkludert automatisk oppdaging og OAuth.<div class="date-badge">Mars 2026</div></li>
 <li><strong>Arkitektur</strong>Etabler ein robust og skalerbar arkitektur for å starte Thunderbird for iOS-prosjektet og opprette bakgrunnsmotoren. Denne arkitekturen vil omfatte strategiar for kodedeling på tvers av plattformer, med omsyn til Android- og datamaskinklientane.<div class="date-badge">Juli 2025</div></li>
 <li><strong>Autokonfigurasjon</strong>Legg til DNs MX-oppslag i funksjonsbiblioteket for autokonfigurasjon, flytt SRV-postoppslag inn i funksjonsbiblioteket for autokonfigurasjon og slett kjernebiblioteket for automatisk oppdaging<div class="date-badge">September 2025</div></li>
+<li><strong>Flyt for kontooppretting</strong>Implementer eit fullstendig automatisk og manuelt oppsett, inkludert automatisk oppdaging og OAuth.<div class="date-badge">Mars 2026</div></li>
+<li><strong>iOS Create Protocol &amp; Framework</strong>Implement the IMAP protocol first as it's the most widespread protocol currently in use. We completed the protocol work and basic framework.<div class="date-badge">June 2026</div></li>
 </ul>
   
 

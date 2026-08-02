@@ -972,23 +972,25 @@
 <div class="product-roadmap-header">
 <h1>Roadmap per iOS</h1>
 <p>Segui la roadmap di Thunderbird per iOS, dai progetti attualmente in sviluppo fino alle idee per il futuro. Tieni conto che le tempistiche potrebbero cambiare man mano che ci avviciniamo agli obiettivi.</p>
-<p style="font-size: 16px;">Ultimo aggiornamento: 31 marzo 2026</p>
+<p style="font-size: 16px;">Last updated July 23, 2026</p>
 <p><a href="https://testflight.apple.com/join/ER3hRBSz">Scarica l’app TestFlight</a></p>
 </div>
 <h2><i class="ph ph-pulse"></i>Attivi</h2>
 <ul>
-<li><strong>Sviluppo di protocolli, database e framework per iOS</strong>Implementazione del protocollo IMAP come priorità iniziale, in quanto è attualmente il protocollo più diffuso.</li>
-<li><strong>Esperienza completa di scrittura e lettura email</strong>Implementazione dell’esperienza completa di lettura e scrittura delle email su dispositivi mobili, incluso il supporto iniziale ai messaggi crittati (OpenPGP e S/MIME tramite librerie esistenti).</li>
+<li><strong>Esperienza completa di scrittura e lettura email</strong>Implement the full reading and writing email experience on mobile, including initial support for encrypted messages (OpenPGP and S/MIME with existing libraries). WYSIWYG is now wrapping up. The next piece is to connect the protocol and database to render email.</li>
+<li><strong>JMAP Support - Exploration</strong>Already 80% finished. The intention is to implement the full protocol with all the basic infrastructure in place.</li>
 </ul>
 <h2><i class="ph ph-calendar-blank"></i>Pianificati</h2>
 <ul>
-<li><strong>Supporto per JMAP</strong>Supporto per il protocollo JMAP come uno dei primi protocolli aggiuntivi forniti per impostazione predefinita oltre a IMAP.</li>
+<li><strong>JMAP Support - Complete Implementation</strong>Support the JMAP protocol as one of the first extra protocols we ship with by default outside of IMAP. Currently we are prioritizing IMAP and a first user release.</li>
+<li><strong>Database</strong>We’re changing how we cache the email to be able to consume the UI faster, and moving the database work for after the first version is out to the users.</li>
 </ul>
 <h2><i class="ph ph-rocket-launch"></i>Completati</h2>
 <ul>
-<li><strong>Flusso di creazione account</strong>Implementazione di una configurazione completamente automatizzata e di una manuale, con rilevamento automatico e supporto OAuth.<div class="date-badge">Marzo 2026</div></li>
 <li><strong>Architettura</strong>Definizione di un’architettura solida e scalabile per l’avvio del progetto Thunderbird per iOS e la creazione del backend, con strategie di condivisione del codice tra piattaforme, tenendo conto dei client Android e desktop.<div class="date-badge">Luglio 2025</div></li>
 <li><strong>Configurazione automatica</strong>Aggiunta del supporto alla ricerca tramite DNS dei record MX nella libreria di configurazione automatica, spostamento della ricerca dei record SRV nella stessa libreria ed eliminazione della libreria principale di Autodiscover.<div class="date-badge">Settembre 2025</div></li>
+<li><strong>Flusso di creazione account</strong>Implementazione di una configurazione completamente automatizzata e di una manuale, con rilevamento automatico e supporto OAuth.<div class="date-badge">Marzo 2026</div></li>
+<li><strong>iOS Create Protocol &amp; Framework</strong>Implement the IMAP protocol first as it's the most widespread protocol currently in use. We completed the protocol work and basic framework.<div class="date-badge">June 2026</div></li>
 </ul>
   
 
