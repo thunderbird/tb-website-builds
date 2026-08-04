@@ -980,13 +980,13 @@
 <li><strong>Exchange (EWS, GraphAPI)</strong>Οριστικοποίηση των εργασιών για το πρωτόκολλο Exchange, προκειμένου να υποστηρίζονται όλες οι εκδόσεις του Exchange και του Microsoft 365, συμπεριλαμβανομένης της υποστήριξης ημερολογίου και ευρετηρίου διευθύνσεων.</li>
 <li><strong>Καθολική βάση δεδομένων</strong>Συνέχιση των εργασιών για τη νέα βάση δεδομένων Panorama, επιτρέποντας στους χρήστες να ξεκινήσουν τις δοκιμές της νέας βάσης δεδομένων, καθώς και διαχείριση μιας συνεπούς μεταφοράς δεδομένων.</li>
 <li><strong>Βελτίωση και επέκταση των υπαρχόντων API για τα πρόσθετα</strong>Βελτίωση των τρεχόντων διαθέσιμων API, εστίαση στην παροχή πρόσβασης σε νέες ενότητες και βασικές λειτουργίες, καθώς και εισαγωγή νέων API για συγκεκριμένες ενότητες.</li>
-<li><strong>Βελτιώσεις κρυπτογράφησης και ασφάλειας</strong>Improve the support and discovery of OpenPGP and S/MIME, improve email tracking protection, and harden phishing email prevention. These will continue all year as we respond to high priority vulnerabilities, upstream changes, AI-powered sec reports and regressions. (Ongoing maintenance)</li>
-<li><strong>Βελτιώσεις περιβάλλοντος ρυθμίσεων</strong>Clean up and reorganize the settings into more discoverable sections and improve its search. User survey will heavily influence the end result.</li>
+<li><strong>Βελτιώσεις κρυπτογράφησης και ασφάλειας</strong>Βελτίωση υποστήριξης και ανακάλυψης των OpenPGP και S/MIME, της προστασίας από καταγραφή email και ενίσχυση την πρόληψης email από ηλεκτρονικό ψάρεμα. Αυτά θα συνεχιστούν όλο το χρόνο, καθώς ανταποκρινόμαστε σε ευπάθειες υψηλής προτεραιότητας, προγενέστερες αλλαγές, άμεσες αναφορές που βασίζονται σε ΤΝ και παλινδρομήσεις. (Συντήρηση σε εξέλιξη)</li>
+<li><strong>Βελτιώσεις περιβάλλοντος ρυθμίσεων</strong>Εκκαθάριση και οργάνωση ρυθμίσεων σε πιο ευανάγνωστες ενότητες και βελτίωση της αναζήτησης. Η έρευνα χρηστών θα επηρεάσει σε μεγάλο βαθμό το τελικό αποτέλεσμα.</li>
 <li><strong>UI/UX των παραθύρων διαλόγου του ημερολογίου</strong>Ολοκλήρωση της ανανέωσης του περιβάλλοντος και της εμπειρίας χρήστη για τα ημερολόγια. Ενδέχεται να χρειαστούν ορισμένες αλλαγές στη διαχείριση πρωτοκόλλων.</li>
 </ul>
 <h2><i class="ph ph-calendar-blank"></i>Μελλοντικά</h2>
 <ul>
-<li><strong>OAuth2 Enhancements</strong>OAuth became a significant initiative due to evolving provider authentication requirements (including PKCE adoption), browser-based authentication improvements, and the need to deliver a seamless Thundermail sign-in experience.</li>
+<li><strong>Βελτιώσεις OAuth2</strong>Το OAuth έγινε μια σημαντική πρωτοβουλία λόγω των εξελισσόμενων απαιτήσεων ταυτοποίησης παρόχων (συμπεριλαμβανομένης της υιοθέτησης του PKCE), των βελτιώσεων ταυτοποίησης που βασίζονται σε προγράμματα περιήγησης και της ανάγκης για μια απρόσκοπτη εμπειρία σύνδεσης στο Thundermail.</li>
 </ul>
 <h2><i class="ph ph-rocket-launch"></i>Παραδομένα</h2>
 <ul>
@@ -996,8 +996,8 @@
 <li><strong>Εγγενείς ειδοποιήσεις λειτουργικού συστήματος</strong>Προσθήκη γρήγορων ενεργειών για απάντηση, διαγραφή, σήμανση μηνυμάτων ως (μη) αναγνωσμένων και διαχείριση των ειδοποιήσεων.<div class="date-badge">Ιούλιος 2025</div></li>
 <li><strong>Υλοποίηση τηλεμετρίας Glean</strong>Απομάκρυνση από την παλιά υλοποίηση τηλεμετρίας και προσθήκη της νέας τηλεμετρίας Glean.<div class="date-badge">Απρίλιος 2025</div></li>
 <li><strong>Ειδοποιήσεις εντός εφαρμογής</strong>Υλοποίηση ενός νέου συστήματος ειδοποιήσεων που επιτρέπει στην ομάδα του Thunderbird να προωθεί σημαντικές, επείγουσες πληροφορίες απευθείας στο πρόγραμμα Thunderbird για υπολογιστές.<div class="date-badge">Μάιος 2025</div></li>
-<li><strong>First Time User Experience</strong>We had to refocus on the email onboarding section of the Account Hub due to Exchange, Graph, and Thundermail release. User feedback &amp; telemetry data points at a large percentage of manual config usage, and the new protocols come with very complex manual user flows. First introduction of a 1-click setup OAuth for Thundermail.<div class="date-badge">Ιούνιος 2026</div></li>
-<li><strong>System add-on integration</strong>Allowing to ship ad-hoc features faster for objectives that supersede the release train. This will be in 153!<div class="date-badge">Ιούνιος 2026</div></li>
+<li><strong>Εμπειρία πρώτης χρήσης</strong>Αναγκαστήκαμε να επικεντρωθούμε εκ νέου στην ενότητα ένταξη email του Κέντρου λογαριασμών λόγω των κυκλοφοριών Exchange, Graph και Thundermail. Σχόλια χρηστών και δεδομένα τηλεμετρίας δείχνουν σε μεγάλο ποσοστό τη χρήση χειροκίνητων ρυθμίσεων και τα νέα πρωτόκολλα συνοδεύονται από πολύ περίπλοκες ροές χρήσης. Πρώτη παρουσίαση ενός ρυθμισμένου OAuth για Thundermail με 1 κλικ.<div class="date-badge">Ιούνιος 2026</div></li>
+<li><strong>Ενσωμάτωση προσθέτων συστήματος</strong>Allowing to ship ad-hoc features faster for objectives that supersede the release train. This will be in 153!<div class="date-badge">Ιούνιος 2026</div></li>
 </ul>
   
 
