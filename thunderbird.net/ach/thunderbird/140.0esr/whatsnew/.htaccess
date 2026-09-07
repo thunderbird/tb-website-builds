@@ -1,2 +1,0 @@
-RewriteEngine On
-RewriteRule .* https://updates.thunderbird.net/ach/thunderbird/140.0/whatsnew/
