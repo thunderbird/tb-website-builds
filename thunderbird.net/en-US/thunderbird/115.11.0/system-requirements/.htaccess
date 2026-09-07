@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule .* https://www.thunderbird.net/thunderbird/115.11.0esr/system-requirements
