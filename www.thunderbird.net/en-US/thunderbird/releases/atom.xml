@@ -8,7 +8,7 @@
   <title>Thunderbird Release Notes</title>
   <subtitle type="text">Thunderbird Release Notes feed provides a simple way to keep up to date with Thunderbird releases.</subtitle>
 
-  <updated>2026-09-11T16:52:09+00:00</updated>
+  <updated>2026-09-11T17:13:27+00:00</updated>
   <logo>https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png</logo>
   <icon>https://www.thunderbird.net/media/img/thunderbird/favicon-196.png</icon>
 
@@ -383,7 +383,7 @@
         
 
         <li>
-          <p>Preference '<code>mail.offer_experimental_features</code> renamed to <code>mail.experimental_features_settings.enabled</code>'</p>
+          <p>Preference <code>mail.offer_experimental_features</code> renamed to <code>mail.experimental_features_settings.enabled</code></p>
           
         </li>
       
@@ -696,24 +696,6 @@
 
         <li>
           <p>Users could not set up custom OAuth for Exchange accounts</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Empty filter search values matched every message</p>
           
         </li>
       
