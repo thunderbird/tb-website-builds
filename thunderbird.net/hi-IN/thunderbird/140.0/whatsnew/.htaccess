@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule .* https://updates.thunderbird.net/hi-IN/thunderbird/140.0/whatsnew/
