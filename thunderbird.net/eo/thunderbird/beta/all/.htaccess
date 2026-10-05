@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule .* /eo/thunderbird/all/?release=beta
