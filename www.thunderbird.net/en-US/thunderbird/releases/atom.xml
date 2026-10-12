@@ -8,7 +8,7 @@
   <title>Thunderbird Release Notes</title>
   <subtitle type="text">Thunderbird Release Notes feed provides a simple way to keep up to date with Thunderbird releases.</subtitle>
 
-  <updated>2026-10-12T14:32:26+00:00</updated>
+  <updated>2026-10-12T20:07:51+00:00</updated>
   <logo>https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png</logo>
   <icon>https://www.thunderbird.net/media/img/thunderbird/favicon-196.png</icon>
 
@@ -16,6 +16,131 @@
   <link rel="self" type="application/atom+xml" href="https://www.thunderbird.net/thunderbird/releases/atom.xml"/>
 
   <generator uri="https://www.thunderbird.net" version="1.0">thunderbird-website</generator>
+  
+  <entry>
+    <id>https://www.thunderbird.net/en-US/thunderbird/153.5.0esr/releasenotes/</id>
+    <title type="html">Thunderbird 153.5.0esr</title>
+    <author>
+      <name>Thunderbird</name>
+      <uri>https://www.thunderbird.net</uri>
+    </author>
+    <link rel="alternate" type="text/html" href="https://www.thunderbird.net/en-US/thunderbird/153.5.0esr/releasenotes/"/>
+    <updated>2026-10-13T00:00:00+00:00</updated>
+    <published>2026-10-13T00:00:00+00:00</published>
+
+    <content type="html"><![CDATA[
+      
+
+  
+  
+
+  
+    
+
+    
+      
+        
+        
+
+        
+          <h3>Fixed</h3>
+        
+
+        
+        
+          <ul>
+        
+
+        
+        
+
+        <li>
+          <p>Troubleshooting falsely reported crash reports were not configured when available</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Switching to Unified Folders could leave All Folders enabled and not change view</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Archived Inbox folders ignored localized names and appeared as "INBOX"</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Plain-text inline forwards omitted signatures placed below the quote</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p><a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird153.5">Security fixes</a></p>
+          
+        </li>
+      
+    
+    </ul>
+  
+  
+
+<p>As always, you’re encouraged to <a href="https://connect.mozilla.org/t5/ideas/idb-p/ideas/label-name/thunderbird">tell us what you think</a>, <a href="https://support.mozilla.org/questions/new/thunderbird">ask for help</a>, or <a href="https://bugzilla.mozilla.org/enter_bug.cgi?product=Thunderbird">file a bug in Bugzilla</a></p>
+<style> li p { display: inline; } </style>
+      ]]>
+    </content>
+  </entry>
   
   <entry>
     <id>https://www.thunderbird.net/en-US/thunderbird/158.0/releasenotes/</id>
@@ -1842,683 +1967,6 @@
 
         <li>
           <p><a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird140.16">Security fixes</a></p>
-          
-        </li>
-      
-    
-    </ul>
-  
-  
-
-<p>As always, you’re encouraged to <a href="https://connect.mozilla.org/t5/ideas/idb-p/ideas/label-name/thunderbird">tell us what you think</a>, <a href="https://support.mozilla.org/questions/new/thunderbird">ask for help</a>, or <a href="https://bugzilla.mozilla.org/enter_bug.cgi?product=Thunderbird">file a bug in Bugzilla</a></p>
-<style> li p { display: inline; } </style>
-      ]]>
-    </content>
-  </entry>
-  
-  <entry>
-    <id>https://www.thunderbird.net/en-US/thunderbird/156.0/releasenotes/</id>
-    <title type="html">Thunderbird 156.0</title>
-    <author>
-      <name>Thunderbird</name>
-      <uri>https://www.thunderbird.net</uri>
-    </author>
-    <link rel="alternate" type="text/html" href="https://www.thunderbird.net/en-US/thunderbird/156.0/releasenotes/"/>
-    <updated>2026-09-15T00:00:00+00:00</updated>
-    <published>2026-09-15T00:00:00+00:00</published>
-
-    <content type="html"><![CDATA[
-      
-
-  
-  
-
-  
-    
-
-    
-      
-        
-        
-
-        
-          <h3>What’s New</h3>
-        
-
-        
-        
-          <ul>
-        
-
-        
-        
-
-        <li>
-          <p>OpenPGP key properties can print debug information to the Error Console</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>External browser login flow enabled for Yandex</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Custom OAuth support for issuer ID and client secret field for IMAP and POP3</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Custom OAuth support for POP3</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Enterprise policy <code>DisableUpdateSettings</code> prevents users from changing update settings</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Enterprise policy <code>DisableDataCollectionSettings</code> prevents users from changing data collection setting</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Enterprise policy <code>DisableMessageForwardingFilters</code> prevents message filters from automatically forwarding messages</p>
-          
-        </li>
-      
-    
-      
-        
-        
-          </ul>
-        
-
-        
-          <h3>Changed</h3>
-        
-
-        
-        
-          <ul>
-        
-
-        
-        
-
-        <li>
-          <p>Preference <code>mail.offer_experimental_features</code> renamed to <code>mail.experimental_features_settings.enabled</code></p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Thundermail built-in add-on updated to v2.0.11</p>
-          
-        </li>
-      
-    
-      
-        
-        
-          </ul>
-        
-
-        
-          <h3>Fixed</h3>
-        
-
-        
-        
-          <ul>
-        
-
-        
-        
-
-        <li>
-          <p>Detached attachment links were truncated when folder path contained <code>&amp;</code></p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Opening a PDF attachment in a tab displayed empty tab</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>POP3 folders with names over 55 characters could become duplicated after upgrading</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Folders with invalid filename characters could show hashed names if cache was lost</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Save All, Detach All, and Delete All failed after deleting one attachment</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Renaming folders could reset folder settings</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Subscribing an IMAP folder and subfolder together failed to subscribe the subfolder</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Some newly fetched POP messages were not marked with new star after startup</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Sorting after deleting the only child message removed the parent from view</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>OpenPGP signing failed with external GnuPG when the primary key could not sign</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Remote content could load in encrypted messages opened from files</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Sent message with expired S/MIME certificate wrongly showed untrusted CA warning</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>PDF attachments from compose windows could wrongly be detected as HTML</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Saving unconfirmed recipients could create invalid address pills with <code>&gt;&gt;</code></p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>External browser OAuth failed when a browser preconnection closed first</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Users could not set up custom OAuth for Exchange accounts</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Pressing Enter on Windows system tray icon did not restore Thunderbird window</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Inline attachments incorrectly changed the message channel content type</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Message loading was slow while discovering large numbers of IMAP folders</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>SMTP authentication failed when usernames contained non-ASCII characters</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Unsupported EWS archive folder prevented all mailbox folders from syncing</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Manual Get Messages failed after startup until toggling offline mode</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Case differences in CalDAV email addresses caused duplicate invitations</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Accepted CalDAV invitations could be saved to the wrong calendar</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p>Visual and UX improvements</p>
-          
-        </li>
-      
-    
-      
-        
-        
-
-        
-
-        
-        
-
-        
-        
-
-        <li>
-          <p><a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird156">Security fixes</a></p>
           
         </li>
       
