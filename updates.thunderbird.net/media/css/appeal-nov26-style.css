@@ -1448,7 +1448,7 @@ body {
   position: relative;
   width: 100%;
   max-width: 80rem;
-  padding: 4rem 1.25rem 5.5rem;
+  padding: 4rem 1.25rem 3.5rem;
 }
 .page-appeal-nov26 #appeal-header header {
   z-index: 3;
@@ -1456,23 +1456,12 @@ body {
 }
 @media (min-width: 30rem) {
   .page-appeal-nov26 #appeal-header {
-    padding-block-end: 4.75rem;
-  }
-}
-@media (min-width: 30rem) and (max-width: 79.9375rem) {
-  .page-appeal-nov26 #appeal-header {
-    padding-inline: max(2.25rem, calc((100% - var(--appeal-content-width)) / 2));
-  }
-}
-@media (min-width: 64rem) {
-  .page-appeal-nov26 #appeal-header {
-    padding-block-end: 8.6875rem;
+    padding: 6.25rem 3rem 6.25rem;
   }
 }
 @media (min-width: 80rem) {
   .page-appeal-nov26 #appeal-header {
-    padding-block-start: 8.75rem;
-    padding-inline: 3rem;
+    padding: 8.75rem 3rem 8.6875rem;
   }
 }
 .page-appeal-nov26 #appeal-heading {
@@ -1527,13 +1516,8 @@ body {
 @media (min-width: 30rem) {
   .page-appeal-nov26 #appeal-lead {
     font-size: 1.5rem;
-    margin-block-start: 2.5rem;
+    margin-top: 2.5rem;
     max-width: 42rem;
-  }
-}
-@media (min-width: 30rem) and (max-width: 36.9375rem) {
-  .page-appeal-nov26 #appeal-lead {
-    font-size: 1.125rem;
   }
 }
 @media (min-width: 80rem) {
@@ -1569,11 +1553,6 @@ body {
     width: 15.875rem;
   }
 }
-@media (min-width: 56rem) and (max-width: 79.9375rem) {
-  .page-appeal-nov26 #illustration {
-    right: max(2.25rem, calc((100% - var(--appeal-content-width)) / 2));
-  }
-}
 @media (min-width: 80rem) {
   .page-appeal-nov26 #illustration {
     right: 2rem;
@@ -1589,8 +1568,8 @@ body {
   max-width: calc(100% - 2.5rem);
   min-height: 445px;
   margin-inline: 1.25rem;
-  padding: 4rem 1.5rem 1.5rem;
-  box-shadow: 0 12px 20px 0 rgba(149, 4, 4, 0.2);
+  padding: 6rem 1.5rem 1.5rem;
+  filter: drop-shadow(0 12px 10px rgba(35, 32, 130, 0.3));
 }
 @media (min-width: 30rem) {
   .page-appeal-nov26 .letter-container {
@@ -1673,7 +1652,7 @@ body {
 }
 .page-appeal-nov26 #donate-button-container {
   position: absolute;
-  top: -3rem;
+  top: -1rem;
   left: 50%;
   transform: translate(-50%, 0);
   z-index: 3;
@@ -1744,7 +1723,7 @@ body {
 .page-appeal-nov26 #donate-button-container #donate-banner-left b {
   font-size: 2.037rem;
   font-weight: 600;
-  letter-spacing: 0.01rem;
+  letter-spacing: 2.21px;
 }
 @media (min-width: 30rem) {
   .page-appeal-nov26 #donate-button-container #donate-banner-left {
