@@ -1,2 +1,0 @@
-RewriteEngine On
-RewriteRule .* /en-ZA/thunderbird/128.0/whatsnew
