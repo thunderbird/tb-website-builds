@@ -972,18 +972,19 @@
 <div class="product-roadmap-header">
 <h1>Lộ trình ứng dụng iOS</h1>
 <p>Thunderbird dành cho iOS. Theo dõi lộ trình từ những công việc đang thực hiện đến những ý tưởng tương lai. Thời gian biểu có thể thay đổi khi chúng tôi học hỏi và cải tiến.</p>
-<p style="font-size: 16px;">Cập nhật lần cuối ngày 23 tháng 7 năm 2026</p>
+<p style="font-size: 16px;">Last updated October 22, 2026</p>
 <p><a href="https://testflight.apple.com/join/ER3hRBSz">Tải xuống ứng dụng TestFlight</a></p>
 </div>
 <h2><i class="ph ph-pulse"></i>Hoạt động</h2>
 <ul>
-<li><strong>Trải nghiệm viết và đọc email toàn diện</strong>Triển khai đầy đủ trải nghiệm đọc và viết email trên thiết bị di động, bao gồm hỗ trợ ban đầu cho thư mã hóa (OpenPGP và S/MIME với các thư viện hiện có). Quá trình phát triển "Những gì bạn thấy là những gì bạn nhận được" hiện đang hoàn tất. Bước tiếp theo là kết nối giao thức và cơ sở dữ liệu để hiển thị email.</li>
-<li><strong>Hỗ trợ JMAP - Khám phá</strong>Đã hoàn thành 80%. Mục tiêu là triển khai toàn bộ giao thức với đầy đủ cơ sở hạ tầng cơ bản.</li>
+<li><strong>Trải nghiệm viết và đọc email toàn diện</strong>Implement the full reading and writing email experience on mobile. Compose, reading, and writing are in place; the remaining piece is rendering the inbox.</li>
+<li><strong>Calendar Exploration</strong>Exploring calendar support with a platform-agnostic approach alongside Android, while looking for some quick wins on iOS.</li>
 </ul>
 <h2><i class="ph ph-calendar-blank"></i>Đã lên kế hoạch</h2>
 <ul>
-<li><strong>Hỗ trợ JMAP - Triển khai hoàn chỉnh</strong>Chúng tôi sẽ hỗ trợ giao thức JMAP như một trong những giao thức bổ sung đầu tiên được tích hợp sẵn ngoài IMAP. Hiện tại, chúng tôi đang ưu tiên IMAP và bản phát hành đầu tiên cho người dùng.</li>
-<li><strong>Cơ sở dữ liệu</strong>Chúng tôi đang thay đổi cách lưu trữ email vào bộ nhớ đệm để có thể sử dụng giao diện người dùng nhanh hơn, và chuyển công việc liên quan đến cơ sở dữ liệu sang sau khi phiên bản đầu tiên được phát hành cho người dùng.</li>
+<li><strong>Hỗ trợ JMAP - Triển khai hoàn chỉnh</strong>Support the JMAP protocol as one of the first extra protocols we ship with by default outside of IMAP. Currently we are prioritizing IMAP so the first release covers all email users. Now planned for 2027.</li>
+<li><strong>Database - Phase 2</strong>Split out from the protocol and framework work to provide more fully featured database operations. The first version of the app can ship using an in-memory cache with minimal database functionality.</li>
+<li><strong>Email Encryption Support</strong>Initial support for encrypted messages (OpenPGP and S/MIME with existing libraries). This was previously part of the Full Email Writing and Reading Experience initiative and is now planned for 2027. We are focusing on the core app experience first: encryption needs an app that reliably loads emails for reading and writing, and because every provider implements the mail standards (IMAP/SMTP/MIME) a little differently, we are making sure every case is covered and reliable before building on top of it.</li>
 </ul>
 <h2><i class="ph ph-rocket-launch"></i>Đã phát hành</h2>
 <ul>
@@ -991,6 +992,7 @@
 <li><strong>Cấu hình tự động</strong>Thêm cơ chế tra cứu DNS MX vào thư viện tính năng autoconfig, chuyển phần tra cứu bản ghi SRV vào thư viện này, đồng thời xóa bỏ thư viện cốt lõi Autodiscover<div class="date-badge">Tháng 9 năm 2025</div></li>
 <li><strong>Quy trình tạo tài khoản</strong>Triển khai thiết lập hoàn toàn tự động và thủ công, bao gồm tự động phát hiện và xác thực OAuth.<div class="date-badge">Tháng 3 năm 2026</div></li>
 <li><strong>iOS Tạo giao thức &amp; Framework</strong>Ưu tiên triển khai giao thức IMAP trước vì đây là giao thức được sử dụng rộng rãi nhất hiện nay. Chúng tôi đã hoàn thành công việc về giao thức và framework cơ bản.<div class="date-badge">Tháng 6 năm 2026</div></li>
+<li><strong>Hỗ trợ JMAP - Khám phá</strong>Initial exploration of the JMAP protocol is complete. The full scaffolding will be done as part of the complete implementation.<div class="date-badge">September 2026</div></li>
 </ul>
   
 

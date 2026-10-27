@@ -972,24 +972,28 @@
 <div class="product-roadmap-header">
 <h1>Lộ trình ứng dụng máy tính</h1>
 <p>Thunderbird dành cho Windows, macOS, và Linux. Theo dõi lộ trình từ công việc hiện tại đến những ý tưởng tương lai. Thời gian biểu có thể thay đổi khi chúng tôi học hỏi và cải tiến.</p>
-<p style="font-size: 16px;">Cập nhật lần cuối ngày 23 tháng 7 năm 2026</p>
+<p style="font-size: 16px;">Last updated October 22, 2026</p>
 <p><a href="https://www.thunderbird.net/en-US/thunderbird/all/#select-download-desktop">Tải xuống Thunderbird dành cho máy tính</a></p>
 </div>
 <h2><i class="ph ph-pulse"></i>Hoạt động</h2>
 <ul>
-<li><strong>Exchange (EWS, GraphAPI)</strong>Hoàn thiện công việc về giao thức Exchange để hỗ trợ tất cả các phiên bản Exchange và Microsoft 365, bao gồm hỗ trợ lịch và sổ địa chỉ.</li>
+<li><strong>Exchange (EWS, GraphAPI)</strong>Finalize the work on the Exchange protocol in order to support all versions of Exchange and Microsoft 365, including calendar and address book support. Graph API support for email is finished, and calendar discovery and event sync have been implemented.</li>
 <li><strong>Cơ sở dữ liệu chung</strong>Tiếp tục phát triển cơ sở dữ liệu Panorama mới, cho phép người dùng bắt đầu thử nghiệm và thực hiện quá trình chuyển đổi dữ liệu một cách nhất quán.</li>
 <li><strong>Cải tiến và mở rộng các API tiện ích mở rộng hiện có</strong>Cải thiện các API hiện có, tập trung vào việc cung cấp quyền truy cập vào các phần mới và các tính năng cốt lõi, cũng như giới thiệu các API mới cho các phần cụ thể.</li>
-<li><strong>Cải tiến mã hoá và bảo mật</strong>Cải thiện khả năng hỗ trợ và phát hiện OpenPGP và S/MIME, nâng cao khả năng bảo vệ chống theo dõi email và tăng cường phòng chống email lừa đảo. Những công việc này sẽ tiếp tục được thực hiện trong suốt cả năm khi chúng tôi xử lý các lỗ hổng bảo mật ưu tiên cao, các thay đổi từ nguồn gốc, các báo cáo bảo mật dựa trên AI và các lỗi hồi quy. (Bảo trì liên tục)</li>
-<li><strong>Cải tiến giao diện cài đặt</strong>Dọn dẹp và sắp xếp lại các cài đặt thành các mục dễ tìm kiếm hơn, đồng thời cải thiện chức năng tìm kiếm. Khảo sát người dùng sẽ ảnh hưởng lớn đến kết quả cuối cùng.</li>
-<li><strong>Giao diện và trải nghiệm người dùng của hộp thoại lịch</strong>Hoàn tất việc làm mới giao diện lịch và trải nghiệm người dùng. Một số giao thức xử lý thay đổi có thể cần được điều chỉnh.</li>
+<li><strong>Cải tiến mã hoá và bảo mật</strong>Improve the support and discovery of OpenPGP and S/MIME, improve email tracking protection, and harden phishing email prevention. These will continue all year as we respond to high priority vulnerabilities, upstream changes, AI-powered sec reports and regressions. Post-quantum encryption has also come a long way, see the<a href="https://wiki.mozilla.org/Thunderbird:OpenPGP:PQCTesting">PQC testing page</a>. (Ongoing maintenance)</li>
+<li><strong>Cải tiến giao diện cài đặt</strong>Clean up and reorganize the settings into more discoverable sections and improve its search. User survey will heavily influence the end result. We are aiming to have all the strings, content navigation, and a first round of UI refresh completed by the end of 2026.</li>
+<li><strong>Giao diện và trải nghiệm người dùng của hộp thoại lịch</strong>Complete the refresh of the calendar interface and user experience. Some protocols handling changes might be needed. This work will also land a major part of the compose window refresh.</li>
+<li><strong>System Add-on Integration - Remote Updates</strong>Building on the system add-on integration shipped in 153, enable system add-ons to be updated remotely, outside of the regular release train.</li>
 </ul>
 <h2><i class="ph ph-calendar-blank"></i>Đã lên kế hoạch</h2>
 <ul>
-<li><strong>Cải tiến OAuth2</strong>OAuth trở thành một sáng kiến ​​quan trọng do các yêu cầu xác thực của nhà cung cấp ngày càng phát triển (bao gồm cả việc áp dụng PKCE), những cải tiến về xác thực dựa trên trình duyệt và nhu cầu cung cấp trải nghiệm đăng nhập Thundermail liền mạch.</li>
+<li><strong>Conversation View</strong>Display related messages together as a single conversation. This work depends on the new Global Database (Panorama).</li>
+<li><strong>JMAP</strong>Add support for the JMAP protocol. This will be a priority in 2027 as Thundermail opens to the public and leverages JMAP.</li>
 </ul>
 <h2><i class="ph ph-rocket-launch"></i>Đã phát hành</h2>
 <ul>
+<li><strong>Cải tiến OAuth2</strong>OAuth became a significant initiative due to evolving provider authentication requirements (including PKCE adoption), browser-based authentication improvements, and the need to deliver a seamless Thundermail sign-in experience. Delivery began in 154.<div class="date-badge">September 2026</div></li>
+<li><strong>Thunderbird Enterprise</strong>Thunderbird Enterprise work was completed, including extending the add-ons Account API to accommodate Enterprise requirements.<div class="date-badge">September 2026</div></li>
 <li><strong>Trải nghiệm người dùng lần đầu: Trung tâm tài khoản</strong>Trung tâm quản lý tài khoản hoàn chỉnh cho tất cả các lần tạo tài khoản, kích hoạt nó cho người dùng lần đầu.<div class="date-badge">Tháng 3 năm 2026</div></li>
 <li><strong>Chữ ký tinh giản</strong>Đây là một phần của sáng kiến lớn hơn mang tên “Cải tiến mã hóa và bảo mật” và đã được hoàn thành để giảm bớt sự nhầm lẫn xung quanh chữ ký OpenPGP.<div class="date-badge">Tháng 3 năm 2026</div></li>
 <li><strong>Hỗ trợ email Exchange</strong>Hỗ trợ đầy đủ các thao tác email và tạo tài khoản.<div class="date-badge">Tháng 11 năm 2025</div></li>

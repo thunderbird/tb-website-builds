@@ -972,24 +972,28 @@
 <div class="product-roadmap-header">
 <h1>Asztali ütemterv</h1>
 <p>Thunderbird Windowsra, macOS-re és Linuxra. Kövesse az ütemtervet az aktív munkától a jövőbeli ötletekig. Az idővonalak eltolódhatnak, ahogy tanulunk és iterálunk.</p>
-<p style="font-size: 16px;">Legutóbbi frissítés: 2026. július 23.</p>
+<p style="font-size: 16px;">Last updated October 22, 2026</p>
 <p><a href="https://www.thunderbird.net/en-US/thunderbird/all/#select-download-desktop">Asztali Thunderbird letöltése</a></p>
 </div>
 <h2><i class="ph ph-pulse"></i>Aktív</h2>
 <ul>
-<li><strong>Exchange (EWS, GraphAPI)</strong>Az Exchange protokollon végzett munka befejezése, hogy támogassa az Exchange és a Microsoft 365 összes verzióját, beleértve a naptár- és címjegyzék támogatást.</li>
+<li><strong>Exchange (EWS, GraphAPI)</strong>Finalize the work on the Exchange protocol in order to support all versions of Exchange and Microsoft 365, including calendar and address book support. Graph API support for email is finished, and calendar discovery and event sync have been implemented.</li>
 <li><strong>Globális adatbázis</strong>A munka folytatása az új Panorama adatbázison, lehetővé téve a felhasználók számára, hogy teszteljék az új adatbázist, és kezeljék a konzisztens adatmigrációt.</li>
 <li><strong>Meglévő kiegészítő API-k fejlesztése és bővítése</strong>A jelenleg elérhető API-k fejlesztése, összpontosítás az új szakaszokhoz és alapvető funkciókhoz való hozzáférésre, valamint új API-k bevezetése egyes szakaszokhoz.</li>
-<li><strong>Titkosítási és biztonsági fejlesztések</strong>Az OpenPGP és az S/MIME támogatásának és felfedezésének, az e-mailes nyomkövetés elleni védelem, és az adathalász e-mailek megakadályozásának fejlesztése. Ezek egész évben folytatódni fognak, ahogy válaszolunk a kiemelt sérülékenységekre, az upstream változásokra, az MI-alapú biztonsági jelentésekre és a regressziókra. (Folyamatos karbantartás)</li>
-<li><strong>Beállítások felületét érintő fejlesztések</strong>Beállítások átnézése és felfedezhetőbb szakaszokba rendezése, a keresés fejlesztése. A felhasználói felmérés erősen befolyásolja a végeredményt.</li>
-<li><strong>Naptár-párbeszédablakok UI/UX-fejlesztése</strong>A naptár felületének és felhasználói élményének frissítésének befejezése. Néhány protokollkezelési változás lehet szükséges.</li>
+<li><strong>Titkosítási és biztonsági fejlesztések</strong>Improve the support and discovery of OpenPGP and S/MIME, improve email tracking protection, and harden phishing email prevention. These will continue all year as we respond to high priority vulnerabilities, upstream changes, AI-powered sec reports and regressions. Post-quantum encryption has also come a long way, see the<a href="https://wiki.mozilla.org/Thunderbird:OpenPGP:PQCTesting">PQC testing page</a>. (Ongoing maintenance)</li>
+<li><strong>Beállítások felületét érintő fejlesztések</strong>Clean up and reorganize the settings into more discoverable sections and improve its search. User survey will heavily influence the end result. We are aiming to have all the strings, content navigation, and a first round of UI refresh completed by the end of 2026.</li>
+<li><strong>Naptár-párbeszédablakok UI/UX-fejlesztése</strong>Complete the refresh of the calendar interface and user experience. Some protocols handling changes might be needed. This work will also land a major part of the compose window refresh.</li>
+<li><strong>System Add-on Integration - Remote Updates</strong>Building on the system add-on integration shipped in 153, enable system add-ons to be updated remotely, outside of the regular release train.</li>
 </ul>
 <h2><i class="ph ph-calendar-blank"></i>Tervezve</h2>
 <ul>
-<li><strong>OAuth2 fejlesztések</strong>Az OAuth fontos kezdeményezéssé vált a fejlődő szolgáltatói hitelesítési követelmények (beleértve a PKCE elfogadását is), a böngészőalapú hitelesítési fejlesztések, és a Thundermailbe való zökkenőmentes bejelentkezés biztosítása miatt.</li>
+<li><strong>Conversation View</strong>Display related messages together as a single conversation. This work depends on the new Global Database (Panorama).</li>
+<li><strong>JMAP</strong>Add support for the JMAP protocol. This will be a priority in 2027 as Thundermail opens to the public and leverages JMAP.</li>
 </ul>
 <h2><i class="ph ph-rocket-launch"></i>Leszállítva</h2>
 <ul>
+<li><strong>OAuth2 fejlesztések</strong>OAuth became a significant initiative due to evolving provider authentication requirements (including PKCE adoption), browser-based authentication improvements, and the need to deliver a seamless Thundermail sign-in experience. Delivery began in 154.<div class="date-badge">September 2026</div></li>
+<li><strong>Thunderbird Enterprise</strong>Thunderbird Enterprise work was completed, including extending the add-ons Account API to accommodate Enterprise requirements.<div class="date-badge">September 2026</div></li>
 <li><strong>Első felhasználói élmény: Fiókközpont</strong>Fiókközpont befejezése az összes fiók létrehozásához, és engedélyezés az első felhasználók számára.<div class="date-badge">2026. március</div></li>
 <li><strong>Nem zavaró aláírások</strong>Ez a nagyobb „Titkosítási és biztonsági fejlesztések” kezdeményezés része volt, és az OpenPGP-aláírások körüli félreértések csökkentése érdekében készült el.<div class="date-badge">2026. március</div></li>
 <li><strong>Exchange levelezés támogatása</strong>Az e-mail-műveletek és fióklétrehozás teljes támogatása.<div class="date-badge">2025. november</div></li>

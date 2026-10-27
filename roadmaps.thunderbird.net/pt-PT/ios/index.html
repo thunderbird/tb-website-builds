@@ -972,18 +972,19 @@
 <div class="product-roadmap-header">
 <h1>Mapa de desenvolvimento do iOS</h1>
 <p>Thunderbird para iOS. Siga o mapa de desenvolvimento desde o trabalho ativo até às ideias futuras. Os cronogramas podem mudar à medida que aprendemos e iteramos.</p>
-<p style="font-size: 16px;">Última atualização em 23 de julho de 2026</p>
+<p style="font-size: 16px;">Last updated October 22, 2026</p>
 <p><a href="https://testflight.apple.com/join/ER3hRBSz">Transferir a app TestFlight</a></p>
 </div>
 <h2><i class="ph ph-pulse"></i>Ativo</h2>
 <ul>
-<li><strong>Experiência Completa de Escrita e Leitura de E-mails</strong>Implementar a experiência completa de leitura e escrita de e-mail em dispositivos móveis, incluindo suporte inicial para mensagens encriptadas (OpenPGP e S/MIME com bibliotecas existentes). O WYSIWYG está a terminar. A próxima peça é ligar o protocolo e a base de dados para renderizar o email.</li>
-<li><strong>Exploração - Suporte JMAP</strong>Já está 80% concluído. A intenção é implementar o protocolo completo com toda a infraestrutura básica instalada.</li>
+<li><strong>Experiência Completa de Escrita e Leitura de E-mails</strong>Implement the full reading and writing email experience on mobile. Compose, reading, and writing are in place; the remaining piece is rendering the inbox.</li>
+<li><strong>Calendar Exploration</strong>Exploring calendar support with a platform-agnostic approach alongside Android, while looking for some quick wins on iOS.</li>
 </ul>
 <h2><i class="ph ph-calendar-blank"></i>Planeado</h2>
 <ul>
-<li><strong>Suporte JMAP - Concluir implementação</strong>Suportar o protocolo JMAP como um dos primeiros protocolos extra que enviamos por predefinição fora do IMAP. Atualmente estamos a dar prioridade ao IMAP e ao lançamento da primeira versão para os utilizadores.</li>
-<li><strong>Base de dados</strong>Estamos a alterar a forma como cacheamos o e-mail para poder consumir a interface mais rapidamente, e a mover o trabalho da base de dados para depois da primeira versão ser lançada para os utilizadores.</li>
+<li><strong>Suporte JMAP - Concluir implementação</strong>Support the JMAP protocol as one of the first extra protocols we ship with by default outside of IMAP. Currently we are prioritizing IMAP so the first release covers all email users. Now planned for 2027.</li>
+<li><strong>Database - Phase 2</strong>Split out from the protocol and framework work to provide more fully featured database operations. The first version of the app can ship using an in-memory cache with minimal database functionality.</li>
+<li><strong>Email Encryption Support</strong>Initial support for encrypted messages (OpenPGP and S/MIME with existing libraries). This was previously part of the Full Email Writing and Reading Experience initiative and is now planned for 2027. We are focusing on the core app experience first: encryption needs an app that reliably loads emails for reading and writing, and because every provider implements the mail standards (IMAP/SMTP/MIME) a little differently, we are making sure every case is covered and reliable before building on top of it.</li>
 </ul>
 <h2><i class="ph ph-rocket-launch"></i>Expedido</h2>
 <ul>
@@ -991,6 +992,7 @@
 <li><strong>Configuração automática</strong>Adicionar pesquisa de registos DNS MX à biblioteca de funcionalidades de autoconfiguração, mover a pesquisa de registos SRV para a biblioteca de funcionalidades de autoconfiguração e eliminar a biblioteca principal do Autodiscover<div class="date-badge">Setembro de 2025</div></li>
 <li><strong>Fluxo de Criação de Conta</strong>Implementar uma configuração integral automática e manual, incluindo descoberta automática e OAuth.<div class="date-badge">Março de 2026</div></li>
 <li><strong>Protocolo de Criação iOS &amp; Estrutura</strong>Implementar primeiro o protocolo IMAP, dado que é o protocolo mais utilizado atualmente. Concluímos o trabalho do protocolo e a estrutura básica.<div class="date-badge">Junho de 2026</div></li>
+<li><strong>Exploração - Suporte JMAP</strong>Initial exploration of the JMAP protocol is complete. The full scaffolding will be done as part of the complete implementation.<div class="date-badge">September 2026</div></li>
 </ul>
   
 

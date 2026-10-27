@@ -972,24 +972,28 @@
 <div class="product-roadmap-header">
 <h1>Plan rozwoju dla komputerów stacjonarnych</h1>
 <p>Thunderbird na Windows, macOS i Linux. Zapoznaj się z planem rozwoju — od bieżących prac po pomysły na przyszłość. Harmonogramy mogą ulec zmianie w miarę zdobywania wiedzy i wprowadzania kolejnych iteracji.</p>
-<p style="font-size: 16px;">Ostatnia aktualizacja: 23 lipca 2026 r.</p>
+<p style="font-size: 16px;">Last updated October 22, 2026</p>
 <p><a href="https://www.thunderbird.net/en-US/thunderbird/all/#select-download-desktop">Pobierz Thunderbirda na komputery stacjonarne</a></p>
 </div>
 <h2><i class="ph ph-pulse"></i>Aktywne</h2>
 <ul>
-<li><strong>Exchange (EWS, GraphAPI)</strong>Finalizacja prac nad protokołem Exchange, zapewnienie obsługi wszystkich wersji Exchange i Microsoft 365, w tym kalendarza i książki adresowej.</li>
+<li><strong>Exchange (EWS, GraphAPI)</strong>Finalize the work on the Exchange protocol in order to support all versions of Exchange and Microsoft 365, including calendar and address book support. Graph API support for email is finished, and calendar discovery and event sync have been implemented.</li>
 <li><strong>Globalna baza danych</strong>Kontynuacja prac nad nową bazą danych Panorama, umożliwienie użytkownikom rozpoczęcia testowania nowej bazy danych oraz zapewnienie spójnej migracji danych.</li>
 <li><strong>Udoskonalenie i rozszerzenie istniejących interfejsów API dla dodatków</strong>Udoskonalenie obecnie dostępnych API, ze szczególnym naciskiem na zapewnienie dostępu do nowych sekcji i podstawowych funkcji, a także wprowadzenie nowych API dla konkretnych sekcji.</li>
-<li><strong>Ulepszenia w zakresie szyfrowania i bezpieczeństwa</strong>Usprawnienie obsługi i wykrywania OpenPGP oraz S/MIME, zwiększenie ochrony przed śledzeniem w wiadomościach e-mail i skuteczniejsze zapobieganie phishingowi. Prace te będą prowadzone przez cały rok w odpowiedzi na luki o wysokim priorytecie, zmiany w projektach źródłowych, zgłoszenia dotyczące bezpieczeństwa generowane przez AI oraz regresje. (Bieżące utrzymanie)</li>
-<li><strong>Poprawa interfejsu ustawień</strong>Uporządkowanie ustawień w bardziej przejrzyste i łatwiejsze do znalezienia sekcje oraz ulepszenie wyszukiwania. Wyniki ankiety przeprowadzonej wśród użytkowników będą miały istotny wpływ na ostateczny kształt zmian.</li>
-<li><strong>UI/UX okien dialogowych kalendarza</strong>Zakończenie odświeżania interfejsu kalendarza i zwiększenie wygody użytkownika. Konieczne może być wprowadzenie pewnych zmian w protokołach obsługi.</li>
+<li><strong>Ulepszenia w zakresie szyfrowania i bezpieczeństwa</strong>Improve the support and discovery of OpenPGP and S/MIME, improve email tracking protection, and harden phishing email prevention. These will continue all year as we respond to high priority vulnerabilities, upstream changes, AI-powered sec reports and regressions. Post-quantum encryption has also come a long way, see the<a href="https://wiki.mozilla.org/Thunderbird:OpenPGP:PQCTesting">PQC testing page</a>. (Ongoing maintenance)</li>
+<li><strong>Poprawa interfejsu ustawień</strong>Clean up and reorganize the settings into more discoverable sections and improve its search. User survey will heavily influence the end result. We are aiming to have all the strings, content navigation, and a first round of UI refresh completed by the end of 2026.</li>
+<li><strong>UI/UX okien dialogowych kalendarza</strong>Complete the refresh of the calendar interface and user experience. Some protocols handling changes might be needed. This work will also land a major part of the compose window refresh.</li>
+<li><strong>System Add-on Integration - Remote Updates</strong>Building on the system add-on integration shipped in 153, enable system add-ons to be updated remotely, outside of the regular release train.</li>
 </ul>
 <h2><i class="ph ph-calendar-blank"></i>Planowane</h2>
 <ul>
-<li><strong>Prace rozwojowe nad OAuth2</strong>Protokół OAuth stał się istotną inicjatywą ze względu na zmieniające się wymagania dostawców dotyczące uwierzytelniania (w tym wdrażanie PKCE), usprawnienia uwierzytelniania w przeglądarce oraz potrzebę zapewnienia bezproblemowego logowania do Thundermaila.</li>
+<li><strong>Conversation View</strong>Display related messages together as a single conversation. This work depends on the new Global Database (Panorama).</li>
+<li><strong>JMAP</strong>Add support for the JMAP protocol. This will be a priority in 2027 as Thundermail opens to the public and leverages JMAP.</li>
 </ul>
 <h2><i class="ph ph-rocket-launch"></i>Wydane</h2>
 <ul>
+<li><strong>Prace rozwojowe nad OAuth2</strong>OAuth became a significant initiative due to evolving provider authentication requirements (including PKCE adoption), browser-based authentication improvements, and the need to deliver a seamless Thundermail sign-in experience. Delivery began in 154.<div class="date-badge">September 2026</div></li>
+<li><strong>Thunderbird Enterprise</strong>Thunderbird Enterprise work was completed, including extending the add-ons Account API to accommodate Enterprise requirements.<div class="date-badge">September 2026</div></li>
 <li><strong>First Time User Experience: Account Hub</strong>Ukończone Centrum kont do tworzenia wszystkich kont, włączone dla nowych użytkowników.<div class="date-badge">Marzec 2026</div></li>
 <li><strong>Unobtrusive Signatures</strong>This was part of the larger “Encryption and Security Improvements” initiative and has been completed to reduce confusion around OpenPGP signatures.<div class="date-badge">Marzec 2026</div></li>
 <li><strong>Obsługa poczty Exchange</strong>Pełna obsługa poczty e-mail i tworzenia kont.<div class="date-badge">Listopad 2025</div></li>

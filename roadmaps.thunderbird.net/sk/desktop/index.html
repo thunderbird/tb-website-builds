@@ -972,24 +972,28 @@
 <div class="product-roadmap-header">
 <h1>Plán pre počítače</h1>
 <p>Thunderbird pre Windows, macOS a Linux. Sledujte plán vývoja od aktuálnych prác až po budúce nápady. Časový harmonogram sa môže meniť v závislosti od našich poznatkov a iterácií.</p>
-<p style="font-size: 16px;">Posledná aktualizácia 23. júla 2026</p>
+<p style="font-size: 16px;">Last updated October 22, 2026</p>
 <p><a href="https://www.thunderbird.net/en-US/thunderbird/all/#select-download-desktop">Stiahnite si Thunderbird pre počítače</a></p>
 </div>
 <h2><i class="ph ph-pulse"></i>Aktívne</h2>
 <ul>
-<li><strong>Exchange (EWS, GraphAPI)</strong>Dokončenie práce na protokole Exchange s cieľom podporovať všetky verzie Exchange a Microsoft 365 vrátane podpory kalendára a adresára.</li>
+<li><strong>Exchange (EWS, GraphAPI)</strong>Finalize the work on the Exchange protocol in order to support all versions of Exchange and Microsoft 365, including calendar and address book support. Graph API support for email is finished, and calendar discovery and event sync have been implemented.</li>
 <li><strong>Globálna databáza</strong>Pokračovanie v práci na novej databáze Panorama, čo používateľom umožní začať s testovaním novej databázy a zvládnuť konzistentnú migráciu údajov.</li>
 <li><strong>Vylepšenie a rozšírenie existujúcich doplnkových API</strong>Vylepšenie aktuálne dostupného API, zamerať sa na sprístupnenie nových sekcií a základných funkcií, ako aj zaviesť nové API pre konkrétne sekcie.</li>
-<li><strong>Vylepšenia šifrovania a zabezpečenia</strong>Zlepšená podpora a vyhľadávanie OpenPGP a S/MIME, vylepšená ochrana pred sledovaním e‑mailov a posilnenie prevencie pred phishingovými e‑mailami. Tieto kroky budú pokračovať celý rok, keďže budeme reagovať na zraniteľnosti s vysokou prioritou, zmeny v upstreame, bezpečnostné hlásenia a regresie s využitím umelej inteligencie. (Priebežná údržba)</li>
-<li><strong>Vylepšenia rozhrania nastavení aplikácie</strong>Vyčistenie a reorganizácia nastavení do lepšie viditeľných sekcií a vylepšenie vyhľadávania. Plánovaný prieskum medzi používateľmi výrazne ovplyvní konečný výsledok.</li>
-<li><strong>Používateľské rozhranie pre dialógové okná kalendára</strong>Dokončenie prepracovania rozhrania kalendára a celkovo používateľského rozhrania. Možno budú potrebné zmeny v niektorých protokoloch.</li>
+<li><strong>Vylepšenia šifrovania a zabezpečenia</strong>Improve the support and discovery of OpenPGP and S/MIME, improve email tracking protection, and harden phishing email prevention. These will continue all year as we respond to high priority vulnerabilities, upstream changes, AI-powered sec reports and regressions. Post-quantum encryption has also come a long way, see the<a href="https://wiki.mozilla.org/Thunderbird:OpenPGP:PQCTesting">PQC testing page</a>. (Ongoing maintenance)</li>
+<li><strong>Vylepšenia rozhrania nastavení aplikácie</strong>Clean up and reorganize the settings into more discoverable sections and improve its search. User survey will heavily influence the end result. We are aiming to have all the strings, content navigation, and a first round of UI refresh completed by the end of 2026.</li>
+<li><strong>Používateľské rozhranie pre dialógové okná kalendára</strong>Complete the refresh of the calendar interface and user experience. Some protocols handling changes might be needed. This work will also land a major part of the compose window refresh.</li>
+<li><strong>System Add-on Integration - Remote Updates</strong>Building on the system add-on integration shipped in 153, enable system add-ons to be updated remotely, outside of the regular release train.</li>
 </ul>
 <h2><i class="ph ph-calendar-blank"></i>Plánované</h2>
 <ul>
-<li><strong>Vylepšenia OAuth2</strong>OAuth sa stal významnou iniciatívou kvôli vyvíjajúcim sa požiadavkám na overovanie poskytovateľov (vrátane prijatia PKCE), vylepšeniam overovania v prehliadači a potrebe zabezpečiť bezproblémové prihlasovanie do Thundermailu.</li>
+<li><strong>Conversation View</strong>Display related messages together as a single conversation. This work depends on the new Global Database (Panorama).</li>
+<li><strong>JMAP</strong>Add support for the JMAP protocol. This will be a priority in 2027 as Thundermail opens to the public and leverages JMAP.</li>
 </ul>
 <h2><i class="ph ph-rocket-launch"></i>Dokončené</h2>
 <ul>
+<li><strong>Vylepšenia OAuth2</strong>OAuth became a significant initiative due to evolving provider authentication requirements (including PKCE adoption), browser-based authentication improvements, and the need to deliver a seamless Thundermail sign-in experience. Delivery began in 154.<div class="date-badge">September 2026</div></li>
+<li><strong>Thunderbird Enterprise</strong>Thunderbird Enterprise work was completed, including extending the add-ons Account API to accommodate Enterprise requirements.<div class="date-badge">September 2026</div></li>
 <li><strong>Prvá používateľská skúsenosť: Centrum účtov</strong>Dokončenie Centra účtov pre všetky vytvorené účty a jeho povolenie pre nových používateľov.<div class="date-badge">Marec 2026</div></li>
 <li><strong>Nenápadné detekčné vzorce/podpisy</strong>Toto bolo súčasťou širšej iniciatívy „Vylepšenia šifrovania a zabezpečenia“ a bolo dokončené s cieľom znížiť zmätok okolo podpisov OpenPGP.<div class="date-badge">Marec 2026</div></li>
 <li><strong>Podpora e‑mailu Exchange</strong>Plná podpora e‑mailových operácií a vytvárania účtov.<div class="date-badge">November 2025</div></li>

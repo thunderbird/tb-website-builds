@@ -972,24 +972,28 @@
 <div class="product-roadmap-header">
 <h1>Desktop-roadmap</h1>
 <p>Thunderbird voor Windows, macOS en Linux. Volg de roadmap van actief werk naar toekomstige ideeën. Tijdlijnen kunnen verschuiven naarmate we leren en itereren.</p>
-<p style="font-size: 16px;">Laatst bijgewerkt op 23 juli 2026</p>
+<p style="font-size: 16px;">Last updated October 22, 2026</p>
 <p><a href="https://www.thunderbird.net/en-US/thunderbird/all/#select-download-desktop">Thunderbird voor desktop downloaden</a></p>
 </div>
 <h2><i class="ph ph-pulse"></i>Actief</h2>
 <ul>
-<li><strong>Exchange (EWS, GraphAPI)</strong>Het werk aan het Exchange-protocol voltooien om alle versies van Exchange en Microsoft 365 te ondersteunen, inclusief ondersteuning voor agenda’s en adresboeken.</li>
+<li><strong>Exchange (EWS, GraphAPI)</strong>Finalize the work on the Exchange protocol in order to support all versions of Exchange and Microsoft 365, including calendar and address book support. Graph API support for email is finished, and calendar discovery and event sync have been implemented.</li>
 <li><strong>Globale database</strong>Het werk aan de nieuwe Panorama-database voortzetten, waardoor gebruikers de nieuwe database kunnen testen en een consistente gegevensmigratie kunnen afhandelen.</li>
 <li><strong>Verbeteren en uitbreiden van bestaande add-on-API’s</strong>De momenteel beschikbare API’s verbeteren, focussen op het geven van toegang tot nieuwe secties en kernfuncties, evenals nieuwe API’s voor specifieke secties introduceren.</li>
-<li><strong>Versleutelings- en beveiligingsverbeteringen</strong>Verbeteren van de ondersteuning en detectie van OpenPGP en S/MIME, verbeteren van de bescherming tegen volgen van e-mail en verscherpen van de phishing-e-mailpreventie. Deze lopen het hele jaar door, terwijl we reageren op kwetsbaarheden met hoge prioriteit, upstream-wijzigingen, AI-aangedreven beveiligingsrapporten en regressies. (Lopend onderhoud)</li>
-<li><strong>Verbeteringen aan instellingeninterface</strong>Opschonen van de instellingen, ze in beter vindbare secties herordenen en de zoekfunctie verbeteren. Gebruikersenquête heeft grote invloed op het eindresultaat.</li>
-<li><strong>Agendadialogen UI/UX</strong>Voltooi de vernieuwing van de agenda-interface en de gebruikerservaring. Mogelijk zijn enkele protocollen voor het verwerken van wijzigingen nodig.</li>
+<li><strong>Versleutelings- en beveiligingsverbeteringen</strong>Improve the support and discovery of OpenPGP and S/MIME, improve email tracking protection, and harden phishing email prevention. These will continue all year as we respond to high priority vulnerabilities, upstream changes, AI-powered sec reports and regressions. Post-quantum encryption has also come a long way, see the<a href="https://wiki.mozilla.org/Thunderbird:OpenPGP:PQCTesting">PQC testing page</a>. (Ongoing maintenance)</li>
+<li><strong>Verbeteringen aan instellingeninterface</strong>Clean up and reorganize the settings into more discoverable sections and improve its search. User survey will heavily influence the end result. We are aiming to have all the strings, content navigation, and a first round of UI refresh completed by the end of 2026.</li>
+<li><strong>Agendadialogen UI/UX</strong>Complete the refresh of the calendar interface and user experience. Some protocols handling changes might be needed. This work will also land a major part of the compose window refresh.</li>
+<li><strong>System Add-on Integration - Remote Updates</strong>Building on the system add-on integration shipped in 153, enable system add-ons to be updated remotely, outside of the regular release train.</li>
 </ul>
 <h2><i class="ph ph-calendar-blank"></i>Gepland</h2>
 <ul>
-<li><strong>OAuth2-verbeteringen</strong>OAuth werd een significant initiatief vanwege veranderende vereisten voor providerauthenticatie (waaronder adoptie van PKCE), verbeteringen in browsergebaseerde authenticatie en de behoefte om een naadloze Thundermail-aanmeldingservaring te leveren.</li>
+<li><strong>Conversation View</strong>Display related messages together as a single conversation. This work depends on the new Global Database (Panorama).</li>
+<li><strong>JMAP</strong>Add support for the JMAP protocol. This will be a priority in 2027 as Thundermail opens to the public and leverages JMAP.</li>
 </ul>
 <h2><i class="ph ph-rocket-launch"></i>Uitgebracht</h2>
 <ul>
+<li><strong>OAuth2-verbeteringen</strong>OAuth became a significant initiative due to evolving provider authentication requirements (including PKCE adoption), browser-based authentication improvements, and the need to deliver a seamless Thundermail sign-in experience. Delivery began in 154.<div class="date-badge">September 2026</div></li>
+<li><strong>Thunderbird Enterprise</strong>Thunderbird Enterprise work was completed, including extending the add-ons Account API to accommodate Enterprise requirements.<div class="date-badge">September 2026</div></li>
 <li><strong>Eerste gebruikerservaring: Accounthub</strong>Accounthub voor het aanmaken van alle accounts voltooien, inschakelen voor nieuwe gebruikers.<div class="date-badge">Maart 2026</div></li>
 <li><strong>Onopvallende handtekeningen</strong>Dit was onderdeel van het grotere ‘Versleutelings- en beveiligingsverbeteringen’-initiatief en is voltooid om verwarring rond OpenPGP-handtekeningen te verminderen.<div class="date-badge">Maart 2026</div></li>
 <li><strong>Ondersteuning voor Exchange-e-mail</strong>Volledige ondersteuning van e-mailbewerkingen en het aanmaken van accounts.<div class="date-badge">November 2025</div></li>

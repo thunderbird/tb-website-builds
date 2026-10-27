@@ -972,22 +972,24 @@
 <div class="product-roadmap-header">
 <h1>Plan rozwoju dla Androida</h1>
 <p>Thunderbird na Androida. Zapoznaj się z planem rozwoju — od bieżących prac po pomysły na przyszłość. Harmonogramy mogą ulec zmianie w miarę zdobywania wiedzy i wprowadzania kolejnych iteracji.</p>
-<p style="font-size: 16px;">Ostatnia aktualizacja: 23 lipca 2026 r.</p>
+<p style="font-size: 16px;">Last updated October 22, 2026</p>
 <p><a href="https://www.thunderbird.net/en-US/thunderbird/all/#select-download-mobile">Pobierz Thunderbirda dla Androida</a></p>
 </div>
 <h2><i class="ph ph-pulse"></i>Aktywne</h2>
 <ul>
 <li><strong>Przebudowa architektury i utrzymanie silnika</strong>Modernizacja kodu źródłowego odziedziczonego po projekcie K9, rozwiązanie najpilniejszych problemów związanych z utrzymaniem i stabilnością oraz przebudowa architektury silnika w celu przyspieszenia i ułatwienia prac programistycznych.</li>
-<li><strong>Powiadomienia i synchronizacja</strong>Wyodrębniliśmy to zadanie z programu przebudowy architektury, aby nadać mu priorytet, ponieważ to właśnie ono jest przyczyną wielu niskich ocen, a my słuchamy potrzeb naszej społeczności.</li>
+<li><strong>Powiadomienia i synchronizacja</strong>Broken out from the rearchitecture program to prioritize this specific effort, because many of the low ratings are because of this and we are listening to what our community wants. We have documented the current issues and begun introducing initial solutions. This work is closely tied to the rearchitecture effort.</li>
+<li><strong>Calendar Exploration</strong>We have begun exploring calendar support together with the design team, taking a platform-agnostic approach that will also benefit iOS.</li>
 </ul>
 <h2><i class="ph ph-calendar-blank"></i>Planowane</h2>
 <ul>
-<li><strong>Ulepszenia listy wiadomości</strong>Użytkownicy spędzają większość czasu na liście wiadomości, czekając na ich załadowanie, przewijając ją w poszukiwaniu wiadomości i szybko wchodząc z nimi w interakcję za pomocą gestów przesuwania. Niniejsze działania mają na celu ulepszenie tego głównego widoku oraz rozwiązanie wszystkich najważniejszych problemów.</li>
-<li><strong>Analiza wsparcia dla JMAP</strong>Analiza integracji z JMAP, zapoznanie się z konsekwencjami dodania nowego protokołu w systemie Android oraz zapewnienie przyszłej kompatybilności z protokołami własnościowymi.</li>
-<li><strong>Ulepszenia widoku wiadomości - etap 2</strong>Modernizacja widoku wiadomości w celu rozwiązania najbardziej palących problemów, takich jak obsługa załączników, ładowanie wiadomości, powiększanie, usuwanie obrazów itp. Dążenie do zapewnienia komfortu użytkowania porównywalnego z konkurencją.</li>
+<li><strong>Ulepszenia listy wiadomości</strong>Users spend most of their time on the message list, waiting for messages to load, scrolling to find messages, and quickly interacting with them through swipe actions. This effort is aimed at improving this primary view and addressing all major concerns. Now planned for 2027.</li>
+<li><strong>Analiza wsparcia dla JMAP</strong>Exploring JMAP integration, learning what it means to add a new protocol on Android, and ensuring future proofing against proprietary protocols. Now planned for 2027.</li>
+<li><strong>Ulepszenia widoku wiadomości - etap 2</strong>Modernize the message view to address the most glaring issues like attachment handling, message loading, zoom, remove images, and so on. Making the experience comparable to the competition. Now planned for 2027, as the rearchitecture and core maintenance work will help speed this up.</li>
 </ul>
 <h2><i class="ph ph-rocket-launch"></i>Wydane</h2>
 <ul>
+<li><strong>HTML Signatures</strong>Added support for HTML signatures. This was a community contributor effort, thank you!<div class="date-badge">September 2026</div></li>
 <li><strong>Zatwierdzenie CASA</strong>Zakończenie oceny bezpieczeństwa aplikacji w chmurze (CASA)<div class="date-badge">Marzec 2025</div></li>
 <li><strong>Integracja z Thundermailem – logowanie za pomocą kodu QR</strong>Dodano i potraktowano priorytetowo ze względu na wydanie Thundermaila. Wprowadzono uwierzytelnianie OAuth jednym kliknięciem na pierwszym ekranie oraz skanowanie kodów QR z webowego klienta Thundermaila, aby ułatwić konfigurację konta.<div class="date-badge">Czerwiec 2026</div></li>
 <li><strong>Ulepszenia widoku wiadomości - etap 1</strong>Dodaliśmy wskaźnik nagłówka wiadomości oraz przycisk załączników. Załączniki są teraz wyświetlane zarówno w treści, jak i u dołu wiadomości. Ulepszyliśmy też renderowanie tekstu i rozwiązaliśmy najpoważniejsze zgłoszone błędy w renderowaniu HTML i CSS, aby ograniczyć najbardziej widoczne problemy.<div class="date-badge">Czerwiec 2026</div></li>
