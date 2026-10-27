@@ -972,24 +972,28 @@
 <div class="product-roadmap-header">
 <h1>桌面版功能規劃</h1>
 <p>Thunderbird for Windows、macOS 與 Linux。請參考本頁面了解開發中的功能與未來規劃。時程可能會隨著我們的發展與迭代進步而有所調整。</p>
-<p style="font-size: 16px;">最後更新於：2026 年 7 月 23 日</p>
+<p style="font-size: 16px;">Last updated October 22, 2026</p>
 <p><a href="https://www.thunderbird.net/en-US/thunderbird/all/#select-download-desktop">下載 Thunderbird 桌面版</a></p>
 </div>
 <h2><i class="ph ph-pulse"></i>開發中</h2>
 <ul>
-<li><strong>Exchange（EWS、GraphAPI）</strong>完成開發 Exchange 通訊協定，以支援所有版本的 Exchange 與 Microsoft 365，包含行事曆與通訊錄等功能。</li>
+<li><strong>Exchange（EWS、GraphAPI）</strong>Finalize the work on the Exchange protocol in order to support all versions of Exchange and Microsoft 365, including calendar and address book support. Graph API support for email is finished, and calendar discovery and event sync have been implemented.</li>
 <li><strong>全球資料庫</strong>繼續開發新版 Panorama 資料庫，讓使用者可以開始測試新的資料庫並進行移轉資料，確保資料一致性。</li>
 <li><strong>改善並擴充現有的附加元件 API</strong>改進目前提供的 API，並著重於存取新區塊與核心功能，以及在特定區塊提供新的 API。</li>
-<li><strong>加密與安全性改進</strong>改善了 OpenPGP 與 S/MIME 的支援及探索功能、強化電子郵件追蹤防護，並提升網路釣魚郵件的防範能力。我們一整年都會持續因應高優先等級的漏洞、上游變更、由 AI 輔助產生的安全性報告及重複出現的問題。（持續維護）</li>
-<li><strong>設定介面改進</strong>清理並重新整理設定項目，將其歸類至更容易找到的區段，同時改善搜尋功能。將大幅參考使用者研究的結果來決定最終成果。</li>
-<li><strong>行事曆對話框的 UI/UX 設計</strong>完成對行事曆介面與使用者體驗的重新整理，可能會調整某些通訊協定。</li>
+<li><strong>加密與安全性改進</strong>Improve the support and discovery of OpenPGP and S/MIME, improve email tracking protection, and harden phishing email prevention. These will continue all year as we respond to high priority vulnerabilities, upstream changes, AI-powered sec reports and regressions. Post-quantum encryption has also come a long way, see the<a href="https://wiki.mozilla.org/Thunderbird:OpenPGP:PQCTesting">PQC testing page</a>. (Ongoing maintenance)</li>
+<li><strong>設定介面改進</strong>Clean up and reorganize the settings into more discoverable sections and improve its search. User survey will heavily influence the end result. We are aiming to have all the strings, content navigation, and a first round of UI refresh completed by the end of 2026.</li>
+<li><strong>行事曆對話框的 UI/UX 設計</strong>Complete the refresh of the calendar interface and user experience. Some protocols handling changes might be needed. This work will also land a major part of the compose window refresh.</li>
+<li><strong>System Add-on Integration - Remote Updates</strong>Building on the system add-on integration shipped in 153, enable system add-ons to be updated remotely, outside of the regular release train.</li>
 </ul>
 <h2><i class="ph ph-calendar-blank"></i>已規劃</h2>
 <ul>
-<li><strong>OAuth2 加強功能</strong>隨著服務提供者的身分驗證要求不斷演進（包括採用 PKCE）、瀏覽器驗證機制持續改善，以及在 Thundermail 提供流暢地登入體驗的需求日益增加，OAuth 成為一項重點項目。</li>
+<li><strong>Conversation View</strong>Display related messages together as a single conversation. This work depends on the new Global Database (Panorama).</li>
+<li><strong>JMAP</strong>Add support for the JMAP protocol. This will be a priority in 2027 as Thundermail opens to the public and leverages JMAP.</li>
 </ul>
 <h2><i class="ph ph-rocket-launch"></i>已推出</h2>
 <ul>
+<li><strong>OAuth2 加強功能</strong>OAuth became a significant initiative due to evolving provider authentication requirements (including PKCE adoption), browser-based authentication improvements, and the need to deliver a seamless Thundermail sign-in experience. Delivery began in 154.<div class="date-badge">September 2026</div></li>
+<li><strong>Thunderbird Enterprise</strong>Thunderbird Enterprise work was completed, including extending the add-ons Account API to accommodate Enterprise requirements.<div class="date-badge">September 2026</div></li>
 <li><strong>使用者首次使用體驗：帳號中心</strong>完成「帳號中心」功能，提供所有類型帳號註冊，並對首次使用的使用者開啟此功能。<div class="date-badge">2026 年 3 月</div></li>
 <li><strong>非干擾式簽章</strong>此項目原本是「加密與安全性改善」倡議的一部份，以減少與 OpenPGP 簽章功能混淆。<div class="date-badge">2026 年 3 月</div></li>
 <li><strong>支援 Exchange 郵件</strong>完整支援電子郵件操作與帳號建立。<div class="date-badge">2025 年 11 月</div></li>

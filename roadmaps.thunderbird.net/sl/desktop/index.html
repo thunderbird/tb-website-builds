@@ -972,24 +972,28 @@
 <div class="product-roadmap-header">
 <h1>Namizni načrt</h1>
 <p>Thunderbird za Windows, macOS in Linux. Sledite načrtu od aktivnega dela do idej za prihodnost. Časovnice se lahko med učenjem in ponavljanjem premikajo.</p>
-<p style="font-size: 16px;">Nazadnje posodobljeno 23. julija 2026</p>
+<p style="font-size: 16px;">Last updated October 22, 2026</p>
 <p><a href="https://www.thunderbird.net/en-US/thunderbird/all/#select-download-desktop">Prenesite Thunderbird za namizja</a></p>
 </div>
 <h2><i class="ph ph-pulse"></i>Aktivno</h2>
 <ul>
-<li><strong>Izmenjava (EWS, GraphAPI)</strong>Dokončajte delo na protokolu Exchange za podporo vsem različicam Exchangea in Microsofta 365, vključno s podporo za koledarje in imenike.</li>
+<li><strong>Izmenjava (EWS, GraphAPI)</strong>Finalize the work on the Exchange protocol in order to support all versions of Exchange and Microsoft 365, including calendar and address book support. Graph API support for email is finished, and calendar discovery and event sync have been implemented.</li>
 <li><strong>Globalna podatkovna zbirka</strong>Nadaljevanje dela na novi podatkovni bazi Panorama, ki omogoča uporabnikom, da začnejo testiranje nove podatkovne baze, in skrb za dosledno selitev podatkov.</li>
 <li><strong>Izboljšajte in razširite obstoječe API-je dodatkov</strong>Izboljšajte trenutno razpoložljive API-je, se osredotočite na omogočanje dostopa do novih odsekov in temeljnih funkcij, kot tudi na uvajanje novih API-jev za določene odseke.</li>
-<li><strong>Šifriranje in varnostne izboljšave</strong>Izboljšajte podporo in odkritje OpenPGP in S/MIME, izboljšajte zaščito pred sledenjem e-pošti in okrepite preprečevanje e-poštnega predstavljanja. Te se bodo nadaljevale vse leto, ko se bomo odzvali na ranljivosti z visoko prednostjo, spremembe v oskrbi, sekundarna poročila, ki jih poganja umetna inteligenca, in regresije. (Trenutno vzdrževanje)</li>
-<li><strong>Nastavitve Izboljšave vmesnika</strong>Počistite in preuredite nastavitve v bolj odkrite odseke ter izboljšajte iskanje. Anketa uporabnikov bo močno vplivala na končni rezultat.</li>
-<li><strong>UI/UX pogovornih oknov</strong>Dokončajte osvežitev vmesnika koledarja in uporabniško izkušnjo. Morda bo potrebnih nekaj protokolov, ki obravnavajo spremembe.</li>
+<li><strong>Šifriranje in varnostne izboljšave</strong>Improve the support and discovery of OpenPGP and S/MIME, improve email tracking protection, and harden phishing email prevention. These will continue all year as we respond to high priority vulnerabilities, upstream changes, AI-powered sec reports and regressions. Post-quantum encryption has also come a long way, see the<a href="https://wiki.mozilla.org/Thunderbird:OpenPGP:PQCTesting">PQC testing page</a>. (Ongoing maintenance)</li>
+<li><strong>Nastavitve Izboljšave vmesnika</strong>Clean up and reorganize the settings into more discoverable sections and improve its search. User survey will heavily influence the end result. We are aiming to have all the strings, content navigation, and a first round of UI refresh completed by the end of 2026.</li>
+<li><strong>UI/UX pogovornih oknov</strong>Complete the refresh of the calendar interface and user experience. Some protocols handling changes might be needed. This work will also land a major part of the compose window refresh.</li>
+<li><strong>System Add-on Integration - Remote Updates</strong>Building on the system add-on integration shipped in 153, enable system add-ons to be updated remotely, outside of the regular release train.</li>
 </ul>
 <h2><i class="ph ph-calendar-blank"></i>Načrtovano</h2>
 <ul>
-<li><strong>Izboljšave OAuth2</strong>OAuth je postal pomembna pobuda zaradi razvijajočih se zahtev ponudnikov po overjanju (vključno s sprejemom PKCE), izboljšav v brskalniku osnovanega overjanja in potrebe po brezhibni prijavi v Thundermail.</li>
+<li><strong>Conversation View</strong>Display related messages together as a single conversation. This work depends on the new Global Database (Panorama).</li>
+<li><strong>JMAP</strong>Add support for the JMAP protocol. This will be a priority in 2027 as Thundermail opens to the public and leverages JMAP.</li>
 </ul>
 <h2><i class="ph ph-rocket-launch"></i>Poslano</h2>
 <ul>
+<li><strong>Izboljšave OAuth2</strong>OAuth became a significant initiative due to evolving provider authentication requirements (including PKCE adoption), browser-based authentication improvements, and the need to deliver a seamless Thundermail sign-in experience. Delivery began in 154.<div class="date-badge">September 2026</div></li>
+<li><strong>Thunderbird Enterprise</strong>Thunderbird Enterprise work was completed, including extending the add-ons Account API to accommodate Enterprise requirements.<div class="date-badge">September 2026</div></li>
 <li><strong>Prva uporabniška izkušnja: Account Hub</strong>Dokončajte Account Hub za ustvarjanje vseh računov, omogočite ga za prve uporabnike.<div class="date-badge">marca 2026</div></li>
 <li><strong>Nevsiljivi podpisi</strong>To je bil del večje pobude “Izboljšave šifriranja in varnosti” in je bil dokončan, da bi zmanjšali zmedo okoli podpisov OpenPGP.<div class="date-badge">marca 2026</div></li>
 <li><strong>E-poštna podpora Exchange</strong>Popolna podpora pri poslovanju z e-pošto in ustvarjanju računov.<div class="date-badge">novembra 2025</div></li>

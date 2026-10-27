@@ -972,18 +972,19 @@
 <div class="product-roadmap-header">
 <h1>iOS-roadmap</h1>
 <p>Thunderbird voor iOS. Volg de roadmap van actief werk naar toekomstige ideeën. Tijdlijnen kunnen verschuiven naarmate we leren en itereren.</p>
-<p style="font-size: 16px;">Laatst bijgewerkt op 23 juli 2026</p>
+<p style="font-size: 16px;">Last updated October 22, 2026</p>
 <p><a href="https://testflight.apple.com/join/ER3hRBSz">TestFlight-app downloaden</a></p>
 </div>
 <h2><i class="ph ph-pulse"></i>Actief</h2>
 <ul>
-<li><strong>Volledige schrijf- en leeservaring voor e-mail</strong>Implementatie van de volledige lees- en schrijfervaring op mobiele apparaten, inclusief initiële ondersteuning voor versleutelde berichten (OpenPGP en S/MIME met bestaande bibliotheken). WYSIWYG wordt nu afgerond. Het volgende onderdeel is het verbinden van het protocol en de database om e-mail weer te geven.</li>
-<li><strong>JMAP-ondersteuning – Verkenning</strong>Al voor 80% voltooid. De bedoeling is om het volledige protocol te implementeren met alle basisinfrastructuur aanwezig.</li>
+<li><strong>Volledige schrijf- en leeservaring voor e-mail</strong>Implement the full reading and writing email experience on mobile. Compose, reading, and writing are in place; the remaining piece is rendering the inbox.</li>
+<li><strong>Calendar Exploration</strong>Exploring calendar support with a platform-agnostic approach alongside Android, while looking for some quick wins on iOS.</li>
 </ul>
 <h2><i class="ph ph-calendar-blank"></i>Gepland</h2>
 <ul>
-<li><strong>JMAP-ondersteuning – Volledige implementatie</strong>Ondersteunen van het JMAP-protocol als een van de eerste extra protocollen waarmee we standaard buiten IMAP leveren. Momenteel geven we prioriteit aan IMAP en een eerste gebruikersversie.</li>
-<li><strong>Database</strong>We wijzigen hoe we het e-mailbericht opslaan in de buffer om de UI sneller te kunnen gebruiken, en het databasewerk, nadat de eerste versie voor de gebruikers beschikbaar is, wordt verplaatst.</li>
+<li><strong>JMAP-ondersteuning – Volledige implementatie</strong>Support the JMAP protocol as one of the first extra protocols we ship with by default outside of IMAP. Currently we are prioritizing IMAP so the first release covers all email users. Now planned for 2027.</li>
+<li><strong>Database - Phase 2</strong>Split out from the protocol and framework work to provide more fully featured database operations. The first version of the app can ship using an in-memory cache with minimal database functionality.</li>
+<li><strong>Email Encryption Support</strong>Initial support for encrypted messages (OpenPGP and S/MIME with existing libraries). This was previously part of the Full Email Writing and Reading Experience initiative and is now planned for 2027. We are focusing on the core app experience first: encryption needs an app that reliably loads emails for reading and writing, and because every provider implements the mail standards (IMAP/SMTP/MIME) a little differently, we are making sure every case is covered and reliable before building on top of it.</li>
 </ul>
 <h2><i class="ph ph-rocket-launch"></i>Uitgebracht</h2>
 <ul>
@@ -991,6 +992,7 @@
 <li><strong>Automatische configuratie</strong>DNS MX-lookup toevoegen aan autoconfig-functiebibliotheek en de SRV-recordzoekactie verplaatsen naar de autoconfig-functiebibliotheek en Autodiscover-kernbibliotheek verwijderen<div class="date-badge">September 2025</div></li>
 <li><strong>Stroom voor het aanmaken van een account</strong>Implementeren van een volledig geautomatiseerde en handmatige installatie, inclusief automatisch inrichten en OAuth.<div class="date-badge">Maart 2026</div></li>
 <li><strong>iOS Create-protocol &amp; raamwerk</strong>Eerst het IMAP-protocol implementeren, aangezien dit het meest gebruikte protocol is. We hebben het protocolwerk en het basisraamwerk voltooid.<div class="date-badge">juni 2026</div></li>
+<li><strong>JMAP-ondersteuning – Verkenning</strong>Initial exploration of the JMAP protocol is complete. The full scaffolding will be done as part of the complete implementation.<div class="date-badge">September 2026</div></li>
 </ul>
   
 

@@ -972,24 +972,28 @@
 <div class="product-roadmap-header">
 <h1>Veikart for datamaskin</h1>
 <p>Thunderbird for Windows, macOS og Linux. Følg veikartet fra aktivt arbeid til fremtidige ideer. Tidslinjer kan endre seg etter hvert som vi lærer og itererer.</p>
-<p style="font-size: 16px;">Sist oppdatert 23. juli 2026</p>
+<p style="font-size: 16px;">Last updated October 22, 2026</p>
 <p><a href="https://www.thunderbird.net/en-US/thunderbird/all/#select-download-desktop">Last ned Thunderbird for datamaskiner</a></p>
 </div>
 <h2><i class="ph ph-pulse"></i>Aktiv</h2>
 <ul>
-<li><strong>Exchange (EWS, GraphAPI)</strong>Fullfør arbeidet med Exchange-protokollen for å støtte alle versjoner av Exchange og Microsoft 365, inkludert støtte for kalender og adressebok.</li>
+<li><strong>Exchange (EWS, GraphAPI)</strong>Finalize the work on the Exchange protocol in order to support all versions of Exchange and Microsoft 365, including calendar and address book support. Graph API support for email is finished, and calendar discovery and event sync have been implemented.</li>
 <li><strong>Global database</strong>Fortsett arbeidet med den nye Panorama-databasen, slik at brukere kan begynne å teste den nye databasen og vi kan sikre en konsistent datamigrering.</li>
 <li><strong>Forbedre og utvide eksisterende tilleggs-API-er</strong>Forbedre de eksisterende API-ene, med fokus på tilgang til nye seksjoner og kjernefunksjoner, samt innføring av nye API-er for spesifikke seksjoner.</li>
-<li><strong>Forbedringer av kryptering og sikkerhet</strong>Improve the support and discovery of OpenPGP and S/MIME, improve email tracking protection, and harden phishing email prevention. These will continue all year as we respond to high priority vulnerabilities, upstream changes, AI-powered sec reports and regressions. (Ongoing maintenance)</li>
-<li><strong>Forbedringer av innstillingsgrensesnittet</strong>Clean up and reorganize the settings into more discoverable sections and improve its search. User survey will heavily influence the end result.</li>
-<li><strong>UI/UX for kalenderdialoger</strong>Fullfør oppdateringen av kalendergrensesnittet og brukeropplevelsen. Noen endringer i protokollhåndteringen kan være nødvendige.</li>
+<li><strong>Forbedringer av kryptering og sikkerhet</strong>Improve the support and discovery of OpenPGP and S/MIME, improve email tracking protection, and harden phishing email prevention. These will continue all year as we respond to high priority vulnerabilities, upstream changes, AI-powered sec reports and regressions. Post-quantum encryption has also come a long way, see the<a href="https://wiki.mozilla.org/Thunderbird:OpenPGP:PQCTesting">PQC testing page</a>. (Ongoing maintenance)</li>
+<li><strong>Forbedringer av innstillingsgrensesnittet</strong>Clean up and reorganize the settings into more discoverable sections and improve its search. User survey will heavily influence the end result. We are aiming to have all the strings, content navigation, and a first round of UI refresh completed by the end of 2026.</li>
+<li><strong>UI/UX for kalenderdialoger</strong>Complete the refresh of the calendar interface and user experience. Some protocols handling changes might be needed. This work will also land a major part of the compose window refresh.</li>
+<li><strong>System Add-on Integration - Remote Updates</strong>Building on the system add-on integration shipped in 153, enable system add-ons to be updated remotely, outside of the regular release train.</li>
 </ul>
 <h2><i class="ph ph-calendar-blank"></i>Planlagt</h2>
 <ul>
-<li><strong>OAuth2 Enhancements</strong>OAuth became a significant initiative due to evolving provider authentication requirements (including PKCE adoption), browser-based authentication improvements, and the need to deliver a seamless Thundermail sign-in experience.</li>
+<li><strong>Conversation View</strong>Display related messages together as a single conversation. This work depends on the new Global Database (Panorama).</li>
+<li><strong>JMAP</strong>Add support for the JMAP protocol. This will be a priority in 2027 as Thundermail opens to the public and leverages JMAP.</li>
 </ul>
 <h2><i class="ph ph-rocket-launch"></i>Lansert</h2>
 <ul>
+<li><strong>OAuth2 Enhancements</strong>OAuth became a significant initiative due to evolving provider authentication requirements (including PKCE adoption), browser-based authentication improvements, and the need to deliver a seamless Thundermail sign-in experience. Delivery began in 154.<div class="date-badge">September 2026</div></li>
+<li><strong>Thunderbird Enterprise</strong>Thunderbird Enterprise work was completed, including extending the add-ons Account API to accommodate Enterprise requirements.<div class="date-badge">September 2026</div></li>
 <li><strong>Førstegangsopplevelse: Kontosenter</strong>Fullfør kontosenteret for all kontooppretting, og aktiver det for førstegangsbrukere.<div class="date-badge">Mars 2026</div></li>
 <li><strong>Diskrete signaturer</strong>Dette var en del av det større initiativet «Forbedringer av kryptering og sikkerhet» og er fullført for å redusere forvirring rundt OpenPGP-signaturer.<div class="date-badge">Mars 2026</div></li>
 <li><strong>Exchange-e-poststøtte</strong>Full støtte for e-postoperasjoner og kontooppretting.<div class="date-badge">November 2025</div></li>

@@ -972,18 +972,19 @@
 <div class="product-roadmap-header">
 <h1>Plan rozwoju dla iOS</h1>
 <p>Thunderbird na iOS. Zapoznaj się z planem rozwoju — od bieżących prac po pomysły na przyszłość. Harmonogramy mogą ulec zmianie w miarę zdobywania wiedzy i wprowadzania kolejnych iteracji.</p>
-<p style="font-size: 16px;">Ostatnia aktualizacja: 23 lipca 2026 r.</p>
+<p style="font-size: 16px;">Last updated October 22, 2026</p>
 <p><a href="https://testflight.apple.com/join/ER3hRBSz">Pobierz aplikację TestFlight</a></p>
 </div>
 <h2><i class="ph ph-pulse"></i>Aktywne</h2>
 <ul>
-<li><strong>Kompleksowa obsługa tworzenia i czytania wiadomości e-mail</strong>Wdrożenie na urządzeniach mobilnych pełnej obsługi czytania i tworzenia wiadomości e-mail, w tym podstawowej obsługi zaszyfrowanych wiadomości (OpenPGP i S/MIME z wykorzystaniem istniejących bibliotek). Prace nad edytorem WYSIWYG dobiegają końca. Następnym krokiem jest połączenie protokołu z bazą danych, aby wyświetlać wiadomości e-mail.</li>
-<li><strong>Analiza wsparcia dla JMAP</strong>Już w 80% ukończone. Planowane jest wdrożenie pełnego protokołu z całą podstawową infrastrukturą.</li>
+<li><strong>Kompleksowa obsługa tworzenia i czytania wiadomości e-mail</strong>Implement the full reading and writing email experience on mobile. Compose, reading, and writing are in place; the remaining piece is rendering the inbox.</li>
+<li><strong>Calendar Exploration</strong>Exploring calendar support with a platform-agnostic approach alongside Android, while looking for some quick wins on iOS.</li>
 </ul>
 <h2><i class="ph ph-calendar-blank"></i>Planowane</h2>
 <ul>
-<li><strong>Wsparcie JMAP – pełna implementacja</strong>Obsługa protokołu JMAP jako jednego z pierwszych dodatkowych protokołów domyślnie dostarczanych obok IMAP. Obecnie skupiamy się przede wszystkim na IMAP-ie i przygotowaniu pierwszego wydania dla użytkowników.</li>
-<li><strong>Baza danych</strong>Zmieniamy sposób cache'owania wiadomości e-mail, aby przyspieszyć działanie interfejsu, a prace nad bazą danych odkładamy do czasu udostępnienia użytkownikom pierwszej wersji.</li>
+<li><strong>Wsparcie JMAP – pełna implementacja</strong>Support the JMAP protocol as one of the first extra protocols we ship with by default outside of IMAP. Currently we are prioritizing IMAP so the first release covers all email users. Now planned for 2027.</li>
+<li><strong>Database - Phase 2</strong>Split out from the protocol and framework work to provide more fully featured database operations. The first version of the app can ship using an in-memory cache with minimal database functionality.</li>
+<li><strong>Email Encryption Support</strong>Initial support for encrypted messages (OpenPGP and S/MIME with existing libraries). This was previously part of the Full Email Writing and Reading Experience initiative and is now planned for 2027. We are focusing on the core app experience first: encryption needs an app that reliably loads emails for reading and writing, and because every provider implements the mail standards (IMAP/SMTP/MIME) a little differently, we are making sure every case is covered and reliable before building on top of it.</li>
 </ul>
 <h2><i class="ph ph-rocket-launch"></i>Wydane</h2>
 <ul>
@@ -991,6 +992,7 @@
 <li><strong>Automatyczna konfiguracja</strong>Dodanie wyszukiwania rekordów MX w systemie DNS do biblioteki funkcji autokonfiguracji, przeniesienie wyszukiwania rekordów SRV do biblioteki funkcji autokonfiguracji oraz usunięcie biblioteki podstawowej Autodiscover<div class="date-badge">Wrzesień 2025</div></li>
 <li><strong>Proces tworzenia konta</strong>Wdrożenie pełnej automatycznej i ręcznej konfiguracji, obejmującej automatyczne wykrywanie parametrów konta i OAuth.<div class="date-badge">Marzec 2026</div></li>
 <li><strong>Tworzenie protokołu i frameworka na iOS</strong>W pierwszej kolejności implementujemy protokół IMAP, ponieważ jest on obecnie najpowszechniej używany. Ukończyliśmy prace nad protokołem i podstawowymi ramami.<div class="date-badge">Czerwiec 2026</div></li>
+<li><strong>Analiza wsparcia dla JMAP</strong>Initial exploration of the JMAP protocol is complete. The full scaffolding will be done as part of the complete implementation.<div class="date-badge">September 2026</div></li>
 </ul>
   
 

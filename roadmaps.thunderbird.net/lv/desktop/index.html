@@ -972,24 +972,28 @@
 <div class="product-roadmap-header">
 <h1>Darbvirsmas rīcības plāns</h1>
 <p>Thunderbird Windows, macOS un Linux operētājsistēmām. Seko rīcības plānam no uzsākta darba līdz nākotnes iecerēm! Tā kā mēs mācāmies un atkārtojam, izpildes laiki var mainīties.</p>
-<p style="font-size: 16px;">Pēdējoreiz atjaunināts 2026. gada 23. jūlijā</p>
+<p style="font-size: 16px;">Last updated October 22, 2026</p>
 <p><a href="https://www.thunderbird.net/en-US/thunderbird/all/#select-download-desktop">Lejupielādēt Thunderbird darbvirsmai</a></p>
 </div>
 <h2><i class="ph ph-pulse"></i>Virzībā</h2>
 <ul>
-<li><strong>Apmaiņa (EWS, GraphAPI)</strong>Pabeigt darbu pie Exchange protokola, lai atbalstītu visas Exchange un Microsoft 365 versijas, tostarp kalendāra un adrešu grāmatas atbalstu.</li>
+<li><strong>Apmaiņa (EWS, GraphAPI)</strong>Finalize the work on the Exchange protocol in order to support all versions of Exchange and Microsoft 365, including calendar and address book support. Graph API support for email is finished, and calendar discovery and event sync have been implemented.</li>
 <li><strong>Visaptverošā datubāze</strong>Turpināt darbu pie jaunās Panorama datubāzes, ļaujot lietotājiem sākt jaunās datubāzes pārbaudīšanu un veikt savienojamu datu pārcelšanu.</li>
 <li><strong>Uzlabot un paplašināt esošos papildinājumu API</strong>Uzlabot pašlaik pieejamos API, pievēršoties piekļuves nodrošināšanai jaunām sadaļām un pamatiespējām, kā arī ieviešot jaunus API noteiktām sadaļām.</li>
-<li><strong>Šifrēšanas un drošības uzlabojumi</strong>Uzlabot OpenPGP un S/MIME atbalstu un atklāšanu, uzlabot aizsardzību pret izsekošanu e-pastā un pastiprināt pikšķerēšanas e-vēstuļu novēršanu. Šie darbi turpināsies visu gadu, jo mēs pievēršamies augsta nozīmīguma ievainojamībām, izmaiņām augšpusē, ar MI darbinātiem drošības ziņojumiem un regresijām. (Pastāvīga uzturēšana)</li>
-<li><strong>Iestatījumu saskarnes uzlabojumi</strong>Iestatījumu attīrīšana un pārkārtošana vieglāk atklājamās sadaļās un to meklēšanas uzlabošana. Lietotāju aptauja būtiski ietekmēs gala iznākumu.</li>
-<li><strong>Kalendāra dialoglogu UI/UX</strong>Pabeigt kalendāra saskarnes un lietotāja pieredzes atsvaidzināšanu. Var būt nepieciešamas izmaiņas dažu protokolu apstrādē.</li>
+<li><strong>Šifrēšanas un drošības uzlabojumi</strong>Improve the support and discovery of OpenPGP and S/MIME, improve email tracking protection, and harden phishing email prevention. These will continue all year as we respond to high priority vulnerabilities, upstream changes, AI-powered sec reports and regressions. Post-quantum encryption has also come a long way, see the<a href="https://wiki.mozilla.org/Thunderbird:OpenPGP:PQCTesting">PQC testing page</a>. (Ongoing maintenance)</li>
+<li><strong>Iestatījumu saskarnes uzlabojumi</strong>Clean up and reorganize the settings into more discoverable sections and improve its search. User survey will heavily influence the end result. We are aiming to have all the strings, content navigation, and a first round of UI refresh completed by the end of 2026.</li>
+<li><strong>Kalendāra dialoglogu UI/UX</strong>Complete the refresh of the calendar interface and user experience. Some protocols handling changes might be needed. This work will also land a major part of the compose window refresh.</li>
+<li><strong>System Add-on Integration - Remote Updates</strong>Building on the system add-on integration shipped in 153, enable system add-ons to be updated remotely, outside of the regular release train.</li>
 </ul>
 <h2><i class="ph ph-calendar-blank"></i>Paredzēts</h2>
 <ul>
-<li><strong>OAuth2 uzlabojumi</strong>OAuth kļuva par nozīmīgu iniciatīvu, pateicoties mainīgajām pakalpojumu sniedzēju autentifikācijas prasībām (tostarp PKCE ieviešanai), pārlūkprogrammā balstītas autentifikācijas uzlabojumiem un nepieciešamībai nodrošināt nevainojamu Thundermail pierakstīšanās pieredzi.</li>
+<li><strong>Conversation View</strong>Display related messages together as a single conversation. This work depends on the new Global Database (Panorama).</li>
+<li><strong>JMAP</strong>Add support for the JMAP protocol. This will be a priority in 2027 as Thundermail opens to the public and leverages JMAP.</li>
 </ul>
 <h2><i class="ph ph-rocket-launch"></i>Piegādāts</h2>
 <ul>
+<li><strong>OAuth2 uzlabojumi</strong>OAuth became a significant initiative due to evolving provider authentication requirements (including PKCE adoption), browser-based authentication improvements, and the need to deliver a seamless Thundermail sign-in experience. Delivery began in 154.<div class="date-badge">September 2026</div></li>
+<li><strong>Thunderbird Enterprise</strong>Thunderbird Enterprise work was completed, including extending the add-ons Account API to accommodate Enterprise requirements.<div class="date-badge">September 2026</div></li>
 <li><strong>Sākotnējā lietotāja pieredze: Konta centrs</strong>Pilnībā izmantojiet kontu centru visu kontu izveidei, iespējojiet to sākotnējiem lietotājiem.<div class="date-badge">2026. gada marts</div></li>
 <li><strong>Neuzkrītoši paraksti</strong>Tā bija daļa no plašākas iniciatīvas “Šifrēšana un drošības uzlabojumi”, un tā ir pabeigta, lai mazinātu neskaidrības saistībā ar OpenPGP parakstiem.<div class="date-badge">2026. gada marts</div></li>
 <li><strong>Exchange epasta atbalsts</strong>Pilns e-pasta darbību un kontu izveidošanas atbalsts.<div class="date-badge">2025. gada novembris</div></li>

@@ -972,18 +972,19 @@
 <div class="product-roadmap-header">
 <h1>Plán pro iOS</h1>
 <p>Thunderbird pro iOS. Sledujte plán vývoje od aktuálních prací až po budoucí nápady. Časový harmonogram se může měnit v závislosti na našich poznatcích a iteracích.</p>
-<p style="font-size: 16px;">Naposledy aktualizováno 23. července 2026</p>
+<p style="font-size: 16px;">Last updated October 22, 2026</p>
 <p><a href="https://testflight.apple.com/join/ER3hRBSz">Stáhněte si aplikaci TestFlight</a></p>
 </div>
 <h2><i class="ph ph-pulse"></i>Aktivní</h2>
 <ul>
-<li><strong>Plnohodnotný zážitek z psaní a čtení e-mailů</strong>Implementace plnohodnotné funkce pro čtení a psaní e-mailů na mobilních zařízeních, včetně počáteční podpory šifrovaných zpráv (OpenPGP a S/MIME s využitím stávajících knihoven). Práce na režimu WYSIWYG se nyní chýlí ke konci. Dalším krokem bude propojení protokolu a databáze za účelem vykreslování e-mailů.</li>
-<li><strong>Podpora JMAP - Průzkum</strong>Hotovo už je 80 %. Cílem je implementovat celý protokol včetně veškeré základní infrastruktury.</li>
+<li><strong>Plnohodnotný zážitek z psaní a čtení e-mailů</strong>Implement the full reading and writing email experience on mobile. Compose, reading, and writing are in place; the remaining piece is rendering the inbox.</li>
+<li><strong>Calendar Exploration</strong>Exploring calendar support with a platform-agnostic approach alongside Android, while looking for some quick wins on iOS.</li>
 </ul>
 <h2><i class="ph ph-calendar-blank"></i>Naplánováno</h2>
 <ul>
-<li><strong>Podpora JMAP - Kompletní implementace</strong>Podpora protokolu JMAP jako jeden z prvních doplňkových protokolů, které standardně dodáváme kromě protokolu IMAP. V současné době se zaměřujeme především na protokol IMAP a první verzi pro uživatele.</li>
-<li><strong>Databáze</strong>Měníme způsob ukládání e-mailů do mezipaměti, aby bylo možné rychleji využívat uživatelské rozhraní, a práce s databází přesouváme na dobu po vydání první verze pro uživatele.</li>
+<li><strong>Podpora JMAP - Kompletní implementace</strong>Support the JMAP protocol as one of the first extra protocols we ship with by default outside of IMAP. Currently we are prioritizing IMAP so the first release covers all email users. Now planned for 2027.</li>
+<li><strong>Database - Phase 2</strong>Split out from the protocol and framework work to provide more fully featured database operations. The first version of the app can ship using an in-memory cache with minimal database functionality.</li>
+<li><strong>Email Encryption Support</strong>Initial support for encrypted messages (OpenPGP and S/MIME with existing libraries). This was previously part of the Full Email Writing and Reading Experience initiative and is now planned for 2027. We are focusing on the core app experience first: encryption needs an app that reliably loads emails for reading and writing, and because every provider implements the mail standards (IMAP/SMTP/MIME) a little differently, we are making sure every case is covered and reliable before building on top of it.</li>
 </ul>
 <h2><i class="ph ph-rocket-launch"></i>Vydáno</h2>
 <ul>
@@ -991,6 +992,7 @@
 <li><strong>Automatické konfigurace</strong>Přidání vyhledávání MX záznamů DNS do knihovny funkcí automatické konfigurace, přesunout vyhledávání SRV záznamů do knihovny funkcí automatické konfigurace a odstranit základní knihovnu Autodiscover<div class="date-badge">Září 2025</div></li>
 <li><strong>Postup vytvoření účtu</strong>Zajistit plně automatizované i ruční nastavení, včetně automatického zjišťování a OAuth.<div class="date-badge">Březen 2026</div></li>
 <li><strong>Vytvoření protokolu a frameworku pro verzi pro iOS</strong>Nejprve implementujeme protokol IMAP, protože se jedná o nejrozšířenější protokol, který se v současnosti používá. Práce na protokolu a základní struktuře jsme již dokončili.<div class="date-badge">Červen 2026</div></li>
+<li><strong>Podpora JMAP - Průzkum</strong>Initial exploration of the JMAP protocol is complete. The full scaffolding will be done as part of the complete implementation.<div class="date-badge">September 2026</div></li>
 </ul>
   
 
