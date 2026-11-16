@@ -1461,7 +1461,7 @@ body {
 }
 @media (min-width: 30rem) and (max-width: 79.9375rem) {
   .page-appeal-nov26 #appeal-header {
-    padding-inline: max(2.25rem, calc((100% - var(--appeal-content-width)) / 2));
+    padding-inline: 2.25rem;
   }
 }
 @media (min-width: 64rem) {
@@ -1571,7 +1571,7 @@ body {
 }
 @media (min-width: 56rem) and (max-width: 79.9375rem) {
   .page-appeal-nov26 #illustration {
-    right: max(2.25rem, calc((100% - var(--appeal-content-width)) / 2));
+    right: 2.25rem;
   }
 }
 @media (min-width: 80rem) {
