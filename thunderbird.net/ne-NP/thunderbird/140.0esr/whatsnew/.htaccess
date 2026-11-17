@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule .* https://updates.thunderbird.net/ne-NP/thunderbird/140.0/whatsnew/
