@@ -8,7 +8,7 @@
   <title>Thunderbird Release Notes</title>
   <subtitle type="text">Thunderbird Release Notes feed provides a simple way to keep up to date with Thunderbird releases.</subtitle>
 
-  <updated>2026-11-18T17:06:56+00:00</updated>
+  <updated>2026-11-18T19:19:34+00:00</updated>
   <logo>https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png</logo>
   <icon>https://www.thunderbird.net/media/img/thunderbird/favicon-196.png</icon>
 
@@ -16,6 +16,503 @@
   <link rel="self" type="application/atom+xml" href="https://www.thunderbird.net/thunderbird/releases/atom.xml"/>
 
   <generator uri="https://www.thunderbird.net" version="1.0">thunderbird-website</generator>
+  
+  <entry>
+    <id>https://www.thunderbird.net/en-US/thunderbird/161.0/releasenotes/</id>
+    <title type="html">Thunderbird 161.0</title>
+    <author>
+      <name>Thunderbird</name>
+      <uri>https://www.thunderbird.net</uri>
+    </author>
+    <link rel="alternate" type="text/html" href="https://www.thunderbird.net/en-US/thunderbird/161.0/releasenotes/"/>
+    <updated>2026-11-24T00:00:00+00:00</updated>
+    <published>2026-11-24T00:00:00+00:00</published>
+
+    <content type="html"><![CDATA[
+      
+
+  
+  
+
+  
+    
+
+    
+      
+        
+        
+
+        
+          <h3>What’s New</h3>
+        
+
+        
+        
+          <ul>
+        
+
+        
+        
+
+        <li>
+          <p>Unread count badges are available on supported Linux taskbars</p>
+          
+        </li>
+      
+    
+      
+        
+        
+          </ul>
+        
+
+        
+          <h3>Changed</h3>
+        
+
+        
+        
+          <ul>
+        
+
+        
+        
+
+        <li>
+          <p>Thundermail built-in add-on updated to v2.0.30</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>OTR chat encryption is disabled by default for profiles that never used it</p>
+          
+        </li>
+      
+    
+      
+        
+        
+          </ul>
+        
+
+        
+          <h3>Fixed</h3>
+        
+
+        
+        
+          <ul>
+        
+
+        
+        
+
+        <li>
+          <p>The Subscribe dialog continued to show "Please wait" after loading</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>The Quick Filter keyboard shortcut could stop working</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Compose commands failed when feed articles were displayed as web pages</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Shift+Space scrolled messages down when focus was in the message list</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Selecting a message in a thread summary did not scroll it into view</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Changing saved search matching options could insert an invalid search field</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Ctrl+Enter could require two presses to send a message</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Tab from the Subject field required an extra press to reach the message body</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Ctrl+V could unexpectedly send a message</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Forwarding IMAP messages failed in some folders with spaces in their names</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Contact edits by Manifest V3 extensions stored excess data and caused slowdowns</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Birthdays without a year were not saved in Google address books</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>New Contact and New List were missing from the address book context menu</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Editing vCard 3.0 contacts could lose the preferred phone number</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Some CardDAV birthdays without a year incorrectly displayed the year 1604</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Adding a second Exchange account could show messages from first account</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Concurrent offline Exchange downloads could display the wrong message body</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Sending messages could incorrectly report an error applying filters</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>SMTP CRAM-MD5 authentication could fail with some server challenges</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Some IMAP messages caused the message pane to reload endlessly</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p>Visual and UX improvements</p>
+          
+        </li>
+      
+    
+      
+        
+        
+
+        
+
+        
+        
+
+        
+        
+
+        <li>
+          <p><a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird161">Security fixes</a></p>
+          
+        </li>
+      
+    
+    </ul>
+  
+  
+
+<p>As always, you’re encouraged to <a href="https://connect.mozilla.org/t5/ideas/idb-p/ideas/label-name/thunderbird">tell us what you think</a>, <a href="https://support.mozilla.org/questions/new/thunderbird">ask for help</a>, or <a href="https://bugzilla.mozilla.org/enter_bug.cgi?product=Thunderbird">file a bug in Bugzilla</a></p>
+<style> li p { display: inline; } </style>
+      ]]>
+    </content>
+  </entry>
   
   <entry>
     <id>https://www.thunderbird.net/en-US/thunderbird/153.7.0esr/releasenotes/</id>
@@ -2604,83 +3101,6 @@
 
         <li>
           <p>EWS/Graph messages could crash Thunderbird when handling relative URL fragments</p>
-          
-        </li>
-      
-    
-    </ul>
-  
-  
-
-<p>As always, you’re encouraged to <a href="https://connect.mozilla.org/t5/ideas/idb-p/ideas/label-name/thunderbird">tell us what you think</a>, <a href="https://support.mozilla.org/questions/new/thunderbird">ask for help</a>, or <a href="https://bugzilla.mozilla.org/enter_bug.cgi?product=Thunderbird">file a bug in Bugzilla</a></p>
-<style> li p { display: inline; } </style>
-      ]]>
-    </content>
-  </entry>
-  
-  <entry>
-    <id>https://www.thunderbird.net/en-US/thunderbird/140.17.0esr/releasenotes/</id>
-    <title type="html">Thunderbird 140.17.0esr</title>
-    <author>
-      <name>Thunderbird</name>
-      <uri>https://www.thunderbird.net</uri>
-    </author>
-    <link rel="alternate" type="text/html" href="https://www.thunderbird.net/en-US/thunderbird/140.17.0esr/releasenotes/"/>
-    <updated>2026-09-30T00:00:00+00:00</updated>
-    <published>2026-09-30T00:00:00+00:00</published>
-
-    <content type="html"><![CDATA[
-      
-
-  
-  
-
-  
-    
-
-    
-      
-        
-        
-
-        
-          <h3>Changed</h3>
-        
-
-        
-        
-          <ul>
-        
-
-        
-        
-
-        <li>
-          <p>RNP command-line utilities are no longer included with Thunderbird</p>
-          
-        </li>
-      
-    
-      
-        
-        
-          </ul>
-        
-
-        
-          <h3>Fixed</h3>
-        
-
-        
-        
-          <ul>
-        
-
-        
-        
-
-        <li>
-          <p><a href="https://www.mozilla.org/en-US/security/known-vulnerabilities/thunderbird/#thunderbird140.17">Security fixes</a></p>
           
         </li>
       
