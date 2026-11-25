@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule .* https://www.thunderbird.net/thunderbird/115.16.3esr/releasenotes
